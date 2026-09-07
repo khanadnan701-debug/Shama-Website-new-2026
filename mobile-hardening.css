@@ -5,13 +5,11 @@ img,video,svg,iframe{max-width:100%}
 button,a{touch-action:manipulation}
 
 @media(max-width:900px){
-  body.nav-open{overflow:hidden}
-  .nav-shell .navlinks{left:12px!important;right:12px!important;bottom:auto!important;width:auto!important;max-width:none!important;overflow-y:auto;overscroll-behavior:contain;z-index:1000;background:rgba(248,249,255,.98)!important;backdrop-filter:blur(24px);-webkit-backdrop-filter:blur(24px)}
+  .nav-shell .navlinks{left:12px!important;right:12px!important;bottom:auto!important;width:auto!important;max-width:none!important;max-height:calc(100dvh - 138px);overflow-y:auto;overscroll-behavior:contain;z-index:1000;background:rgba(248,249,255,.98)!important;backdrop-filter:blur(24px);-webkit-backdrop-filter:blur(24px)}
   .nav-shell .navlinks>a,.nav-shell .drop-label{width:100%;min-height:46px;display:flex;align-items:center;justify-content:space-between}
   .nav-shell .drop{width:100%}
-  .nav-shell .drop-label{user-select:none}
-  .nav-shell .drop.mobile-products-open .drop-label{color:#654bd6;background:rgba(118,87,255,.08)}
-  .nav-shell .drop.mobile-products-open .mega-menu{display:block!important;position:static!important;visibility:visible!important;opacity:1!important;transform:none!important;translate:none!important;left:auto!important;top:auto!important;width:100%!important;max-width:100%!important;margin:6px 0 5px;padding:12px;border-radius:15px;box-shadow:none;background:#f3f4fb}
+  .nav-shell .drop-label{user-select:none;color:#654bd6;background:rgba(118,87,255,.06)}
+  .nav-shell .navlinks.open .mega-menu{display:block!important;position:static!important;visibility:visible!important;opacity:1!important;transform:none!important;translate:none!important;left:auto!important;top:auto!important;width:100%!important;max-width:100%!important;margin:6px 0 5px;padding:12px;border-radius:15px;box-shadow:none;background:#f3f4fb}
   .nav-shell .mega-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
   .nav-shell .mega-grid>a{min-height:54px}
   .nav-shell .mega-head,.nav-shell .mega-foot{gap:10px;flex-wrap:wrap}
@@ -33,7 +31,7 @@ button,a{touch-action:manipulation}
   .header{height:92px!important;padding:8px 0!important}
   .nav-shell{height:76px!important;padding:0 8px 0 10px!important;border-radius:17px!important}
   .mobile-toggle{flex:0 0 44px;width:44px;height:44px}
-  .nav-shell .navlinks{padding:14px!important;border-radius:17px!important}
+  .nav-shell .navlinks{padding:14px!important;border-radius:17px!important;max-height:calc(100dvh - 136px)}
   .nav-shell .mega-grid{grid-template-columns:1fr}
 
   .hero-grid{padding:52px 0 64px;gap:26px}
