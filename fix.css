@@ -1,6 +1,4 @@
-@import url('mobile-hardening.css?v=20260908-1');
-
-/* Targeted desktop fixes kept intentionally small. */
+/* Consolidated home-product fixes. The previous file repeated this block three times. */
 .category-card:nth-child(3) img{object-fit:contain!important;padding:34px;background:radial-gradient(circle,#fff 0,#edf0f7 72%)}
 html,body{max-width:100%;overflow-x:clip}
 .home-featured{padding-inline:24px;overflow:clip}
