@@ -9,7 +9,6 @@
     "assets/frozen/shama-lahori-meat-kebab-15.webp"
   ],
   "Shama Vegetable Samosa": [
-    "assets/frozen/shama-vegetable-samosa-20.webp",
     "assets/frozen/shama-vegetable-samosa-20-lifestyle.webp",
     "assets/frozen/shama-vegetable-samosa-50.webp"
   ],
@@ -49,6 +48,21 @@
   "Shama Chicken Spring Roll": [
     "assets/frozen/shama-chicken-spring-roll-20.webp",
     "assets/frozen/shama-chicken-spring-roll-50.webp"
+  ],
+  "Karela 400g": [
+    "assets/frozen/shama-karela.webp"
+  ],
+  "Cut Okra 400g": [
+    "assets/frozen/shama-cut-okra.webp"
+  ],
+  "Falsa 454g": [
+    "assets/frozen/shama-falsa.webp"
+  ],
+  "Green Chilli 400g": [
+    "assets/frozen/shama-green-chilli.webp"
+  ],
+  "Punjabi Aloo (Potato) Samosa 12Pcs": [
+    "assets/frozen/shama-punjabi-aloo-samosa-12.webp"
   ]
 };
   for (const product of productData) {
