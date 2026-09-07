@@ -29,6 +29,7 @@
     "assets/frozen/mazedar-onion-paratha.webp"
   ],
   "Shama Plain Paratha": [
+    "assets/frozen/shama-plain-paratha-30.webp",
     "assets/frozen/mazedar-plain-paratha-20.webp",
     "assets/frozen/mazedar-plain-paratha-5.webp"
   ],
@@ -63,6 +64,9 @@
   ],
   "Punjabi Aloo (Potato) Samosa 12Pcs": [
     "assets/frozen/shama-punjabi-aloo-samosa-12.webp"
+  ],
+  "Shama Crispy Paratha": [
+    "assets/frozen/shama-crispy-paratha-20.webp"
   ]
 };
   for (const product of productData) {
