@@ -39,3 +39,4 @@ jobs:
           command: deploy
 
 # Deployment trigger after rotating secrets to the active shamaonline.com Cloudflare account.
+# Redeploy requested after verifying the active Order@multiverscreation Cloudflare account ID.
