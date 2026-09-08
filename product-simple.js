@@ -3,7 +3,7 @@
 
   const style = document.createElement('link');
   style.rel = 'stylesheet';
-  style.href = 'product-simple.css?v=20260908-2';
+  style.href = 'product-simple.css?v=20260908-3';
   document.head.appendChild(style);
 
   const escapeHtml = value => String(value ?? '').replace(/[&<>"']/g, char => ({
@@ -45,13 +45,6 @@
     lightbox.querySelector('.product-lightbox-nav.prev').addEventListener('click', () => stepLightbox(-1));
     lightbox.querySelector('.product-lightbox-nav.next').addEventListener('click', () => stepLightbox(1));
 
-    document.addEventListener('keydown', event => {
-      if (!lightbox.classList.contains('open')) return;
-      if (event.key === 'Escape') closeLightbox();
-      if (event.key === 'ArrowLeft') stepLightbox(-1);
-      if (event.key === 'ArrowRight') stepLightbox(1);
-    });
-
     return lightbox;
   }
 
@@ -79,7 +72,6 @@
     lightbox.classList.add('open');
     lightbox.setAttribute('aria-hidden', 'false');
     document.body.classList.add('product-lightbox-open');
-    requestAnimationFrame(() => lightbox.querySelector('.product-lightbox-close').focus());
   }
 
   function closeLightbox() {
@@ -96,6 +88,33 @@
     lightboxIndex = (lightboxIndex + direction + lightboxItems.length) % lightboxItems.length;
     updateLightbox();
   }
+
+  document.addEventListener('click', event => {
+    const trigger = event.target.closest('.simple-product-zoom');
+    if (!trigger) return;
+    event.preventDefault();
+
+    const buttons = [...document.querySelectorAll('.simple-product-zoom')];
+    const items = buttons.map(button => {
+      const card = button.closest('.simple-product-card');
+      const image = button.querySelector('img');
+      return {
+        image: image ? image.currentSrc || image.src : '',
+        title: image?.alt || card?.querySelector('h3')?.textContent?.trim() || 'Shama product',
+        pack: card?.querySelector('.simple-product-content > p')?.textContent?.trim() || ''
+      };
+    });
+
+    openLightbox(items, Math.max(0, buttons.indexOf(trigger)), trigger);
+  });
+
+  document.addEventListener('keydown', event => {
+    const lightbox = document.querySelector('#product-lightbox');
+    if (!lightbox || !lightbox.classList.contains('open')) return;
+    if (event.key === 'Escape') closeLightbox();
+    if (event.key === 'ArrowLeft') stepLightbox(-1);
+    if (event.key === 'ArrowRight') stepLightbox(1);
+  });
 
   function renderSimpleProducts(main) {
     if (!main) return;
@@ -136,16 +155,14 @@
     const grid = document.querySelector('#simple-product-grid');
     const search = document.querySelector('#simple-product-search');
     const count = document.querySelector('#simple-product-count');
-    let displayedItems = items;
 
     const draw = list => {
-      displayedItems = list;
       count.textContent = list.length;
       grid.innerHTML = list.length ? list.map((item, index) => {
         const pack = cleanPack(item.pack);
         return `
           <article class="simple-product-card">
-            <button class="simple-product-media simple-product-zoom" type="button" data-zoom-index="${index}" aria-label="Zoom ${escapeHtml(item.title)} image">
+            <button class="simple-product-media simple-product-zoom" type="button" aria-label="Zoom ${escapeHtml(item.title)} image">
               <span class="simple-product-index">${String(index + 1).padStart(2, '0')}</span>
               <span class="simple-zoom-hint" aria-hidden="true">⌕</span>
               <img loading="lazy" decoding="async" src="${escapeHtml(item.image || '')}" alt="${escapeHtml(item.title)}">
@@ -166,12 +183,6 @@
         </div>`;
     };
 
-    grid.addEventListener('click', event => {
-      const trigger = event.target.closest('.simple-product-zoom');
-      if (!trigger) return;
-      openLightbox(displayedItems, Number(trigger.dataset.zoomIndex), trigger);
-    });
-
     draw(items);
 
     search.addEventListener('input', () => {
@@ -183,8 +194,6 @@
     });
   }
 
-  // Replace the older split runway renderer so any async category image updater
-  // (for example Flour/Lentils or Frozen) re-renders into the same simple grid.
   try { renderProducts = renderSimpleProducts; } catch (error) {}
   renderSimpleProducts(document.querySelector('#page-content'));
 })();
