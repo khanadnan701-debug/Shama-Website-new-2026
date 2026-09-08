@@ -3,7 +3,7 @@
 
   const style = document.createElement('link');
   style.rel = 'stylesheet';
-  style.href = 'product-simple.css?v=20260908-1';
+  style.href = 'product-simple.css?v=20260908-2';
   document.head.appendChild(style);
 
   const escapeHtml = value => String(value ?? '').replace(/[&<>"']/g, char => ({
@@ -13,6 +13,89 @@
   const cleanPack = value => String(value || 'Contact us for available pack sizes')
     .replace(/\\n/g, ' · ')
     .replace(/\n/g, ' · ');
+
+  let lightboxItems = [];
+  let lightboxIndex = 0;
+  let lightboxLastFocus = null;
+
+  function ensureLightbox() {
+    let lightbox = document.querySelector('#product-lightbox');
+    if (lightbox) return lightbox;
+
+    document.body.insertAdjacentHTML('beforeend', `
+      <div id="product-lightbox" class="product-lightbox" aria-hidden="true">
+        <button class="product-lightbox-backdrop" type="button" aria-label="Close image viewer" data-lightbox-close></button>
+        <div class="product-lightbox-panel" role="dialog" aria-modal="true" aria-labelledby="product-lightbox-title">
+          <button class="product-lightbox-close" type="button" aria-label="Close image viewer" data-lightbox-close>×</button>
+          <div class="product-lightbox-media">
+            <button class="product-lightbox-nav prev" type="button" aria-label="Previous product image">‹</button>
+            <img id="product-lightbox-image" src="" alt="">
+            <button class="product-lightbox-nav next" type="button" aria-label="Next product image">›</button>
+          </div>
+          <div class="product-lightbox-copy">
+            <span>Shama product</span>
+            <h3 id="product-lightbox-title"></h3>
+            <p id="product-lightbox-pack"></p>
+          </div>
+        </div>
+      </div>`);
+
+    lightbox = document.querySelector('#product-lightbox');
+    lightbox.querySelectorAll('[data-lightbox-close]').forEach(button => button.addEventListener('click', closeLightbox));
+    lightbox.querySelector('.product-lightbox-nav.prev').addEventListener('click', () => stepLightbox(-1));
+    lightbox.querySelector('.product-lightbox-nav.next').addEventListener('click', () => stepLightbox(1));
+
+    document.addEventListener('keydown', event => {
+      if (!lightbox.classList.contains('open')) return;
+      if (event.key === 'Escape') closeLightbox();
+      if (event.key === 'ArrowLeft') stepLightbox(-1);
+      if (event.key === 'ArrowRight') stepLightbox(1);
+    });
+
+    return lightbox;
+  }
+
+  function updateLightbox() {
+    const lightbox = ensureLightbox();
+    const item = lightboxItems[lightboxIndex];
+    if (!item) return;
+    const image = lightbox.querySelector('#product-lightbox-image');
+    image.src = item.image || '';
+    image.alt = item.title || 'Shama product';
+    lightbox.querySelector('#product-lightbox-title').textContent = item.title || 'Shama product';
+    lightbox.querySelector('#product-lightbox-pack').textContent = cleanPack(item.pack);
+    lightbox.querySelectorAll('.product-lightbox-nav').forEach(button => {
+      button.hidden = lightboxItems.length < 2;
+    });
+  }
+
+  function openLightbox(items, index, trigger) {
+    if (!items.length) return;
+    lightboxItems = items;
+    lightboxIndex = Math.max(0, Math.min(index, items.length - 1));
+    lightboxLastFocus = trigger || document.activeElement;
+    updateLightbox();
+    const lightbox = ensureLightbox();
+    lightbox.classList.add('open');
+    lightbox.setAttribute('aria-hidden', 'false');
+    document.body.classList.add('product-lightbox-open');
+    requestAnimationFrame(() => lightbox.querySelector('.product-lightbox-close').focus());
+  }
+
+  function closeLightbox() {
+    const lightbox = document.querySelector('#product-lightbox');
+    if (!lightbox) return;
+    lightbox.classList.remove('open');
+    lightbox.setAttribute('aria-hidden', 'true');
+    document.body.classList.remove('product-lightbox-open');
+    if (lightboxLastFocus && typeof lightboxLastFocus.focus === 'function') lightboxLastFocus.focus();
+  }
+
+  function stepLightbox(direction) {
+    if (lightboxItems.length < 2) return;
+    lightboxIndex = (lightboxIndex + direction + lightboxItems.length) % lightboxItems.length;
+    updateLightbox();
+  }
 
   function renderSimpleProducts(main) {
     if (!main) return;
@@ -53,17 +136,20 @@
     const grid = document.querySelector('#simple-product-grid');
     const search = document.querySelector('#simple-product-search');
     const count = document.querySelector('#simple-product-count');
+    let displayedItems = items;
 
     const draw = list => {
+      displayedItems = list;
       count.textContent = list.length;
       grid.innerHTML = list.length ? list.map((item, index) => {
         const pack = cleanPack(item.pack);
         return `
           <article class="simple-product-card">
-            <div class="simple-product-media">
+            <button class="simple-product-media simple-product-zoom" type="button" data-zoom-index="${index}" aria-label="Zoom ${escapeHtml(item.title)} image">
               <span class="simple-product-index">${String(index + 1).padStart(2, '0')}</span>
+              <span class="simple-zoom-hint" aria-hidden="true">⌕</span>
               <img loading="lazy" decoding="async" src="${escapeHtml(item.image || '')}" alt="${escapeHtml(item.title)}">
-            </div>
+            </button>
             <div class="simple-product-content">
               <div class="simple-product-meta">Shama ${escapeHtml(category.name)}</div>
               <h3>${escapeHtml(item.title)}</h3>
@@ -79,6 +165,12 @@
           <span>Try another product name or pack size.</span>
         </div>`;
     };
+
+    grid.addEventListener('click', event => {
+      const trigger = event.target.closest('.simple-product-zoom');
+      if (!trigger) return;
+      openLightbox(displayedItems, Number(trigger.dataset.zoomIndex), trigger);
+    });
 
     draw(items);
 
