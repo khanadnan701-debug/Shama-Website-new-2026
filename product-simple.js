@@ -3,7 +3,7 @@
 
   const style = document.createElement('link');
   style.rel = 'stylesheet';
-  style.href = 'product-simple.css?v=20260908-3';
+  style.href = 'product-simple.css?v=20260908-4';
   document.head.appendChild(style);
 
   const escapeHtml = value => String(value ?? '').replace(/[&<>"']/g, char => ({
@@ -41,9 +41,23 @@
       </div>`);
 
     lightbox = document.querySelector('#product-lightbox');
-    lightbox.querySelectorAll('[data-lightbox-close]').forEach(button => button.addEventListener('click', closeLightbox));
-    lightbox.querySelector('.product-lightbox-nav.prev').addEventListener('click', () => stepLightbox(-1));
-    lightbox.querySelector('.product-lightbox-nav.next').addEventListener('click', () => stepLightbox(1));
+    lightbox.querySelectorAll('[data-lightbox-close]').forEach(button => {
+      button.addEventListener('click', event => {
+        event.preventDefault();
+        event.stopPropagation();
+        closeLightbox();
+      });
+    });
+    lightbox.querySelector('.product-lightbox-nav.prev').addEventListener('click', event => {
+      event.preventDefault();
+      event.stopPropagation();
+      stepLightbox(-1);
+    });
+    lightbox.querySelector('.product-lightbox-nav.next').addEventListener('click', event => {
+      event.preventDefault();
+      event.stopPropagation();
+      stepLightbox(1);
+    });
 
     return lightbox;
   }
@@ -52,6 +66,7 @@
     const lightbox = ensureLightbox();
     const item = lightboxItems[lightboxIndex];
     if (!item) return;
+
     const image = lightbox.querySelector('#product-lightbox-image');
     image.src = item.image || '';
     image.alt = item.title || 'Shama product';
@@ -68,6 +83,7 @@
     lightboxIndex = Math.max(0, Math.min(index, items.length - 1));
     lightboxLastFocus = trigger || document.activeElement;
     updateLightbox();
+
     const lightbox = ensureLightbox();
     lightbox.classList.add('open');
     lightbox.setAttribute('aria-hidden', 'false');
@@ -88,25 +104,6 @@
     lightboxIndex = (lightboxIndex + direction + lightboxItems.length) % lightboxItems.length;
     updateLightbox();
   }
-
-  document.addEventListener('click', event => {
-    const trigger = event.target.closest('.simple-product-zoom');
-    if (!trigger) return;
-    event.preventDefault();
-
-    const buttons = [...document.querySelectorAll('.simple-product-zoom')];
-    const items = buttons.map(button => {
-      const card = button.closest('.simple-product-card');
-      const image = button.querySelector('img');
-      return {
-        image: image ? image.currentSrc || image.src : '',
-        title: image?.alt || card?.querySelector('h3')?.textContent?.trim() || 'Shama product',
-        pack: card?.querySelector('.simple-product-content > p')?.textContent?.trim() || ''
-      };
-    });
-
-    openLightbox(items, Math.max(0, buttons.indexOf(trigger)), trigger);
-  });
 
   document.addEventListener('keydown', event => {
     const lightbox = document.querySelector('#product-lightbox');
@@ -162,10 +159,10 @@
         const pack = cleanPack(item.pack);
         return `
           <article class="simple-product-card">
-            <button class="simple-product-media simple-product-zoom" type="button" aria-label="Zoom ${escapeHtml(item.title)} image">
+            <button class="simple-product-media simple-product-zoom" type="button" data-zoom-index="${index}" aria-label="Zoom ${escapeHtml(item.title)} image">
               <span class="simple-product-index">${String(index + 1).padStart(2, '0')}</span>
               <span class="simple-zoom-hint" aria-hidden="true">⌕</span>
-              <img loading="lazy" decoding="async" src="${escapeHtml(item.image || '')}" alt="${escapeHtml(item.title)}">
+              <img loading="lazy" decoding="async" draggable="false" src="${escapeHtml(item.image || '')}" alt="${escapeHtml(item.title)}">
             </button>
             <div class="simple-product-content">
               <div class="simple-product-meta">Shama ${escapeHtml(category.name)}</div>
@@ -181,6 +178,24 @@
           <strong>No matching products</strong>
           <span>Try another product name or pack size.</span>
         </div>`;
+
+      const zoomItems = list.map(item => ({
+        image: item.image || '',
+        title: item.title || 'Shama product',
+        pack: item.pack || ''
+      }));
+
+      grid.querySelectorAll('.simple-product-zoom').forEach(button => {
+        const activateZoom = event => {
+          event.preventDefault();
+          event.stopPropagation();
+          if (typeof event.stopImmediatePropagation === 'function') event.stopImmediatePropagation();
+          const index = Number(button.dataset.zoomIndex || 0);
+          openLightbox(zoomItems, index, button);
+        };
+
+        button.addEventListener('click', activateZoom, true);
+      });
     };
 
     draw(items);
