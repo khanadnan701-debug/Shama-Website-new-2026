@@ -2,7 +2,7 @@
   if (document.body.dataset.category !== 'flour') return;
 
   const PLACEHOLDER = 'assets/shama-logo.png';
-  const VERSION = '20260908-r4';
+  const VERSION = '20260908-r5';
 
   const manifest = {
     'Shama Wheat Flour': {
@@ -127,7 +127,6 @@
     }
     product.pack = config.pack;
 
-    // Never replace a working existing image with a missing placeholder while HQ images resolve.
     if (config.initial && config.initial.length) {
       product.image = config.initial[0];
       product.images = [...config.initial];
@@ -140,14 +139,18 @@
 
   Object.entries(manifest).forEach(([title, config]) => getProduct(title, config));
 
-  function loadDirectImage(url) {
-    return new Promise(resolve => {
+  function validateImageSource(src, resolvedValue = src) {
+    return new Promise((resolve, reject) => {
       const image = new Image();
-      const probe = `${url}${url.includes('?') ? '&' : '?'}v=${VERSION}`;
-      image.onload = () => resolve(probe);
-      image.onerror = () => resolve(null);
-      image.src = probe;
+      image.onload = () => resolve(resolvedValue);
+      image.onerror = () => reject(new Error('Image decode failed'));
+      image.src = src;
     });
+  }
+
+  function loadDirectImage(url) {
+    const probe = `${url}${url.includes('?') ? '&' : '?'}v=${VERSION}`;
+    return validateImageSource(probe).catch(() => null);
   }
 
   async function loadEncodedImage(id) {
@@ -156,7 +159,8 @@
     if (!response.ok) throw new Error(`Image ${name} unavailable`);
     const base64 = (await response.text()).replace(/\s+/g, '');
     if (!base64 || !base64.startsWith('UklG')) throw new Error(`Image ${name} invalid`);
-    return `data:image/webp;base64,${base64}`;
+    const dataUri = `data:image/webp;base64,${base64}`;
+    return validateImageSource(dataUri, dataUri);
   }
 
   async function resolveProduct(title, config) {
@@ -164,7 +168,6 @@
     const existingImage = product.image || PLACEHOLDER;
     const existingImages = Array.isArray(product.images) && product.images.length ? [...product.images] : [existingImage];
 
-    // Prefer real uploaded HQ files when they exist.
     const directSettled = await Promise.all((config.direct || []).map(loadDirectImage));
     const directLoaded = directSettled.filter(Boolean);
     if (directLoaded.length) {
@@ -173,7 +176,6 @@
       return;
     }
 
-    // Fall back to the encoded atlas for older entries.
     const atlasSettled = await Promise.allSettled((config.ids || []).map(loadEncodedImage));
     const atlasLoaded = atlasSettled.filter(result => result.status === 'fulfilled').map(result => result.value);
     if (atlasLoaded.length) {
@@ -182,7 +184,6 @@
       return;
     }
 
-    // Last resort: preserve the pre-existing catalogue image instead of showing a broken card.
     product.image = existingImage;
     product.images = existingImages;
   }
