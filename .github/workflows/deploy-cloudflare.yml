@@ -16,6 +16,20 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
+      - name: Prepare static site bundle
+        run: |
+          rm -rf dist
+          mkdir -p dist
+          rsync -a \
+            --exclude='.git/' \
+            --exclude='.github/' \
+            --exclude='node_modules/' \
+            --exclude='dist/' \
+            --exclude='wrangler.jsonc' \
+            --exclude='package.json' \
+            --exclude='package-lock.json' \
+            ./ dist/
+
       - name: Deploy to Cloudflare Workers
         uses: cloudflare/wrangler-action@v3
         with:
