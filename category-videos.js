@@ -8,16 +8,40 @@
 
   const css=document.createElement('link');
   css.rel='stylesheet';
-  css.href='category-videos.css?v=20260908-1';
+  css.href='category-videos.css?v=20260908-2';
   document.head.appendChild(css);
 
   const clips=[
-    {name:'Rice',video:'assets/videos/rice.mp4',poster:'https://images.unsplash.com/photo-1631515243349-e0cb75fb8d3a?auto=format&fit=crop&w=1600&q=88'},
-    {name:'Spices',video:'assets/videos/spices.mp4',poster:'https://images.unsplash.com/photo-1532336414038-cf19250c5757?auto=format&fit=crop&w=1600&q=88'},
-    {name:'Sauces & Pastes',video:'assets/videos/sauces-pastes.mp4',poster:'https://images.unsplash.com/photo-1603894584373-5ac82b2ae398?auto=format&fit=crop&w=1600&q=88'},
-    {name:'Miscellaneous',video:'assets/videos/miscellaneous.mp4',poster:'https://images.unsplash.com/photo-1601050690117-94f5f6fa8bd7?auto=format&fit=crop&w=1600&q=88'},
-    {name:'Beverages',video:'assets/videos/beverages.mp4',poster:'https://images.unsplash.com/photo-1692620609860-be6717812f71?auto=format&fit=crop&w=1600&q=88'},
-    {name:'Flour & Lentils',video:'assets/videos/flour-lentils.mp4',poster:'https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=1600&q=88'}
+    {
+      name:'Rice',
+      sources:['https://www.pexels.com/download/video/36886083/','assets/videos/rice.mp4'],
+      poster:'https://images.pexels.com/photos/1624487/pexels-photo-1624487.jpeg?auto=compress&cs=tinysrgb&w=1600'
+    },
+    {
+      name:'Spices',
+      sources:['https://www.pexels.com/download/video/4068140/','assets/videos/spices.mp4'],
+      poster:'https://images.pexels.com/photos/2802527/pexels-photo-2802527.jpeg?auto=compress&cs=tinysrgb&w=1600'
+    },
+    {
+      name:'Sauces & Pastes',
+      sources:['https://www.pexels.com/download/video/34129129/','assets/videos/sauces-pastes.mp4'],
+      poster:'https://images.pexels.com/photos/2474661/pexels-photo-2474661.jpeg?auto=compress&cs=tinysrgb&w=1600'
+    },
+    {
+      name:'Miscellaneous',
+      sources:['https://www.pexels.com/download/video/35821202/','assets/videos/miscellaneous.mp4'],
+      poster:'https://images.pexels.com/photos/2474658/pexels-photo-2474658.jpeg?auto=compress&cs=tinysrgb&w=1600'
+    },
+    {
+      name:'Beverages',
+      sources:['https://www.pexels.com/download/video/4752326/','assets/videos/beverages.mp4'],
+      poster:'https://images.pexels.com/photos/103566/pexels-photo-103566.jpeg?auto=compress&cs=tinysrgb&w=1600'
+    },
+    {
+      name:'Flour & Lentils',
+      sources:['https://www.pexels.com/download/video/10977367/','assets/videos/flour-lentils.mp4'],
+      poster:'https://images.pexels.com/photos/958545/pexels-photo-958545.jpeg?auto=compress&cs=tinysrgb&w=1600'
+    }
   ];
 
   poster.classList.add('flavour-video-poster');
@@ -49,6 +73,7 @@
   const saveData=!!(navigator.connection&&navigator.connection.saveData);
   let activeIndex=0;
   let token=0;
+  let sourceIndex=0;
 
   function showPoster(clip){
     poster.src=clip.poster;
@@ -58,10 +83,25 @@
     badge.classList.remove('is-ready');
   }
 
+  function trySource(clip,index,currentToken){
+    if(currentToken!==token||activeIndex!==index)return;
+    const src=clip.sources[sourceIndex];
+    if(!src){
+      video.removeAttribute('src');
+      video.load();
+      return;
+    }
+    video.pause();
+    video.src=src;
+    video.poster=clip.poster;
+    video.load();
+  }
+
   function loadClip(index){
     activeIndex=index;
     const clip=clips[index]||clips[0];
     const currentToken=++token;
+    sourceIndex=0;
     showPoster(clip);
 
     if(reduceMotion||saveData){
@@ -69,11 +109,6 @@
       video.load();
       return;
     }
-
-    video.pause();
-    video.src=clip.video;
-    video.poster=clip.poster;
-    video.load();
 
     const ready=()=>{
       if(currentToken!==token||activeIndex!==index)return;
@@ -90,11 +125,18 @@
       });
     };
 
-    if(video.readyState>=3)ready();
-    else video.addEventListener('canplay',ready,{once:true});
+    const onCanPlay=()=>ready();
+    video.addEventListener('canplay',onCanPlay,{once:true});
+    trySource(clip,index,currentToken);
   }
 
   video.addEventListener('error',()=>{
+    const clip=clips[activeIndex]||clips[0];
+    sourceIndex+=1;
+    if(sourceIndex<clip.sources.length){
+      trySource(clip,activeIndex,token);
+      return;
+    }
     video.classList.remove('is-ready');
     poster.classList.remove('is-hidden');
     badge.classList.remove('is-ready');
