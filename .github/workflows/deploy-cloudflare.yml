@@ -26,9 +26,20 @@ jobs:
             --exclude='node_modules/' \
             --exclude='dist/' \
             --exclude='wrangler.jsonc' \
+            --exclude='worker.js' \
             --exclude='package.json' \
             --exclude='package-lock.json' \
             ./ dist/
+
+      - name: Build Shama favicon
+        run: |
+          if command -v magick >/dev/null 2>&1; then
+            magick assets/shama-logo.png -background none -gravity center -resize 58x58 -extent 64x64 dist/favicon.png
+          elif command -v convert >/dev/null 2>&1; then
+            convert assets/shama-logo.png -background none -gravity center -resize 58x58 -extent 64x64 dist/favicon.png
+          else
+            cp assets/shama-logo.png dist/favicon.png
+          fi
 
       - name: Verify Cloudflare account
         uses: cloudflare/wrangler-action@v4
@@ -46,4 +57,4 @@ jobs:
           wranglerVersion: '4.130.0'
           command: deploy
 
-# Redeploy after updating both Cloudflare secrets for the Order account.
+# Deploys static assets plus the same-origin category video proxy.
