@@ -20,16 +20,23 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Prepare minimal production bundle
+      - name: Prepare production bundle
         run: |
           set -euo pipefail
           rm -rf dist
-          mkdir -p dist/assets/frozen
-          cp index.html dist/
-          cp styles.css logo.css modern.css fix.css showcase.css showcase-fix.css flavour-map.css header-studio.css cart-studio.css mobile-stability.css dist/
-          cp landing.js dist/
-          cp assets/shama-logo.png dist/assets/
-          cp assets/frozen/shama-crispy-paratha-20.webp dist/assets/frozen/
+          mkdir -p dist
+
+          # Current stable homepage runtime.
+          cp index.html landing.js mobile-stability.css dist/
+          cp styles.css logo.css modern.css fix.css showcase.css showcase-fix.css flavour-map.css header-studio.css cart-studio.css dist/
+
+          # Restored multi-page runtime.
+          cp about.html catalogue.html contact.html rice.html spices.html sauces-pastes.html miscellaneous.html beverages.html flour-lentiles.html frozen.html oils.html dry-fruits.html dist/
+          cp script.js about-studio.css catalogue-studio.css category-studio.css contact-studio.css trade-picker.css product-runway.css product-simple.css product-zoom.css frozen-images.css dist/
+          cp flour-images.js frozen-images.js product-simple.js dist/
+
+          # Product/page assets are shared by the restored pages.
+          cp -R assets dist/assets
 
       - name: Build Shama favicon
         run: |
@@ -47,13 +54,25 @@ jobs:
           test -s dist/index.html
           test -s dist/landing.js
           test -s dist/mobile-stability.css
+          test -s dist/script.js
+          test -s dist/about.html
+          test -s dist/catalogue.html
+          test -s dist/contact.html
+          test -s dist/rice.html
+          test -s dist/spices.html
+          test -s dist/sauces-pastes.html
+          test -s dist/miscellaneous.html
+          test -s dist/beverages.html
+          test -s dist/flour-lentiles.html
+          test -s dist/frozen.html
+          test -s dist/oils.html
+          test -s dist/dry-fruits.html
           test -s dist/assets/shama-logo.png
-          test -s dist/assets/frozen/shama-crispy-paratha-20.webp
-          ! test -e dist/script.js
           ! test -e dist/category-videos.js
-          ! test -e dist/about.html
-          ! test -e dist/catalogue.html
-          echo "Production bundle is a single stable landing page."
+          ! test -e dist/category-videos.css
+          ! test -e dist/home-flavour-v2.js
+          ! test -e dist/home-flavour-v2.css
+          echo "Production bundle contains the stable homepage plus restored website pages."
 
       - name: Verify Cloudflare account
         uses: cloudflare/wrangler-action@v4
