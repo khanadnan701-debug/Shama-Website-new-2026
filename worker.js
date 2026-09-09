@@ -31,6 +31,8 @@ const UPSTREAM_HEADERS = {
   'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36'
 };
 
+const STATIC_ASSET_RE = /\.(?:css|js|mjs|png|jpe?g|webp|svg|gif|ico|avif|woff2?|ttf|otf|mp4|webm|json|map)$/i;
+
 async function fetchVideo(request, sources) {
   const range = request.headers.get('Range');
   let lastStatus = 502;
@@ -92,7 +94,7 @@ function withFreshHeaders(response) {
     headers.set('Expires', '0');
   }
 
-  headers.set('X-Shama-Release', '20260909-unified');
+  headers.set('X-Shama-Release', '20260909-single-landing');
 
   return new Response(response.body, {
     status: response.status,
@@ -105,16 +107,9 @@ export default {
   async fetch(request, env) {
     const url = new URL(request.url);
 
-    if (url.pathname === '/teas' || url.pathname === '/teas/') {
-      const target = new URL('https://shamaonline.com/');
-      return Response.redirect(target.toString(), 301);
-    }
-
-    if (url.hostname === 'www.shamaonline.com') {
-      const target = new URL(request.url);
-      target.hostname = 'shamaonline.com';
-      target.protocol = 'https:';
-      return Response.redirect(target.toString(), 308);
+    // Keep one public canonical URL only: https://shamaonline.com/
+    if (url.hostname !== 'shamaonline.com') {
+      return Response.redirect('https://shamaonline.com/', 301);
     }
 
     const sources = VIDEO_SOURCES[url.pathname];
@@ -134,6 +129,17 @@ export default {
         return fetchVideo(request, sources);
       }
       return new Response('Method not allowed', { status: 405 });
+    }
+
+    // Allow only files needed by the landing page itself.
+    if (url.pathname !== '/' && STATIC_ASSET_RE.test(url.pathname)) {
+      const assetResponse = await env.ASSETS.fetch(request);
+      return withFreshHeaders(assetResponse);
+    }
+
+    // Any old page, category URL, .html URL, or query URL goes to the landing page.
+    if (url.pathname !== '/' || url.search) {
+      return Response.redirect('https://shamaonline.com/', 301);
     }
 
     const assetResponse = await env.ASSETS.fetch(request);
