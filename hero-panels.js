@@ -1,7 +1,7 @@
 (() => {
   const hero = document.querySelector('.hero-video-only, .hero-panel-mode');
   const videoSources = {
-    rice: 'https://www.pexels.com/download/video/7235046/',
+    rice: 'https://www.pexels.com/download/video/34721961/',
     spices: 'https://www.pexels.com/download/video/28283517/',
     drinks: 'https://www.pexels.com/download/video/8676990/',
     frozen: 'https://www.pexels.com/download/video/29824279/',
