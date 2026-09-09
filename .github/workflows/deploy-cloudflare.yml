@@ -20,25 +20,20 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Prepare static site bundle
+      - name: Prepare minimal production bundle
         run: |
+          set -euo pipefail
           rm -rf dist
           mkdir -p dist
-          rsync -a \
-            --exclude='.git/' \
-            --exclude='.github/' \
-            --exclude='node_modules/' \
-            --exclude='dist/' \
-            --exclude='wrangler.jsonc' \
-            --exclude='worker.js' \
-            --exclude='package.json' \
-            --exclude='package-lock.json' \
-            ./ dist/
+          cp index.html dist/
+          cp styles.css logo.css modern.css fix.css showcase.css showcase-fix.css flavour-map.css header-studio.css cart-studio.css category-videos.css mobile-stability.css dist/
+          cp landing.js category-videos.js dist/
+          cp -R assets dist/assets
 
       - name: Build local category videos
         shell: bash
         run: |
-          set -u
+          set -euo pipefail
           mkdir -p dist/videos /tmp/shama-videos
 
           if ! command -v ffmpeg >/dev/null 2>&1; then
@@ -94,6 +89,18 @@ jobs:
           else
             cp assets/shama-logo.png dist/favicon.png
           fi
+
+      - name: Verify production bundle
+        run: |
+          set -euo pipefail
+          test -s dist/index.html
+          test -s dist/landing.js
+          test -s dist/mobile-stability.css
+          test -s dist/assets/shama-logo.png
+          ! test -e dist/script.js
+          ! test -e dist/about.html
+          ! test -e dist/catalogue.html
+          echo "Production bundle contains only the landing-page runtime and required assets."
 
       - name: Verify Cloudflare account
         uses: cloudflare/wrangler-action@v4
