@@ -24,11 +24,12 @@ jobs:
         run: |
           set -euo pipefail
           rm -rf dist
-          mkdir -p dist
+          mkdir -p dist/assets/frozen
           cp index.html dist/
           cp styles.css logo.css modern.css fix.css showcase.css showcase-fix.css flavour-map.css header-studio.css cart-studio.css category-videos.css mobile-stability.css dist/
           cp landing.js category-videos.js dist/
-          cp -R assets dist/assets
+          cp assets/shama-logo.png dist/assets/
+          cp assets/frozen/shama-crispy-paratha-20.webp dist/assets/frozen/
 
       - name: Build local category videos
         shell: bash
@@ -69,7 +70,6 @@ jobs:
 
             test -s "$out"
             ffprobe -v error -select_streams v:0 -show_entries stream=width,height,codec_name -of default=noprint_wrappers=1 "$out"
-            ls -lh "$out"
             echo "::endgroup::"
           }
 
@@ -97,9 +97,11 @@ jobs:
           test -s dist/landing.js
           test -s dist/mobile-stability.css
           test -s dist/assets/shama-logo.png
+          test -s dist/assets/frozen/shama-crispy-paratha-20.webp
           ! test -e dist/script.js
           ! test -e dist/about.html
           ! test -e dist/catalogue.html
+          find dist -maxdepth 2 -type f | sort
           echo "Production bundle contains only the landing-page runtime and required assets."
 
       - name: Verify Cloudflare account
