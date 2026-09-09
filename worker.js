@@ -1,4 +1,4 @@
-const STATIC_ASSET_RE = /\.(?:css|js|mjs|png|jpe?g|webp|svg|gif|ico|avif|woff2?|ttf|otf|mp4|webm|json|map)$/i;
+const STATIC_ASSET_RE = /\.(?:html|css|js|mjs|png|jpe?g|webp|svg|gif|ico|avif|woff2?|ttf|otf|mp4|webm|json|map)$/i;
 
 function withHeaders(response) {
   const headers = new Headers(response.headers);
@@ -15,7 +15,7 @@ function withHeaders(response) {
     headers.set('Cache-Control', 'public, max-age=86400, s-maxage=604800');
   }
 
-  headers.set('X-Shama-Release', '20260909-landing-stable');
+  headers.set('X-Shama-Release', '20260909-multipage-stable');
   headers.set('X-Content-Type-Options', 'nosniff');
   headers.set('Referrer-Policy', 'strict-origin-when-cross-origin');
 
@@ -31,10 +31,10 @@ export default {
     const url = new URL(request.url);
 
     if (url.hostname !== 'shamaonline.com') {
-      return Response.redirect('https://shamaonline.com/', 301);
+      return Response.redirect(`https://shamaonline.com${url.pathname}${url.search}`, 301);
     }
 
-    if (url.pathname === '/' && !url.search) {
+    if (url.pathname === '/') {
       return withHeaders(await env.ASSETS.fetch(request));
     }
 
@@ -42,6 +42,6 @@ export default {
       return withHeaders(await env.ASSETS.fetch(request));
     }
 
-    return Response.redirect('https://shamaonline.com/', 301);
+    return Response.redirect('https://shamaonline.com/', 302);
   }
 };
