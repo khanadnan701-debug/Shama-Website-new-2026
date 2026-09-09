@@ -79,7 +79,8 @@ async function fetchVideo(request, sources) {
 function withFreshHeaders(response) {
   const headers = new Headers(response.headers);
   const type = (headers.get('Content-Type') || '').toLowerCase();
-  const pathLikeText = type.includes('text/html') ||
+  const isHtml = type.includes('text/html');
+  const pathLikeText = isHtml ||
     type.includes('text/css') ||
     type.includes('javascript') ||
     type.includes('application/json');
@@ -88,11 +89,18 @@ function withFreshHeaders(response) {
     headers.set('Cache-Control', 'no-store, no-cache, must-revalidate, max-age=0');
     headers.set('CDN-Cache-Control', 'no-store');
     headers.set('Cloudflare-CDN-Cache-Control', 'no-store');
+    headers.set('Surrogate-Control', 'no-store');
     headers.set('Pragma', 'no-cache');
     headers.set('Expires', '0');
   }
 
-  headers.set('X-Shama-Release', '20260909-unified');
+  // One-release cache reset for browsers that previously stored an older homepage.
+  // This clears only HTTP cache; cookies/localStorage remain untouched.
+  if (isHtml) {
+    headers.set('Clear-Site-Data', '"cache"');
+  }
+
+  headers.set('X-Shama-Release', '20260909-lifestyle-cache-reset');
 
   return new Response(response.body, {
     status: response.status,
