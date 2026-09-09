@@ -18,15 +18,13 @@
   <link rel="stylesheet" href="values-premium.css?v=20260909-1">
   <link rel="stylesheet" href="hero-fmcg.css?v=20260909-2">
   <link rel="stylesheet" href="hero-panels.css?v=20260910-2">
-  <link rel="stylesheet" href="category-showcase.css?v=20260909-4">
+  <link rel="stylesheet" href="category-reels.css?v=20260910-1">
   <link rel="stylesheet" href="lifestyle-banner.css?v=20260909-1">
   <link rel="stylesheet" href="trust-banner.css?v=20260909-1">
   <link rel="stylesheet" href="home-rhythm.css?v=20260909-1">
   <style>
-    body[data-page="home"] #featured-categories:not(.category-showcase){visibility:hidden;min-height:574px}
     body[data-page="home"] #site-header:empty{min-height:132px}
-    @media(max-width:1040px){body[data-page="home"] #featured-categories:not(.category-showcase){min-height:780px}}
-    @media(max-width:760px){body[data-page="home"] #featured-categories:not(.category-showcase){min-height:920px}body[data-page="home"] #site-header:empty{min-height:106px}}
+    @media(max-width:760px){body[data-page="home"] #site-header:empty{min-height:106px}}
   </style>
 </head>
 <body data-page="home">
@@ -59,11 +57,55 @@
       </div>
     </section>
 
-    <div class="flavour-ticker" aria-label="Shama qualities"><div class="ticker-track"><span>AUTHENTIC TASTE</span><i>✦</i><span>PREMIUM QUALITY</span><i>✦</i><span>TRUSTED SINCE 2003</span><i>✦</i><span>WHOLESALE ACROSS FRANCE</span><i>✦</i><span>AUTHENTIC TASTE</span><i>✦</i><span>PREMIUM QUALITY</span><i>✦</i><span>TRUSTED SINCE 2003</span><i>✦</i><span>WHOLESALE ACROSS FRANCE</span><i>✦</i></div></div>
-
-    <section class="intro section"><div class="wrap split"><div><span class="eyebrow">Meet Shama</span><h2>Good food starts with <span class="gradient-word">good ingredients.</span></h2></div><div><p class="lead">Welcome to Shama International S.A.S — committed to building long-term, mutually beneficial relationships since our foundation by Sardar Zahoor Iqbal in 2003.</p><a class="text-link" href="about.html">Discover who we are <span>→</span></a></div></div></section>
-
-    <section class="categories section"><div class="wrap"><div class="section-head"><div><span class="eyebrow">Shop by category</span><h2>A world of flavour</h2></div><a class="text-link" href="catalogue.html">View all products <span>→</span></a></div><div id="featured-categories" class="category-grid"></div></div></section>
+    <section class="category-reels section" aria-label="Explore Shama catalogue reels">
+      <div class="wrap reels-shell">
+        <div class="reels-head">
+          <div>
+            <span class="eyebrow">Reel catalogue</span>
+            <h2>Tap a range,<br>open the catalogue.</h2>
+          </div>
+          <p>Short video-style category reels. Click any reel to open that product range.</p>
+        </div>
+        <div class="reels-track">
+          <a class="reel-card reel-rice" href="rice.html" aria-label="Open Rice catalogue">
+            <video autoplay muted loop playsinline preload="metadata" src="https://www.pexels.com/download/video/7235046/"></video>
+            <span class="reel-number">01</span><span class="reel-copy"><small>Shama range</small><strong>Rice</strong><em>Open catalogue ↗</em></span>
+          </a>
+          <a class="reel-card reel-spices" href="spices.html" aria-label="Open Spices catalogue">
+            <video autoplay muted loop playsinline preload="metadata" src="https://www.pexels.com/download/video/28283517/"></video>
+            <span class="reel-number">02</span><span class="reel-copy"><small>Shama range</small><strong>Spices</strong><em>Open catalogue ↗</em></span>
+          </a>
+          <a class="reel-card reel-drinks" href="beverages.html" aria-label="Open Drinks catalogue">
+            <video autoplay muted loop playsinline preload="metadata" src="https://www.pexels.com/download/video/8165885/"></video>
+            <span class="reel-number">03</span><span class="reel-copy"><small>Shama range</small><strong>Drinks</strong><em>Open catalogue ↗</em></span>
+          </a>
+          <a class="reel-card reel-frozen" href="frozen.html" aria-label="Open Frozen catalogue">
+            <video autoplay muted loop playsinline preload="metadata" src="https://videos.pexels.com/video-files/29824279/12809900_4096_2160_25fps.mp4"></video>
+            <span class="reel-number">04</span><span class="reel-copy"><small>Shama range</small><strong>Frozen</strong><em>Open catalogue ↗</em></span>
+          </a>
+          <a class="reel-card reel-sauces" href="sauces-pastes.html" aria-label="Open Sauces and Pastes catalogue">
+            <video autoplay muted loop playsinline preload="metadata" src="https://www.pexels.com/download/video/28283517/"></video>
+            <span class="reel-number">05</span><span class="reel-copy"><small>Shama range</small><strong>Sauces</strong><em>Open catalogue ↗</em></span>
+          </a>
+          <a class="reel-card reel-flour" href="flour-lentiles.html" aria-label="Open Flour and Lentiles catalogue">
+            <video autoplay muted loop playsinline preload="metadata" src="https://www.pexels.com/download/video/7235046/"></video>
+            <span class="reel-number">06</span><span class="reel-copy"><small>Shama range</small><strong>Flour</strong><em>Open catalogue ↗</em></span>
+          </a>
+          <a class="reel-card reel-oils" href="oils.html" aria-label="Open Oils catalogue">
+            <video autoplay muted loop playsinline preload="metadata" src="https://www.pexels.com/download/video/8165885/"></video>
+            <span class="reel-number">07</span><span class="reel-copy"><small>Shama range</small><strong>Oils</strong><em>Open catalogue ↗</em></span>
+          </a>
+          <a class="reel-card reel-dry" href="dry-fruits.html" aria-label="Open Dry Fruits catalogue">
+            <video autoplay muted loop playsinline preload="metadata" src="https://www.pexels.com/download/video/28283517/"></video>
+            <span class="reel-number">08</span><span class="reel-copy"><small>Shama range</small><strong>Dry Fruits</strong><em>Open catalogue ↗</em></span>
+          </a>
+          <a class="reel-card reel-misc" href="miscellaneous.html" aria-label="Open Miscellaneous catalogue">
+            <video autoplay muted loop playsinline preload="metadata" src="https://www.pexels.com/download/video/7235046/"></video>
+            <span class="reel-number">09</span><span class="reel-copy"><small>Shama range</small><strong>Misc</strong><em>Open catalogue ↗</em></span>
+          </a>
+        </div>
+      </div>
+    </section>
 
     <section class="lifestyle section"><div class="wrap lifestyle-shell"><div class="lifestyle-visual"><div class="lifestyle-photo" aria-hidden="true"></div><img class="lifestyle-product lifestyle-product-main" src="https://static.wixstatic.com/media/00ae33_e80d132ea86142d2905cb13ebabbc2dd~mv2.jpg" alt="Shama Basmati Rice"><img class="lifestyle-product lifestyle-product-mini" src="https://static.wixstatic.com/media/00ae33_9d0728d1944d434d9cf6e146e42f3294~mv2.png" alt="Shama Spices"><div class="lifestyle-badge"><span class="lang-en">Made for every table</span><span class="lang-fr">Pensé pour toutes les tables</span><span><span class="lang-en">Homes · Restaurants · Retail</span><span class="lang-fr">Foyers · Restaurants · Commerces</span></span></div></div><div class="lifestyle-copy"><span class="eyebrow"><span class="lang-en">Authentic flavour across France since 2003</span><span class="lang-fr">Des saveurs authentiques en France depuis 2003</span></span><h2><span class="lang-en">Authentic flavour for <em>every occasion.</em></span><span class="lang-fr">Des saveurs authentiques pour <em>chaque occasion.</em></span></h2><p><span class="lang-en">From family meals to restaurant service, Shama brings trusted South Asian taste to every table.</span><span class="lang-fr">Des repas en famille au service en restauration, Shama apporte les saveurs authentiques d’Asie du Sud à chaque table.</span></p><div class="lifestyle-audiences"><span><b>01</b><span class="lang-en">Homes</span><span class="lang-fr">Foyers</span></span><span><b>02</b><span class="lang-en">Restaurants</span><span class="lang-fr">Restaurants</span></span><span><b>03</b><span class="lang-en">Retailers</span><span class="lang-fr">Commerçants</span></span></div><div class="lifestyle-actions"><a class="btn" href="catalogue.html"><span class="lang-en">Explore our range</span><span class="lang-fr">Explorer notre gamme</span> <span>↗</span></a><a class="text-link" href="contact.html"><span class="lang-en">Contact us</span><span class="lang-fr">Nous contacter</span> <span>→</span></a></div></div></div></section>
 
@@ -77,8 +119,7 @@
   </main>
   <div id="site-footer"></div>
   <script src="script.js?v=20260909-prepaint1"></script>
-  <script src="category-showcase.js?v=20260909-3"></script>
-  <script src="hero-panels.js?v=20260910-2" defer></script>
+  <script src="hero-panels.js?v=20260910-3" defer></script>
   <script src="translation.js?v=20260909-safe1" defer></script>
 </body>
 </html>
