@@ -94,7 +94,13 @@ function withFreshHeaders(response) {
     headers.set('Expires', '0');
   }
 
-  headers.set('X-Shama-Release', '20260909-single-landing');
+  // One emergency cache reset so browsers that loaded the broken translation build
+  // discard stale HTML/CSS/JS and fetch the restored production files.
+  if (type.includes('text/html')) {
+    headers.set('Clear-Site-Data', '"cache"');
+  }
+
+  headers.set('X-Shama-Release', '20260909-stable-restore-2');
 
   return new Response(response.body, {
     status: response.status,
@@ -107,7 +113,6 @@ export default {
   async fetch(request, env) {
     const url = new URL(request.url);
 
-    // Keep one public canonical URL only: https://shamaonline.com/
     if (url.hostname !== 'shamaonline.com') {
       return Response.redirect('https://shamaonline.com/', 301);
     }
@@ -131,13 +136,11 @@ export default {
       return new Response('Method not allowed', { status: 405 });
     }
 
-    // Allow only files needed by the landing page itself.
     if (url.pathname !== '/' && STATIC_ASSET_RE.test(url.pathname)) {
       const assetResponse = await env.ASSETS.fetch(request);
       return withFreshHeaders(assetResponse);
     }
 
-    // Any old page, category URL, .html URL, or query URL goes to the landing page.
     if (url.pathname !== '/' || url.search) {
       return Response.redirect('https://shamaonline.com/', 301);
     }
