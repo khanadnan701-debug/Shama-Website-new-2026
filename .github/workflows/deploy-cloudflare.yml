@@ -35,56 +35,6 @@ jobs:
             --exclude='package-lock.json' \
             ./ dist/
 
-      - name: Build local category videos
-        shell: bash
-        run: |
-          set -u
-          mkdir -p dist/videos /tmp/shama-videos
-
-          if ! command -v ffmpeg >/dev/null 2>&1; then
-            sudo apt-get update
-            sudo apt-get install -y ffmpeg
-          fi
-
-          make_video() {
-            slug="$1"
-            video_id="$2"
-            poster_url="$3"
-            raw="/tmp/shama-videos/${slug}-raw"
-            poster="/tmp/shama-videos/${slug}.jpg"
-            out="dist/videos/${slug}.mp4"
-            rm -f "$raw" "$poster" "$out"
-
-            echo "::group::Building ${slug} video"
-            if curl -L --fail --silent --show-error --retry 2 --max-time 75 \
-              -A 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/152 Safari/537.36' \
-              "https://www.pexels.com/download/video/${video_id}/" -o "$raw" \
-              && ffprobe -v error -select_streams v:0 -show_entries stream=codec_type -of csv=p=0 "$raw" | grep -q video; then
-              echo "Using downloaded Pexels footage for ${slug}."
-              ffmpeg -hide_banner -loglevel error -y -i "$raw" -t 8 \
-                -vf "scale=1280:720:force_original_aspect_ratio=increase,crop=1280:720,fps=24,format=yuv420p" \
-                -an -c:v libx264 -preset veryfast -crf 29 -movflags +faststart "$out"
-            else
-              echo "Pexels download unavailable for ${slug}; generating a guaranteed motion fallback."
-              curl -L --fail --silent --show-error --retry 2 --max-time 30 "$poster_url" -o "$poster" || cp assets/shama-logo.png "$poster"
-              ffmpeg -hide_banner -loglevel error -y -loop 1 -i "$poster" -t 8 \
-                -vf "scale=1400:800:force_original_aspect_ratio=increase,crop=1400:800,zoompan=z='min(zoom+0.0007,1.08)':x='iw/2-(iw/zoom/2)':y='ih/2-(ih/zoom/2)':d=192:s=1280x720:fps=24,format=yuv420p" \
-                -an -c:v libx264 -preset veryfast -crf 27 -movflags +faststart "$out"
-            fi
-
-            test -s "$out"
-            ffprobe -v error -select_streams v:0 -show_entries stream=width,height,codec_name -of default=noprint_wrappers=1 "$out"
-            ls -lh "$out"
-            echo "::endgroup::"
-          }
-
-          make_video rice 36886083 'https://images.pexels.com/photos/1624487/pexels-photo-1624487.jpeg?auto=compress&cs=tinysrgb&w=1600'
-          make_video spices 4902155 'https://images.pexels.com/photos/2802527/pexels-photo-2802527.jpeg?auto=compress&cs=tinysrgb&w=1600'
-          make_video sauces-pastes 4068142 'https://images.pexels.com/photos/2474661/pexels-photo-2474661.jpeg?auto=compress&cs=tinysrgb&w=1600'
-          make_video miscellaneous 35821317 'https://images.pexels.com/photos/2474658/pexels-photo-2474658.jpeg?auto=compress&cs=tinysrgb&w=1600'
-          make_video beverages 6956372 'https://images.pexels.com/photos/103566/pexels-photo-103566.jpeg?auto=compress&cs=tinysrgb&w=1600'
-          make_video flour-lentils 35161739 'https://images.pexels.com/photos/958545/pexels-photo-958545.jpeg?auto=compress&cs=tinysrgb&w=1600'
-
       - name: Build Shama favicon
         run: |
           if command -v magick >/dev/null 2>&1; then
@@ -111,4 +61,4 @@ jobs:
           wranglerVersion: '4.130.0'
           command: deploy
 
-# Deploys one production build at a time so an older commit cannot overwrite a newer one.
+# Lean production deploy: static assets + Worker only. Legacy category video generation was removed because the current site no longer references those generated files.
