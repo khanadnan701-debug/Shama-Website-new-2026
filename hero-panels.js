@@ -5,6 +5,18 @@
   const panels = Array.from(hero.querySelectorAll('[data-hero-panel]'));
   if (!panels.length) return;
 
+  const demoVideos = {
+    rice: 'https://www.pexels.com/download/video/7235046/',
+    spices: 'https://www.pexels.com/download/video/28283517/',
+    drinks: 'https://www.pexels.com/download/video/8165885/',
+    frozen: 'https://videos.pexels.com/video-files/29824279/12809900_4096_2160_25fps.mp4'
+  };
+
+  panels.forEach(panel => {
+    const theme = panel.dataset.theme;
+    if (theme && demoVideos[theme]) panel.dataset.video = demoVideos[theme];
+  });
+
   function hydrateVideo(panel) {
     const video = panel.querySelector('video');
     const src = panel.dataset.video;
@@ -17,6 +29,8 @@
     video.muted = true;
     video.loop = true;
     video.playsInline = true;
+    video.autoplay = true;
+    video.preload = 'metadata';
     video.load();
     return video;
   }
