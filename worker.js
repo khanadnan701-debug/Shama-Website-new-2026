@@ -105,6 +105,11 @@ export default {
   async fetch(request, env) {
     const url = new URL(request.url);
 
+    if (url.pathname === '/teas' || url.pathname === '/teas/') {
+      const target = new URL('https://shamaonline.com/');
+      return Response.redirect(target.toString(), 301);
+    }
+
     if (url.hostname === 'www.shamaonline.com') {
       const target = new URL(request.url);
       target.hostname = 'shamaonline.com';
