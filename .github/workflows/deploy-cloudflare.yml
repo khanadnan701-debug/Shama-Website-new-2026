@@ -26,8 +26,8 @@ jobs:
           rm -rf dist
           mkdir -p dist
 
-          # Current stable homepage runtime.
-          cp index.html landing.js mobile-stability.css dist/
+          # Current stable homepage runtime and restored navigation.
+          cp index.html landing.js multipage-links.js mobile-stability.css dist/
           cp styles.css logo.css modern.css fix.css showcase.css showcase-fix.css flavour-map.css header-studio.css cart-studio.css dist/
 
           # Restored multi-page runtime.
@@ -53,6 +53,7 @@ jobs:
           set -euo pipefail
           test -s dist/index.html
           test -s dist/landing.js
+          test -s dist/multipage-links.js
           test -s dist/mobile-stability.css
           test -s dist/script.js
           test -s dist/about.html
