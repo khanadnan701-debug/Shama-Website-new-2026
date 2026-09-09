@@ -4,12 +4,24 @@
     if (!root) return false;
 
     const source = (typeof productData !== 'undefined' && Array.isArray(productData)) ? productData : [];
-    const firstProduct = (slugs) => {
+
+    const productsFor = (slugs, fallback, title) => {
+      const seen = new Set();
+      const items = [];
       for (const slug of slugs) {
-        const item = source.find((product) => product && product.category === slug && product.image);
-        if (item) return item;
+        source
+          .filter((product) => product && product.category === slug && product.image)
+          .forEach((product) => {
+            if (seen.has(product.image) || items.length >= 3) return;
+            seen.add(product.image);
+            items.push(product);
+          });
+        if (items.length >= 3) break;
       }
-      return null;
+      if (!items.length) {
+        items.push({ image: fallback, title: `Shama ${title}`, pack: 'Wholesale packs available' });
+      }
+      return items;
     };
 
     const categories = [
@@ -68,14 +80,22 @@
         fallback: 'https://static.wixstatic.com/media/00ae33_37ae5dc41177411b82b7123f35059c06~mv2.jpg'
       }
     ].map((category) => {
-      const product = firstProduct(category.slugs);
+      const products = productsFor(category.slugs, category.fallback, category.title);
+      const first = products[0];
       return {
         ...category,
-        image: product?.image || category.fallback,
-        productTitle: product?.title || `Shama ${category.title}`,
-        pack: product?.pack || 'Wholesale packs available'
+        products,
+        image: first.image,
+        productTitle: first.title || `Shama ${category.title}`,
+        pack: first.pack || 'Wholesale packs available'
       };
     });
+
+    const productStrip = (category) => category.products.map((product, index) => `
+      <span class="category-focus-product ${index === 0 ? 'primary' : ''}">
+        <img src="${product.image}" alt="${product.title || category.title}" loading="lazy" decoding="async">
+      </span>
+    `).join('');
 
     root.className = 'category-showcase';
     root.innerHTML = `
@@ -94,7 +114,7 @@
       </div>
       <aside class="category-focus" aria-live="polite">
         <div class="category-focus-topline"><span id="category-focus-number">01 / 06</span><span>Selected range</span></div>
-        <div class="category-focus-media"><img id="category-focus-image" src="${categories[0].image}" alt="${categories[0].productTitle}"></div>
+        <div class="category-focus-products" id="category-focus-products">${productStrip(categories[0])}</div>
         <span class="category-focus-kicker">Explore Shama</span>
         <h3 id="category-focus-title">${categories[0].title}</h3>
         <p id="category-focus-description">${categories[0].description}</p>
@@ -104,7 +124,7 @@
     `;
 
     const tiles = [...root.querySelectorAll('.category-tile')];
-    const focusImage = root.querySelector('#category-focus-image');
+    const focusProducts = root.querySelector('#category-focus-products');
     const focusNumber = root.querySelector('#category-focus-number');
     const focusTitle = root.querySelector('#category-focus-title');
     const focusDescription = root.querySelector('#category-focus-description');
@@ -121,17 +141,17 @@
         tile.classList.toggle('active', active);
         tile.setAttribute('aria-pressed', String(active));
       });
-      focusImage.classList.add('switching');
+
+      focusProducts.classList.add('switching');
       window.setTimeout(() => {
-        focusImage.src = category.image;
-        focusImage.alt = category.productTitle;
+        focusProducts.innerHTML = productStrip(category);
         focusNumber.textContent = `${category.number} / 06`;
         focusTitle.textContent = category.title;
         focusDescription.textContent = category.description;
         focusPack.textContent = category.pack;
         focusLink.href = category.href;
         focusLink.querySelector('span').textContent = `Explore ${category.title}`;
-        focusImage.classList.remove('switching');
+        focusProducts.classList.remove('switching');
       }, 140);
     };
 
