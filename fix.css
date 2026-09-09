@@ -27,48 +27,57 @@ html,body{max-width:100%;overflow-x:clip}
 .footer-logo,.footer-logo img{width:100%!important;height:100%!important;max-width:100%!important}
 .footer-logo img{object-fit:contain!important;object-position:left center!important}
 
-/* Home hero: four real Shama ranges floating around the central mark. */
-.hero-product-orbit{position:relative;height:560px!important;display:block!important;isolation:isolate}
-.hero-product-orbit:before{width:370px!important;height:370px!important;background:radial-gradient(circle at 28% 24%,rgba(255,255,255,.98),rgba(210,239,248,.9) 45%,rgba(187,211,244,.78) 100%)!important;border:1px solid rgba(255,255,255,.34);box-shadow:0 34px 95px rgba(0,0,0,.28),inset 0 0 55px rgba(255,255,255,.72)!important}
-.hero-product-orbit .orbit-one{width:445px;height:445px}
-.hero-product-orbit .orbit-two{width:540px;height:540px}
-.hero-center-mark{position:absolute;z-index:3;left:50%;top:50%;translate:-50% -50%;width:168px;height:168px;border-radius:50%;display:grid;place-content:center;text-align:center;color:#fff;background:linear-gradient(145deg,rgba(9,31,58,.94),rgba(83,63,181,.9));border:1px solid rgba(255,255,255,.25);box-shadow:0 24px 60px rgba(7,13,39,.3);backdrop-filter:blur(12px)}
-.hero-center-mark strong{font:800 27px Manrope;letter-spacing:.08em}.hero-center-mark span{margin-top:5px;color:#b9f5d9;font:700 9px Manrope;text-transform:uppercase;letter-spacing:.15em}
-.hero-float-product{--angle:0deg;position:absolute;z-index:6;width:228px;height:252px;padding:8px 8px 42px;border:1px solid rgba(255,255,255,.4);border-radius:28px;background:rgba(255,255,255,.9);box-shadow:0 28px 68px rgba(3,14,40,.28);backdrop-filter:blur(18px);display:grid;place-items:center;animation:heroRangeFloat 4.9s ease-in-out infinite;transition:box-shadow .25s ease,transform .25s ease;overflow:hidden}
-.hero-float-product:before{content:"";position:absolute;inset:0;background:linear-gradient(145deg,rgba(255,255,255,.62),transparent 50%);pointer-events:none}
-.hero-product-orbit .hero-float-product img{position:relative!important;z-index:2!important;display:block!important;width:100%!important;height:100%!important;max-width:100%!important;max-height:100%!important;object-fit:contain!important;object-position:center!important;filter:drop-shadow(0 16px 16px rgba(23,31,61,.2))!important;transform:scale(1.04)!important;animation:none!important;border-radius:12px}
-.hero-float-product>span{position:absolute;z-index:4;left:12px;right:12px;bottom:10px;min-height:29px;padding:7px 10px;border-radius:99px;text-align:center;color:#fff;background:linear-gradient(110deg,#17334f,#674bd8);font:800 11px Manrope;letter-spacing:.045em;box-shadow:0 7px 18px rgba(53,41,144,.2)}
-.hero-float-product:hover{animation-play-state:paused;box-shadow:0 34px 80px rgba(3,14,40,.38)}
-.hero-float-rice{--angle:-5deg;left:-7%;top:-1%;animation-delay:-.6s}
-.hero-float-frozen{--angle:5deg;right:-8%;top:1%;animation-delay:-2.1s}
-.hero-float-spices{--angle:4deg;left:-4%;bottom:-3%;animation-delay:-3.2s}
-.hero-float-daal{--angle:-4deg;right:-5%;bottom:-2%;animation-delay:-4.1s}
-@keyframes heroRangeFloat{0%,100%{transform:translateY(0) rotate(var(--angle))}50%{transform:translateY(-18px) rotate(var(--angle))}}
+/* Home hero: premium editorial product stage, one hero product + compact range selectors. */
+.hero-product-orbit{position:relative;height:555px!important;display:block!important;isolation:isolate;overflow:visible}
+.hero-product-orbit:before{content:""!important;position:absolute!important;left:8%!important;top:8%!important;width:72%!important;height:78%!important;border-radius:46% 54% 42% 58% / 50% 42% 58% 50%!important;background:radial-gradient(circle at 34% 24%,rgba(255,255,255,.98),rgba(226,242,250,.94) 38%,rgba(188,210,241,.84) 72%,rgba(157,175,226,.72) 100%)!important;border:1px solid rgba(255,255,255,.34)!important;box-shadow:0 34px 100px rgba(3,12,36,.34),inset 0 0 58px rgba(255,255,255,.72)!important;transform:rotate(-5deg)!important;pointer-events:none}
+.hero-product-orbit:after{content:"EXPLORE OUR RANGES";position:absolute;right:2%;top:22%;z-index:8;color:rgba(255,255,255,.62);font:800 9px/1 Manrope,sans-serif;letter-spacing:.18em;writing-mode:vertical-rl;transform:rotate(180deg);pointer-events:none}
+.hero-product-orbit .orbit{display:none!important}
+.hero-center-mark{position:absolute;z-index:8;right:7%;top:5%;left:auto!important;width:auto!important;height:auto!important;translate:none!important;padding:13px 17px 12px;border-radius:18px;display:flex!important;flex-direction:column;align-items:flex-start;text-align:left;color:#fff;background:rgba(15,29,61,.46);border:1px solid rgba(255,255,255,.22);box-shadow:0 18px 42px rgba(5,13,35,.22);backdrop-filter:blur(16px)}
+.hero-center-mark strong{font:800 18px/1 Manrope;letter-spacing:.08em}.hero-center-mark span{margin-top:5px;color:#aef2d9;font:800 7px/1 Manrope;text-transform:uppercase;letter-spacing:.16em}
+.hero-float-product{position:absolute;z-index:6;display:block!important;border:0!important;background:transparent!important;box-shadow:none!important;backdrop-filter:none!important;overflow:visible!important;animation:none!important;transform:none!important;transition:transform .3s ease,filter .3s ease!important}
+.hero-float-product:before{display:none!important}
+.hero-product-orbit .hero-float-product img{position:relative!important;z-index:2!important;display:block!important;max-width:100%!important;max-height:100%!important;object-fit:contain!important;object-position:center!important;animation:none!important;border-radius:0!important}
+.hero-float-rice{left:7%;top:7%;width:355px!important;height:450px!important;padding:0!important}
+.hero-product-orbit .hero-float-rice img{width:100%!important;height:100%!important;filter:drop-shadow(0 34px 24px rgba(4,12,33,.34))!important;transform:rotate(-2deg) scale(1.02)!important}
+.hero-float-rice>span{position:absolute!important;left:28px!important;right:auto!important;bottom:3px!important;min-height:0!important;padding:9px 15px!important;border-radius:999px!important;color:#14203d!important;background:rgba(255,255,255,.94)!important;border:1px solid rgba(20,32,61,.08)!important;box-shadow:0 12px 28px rgba(13,25,58,.14)!important;font:800 10px/1 Manrope!important;letter-spacing:.08em!important;text-transform:uppercase}
+.hero-float-rice:hover{transform:translateY(-6px)!important}
+.hero-float-frozen,.hero-float-spices,.hero-float-daal{right:0;width:205px!important;height:88px!important;padding:8px 12px 8px 82px!important;border:1px solid rgba(255,255,255,.48)!important;border-radius:20px!important;background:rgba(255,255,255,.92)!important;box-shadow:0 18px 42px rgba(5,14,40,.2)!important;backdrop-filter:blur(16px)!important;display:flex!important;align-items:center!important;justify-content:flex-start!important}
+.hero-float-frozen{top:31%}.hero-float-spices{top:50%}.hero-float-daal{top:69%}
+.hero-product-orbit .hero-float-frozen img,.hero-product-orbit .hero-float-spices img,.hero-product-orbit .hero-float-daal img{position:absolute!important;left:8px!important;top:8px!important;width:66px!important;height:72px!important;max-width:none!important;max-height:none!important;filter:drop-shadow(0 8px 10px rgba(22,31,61,.16))!important;transform:none!important}
+.hero-float-frozen>span,.hero-float-spices>span,.hero-float-daal>span{position:static!important;min-height:0!important;padding:0!important;border-radius:0!important;text-align:left!important;color:#17213d!important;background:transparent!important;box-shadow:none!important;font:800 11px/1.25 Manrope!important;letter-spacing:.01em!important}
+.hero-float-frozen:hover,.hero-float-spices:hover,.hero-float-daal:hover{transform:translateX(-7px)!important;filter:brightness(1.02)}
 
 @media(max-width:1100px){
  .brand-studio{width:210px!important;height:72px!important;flex-basis:210px!important}
- .hero-product-orbit{height:525px!important}
- .hero-product-orbit:before{width:340px!important;height:340px!important}
- .hero-product-orbit .orbit-one{width:405px;height:405px}.hero-product-orbit .orbit-two{width:490px;height:490px}
- .hero-float-product{width:190px;height:216px;padding:8px 8px 39px}
- .hero-center-mark{width:150px;height:150px}
- .hero-float-rice{left:-2%;top:1%}.hero-float-frozen{right:-2%;top:2%}.hero-float-spices{left:0;bottom:0}.hero-float-daal{right:0;bottom:0}
+ .hero-product-orbit{height:520px!important}
+ .hero-product-orbit:before{left:10%!important;top:10%!important;width:70%!important;height:74%!important}
+ .hero-float-rice{left:9%;top:9%;width:305px!important;height:390px!important}
+ .hero-float-frozen,.hero-float-spices,.hero-float-daal{width:178px!important;height:82px!important;padding-left:72px!important}
+ .hero-product-orbit .hero-float-frozen img,.hero-product-orbit .hero-float-spices img,.hero-product-orbit .hero-float-daal img{width:58px!important;height:66px!important}
+ .hero-center-mark{right:5%;top:4%}
 }
 @media(max-width:900px){
  .brand-studio{width:220px!important;height:74px!important;flex-basis:220px!important}
- .hero-product-orbit{height:520px!important;max-width:650px;margin:0 auto;width:100%}
- .hero-float-product{width:180px;height:205px}
+ .hero-product-orbit{height:500px!important;max-width:650px;margin:0 auto;width:100%}
+ .hero-product-orbit:before{left:8%!important;width:68%!important}
+ .hero-float-rice{left:8%;width:300px!important;height:390px!important}
+ .hero-float-frozen,.hero-float-spices,.hero-float-daal{right:2%;width:185px!important}
 }
 @media(max-width:600px){
  .brand-studio{width:min(190px,calc(100vw - 92px))!important;height:64px!important;flex-basis:auto!important}
  .header{height:86px!important;padding:7px 0!important}.nav-shell{height:72px!important}
- .hero-product-orbit{height:400px!important;margin-top:5px}
- .hero-product-orbit:before{width:230px!important;height:230px!important}
- .hero-product-orbit .orbit-one{width:290px;height:290px}.hero-product-orbit .orbit-two{width:345px;height:345px}
- .hero-center-mark{width:112px;height:112px}.hero-center-mark strong{font-size:20px}.hero-center-mark span{font-size:7px}
- .hero-float-product{width:128px;height:148px;padding:6px 6px 31px;border-radius:18px}
- .hero-float-product>span{left:6px;right:6px;bottom:6px;min-height:22px;padding:5px 5px;font-size:8px}
- .hero-float-rice{left:-2%;top:1%}.hero-float-frozen{right:-2%;top:3%}.hero-float-spices{left:0;bottom:0}.hero-float-daal{right:0;bottom:1%}
+ .hero-product-orbit{height:425px!important;margin-top:8px;overflow:hidden!important}
+ .hero-product-orbit:before{left:50%!important;top:20px!important;width:270px!important;height:285px!important;transform:translateX(-50%) rotate(-4deg)!important;border-radius:42% 58% 50% 50% / 48% 42% 58% 52%!important}
+ .hero-product-orbit:after{display:none}
+ .hero-center-mark{right:14px;top:12px;padding:10px 12px;border-radius:14px}.hero-center-mark strong{font-size:14px}.hero-center-mark span{font-size:6px}
+ .hero-float-rice{left:50%!important;top:28px!important;width:220px!important;height:275px!important;transform:translateX(-50%)!important}
+ .hero-float-rice:hover{transform:translateX(-50%) translateY(-3px)!important}
+ .hero-float-rice>span{left:50%!important;bottom:-2px!important;transform:translateX(-50%);font-size:8px!important;padding:7px 11px!important}
+ .hero-float-frozen,.hero-float-spices,.hero-float-daal{top:auto!important;bottom:18px!important;height:48px!important;width:30.5%!important;padding:0 5px!important;border-radius:14px!important;justify-content:center!important}
+ .hero-float-frozen{left:2%!important;right:auto!important}.hero-float-spices{left:34.75%!important;right:auto!important}.hero-float-daal{right:2%!important}
+ .hero-product-orbit .hero-float-frozen img,.hero-product-orbit .hero-float-spices img,.hero-product-orbit .hero-float-daal img{display:none!important}
+ .hero-float-frozen>span,.hero-float-spices>span,.hero-float-daal>span{text-align:center!important;font-size:8px!important;line-height:1.1!important}
+ .hero-float-frozen:hover,.hero-float-spices:hover,.hero-float-daal:hover{transform:translateY(-3px)!important}
  .footer .brand{width:min(100%,270px)!important;height:105px!important}
 }
-@media(prefers-reduced-motion:reduce){.hero-float-product{animation:none!important}}
+@media(prefers-reduced-motion:reduce){.hero-float-product{transition:none!important}}
