@@ -76,9 +76,42 @@ async function fetchVideo(request, sources) {
   });
 }
 
+function withFreshHeaders(response) {
+  const headers = new Headers(response.headers);
+  const type = (headers.get('Content-Type') || '').toLowerCase();
+  const pathLikeText = type.includes('text/html') ||
+    type.includes('text/css') ||
+    type.includes('javascript') ||
+    type.includes('application/json');
+
+  if (pathLikeText) {
+    headers.set('Cache-Control', 'no-store, no-cache, must-revalidate, max-age=0');
+    headers.set('CDN-Cache-Control', 'no-store');
+    headers.set('Cloudflare-CDN-Cache-Control', 'no-store');
+    headers.set('Pragma', 'no-cache');
+    headers.set('Expires', '0');
+  }
+
+  headers.set('X-Shama-Release', '20260909-unified');
+
+  return new Response(response.body, {
+    status: response.status,
+    statusText: response.statusText,
+    headers
+  });
+}
+
 export default {
   async fetch(request, env) {
     const url = new URL(request.url);
+
+    if (url.hostname === 'www.shamaonline.com') {
+      const target = new URL(request.url);
+      target.hostname = 'shamaonline.com';
+      target.protocol = 'https:';
+      return Response.redirect(target.toString(), 308);
+    }
+
     const sources = VIDEO_SOURCES[url.pathname];
 
     if (sources) {
@@ -98,6 +131,7 @@ export default {
       return new Response('Method not allowed', { status: 405 });
     }
 
-    return env.ASSETS.fetch(request);
+    const assetResponse = await env.ASSETS.fetch(request);
+    return withFreshHeaders(assetResponse);
   }
 };
