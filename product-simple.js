@@ -4,8 +4,12 @@
   const FALLBACK_IMAGE = 'assets/shama-logo.png';
   const style = document.createElement('link');
   style.rel = 'stylesheet';
-  style.href = 'product-simple.css?v=20260911-pack1';
+  style.href = 'product-simple.css?v=20260911-pack2';
   document.head.appendChild(style);
+
+  const packStyle = document.createElement('style');
+  packStyle.textContent = '.simple-product-content>p{color:#152c6b!important;font-weight:800!important}';
+  document.head.appendChild(packStyle);
 
   const escapeHtml = value => String(value ?? '').replace(/[&<>"']/g, char => ({
     '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#039;'
