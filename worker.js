@@ -1,26 +1,39 @@
 const VIDEO_SOURCES = {
   '/video/rice': [
-    'https://www.pexels.com/download/video/34242290/',
-    'https://www.pexels.com/download/video/36886083/'
+    'https://www.pexels.com/download/video/1841002/',
+    'https://www.pexels.com/download/video/34242290/'
   ],
   '/video/spices': [
-    'https://www.pexels.com/download/video/5491467/',
-    'https://www.pexels.com/download/video/12920458/'
+    'https://www.pexels.com/download/video/4068140/',
+    'https://www.pexels.com/download/video/5491467/'
   ],
   '/video/sauces-pastes': [
-    'https://www.pexels.com/download/video/4068140/',
+    'https://www.pexels.com/download/video/5741337/',
     'https://www.pexels.com/download/video/12920458/'
   ],
   '/video/miscellaneous': [
+    'https://www.pexels.com/download/video/4983686/',
     'https://www.pexels.com/download/video/35821317/'
   ],
   '/video/beverages': [
-    'https://www.pexels.com/download/video/6956372/',
-    'https://www.pexels.com/download/video/855302/'
+    'https://www.pexels.com/download/video/5935111/',
+    'https://www.pexels.com/download/video/6956372/'
   ],
   '/video/flour-lentils': [
-    'https://www.pexels.com/download/video/10977367/',
-    'https://www.pexels.com/download/video/9346248/'
+    'https://www.pexels.com/download/video/11265881/',
+    'https://www.pexels.com/download/video/10977367/'
+  ],
+  '/video/frozen': [
+    'https://www.pexels.com/download/video/3735225/',
+    'https://www.pexels.com/download/video/29824279/'
+  ],
+  '/video/oils': [
+    'https://www.pexels.com/download/video/37443196/',
+    'https://www.pexels.com/download/video/7189208/'
+  ],
+  '/video/dry-fruits': [
+    'https://www.pexels.com/download/video/4211312/',
+    'https://www.pexels.com/download/video/7431382/'
   ]
 };
 
@@ -94,17 +107,13 @@ async function withFreshHeaders(response) {
     headers.set('Pragma', 'no-cache');
     headers.set('Expires', '0');
   } else if (isStaticText) {
-    // Allow the browser to reuse CSS/JS between pages instead of downloading
-    // everything again on every navigation. Revalidation still keeps changes fresh.
     headers.set('Cache-Control', 'no-cache, must-revalidate, max-age=0');
     headers.set('CDN-Cache-Control', 'public, max-age=300');
     headers.set('Cloudflare-CDN-Cache-Control', 'public, max-age=300');
   }
 
-  // Do not clear the browser cache on every HTML request. That old release-only
-  // header was forcing CSS, JS, logos and images to reload on every page change.
   headers.delete('Clear-Site-Data');
-  headers.set('X-Shama-Release', '20260911-stable-paint-1');
+  headers.set('X-Shama-Release', '20260911-stable-paint-2');
 
   let body = response.body;
 
