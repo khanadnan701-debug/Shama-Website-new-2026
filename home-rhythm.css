@@ -46,6 +46,12 @@ body[data-page="home"] .cta-box h2{font-size:clamp(54px,5vw,82px);max-width:920p
 body[data-page="home"] .cta-box .btn{padding:17px 28px;font-size:15px;background:#fff!important;color:#15316d!important;border-color:#fff!important;box-shadow:0 14px 34px rgba(6,18,48,.18)}
 body[data-page="home"] .cta-box .btn:hover{transform:translateY(-4px) scale(1.02)}
 
+/* Hero scroll cue: bottom arrow + See More text. */
+body[data-page="home"] .hero-video-only::before{content:"↓\A See More";white-space:pre;position:absolute;left:50%;bottom:26px;z-index:12;transform:translateX(-50%);display:grid;place-items:center;width:96px;height:96px;border-radius:999px;background:rgba(255,255,255,.9);color:#111c35;font:900 13px/1.15 Manrope,sans-serif;letter-spacing:.08em;text-transform:uppercase;text-align:center;box-shadow:0 18px 44px rgba(0,0,0,.28);backdrop-filter:blur(16px);pointer-events:none;animation:heroSeeMoreFloat 1.8s ease-in-out infinite}
+body[data-page="home"] .hero-video-only::before{border:1px solid rgba(255,255,255,.55)}
+body[data-page="home"] .hero-video-only:hover::before{background:#fff;color:#173f84;box-shadow:0 22px 54px rgba(0,0,0,.34)}
+@keyframes heroSeeMoreFloat{0%,100%{translate:0 0}50%{translate:0 9px}}
+
 /* Scroll-in polish for the lower story. Chrome/Edge use the native view timeline; reduced-motion disables it below. */
 @supports (animation-timeline:view()){
   body[data-page="home"] .trust-banner-shell,
@@ -108,6 +114,7 @@ body[data-page="home"] .cta-box .btn:hover{transform:translateY(-4px) scale(1.02
   body[data-page="home"] .cta-box{min-height:300px;padding:42px 28px;border-radius:28px;gap:30px}
   body[data-page="home"] .cta-box h2{font-size:clamp(44px,12vw,58px)}
   body[data-page="home"] .cta-box .btn{width:100%;justify-content:center}
+  body[data-page="home"] .hero-video-only::before{width:78px;height:78px;bottom:18px;font-size:10px}
 }
 
 @media(prefers-reduced-motion:reduce){
@@ -115,4 +122,5 @@ body[data-page="home"] .cta-box .btn:hover{transform:translateY(-4px) scale(1.02
   body[data-page="home"] .wholesale .wholesale-shell,
   body[data-page="home"] .values .values-card,
   body[data-page="home"] .cta-box{animation:none!important;opacity:1!important;transform:none!important}
+  body[data-page="home"] .hero-video-only::before{animation:none!important}
 }
