@@ -4,7 +4,7 @@
   const FALLBACK_IMAGE = 'assets/shama-logo.png';
   const style = document.createElement('link');
   style.rel = 'stylesheet';
-  style.href = 'product-simple.css?v=20260908-5';
+  style.href = 'product-simple.css?v=20260911-pack1';
   document.head.appendChild(style);
 
   const escapeHtml = value => String(value ?? '').replace(/[&<>"']/g, char => ({
