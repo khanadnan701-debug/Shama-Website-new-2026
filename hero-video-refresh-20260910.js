@@ -7,14 +7,21 @@
   };
 
   function setVideo(video, src) {
-    if (!video || !src || video.dataset.heroRefreshSrc === src) return;
+    if (!video || !src) return;
+    if (video.dataset.heroRefreshSrc === src && video.dataset.src === src) {
+      video.play().catch(() => {});
+      return;
+    }
+
     try { video.pause(); } catch (_) {}
     video.innerHTML = '';
     video.removeAttribute('src');
+
     const source = document.createElement('source');
     source.src = src;
     source.type = 'video/mp4';
     video.appendChild(source);
+
     video.dataset.heroRefreshSrc = src;
     video.dataset.src = src;
     video.muted = true;
@@ -26,17 +33,33 @@
     video.play().catch(() => {});
   }
 
-  function refreshHeroVideos() {
-    const pairs = [
-      ['[data-hero-panel][data-theme="spices"] video', replacementVideos.spices],
-      ['.reel-card.reel-spices video', replacementVideos.spices],
-      ['[data-hero-panel][data-theme="drinks"] video', replacementVideos.drinks],
-      ['.reel-card.reel-drinks video', replacementVideos.drinks]
-    ];
+  function bindHeroPanel(selector, src) {
+    document.querySelectorAll(selector).forEach(panel => {
+      const video = panel.querySelector('video');
+      if (!video) return;
 
-    pairs.forEach(([selector, src]) => {
-      document.querySelectorAll(selector).forEach(video => setVideo(video, src));
+      const forceReplacement = () => {
+        setTimeout(() => setVideo(video, src), 0);
+      };
+
+      if (panel.dataset.heroRefreshBound !== src) {
+        panel.addEventListener('mouseenter', forceReplacement);
+        panel.addEventListener('pointerenter', forceReplacement);
+        panel.addEventListener('focus', forceReplacement);
+        panel.addEventListener('touchstart', forceReplacement, { passive: true });
+        panel.dataset.heroRefreshBound = src;
+      }
+
+      setVideo(video, src);
     });
+  }
+
+  function refreshHeroVideos() {
+    bindHeroPanel('[data-hero-panel][data-theme="spices"]', replacementVideos.spices);
+    bindHeroPanel('[data-hero-panel][data-theme="drinks"]', replacementVideos.drinks);
+
+    document.querySelectorAll('.reel-card.reel-spices video').forEach(video => setVideo(video, replacementVideos.spices));
+    document.querySelectorAll('.reel-card.reel-drinks video').forEach(video => setVideo(video, replacementVideos.drinks));
   }
 
   if (document.readyState === 'loading') {
@@ -46,6 +69,7 @@
   }
 
   window.addEventListener('load', refreshHeroVideos, { once: true });
-  setTimeout(refreshHeroVideos, 250);
-  setTimeout(refreshHeroVideos, 1200);
+  setTimeout(refreshHeroVideos, 100);
+  setTimeout(refreshHeroVideos, 500);
+  setTimeout(refreshHeroVideos, 1500);
 })();
