@@ -20,7 +20,9 @@
     }
   ];
 
-  if (typeof productData !== 'undefined' && Array.isArray(productData)) {
+  function appendMissingRiceProducts() {
+    if (typeof productData === 'undefined' || !Array.isArray(productData)) return false;
+
     const existingKeys = new Set(
       productData.map((item) => `${item.category}|${item.title}|${item.pack}`)
     );
@@ -36,5 +38,27 @@
         productData.splice(firstNonRiceIndex, 0, ...additions);
       }
     }
+
+    return additions.length > 0;
   }
+
+  function refreshRicePage() {
+    const changed = appendMissingRiceProducts();
+    if (changed && typeof window.shamaRerenderSimpleProducts === 'function') {
+      window.shamaRerenderSimpleProducts();
+    }
+    if (changed) {
+      document.dispatchEvent(new CustomEvent('shama:product-images-updated'));
+    }
+  }
+
+  refreshRicePage();
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', refreshRicePage, { once: true });
+  } else {
+    setTimeout(refreshRicePage, 0);
+  }
+
+  window.addEventListener('load', refreshRicePage, { once: true });
 })();
