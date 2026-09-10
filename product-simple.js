@@ -2,15 +2,14 @@
   if (document.body.dataset.page !== 'product') return;
 
   const FALLBACK_IMAGE = 'assets/shama-logo.png';
-  const style = document.createElement('link');
-  style.rel = 'stylesheet';
-  style.href = 'product-simple.css?v=20260911-pack2';
-  document.head.appendChild(style);
-
-  const heroScript = document.createElement('script');
-  heroScript.src = 'category-product-hero-video.js?v=20260911-hero1';
-  heroScript.defer = true;
-  document.head.appendChild(heroScript);
+  let style = document.querySelector('#product-simple-style');
+  if (!style) {
+    style = document.createElement('link');
+    style.id = 'product-simple-style';
+    style.rel = 'stylesheet';
+    style.href = 'product-simple.css?v=20260911-pack3';
+    document.head.appendChild(style);
+  }
 
   const packStyle = document.createElement('style');
   packStyle.textContent = '.simple-product-content>p{color:#152c6b!important;font-weight:800!important}';
@@ -50,6 +49,7 @@
     const grid=main.querySelector('#simple-product-grid');
     grid.innerHTML=items.map((item,index)=>`<article class="simple-product-card"><button class="simple-product-media simple-product-zoom" type="button" data-index="${index}"><img loading="lazy" src="${escapeHtml(item.image)}" alt="${escapeHtml(item.title)}"></button><div class="simple-product-content"><div class="simple-product-meta">Shama ${escapeHtml(category.name)}</div><h3>${escapeHtml(item.title)}</h3><p>${escapeHtml(cleanPack(item.pack))}</p><button class="bulk-buy simple-product-btn" type="button"><span>Add to bulk order</span><b>+</b></button></div></article>`).join('');
     grid.querySelectorAll('.simple-product-zoom').forEach(btn=>btn.addEventListener('click',()=>{const item=items[Number(btn.dataset.index)];openLightbox([{image:item.image,title:item.title,pack:item.pack}],0,btn)}));
+    document.dispatchEvent(new CustomEvent('shama:product-simple-rendered'));
   }
 
   window.shamaRerenderSimpleProducts=()=>renderSimpleProducts(document.querySelector('#page-content'));
