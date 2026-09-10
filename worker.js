@@ -31,6 +31,8 @@ const UPSTREAM_HEADERS = {
   'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36'
 };
 
+const PREPAINT_HEAD = `<style id="shama-prepaint">html{background:#fffdf8}html:not(.shama-ready) body{opacity:0!important;visibility:hidden!important}html.shama-ready body{opacity:1!important;visibility:visible!important;transition:opacity .14s ease}@media(prefers-reduced-motion:reduce){html.shama-ready body{transition:none}}</style><script id="shama-prepaint-script">(()=>{let done=false;const reveal=()=>{if(done)return;done=true;requestAnimationFrame(()=>requestAnimationFrame(()=>document.documentElement.classList.add('shama-ready')))};window.addEventListener('load',()=>setTimeout(reveal,45),{once:true});setTimeout(reveal,2200)})();</script>`;
+
 async function fetchVideo(request, sources) {
   const range = request.headers.get('Range');
   let lastStatus = 502;
@@ -76,33 +78,46 @@ async function fetchVideo(request, sources) {
   });
 }
 
-function withFreshHeaders(response) {
+async function withFreshHeaders(response) {
   const headers = new Headers(response.headers);
   const type = (headers.get('Content-Type') || '').toLowerCase();
   const isHtml = type.includes('text/html');
-  const pathLikeText = isHtml ||
+  const isStaticText =
     type.includes('text/css') ||
     type.includes('javascript') ||
     type.includes('application/json');
 
-  if (pathLikeText) {
-    headers.set('Cache-Control', 'no-store, no-cache, must-revalidate, max-age=0');
-    headers.set('CDN-Cache-Control', 'no-store');
-    headers.set('Cloudflare-CDN-Cache-Control', 'no-store');
-    headers.set('Surrogate-Control', 'no-store');
+  if (isHtml) {
+    headers.set('Cache-Control', 'no-cache, must-revalidate, max-age=0');
+    headers.set('CDN-Cache-Control', 'no-cache');
+    headers.set('Cloudflare-CDN-Cache-Control', 'no-cache');
     headers.set('Pragma', 'no-cache');
     headers.set('Expires', '0');
+  } else if (isStaticText) {
+    // Allow the browser to reuse CSS/JS between pages instead of downloading
+    // everything again on every navigation. Revalidation still keeps changes fresh.
+    headers.set('Cache-Control', 'no-cache, must-revalidate, max-age=0');
+    headers.set('CDN-Cache-Control', 'public, max-age=300');
+    headers.set('Cloudflare-CDN-Cache-Control', 'public, max-age=300');
   }
 
-  // One-release cache reset for browsers that previously stored an older homepage.
-  // This clears only HTTP cache; cookies/localStorage remain untouched.
-  if (isHtml) {
-    headers.set('Clear-Site-Data', '"cache"');
+  // Do not clear the browser cache on every HTML request. That old release-only
+  // header was forcing CSS, JS, logos and images to reload on every page change.
+  headers.delete('Clear-Site-Data');
+  headers.set('X-Shama-Release', '20260911-stable-paint-1');
+
+  let body = response.body;
+
+  if (isHtml && response.body) {
+    let html = await response.text();
+    if (!html.includes('id="shama-prepaint"')) {
+      html = html.replace(/<head([^>]*)>/i, match => `${match}${PREPAINT_HEAD}`);
+    }
+    body = html;
+    headers.delete('Content-Length');
   }
 
-  headers.set('X-Shama-Release', '20260909-lifestyle-cache-reset');
-
-  return new Response(response.body, {
+  return new Response(body, {
     status: response.status,
     statusText: response.statusText,
     headers
