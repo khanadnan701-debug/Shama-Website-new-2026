@@ -4,42 +4,15 @@
   if (document.body.dataset.page !== 'product') return;
 
   const HERO_MEDIA = {
-    rice: {
-      src: 'https://www.pexels.com/download/video/1841002/',
-      position: 'center 50%'
-    },
-    spices: {
-      src: 'https://www.pexels.com/download/video/4068140/',
-      position: 'center 52%'
-    },
-    sauces: {
-      src: 'https://www.pexels.com/download/video/5741337/',
-      position: 'center 52%'
-    },
-    misc: {
-      src: 'https://www.pexels.com/download/video/4983686/',
-      position: 'center 50%'
-    },
-    beverages: {
-      src: 'https://www.pexels.com/download/video/5935111/',
-      position: 'center 48%'
-    },
-    flour: {
-      src: 'https://www.pexels.com/download/video/11265881/',
-      position: 'center 48%'
-    },
-    frozen: {
-      src: 'https://www.pexels.com/download/video/3735225/',
-      position: 'center 50%'
-    },
-    oils: {
-      src: 'https://www.pexels.com/download/video/37443196/',
-      position: 'center 50%'
-    },
-    'dry-fruits': {
-      src: 'https://www.pexels.com/download/video/4211312/',
-      position: 'center 50%'
-    }
+    rice: { src: '/video/rice', position: 'center 50%' },
+    spices: { src: '/video/spices', position: 'center 52%' },
+    sauces: { src: '/video/sauces-pastes', position: 'center 52%' },
+    misc: { src: '/video/miscellaneous', position: 'center 50%' },
+    beverages: { src: '/video/beverages', position: 'center 48%' },
+    flour: { src: '/video/flour-lentils', position: 'center 48%' },
+    frozen: { src: '/video/frozen', position: 'center 50%' },
+    oils: { src: '/video/oils', position: 'center 50%' },
+    'dry-fruits': { src: '/video/dry-fruits', position: 'center 50%' }
   };
 
   function ensureStyle() {
@@ -56,10 +29,11 @@
         display:flex;
         align-items:center;
         overflow:hidden;
-        background:#07152f!important;
+        background:
+          radial-gradient(circle at 78% 30%,rgba(80,112,190,.24),transparent 30%),
+          linear-gradient(135deg,#07152f 0%,#102553 58%,#172d67 100%)!important;
       }
 
-      .category-product-video-hero>.category-product-hero-poster,
       .category-product-video-hero>.category-product-hero-video{
         position:absolute;
         inset:0;
@@ -67,18 +41,10 @@
         height:100%;
         object-fit:cover;
         pointer-events:none;
-      }
-
-      .category-product-video-hero>.category-product-hero-poster{
-        z-index:-4;
-        transform:scale(1.01);
-      }
-
-      .category-product-video-hero>.category-product-hero-video{
         z-index:-3;
         opacity:0;
-        transform:scale(1.01);
-        transition:opacity .45s ease;
+        transform:scale(1.015);
+        transition:opacity .42s ease;
       }
 
       .category-product-video-hero.is-video-ready>.category-product-hero-video{
@@ -137,10 +103,7 @@
       }
 
       @media(max-width:900px){
-        .page-hero.category-product-video-hero{
-          min-height:500px;
-        }
-
+        .page-hero.category-product-video-hero{min-height:500px}
         .category-product-video-hero>.wrap{
           width:calc(100% - 48px)!important;
           padding:82px 0 70px!important;
@@ -148,40 +111,23 @@
       }
 
       @media(max-width:600px){
-        .page-hero.category-product-video-hero{
-          min-height:430px;
-        }
-
+        .page-hero.category-product-video-hero{min-height:430px}
         .category-product-video-hero>.wrap{
           width:calc(100% - 32px)!important;
           padding:70px 0 58px!important;
         }
-
         .category-product-video-hero h1{
           font-size:clamp(42px,14vw,62px)!important;
         }
-
-        .category-product-video-hero p{
-          margin-top:18px!important;
-        }
+        .category-product-video-hero p{margin-top:18px!important}
       }
 
       @media(prefers-reduced-motion:reduce){
-        .category-product-video-hero>.category-product-hero-video{
-          display:none!important;
-        }
+        .category-product-video-hero>.category-product-hero-video{display:none!important}
       }
     `;
 
     document.head.appendChild(style);
-  }
-
-  function getCategory(slug) {
-    try {
-      return Array.isArray(categories) ? categories.find(item => item.slug === slug) : null;
-    } catch (_) {
-      return null;
-    }
   }
 
   function applyVideoHero() {
@@ -194,20 +140,10 @@
 
     ensureStyle();
 
-    hero.querySelectorAll('.category-product-hero-poster,.category-product-hero-video,.category-product-hero-shade').forEach(node => node.remove());
-
-    const category = getCategory(slug);
-    const posterSrc = category && category.image ? category.image : 'assets/shama-logo.png';
-
+    hero.querySelectorAll('.category-product-hero-video,.category-product-hero-shade').forEach(node => node.remove());
+    hero.classList.remove('is-video-ready');
     hero.classList.add('category-product-video-hero');
     hero.dataset.productVideoHero = slug;
-
-    const poster = document.createElement('img');
-    poster.className = 'category-product-hero-poster';
-    poster.src = posterSrc;
-    poster.alt = '';
-    poster.setAttribute('aria-hidden', 'true');
-    poster.style.objectPosition = media.position;
 
     const video = document.createElement('video');
     video.className = 'category-product-hero-video';
@@ -216,8 +152,7 @@
     video.defaultMuted = true;
     video.loop = true;
     video.playsInline = true;
-    video.preload = 'metadata';
-    video.poster = posterSrc;
+    video.preload = 'auto';
     video.disablePictureInPicture = true;
     video.style.objectPosition = media.position;
     video.setAttribute('autoplay', '');
@@ -238,25 +173,20 @@
 
     hero.prepend(shade);
     hero.prepend(video);
-    hero.prepend(poster);
 
     const reveal = () => hero.classList.add('is-video-ready');
-
     ['loadeddata', 'canplay', 'playing'].forEach(eventName => {
       video.addEventListener(eventName, reveal, { once: true });
     });
 
     video.addEventListener('error', () => {
       hero.classList.remove('is-video-ready');
-      video.style.display = 'none';
+      video.remove();
     }, { once: true });
 
     if (video.readyState >= 2) reveal();
-
     const playPromise = video.play();
-    if (playPromise && typeof playPromise.catch === 'function') {
-      playPromise.catch(() => {});
-    }
+    if (playPromise && typeof playPromise.catch === 'function') playPromise.catch(() => {});
   }
 
   applyVideoHero();
@@ -267,13 +197,12 @@
 
   window.addEventListener('load', applyVideoHero, { once: true });
   document.addEventListener('shama:product-images-updated', () => setTimeout(applyVideoHero, 0));
+  document.addEventListener('shama:product-simple-rendered', () => setTimeout(applyVideoHero, 0));
 
   const main = document.querySelector('#page-content');
   if (main && 'MutationObserver' in window) {
     const observer = new MutationObserver(() => {
-      if (!main.querySelector('.page-hero.category-product-video-hero')) {
-        applyVideoHero();
-      }
+      if (!main.querySelector('.page-hero.category-product-video-hero')) applyVideoHero();
     });
     observer.observe(main, { childList:true });
   }
