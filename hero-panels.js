@@ -31,18 +31,14 @@
     'reel-misc': 'misc'
   };
 
-  const jawadLogo = 'https://www.jawadfoodsitaliasrl.com/logo-jawad.png';
-  const premierLogo = 'https://www.premierfood.fr/assets/logo-BpGa8ozJ.png';
-
-  const approvedBrandLogos = [
-    { name: 'Jawad Food', src: jawadLogo },
-    { name: 'Premier Food Service', src: premierLogo },
-    { name: 'Ahmed Foods', src: 'https://static.wixstatic.com/media/00ae33_aa279882be0d484b89841d4aa5791763~mv2.jpg/v1/fill/w_980,h_980,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/00ae33_aa279882be0d484b89841d4aa5791763~mv2.jpg' },
-    { name: 'Laziza', src: 'https://static.wixstatic.com/media/00ae33_5a903fc2fbd64ba2b277c2af644179fe~mv2.jpg/v1/fill/w_980,h_980,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/00ae33_5a903fc2fbd64ba2b277c2af644179fe~mv2.jpg' },
-    { name: 'Prime Mazedar', src: 'https://static.wixstatic.com/media/00ae33_e1ffa35f0f6e47aea0cfe2c87c183869~mv2.jpg/v1/fill/w_980,h_980,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/00ae33_e1ffa35f0f6e47aea0cfe2c87c183869~mv2.jpg' },
-    { name: 'Best', src: 'https://static.wixstatic.com/media/00ae33_62327fd3fe7a4de9a9a957cc2d9e0fc3~mv2.jpg/v1/fill/w_980,h_980,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/00ae33_62327fd3fe7a4de9a9a957cc2d9e0fc3~mv2.jpg' },
-    { name: 'Bobofop', src: 'https://static.wixstatic.com/media/00ae33_4a62a2cc68744bf48fd1303f54926374~mv2.jpg/v1/fill/w_980,h_980,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/00ae33_4a62a2cc68744bf48fd1303f54926374~mv2.jpg' },
-    { name: 'Shama Partner Brand', src: 'https://static.wixstatic.com/media/00ae33_710feb82d0454cca9a9a44c7a062429f~mv2.jpg/v1/fill/w_980,h_980,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/00ae33_710feb82d0454cca9a9a44c7a062429f~mv2.jpg' }
+  const partners = [
+    { name: 'Jawad Food', type: 'text', kicker: 'Italia SRL' },
+    { name: 'Premier Food Service', src: 'https://www.premierfood.fr/assets/logo-BpGa8ozJ.png', fallback: 'Premier Food' },
+    { name: 'Ahmed Foods', src: 'https://static.wixstatic.com/media/00ae33_aa279882be0d484b89841d4aa5791763~mv2.jpg', fallback: 'Ahmed Foods' },
+    { name: 'BEST', src: 'https://static.wixstatic.com/media/00ae33_62327fd3fe7a4de9a9a957cc2d9e0fc3~mv2.jpg', fallback: 'BEST' },
+    { name: 'Prime Mazedar', src: 'https://static.wixstatic.com/media/00ae33_e1ffa35f0f6e47aea0cfe2c87c183869~mv2.jpg', fallback: 'Prime Mazedar' },
+    { name: 'Laziza', src: 'https://static.wixstatic.com/media/00ae33_5a903fc2fbd64ba2b277c2af644179fe~mv2.jpg', fallback: 'Laziza' },
+    { name: 'Bobofop', src: 'https://static.wixstatic.com/media/00ae33_4a62a2cc68744bf48fd1303f54926374~mv2.jpg', fallback: 'Bobofop' }
   ];
 
   function setVideo(video, src) {
@@ -167,27 +163,34 @@
   }
 
   function partnerCards(items) {
-    return items.map((item, index) => `<span class="partner-logo-card partner-logo-${index + 1}"><img src="${item.src}" alt="${item.name}" loading="lazy" decoding="async"></span>`).join('');
+    return items.map((item) => {
+      if (item.type === 'text') {
+        return `<span class="partner-logo-card text-logo"><b>${item.name}</b><small>${item.kicker || ''}</small></span>`;
+      }
+      return `<span class="partner-logo-card"><img src="${item.src}" alt="${item.name}" loading="lazy" decoding="async" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';"><span class="partner-fallback">${item.fallback || item.name}</span></span>`;
+    }).join('');
   }
 
   function setupPartnersSection() {
     const oldSection = document.querySelector('.cta.section');
     if (!oldSection || document.querySelector('.partners-marquee-section')) return;
     addStyle('partners-marquee-css', `
-      .partners-marquee-section{position:relative;padding:92px 0 104px;overflow:hidden;background:linear-gradient(180deg,#fff 0%,#f8fbff 100%)}.partners-marquee-shell{position:relative;width:min(1720px,calc(100% - 64px))!important;max-width:none!important;margin:0 auto!important;padding:72px 0 70px;border-radius:42px;background:linear-gradient(135deg,#102d68 0%,#1f4d94 42%,#6342db 100%);box-shadow:0 32px 90px rgba(28,44,112,.18);overflow:hidden;color:#fff;isolation:isolate}.partners-marquee-shell:before{content:"";position:absolute;right:-70px;top:-190px;width:520px;height:520px;border-radius:50%;background:radial-gradient(circle,rgba(255,255,255,.16),transparent 62%);border:1px solid rgba(255,255,255,.12);z-index:0}.partners-marquee-shell:after{content:"SELECTED PARTNERS";position:absolute;right:70px;top:80px;color:rgba(255,255,255,.12);font:900 clamp(44px,6vw,104px)/.86 Manrope,sans-serif;letter-spacing:-.07em;pointer-events:none}.partners-marquee-copy{position:relative;z-index:2;padding:0 clamp(30px,5vw,92px) 42px}.partners-marquee-copy .eyebrow{display:block;margin-bottom:18px;color:#aef5e3!important;letter-spacing:.24em;text-transform:uppercase;font:900 12px/1 Manrope,sans-serif}.partners-marquee-copy h2{margin:0 0 12px;color:#fff;font:900 clamp(42px,5vw,78px)/.93 Manrope,sans-serif;letter-spacing:-.07em}.partners-marquee-copy p{margin:0;max-width:760px;color:rgba(255,255,255,.78);font:650 clamp(16px,1.25vw,22px)/1.55 "DM Sans",sans-serif}.partners-marquee{position:relative;z-index:2;overflow:hidden;margin:0 0 18px;mask-image:linear-gradient(90deg,transparent 0,#000 7%,#000 93%,transparent 100%)}.partners-track{display:flex;gap:18px;width:max-content;animation:partnersMove 38s linear infinite;padding:0 18px}.partners-track.reverse{animation-duration:46s;animation-direction:reverse;opacity:.96}.partners-marquee:hover .partners-track{animation-play-state:paused}.partner-logo-card{flex:0 0 clamp(165px,11vw,226px);height:104px;border-radius:22px;display:grid;place-items:center;background:linear-gradient(180deg,#fff,#f5f8ff);border:1px solid rgba(255,255,255,.62);box-shadow:0 18px 44px rgba(4,18,58,.16);backdrop-filter:blur(12px);overflow:hidden;padding:18px}.partner-logo-card img{max-width:92%;max-height:78%;object-fit:contain;display:block}.partner-logo-card img[src*="logo-jawad"]{max-width:86%;max-height:86%}.partner-logo-card img[src*="premierfood"]{max-width:96%;max-height:82%}.partners-note{position:relative;z-index:2;margin:32px clamp(30px,5vw,92px) 0;display:flex;align-items:center;justify-content:space-between;gap:18px;border-top:1px solid rgba(255,255,255,.18);padding-top:22px;color:rgba(255,255,255,.78);font:800 13px/1.3 Manrope,sans-serif;letter-spacing:.12em;text-transform:uppercase}.partners-note a{display:inline-flex;align-items:center;gap:12px;text-decoration:none;color:#fff}.partners-note b{display:grid;place-items:center;width:38px;height:38px;border-radius:50%;background:rgba(255,255,255,.12)}@keyframes partnersMove{from{transform:translateX(0)}to{transform:translateX(-50%)}}html[lang="fr"] .partners-marquee-section .lang-en{display:none!important}html[lang="fr"] .partners-marquee-section .lang-fr{display:inline!important}@media(max-width:760px){.partners-marquee-section{padding:62px 0 72px}.partners-marquee-shell{width:calc(100% - 18px)!important;padding:42px 0;border-radius:28px}.partners-marquee-copy{padding:0 22px 30px}.partners-marquee-copy h2{font-size:38px}.partner-logo-card{flex-basis:158px;height:84px;border-radius:18px}.partners-note{margin:22px 22px 0;align-items:flex-start;flex-direction:column}}
+      .partners-marquee-section{position:relative;padding:86px 0 96px;overflow:hidden;background:linear-gradient(180deg,#fff 0%,#f7fbff 100%)}
+      .partners-marquee-shell{position:relative;width:min(1720px,calc(100% - 64px))!important;max-width:none!important;margin:0 auto!important;padding:66px clamp(24px,5vw,92px) 58px;border-radius:42px;background:linear-gradient(135deg,#12346f 0%,#214f99 46%,#6542da 100%);box-shadow:0 34px 94px rgba(25,43,110,.2);overflow:hidden;color:#fff;isolation:isolate}
+      .partners-marquee-shell:before{content:"";position:absolute;right:-95px;top:-205px;width:560px;height:560px;border-radius:50%;border:1px solid rgba(255,255,255,.16);background:radial-gradient(circle,rgba(255,255,255,.15),transparent 62%);z-index:0}.partners-marquee-shell:after{content:"TRUSTED PARTNERS";position:absolute;right:-18px;top:-14px;color:rgba(255,255,255,.052);font:900 clamp(64px,8.4vw,150px)/.8 Manrope,sans-serif;letter-spacing:-.08em;white-space:nowrap;z-index:0;pointer-events:none}
+      .partners-marquee-copy{position:relative;z-index:2;max-width:850px;margin:0 0 34px}.partners-marquee-copy .eyebrow{display:inline-flex;align-items:center;gap:14px;margin-bottom:18px;color:#aef5e3!important;letter-spacing:.24em;text-transform:uppercase;font:900 12px/1 Manrope,sans-serif}.partners-marquee-copy .eyebrow:after{content:"";width:48px;height:1px;background:rgba(174,245,227,.55)}.partners-marquee-copy h2{margin:0 0 12px;color:#fff;font:900 clamp(44px,5.1vw,82px)/.92 Manrope,sans-serif;letter-spacing:-.07em}.partners-marquee-copy p{margin:0;max-width:720px;color:rgba(255,255,255,.78);font:650 clamp(16px,1.24vw,21px)/1.55 "DM Sans",sans-serif}
+      .partners-stage{position:relative;z-index:2;margin:8px -20px 0;padding:10px 0 2px;overflow:hidden;mask-image:linear-gradient(90deg,transparent 0,#000 7%,#000 93%,transparent 100%)}.partners-track{display:flex;align-items:center;gap:22px;width:max-content;animation:partnersMove 32s linear infinite;padding:6px 20px}.partners-stage:hover .partners-track{animation-play-state:paused}.partner-logo-card{flex:0 0 clamp(190px,12vw,252px);height:122px;border-radius:24px;display:flex;align-items:center;justify-content:center;padding:22px 28px;background:linear-gradient(180deg,#fff 0%,#f4f7fd 100%);border:1px solid rgba(255,255,255,.76);box-shadow:0 22px 50px rgba(3,17,55,.18);overflow:hidden}.partner-logo-card img{display:block;width:100%;height:100%;max-width:100%;max-height:78px;object-fit:contain;object-position:center}.partner-fallback{display:none;width:100%;height:100%;align-items:center;justify-content:center;text-align:center;color:#173368;font:900 21px/1.05 Manrope,sans-serif;letter-spacing:-.03em}.text-logo{flex-direction:column;gap:6px;color:#173368;text-align:center}.text-logo b{font:900 30px/.95 Manrope,sans-serif;letter-spacing:-.06em}.text-logo small{font:900 11px/1 Manrope,sans-serif;letter-spacing:.18em;text-transform:uppercase;color:#6b78a0}.partners-note{position:relative;z-index:2;margin-top:32px;display:flex;align-items:center;justify-content:space-between;gap:18px;border-top:1px solid rgba(255,255,255,.18);padding-top:24px;color:rgba(255,255,255,.75);font:900 13px/1.3 Manrope,sans-serif;letter-spacing:.14em;text-transform:uppercase}.partners-note a{display:inline-flex;align-items:center;gap:12px;text-decoration:none;color:#fff}.partners-note b{display:grid;place-items:center;width:40px;height:40px;border-radius:50%;background:rgba(255,255,255,.14)}@keyframes partnersMove{from{transform:translateX(0)}to{transform:translateX(-50%)}}html[lang="fr"] .partners-marquee-section .lang-en{display:none!important}html[lang="fr"] .partners-marquee-section .lang-fr{display:inline!important}@media(max-width:760px){.partners-marquee-section{padding:62px 0 72px}.partners-marquee-shell{width:calc(100% - 18px)!important;padding:42px 22px;border-radius:28px}.partners-marquee-copy h2{font-size:40px}.partners-stage{margin:4px -22px 0}.partners-track{gap:14px}.partner-logo-card{flex-basis:170px;height:90px;border-radius:18px;padding:16px 18px}.text-logo b{font-size:22px}.partners-note{align-items:flex-start;flex-direction:column}}
     `);
-    const firstRowItems = [...approvedBrandLogos, ...approvedBrandLogos];
-    const secondRowItems = [...approvedBrandLogos.slice(2), approvedBrandLogos[0], approvedBrandLogos[1], ...approvedBrandLogos.slice(2), approvedBrandLogos[0], approvedBrandLogos[1]];
+    const row = partnerCards([...partners, ...partners, ...partners]);
     oldSection.outerHTML = `
       <section class="partners-marquee-section section" aria-label="Our brands and partners">
         <div class="wrap partners-marquee-shell">
           <div class="partners-marquee-copy">
             <span class="eyebrow"><span class="lang-en">Our brands & partners</span><span class="lang-fr">Nos marques & partenaires</span></span>
             <h2><span class="lang-en">Trusted by our partners.</span><span class="lang-fr">La confiance de nos partenaires.</span></h2>
-            <p><span class="lang-en">Jawad Food, Premier Food and selected Shama partner brands — shown in a clean moving logo marquee.</span><span class="lang-fr">Jawad Food, Premier Food et une sélection de marques partenaires Shama dans un défilement fluide.</span></p>
+            <p><span class="lang-en">Jawad Food, Premier Food and selected Shama partner brands in a clean premium moving showcase.</span><span class="lang-fr">Jawad Food, Premier Food et des marques partenaires Shama dans une présentation fluide.</span></p>
           </div>
-          <div class="partners-marquee" aria-hidden="true"><div class="partners-track">${partnerCards(firstRowItems)}</div></div>
-          <div class="partners-marquee" aria-hidden="true"><div class="partners-track reverse">${partnerCards(secondRowItems)}</div></div>
+          <div class="partners-stage" aria-hidden="true"><div class="partners-track">${row}</div></div>
           <div class="partners-note"><span><span class="lang-en">Working with trusted partners</span><span class="lang-fr">Avec des partenaires de confiance</span></span><a href="contact.html"><span class="lang-en">Partner with Shama</span><span class="lang-fr">Devenir partenaire</span> <b>→</b></a></div>
         </div>
       </section>`;
