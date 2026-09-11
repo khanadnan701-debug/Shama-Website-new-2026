@@ -50,9 +50,29 @@
     { category: 'sauces', title: 'Shama Coriander Mint Chutney', pack: '200g x 1', image: 'https://res.cloudinary.com/wy4nkkqq/image/upload/v1789155831/Shama_coriander_mint_chutney.png' }
   ];
 
+  // Keep the catalogue visually grouped by product type/pack size:
+  // core ginger/garlic pastes -> 2.3/2.5kg curry pastes -> 300g curry pastes -> pickles -> sauces/chutneys.
+  function sauceProductGroupRank(item) {
+    const title = String(item.title || '').toLowerCase();
+    const pack = String(item.pack || '').toLowerCase();
+    const isPaste = title.includes('paste');
+    const isCoreGingerGarlic = isPaste && (title.includes('ginger') || title.includes('garlic')) && (pack.includes('320g') || pack.includes('750g'));
+
+    if (isCoreGingerGarlic) return 0;
+    if (isPaste && (pack.includes('2.3kg') || pack.includes('2.5kg'))) return 1;
+    if (isPaste && pack.includes('300g')) return 2;
+    if (title.includes('pickle')) return 3;
+    return 4;
+  }
+
+  const orderedPasteProducts20260912 = pasteProducts20260911
+    .map((item, index) => ({ item, index }))
+    .sort((a, b) => sauceProductGroupRank(a.item) - sauceProductGroupRank(b.item) || a.index - b.index)
+    .map(({ item }) => item);
+
   if (typeof productData !== 'undefined' && Array.isArray(productData)) {
     const nonSauceProducts = productData.filter((item) => item.category !== 'sauces');
-    productData.splice(0, productData.length, ...nonSauceProducts, ...pasteProducts20260911);
+    productData.splice(0, productData.length, ...nonSauceProducts, ...orderedPasteProducts20260912);
   }
 
   if (typeof categories !== 'undefined' && Array.isArray(categories)) {
