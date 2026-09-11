@@ -37,7 +37,15 @@
     { category: 'sauces', title: 'Sunrise Ginger & Garlic Paste', pack: '320g x 1', image: 'https://res.cloudinary.com/wy4nkkqq/image/upload/v1789130495/Sunrise_ginger_garlic_paste_320g.png' },
     { category: 'sauces', title: 'Sunrise Ginger Paste', pack: '750g x 1', image: 'https://res.cloudinary.com/wy4nkkqq/image/upload/v1789130495/Sunrise_ginger_paste_750g.png' },
     { category: 'sauces', title: 'Sunrise Ginger & Garlic Paste', pack: '750g x 1', image: 'https://res.cloudinary.com/wy4nkkqq/image/upload/v1789130495/Sunrise_ginger_garlic_paste_750g.png' },
-    { category: 'sauces', title: 'Sunrise Garlic Paste', pack: '750g x 1', image: 'https://res.cloudinary.com/wy4nkkqq/image/upload/v1789130495/Sunrise_garlic_paste_750g.png' }
+    { category: 'sauces', title: 'Sunrise Garlic Paste', pack: '750g x 1', image: 'https://res.cloudinary.com/wy4nkkqq/image/upload/v1789130495/Sunrise_garlic_paste_750g.png' },
+
+    // Lower-volume sauce range: keep these after the main paste/pickle catalogue.
+    { category: 'sauces', title: 'Shama Tamarind Date Sauce', pack: '220g x 1', image: 'https://res.cloudinary.com/wy4nkkqq/image/upload/v1789155835/Shama_tamarind_date_sauce.png' },
+    { category: 'sauces', title: 'Shama Sweet Chilli Sauce', pack: '215g x 1', image: 'https://res.cloudinary.com/wy4nkkqq/image/upload/v1789155834/Shama_sweet_chilli_sauce.png' },
+    { category: 'sauces', title: 'Shama Red Chilli Sauce', pack: '200g x 1', image: 'https://res.cloudinary.com/wy4nkkqq/image/upload/v1789155833/Shama_red_chilli_sauce.png' },
+    { category: 'sauces', title: 'Shama Dark Soy Sauce', pack: '215g x 1', image: 'https://res.cloudinary.com/wy4nkkqq/image/upload/v1789155832/Shama_dark_soy_sauce.png' },
+    { category: 'sauces', title: 'Shama Green Chilli Sauce', pack: '200g x 1', image: 'https://res.cloudinary.com/wy4nkkqq/image/upload/v1789155831/Shama_green_chilli_sauce.png' },
+    { category: 'sauces', title: 'Shama Coriander Mint Chutney', pack: '200g x 1', image: 'https://res.cloudinary.com/wy4nkkqq/image/upload/v1789155831/Shama_coriander_mint_chutney.png' }
   ];
 
   if (typeof productData !== 'undefined' && Array.isArray(productData)) {
