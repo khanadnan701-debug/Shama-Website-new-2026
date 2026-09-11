@@ -3,14 +3,6 @@
   if (document.body.dataset.category !== 'flour') return;
   if (typeof productData === 'undefined' || !Array.isArray(productData)) return;
 
-  const flourTitles = new Set([
-    'Shama Wheat Flour',
-    'Shama Multigrain Atta',
-    'Shama Gram Flour',
-    'Shama Chakki Gold Atta',
-    'Shama Chapati Atta T110'
-  ]);
-
   const lentilProducts = [
     { category: 'flour', title: 'Shama Desi Black Eye Beans', pack: '1kg', image: 'https://res.cloudinary.com/wy4nkkqq/image/upload/v1789131919/Shama_desi_black_eye_beans_1kg.png' },
     { category: 'flour', title: 'Shama Desi Masoor Dal Whole', pack: '1kg', image: 'https://res.cloudinary.com/wy4nkkqq/image/upload/v1789131920/Shama_desi_masoor_dal_whole_1kg.png' },
@@ -32,8 +24,8 @@
     { category: 'flour', title: 'Shama Masoor Dal', pack: '5kg', image: 'https://res.cloudinary.com/wy4nkkqq/image/upload/v1789131928/Shama_masoor_dal_5kg.png' }
   ];
 
-  const preserved = productData.filter(item => item.category !== 'flour' || flourTitles.has(item.title));
-  productData.splice(0, productData.length, ...preserved, ...lentilProducts);
+  const nonFlourProducts = productData.filter(item => item.category !== 'flour');
+  productData.splice(0, productData.length, ...nonFlourProducts, ...lentilProducts);
 
   const rerender = () => {
     if (typeof window.shamaRerenderSimpleProducts === 'function') {
@@ -41,6 +33,10 @@
     }
   };
 
-  document.addEventListener('shama:product-images-updated', rerender, { once: true });
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', rerender, { once: true });
+  } else {
+    setTimeout(rerender, 0);
+  }
   window.addEventListener('load', rerender, { once: true });
 })();
