@@ -1,0 +1,15 @@
+body[data-page="about"] .about-founder-latest{margin:54px 0 0;padding:46px;border-radius:32px;background:#f5f8fb;border:1px solid #e4ebf2}
+body[data-page="about"] .about-founder-latest-head{display:grid;grid-template-columns:1.15fr .85fr;gap:46px;align-items:end;margin-bottom:28px}
+body[data-page="about"] .about-founder-latest-head small{display:block;margin-bottom:10px;color:#ef5c78;font:800 11px/1 Manrope,sans-serif;letter-spacing:.14em;text-transform:uppercase}
+body[data-page="about"] .about-founder-latest-head h3{margin:0;color:#0d1f3b;font:800 clamp(36px,4vw,58px)/.98 Manrope,sans-serif;letter-spacing:-.05em}
+body[data-page="about"] .about-founder-latest-head p{margin:0;color:#66728a;font:500 15px/1.7 "DM Sans",sans-serif}
+body[data-page="about"] .about-founder-latest-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+body[data-page="about"] .about-founder-latest-card{position:relative;min-height:260px;padding:26px;border-radius:24px;background:#fff;border:1px solid #e6ebf1;box-shadow:0 14px 32px rgba(20,42,70,.055);overflow:hidden}
+body[data-page="about"] .about-founder-latest-card:before{content:"";position:absolute;left:0;top:0;width:100%;height:4px;background:linear-gradient(90deg,#24c7c2,#6b57e8,#e4b35c)}
+body[data-page="about"] .about-founder-latest-card time{display:block;color:#6c58e8;font:900 12px/1 Manrope,sans-serif;letter-spacing:.08em;text-transform:uppercase}
+body[data-page="about"] .about-founder-latest-card h4{margin:18px 0 13px;color:#0d1f3b;font:800 22px/1.15 Manrope,sans-serif;letter-spacing:-.025em}
+body[data-page="about"] .about-founder-latest-card p{margin:0;color:#6a768c;font:500 14px/1.65 "DM Sans",sans-serif}
+body[data-page="about"] .about-founder-latest-card a{position:absolute;left:26px;bottom:24px;display:inline-flex;gap:8px;align-items:center;text-decoration:none;color:#10233d;font:800 12px/1 Manrope,sans-serif}
+body[data-page="about"] .about-founder-latest-card a b{color:#ef5c78}
+@media(max-width:980px){body[data-page="about"] .about-founder-latest-head{grid-template-columns:1fr}.about-founder-latest-grid{grid-template-columns:1fr!important}.about-founder-latest-card{min-height:220px!important}}
+@media(max-width:640px){body[data-page="about"] .about-founder-latest{padding:28px 20px;border-radius:24px}}
