@@ -4,3 +4,16 @@
 #shama-language-switch{position:fixed!important;left:auto!important;right:max(24px,calc((100vw - 1180px)/2 + 145px))!important;top:52px!important;bottom:auto!important;z-index:2147483000!important;margin:0!important;box-shadow:0 7px 20px rgba(24,34,72,.12)!important;border-color:rgba(24,34,72,.12)!important;background:rgba(255,255,255,.94)!important;backdrop-filter:blur(18px)}
 @media(max-width:900px){#shama-language-switch{left:auto!important;right:76px!important;top:52px!important;bottom:auto!important;transform:scale(.92);transform-origin:right center}}
 @media(max-width:520px){#shama-language-switch{right:67px!important;top:47px!important;transform:scale(.86)}}
+
+/* Lock the language control to the actual nav bar instead of the viewport. */
+.nav-shell{anchor-name:--shama-top-nav}
+#shama-language-switch{top:46px!important;bottom:auto!important;transform:translateY(-50%)!important;transform-origin:center center!important}
+@supports (top:anchor(center)){
+  #shama-language-switch{position-anchor:--shama-top-nav!important;top:anchor(center)!important;transform:translateY(-50%)!important}
+}
+@media(max-width:900px){#shama-language-switch{top:46px!important;transform:translateY(-50%) scale(.92)!important;transform-origin:right center!important}}
+@media(max-width:520px){#shama-language-switch{top:41px!important;transform:translateY(-50%) scale(.86)!important}}
+@supports (top:anchor(center)){
+  @media(max-width:900px){#shama-language-switch{top:anchor(center)!important;transform:translateY(-50%) scale(.92)!important}}
+  @media(max-width:520px){#shama-language-switch{top:anchor(center)!important;transform:translateY(-50%) scale(.86)!important}}
+}
