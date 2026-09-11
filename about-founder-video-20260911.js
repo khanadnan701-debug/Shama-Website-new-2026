@@ -15,7 +15,7 @@
       <div class="about-founder-video-grid">
         <div class="about-founder-video-frame">
           <iframe
-            src="https://www.youtube-nocookie.com/embed/s5Xb1zEhAjY?rel=0&modestbranding=1"
+            src="https://www.youtube-nocookie.com/embed/eAk69JajJmI?rel=0&modestbranding=1"
             title="Aik Din Geo Ke Saath - Sardar Zahoor Iqbal, President Shama International"
             loading="lazy"
             referrerpolicy="strict-origin-when-cross-origin"
@@ -32,14 +32,14 @@
             <div><b>Date</b><span>12 Nov 2023</span></div>
             <div><b>Program</b><span>Aik Din Geo Ke Saath</span></div>
             <div><b>Host</b><span>Suhail Warraich</span></div>
-            <div><b>Source</b><span>Geo News / Aik Din Geo Kay Sath</span></div>
+            <div><b>Source</b><span>Aik Din Geo Kay Sath / Geo</span></div>
           </div>
           <div class="about-founder-video-links">
-            <a href="https://www.youtube.com/watch?v=s5Xb1zEhAjY" target="_blank" rel="noopener"><span class="lang-en">Watch on YouTube</span><span class="lang-fr">Voir sur YouTube</span><b>↗</b></a>
+            <a href="https://www.youtube.com/watch?v=eAk69JajJmI" target="_blank" rel="noopener"><span class="lang-en">Watch on YouTube</span><span class="lang-fr">Voir sur YouTube</span><b>↗</b></a>
             <a href="https://www.geo.tv/shows/aik-din-geo-ke-saath/518675-interview-with-pakistani-businessman-sardar-zahoor-iqbal" target="_blank" rel="noopener"><span class="lang-en">Geo interview page</span><span class="lang-fr">Page de l'interview Geo</span><b>↗</b></a>
           </div>
-          <p class="about-founder-video-note lang-en">This video is embedded from a verified Geo News publication and can be joined later by additional verified interviews, speeches and event footage.</p>
-          <p class="about-founder-video-note lang-fr">Cette vidéo provient d'une publication vérifiée de Geo News. D'autres interviews, discours et vidéos d'événements vérifiés pourront être ajoutés ensuite.</p>
+          <p class="about-founder-video-note lang-en">This embed uses the verified Aik Din Geo Kay Sath program channel upload. The separate Geo News upload is restricted in some countries, including India.</p>
+          <p class="about-founder-video-note lang-fr">Cette intégration utilise la vidéo publiée par la chaîne vérifiée de l'émission Aik Din Geo Kay Sath. Une autre publication de Geo News est restreinte dans certains pays, dont l'Inde.</p>
         </div>
       </div>
     `;
