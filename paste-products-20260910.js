@@ -2,6 +2,20 @@
   'use strict';
 
   const pasteProducts20260911 = [
+    // Core ginger / garlic range first. Keep SHAMA before SUNRISE.
+    { category: 'sauces', title: 'Shama Ginger Paste', pack: '320g x 1', image: 'https://res.cloudinary.com/wy4nkkqq/image/upload/v1789130494/Shama_ginger_paste_320g.png' },
+    { category: 'sauces', title: 'Shama Garlic Paste', pack: '320g x 1', image: 'https://res.cloudinary.com/wy4nkkqq/image/upload/v1789130493/Shama_garlic_paste_320g.png' },
+    { category: 'sauces', title: 'Shama Ginger & Garlic Paste', pack: '320g x 1', image: 'https://res.cloudinary.com/wy4nkkqq/image/upload/v1789130494/Shama_ginger_garlic_320g.png' },
+    { category: 'sauces', title: 'Shama Ginger Paste', pack: '750g x 1', image: 'https://res.cloudinary.com/wy4nkkqq/image/upload/v1789130493/Shama_ginger_paste_750g.png' },
+    { category: 'sauces', title: 'Shama Garlic Paste', pack: '750g x 1', image: 'https://res.cloudinary.com/wy4nkkqq/image/upload/v1789130493/Shama_garlic_paste_750g.png' },
+    { category: 'sauces', title: 'Shama Ginger & Garlic Paste', pack: '750g x 1', image: 'https://res.cloudinary.com/wy4nkkqq/image/upload/v1789130493/Shama_ginger_garlic_750g.png' },
+    { category: 'sauces', title: 'Sunrise Ginger Paste', pack: '320g x 1', image: 'https://res.cloudinary.com/wy4nkkqq/image/upload/v1789130495/Sunrise_ginger_paste_320g.png' },
+    { category: 'sauces', title: 'Sunrise Garlic Paste', pack: '320g x 1', image: 'https://res.cloudinary.com/wy4nkkqq/image/upload/v1789130494/Sunrise_garlic_paste_320g.png' },
+    { category: 'sauces', title: 'Sunrise Ginger & Garlic Paste', pack: '320g x 1', image: 'https://res.cloudinary.com/wy4nkkqq/image/upload/v1789130495/Sunrise_ginger_garlic_paste_320g.png' },
+    { category: 'sauces', title: 'Sunrise Ginger Paste', pack: '750g x 1', image: 'https://res.cloudinary.com/wy4nkkqq/image/upload/v1789130495/Sunrise_ginger_paste_750g.png' },
+    { category: 'sauces', title: 'Sunrise Garlic Paste', pack: '750g x 1', image: 'https://res.cloudinary.com/wy4nkkqq/image/upload/v1789130495/Sunrise_garlic_paste_750g.png' },
+    { category: 'sauces', title: 'Sunrise Ginger & Garlic Paste', pack: '750g x 1', image: 'https://res.cloudinary.com/wy4nkkqq/image/upload/v1789130495/Sunrise_ginger_garlic_paste_750g.png' },
+
     { category: 'sauces', title: 'Shama Mint Sauce', pack: '2.7kg x 1', image: 'https://res.cloudinary.com/wy4nkkqq/image/upload/v1789120965/shama_mint_sauce_2.7kg.png' },
     { category: 'sauces', title: 'Shama Butter Chicken Curry Paste', pack: '300g x 1', image: 'https://res.cloudinary.com/wy4nkkqq/image/upload/v1789120966/Shama_butter_chicken_curry_paste_300g.png' },
     { category: 'sauces', title: 'Shama Biryani Curry Paste', pack: '2.3kg x 1', image: 'https://res.cloudinary.com/wy4nkkqq/image/upload/v1789120966/shama_biryani_paste_2.3kg.png' },
@@ -26,18 +40,6 @@
     { category: 'sauces', title: 'Shama Tikka Masala Curry Paste', pack: '300g x 1', image: 'https://res.cloudinary.com/wy4nkkqq/image/upload/v1789120972/Shama_tikka_masala_curry_paste_300g.png' },
     { category: 'sauces', title: 'Shama Vindaloo Curry Paste', pack: '2.3kg x 1', image: 'https://res.cloudinary.com/wy4nkkqq/image/upload/v1789120973/Shama_vindaloo_paste_2.3kg.png' },
     { category: 'sauces', title: 'Shama Sweet Mango Chutney', pack: '3kg x 1', image: 'https://res.cloudinary.com/wy4nkkqq/image/upload/v1789120980/Shama_sweet_mango_chutney_3kg.png' },
-    { category: 'sauces', title: 'Shama Ginger & Garlic Paste', pack: '750g x 1', image: 'https://res.cloudinary.com/wy4nkkqq/image/upload/v1789130493/Shama_ginger_garlic_750g.png' },
-    { category: 'sauces', title: 'Shama Ginger Paste', pack: '750g x 1', image: 'https://res.cloudinary.com/wy4nkkqq/image/upload/v1789130493/Shama_ginger_paste_750g.png' },
-    { category: 'sauces', title: 'Shama Garlic Paste', pack: '320g x 1', image: 'https://res.cloudinary.com/wy4nkkqq/image/upload/v1789130493/Shama_garlic_paste_320g.png' },
-    { category: 'sauces', title: 'Shama Garlic Paste', pack: '750g x 1', image: 'https://res.cloudinary.com/wy4nkkqq/image/upload/v1789130493/Shama_garlic_paste_750g.png' },
-    { category: 'sauces', title: 'Shama Ginger & Garlic Paste', pack: '320g x 1', image: 'https://res.cloudinary.com/wy4nkkqq/image/upload/v1789130494/Shama_ginger_garlic_320g.png' },
-    { category: 'sauces', title: 'Sunrise Garlic Paste', pack: '320g x 1', image: 'https://res.cloudinary.com/wy4nkkqq/image/upload/v1789130494/Sunrise_garlic_paste_320g.png' },
-    { category: 'sauces', title: 'Shama Ginger Paste', pack: '320g x 1', image: 'https://res.cloudinary.com/wy4nkkqq/image/upload/v1789130494/Shama_ginger_paste_320g.png' },
-    { category: 'sauces', title: 'Sunrise Ginger Paste', pack: '320g x 1', image: 'https://res.cloudinary.com/wy4nkkqq/image/upload/v1789130495/Sunrise_ginger_paste_320g.png' },
-    { category: 'sauces', title: 'Sunrise Ginger & Garlic Paste', pack: '320g x 1', image: 'https://res.cloudinary.com/wy4nkkqq/image/upload/v1789130495/Sunrise_ginger_garlic_paste_320g.png' },
-    { category: 'sauces', title: 'Sunrise Ginger Paste', pack: '750g x 1', image: 'https://res.cloudinary.com/wy4nkkqq/image/upload/v1789130495/Sunrise_ginger_paste_750g.png' },
-    { category: 'sauces', title: 'Sunrise Ginger & Garlic Paste', pack: '750g x 1', image: 'https://res.cloudinary.com/wy4nkkqq/image/upload/v1789130495/Sunrise_ginger_garlic_paste_750g.png' },
-    { category: 'sauces', title: 'Sunrise Garlic Paste', pack: '750g x 1', image: 'https://res.cloudinary.com/wy4nkkqq/image/upload/v1789130495/Sunrise_garlic_paste_750g.png' },
 
     // Lower-volume sauce range: keep these after the main paste/pickle catalogue.
     { category: 'sauces', title: 'Shama Tamarind Date Sauce', pack: '220g x 1', image: 'https://res.cloudinary.com/wy4nkkqq/image/upload/v1789155835/Shama_tamarind_date_sauce.png' },
