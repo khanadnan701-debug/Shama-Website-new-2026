@@ -27,6 +27,14 @@
   const nonFlourProducts = productData.filter(item => item.category !== 'flour');
   productData.splice(0, productData.length, ...nonFlourProducts, ...lentilProducts);
 
+  if (typeof categories !== 'undefined' && Array.isArray(categories)) {
+    const category = categories.find(item => item.slug === 'flour');
+    if (category) {
+      category.name = 'Lentils';
+      category.desc = 'A complete range of Shama lentils, dals, beans and peas';
+    }
+  }
+
   const rerender = () => {
     if (typeof window.shamaRerenderSimpleProducts === 'function') {
       window.shamaRerenderSimpleProducts();
