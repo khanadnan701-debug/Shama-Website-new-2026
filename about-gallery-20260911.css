@@ -1,11 +1,11 @@
 /* Clean poster-ratio product showcase for About page */
-.aboutx-gallery-section{padding:78px 0 84px;background:linear-gradient(180deg,#f7f8fc 0%,#f1f4f9 100%)}
+.aboutx-gallery-section{padding:60px 0 48px;background:linear-gradient(180deg,#f7f8fc 0%,#f1f4f9 100%)}
 .aboutx-gallery-section .aboutx-section-title{margin-bottom:24px}
 .aboutx-gallery-section .aboutx-text-link{padding:10px 14px;border:1px solid #dfe4ed;border-radius:12px;background:#fff;box-shadow:0 8px 22px rgba(23,40,77,.05);transition:transform .2s ease,box-shadow .2s ease}
 .aboutx-gallery-section .aboutx-text-link:hover{transform:translateY(-2px);box-shadow:0 12px 28px rgba(23,40,77,.09)}
 
-/* All product artworks are poster-format (about 765x820). Match the cards to that ratio so nothing is cropped and no dark side bars appear. */
-.aboutx-gallery{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:14px;align-items:start}
+/* Important: the older About stylesheet defines two fixed 250px grid rows. With five cards this leaves an empty second row, creating a huge gap above the CTA. Reset explicit rows here so only rows that actually contain products take space. */
+.aboutx-gallery{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));grid-template-rows:none;grid-auto-rows:auto;gap:14px;align-items:start}
 .aboutx-gallery-card,.aboutx-gallery-card.big,.aboutx-gallery-card.wide,.aboutx-gallery-card:nth-child(2),.aboutx-gallery-card:nth-child(3),.aboutx-gallery-card:nth-child(4){grid-column:auto;grid-row:auto;aspect-ratio:765/820;position:relative;overflow:hidden;border-radius:22px;background:#e8ebf2;box-shadow:0 12px 30px rgba(23,40,77,.09);isolation:isolate;transition:transform .25s ease,box-shadow .25s ease}
 .aboutx-gallery-card img{position:absolute;inset:0;z-index:1;width:100%;height:100%;object-fit:cover;object-position:center;transition:transform .35s cubic-bezier(.2,.7,.2,1)}
 .aboutx-gallery-card:after{content:"";position:absolute;z-index:2;inset:60% 0 0;background:linear-gradient(180deg,transparent,rgba(8,17,35,.72));pointer-events:none}
@@ -22,12 +22,12 @@
 .aboutx-product-stack figure img{width:100%!important;height:100%!important;object-fit:cover!important;object-position:center!important;border-radius:0!important}
 
 @media(max-width:1100px){
-  .aboutx-gallery{grid-template-columns:repeat(3,minmax(0,1fr))}
+  .aboutx-gallery{grid-template-columns:repeat(3,minmax(0,1fr));grid-template-rows:none;grid-auto-rows:auto}
 }
 
 @media(max-width:760px){
-  .aboutx-gallery-section{padding:60px 0 64px}
-  .aboutx-gallery{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+  .aboutx-gallery-section{padding:48px 0 44px}
+  .aboutx-gallery{grid-template-columns:repeat(2,minmax(0,1fr));grid-template-rows:none;grid-auto-rows:auto;gap:12px}
   .aboutx-gallery-card,.aboutx-gallery-card.big,.aboutx-gallery-card.wide,.aboutx-gallery-card:nth-child(2),.aboutx-gallery-card:nth-child(3),.aboutx-gallery-card:nth-child(4){height:auto;border-radius:18px}
   .aboutx-gallery-card:before{opacity:1;transform:none;width:31px;height:31px;font-size:14px;right:10px;top:10px}
   .aboutx-gallery-card span,.aboutx-gallery-card.big span{font-size:11px;left:11px;bottom:10px;padding:6px 8px}
@@ -37,6 +37,6 @@
 }
 
 @media(max-width:430px){
-  .aboutx-gallery{grid-template-columns:1fr 1fr;gap:9px}
+  .aboutx-gallery{grid-template-columns:1fr 1fr;grid-template-rows:none;grid-auto-rows:auto;gap:9px}
   .aboutx-gallery-card span,.aboutx-gallery-card.big span{font-size:10px}
 }
