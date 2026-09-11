@@ -3,13 +3,39 @@
   if (document.body.dataset.page !== 'product') return;
 
   const FALLBACK_IMAGE = 'assets/shama-logo.png';
+
   let style = document.querySelector('#product-simple-style');
   if (!style) {
     style = document.createElement('link');
     style.id = 'product-simple-style';
     style.rel = 'stylesheet';
-    style.href = 'product-simple.css?v=20260911-zoom2';
+    style.href = 'product-simple.css?v=20260911-zoom3';
     document.head.appendChild(style);
+  }
+
+  if (!document.querySelector('#product-zoom-force-style')) {
+    const forceStyle = document.createElement('style');
+    forceStyle.id = 'product-zoom-force-style';
+    forceStyle.textContent = `
+      body.product-lightbox-open{overflow:hidden!important}
+      #product-lightbox.product-lightbox{position:fixed!important;z-index:2147483000!important;inset:0!important;display:grid!important;place-items:center!important;padding:24px!important;visibility:hidden!important;opacity:0!important;pointer-events:none!important;transition:opacity .2s ease,visibility .2s ease!important}
+      #product-lightbox.product-lightbox.open{visibility:visible!important;opacity:1!important;pointer-events:auto!important}
+      #product-lightbox .product-lightbox-backdrop{position:absolute!important;inset:0!important;width:100%!important;height:100%!important;border:0!important;background:rgba(5,12,28,.88)!important;backdrop-filter:blur(9px)!important;cursor:zoom-out!important}
+      #product-lightbox .product-lightbox-panel{position:relative!important;z-index:2!important;width:min(1040px,94vw)!important;max-height:94vh!important;display:grid!important;grid-template-rows:minmax(0,1fr) auto!important;overflow:hidden!important;border-radius:26px!important;background:#fff!important;box-shadow:0 38px 120px rgba(0,0,0,.45)!important}
+      #product-lightbox .product-lightbox-media{position:relative!important;min-height:0!important;display:grid!important;place-items:center!important;padding:28px 76px!important;background:#f4f6fb!important;overflow:hidden!important}
+      #product-lightbox .product-lightbox-media img{display:block!important;max-width:100%!important;max-height:72vh!important;width:auto!important;height:auto!important;object-fit:contain!important}
+      #product-lightbox .product-lightbox-close{position:absolute!important;z-index:5!important;top:16px!important;right:16px!important;width:44px!important;height:44px!important;border:0!important;border-radius:50%!important;background:#17233d!important;color:#fff!important;cursor:pointer!important;font:400 30px/1 Arial,sans-serif!important}
+      #product-lightbox .product-lightbox-nav{position:absolute!important;z-index:4!important;top:50%!important;transform:translateY(-50%)!important;width:48px!important;height:58px!important;border:0!important;border-radius:16px!important;background:rgba(23,35,61,.92)!important;color:#fff!important;cursor:pointer!important;font:400 34px/1 Arial,sans-serif!important}
+      #product-lightbox .product-lightbox-nav.prev{left:14px!important}
+      #product-lightbox .product-lightbox-nav.next{right:14px!important}
+      #product-lightbox .product-lightbox-copy{padding:17px 24px 20px!important;border-top:1px solid rgba(31,44,75,.08)!important;background:#fff!important}
+      #product-lightbox .product-lightbox-copy span{display:block!important;margin-bottom:4px!important;color:#ff5b88!important;font-weight:800!important;font-size:9px!important;text-transform:uppercase!important;letter-spacing:.12em!important}
+      #product-lightbox .product-lightbox-copy h3{margin:0!important;color:#152039!important;font:800 clamp(21px,3vw,31px)/1.15 Manrope,Arial,sans-serif!important}
+      #product-lightbox .product-lightbox-copy p{margin:7px 0 0!important;color:#5e6880!important;font-weight:700!important}
+      .simple-product-media,.simple-product-media *{cursor:zoom-in!important}
+      @media(max-width:640px){#product-lightbox.product-lightbox{padding:10px!important}#product-lightbox .product-lightbox-panel{width:100%!important;max-height:96vh!important;border-radius:18px!important}#product-lightbox .product-lightbox-media{padding:56px 16px 72px!important}#product-lightbox .product-lightbox-media img{max-height:68vh!important}#product-lightbox .product-lightbox-nav{top:auto!important;bottom:12px!important;transform:none!important;width:44px!important;height:44px!important;border-radius:50%!important}}
+    `;
+    document.head.appendChild(forceStyle);
   }
 
   if (!document.querySelector('#product-pack-style')) {
@@ -51,13 +77,11 @@
       </div>`);
 
     lightbox = document.querySelector('#product-lightbox');
-    lightbox.querySelectorAll('[data-lightbox-close]').forEach(button => {
-      button.addEventListener('click', event => {
-        event.preventDefault();
-        event.stopPropagation();
-        closeLightbox();
-      });
-    });
+    lightbox.querySelectorAll('[data-lightbox-close]').forEach(button => button.addEventListener('click', event => {
+      event.preventDefault();
+      event.stopPropagation();
+      closeLightbox();
+    }));
     lightbox.querySelector('.product-lightbox-nav.prev').addEventListener('click', event => {
       event.preventDefault();
       event.stopPropagation();
@@ -90,26 +114,25 @@
   }
 
   function openLightbox(items, index, trigger) {
-    if (!items.length) return;
+    if (!Array.isArray(items) || !items.length) return;
     lightboxItems = items;
     lightboxIndex = Math.max(0, Math.min(Number(index) || 0, items.length - 1));
     lightboxLastFocus = trigger || document.activeElement;
-    updateLightbox();
     const lightbox = ensureLightbox();
+    updateLightbox();
     lightbox.classList.add('open');
     lightbox.setAttribute('aria-hidden', 'false');
     document.body.classList.add('product-lightbox-open');
-    lightbox.querySelector('.product-lightbox-close')?.focus({ preventScroll: true });
   }
 
   function closeLightbox() {
     const lightbox = document.querySelector('#product-lightbox');
-    if (!lightbox || !lightbox.classList.contains('open')) return;
+    if (!lightbox) return;
     lightbox.classList.remove('open');
     lightbox.setAttribute('aria-hidden', 'true');
     document.body.classList.remove('product-lightbox-open');
     if (lightboxLastFocus && typeof lightboxLastFocus.focus === 'function') {
-      lightboxLastFocus.focus({ preventScroll: true });
+      try { lightboxLastFocus.focus({ preventScroll: true }); } catch (_) { lightboxLastFocus.focus(); }
     }
   }
 
@@ -118,6 +141,26 @@
     lightboxIndex = (lightboxIndex + direction + lightboxItems.length) % lightboxItems.length;
     updateLightbox();
   }
+
+  function itemsFromVisibleCards() {
+    return Array.from(document.querySelectorAll('.simple-product-zoom')).map(button => ({
+      image: button.dataset.zoomImage || button.querySelector('img')?.src || FALLBACK_IMAGE,
+      title: button.dataset.zoomTitle || button.querySelector('img')?.alt || 'Shama product',
+      pack: button.dataset.zoomPack || ''
+    }));
+  }
+
+  document.addEventListener('click', event => {
+    const trigger = event.target.closest?.('.simple-product-zoom');
+    if (!trigger) return;
+    const buttons = Array.from(document.querySelectorAll('.simple-product-zoom'));
+    const index = Math.max(0, buttons.indexOf(trigger));
+    const items = itemsFromVisibleCards();
+    if (!items.length) return;
+    event.preventDefault();
+    event.stopImmediatePropagation();
+    openLightbox(items, index, trigger);
+  }, true);
 
   document.addEventListener('keydown', event => {
     const lightbox = document.querySelector('#product-lightbox');
@@ -135,7 +178,7 @@
     if (!category) return;
 
     const items = productData.filter(item => item.category === slug);
-    activeCatalog = items;
+    if (typeof activeCatalog !== 'undefined') activeCatalog = items;
     document.title = `${category.name} | Shama International`;
 
     main.innerHTML = hero(
@@ -149,7 +192,7 @@
 
     grid.innerHTML = items.map((item, index) => `
       <article class="simple-product-card">
-        <button class="simple-product-media simple-product-zoom" type="button" data-index="${index}" aria-label="Open ${escapeHtml(item.title)} image">
+        <button class="simple-product-media simple-product-zoom" type="button" data-index="${index}" data-zoom-image="${escapeHtml(item.image || FALLBACK_IMAGE)}" data-zoom-title="${escapeHtml(item.title)}" data-zoom-pack="${escapeHtml(cleanPack(item.pack))}" aria-label="Open ${escapeHtml(item.title)} image">
           <span class="simple-product-index">${String(index + 1).padStart(2, '0')}</span>
           <span class="simple-zoom-hint" aria-hidden="true">⌕</span>
           <img loading="lazy" decoding="async" draggable="false" src="${escapeHtml(item.image || FALLBACK_IMAGE)}" alt="${escapeHtml(item.title)}">
@@ -164,23 +207,8 @@
 
     grid.querySelectorAll('.simple-product-media img').forEach(image => {
       image.addEventListener('error', () => {
-        if (image.src.endsWith('/assets/shama-logo.png')) return;
         image.src = FALLBACK_IMAGE;
       }, { once: true });
-    });
-
-    const lightboxList = items.map(item => ({
-      image: item.image || FALLBACK_IMAGE,
-      title: item.title,
-      pack: item.pack
-    }));
-
-    grid.addEventListener('click', event => {
-      const trigger = event.target.closest('.simple-product-zoom');
-      if (!trigger || !grid.contains(trigger)) return;
-      event.preventDefault();
-      event.stopPropagation();
-      openLightbox(lightboxList, Number(trigger.dataset.index || 0), trigger);
     });
 
     document.dispatchEvent(new CustomEvent('shama:product-simple-rendered'));
