@@ -45,6 +45,7 @@ const UPSTREAM_HEADERS = {
 };
 
 const PREPAINT_HEAD = `<style id="shama-prepaint">html{background:#fffdf8}html:not(.shama-ready) body{opacity:0!important;visibility:hidden!important}html.shama-ready body{opacity:1!important;visibility:visible!important;transition:opacity .14s ease}@media(prefers-reduced-motion:reduce){html.shama-ready body{transition:none}}</style><script id="shama-prepaint-script">(()=>{let done=false;const reveal=()=>{if(done)return;done=true;requestAnimationFrame(()=>requestAnimationFrame(()=>document.documentElement.classList.add('shama-ready')))};window.addEventListener('load',()=>setTimeout(reveal,45),{once:true});setTimeout(reveal,2200)})();</script>`;
+const GLOBAL_MOBILE_NAV = `<script id="shama-global-mobile-nav" src="/mobile-nav-20260912-v2.js?v=20260912-2" defer></script>`;
 
 async function fetchVideo(request, sources) {
   const range = request.headers.get('Range');
@@ -108,12 +109,12 @@ async function withFreshHeaders(response) {
     headers.set('Expires', '0');
   } else if (isStaticText) {
     headers.set('Cache-Control', 'no-cache, must-revalidate, max-age=0');
-    headers.set('CDN-Cache-Control', 'public, max-age=300');
-    headers.set('Cloudflare-CDN-Cache-Control', 'public, max-age=300');
+    headers.set('CDN-Cache-Control', 'public, max-age=120');
+    headers.set('Cloudflare-CDN-Cache-Control', 'public, max-age=120');
   }
 
   headers.delete('Clear-Site-Data');
-  headers.set('X-Shama-Release', '20260911-stable-paint-2');
+  headers.set('X-Shama-Release', '20260912-mobile-nav-2');
 
   let body = response.body;
 
@@ -121,6 +122,10 @@ async function withFreshHeaders(response) {
     let html = await response.text();
     if (!html.includes('id="shama-prepaint"')) {
       html = html.replace(/<head([^>]*)>/i, match => `${match}${PREPAINT_HEAD}`);
+    }
+    if (!html.includes('id="shama-global-mobile-nav"')) {
+      if (/<\/body>/i.test(html)) html = html.replace(/<\/body>/i, `${GLOBAL_MOBILE_NAV}</body>`);
+      else html += GLOBAL_MOBILE_NAV;
     }
     body = html;
     headers.delete('Content-Length');
