@@ -31,37 +31,4 @@
     const newImage = imageByTitle[item.title];
     if (newImage) item.image = newImage;
   });
-
-  const additions = [
-    {
-      category: 'beverages',
-      title: 'Shama Falooda Rabri',
-      pack: '290ml x 24',
-      image: 'https://res.cloudinary.com/wy4nkkqq/image/upload/v1789231967/Shama_Falooda_Rabri.png'
-    },
-    {
-      category: 'beverages',
-      title: 'Shama Falooda Pista',
-      pack: '290ml x 24',
-      image: 'https://res.cloudinary.com/wy4nkkqq/image/upload/v1789231967/Shama_Falooda_Pista.png'
-    },
-    {
-      category: 'beverages',
-      title: 'Shama Basil Seed Drink Lemon',
-      pack: '290ml x 24',
-      image: 'https://res.cloudinary.com/wy4nkkqq/image/upload/v1789231971/Shama_Basil_Seed_Drink_Lemon.png'
-    },
-    {
-      category: 'beverages',
-      title: 'Shama Basil Seed Drink Melon',
-      pack: '290ml x 24',
-      image: 'https://res.cloudinary.com/wy4nkkqq/image/upload/v1789231971/Shama_Basil_Seed_Drink_Melon.png'
-    }
-  ];
-
-  additions.forEach(item => {
-    if (!productData.some(existing => existing.category === item.category && existing.title === item.title)) {
-      productData.push(item);
-    }
-  });
 })();
