@@ -26,6 +26,17 @@
     'Shama Basil Seed Drink Strawberry': 'https://res.cloudinary.com/wy4nkkqq/image/upload/v1789231972/Shama_Basil_Seed_Drink_Strawberry.png'
   };
 
+  for (let index = productData.length - 1; index >= 0; index -= 1) {
+    const item = productData[index];
+    if (
+      item.category === 'beverages' &&
+      /^Sunrise\s/i.test(item.title || '') &&
+      /\b2\s*ltr\b/i.test(item.pack || '')
+    ) {
+      productData.splice(index, 1);
+    }
+  }
+
   productData.forEach(item => {
     if (item.category !== 'beverages') return;
     const newImage = imageByTitle[item.title];
