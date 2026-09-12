@@ -96,7 +96,7 @@
   if (typeof categories !== 'undefined' && Array.isArray(categories)) {
     const category = categories.find(item => item.slug === 'flour');
     if (category) {
-      category.name = 'Flour & Lentiles';
+      category.name = 'Flour-Lentiles';
       category.desc = 'A complete range of Shama flour, atta, lentils, dals, beans and peas';
     }
   }
