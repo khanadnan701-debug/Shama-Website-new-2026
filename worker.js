@@ -47,7 +47,7 @@ const UPSTREAM_HEADERS = {
 const PREPAINT_HEAD = `<style id="shama-prepaint">html{background:#fffdf8}html:not(.shama-ready) body{opacity:0!important;visibility:hidden!important}html.shama-ready body{opacity:1!important;visibility:visible!important;transition:opacity .14s ease}@media(prefers-reduced-motion:reduce){html.shama-ready body{transition:none}}</style><script id="shama-prepaint-script">(()=>{let done=false;const reveal=()=>{if(done)return;done=true;requestAnimationFrame(()=>requestAnimationFrame(()=>document.documentElement.classList.add('shama-ready')))};window.addEventListener('load',()=>setTimeout(reveal,45),{once:true});setTimeout(reveal,2200)})();</script>`;
 const MOBILE_NAV_CRITICAL_HEAD = `<style id="shama-mobile-nav-critical">@media(max-width:920px){#site-header .nav-shell>.navlinks,#site-header .nav-shell>.navlinks.open,#site-header .nav-shell>.navlinks.mobile-nav-open{display:none!important;width:0!important;height:0!important;min-width:0!important;min-height:0!important;max-width:0!important;max-height:0!important;margin:0!important;padding:0!important;border:0!important;box-shadow:none!important;background:transparent!important;overflow:hidden!important;visibility:hidden!important;opacity:0!important;pointer-events:none!important}#site-header .mega-menu{display:none!important}#site-header,#site-header .header,#site-header .nav-shell{margin-bottom:0!important}.mobile-toggle{pointer-events:auto!important;touch-action:manipulation!important}}</style>`;
 const GLOBAL_MOBILE_NAV = `<script id="shama-global-mobile-nav" src="/mobile-nav-20260912-v3.js?v=20260912-3" defer></script>`;
-const GLOBAL_HEADER_CONTROLS = `<script id="shama-global-header-controls" src="/header-controls-fix-20260912.js?v=20260912-2" defer></script>`;
+const GLOBAL_HEADER_CONTROLS = `<script id="shama-global-header-controls" src="/header-controls-fix-20260912.js?v=20260912-3" defer></script>`;
 
 async function fetchVideo(request, sources) {
   const range = request.headers.get('Range');
@@ -116,7 +116,7 @@ async function withFreshHeaders(response) {
   }
 
   headers.delete('Clear-Site-Data');
-  headers.set('X-Shama-Release', '20260912-header-controls-2');
+  headers.set('X-Shama-Release', '20260912-header-controls-3');
 
   let body = response.body;
 
