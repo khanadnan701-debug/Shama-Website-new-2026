@@ -22,7 +22,7 @@
         <img src="https://res.cloudinary.com/wy4nkkqq/image/upload/v1789120966/Shama_butter_chicken_curry_paste_300g.png" alt="">
         <span>Pickle & Pastes</span>
       </a>
-      <div class="catalogue-hero-badge"><b>9</b><span>product<br>ranges</span></div>`;
+      <div class="catalogue-hero-badge"><b>11</b><span>product<br>ranges</span></div>`;
 
     wrap.appendChild(visual);
   }
