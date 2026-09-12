@@ -10,7 +10,6 @@
     const style = document.createElement('style');
     style.id = STYLE_ID;
     style.textContent = `
-      /* Language selector must behave like part of the navigation, never a floating widget. */
       #shama-language-switch{
         position:static!important;
         inset:auto!important;
@@ -24,9 +23,10 @@
         flex:0 0 auto!important;
         box-shadow:none!important;
       }
+
       .nav-shell .navlinks>#shama-language-switch{
         align-self:center!important;
-        margin-left:2px!important;
+        margin-left:8px!important;
         padding:3px!important;
         border:1px solid rgba(67,76,125,.10)!important;
         background:#f3f4fb!important;
@@ -36,16 +36,17 @@
         min-width:34px!important;
         padding:7px 9px!important;
       }
+
       .shama-mobile-actions{
         display:none;
         align-items:center;
         justify-content:flex-end;
         gap:7px;
-        margin-left:auto;
         flex:0 0 auto;
         min-width:0;
       }
       .shama-mobile-actions #shama-language-switch{
+        order:1!important;
         padding:3px!important;
         border:1px solid rgba(67,76,125,.10)!important;
         background:#f3f4fb!important;
@@ -57,11 +58,11 @@
         font-size:10px!important;
       }
       .shama-mobile-actions .mobile-toggle{
+        order:2!important;
         margin:0!important;
         flex:0 0 auto!important;
       }
 
-      /* Chatbot: keep it clear of the bulk-order tray on the left side. */
       #shama-chatbot{
         left:18px!important;
         right:auto!important;
@@ -72,8 +73,35 @@
       }
 
       @media(max-width:${BREAKPOINT}px){
-        .shama-mobile-actions{display:flex!important}
-        #site-header .nav-shell>.shama-mobile-actions{margin-left:auto!important}
+        #site-header .nav-shell{
+          display:flex!important;
+          flex-direction:row!important;
+          align-items:center!important;
+          justify-content:flex-start!important;
+        }
+
+        #site-header .nav-shell>.brand,
+        #site-header .nav-shell>a.brand,
+        #site-header .nav-shell>.brand-studio,
+        #site-header .nav-shell>[data-shama-mobile-brand='1']{
+          order:1!important;
+          margin-left:0!important;
+          margin-right:auto!important;
+          flex:0 0 auto!important;
+        }
+
+        #site-header .nav-shell>.shama-mobile-actions{
+          order:50!important;
+          display:flex!important;
+          flex-direction:row!important;
+          align-items:center!important;
+          justify-content:flex-end!important;
+          margin-left:auto!important;
+          margin-right:0!important;
+          gap:7px!important;
+          flex:0 0 auto!important;
+        }
+
         #site-header .nav-shell>.header-cta{display:none!important}
         #shama-chatbot{left:10px!important;right:auto!important;bottom:14px!important}
         #shama-chatbot .shama-chat-panel{
@@ -106,15 +134,59 @@
     important('box-shadow', 'none');
   }
 
+  function findBrand(nav) {
+    if (!nav) return null;
+    const direct = nav.querySelector(':scope > .brand, :scope > a.brand, :scope > .brand-studio');
+    if (direct) return direct;
+    return [...nav.children].find(el => {
+      if (!el?.querySelector) return false;
+      const img = el.matches?.('img') ? el : el.querySelector('img');
+      const src = (img?.getAttribute('src') || '').toLowerCase();
+      const alt = (img?.getAttribute('alt') || '').toLowerCase();
+      return src.includes('shama-logo') || alt.includes('shama');
+    }) || null;
+  }
+
   function getOrCreateMobileActions(nav) {
     let actions = nav.querySelector(':scope > .shama-mobile-actions');
     if (actions) return actions;
     actions = document.createElement('div');
     actions.className = 'shama-mobile-actions';
-    const navlinks = nav.querySelector(':scope > .navlinks');
-    if (navlinks) nav.insertBefore(actions, navlinks);
-    else nav.appendChild(actions);
+    nav.appendChild(actions);
     return actions;
+  }
+
+  function lockMobileOrder(nav, brand, actions) {
+    nav.style.setProperty('display', 'flex', 'important');
+    nav.style.setProperty('flex-direction', 'row', 'important');
+    nav.style.setProperty('align-items', 'center', 'important');
+    nav.style.setProperty('justify-content', 'flex-start', 'important');
+
+    if (brand) {
+      brand.dataset.shamaMobileBrand = '1';
+      brand.style.setProperty('order', '1', 'important');
+      brand.style.setProperty('margin-left', '0', 'important');
+      brand.style.setProperty('margin-right', 'auto', 'important');
+      brand.style.setProperty('flex', '0 0 auto', 'important');
+    }
+
+    actions.style.setProperty('order', '50', 'important');
+    actions.style.setProperty('display', 'flex', 'important');
+    actions.style.setProperty('flex-direction', 'row', 'important');
+    actions.style.setProperty('align-items', 'center', 'important');
+    actions.style.setProperty('margin-left', 'auto', 'important');
+    actions.style.setProperty('margin-right', '0', 'important');
+  }
+
+  function clearMobileInlineOrder(nav, brand, actions) {
+    ['display','flex-direction','align-items','justify-content'].forEach(prop => nav.style.removeProperty(prop));
+    if (brand) {
+      delete brand.dataset.shamaMobileBrand;
+      ['order','margin-left','margin-right','flex'].forEach(prop => brand.style.removeProperty(prop));
+    }
+    if (actions) {
+      ['order','display','flex-direction','align-items','margin-left','margin-right'].forEach(prop => actions.style.removeProperty(prop));
+    }
   }
 
   function placeControls(force = false) {
@@ -128,29 +200,31 @@
 
     const mobile = window.matchMedia(`(max-width:${BREAKPOINT}px)`).matches;
     const mode = mobile ? 'mobile' : 'desktop';
+    const brand = findBrand(nav);
+    const actions = getOrCreateMobileActions(nav);
+
     if (!force && lastMode === mode) {
-      if (mobile && switcher.closest('.shama-mobile-actions')) return true;
+      if (mobile && switcher.parentElement === actions && (!toggle || toggle.parentElement === actions)) {
+        lockMobileOrder(nav, brand, actions);
+        return true;
+      }
       if (!mobile && switcher.parentElement?.classList.contains('navlinks')) return true;
     }
 
     if (mobile) {
-      const actions = getOrCreateMobileActions(nav);
-      if (switcher.parentElement !== actions) actions.appendChild(switcher);
-      if (toggle && toggle.parentElement !== actions) actions.appendChild(toggle);
+      actions.appendChild(switcher);
+      if (toggle) actions.appendChild(toggle);
+      lockMobileOrder(nav, brand, actions);
     } else {
+      clearMobileInlineOrder(nav, brand, actions);
       const navlinks = nav.querySelector(':scope > .navlinks');
       if (navlinks) {
         const contact = [...navlinks.children].find(el => el.matches?.('a[href*="contact"]'));
-        if (contact) {
-          if (switcher !== contact.nextElementSibling) {
-            navlinks.insertBefore(switcher, contact.nextSibling);
-          }
-        } else if (switcher.parentElement !== navlinks || switcher !== navlinks.lastElementChild) {
-          navlinks.appendChild(switcher);
-        }
+        if (contact) contact.insertAdjacentElement('afterend', switcher);
+        else navlinks.appendChild(switcher);
       }
-      const actions = nav.querySelector(':scope > .shama-mobile-actions');
-      if (toggle && actions?.contains(toggle)) {
+
+      if (toggle && actions.contains(toggle)) {
         const navlinks = nav.querySelector(':scope > .navlinks');
         if (navlinks) nav.insertBefore(toggle, navlinks);
         else nav.appendChild(toggle);
@@ -179,8 +253,14 @@
   window.addEventListener('resize', () => placeControls(true), { passive: true });
 
   if ('MutationObserver' in window) {
+    let queued = false;
     const observer = new MutationObserver(() => {
-      if (document.querySelector('#shama-language-switch')) placeControls();
+      if (queued || !document.querySelector('#shama-language-switch')) return;
+      queued = true;
+      requestAnimationFrame(() => {
+        queued = false;
+        placeControls();
+      });
     });
     observer.observe(document.documentElement, { childList: true, subtree: true });
   }
