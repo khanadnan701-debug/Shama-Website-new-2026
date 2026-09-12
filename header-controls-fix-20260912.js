@@ -76,8 +76,20 @@
         #site-header .nav-shell{
           display:flex!important;
           flex-direction:row!important;
+          direction:ltr!important;
           align-items:center!important;
           justify-content:flex-start!important;
+          width:100%!important;
+        }
+
+        #site-header .nav-shell>.navlinks,
+        #site-header .nav-shell>.navlinks.open,
+        #site-header .nav-shell>.navlinks.mobile-nav-open,
+        #site-header .nav-shell>.header-cta,
+        #site-header .mega-menu{
+          display:none!important;
+          visibility:hidden!important;
+          pointer-events:none!important;
         }
 
         #site-header .nav-shell>.brand,
@@ -85,6 +97,7 @@
         #site-header .nav-shell>.brand-studio,
         #site-header .nav-shell>[data-shama-mobile-brand='1']{
           order:1!important;
+          direction:ltr!important;
           margin-left:0!important;
           margin-right:auto!important;
           flex:0 0 auto!important;
@@ -94,6 +107,7 @@
           order:50!important;
           display:flex!important;
           flex-direction:row!important;
+          direction:ltr!important;
           align-items:center!important;
           justify-content:flex-end!important;
           margin-left:auto!important;
@@ -102,7 +116,15 @@
           flex:0 0 auto!important;
         }
 
-        #site-header .nav-shell>.header-cta{display:none!important}
+        #site-header .shama-mobile-actions .mobile-toggle{
+          display:flex!important;
+          align-items:center!important;
+          justify-content:center!important;
+          visibility:visible!important;
+          opacity:1!important;
+          pointer-events:auto!important;
+        }
+
         #shama-chatbot{left:10px!important;right:auto!important;bottom:14px!important}
         #shama-chatbot .shama-chat-panel{
           position:fixed!important;
@@ -156,43 +178,50 @@
     return actions;
   }
 
-  function lockMobileOrder(nav, brand, actions) {
+  function lockMobileOrder(nav, brand, actions, switcher, toggle) {
     nav.style.setProperty('display', 'flex', 'important');
     nav.style.setProperty('flex-direction', 'row', 'important');
+    nav.style.setProperty('direction', 'ltr', 'important');
     nav.style.setProperty('align-items', 'center', 'important');
     nav.style.setProperty('justify-content', 'flex-start', 'important');
 
+    // Physically lock the mobile DOM order so legacy row-reverse/order rules cannot flip it.
     if (brand) {
       brand.dataset.shamaMobileBrand = '1';
+      if (nav.firstElementChild !== brand) nav.insertBefore(brand, nav.firstElementChild);
       brand.style.setProperty('order', '1', 'important');
       brand.style.setProperty('margin-left', '0', 'important');
       brand.style.setProperty('margin-right', 'auto', 'important');
       brand.style.setProperty('flex', '0 0 auto', 'important');
     }
 
+    // Controls are always language first, hamburger second, on the far right.
+    actions.appendChild(switcher);
+    if (toggle) actions.appendChild(toggle);
+    if (nav.lastElementChild !== actions) nav.appendChild(actions);
     actions.style.setProperty('order', '50', 'important');
     actions.style.setProperty('display', 'flex', 'important');
     actions.style.setProperty('flex-direction', 'row', 'important');
+    actions.style.setProperty('direction', 'ltr', 'important');
     actions.style.setProperty('align-items', 'center', 'important');
     actions.style.setProperty('margin-left', 'auto', 'important');
     actions.style.setProperty('margin-right', '0', 'important');
   }
 
   function clearMobileInlineOrder(nav, brand, actions) {
-    ['display','flex-direction','align-items','justify-content'].forEach(prop => nav.style.removeProperty(prop));
+    ['display','flex-direction','direction','align-items','justify-content'].forEach(prop => nav.style.removeProperty(prop));
     if (brand) {
       delete brand.dataset.shamaMobileBrand;
       ['order','margin-left','margin-right','flex'].forEach(prop => brand.style.removeProperty(prop));
     }
     if (actions) {
-      ['order','display','flex-direction','align-items','margin-left','margin-right'].forEach(prop => actions.style.removeProperty(prop));
+      ['order','display','flex-direction','direction','align-items','margin-left','margin-right'].forEach(prop => actions.style.removeProperty(prop));
     }
   }
 
   function placeControls(force = false) {
     const nav = document.querySelector('#site-header .nav-shell, .nav-shell');
     const switcher = document.querySelector('#shama-language-switch');
-    const toggle = nav?.querySelector('.mobile-toggle');
     if (!nav || !switcher) return false;
 
     injectStyles();
@@ -202,19 +231,18 @@
     const mode = mobile ? 'mobile' : 'desktop';
     const brand = findBrand(nav);
     const actions = getOrCreateMobileActions(nav);
+    const toggle = nav.querySelector('.mobile-toggle') || document.querySelector('#site-header .mobile-toggle');
 
     if (!force && lastMode === mode) {
-      if (mobile && switcher.parentElement === actions && (!toggle || toggle.parentElement === actions)) {
-        lockMobileOrder(nav, brand, actions);
+      if (mobile) {
+        lockMobileOrder(nav, brand, actions, switcher, toggle);
         return true;
       }
-      if (!mobile && switcher.parentElement?.classList.contains('navlinks')) return true;
+      if (switcher.parentElement?.classList.contains('navlinks')) return true;
     }
 
     if (mobile) {
-      actions.appendChild(switcher);
-      if (toggle) actions.appendChild(toggle);
-      lockMobileOrder(nav, brand, actions);
+      lockMobileOrder(nav, brand, actions, switcher, toggle);
     } else {
       clearMobileInlineOrder(nav, brand, actions);
       const navlinks = nav.querySelector(':scope > .navlinks');
@@ -240,7 +268,7 @@
     let attempts = 0;
     const tryPlace = () => {
       attempts += 1;
-      if (placeControls(true) || attempts >= 80) return;
+      if (placeControls(true) || attempts >= 100) return;
       setTimeout(tryPlace, 50);
     };
     tryPlace();
