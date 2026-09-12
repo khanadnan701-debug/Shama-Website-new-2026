@@ -141,11 +141,12 @@
       const navlinks = nav.querySelector(':scope > .navlinks');
       if (navlinks) {
         const contact = [...navlinks.children].find(el => el.matches?.('a[href*="contact"]'));
-        if (switcher.parentElement !== navlinks) {
-          if (contact) navlinks.insertBefore(switcher, contact);
-          else navlinks.appendChild(switcher);
-        } else if (contact && switcher.nextElementSibling !== contact) {
-          navlinks.insertBefore(switcher, contact);
+        if (contact) {
+          if (switcher !== contact.nextElementSibling) {
+            navlinks.insertBefore(switcher, contact.nextSibling);
+          }
+        } else if (switcher.parentElement !== navlinks || switcher !== navlinks.lastElementChild) {
+          navlinks.appendChild(switcher);
         }
       }
       const actions = nav.querySelector(':scope > .shama-mobile-actions');
