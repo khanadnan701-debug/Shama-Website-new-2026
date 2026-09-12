@@ -62,10 +62,22 @@
     document.querySelectorAll('.reel-card.reel-drinks video').forEach(video => setVideo(video, replacementVideos.drinks));
   }
 
+  function loadBrandRanges() {
+    if (document.querySelector('script[data-brand-categories-loader]')) return;
+    const script = document.createElement('script');
+    script.src = 'brand-categories-20260912.js?v=20260912-1';
+    script.dataset.brandCategoriesLoader = 'true';
+    document.body.appendChild(script);
+  }
+
   if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', refreshHeroVideos, { once: true });
+    document.addEventListener('DOMContentLoaded', () => {
+      refreshHeroVideos();
+      loadBrandRanges();
+    }, { once: true });
   } else {
     refreshHeroVideos();
+    loadBrandRanges();
   }
 
   window.addEventListener('load', refreshHeroVideos, { once: true });
