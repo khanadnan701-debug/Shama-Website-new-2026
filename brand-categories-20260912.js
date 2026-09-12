@@ -104,10 +104,20 @@
     });
   }
 
+  function loadChatbot() {
+    if (document.getElementById('shama-chatbot-script')) return;
+    const script = document.createElement('script');
+    script.id = 'shama-chatbot-script';
+    script.src = 'shama-chatbot-20260912.js?v=20260912-1';
+    script.defer = true;
+    document.head.appendChild(script);
+  }
+
   function mount() {
     addMegaMenuBrands();
     addCatalogueBrands();
     updateRangeCounts();
+    loadChatbot();
   }
 
   mount();
