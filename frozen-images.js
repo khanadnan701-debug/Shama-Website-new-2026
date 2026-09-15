@@ -29,6 +29,7 @@
     "assets/frozen/mazedar-onion-paratha.webp"
   ],
   "Shama Plain Paratha": [
+    "https://res.cloudinary.com/wy4nkkqq/image/upload/v1789463985/Shama_Plain_Paratha.png",
     "assets/frozen/shama-plain-paratha-30.webp",
     "assets/frozen/mazedar-plain-paratha-20.webp",
     "assets/frozen/mazedar-plain-paratha-5.webp"
@@ -63,9 +64,11 @@
     "assets/frozen/shama-green-chilli.webp"
   ],
   "Punjabi Aloo (Potato) Samosa 12Pcs": [
+    "https://res.cloudinary.com/wy4nkkqq/image/upload/v1789463986/Punjabi_Aloo_Potato_Samosa_12Pcs.png",
     "assets/frozen/shama-punjabi-aloo-samosa-12.webp"
   ],
   "Shama Crispy Paratha": [
+    "https://res.cloudinary.com/wy4nkkqq/image/upload/v1789463984/Shama_Crispy_Paratha.png",
     "assets/frozen/shama-crispy-paratha-20.webp"
   ]
 };
