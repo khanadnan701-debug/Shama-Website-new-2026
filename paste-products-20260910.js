@@ -29,7 +29,7 @@
     { category: 'sauces', title: 'Shama Green Chilli Pickle', pack: '300g x 1', image: 'https://res.cloudinary.com/wy4nkkqq/image/upload/v1789120968/shama_green_chilli_pickle_300g.png' },
     { category: 'sauces', title: 'Shama Lime Pickle Mild', pack: '300g x 1', image: 'https://res.cloudinary.com/wy4nkkqq/image/upload/v1789120968/shama_lime_pickle_mild_300g.png' },
     { category: 'sauces', title: 'Shama Kashmiri Curry Paste', pack: '2.3kg x 1', image: 'https://res.cloudinary.com/wy4nkkqq/image/upload/v1789120968/Shama_kashmiri_paste_2.3kg.png' },
-    { category: 'sauces', title: 'Shama Mixed Pickle Mild', pack: '4kg x 1', image: 'https://res.cloudinary.com/wy4nkkqq/image/upload/v1789120969/shama_mixed_pickle_mild_4kg.png' },
+    { category: 'sauces', title: 'Shama Mixed Pickle Mild', pack: '4kg x 1', image: 'https://res.cloudinary.com/wy4nkkqq/image/upload/v1789464149/Shama_mixed_pickle_4kg.png' },
     { category: 'sauces', title: 'Shama Mango Pickle Mild', pack: '300g x 1', image: 'https://res.cloudinary.com/wy4nkkqq/image/upload/v1789120969/shama_mango_pickle_mild_300g.png' },
     { category: 'sauces', title: 'Shama Mild Curry Paste', pack: '2.3kg x 1', image: 'https://res.cloudinary.com/wy4nkkqq/image/upload/v1789120969/Shama_mild_curry_paste_2.3kg.png' },
     { category: 'sauces', title: 'Shama Rogan Josh Curry Paste', pack: '2.3kg x 1', image: 'https://res.cloudinary.com/wy4nkkqq/image/upload/v1789120970/shama_rogan_josh_curry_paste_2.3kg.png' },
