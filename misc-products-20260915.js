@@ -45,8 +45,7 @@
     { title: 'Shama Pehalwan Rewari', pack: 'Contact us for available pack sizes', terms: ['pehalwan', 'rewari'], image: 'https://res.cloudinary.com/wy4nkkqq/image/upload/v1789464149/Shama_Pehalwan_Rewari.png' },
 
     // Pantry items
-    { title: 'Shama Roasted Vermicelli', pack: 'Contact us for available pack sizes', terms: ['vermicelli', 'roasted'], image: 'https://res.cloudinary.com/wy4nkkqq/image/upload/v1789464151/Shama_Vermicelli_Roasted.png' },
-    { title: 'Shama Mixed Pickle', pack: '4kg', terms: ['mixed', 'pickle'], image: 'https://res.cloudinary.com/wy4nkkqq/image/upload/v1789464149/Shama_mixed_pickle_4kg.png' }
+    { title: 'Shama Roasted Vermicelli', pack: 'Contact us for available pack sizes', terms: ['vermicelli', 'roasted'], image: 'https://res.cloudinary.com/wy4nkkqq/image/upload/v1789464151/Shama_Vermicelli_Roasted.png' }
   ];
 
   const oldMisc = productData.filter((item) => item.category === 'misc');
