@@ -11,6 +11,12 @@
     .trim();
 
   const fresh = [
+    // Newly supplied pantry products — keep these first on the page
+    { title: 'Shama Shakkar', pack: '500g', terms: ['shakker'], forceTitle: true, image: 'https://res.cloudinary.com/wy4nkkqq/image/upload/v1789466633/Shama_shakkar_500g.png' },
+    { title: 'Shama Seedless Tamarind Paste (Imli)', pack: '400g', terms: ['imli'], forceTitle: true, forcePack: true, image: 'https://res.cloudinary.com/wy4nkkqq/image/upload/v1789466633/Shama_imli_400g.png' },
+    { title: 'Shama Jaggery Gur', pack: '500g', terms: ['jaggery', 'gur'], image: 'https://res.cloudinary.com/wy4nkkqq/image/upload/v1789466631/Shama_jaggery_gur_500g.png' },
+    { title: 'Shama Golden Fried Onions', pack: '1kg', terms: ['golden', 'fried', 'onions'], image: 'https://res.cloudinary.com/wy4nkkqq/image/upload/v1789466470/Shama_fried_onion_1kg.png' },
+
     // Mango pulp
     { title: 'Shama Kesar Mango Pulp Kesar', pack: 'Contact us for available pack sizes', terms: ['kesar', 'mango', 'pulp'], image: 'https://res.cloudinary.com/wy4nkkqq/image/upload/v1789464152/Shama_Kesar_Mango_Plup_Kesar.png' },
     { title: 'Shama Alphonso Mango Pulp', pack: 'Contact us for available pack sizes', terms: ['alphonso', 'mango', 'pulp'], image: 'https://res.cloudinary.com/wy4nkkqq/image/upload/v1789464156/Shama_Kesar_Mango_Plup_Alphonso.png' },
@@ -60,7 +66,13 @@
 
     if (matchIndex >= 0) {
       used.add(matchIndex);
-      return { ...oldMisc[matchIndex], category: 'misc', image: entry.image };
+      return {
+        ...oldMisc[matchIndex],
+        category: 'misc',
+        title: entry.forceTitle ? entry.title : oldMisc[matchIndex].title,
+        pack: entry.forcePack ? entry.pack : oldMisc[matchIndex].pack,
+        image: entry.image
+      };
     }
 
     return {
