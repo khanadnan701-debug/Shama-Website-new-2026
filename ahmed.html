@@ -1,0 +1,57 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Ahmed | Shama International</title><link rel="icon" type="image/png" sizes="64x64" href="favicon.png?v=20260915-1"><link rel="shortcut icon" type="image/png" href="favicon.png?v=20260915-1"><link rel="apple-touch-icon" href="favicon.png?v=20260915-1"><link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet"><link rel="stylesheet" href="styles.css"><style>
+.ahmed-filter-panel{max-width:1180px;margin:0 auto 34px;padding:0 24px}.ahmed-filter-head{display:flex;align-items:end;justify-content:space-between;gap:20px;margin-bottom:18px}.ahmed-filter-head h2{margin:0;color:#152039;font:800 clamp(24px,3vw,36px)/1.1 Manrope,sans-serif}.ahmed-filter-count{color:#69738b;font:700 13px/1.4 DM Sans,sans-serif}.ahmed-filter-buttons{display:flex;gap:9px;flex-wrap:wrap}.ahmed-filter button{border:1px solid #d7ddea;background:#fff;color:#152039;border-radius:999px;padding:11px 16px;font:700 13px/1 DM Sans,sans-serif;cursor:pointer;transition:.2s}.ahmed-filter button:hover{border-color:#152039;transform:translateY(-1px)}.ahmed-filter button.active{background:#152039;color:#fff;border-color:#152039}.simple-product-card[hidden]{display:none!important}@media(max-width:700px){.ahmed-filter-head{align-items:start;flex-direction:column}}
+</style></head><body data-page="product" data-category="ahmed"><div id="site-header"></div><main id="page-content"></main><div id="site-footer"></div><script src="script.js?v=20260721-16"></script><script src="brand-categories-20260912.js?v=20260917-ahmed1"></script><script src="ahmed-products-20260917.js?v=20260917-1"></script><script src="product-simple.js?v=20260917-ahmed1"></script><script src="universal-product-zoom-20260917.js?v=20260917-1"></script><script>
+(() => {
+  function mountAhmedFilters(){
+    if(document.body.dataset.category!=='ahmed')return;
+    const section=document.querySelector('.simple-catalogue');
+    const grid=document.querySelector('#simple-product-grid');
+    const data=window.ahmedCatalogue;
+    if(!section||!grid||!data)return;
+
+    if(!document.querySelector('.ahmed-filter-panel')){
+      const panel=document.createElement('div');
+      panel.className='ahmed-filter-panel ahmed-filter';
+      panel.innerHTML=`
+        <div class="ahmed-filter-head"><h2>Browse Ahmed by category</h2><div class="ahmed-filter-count"><span data-visible-count>${data.total}</span> products</div></div>
+        <div class="ahmed-filter-buttons">
+          <button class="active" data-filter="all">All Products (${data.total})</button>
+          <button data-filter="sauces">Sauces (${data.groups.sauces.count})</button>
+          <button data-filter="pickles">Pickles (${data.groups.pickles.count})</button>
+          <button data-filter="desserts">Desserts & Mixes (${data.groups.desserts.count})</button>
+          <button data-filter="jelly">Jelly (${data.groups.jelly.count})</button>
+          <button data-filter="flour">Flour (${data.groups.flour.count})</button>
+        </div>`;
+      section.prepend(panel);
+
+      panel.addEventListener('click',e=>{
+        const btn=e.target.closest('button[data-filter]');
+        if(!btn)return;
+        panel.querySelectorAll('button[data-filter]').forEach(x=>x.classList.toggle('active',x===btn));
+        const value=btn.dataset.filter;
+        let visible=0;
+        grid.querySelectorAll('.simple-product-card').forEach(card=>{
+          const title=card.querySelector('h3')?.textContent||'';
+          const meta=data.titleMeta?.[title];
+          const show=value==='all'||meta?.type===value;
+          card.hidden=!show;
+          if(show)visible++;
+        });
+        const count=panel.querySelector('[data-visible-count]');
+        if(count)count.textContent=visible;
+      });
+    }
+
+    grid.querySelectorAll('.simple-product-card').forEach(card=>{
+      const title=card.querySelector('h3')?.textContent||'';
+      const meta=data.titleMeta?.[title];
+      const label=card.querySelector('.simple-product-meta');
+      if(meta&&label)label.textContent=`Ahmed · ${meta.typeLabel}`;
+    });
+  }
+
+  document.addEventListener('shama:product-simple-rendered',mountAhmedFilters);
+  if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',mountAhmedFilters,{once:true});
+  else mountAhmedFilters();
+})();
+</script><script src="category-product-hero-video.js?v=20260912-nav4"></script><script src="translation.js?v=20260909-safe1" defer></script></body></html>
