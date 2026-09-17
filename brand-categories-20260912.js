@@ -15,8 +15,8 @@
       slug: 'ahmed',
       name: 'Ahmed',
       desc: 'Explore the range',
-      image: 'https://images.unsplash.com/photo-1601050690117-94f5f6fa8bd7?auto=format&fit=crop&w=900&q=85',
-      href: 'catalogue.html#ahmed'
+      image: 'https://res.cloudinary.com/wy4nkkqq/image/upload/v1789652169/Ahmed_tamarind_sauce_300g.png',
+      href: 'ahmed.html'
     }
   ];
 
@@ -113,11 +113,22 @@
     document.head.appendChild(script);
   }
 
+  function loadUniversalProductZoom() {
+    if (document.body.dataset.page !== 'product') return;
+    if (document.getElementById('universal-product-zoom-script')) return;
+    const script = document.createElement('script');
+    script.id = 'universal-product-zoom-script';
+    script.src = 'universal-product-zoom-20260917.js?v=20260917-1';
+    script.defer = true;
+    document.head.appendChild(script);
+  }
+
   function mount() {
     addMegaMenuBrands();
     addCatalogueBrands();
     updateRangeCounts();
     loadChatbot();
+    loadUniversalProductZoom();
   }
 
   mount();
