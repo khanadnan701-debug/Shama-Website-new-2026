@@ -7,8 +7,8 @@
       slug: 'laziza',
       name: 'Laziza',
       desc: 'Explore the range',
-      image: 'https://images.unsplash.com/photo-1532336414038-cf19250c5757?auto=format&fit=crop&w=900&q=85',
-      href: 'catalogue.html#laziza'
+      image: 'https://res.cloudinary.com/wy4nkkqq/image/upload/Laziza_biryani_masala_100g.png',
+      href: 'laziza.html'
     },
     {
       number: '11',
