@@ -1,0 +1,6 @@
+body[data-category="rice"] .simple-product-media{display:grid!important;place-items:center!important;padding:18px!important;background:#fff!important}
+body[data-category="rice"] .simple-product-media img{display:block!important;width:auto!important;height:auto!important;max-width:100%!important;max-height:100%!important;object-fit:contain!important;image-rendering:auto!important;transform:none!important;filter:none!important}
+body[data-category="rice"] .simple-product-card:hover .simple-product-media img,body[data-category="rice"] .simple-product-media:focus-visible img{transform:none!important}
+body[data-category="rice"] #product-lightbox .product-lightbox-media{background:#fff!important}
+body[data-category="rice"] #product-lightbox .product-lightbox-media img{width:auto!important;height:auto!important;max-width:100%!important;max-height:72vh!important;object-fit:contain!important;image-rendering:auto!important;filter:none!important}
+@media(max-width:640px){body[data-category="rice"] .simple-product-media{padding:14px!important}}
