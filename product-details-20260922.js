@@ -42,7 +42,6 @@
       summary: `${title} is a practical beauty and personal-care staple designed for simple everyday routines. Its familiar format makes it easy to keep at home, display in retail, or include in a wider personal-care assortment. The product is straightforward to use, easy to store and suitable for customers looking for a classic care item without unnecessary complexity. For wholesale buyers, the clearly defined pack size helps with shelf planning and stock management. Pair it with other Shama personal-care products to build a complete, easy-to-shop range for regular household demand.`,
       benefits:['Everyday care essential','Easy retail display','Clear pack sizing']
     };
-    }
     if (/dettol|lifebuoy/.test((brand + ' ' + title).toLowerCase())) return {
       summary: `${title} is suited to everyday cleansing and hygiene routines, with a recognisable format that is easy for households and retailers to understand. It works well as part of a practical personal-care selection and can be stocked alongside soaps, body-care and household essentials. The straightforward pack format makes shelf placement and replenishment simple, while the familiar product type supports regular repeat-use occasions. For wholesale customers, it is a convenient item to combine with other hygiene and personal-care lines when building a balanced assortment for shops, supermarkets, cash-and-carry or general retail.`,
       benefits:['Everyday hygiene use','Familiar product format','Wholesale-friendly range']
