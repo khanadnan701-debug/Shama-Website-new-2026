@@ -17,6 +17,30 @@
       desc: 'Explore the range',
       image: 'https://res.cloudinary.com/wy4nkkqq/image/upload/v1789652169/Ahmed_tamarind_sauce_300g.png',
       href: 'ahmed.html'
+    },
+    {
+      number: '12',
+      slug: 'agarbatti',
+      name: 'Agarbatti',
+      desc: 'Incense & fragrances',
+      image: 'https://res.cloudinary.com/wy4nkkqq/image/upload/v1790069154/Metro_3_in_1.png',
+      href: 'agarbatti.html'
+    },
+    {
+      number: '13',
+      slug: 'dates',
+      name: 'Dates',
+      desc: 'Premium date varieties',
+      image: 'https://res.cloudinary.com/wy4nkkqq/image/upload/v1790069276/Shama_Ajwa-Dates-800g.png',
+      href: 'dates.html'
+    },
+    {
+      number: '14',
+      slug: 'pataks',
+      name: 'PATAKS',
+      desc: 'Curry pastes & cooking sauces',
+      image: 'https://res.cloudinary.com/wy4nkkqq/image/upload/v1790069236/Patak_biryani_paste_2.3kg.png',
+      href: 'pataks.html'
     }
   ];
 
@@ -84,8 +108,8 @@
     });
 
     document.querySelectorAll('.page-hero p, .catalogue-hero p').forEach(node => {
-      node.textContent = node.textContent.replace('Nine distinctive ranges.', 'Eleven distinctive ranges.');
-      node.textContent = node.textContent.replace('Nine delicious ranges.', 'Eleven delicious ranges.');
+      node.textContent = node.textContent.replace('Fourteen distinctive ranges.', 'Fourteen distinctive ranges.');
+      node.textContent = node.textContent.replace('Fourteen delicious ranges.', 'Fourteen delicious ranges.');
     });
   }
 
@@ -93,13 +117,13 @@
     document.querySelectorAll('.story-video-meta span').forEach(node => {
       if (/Product ranges/i.test(node.textContent || '')) {
         const count = node.querySelector('b');
-        if (count) count.textContent = '11';
+        if (count) count.textContent = '14';
       }
     });
 
     document.querySelectorAll('p').forEach(node => {
-      if ((node.textContent || '').includes('Browse nine ranges')) {
-        node.textContent = node.textContent.replace('Browse nine ranges', 'Browse eleven ranges');
+      if ((node.textContent || '').includes('Browse fourteen ranges')) {
+        node.textContent = node.textContent.replace('Browse fourteen ranges', 'Browse fourteen ranges');
       }
     });
   }
