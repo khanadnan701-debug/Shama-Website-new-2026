@@ -146,13 +146,8 @@
   }
 
   function loadUniversalProductZoom() {
-    if (document.body.dataset.page !== 'product') return;
-    if (document.getElementById('universal-product-zoom-script')) return;
-    const script = document.createElement('script');
-    script.id = 'universal-product-zoom-script';
-    script.src = 'universal-product-zoom-20260917.js?v=20260917-1';
-    script.defer = true;
-    document.head.appendChild(script);
+    /* Disabled: product-details-20260922.js is now the single product viewer. */
+    return;
   }
 
   function mount() {
