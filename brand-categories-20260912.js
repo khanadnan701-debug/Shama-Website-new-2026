@@ -41,6 +41,14 @@
       desc: 'Curry pastes & cooking sauces',
       image: 'https://res.cloudinary.com/wy4nkkqq/image/upload/v1790069236/Patak_biryani_paste_2.3kg.png',
       href: 'pataks.html'
+    },
+    {
+      number: '15',
+      slug: 'cosmetics',
+      name: 'Cosmetics',
+      desc: 'Beauty & personal care',
+      image: 'https://res.cloudinary.com/wy4nkkqq/image/upload/v1789464147/Shama_Rose_Water_250ml.png',
+      href: 'cosmetics.html'
     }
   ];
 
@@ -108,8 +116,8 @@
     });
 
     document.querySelectorAll('.page-hero p, .catalogue-hero p').forEach(node => {
-      node.textContent = node.textContent.replace('Fourteen distinctive ranges.', 'Fourteen distinctive ranges.');
-      node.textContent = node.textContent.replace('Fourteen delicious ranges.', 'Fourteen delicious ranges.');
+      node.textContent = node.textContent.replace('Fifteen distinctive ranges.', 'Fifteen distinctive ranges.');
+      node.textContent = node.textContent.replace('Fifteen delicious ranges.', 'Fifteen delicious ranges.');
     });
   }
 
@@ -117,13 +125,13 @@
     document.querySelectorAll('.story-video-meta span').forEach(node => {
       if (/Product ranges/i.test(node.textContent || '')) {
         const count = node.querySelector('b');
-        if (count) count.textContent = '14';
+        if (count) count.textContent = '15';
       }
     });
 
     document.querySelectorAll('p').forEach(node => {
-      if ((node.textContent || '').includes('Browse fourteen ranges')) {
-        node.textContent = node.textContent.replace('Browse fourteen ranges', 'Browse fourteen ranges');
+      if ((node.textContent || '').includes('Browse fifteen ranges')) {
+        node.textContent = node.textContent.replace('Browse fifteen ranges', 'Browse fifteen ranges');
       }
     });
   }
