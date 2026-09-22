@@ -25,7 +25,10 @@
     video.dataset.heroRefreshSrc = src;
     video.dataset.src = src;
     video.muted = true;
-    video.loop = true;
+    const isHeroSlide = !!video.closest('[data-hero-panel]');
+    video.loop = !isHeroSlide;
+    if (isHeroSlide) video.removeAttribute('loop');
+    else video.setAttribute('loop','');
     video.autoplay = true;
     video.playsInline = true;
     video.preload = 'metadata';
