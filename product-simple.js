@@ -153,12 +153,23 @@
   document.addEventListener('click', event => {
     const trigger = event.target.closest?.('.simple-product-zoom');
     if (!trigger) return;
+    event.preventDefault();
+    event.stopImmediatePropagation();
+
+    if (typeof window.shamaOpenProductDetails === 'function') {
+      window.shamaOpenProductDetails({
+        title: trigger.dataset.zoomTitle || trigger.querySelector('img')?.alt || 'Shama product',
+        pack: trigger.dataset.zoomPack || '',
+        image: trigger.dataset.zoomImage || trigger.querySelector('img')?.src || FALLBACK_IMAGE,
+        category: document.body.dataset.category || ''
+      }, trigger);
+      return;
+    }
+
     const buttons = Array.from(document.querySelectorAll('.simple-product-zoom'));
     const index = Math.max(0, buttons.indexOf(trigger));
     const items = itemsFromVisibleCards();
     if (!items.length) return;
-    event.preventDefault();
-    event.stopImmediatePropagation();
     openLightbox(items, index, trigger);
   }, true);
 
