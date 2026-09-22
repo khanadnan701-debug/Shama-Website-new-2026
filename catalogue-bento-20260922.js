@@ -42,6 +42,14 @@
       href:'pataks.html',
       image:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1790069236/Patak_biryani_paste_2.3kg.png',
       group:'brands'
+    },
+    {
+      slug:'cosmetics',
+      name:'Cosmetics',
+      desc:'Shama beauty essentials plus trusted personal-care, baby-care and hygiene brands.',
+      href:'cosmetics.html',
+      image:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1789464147/Shama_Rose_Water_250ml.png',
+      group:'cosmetics'
     }
   ];
 
@@ -71,6 +79,7 @@
   const groupLabel = group => {
     if (group === 'brands') return 'Featured brand';
     if (group === 'lifestyle') return 'Home & fragrance';
+    if (group === 'cosmetics') return 'Beauty & personal care';
     return 'Shama range';
   };
 
@@ -103,6 +112,7 @@
             <button class="catalogue-filter-chip" type="button" data-range-filter="food">Food & pantry</button>
             <button class="catalogue-filter-chip" type="button" data-range-filter="brands">Featured brands</button>
             <button class="catalogue-filter-chip" type="button" data-range-filter="lifestyle">Home & fragrance</button>
+            <button class="catalogue-filter-chip" type="button" data-range-filter="cosmetics">Cosmetics</button>
           </div>
           <span class="catalogue-range-count"><b data-visible-ranges>${ranges.length}</b> ranges available</span>
         </div>
