@@ -246,10 +246,17 @@
 
   window.shamaOpenProductDetails = openProduct;
 
-  document.addEventListener('click', event => {
-    const direct = event.target.closest?.('[data-product-details]');
+  window.addEventListener('click', event => {
+    const target = event.target;
+    if (!target?.closest) return;
+
+    /* Keep order/cart controls and modal controls behaving normally. */
+    if (target.closest('.bulk-buy,.simple-product-btn,.shama-product-detail,[data-product-detail-close],a,input,select,textarea')) return;
+
+    const direct = target.closest('[data-product-details]');
     if (direct) {
       event.preventDefault();
+      event.stopImmediatePropagation();
       openProduct({
         title: direct.dataset.productTitle || direct.dataset.product || direct.querySelector('h3,strong')?.textContent,
         pack: direct.dataset.productPack || direct.dataset.pack || '',
@@ -258,10 +265,21 @@
       return;
     }
 
-    const card = event.target.closest?.('.simple-product-card,.product-card,.runway-row');
-    if (!card || event.target.closest('.bulk-buy,.simple-product-btn,button,a,input,select,textarea')) return;
+    /*
+      Capture at WINDOW level so older catalogue zoom scripts cannot swallow the
+      click at document-capture phase. Image button and the whole card now open
+      exactly the same product-detail modal on every range.
+    */
+    const zoom = target.closest('.simple-product-zoom');
+    const card = zoom?.closest('.simple-product-card') ||
+      target.closest('.simple-product-card,.product-card,.runway-row');
+    if (!card) return;
+
+    event.preventDefault();
+    event.stopImmediatePropagation();
 
     const title = clean(
+      zoom?.dataset.zoomTitle ||
       card.querySelector('.simple-product-content h3,.product-body h3,h3,.runway-title,strong')?.textContent ||
       card.dataset.product || ''
     );
@@ -269,10 +287,14 @@
 
     openProduct({
       title,
-      pack: clean(card.querySelector('.simple-product-content>p,.product-body p,.runway-pack')?.textContent || card.dataset.pack || ''),
-      image: card.querySelector('img')?.src || ''
+      pack: clean(
+        zoom?.dataset.zoomPack ||
+        card.querySelector('.simple-product-content>p,.product-body p,.runway-pack')?.textContent ||
+        card.dataset.pack || ''
+      ),
+      image: zoom?.dataset.zoomImage || card.querySelector('img')?.src || ''
     }, card);
-  });
+  }, true);
 
   document.addEventListener('keydown', event => {
     if (event.key === 'Escape') close();
