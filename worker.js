@@ -120,7 +120,7 @@ async function withFreshHeaders(response) {
   }
 
   headers.delete('Clear-Site-Data');
-  headers.set('X-Shama-Release', '20260922-all-product-details-4');
+  headers.set('X-Shama-Release', '20260922-product-detail-clickfix-1');
 
   let body = response.body;
 
@@ -146,6 +146,7 @@ async function withFreshHeaders(response) {
     if (!html.includes('id="shama-global-mobile-nav"')) scripts.push(GLOBAL_MOBILE_NAV);
     if (!html.includes('id="shama-global-header-controls"')) scripts.push(GLOBAL_HEADER_CONTROLS);
     if (!html.includes('id="shama-global-mega-menu-hover"')) scripts.push(GLOBAL_MEGA_MENU_HOVER);
+    if (!html.includes('id="shama-product-details-js"')) scripts.push(GLOBAL_PRODUCT_DETAILS_JS);
     if (scripts.length) {
       const bundle = scripts.join('');
       if (/<\/body>/i.test(html)) html = html.replace(/<\/body>/i, `${bundle}</body>`);
