@@ -41,8 +41,14 @@
     { name: 'Bobofop', src: 'https://static.wixstatic.com/media/00ae33_4a62a2cc68744bf48fd1303f54926374~mv2.jpg', fallback: 'Bobofop' }
   ];
 
-  function setVideo(video, src) {
-    if (!video || !src || video.dataset.src === src) return video;
+  function setVideo(video, src, shouldLoop = true) {
+    if (!video || !src) return video;
+    if (video.dataset.src === src) {
+      video.loop = shouldLoop;
+      if (shouldLoop) video.setAttribute('loop','');
+      else video.removeAttribute('loop');
+      return video;
+    }
     video.pause();
     video.removeAttribute('src');
     video.innerHTML = '';
@@ -52,7 +58,9 @@
     video.appendChild(source);
     video.dataset.src = src;
     video.muted = true;
-    video.loop = true;
+    video.loop = shouldLoop;
+    if (shouldLoop) video.setAttribute('loop','');
+    else video.removeAttribute('loop');
     video.playsInline = true;
     video.autoplay = true;
     video.preload = 'metadata';
@@ -75,24 +83,153 @@
 
   function setupHeroPanels() {
     if (!hero) return;
+    const wall = hero.querySelector('.fmcg-video-wall');
+    const shell = hero.querySelector('.video-wall-shell');
     const panels = Array.from(hero.querySelectorAll('[data-hero-panel]'));
-    if (!panels.length) return;
+    if (!wall || !shell || !panels.length) return;
 
-    function activate(panel) {
-      panels.forEach(item => item.classList.toggle('active', item === panel));
-      hero.dataset.heroCategory = panel.dataset.theme || 'rice';
-      playVideo(setVideo(panel.querySelector('video'), videoSources[panel.dataset.theme] || panel.dataset.video));
-    }
+    hero.classList.add('hero-slider-ready');
 
-    panels.forEach((panel, index) => {
+    let current = 0;
+    let switching = false;
+    let touchStartX = null;
+
+    const controls = document.createElement('div');
+    controls.className = 'hero-slider-controls';
+    controls.innerHTML = `
+      <button class="hero-slider-arrow hero-slider-prev" type="button" aria-label="Previous category">‹</button>
+      <div class="hero-slider-dots" role="tablist" aria-label="Hero categories">
+        ${panels.map((panel,index) => `<button type="button" role="tab" aria-label="Show ${panel.getAttribute('aria-label') || 'slide ' + (index + 1)}" data-hero-dot="${index}"><span></span></button>`).join('')}
+      </div>
+      <button class="hero-slider-arrow hero-slider-next" type="button" aria-label="Next category">›</button>
+    `;
+    shell.appendChild(controls);
+
+    const dots = Array.from(controls.querySelectorAll('[data-hero-dot]'));
+
+    function prepareVideo(panel) {
       const theme = panel.dataset.theme;
       if (theme && videoSources[theme]) panel.dataset.video = videoSources[theme];
-      playVideo(setVideo(panel.querySelector('video'), panel.dataset.video));
-      panel.addEventListener('mouseenter', () => activate(panel));
-      panel.addEventListener('focus', () => activate(panel));
-      panel.addEventListener('touchstart', () => activate(panel), { passive: true });
-      if (index === 0) activate(panel);
+      const video = setVideo(panel.querySelector('video'), panel.dataset.video, false);
+      if (!video) return null;
+      video.loop = false;
+      video.removeAttribute('loop');
+      video.muted = true;
+      video.playsInline = true;
+      return video;
+    }
+
+    function positionSlides(index) {
+      panels.forEach((panel,i) => {
+        const offset = i - index;
+        panel.style.transform = `translate3d(${offset * 100}%,0,0)`;
+        panel.classList.toggle('active', i === index);
+        panel.classList.toggle('is-before', i < index);
+        panel.classList.toggle('is-after', i > index);
+        panel.setAttribute('aria-hidden', String(i !== index));
+        panel.tabIndex = i === index ? 0 : -1;
+      });
+
+      dots.forEach((dot,i) => {
+        const active = i === index;
+        dot.classList.toggle('active', active);
+        dot.setAttribute('aria-selected', String(active));
+        dot.tabIndex = active ? 0 : -1;
+      });
+    }
+
+    function playCurrent(reset = true) {
+      panels.forEach((panel,i) => {
+        const video = prepareVideo(panel);
+        if (!video) return;
+        video.pause();
+        if (i !== current) {
+          try { video.currentTime = 0; } catch (_) {}
+          return;
+        }
+        if (reset) {
+          try { video.currentTime = 0; } catch (_) {}
+        }
+        playVideo(video);
+      });
+    }
+
+    function goTo(index, reset = true) {
+      if (switching) return;
+      const next = (index + panels.length) % panels.length;
+      if (next === current && panels[current].classList.contains('active')) {
+        playCurrent(reset);
+        return;
+      }
+      switching = true;
+      current = next;
+      positionSlides(current);
+      hero.dataset.heroCategory = panels[current].dataset.theme || 'rice';
+      playCurrent(reset);
+      window.setTimeout(() => { switching = false; }, 620);
+    }
+
+    function next() { goTo(current + 1, true); }
+    function prev() { goTo(current - 1, true); }
+
+    panels.forEach((panel,index) => {
+      const video = prepareVideo(panel);
+      if (video) {
+        video.addEventListener('ended', () => {
+          if (index === current) next();
+        });
+      }
+
+      panel.addEventListener('focus', () => {
+        if (index !== current) goTo(index, true);
+      });
     });
+
+    controls.querySelector('.hero-slider-prev').addEventListener('click', event => {
+      event.preventDefault();
+      event.stopPropagation();
+      prev();
+    });
+
+    controls.querySelector('.hero-slider-next').addEventListener('click', event => {
+      event.preventDefault();
+      event.stopPropagation();
+      next();
+    });
+
+    dots.forEach((dot,index) => {
+      dot.addEventListener('click', event => {
+        event.preventDefault();
+        event.stopPropagation();
+        goTo(index, true);
+      });
+    });
+
+    wall.addEventListener('touchstart', event => {
+      touchStartX = event.changedTouches?.[0]?.clientX ?? null;
+    }, { passive:true });
+
+    wall.addEventListener('touchend', event => {
+      if (touchStartX == null) return;
+      const endX = event.changedTouches?.[0]?.clientX ?? touchStartX;
+      const delta = endX - touchStartX;
+      touchStartX = null;
+      if (Math.abs(delta) < 45) return;
+      if (delta < 0) next();
+      else prev();
+    }, { passive:true });
+
+    document.addEventListener('visibilitychange', () => {
+      const video = panels[current]?.querySelector('video');
+      if (!video) return;
+      if (document.hidden) video.pause();
+      else playVideo(video);
+    });
+
+    current = 0;
+    positionSlides(current);
+    hero.dataset.heroCategory = panels[0].dataset.theme || 'rice';
+    playCurrent(true);
   }
 
   function setupCategoryReels() {
