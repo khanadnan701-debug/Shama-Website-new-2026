@@ -120,7 +120,7 @@ async function withFreshHeaders(response) {
   }
 
   headers.delete('Clear-Site-Data');
-  headers.set('X-Shama-Release', '20260922-all-product-details-3');
+  headers.set('X-Shama-Release', '20260922-all-product-details-4');
 
   let body = response.body;
 
