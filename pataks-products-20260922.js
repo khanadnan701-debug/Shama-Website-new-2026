@@ -18,7 +18,7 @@
 
   productData.push(...items);
   if (!categories.some(x=>x.slug==='pataks')) categories.push({
-    slug:'pataks', name:"PATAKS", desc:"Patak's curry pastes and classic cooking sauces",
+    slug:'pataks', name:"Pataks", desc:"Patak's curry pastes and classic cooking sauces",
     image:items[0].image
   });
 })();
