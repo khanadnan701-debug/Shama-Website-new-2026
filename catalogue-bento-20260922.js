@@ -76,7 +76,7 @@
     tone:tones[index % tones.length]
   }));
 
-  const ranges = [...coreRanges, ...extraRanges];
+  const ranges = [...coreRanges, ...extraRanges.filter(extra => !coreRanges.some(core => core.slug === extra.slug))];
 
   const bySlug = slug => ranges.find(item => item.slug === slug) || ranges[0];
 
