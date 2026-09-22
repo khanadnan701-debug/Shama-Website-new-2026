@@ -134,6 +134,52 @@
         }
       }
 
+      /* mobile polish 20260922-2 */
+      @media(max-width:${BREAKPOINT}px){
+        html body[data-page] #site-header .nav-shell>.shama-mobile-actions #shama-language-switch{
+          position:static!important;
+          inset:auto!important;
+          left:auto!important;
+          right:auto!important;
+          top:auto!important;
+          bottom:auto!important;
+          margin:0!important;
+          transform:none!important;
+          transform-origin:center!important;
+          z-index:auto!important;
+          box-shadow:none!important;
+        }
+        #shama-chatbot{
+          left:10px!important;
+          right:auto!important;
+          bottom:calc(86px + env(safe-area-inset-bottom))!important;
+        }
+        #shama-chatbot .shama-chat-panel{
+          left:8px!important;
+          right:8px!important;
+          bottom:calc(86px + env(safe-area-inset-bottom))!important;
+          width:auto!important;
+        }
+      }
+
+      @media(max-width:620px){
+        html body[data-page] #site-header .nav-shell>.shama-mobile-actions #shama-language-switch{
+          padding:2px!important;
+          gap:1px!important;
+        }
+        html body[data-page] #site-header .nav-shell>.shama-mobile-actions #shama-language-switch button{
+          min-width:27px!important;
+          padding:6px 6px!important;
+          font-size:9px!important;
+        }
+        #shama-chatbot{
+          bottom:calc(76px + env(safe-area-inset-bottom))!important;
+        }
+        #shama-chatbot .shama-chat-panel{
+          bottom:calc(76px + env(safe-area-inset-bottom))!important;
+        }
+      }
+
       @media(min-width:${BREAKPOINT + 1}px){
         .shama-mobile-actions{display:none!important}
       }
