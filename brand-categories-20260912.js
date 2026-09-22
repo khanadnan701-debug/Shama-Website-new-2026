@@ -37,7 +37,7 @@
     {
       number: '14',
       slug: 'pataks',
-      name: 'PATAKS',
+      name: 'Pataks',
       desc: 'Curry pastes & cooking sauces',
       image: 'https://res.cloudinary.com/wy4nkkqq/image/upload/v1790069236/Patak_biryani_paste_2.3kg.png',
       href: 'pataks.html'
