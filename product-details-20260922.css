@@ -1,0 +1,99 @@
+/* Shama product details modal — 2026-09-22 */
+.product-detail-open{overflow:hidden!important}
+.shama-product-detail{
+  position:fixed;inset:0;z-index:2147483100;display:grid;place-items:center;
+  padding:24px;visibility:hidden;opacity:0;pointer-events:none;
+  transition:opacity .2s ease,visibility .2s ease;
+  font-family:"DM Sans",Arial,sans-serif;color:#152039
+}
+.shama-product-detail.open{visibility:visible;opacity:1;pointer-events:auto}
+.shama-product-detail-backdrop{
+  position:absolute;inset:0;border:0;background:rgba(5,12,28,.82);
+  backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);cursor:pointer
+}
+.shama-product-detail-panel{
+  position:relative;z-index:2;width:min(980px,94vw);max-height:92vh;
+  display:grid;grid-template-columns:minmax(280px,.9fr) minmax(0,1.1fr);
+  overflow:hidden;border-radius:30px;background:#fff;
+  box-shadow:0 40px 120px rgba(0,0,0,.36)
+}
+.shama-product-detail-media{
+  min-height:520px;display:grid;place-items:center;padding:34px;
+  background:radial-gradient(circle at 50% 34%,#fff 0,#f0f3fa 72%)
+}
+.shama-product-detail-media img{
+  display:block;width:100%;height:100%;max-height:480px;object-fit:contain;
+  filter:drop-shadow(0 24px 34px rgba(19,32,67,.15))
+}
+.shama-product-detail-copy{
+  min-width:0;padding:38px 38px 34px;overflow:auto
+}
+.shama-product-detail-kicker{
+  display:flex;align-items:center;gap:9px;margin-bottom:12px;
+  color:#6a55df;font:900 10px/1 Manrope,sans-serif;
+  letter-spacing:.13em;text-transform:uppercase
+}
+.shama-product-detail-kicker:before{
+  content:"";width:26px;height:2px;border-radius:99px;background:#6a55df
+}
+.shama-product-detail-copy h2{
+  margin:0;color:#12203c;font:900 clamp(30px,4vw,48px)/1.02 Manrope,sans-serif;
+  letter-spacing:-.045em
+}
+.shama-product-detail-pack{
+  display:inline-flex;margin:13px 0 22px;padding:9px 12px;border-radius:999px;
+  background:#eef1f7;color:#647089;font:800 11px/1 Manrope,sans-serif
+}
+.shama-product-detail-summary{
+  margin:0;color:#647089;font:500 15px/1.75 "DM Sans",sans-serif
+}
+.shama-product-benefits-title{
+  display:block;margin:24px 0 11px;color:#13203a;
+  font:900 11px/1 Manrope,sans-serif;letter-spacing:.11em;text-transform:uppercase
+}
+.shama-product-benefits{
+  display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:9px;margin:0 0 26px;padding:0;list-style:none
+}
+.shama-product-benefits li{
+  min-width:0;padding:13px;border:1px solid rgba(23,35,66,.08);
+  border-radius:15px;background:#f8f9fd;color:#526079;font:800 11px/1.4 Manrope,sans-serif
+}
+.shama-product-benefits li:before{
+  content:"✓";display:grid;place-items:center;width:25px;height:25px;margin-bottom:9px;
+  border-radius:50%;background:#e7e4ff;color:#5f49d8;font:900 12px/1 Manrope,sans-serif
+}
+.shama-product-detail-actions{display:flex;gap:10px;flex-wrap:wrap}
+.shama-product-detail-actions button{
+  min-height:48px;padding:0 17px;border:0;border-radius:14px;
+  cursor:pointer;font:800 12px/1 Manrope,sans-serif
+}
+.shama-product-detail-add{background:#172d51;color:#fff;flex:1}
+.shama-product-detail-close-secondary{background:#eef1f7;color:#17233d}
+.shama-product-detail-close{
+  position:absolute;z-index:5;right:16px;top:16px;width:44px;height:44px;
+  border:0;border-radius:50%;background:#17233d;color:#fff;cursor:pointer;
+  font:400 30px/1 Arial,sans-serif;box-shadow:0 10px 26px rgba(15,24,46,.2)
+}
+.simple-product-card,.product-card,.runway-row{cursor:pointer}
+.simple-product-card .simple-product-btn,.product-card button,.runway-row button{cursor:pointer}
+
+@media(max-width:760px){
+  .shama-product-detail{padding:10px}
+  .shama-product-detail-panel{
+    width:100%;max-height:96vh;grid-template-columns:1fr;grid-template-rows:auto minmax(0,1fr);
+    border-radius:22px
+  }
+  .shama-product-detail-media{min-height:0;height:280px;padding:20px 54px 12px}
+  .shama-product-detail-media img{max-height:250px}
+  .shama-product-detail-copy{padding:24px 20px 22px}
+  .shama-product-detail-copy h2{font-size:30px}
+  .shama-product-benefits{grid-template-columns:1fr}
+  .shama-product-detail-close{right:10px;top:10px;width:40px;height:40px}
+}
+@media(max-width:430px){
+  .shama-product-detail-media{height:235px;padding:16px 46px 8px}
+  .shama-product-detail-media img{max-height:215px}
+  .shama-product-detail-copy{padding:20px 16px 18px}
+  .shama-product-detail-summary{font-size:14px;line-height:1.68}
+  .shama-product-detail-actions{display:grid;grid-template-columns:1fr}
+}
