@@ -38,6 +38,7 @@
       #product-lightbox .product-lightbox-benefits li{position:relative!important;padding:11px 12px 11px 38px!important;border-radius:12px!important;background:#f4f6fb!important;color:#526079!important;font:800 11px/1.35 Manrope,Arial,sans-serif!important}
       #product-lightbox .product-lightbox-benefits li:before{content:"✓"!important;position:absolute!important;left:11px!important;top:50%!important;transform:translateY(-50%)!important;display:grid!important;place-items:center!important;width:18px!important;height:18px!important;border-radius:50%!important;background:#e7e4ff!important;color:#5f49d8!important;font-size:10px!important}
       #product-lightbox .product-lightbox-add{width:100%!important;min-height:46px!important;border:0!important;border-radius:13px!important;background:#17233d!important;color:#fff!important;cursor:pointer!important;font:800 12px/1 Manrope,Arial,sans-serif!important}
+      .simple-product-card{cursor:pointer!important}
       .simple-product-media,.simple-product-media *{cursor:zoom-in!important}
       @media(max-width:760px){#product-lightbox.product-lightbox{padding:10px!important}#product-lightbox .product-lightbox-panel{width:100%!important;max-height:96vh!important;grid-template-columns:1fr!important;grid-template-rows:300px minmax(0,1fr)!important;border-radius:18px!important}#product-lightbox .product-lightbox-media{padding:48px 16px 56px!important}#product-lightbox .product-lightbox-media img{max-height:250px!important}#product-lightbox .product-lightbox-copy{padding:22px 18px 20px!important;border-left:0!important;border-top:1px solid rgba(31,44,75,.08)!important}#product-lightbox .product-lightbox-nav{top:auto!important;bottom:10px!important;transform:none!important;width:42px!important;height:42px!important;border-radius:50%!important}}
     `;
@@ -110,10 +111,52 @@
       dates:['Dates', `${title} offers a naturally sweet date option that is easy to serve for everyday snacking, sharing, gifting and dessert use. Dates fit naturally into household pantry ranges, festive displays and speciality-food sections, and they pair well with nuts, drinks and other traditional products. The pack format makes portioning, storage and retail presentation straightforward, while wholesale customers can use the range to build seasonal and year-round date selections. Serve as desired and store according to the instructions on the pack. A simple, versatile product for customers looking for a familiar fruit-based snack or ingredient.`, ['Naturally sweet taste','Snack & gifting versatility','Easy seasonal merchandising']]
     };
 
-    if (slug === 'sauces' || slug === 'sauces-pastes' || slug === 'pataks' || slug === 'laziza' || slug === 'ahmed') return {
-      label:'Sauces & Pastes',
-      summary:`${title} is designed to make flavourful cooking faster and more consistent. It works as a convenient base, accompaniment or recipe shortcut depending on the product, helping home cooks and professional kitchens reduce preparation time while keeping a familiar South Asian taste profile. The ready-to-use format is easy to portion and simple to keep on hand for busy service. For retailers, it adds variety to the cooking-sauce, paste or meal-solution section and pairs naturally with rice, breads, meats and vegetables. Follow the serving and storage directions printed on the pack after opening.`,
+    if (slug === 'laziza') {
+      const dessert = /custard|jelly|falooda|kheer|firni|kulfi|halwa|dessert/i.test(lower);
+      return dessert ? {
+        label:'Laziza · Desserts',
+        summary:`${title} is a convenient dessert mix designed to make familiar South Asian-style sweets easier to prepare at home or in foodservice. The ready-measured format helps reduce preparation time while keeping the recipe process simple and consistent. It works well for family occasions, festive menus, retail shelves and restaurant dessert offerings, depending on the product. The compact pack is easy to store and merchandise alongside other dessert mixes, drinks and pantry essentials. Follow the preparation quantities, cooking steps and storage guidance printed on the pack for the best result and serving consistency.`,
+        benefits:['Easy dessert preparation','Consistent recipe results','Festive & retail friendly']
+      } : {
+        label:'Laziza · Recipe Mix',
+        summary:`${title} is a convenient recipe and seasoning mix created to make traditional South Asian dishes easier to prepare with consistent flavour. It combines a practical ready-mixed format with straightforward cooking guidance, helping home cooks and professional kitchens reduce measuring and preparation time. Depending on the variety, it can support biryani, pulao, kebab, curry, meat or traditional speciality dishes. For retailers, the compact pack is easy to display by recipe type and encourages customers to explore multiple meal solutions. Follow the preparation instructions on the pack and adjust additional ingredients to the recipe being prepared.`,
+        benefits:['Ready-mixed seasoning','Faster recipe preparation','Easy recipe selection']
+      };
+    }
+
+    if (slug === 'ahmed') {
+      if (/pickle|achar/i.test(lower)) return {
+        label:'Ahmed · Pickles',
+        summary:`${title} is a ready-to-serve pickle option that brings bold, tangy flavour to everyday meals with minimal preparation. It pairs naturally with rice dishes, curries, breads, snacks and traditional meal combinations, making it useful for both household and foodservice use. The jar or pack format is simple to store, merchandise and serve, while different varieties help retailers create a broader condiment selection. For wholesale customers, it is an easy companion product to rice, sauces and meal mixes. Follow the storage guidance on the label, especially after opening, and serve in portions according to taste.`,
+        benefits:['Bold meal accompaniment','Ready to serve','Easy condiment merchandising']
+      };
+      if (/jelly|custard|dessert|falooda|kheer|pudding|mix/i.test(lower)) return {
+        label:'Ahmed · Desserts & Mixes',
+        summary:`${title} is a convenient dessert or preparation mix made for customers who want familiar results with less measuring and preparation. The ready-mixed format supports quick household use, festive occasions and foodservice menus while keeping the process straightforward. It is easy to store, simple to merchandise and can be grouped with other dessert mixes, beverages and pantry products for a complete category. For wholesale buyers, the compact pack format supports efficient shelf use and repeat ordering. Prepare according to the quantities, cooking method and storage instructions printed on the individual pack for the best result.`,
+        benefits:['Convenient preparation','Simple shelf storage','Family & foodservice use']
+      };
+      if (/flour|atta|besan|maida/i.test(lower)) return {
+        label:'Ahmed · Flour',
+        summary:`${title} is a practical flour product for everyday cooking and traditional recipe preparation. Depending on the variety, it can be used for breads, doughs, batters, snacks and other pantry recipes, making it useful in both household kitchens and foodservice. The clear pack size supports easy storage, portioning and stock planning, while retailers can merchandise it alongside rice, lentils, spices and other staple foods. For wholesale customers, the straightforward format makes repeat ordering and category planning simple. Store in a cool, dry place and follow the recipe or preparation guidance appropriate to the specific flour.`,
+        benefits:['Everyday pantry staple','Flexible cooking use','Easy stock planning']
+      };
+      return {
+        label:'Ahmed · Sauces',
+        summary:`${title} is a convenient sauce or cooking accompaniment designed to add familiar flavour with minimal preparation. It can be used as a serving sauce, cooking ingredient or meal companion depending on the variety, making it useful for households, restaurants and takeaway service. The ready-to-use format supports quick portioning and consistent results, while the pack is easy to store and merchandise alongside pickles, pastes and meal solutions. For retailers and wholesalers, it adds variety to a practical condiment range. Follow the serving and storage instructions printed on the pack, particularly after opening.`,
+        benefits:['Ready-to-use convenience','Consistent serving flavour','Retail & foodservice friendly']
+      };
+    }
+
+    if (slug === 'pataks' || slug === 'sauces' || slug === 'sauces-pastes') return {
+      label: slug === 'pataks' ? "Patak's" : 'Sauces, Pickle & Pastes',
+      summary:`${title} is designed to make flavourful cooking faster and more consistent. It works as a convenient base, accompaniment or recipe shortcut depending on the product, helping home cooks and professional kitchens reduce preparation time while keeping a familiar South Asian taste profile. The ready-to-use format is easy to portion and simple to keep on hand for busy service. For retailers, it adds variety to the cooking-sauce, paste, pickle or meal-solution section and pairs naturally with rice, breads, meats and vegetables. Follow the serving and storage directions printed on the pack after opening.`,
       benefits:['Faster meal preparation','Consistent flavour base','Easy portioning']
+    };
+
+    if (slug === 'misc') return {
+      label:'Miscellaneous',
+      summary:`${title} is part of Shama International's wider pantry and speciality range, selected to complement everyday South Asian cooking and retail needs. Depending on the product, it can support meal preparation, serving, snacking or traditional household use. The pack format is designed for straightforward storage and shelf presentation, helping customers find useful essentials alongside rice, spices, flour, sauces and other core categories. For retailers and wholesalers, miscellaneous products help complete the assortment and provide extra choice beyond the main ranges. Store, prepare and use the product according to the specific directions and guidance printed on its pack.`,
+      benefits:['Useful pantry essential','Complements core ranges','Easy retail stocking']
     };
 
     if (slug === 'flour' || slug === 'flour-lentiles') return {
@@ -234,8 +277,15 @@
     updateLightbox();
   }
 
+  function visibleProductButtons() {
+    return Array.from(document.querySelectorAll('.simple-product-zoom')).filter(button => {
+      const card = button.closest('.simple-product-card');
+      return !card || (!card.hidden && getComputedStyle(card).display !== 'none');
+    });
+  }
+
   function itemsFromVisibleCards() {
-    return Array.from(document.querySelectorAll('.simple-product-zoom')).map(button => ({
+    return visibleProductButtons().map(button => ({
       image: button.dataset.zoomImage || button.querySelector('img')?.src || FALLBACK_IMAGE,
       title: button.dataset.zoomTitle || button.querySelector('img')?.alt || 'Shama product',
       pack: button.dataset.zoomPack || ''
@@ -248,19 +298,48 @@
     event.preventDefault();
     event.stopImmediatePropagation();
 
-    const buttons = Array.from(document.querySelectorAll('.simple-product-zoom'));
+    const buttons = visibleProductButtons();
     const index = Math.max(0, buttons.indexOf(trigger));
     const items = itemsFromVisibleCards();
     if (!items.length) return;
     openLightbox(items, index, trigger);
   }, true);
 
+  /* Open the same detail view when the customer clicks the product card, not only the image. */
+  document.addEventListener('click', event => {
+    const card = event.target.closest?.('.simple-product-card');
+    if (!card) return;
+    if (event.target.closest('.simple-product-zoom,.bulk-buy,.simple-product-btn,a,input,select,textarea')) return;
+
+    const trigger = card.querySelector('.simple-product-zoom');
+    if (!trigger) return;
+
+    event.preventDefault();
+    event.stopImmediatePropagation();
+
+    const buttons = visibleProductButtons();
+    const index = Math.max(0, buttons.indexOf(trigger));
+    const items = itemsFromVisibleCards();
+    if (!items.length) return;
+    openLightbox(items, index, card);
+  }, true);
+
   document.addEventListener('keydown', event => {
     const lightbox = document.querySelector('#product-lightbox');
-    if (!lightbox || !lightbox.classList.contains('open')) return;
-    if (event.key === 'Escape') closeLightbox();
-    if (event.key === 'ArrowLeft') stepLightbox(-1);
-    if (event.key === 'ArrowRight') stepLightbox(1);
+    if (lightbox && lightbox.classList.contains('open')) {
+      if (event.key === 'Escape') closeLightbox();
+      if (event.key === 'ArrowLeft') stepLightbox(-1);
+      if (event.key === 'ArrowRight') stepLightbox(1);
+      return;
+    }
+    if ((event.key === 'Enter' || event.key === ' ') && event.target.matches?.('.simple-product-card')) {
+      event.preventDefault();
+      const trigger = event.target.querySelector('.simple-product-zoom');
+      const buttons = visibleProductButtons();
+      const index = Math.max(0, buttons.indexOf(trigger));
+      const items = itemsFromVisibleCards();
+      if (items.length) openLightbox(items, index, event.target);
+    }
   });
 
   function renderSimpleProducts(main) {
@@ -302,6 +381,13 @@
       image.addEventListener('error', () => {
         image.src = FALLBACK_IMAGE;
       }, { once: true });
+    });
+
+    grid.querySelectorAll('.simple-product-card').forEach(card => {
+      card.setAttribute('tabindex','0');
+      card.setAttribute('role','button');
+      const title = card.querySelector('h3')?.textContent || 'product';
+      card.setAttribute('aria-label', 'View details for ' + title);
     });
 
     document.dispatchEvent(new CustomEvent('shama:product-simple-rendered'));
