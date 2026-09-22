@@ -120,7 +120,7 @@ async function withFreshHeaders(response) {
   }
 
   headers.delete('Clear-Site-Data');
-  headers.set('X-Shama-Release', '20260922-product-details-1');
+  headers.set('X-Shama-Release', '20260922-product-details-2');
 
   let body = response.body;
 
@@ -143,6 +143,9 @@ async function withFreshHeaders(response) {
     if (/<meta[^>]+name=["']viewport["'][^>]*>/i.test(html)) {
       html = html.replace(/<meta[^>]+name=["']viewport["'][^>]*>/i, '<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">');
     }
+
+    // Force the latest product detail/lightbox build on every catalogue page.
+    html = html.replace(/product-simple\.js(?:\?v=[^"'<>\s]+)?/gi, 'product-simple.js?v=20260922-details2');
     const scripts = [];
     if (!html.includes('id="shama-global-mobile-nav"')) scripts.push(GLOBAL_MOBILE_NAV);
     if (!html.includes('id="shama-global-header-controls"')) scripts.push(GLOBAL_HEADER_CONTROLS);
