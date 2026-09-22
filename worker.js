@@ -49,6 +49,7 @@ const MOBILE_NAV_CRITICAL_HEAD = `<style id="shama-mobile-nav-critical">@media(m
 const GLOBAL_MOBILE_NAV = `<script id="shama-global-mobile-nav" src="/mobile-nav-20260912-v3.js?v=20260912-3" defer></script>`;
 const GLOBAL_HEADER_CONTROLS = `<script id="shama-global-header-controls" src="/header-controls-fix-20260912.js?v=20260912-3" defer></script>`;
 const GLOBAL_MEGA_MENU_HOVER = `<script id="shama-global-mega-menu-hover" src="/mega-menu-hover-fix-20260917.js?v=20260917-1" defer></script>`;
+const GLOBAL_MOBILE_SITE_CSS = `<link id="shama-mobile-site-css" rel="stylesheet" href="/mobile-site-adapt-20260922.css?v=20260922-1">`;
 
 async function fetchVideo(request, sources) {
   const range = request.headers.get('Range');
@@ -117,7 +118,7 @@ async function withFreshHeaders(response) {
   }
 
   headers.delete('Clear-Site-Data');
-  headers.set('X-Shama-Release', '20260917-mega-menu-hover-1');
+  headers.set('X-Shama-Release', '20260922-mobile-site-1');
 
   let body = response.body;
 
@@ -128,6 +129,13 @@ async function withFreshHeaders(response) {
     }
     if (!html.includes('id="shama-mobile-nav-critical"')) {
       html = html.replace(/<head([^>]*)>/i, match => `${match}${MOBILE_NAV_CRITICAL_HEAD}`);
+    }
+    if (!html.includes('id="shama-mobile-site-css"')) {
+      if (/<\/head>/i.test(html)) html = html.replace(/<\/head>/i, `${GLOBAL_MOBILE_SITE_CSS}</head>`);
+      else html = `${GLOBAL_MOBILE_SITE_CSS}${html}`;
+    }
+    if (/<meta[^>]+name=["']viewport["'][^>]*>/i.test(html)) {
+      html = html.replace(/<meta[^>]+name=["']viewport["'][^>]*>/i, '<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">');
     }
     const scripts = [];
     if (!html.includes('id="shama-global-mobile-nav"')) scripts.push(GLOBAL_MOBILE_NAV);
