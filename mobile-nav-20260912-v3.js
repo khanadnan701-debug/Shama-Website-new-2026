@@ -16,8 +16,12 @@
     ['07', 'Frozen', 'frozen.html'],
     ['08', 'Oils', 'oils.html'],
     ['09', 'Dry Fruits', 'dry-fruits.html'],
-    ['10', 'Laziza', 'catalogue.html#laziza'],
-    ['11', 'Ahmed', 'catalogue.html#ahmed']
+    ['10', 'Laziza', 'laziza.html'],
+    ['11', 'Ahmed', 'ahmed.html'],
+    ['12', 'Agarbatti', 'agarbatti.html'],
+    ['13', 'Dates', 'dates.html'],
+    ['14', 'Pataks', 'pataks.html'],
+    ['15', 'Cosmetics', 'cosmetics.html']
   ];
 
   const isMobile = () => window.matchMedia(`(max-width:${BREAKPOINT}px)`).matches;
