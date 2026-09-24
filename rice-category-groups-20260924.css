@@ -40,7 +40,7 @@ body[data-category="rice"] .simple-catalogue>.wrap{
 
 .rice-category-tabs{
   display:grid;
-  grid-template-columns:repeat(5,minmax(0,1fr));
+  grid-template-columns:repeat(6,minmax(0,1fr));
   gap:10px;
   padding:12px;
   border:1px solid #e3e8f0;
