@@ -50,6 +50,14 @@
       href:'cosmetics.html',
       image:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1789464147/Shama_Rose_Water_250ml.png',
       tone:'sky'
+    },
+    {
+      slug:'non-foods',
+      name:'Non Foods',
+      desc:'Commercial tandoors, parts and accessories.',
+      href:'non-foods.html',
+      image:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1790261684/Shahi_Charcoal_Tandoor_11C_Size_1.png',
+      tone:'sand'
     }
   ];
 
