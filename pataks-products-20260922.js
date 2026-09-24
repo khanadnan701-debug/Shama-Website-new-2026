@@ -13,7 +13,9 @@
     ["Patak's Kashmiri Masala Paste",'2.2kg x 1','https://res.cloudinary.com/wy4nkkqq/image/upload/v1790069257/Patak_kashmiri_masala_paste_2.2_kg.png'],
     ["Patak's Mild Curry Paste",'2.3kg x 1','https://res.cloudinary.com/wy4nkkqq/image/upload/v1790069258/Patak_mild_curry_paste_2.3kg.png'],
     ["Patak's Tikka Paste",'2.4kg x 1','https://res.cloudinary.com/wy4nkkqq/image/upload/v1790069259/Patak_tikka_paste_2.4kg.png'],
-    ["Patak's Tandoori Paste",'2.5kg x 1','https://res.cloudinary.com/wy4nkkqq/image/upload/v1790069260/patak_s_tandoori_paste_2.5kg.png']
+    ["Patak's Tandoori Paste",'2.5kg x 1','https://res.cloudinary.com/wy4nkkqq/image/upload/v1790069260/patak_s_tandoori_paste_2.5kg.png'],
+    ["Patak's Mango Pickle Hot",'250g x 1','https://res.cloudinary.com/wy4nkkqq/image/upload/v1790272188/Patak_s_Mango_Pickle_Hot_250g.png'],
+    ["Patak's Mix Pickle",'2.3kg x 1','https://res.cloudinary.com/wy4nkkqq/image/upload/v1790272190/Patak_s_Mix_Pickle_2_3kg.png']
   ].map(([title,pack,image])=>({category:'pataks',title,pack,image}));
 
   productData.push(...items);
