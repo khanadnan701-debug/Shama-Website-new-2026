@@ -62,7 +62,8 @@
     { title: 'Almond Flavour Essence', pack: '20ml', terms: ['almond', '20ml'], forceTitle: true, forcePack: true, image: 'https://res.cloudinary.com/wy4nkkqq/image/upload/v1789679038/Almond_20ml.png' },
     { title: 'Vanilla Flavour Essence', pack: '20ml', terms: ['vanilla', '20ml'], forceTitle: true, forcePack: true, image: 'https://res.cloudinary.com/wy4nkkqq/image/upload/v1789679072/vanilla_20ml.png' },
     { title: 'Rose Flavour Essence', pack: '20ml', terms: ['rose', '20ml'], forceTitle: true, forcePack: true, image: 'https://res.cloudinary.com/wy4nkkqq/image/upload/v1789679073/Rose_20ml.png' },
-    { title: 'Pineapple Flavour Essence', pack: '20ml', terms: ['pineapple', '20ml'], forceTitle: true, forcePack: true, image: 'https://res.cloudinary.com/wy4nkkqq/image/upload/v1789679074/Pineapple_20ml.png' }
+    { title: 'Pineapple Flavour Essence', pack: '20ml', terms: ['pineapple', '20ml'], forceTitle: true, forcePack: true, image: 'https://res.cloudinary.com/wy4nkkqq/image/upload/v1789679074/Pineapple_20ml.png' },
+    { title: 'Schani Mint Sauce', pack: '2.27L', terms: ['schani', 'mint', 'sauce'], forceTitle: true, forcePack: true, image: 'https://res.cloudinary.com/wy4nkkqq/image/upload/v1790272195/Schani_Mint_Sauce_2.27_L.png' }
   ];
 
   const oldMisc = productData.filter((item) => item.category === 'misc');
