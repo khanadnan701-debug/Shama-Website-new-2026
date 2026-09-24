@@ -6,6 +6,7 @@
     { key:'shama-sella', label:'Shama Sella Rice', short:'Shama Sella', note:'Shama sella rice range' },
     { key:'extra-long', label:'Extra Long Rice', short:'Extra Long', note:'Shama extra long basmati range' },
     { key:'other-shama', label:'Other Shama Rice', short:'Other Shama', note:'All remaining Shama rice varieties' },
+    { key:'shaheen', label:'Shaheen Rice', short:'Shaheen', note:'Shaheen premium basmati rice range' },
     { key:'sunrise', label:'Sunrise Rice', short:'Sunrise', note:'Complete Sunrise rice range' }
   ];
 
@@ -16,6 +17,7 @@
   function keyForTitle(title) {
     const value = String(title || '').trim();
     if (/^Sunrise\b/i.test(value)) return 'sunrise';
+    if (/^Shaheen\b/i.test(value)) return 'shaheen';
     if (/^Shama\s+Super\s+Kernal.*Parboiled\s+Sella\s+Rice/i.test(value)) return 'shama-sella';
     if (/^Shama\b.*Extra\s*Long/i.test(value) || /^Shama\b.*extra\s*Long/i.test(value)) return 'extra-long';
     if (/^Shama\b/i.test(value)) return 'other-shama';
@@ -48,7 +50,7 @@
           <span class="rice-category-kicker">Browse by rice category</span>
           <h2>Choose your rice range.</h2>
         </div>
-        <p>Shama ranges are shown first in the requested order, followed by the complete Sunrise collection.</p>
+        <p>Shama ranges are shown first, followed by Shaheen and the complete Sunrise collection.</p>
       </div>
       <div class="rice-category-tabs" role="tablist" aria-label="Rice categories">
         <button class="rice-category-tab active" type="button" data-rice-filter="all" aria-pressed="true">
