@@ -3,11 +3,16 @@
   if (document.body.dataset.category !== 'rice') return;
 
   const GROUPS = [
-    { key:'shama-sella', label:'Shama Sella Rice', short:'Shama Sella', note:'Shama sella rice range' },
-    { key:'extra-long', label:'Extra Long Rice', short:'Extra Long', note:'Shama extra long basmati range' },
-    { key:'other-shama', label:'Other Shama Rice', short:'Other Shama', note:'All remaining Shama rice varieties' },
-    { key:'shaheen', label:'Shaheen Rice', short:'Shaheen', note:'Shaheen premium basmati rice range' },
-    { key:'sunrise', label:'Sunrise Rice', short:'Sunrise', note:'Complete Sunrise rice range' }
+    { key:'shama-sella', label:'Shama Sella Rice', short:'Shama Sella', note:'Shama Super Kernal Parboiled Sella rice range' },
+    { key:'shama-extra-long', label:'Shama Extra Long Rice', short:'Shama Extra Long', note:'Shama extra long basmati rice range' },
+    { key:'shama-white-gold', label:'Shama White Gold Rice', short:'Shama White Gold', note:'Shama White Gold basmati rice range' },
+    { key:'shama-thai-jasmine', label:'Shama Thai Jasmine Rice', short:'Shama Thai Jasmine', note:'Shama Thai Long Grain Jasmine AAA rice range' },
+    { key:'shama-other', label:'Shama Broken / Other Shama Rice', short:'Broken / Other Shama', note:'Shama broken jasmine, broken basmati and other Shama rice varieties' },
+    { key:'shaheen', label:'Shaheen Rice', short:'Shaheen', note:'Shaheen premium sella basmati rice range' },
+    { key:'sunrise-extra-long', label:'Sunrise Extra Long Rice', short:'Sunrise Extra Long', note:'Sunrise extra long basmati rice range' },
+    { key:'sunrise-golden-sella', label:'Sunrise Golden Sella Rice', short:'Sunrise Golden Sella', note:'Sunrise Golden Sella basmati rice range' },
+    { key:'sunrise-jasmine', label:'Sunrise Jasmine Rice', short:'Sunrise Jasmine', note:'Sunrise fragrant and Dragon jasmine rice range' },
+    { key:'sunrise-broken-jasmine', label:'Sunrise Broken Jasmine Rice', short:'Sunrise Broken Jasmine', note:'Sunrise Elephant broken jasmine rice range' }
   ];
 
   const esc = value => String(value ?? '').replace(/[&<>"']/g, ch => ({
@@ -16,12 +21,24 @@
 
   function keyForTitle(title) {
     const value = String(title || '').trim();
-    if (/^Sunrise\b/i.test(value)) return 'sunrise';
+
+    // Sunrise ranges
+    if (/^Sunrise\b.*Broken\s+Rice/i.test(value)) return 'sunrise-broken-jasmine';
+    if (/^Sunrise\b.*Golden\s+Sella/i.test(value)) return 'sunrise-golden-sella';
+    if (/^Sunrise\b.*Extra\s*Long/i.test(value)) return 'sunrise-extra-long';
+    if (/^Sunrise\b/i.test(value)) return 'sunrise-jasmine';
+
+    // Shaheen
     if (/^Shaheen\b/i.test(value)) return 'shaheen';
+
+    // Shama ranges
     if (/^Shama\s+Super\s+Kernal.*Parboiled\s+Sella\s+Rice/i.test(value)) return 'shama-sella';
-    if (/^Shama\b.*Extra\s*Long/i.test(value) || /^Shama\b.*extra\s*Long/i.test(value)) return 'extra-long';
-    if (/^Shama\b/i.test(value)) return 'other-shama';
-    return 'other-shama';
+    if (/^Shama\b.*Extra\s*Long/i.test(value)) return 'shama-extra-long';
+    if (/^Shama\s+White\s+Gold\b/i.test(value)) return 'shama-white-gold';
+    if (/^Shama\b.*Thai.*Jasmin/i.test(value) && !/Broken/i.test(value)) return 'shama-thai-jasmine';
+    if (/^Shama\b/i.test(value)) return 'shama-other';
+
+    return 'shama-other';
   }
 
   function organise() {
@@ -50,7 +67,7 @@
           <span class="rice-category-kicker">Browse by rice category</span>
           <h2>Choose your rice range.</h2>
         </div>
-        <p>Shama ranges are shown first, followed by Shaheen and the complete Sunrise collection.</p>
+        <p>Shama is shown first in five clear ranges, followed by Shaheen and four separate Sunrise rice ranges.</p>
       </div>
       <div class="rice-category-tabs" role="tablist" aria-label="Rice categories">
         <button class="rice-category-tab active" type="button" data-rice-filter="all" aria-pressed="true">
