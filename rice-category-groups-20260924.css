@@ -1,0 +1,235 @@
+body[data-category="rice"] .simple-catalogue>.wrap{
+  width:min(1320px,calc(100% - 40px));
+  max-width:none;
+}
+
+.rice-category-controls{
+  margin:0 0 38px;
+}
+
+.rice-category-intro{
+  display:flex;
+  align-items:flex-end;
+  justify-content:space-between;
+  gap:28px;
+  margin-bottom:22px;
+}
+
+.rice-category-kicker{
+  display:block;
+  margin-bottom:10px;
+  color:#6c59dc;
+  font:900 10px/1 Manrope,sans-serif;
+  letter-spacing:.14em;
+  text-transform:uppercase;
+}
+
+.rice-category-intro h2{
+  margin:0;
+  color:#10203d;
+  font:900 clamp(32px,4.5vw,54px)/1 Manrope,sans-serif;
+  letter-spacing:-.045em;
+}
+
+.rice-category-intro p{
+  max-width:470px;
+  margin:0;
+  color:#748096;
+  font:600 14px/1.65 "DM Sans",sans-serif;
+}
+
+.rice-category-tabs{
+  display:grid;
+  grid-template-columns:repeat(5,minmax(0,1fr));
+  gap:10px;
+  padding:12px;
+  border:1px solid #e3e8f0;
+  border-radius:20px;
+  background:#fff;
+  box-shadow:0 14px 38px rgba(20,35,68,.06);
+}
+
+.rice-category-tab{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:8px;
+  min-height:48px;
+  padding:11px 13px;
+  border:0;
+  border-radius:14px;
+  background:#f1f4f8;
+  color:#566278;
+  cursor:pointer;
+  font:800 11px/1.15 Manrope,sans-serif;
+  text-align:left;
+  transition:.2s ease;
+}
+
+.rice-category-tab:hover{
+  background:#e8ecf3;
+  transform:translateY(-1px);
+}
+
+.rice-category-tab b{
+  display:grid;
+  place-items:center;
+  min-width:28px;
+  height:28px;
+  padding:0 7px;
+  border-radius:999px;
+  background:#fff;
+  color:#738097;
+  font-size:9px;
+}
+
+.rice-category-tab.active{
+  background:#17233d;
+  color:#fff;
+}
+
+.rice-category-tab.active b{
+  color:#17233d;
+}
+
+.rice-category-sections{
+  display:flex;
+  flex-direction:column;
+  gap:72px;
+}
+
+.rice-category-section{
+  scroll-margin-top:120px;
+}
+
+.rice-category-section[hidden]{
+  display:none!important;
+}
+
+.rice-category-head{
+  display:flex;
+  align-items:flex-end;
+  justify-content:space-between;
+  gap:24px;
+  margin-bottom:24px;
+  padding-bottom:18px;
+  border-bottom:1px solid #e5e9f0;
+}
+
+.rice-category-head>div{
+  display:flex;
+  align-items:flex-start;
+  gap:16px;
+}
+
+.rice-category-number{
+  display:grid;
+  place-items:center;
+  min-width:44px;
+  height:44px;
+  padding:0 11px;
+  border-radius:999px;
+  background:#17233d;
+  color:#fff;
+  font:900 10px/1 Manrope,sans-serif;
+  letter-spacing:.08em;
+}
+
+.rice-category-label{
+  display:block;
+  margin-bottom:6px;
+  color:#7765df;
+  font:900 9px/1 Manrope,sans-serif;
+  letter-spacing:.13em;
+  text-transform:uppercase;
+}
+
+.rice-category-head h2{
+  margin:0;
+  color:#12203b;
+  font:900 clamp(27px,3.2vw,42px)/1.05 Manrope,sans-serif;
+  letter-spacing:-.04em;
+}
+
+.rice-category-head p{
+  margin:7px 0 0;
+  color:#7d8799;
+  font:600 13px/1.55 "DM Sans",sans-serif;
+}
+
+.rice-category-count{
+  flex:0 0 auto;
+  padding:10px 13px;
+  border-radius:999px;
+  background:#eef1f6;
+  color:#657188;
+  font:800 10px/1 Manrope,sans-serif;
+  letter-spacing:.08em;
+  text-transform:uppercase;
+}
+
+.rice-category-grid{
+  margin:0;
+}
+
+@media(max-width:980px){
+  .rice-category-intro{
+    align-items:flex-start;
+    flex-direction:column;
+  }
+
+  .rice-category-tabs{
+    grid-template-columns:repeat(2,minmax(0,1fr));
+  }
+
+  .rice-category-tab:first-child{
+    grid-column:1/-1;
+  }
+}
+
+@media(max-width:640px){
+  body[data-category="rice"] .simple-catalogue>.wrap{
+    width:min(100% - 22px,1320px);
+  }
+
+  .rice-category-controls{
+    margin-bottom:30px;
+  }
+
+  .rice-category-tabs{
+    grid-template-columns:1fr;
+    padding:10px;
+    border-radius:16px;
+  }
+
+  .rice-category-tab:first-child{
+    grid-column:auto;
+  }
+
+  .rice-category-sections{
+    gap:52px;
+  }
+
+  .rice-category-head{
+    align-items:flex-start;
+    flex-direction:column;
+    gap:14px;
+  }
+
+  .rice-category-head>div{
+    gap:12px;
+  }
+
+  .rice-category-number{
+    min-width:38px;
+    height:38px;
+  }
+
+  .rice-category-head h2{
+    font-size:30px;
+  }
+
+  .rice-category-count{
+    margin-left:50px;
+  }
+}
