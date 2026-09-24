@@ -52,6 +52,7 @@
     { category:'rice', title:'Sunrise Extra Long Basmati Rice', pack:'20kg x 1', image:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1790255526/Sunrise_Basmati_Rice_Extra_Long_20kg.png' },
     { category:'rice', title:'Sunrise Extra Long Basmati Rice', pack:'10kg x 1', image:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1790255525/Sunrise_Basmati_Rice_Extra_Long_10kg.png' },
     { category:'rice', title:'Sunrise Extra Long Basmati Rice', pack:'5kg x 1', image:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1790255524/Sunrise_Basmati_Rice_Extra_Long_5kg.png' },
+    { category:'rice', title:'Sunrise Extra Long Basmati Rice', pack:'2kg x 10', image:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1790258206/Sunrise_Basmati_Rice_Extra_Long_2kg.png' },
     { category:'rice', title:'Sunrise Extra Long Basmati Rice', pack:'1kg x 20', image:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1790255523/Sunrise_Basmati_Rice_Extra_Long_1kg.png' },
 
     { category:'rice', title:'Sunrise Golden Sella Rice', pack:'20kg x 1', image:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1790255522/Sunrise_Golden_Sella_Basmati_Rice_20_KG.png' },
