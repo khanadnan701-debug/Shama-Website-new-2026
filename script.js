@@ -765,7 +765,7 @@ const supplementalData = [
 ];
 productData.push(...supplementalData);
 const categories=[
- {slug:'rice',name:'Rice',desc:'Fragrant grains for every table',image:'https://images.unsplash.com/photo-1586201375761-83865001e31c?auto=format&fit=crop&w=900&q=85'},
+ {slug:'rice',name:'Rice',desc:'Fragrant grains for every table',image:'https://res.cloudinary.com/wy4nkkqq/image/upload/f_webp,fl_awebp,q_auto:best,e_sharpen:70/v1790255518/Shama_Super_Kernal_Par_Boiled_Sella_Rice_5kg.png'},
  {slug:'spices',name:'Spices',desc:'Bold aroma, vivid colour',image:'https://images.unsplash.com/photo-1532336414038-cf19250c5757?auto=format&fit=crop&w=900&q=85'},
  {slug:'sauces',name:'Sauces & Pastes',desc:'Instant depth and flavour',image:(productData.find(x=>x.category==='sauces')||{}).image||'https://images.unsplash.com/photo-1601050690117-94f5f6fa8bd7?auto=format&fit=crop&w=900&q=85'},
  {slug:'misc',name:'Miscellaneous',desc:'Everyday pantry essentials',image:'https://images.unsplash.com/photo-1601050690117-94f5f6fa8bd7?auto=format&fit=crop&w=900&q=85'},
