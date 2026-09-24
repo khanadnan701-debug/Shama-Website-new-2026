@@ -64,13 +64,41 @@
     const grid = document.querySelector('.mega-grid');
     if (!grid) return;
 
+    const hrefKey = href => {
+      try {
+        const url = new URL(href, window.location.href);
+        return url.pathname.split('/').filter(Boolean).pop() || 'index.html';
+      } catch (_) {
+        return String(href || '').split('?')[0].split('#')[0].split('/').pop();
+      }
+    };
+
+    // Remove any duplicate menu rows already rendered by older scripts/cached code.
+    const seen = new Set();
+    Array.from(grid.querySelectorAll(':scope > a')).forEach(link => {
+      const key = hrefKey(link.getAttribute('href'));
+      if (seen.has(key)) link.remove();
+      else seen.add(key);
+    });
+
+    // Add only genuinely missing legacy/extended ranges.
     brands.forEach(brand => {
-      if (grid.querySelector(`[data-brand-range="${brand.slug}"]`)) return;
+      const key = hrefKey(brand.href);
+      const exists = Array.from(grid.querySelectorAll(':scope > a'))
+        .some(link => hrefKey(link.getAttribute('href')) === key);
+      if (exists) return;
+
       const link = document.createElement('a');
       link.href = brand.href;
       link.dataset.brandRange = brand.slug;
-      link.innerHTML = `<b>${brand.number}</b><span><strong>${brand.name}</strong><small>${brand.desc}</small></span><i>↗</i>`;
+      link.innerHTML = `<b></b><span><strong>${brand.name}</strong><small>${brand.desc}</small></span><i>↗</i>`;
       grid.appendChild(link);
+    });
+
+    // Keep numbering clean and sequential: 01 ... 16.
+    Array.from(grid.querySelectorAll(':scope > a')).forEach((link, index) => {
+      const number = link.querySelector('b');
+      if (number) number.textContent = String(index + 1).padStart(2, '0');
     });
   }
 
