@@ -41,6 +41,7 @@ body[data-category="rice"] .simple-catalogue>.wrap{
 .rice-category-tabs{
   display:grid;
   grid-template-columns:repeat(6,minmax(0,1fr));
+  grid-auto-flow:row;
   gap:10px;
   padding:12px;
   border:1px solid #e3e8f0;
@@ -61,7 +62,7 @@ body[data-category="rice"] .simple-catalogue>.wrap{
   background:#f1f4f8;
   color:#566278;
   cursor:pointer;
-  font:800 11px/1.15 Manrope,sans-serif;
+  font:800 10.5px/1.2 Manrope,sans-serif;
   text-align:left;
   transition:.2s ease;
 }
@@ -231,5 +232,21 @@ body[data-category="rice"] .simple-catalogue>.wrap{
 
   .rice-category-count{
     margin-left:50px;
+  }
+}
+
+/* Ten-range rice navigation */
+@media(min-width:981px){
+  .rice-category-tabs{
+    grid-template-columns:repeat(6,minmax(0,1fr));
+  }
+
+  .rice-category-tab{
+    min-width:0;
+  }
+
+  .rice-category-tab span{
+    min-width:0;
+    overflow-wrap:anywhere;
   }
 }
