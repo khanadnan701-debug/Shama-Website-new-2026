@@ -45,6 +45,9 @@
     { category:'rice', title:'Shama Broken Basmati Rice', pack:'2226A - 20kg x 1', image:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1790257567/shama_broken_basmati_rice_20kg.png' },
     { category:'rice', title:'Shama Broken Basmati Rice', pack:'5kg x 1', image:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1790255564/Shama_broken_basmati_rice_new_5kg.png' },
 
+    // SHAHEEN
+    { category:'rice', title:'Shaheen Sella Super Basmati Parboiled Rice', pack:'20kg x 1', image:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1790257746/Shaheen_Sella_Super_Basmati_Parboiled_Rice_20_kg.png' },
+
     // SUNRISE — keep after all Shama ranges
     { category:'rice', title:'Sunrise Extra Long Basmati Rice', pack:'20kg x 1', image:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1790255526/Sunrise_Basmati_Rice_Extra_Long_20kg.png' },
     { category:'rice', title:'Sunrise Extra Long Basmati Rice', pack:'10kg x 1', image:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1790255525/Sunrise_Basmati_Rice_Extra_Long_10kg.png' },
