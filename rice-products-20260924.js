@@ -25,6 +25,7 @@
 
     // SHAMA — Thai Jasmine AAA
     { category:'rice', title:'Shama Thai Long Grain Jasmin Rice AAA', pack:'4114B - 20kg x 1', image:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1790255523/Shama_Thai_Long_Grain_Jasmin_Rice_AAA_20kg.png' },
+    { category:'rice', title:'Shama Thai Long Grain Jasmin Rice AAA', pack:'18kg x 1', image:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1790257556/Shama_Thai_Long_Grain_Jasmin_Rice_AAA_18kg.png' },
     { category:'rice', title:'Shama Thai Long Grain Jasmin Rice AAA', pack:'0338A - 10kg x 1', image:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1790255523/Shama_Thai_Long_Grain_Jasmin_Rice_AAA_10kg.png' },
     { category:'rice', title:'Shama Thai Long Grain Jasmin Rice AAA', pack:'0239A - 5kg x 1', image:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1790255522/Shama_Thai_Long_Grain_Jasmin_Rice_AAA_5kg.png' },
     { category:'rice', title:'Shama Thai Long Grain Jasmin Rice AAA', pack:'0314A - 1kg x 20', image:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1790255521/Shama_Thai_Long_Grain_Jasmin_Rice_AAA_1kg.png' },
@@ -41,6 +42,7 @@
 
     // SHAMA — Other rice
     { category:'rice', title:'Shama Sona Masoori Rice', pack:'5kg x 1', image:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1790255521/sona_masoori_5kg.png' },
+    { category:'rice', title:'Shama Broken Basmati Rice', pack:'2226A - 20kg x 1', image:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1790257567/shama_broken_basmati_rice_20kg.png' },
     { category:'rice', title:'Shama Broken Basmati Rice', pack:'5kg x 1', image:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1790255564/Shama_broken_basmati_rice_new_5kg.png' },
 
     // SUNRISE — keep after all Shama ranges
