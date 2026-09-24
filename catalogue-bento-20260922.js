@@ -54,7 +54,7 @@
   ];
 
   const imageOverrides = {
-    rice:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1789030729/jasmine-5kg.jpg',
+    rice:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1790242901/5kg_2.png',
     spices:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1789051986/star_anise.png',
     sauces:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1789678774/Shama_Mango_pickle_1kg.png',
     misc:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1789678914/Shama_paneer_dodi_phool_100g.png',
