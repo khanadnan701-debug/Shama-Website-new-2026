@@ -62,7 +62,7 @@
   ];
 
   const imageOverrides = {
-    rice:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1790255518/Shama_Super_Kernal_Par_Boiled_Sella_Rice_5kg.png',
+    rice:'https://res.cloudinary.com/wy4nkkqq/image/upload/f_webp,fl_awebp,q_auto:best,e_sharpen:70/v1790255518/Shama_Super_Kernal_Par_Boiled_Sella_Rice_5kg.png',
     spices:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1789051986/star_anise.png',
     sauces:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1789678774/Shama_Mango_pickle_1kg.png',
     misc:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1789678914/Shama_paneer_dodi_phool_100g.png',
@@ -123,7 +123,7 @@
               </div>
               <div class="grocery-promo-media">
                 <span class="grocery-promo-blob"></span>
-                <img src="${heroMain.image}" alt="${heroMain.name}">
+                <img src="${heroMain.image}" alt="${heroMain.name}" onerror="this.onerror=null;this.src='https://static.wixstatic.com/media/00ae33_1a0186c70dbe44b0b74082a2e8264ca6~mv2.jpg'">
               </div>
               <div class="grocery-promo-dots" aria-hidden="true"><i class="active"></i><i></i><i></i></div>
             </a>
@@ -162,7 +162,7 @@
               ${ranges.map((range,index) => `
                 <a class="grocery-category-card tone-${range.tone}" href="${range.href}" data-search="${(range.name + ' ' + range.desc).toLowerCase()}">
                   <span class="grocery-category-image">
-                    <img src="${range.image}" alt="${range.name}" loading="${index < 7 ? 'eager' : 'lazy'}">
+                    <img src="${range.image}" alt="${range.name}" loading="${index < 7 ? 'eager' : 'lazy'}" onerror="if(this.alt==='Rice'){this.onerror=null;this.src='https://static.wixstatic.com/media/00ae33_1a0186c70dbe44b0b74082a2e8264ca6~mv2.jpg'}">
                   </span>
                   <strong>${range.name}</strong>
                   <small>${range.desc}</small>
@@ -182,7 +182,7 @@
               ${ranges.map((range,index) => `
                 <a class="grocery-range-tile tone-${range.tone}" href="${range.href}" data-search="${(range.name + ' ' + range.desc).toLowerCase()}">
                   <span class="grocery-range-number">${String(index + 1).padStart(2,'0')}</span>
-                  <div class="grocery-range-image"><img src="${range.image}" alt="${range.name}" loading="lazy"></div>
+                  <div class="grocery-range-image"><img src="${range.image}" alt="${range.name}" loading="lazy" onerror="if(this.alt==='Rice'){this.onerror=null;this.src='https://static.wixstatic.com/media/00ae33_1a0186c70dbe44b0b74082a2e8264ca6~mv2.jpg'}"></div>
                   <div class="grocery-range-copy">
                     <h3>${range.name}</h3>
                     <p>${range.desc}</p>
