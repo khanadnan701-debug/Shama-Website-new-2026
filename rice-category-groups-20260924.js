@@ -16,7 +16,7 @@
   function keyForTitle(title) {
     const value = String(title || '').trim();
     if (/^Sunrise\b/i.test(value)) return 'sunrise';
-    if (/^Shama\b.*\bSella\b/i.test(value)) return 'shama-sella';
+    if (/^Shama\s+Super\s+Kernal.*Parboiled\s+Sella\s+Rice/i.test(value)) return 'shama-sella';
     if (/^Shama\b.*Extra\s*Long/i.test(value) || /^Shama\b.*extra\s*Long/i.test(value)) return 'extra-long';
     if (/^Shama\b/i.test(value)) return 'other-shama';
     return 'other-shama';
