@@ -28,6 +28,7 @@
     { category:'rice', title:'Shama Thai Long Grain Jasmin Rice AAA', pack:'18kg x 1', image:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1790257556/Shama_Thai_Long_Grain_Jasmin_Rice_AAA_18kg.png' },
     { category:'rice', title:'Shama Thai Long Grain Jasmin Rice AAA', pack:'0338A - 10kg x 1', image:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1790255523/Shama_Thai_Long_Grain_Jasmin_Rice_AAA_10kg.png' },
     { category:'rice', title:'Shama Thai Long Grain Jasmin Rice AAA', pack:'0239A - 5kg x 1', image:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1790255522/Shama_Thai_Long_Grain_Jasmin_Rice_AAA_5kg.png' },
+    { category:'rice', title:'Shama Thai Long Grain Jasmin Rice AAA', pack:'0321B - 2kg x 10', image:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1790261599/Shama_Thai_Long_Grain_Jasmin_Rice_AAA_2kg.png' },
     { category:'rice', title:'Shama Thai Long Grain Jasmin Rice AAA', pack:'0314A - 1kg x 20', image:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1790255521/Shama_Thai_Long_Grain_Jasmin_Rice_AAA_1kg.png' },
 
     // SHAMA — Thai Jasmine broken variants
