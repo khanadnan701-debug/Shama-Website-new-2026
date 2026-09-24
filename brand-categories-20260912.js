@@ -49,6 +49,14 @@
       desc: 'Beauty & personal care',
       image: 'https://res.cloudinary.com/wy4nkkqq/image/upload/v1789464147/Shama_Rose_Water_250ml.png',
       href: 'cosmetics.html'
+    },
+    {
+      number: '16',
+      slug: 'non-foods',
+      name: 'Non Foods',
+      desc: 'Tandoors, parts & accessories',
+      image: 'https://res.cloudinary.com/wy4nkkqq/image/upload/v1790261684/Shahi_Charcoal_Tandoor_11C_Size_1.png',
+      href: 'non-foods.html'
     }
   ];
 
@@ -116,8 +124,8 @@
     });
 
     document.querySelectorAll('.page-hero p, .catalogue-hero p').forEach(node => {
-      node.textContent = node.textContent.replace('Fifteen distinctive ranges.', 'Fifteen distinctive ranges.');
-      node.textContent = node.textContent.replace('Fifteen delicious ranges.', 'Fifteen delicious ranges.');
+      node.textContent = node.textContent.replace('Sixteen distinctive ranges.', 'Sixteen distinctive ranges.');
+      node.textContent = node.textContent.replace('Sixteen delicious ranges.', 'Sixteen delicious ranges.');
     });
   }
 
@@ -125,13 +133,13 @@
     document.querySelectorAll('.story-video-meta span').forEach(node => {
       if (/Product ranges/i.test(node.textContent || '')) {
         const count = node.querySelector('b');
-        if (count) count.textContent = '15';
+        if (count) count.textContent = '16';
       }
     });
 
     document.querySelectorAll('p').forEach(node => {
-      if ((node.textContent || '').includes('Browse fifteen ranges')) {
-        node.textContent = node.textContent.replace('Browse fifteen ranges', 'Browse fifteen ranges');
+      if ((node.textContent || '').includes('Browse sixteen ranges')) {
+        node.textContent = node.textContent.replace('Browse sixteen ranges', 'Browse sixteen ranges');
       }
     });
   }
