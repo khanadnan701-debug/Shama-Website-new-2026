@@ -9,7 +9,6 @@
     'divers',
     'dry-fruits',
     'frozen',
-    'misc',
     'non-foods',
     'oils',
     'preserves',
