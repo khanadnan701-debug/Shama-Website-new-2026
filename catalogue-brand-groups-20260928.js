@@ -9,7 +9,6 @@
     'divers',
     'dry-fruits',
     'non-foods',
-    'oils',
     'preserves',
     'sea-food',
     'spices'
