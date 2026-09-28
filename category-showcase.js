@@ -32,9 +32,9 @@
       {
         key: 'frozen', number: '03', title: 'Frozen', slugs: ['frozen'], href: 'frozen.html',
         description: 'Convenient frozen favourites made for busy homes, restaurants and foodservice customers.',
-        forceImage: 'assets/frozen/shama-crispy-paratha-20.webp',
-        forceTitle: 'Shama Crispy Plain Paratha',
-        forcePack: 'Wholesale packs available'
+        forceImage: 'https://res.cloudinary.com/wy4nkkqq/image/upload/v1790625180/Shama_Chicken_tikka_Samosa_20Pcs.png',
+        forceTitle: 'Shama Chicken Tikka Samosa',
+        forcePack: '20 pcs · Frozen'
       },
       {
         key: 'sauces', number: '04', title: 'Sauces & Pastes', slugs: ['sauces-pastes', 'sauces'], href: 'sauces-pastes.html',
