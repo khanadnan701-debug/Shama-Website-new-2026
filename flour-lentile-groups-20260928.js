@@ -89,6 +89,12 @@
     return true;
   }
 
+  const regroup = () => {
+    setTimeout(() => {
+      groupProducts();
+    }, 0);
+  };
+
   if (!groupProducts()) {
     let tries = 0;
     const timer = setInterval(() => {
@@ -96,4 +102,7 @@
       if (groupProducts() || tries > 30) clearInterval(timer);
     }, 100);
   }
+
+  document.addEventListener('shama:product-simple-rendered', regroup);
+  window.addEventListener('load', regroup, { once:true });
 })();
