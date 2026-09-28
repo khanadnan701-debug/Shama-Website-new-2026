@@ -25,16 +25,14 @@
   const hiddenTitles = new Set([
     'Shama Coconut Water',
     'Shama Falooda Chocolate',
-    'Shama Almond Drink',
-    'Sunrise Almond Drink'
+    'Shama Almond Drink'
   ]);
 
   for (let index = productData.length - 1; index >= 0; index -= 1) {
     const item = productData[index];
     if (item.category !== 'beverages') continue;
 
-    const isSunrise2L = /^Sunrise\s/i.test(item.title || '') && /\b2\s*ltr\b/i.test(item.pack || '');
-    if (hiddenTitles.has(item.title) || isSunrise2L) {
+    if (hiddenTitles.has(item.title)) {
       productData.splice(index, 1);
     }
   }
