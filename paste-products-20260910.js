@@ -50,7 +50,11 @@
     ['Shama_tamarind_date_sauce','https://res.cloudinary.com/wy4nkkqq/image/upload/v1789155835/Shama_tamarind_date_sauce.png'],
     ['Shama_mixed_pickle_4kg','https://res.cloudinary.com/wy4nkkqq/image/upload/v1789464149/Shama_mixed_pickle_4kg.png'],
     ['Shama_Mango_mixed_1kg','https://res.cloudinary.com/wy4nkkqq/image/upload/v1789678774/Shama_Mango_mixed_1kg.png'],
-    ['Shama_Mango_pickle_1kg','https://res.cloudinary.com/wy4nkkqq/image/upload/v1789678774/Shama_Mango_pickle_1kg.png']
+    ['Shama_Mango_pickle_1kg','https://res.cloudinary.com/wy4nkkqq/image/upload/v1789678774/Shama_Mango_pickle_1kg.png'],
+    ['Patak_s_Mango_Pickle_Hot_250g','https://res.cloudinary.com/wy4nkkqq/image/upload/v1790272188/Patak_s_Mango_Pickle_Hot_250g.png'],
+    ['Patak_s_Mix_Pickle_2_3kg','https://res.cloudinary.com/wy4nkkqq/image/upload/v1790272190/Patak_s_Mix_Pickle_2_3kg.png'],
+    ['Schani_Mint_Sauce_2.27_L','https://res.cloudinary.com/wy4nkkqq/image/upload/v1790272195/Schani_Mint_Sauce_2.27_L.png'],
+    ['Mah_a_Hot_Spicy_sauce_300gm','https://res.cloudinary.com/wy4nkkqq/image/upload/v1790600821/Mah_a_Hot_Spicy_sauce_300gm.png']
   ];
 
   const explicitTitles = {
