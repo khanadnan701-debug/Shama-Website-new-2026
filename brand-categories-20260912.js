@@ -250,6 +250,16 @@
     document.head.appendChild(script);
   }
 
+  function loadCatalogueBrandGroups() {
+    if (document.body.dataset.page !== 'product') return;
+    if (document.getElementById('catalogue-brand-groups-script')) return;
+    const script = document.createElement('script');
+    script.id = 'catalogue-brand-groups-script';
+    script.src = 'catalogue-brand-groups-20260928.js?v=20260928-1';
+    script.async = false;
+    document.head.appendChild(script);
+  }
+
   function loadUniversalProductZoom() {
     /* Disabled: product-details-20260922.js is now the single product viewer. */
     return;
@@ -260,6 +270,7 @@
     addCatalogueBrands();
     updateRangeCounts();
     loadChatbot();
+    loadCatalogueBrandGroups();
     loadUniversalProductZoom();
   }
 
