@@ -8,7 +8,6 @@
     'agarbatti',
     'divers',
     'dry-fruits',
-    'frozen',
     'non-foods',
     'oils',
     'preserves',
