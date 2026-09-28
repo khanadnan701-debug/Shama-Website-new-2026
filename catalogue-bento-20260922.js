@@ -100,7 +100,7 @@
     misc:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1789678914/Shama_paneer_dodi_phool_100g.png',
     beverages:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1789231973/Shama_Basil_Seed_Drink_Watermelon.png',
     flour:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1789232539/shama_wheat_floor_T55_1kg.png',
-    frozen:'assets/frozen/shama-chicken-samosa-20.webp',
+    frozen:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1790625180/Shama_Chicken_tikka_Samosa_20Pcs.png',
     oils:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1789678755/Shama_sunflower_oil_5ltr.png',
     'dry-fruits':'https://res.cloudinary.com/wy4nkkqq/image/upload/v1789232085/Shama_Raw_almonds_100gm.png'
   };
@@ -127,7 +127,7 @@
     const heroMain = bySlug('rice');
     const heroSpices = bySlug('spices');
     const heroFrozen = bySlug('frozen');
-    const chickenSamosaImage = 'assets/frozen/shama-chicken-samosa-20.webp';
+    const chickenSamosaImage = 'https://res.cloudinary.com/wy4nkkqq/image/upload/v1790625180/Shama_Chicken_tikka_Samosa_20Pcs.png';
 
     main.innerHTML = `
       <section class="grocery-catalogue">
