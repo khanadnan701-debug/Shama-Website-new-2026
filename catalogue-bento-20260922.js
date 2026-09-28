@@ -58,6 +58,38 @@
       href:'non-foods.html',
       image:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1790261684/Shahi_Charcoal_Tandoor_11C_Size_1.png',
       tone:'sand'
+    },
+    {
+      slug:'divers',
+      name:'Divers',
+      desc:'Everyday pantry, snacks and speciality grocery products.',
+      href:'divers.html',
+      image:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1790600769/Telephone_ISABGUL_200g.png',
+      tone:'lavender'
+    },
+    {
+      slug:'preserves',
+      name:'Preserves',
+      desc:'Ghee, preserved foods, tomatoes, vinegar and pantry favourites.',
+      href:'preserves.html',
+      image:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1789464152/Shama_Kesar_Mango_Plup_Kesar.png',
+      tone:'mint'
+    },
+    {
+      slug:'sea-food',
+      name:'Sea Food',
+      desc:'Frozen seafood selections for retail and foodservice.',
+      href:'sea-food.html',
+      image:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1790600837/Gambas_8-12.png',
+      tone:'sky'
+    },
+    {
+      slug:'savoury-snacks',
+      name:'Savoury Snacks',
+      desc:'Namkeen, chips, mixtures, chikki and savoury snack favourites.',
+      href:'savoury-snacks.html',
+      image:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1790601081/Shama_Roasted_Corn_Salted_400G.png',
+      tone:'peach'
     }
   ];
 
