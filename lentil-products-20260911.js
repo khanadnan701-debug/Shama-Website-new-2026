@@ -4,6 +4,19 @@
   if (typeof productData === 'undefined' || !Array.isArray(productData)) return;
 
   const base = 'https://res.cloudinary.com/wy4nkkqq/image/upload/';
+  const dualSizeTitles = new Set([
+    'Shama Desi Moong Whole',
+    'Shama Desi Moong Dal',
+    'Shama Desi Chana Dal',
+    'Shama Desi Urad Dal',
+    'Shama Desi White Chick Peas',
+    'Shama Desi Kidney Beans',
+    'Shama Desi Black Eye Beans',
+    'Shama Desi Masoor Dal Whole',
+    'Shama Desi Urad Whole',
+    'Shama Desi Toor Dal'
+  ]);
+
   const lentilProducts = [
     ['Shama Desi Black Eye Beans','Shama_desi_black_eye_beans_1kg'],
     ['Shama Desi Urad Dal','Shama_desi_urad_dal_1kg_2'],
@@ -32,7 +45,7 @@
   ].map(([title, id]) => ({
     category:'flour',
     title,
-    pack:'1kg',
+    pack: dualSizeTitles.has(title) ? '1kg & 2kg' : '1kg',
     image:`${base}v1789155082/${id}.png`
   }));
 
