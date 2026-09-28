@@ -23,6 +23,24 @@
     return isFlour(title) ? 'flour' : 'lentiles';
   }
 
+  function brandForFlour(title) {
+    const value = String(title || '');
+    if (/^Shama\b/i.test(value)) return 'Shama';
+    if (/^TRS\b/i.test(value)) return 'TRS';
+    if (/^Le\s+Renard\b/i.test(value)) return 'Le Renard';
+    if (/^Ahmed\b/i.test(value)) return 'Ahmed';
+    return 'Other Brands';
+  }
+
+  function brandRank(title) {
+    const brand = brandForFlour(title);
+    if (brand === 'Shama') return 0;
+    if (brand === 'TRS') return 1;
+    if (brand === 'Le Renard') return 2;
+    if (brand === 'Ahmed') return 3;
+    return 9;
+  }
+
   function organise() {
     const catalogue = document.querySelector('.simple-catalogue');
     const wrap = catalogue?.querySelector('.wrap');
@@ -40,6 +58,17 @@
       const key = keyForTitle(title);
       card.dataset.flourGroup = key;
       grouped[key].push(card);
+      const meta = card.querySelector('.simple-product-meta');
+      if (meta) meta.textContent = brandForFlour(title);
+    });
+
+    Object.keys(grouped).forEach(key => {
+      grouped[key].sort((a,b) => {
+        const at = a.querySelector('.simple-product-content h3')?.textContent || '';
+        const bt = b.querySelector('.simple-product-content h3')?.textContent || '';
+        const rank = brandRank(at) - brandRank(bt);
+        return rank || at.localeCompare(bt);
+      });
     });
 
     const controls = document.createElement('div');
