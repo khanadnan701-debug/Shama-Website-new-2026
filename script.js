@@ -771,7 +771,7 @@ const categories=[
  {slug:'misc',name:'Miscellaneous',desc:'Everyday pantry essentials',image:'https://images.unsplash.com/photo-1601050690117-94f5f6fa8bd7?auto=format&fit=crop&w=900&q=85'},
  {slug:'beverages',name:'Beverages',desc:'Refreshingly familiar',image:'https://images.unsplash.com/photo-1544787219-7f47ccb76574?auto=format&fit=crop&w=900&q=85'},
  {slug:'flour',name:'Flour & Lentiles',desc:'Wholesome kitchen staples',image:'https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=900&q=85'},
- {slug:'frozen',name:'Frozen',desc:'Convenience, without compromise',image:'https://images.unsplash.com/photo-1601050690597-df0568f70950?auto=format&fit=crop&w=900&q=85'},
+ {slug:'frozen',name:'Frozen',desc:'Convenience, without compromise',image:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1790625180/Shama_Chicken_tikka_Samosa_20Pcs.png'},
  {slug:'oils',name:'Oils',desc:'The foundation of great food',image:'https://images.unsplash.com/photo-1474979266404-7eaacbcd87c5?auto=format&fit=crop&w=900&q=85'},
  {slug:'dry-fruits',name:'Dry Fruits',desc:'Naturally rich and satisfying',image:'https://images.unsplash.com/photo-1600189020840-e9918c25269d?auto=format&fit=crop&w=900&q=85'},
  {slug:'laziza',name:'Laziza',desc:'Recipe masalas, dessert mixes and traditional favourites',image:'https://res.cloudinary.com/wy4nkkqq/image/upload/Laziza_biryani_masala_100g.png'},
