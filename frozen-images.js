@@ -1,128 +1,69 @@
-// Supplied Frozen product images; existing product names and packs are preserved.
+// Frozen catalogue synced to the current Cloudinary folder: shama/Frozen.
 (() => {
+  'use strict';
   if (document.body.dataset.category !== 'frozen') return;
-  const suppliedImages = {
-  "Shama Lahori Chicken Charcoal Seekh Kebab": [
-    "assets/frozen/shama-lahori-chicken-kebab-15.webp"
-  ],
-  "Shama Lahori Meat Charcoal Seekh Kebab": [
-    "assets/frozen/shama-lahori-meat-kebab-15.webp"
-  ],
-  "Shama Vegetable Samosa": [
-    "assets/frozen/shama-vegetable-samosa-20-lifestyle.webp",
-    "assets/frozen/shama-vegetable-samosa-50.webp"
-  ],
-  "Shama Lamb Meat Samosa": [
-    "assets/frozen/shama-lamb-meat-samosa-50.webp"
-  ],
-  "Shama Lamb Meat Spring Roll": [
-    "assets/frozen/shama-lamb-meat-spring-roll-20.webp",
-    "assets/frozen/shama-lamb-meat-spring-roll-50.webp"
-  ],
-  "Shama Vegetable Spring Rolls": [
-    "assets/frozen/shama-vegetable-spring-roll-20.webp"
-  ],
-  "Mazedar Methi Masala Paratha": [
-    "assets/frozen/mazedar-methi-masala-paratha.webp"
-  ],
-  "Mazedar Onion Paratha": [
-    "assets/frozen/mazedar-onion-paratha.webp"
-  ],
-  "Shama Plain Paratha": [
-    "https://res.cloudinary.com/wy4nkkqq/image/upload/v1789463985/Shama_Plain_Paratha.png",
-    "assets/frozen/shama-plain-paratha-30.webp",
-    "assets/frozen/mazedar-plain-paratha-20.webp",
-    "assets/frozen/mazedar-plain-paratha-5.webp"
-  ],
-  "Mazedar Potato Paratha": [
-    "assets/frozen/mazedar-potato-paratha.webp"
-  ],
-  "Mazedar Vegetable Paratha": [
-    "assets/frozen/mazedar-vegetable-paratha.webp"
-  ],
-  "Shama Chicken Samosa": [
-    "assets/frozen/shama-chicken-samosa-20.webp",
-    "assets/frozen/shama-chicken-samosa-50.webp"
-  ],
-  "Punjabi Style Cocktail Samosa 30Pcs": [
-    "assets/frozen/shama-punjabi-cocktail-samosa.webp"
-  ],
-  "Shama Chicken Spring Roll": [
-    "assets/frozen/shama-chicken-spring-roll-20.webp",
-    "assets/frozen/shama-chicken-spring-roll-50.webp"
-  ],
-  "Karela 400g": [
-    "assets/frozen/shama-karela.webp"
-  ],
-  "Cut Okra 400g": [
-    "assets/frozen/shama-cut-okra.webp"
-  ],
-  "Falsa 454g": [
-    "assets/frozen/shama-falsa.webp"
-  ],
-  "Green Chilli 400g": [
-    "assets/frozen/shama-green-chilli.webp"
-  ],
-  "Punjabi Aloo (Potato) Samosa 12Pcs": [
-    "https://res.cloudinary.com/wy4nkkqq/image/upload/v1789463986/Punjabi_Aloo_Potato_Samosa_12Pcs.png",
-    "assets/frozen/shama-punjabi-aloo-samosa-12.webp"
-  ],
-  "Shama Crispy Paratha": [
-    "https://res.cloudinary.com/wy4nkkqq/image/upload/v1789463984/Shama_Crispy_Paratha.png",
-    "assets/frozen/shama-crispy-paratha-20.webp"
-  ]
-};
-  for (const product of productData) {
-    if (product.category === 'frozen' && suppliedImages[product.title]) {
-      product.image = suppliedImages[product.title][0];
-    }
-  }
-  for (const [name, sources] of Object.entries(suppliedImages)) {
-    if (!productData.some(product => product.category === 'frozen' && product.title === name)) {
-      productData.push({category: 'frozen', title: name,
-        pack: 'Frozen · Contact us for case quantity', image: sources[0]});
-    }
-  }
-  // Reuse the existing product renderer, search, bulk-order and zoom behavior.
-  renderProducts(document.querySelector('#page-content'));
-  // The shared renderer appends its stylesheet; retain only the original copy.
-  [...document.querySelectorAll('link[href^="product-runway.css"]')].slice(1).forEach(link => link.remove());
-  const image = document.querySelector('#runway-image');
-  const title = document.querySelector('#runway-title');
-  const options = document.createElement('div');
-  options.className = 'frozen-image-options';
-  options.setAttribute('role', 'group');
-  options.setAttribute('aria-label', 'Product images');
-  document.querySelector('.runway-stage').after(options);
+  if (typeof productData === 'undefined' || !Array.isArray(productData)) return;
 
-  function updateOptions() {
-    const name = title.textContent;
-    const sources = suppliedImages[name] || [];
-    if (options.dataset.product !== name) {
-      options.dataset.product = name;
-      options.replaceChildren();
-      options.hidden = sources.length < 2;
-      sources.forEach((src, index) => {
-        const button = document.createElement('button');
-        button.type = 'button';
-        button.setAttribute('aria-label', `${name}: image ${index + 1}`);
-        const thumb = document.createElement('img');
-        thumb.src = src;
-        thumb.alt = '';
-        thumb.width = 64;
-        thumb.height = 64;
-        button.append(thumb);
-        button.addEventListener('click', () => {
-          image.src = src;
-          updateOptions();
-        });
-        options.append(button);
-      });
-    }
-    [...options.children].forEach((button, index) => {
-      button.setAttribute('aria-pressed', String(image.getAttribute('src') === sources[index]));
-    });
+  const items = [
+    // SAMOSA
+    ['Shama','Shama Vegetable Samosa','20 pcs','https://res.cloudinary.com/wy4nkkqq/image/upload/v1790625184/Shama_Vegetable_Samosa_20_pcs.png'],
+    ['Shama','Shama Vegetable Samosa','50 pcs','https://res.cloudinary.com/wy4nkkqq/image/upload/v1790625151/Shama_vegetable_Samosa_50_Pcs.png'],
+    ['Shama','Shama Punjabi Potato Samosa','12 pcs','https://res.cloudinary.com/wy4nkkqq/image/upload/v1790625164/Shama_Punjabi_potato_samosa_12_Pcs.png'],
+    ['Shama','Shama Lamb Meat Samosa','20 pcs','https://res.cloudinary.com/wy4nkkqq/image/upload/v1790625173/Shama_Lamb_Meat_Samosa_20pcs.png.png'],
+    ['Shama','Shama Lamb Meat Samosa','50 pcs','https://res.cloudinary.com/wy4nkkqq/image/upload/v1790625184/Shama_Lamb_Meat_Samosa_50_Pcs.png'],
+    ['Shama','Shama Chicken Samosa','50 pcs','https://res.cloudinary.com/wy4nkkqq/image/upload/v1790625178/Shama_Chicken_Samosa_50_pcs.png'],
+    ['Shama','Shama Chicken Tikka Samosa','20 pcs','https://res.cloudinary.com/wy4nkkqq/image/upload/v1790625180/Shama_Chicken_tikka_Samosa_20Pcs.png'],
+    ['Shama','Shama Punjabi Style Cocktail Samosa','3 pcs','https://res.cloudinary.com/wy4nkkqq/image/upload/v1790625179/Shama_Cocktail_Samosa_3_Pcs.png'],
+
+    // KEBABS
+    ['Shama','Shama Lahori Chicken Kebab','15 pcs','https://res.cloudinary.com/wy4nkkqq/image/upload/v1790625181/shama_lahori_chicken_kebab_15_Pcs.png'],
+    ['Shama','Shama Mutton Lahori Kebab','15 pcs','https://res.cloudinary.com/wy4nkkqq/image/upload/v1790625183/15_Mutton_Lahori_Kebab_15_Pcs.png'],
+
+    // SPRING ROLLS
+    ['Shama','Shama Vegetable Spring Rolls','20 pcs','https://res.cloudinary.com/wy4nkkqq/image/upload/v1790625163/Shama_vegetable_spring_rolls_20_pcs.png'],
+    ['Shama','Shama Vegetable Spring Rolls','50 pcs','https://res.cloudinary.com/wy4nkkqq/image/upload/v1790625164/Shama_vegetable_spring_rolls_50_Pcs.png'],
+    ['Shama','Shama Chicken Spring Rolls','20 pcs','https://res.cloudinary.com/wy4nkkqq/image/upload/v1790625181/Shama_chicken_Spring_Rolls_20_Pcs.png'],
+    ['Shama','Shama Chicken Spring Rolls','50 pcs','https://res.cloudinary.com/wy4nkkqq/image/upload/v1790625182/Shama_Chicken_Spring_Rolls_50_Pcs.png'],
+    ['Shama','Shama Lamb Meat Spring Rolls','20 pcs','https://res.cloudinary.com/wy4nkkqq/image/upload/v1790625172/Shama_Lamb_Meat_Spring_Rolls_20_Pcs.png'],
+    ['Shama','Shama Lamb Meat Spring Rolls','50 pcs','https://res.cloudinary.com/wy4nkkqq/image/upload/v1790625151/Shama_lamb_Meat_Spring_Rolls_50_Pcs.png'],
+
+    // PARATHA
+    ['Shama','Shama Crispy Paratha','Frozen · Contact us for case quantity','https://res.cloudinary.com/wy4nkkqq/image/upload/v1789463984/Shama_Crispy_Paratha.png'],
+    ['Shama','Shama Plain Paratha','Frozen · Contact us for case quantity','https://res.cloudinary.com/wy4nkkqq/image/upload/v1789463985/Shama_Plain_Paratha.png'],
+    ['Shama','Shama Plain Paratha','30 pcs','https://res.cloudinary.com/wy4nkkqq/image/upload/v1790625165/Shama_Plain_partha_30_Pcs.png.png'],
+    ['Shama','Shama Crispy Plain Paratha','20 pcs','https://res.cloudinary.com/wy4nkkqq/image/upload/v1790625166/Shama_crispy_plain_paratha_20_Pcs.png'],
+    ['Mazedaar','Mazedaar Paratha','5 pcs','https://res.cloudinary.com/wy4nkkqq/image/upload/v1790625174/Mazedaar_Paratha_5_pcs.png'],
+    ['Mazedaar','Mazedaar Onion Paratha','5 pcs','https://res.cloudinary.com/wy4nkkqq/image/upload/v1790625175/Mazedaar_Onion_Paratha_5pcs.png'],
+    ['Mazedaar','Mazedaar Plain Paratha','20 pcs','https://res.cloudinary.com/wy4nkkqq/image/upload/v1790625175/Mazedaar_Plain_Paratha_20_pcs.png.png'],
+    ['Mazedaar','Mazedaar Plain Paratha','5 pcs','https://res.cloudinary.com/wy4nkkqq/image/upload/v1790625176/Mazedaar_Plain_Paratha_5_pcs.png'],
+    ['Mazedaar','Mazedaar Onion Paratha','3 pcs','https://res.cloudinary.com/wy4nkkqq/image/upload/v1790625177/Mazedaar_onion_paratha_3_pcs.png'],
+    ['Mazedaar','Mazedaar Vegetable Paratha','3 pcs','https://res.cloudinary.com/wy4nkkqq/image/upload/v1790625178/Mazedaar_Vegetable_Paratha_3_pcs.png.png'],
+
+    // VEGETABLES & FRUIT
+    ['Shama','Shama Cut Okra','400g','https://res.cloudinary.com/wy4nkkqq/image/upload/v1790625169/Shama_Cut_Okra_400gms.png.png'],
+    ['Shama','Shama Green Chilli','400g','https://res.cloudinary.com/wy4nkkqq/image/upload/v1790625171/Shama_green_chilli_400_Gms.png.png'],
+    ['Shama','Shama Karela','400g','https://res.cloudinary.com/wy4nkkqq/image/upload/v1790625173/Shama_karela_400Gms.png.png'],
+    ['Shama','Shama Falsa','454g','https://res.cloudinary.com/wy4nkkqq/image/upload/v1790625170/Shama_falsa_454Gms.png.png']
+  ].map(([brand,title,pack,image]) => ({
+    category:'frozen',
+    brand,
+    title,
+    pack,
+    image
+  }));
+
+  // Remove all legacy/demo Frozen entries so only the current 30 folder assets are shown.
+  for (let i = productData.length - 1; i >= 0; i--) {
+    if (productData[i]?.category === 'frozen') productData.splice(i, 1);
   }
-  new MutationObserver(updateOptions).observe(image, {attributes: true, attributeFilter: ['src', 'alt']});
-  updateOptions();
+  productData.push(...items);
+
+  if (typeof categories !== 'undefined' && Array.isArray(categories)) {
+    const category = categories.find(item => item.slug === 'frozen');
+    if (category) {
+      category.name = 'Frozen';
+      category.desc = 'Samosa, kebabs, spring rolls, paratha, vegetables and fruit';
+      category.image = 'https://res.cloudinary.com/wy4nkkqq/image/upload/v1790625180/Shama_Chicken_tikka_Samosa_20Pcs.png';
+    }
+  }
 })();
