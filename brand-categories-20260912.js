@@ -57,8 +57,76 @@
       desc: 'Tandoors, parts & accessories',
       image: 'https://res.cloudinary.com/wy4nkkqq/image/upload/v1790261684/Shahi_Charcoal_Tandoor_11C_Size_1.png',
       href: 'non-foods.html'
+    },
+    {
+      number: '17',
+      slug: 'divers',
+      name: 'Divers',
+      desc: 'Everyday pantry, snacks and speciality grocery products.',
+      image: 'https://res.cloudinary.com/wy4nkkqq/image/upload/v1790600769/Telephone_ISABGUL_200g.png',
+      href: 'divers.html'
+    },
+    {
+      number: '18',
+      slug: 'preserves',
+      name: 'Preserves',
+      desc: 'Ghee, preserved foods, tomatoes, vinegar and pantry favourites.',
+      image: 'https://res.cloudinary.com/wy4nkkqq/image/upload/v1789464152/Shama_Kesar_Mango_Plup_Kesar.png',
+      href: 'preserves.html'
+    },
+    {
+      number: '19',
+      slug: 'sea-food',
+      name: 'Sea Food',
+      desc: 'Frozen seafood selections for retail and foodservice.',
+      image: 'https://res.cloudinary.com/wy4nkkqq/image/upload/v1790600837/Gambas_8-12.png',
+      href: 'sea-food.html'
+    },
+    {
+      number: '20',
+      slug: 'savoury-snacks',
+      name: 'Savoury Snacks',
+      desc: 'Namkeen, chips, mixtures, chikki and savoury snack favourites.',
+      image: 'https://res.cloudinary.com/wy4nkkqq/image/upload/v1790601081/Shama_Roasted_Corn_Salted_400G.png',
+      href: 'savoury-snacks.html'
     }
   ];
+
+  const menuImageByHref = {
+  "rice.html": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1790255518/Shama_Super_Kernal_Par_Boiled_Sella_Rice_5kg.png",
+  "spices.html": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1789051986/star_anise.png",
+  "sauces-pastes.html": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1789678774/Shama_Mango_pickle_1kg.png",
+  "miscellaneous.html": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1789678914/Shama_paneer_dodi_phool_100g.png",
+  "beverages.html": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1789231973/Shama_Basil_Seed_Drink_Watermelon.png",
+  "flour-lentiles.html": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1789232539/shama_wheat_floor_T55_1kg.png",
+  "frozen.html": "assets/frozen/shama-chicken-samosa-20.webp",
+  "oils.html": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1789678755/Shama_sunflower_oil_5ltr.png",
+  "dry-fruits.html": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1789232085/Shama_Raw_almonds_100gm.png",
+  "laziza.html": "https://res.cloudinary.com/wy4nkkqq/image/upload/Laziza_biryani_masala_100g.png",
+  "ahmed.html": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1789652169/Ahmed_tamarind_sauce_300g.png",
+  "agarbatti.html": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1790069154/Metro_3_in_1.png",
+  "dates.html": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1790069276/Shama_Ajwa-Dates-800g.png",
+  "pataks.html": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1790069236/Patak_biryani_paste_2.3kg.png",
+  "cosmetics.html": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1789464147/Shama_Rose_Water_250ml.png",
+  "non-foods.html": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1790261684/Shahi_Charcoal_Tandoor_11C_Size_1.png",
+  "divers.html": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1790600769/Telephone_ISABGUL_200g.png",
+  "preserves.html": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1789464152/Shama_Kesar_Mango_Plup_Kesar.png",
+  "sea-food.html": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1790600837/Gambas_8-12.png",
+  "savoury-snacks.html": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1790601081/Shama_Roasted_Corn_Salted_400G.png"
+};
+
+  function decorateMegaMenuImages(grid) {
+    if (!grid) return;
+    Array.from(grid.querySelectorAll(':scope > a')).forEach(link => {
+      const file = (link.getAttribute('href') || '').split('?')[0].split('#')[0].split('/').pop();
+      const src = menuImageByHref[file];
+      if (!src || link.querySelector('.mega-product-thumb')) return;
+      const thumb = document.createElement('span');
+      thumb.className = 'mega-product-thumb';
+      thumb.innerHTML = `<img src="${src}" alt="" loading="lazy">`;
+      link.insertBefore(thumb, link.firstChild);
+    });
+  }
 
   function addMegaMenuBrands() {
     const grid = document.querySelector('.mega-grid');
@@ -95,11 +163,12 @@
       grid.appendChild(link);
     });
 
-    // Keep numbering clean and sequential: 01 ... 16.
+    // Keep numbering clean and sequential: 01 ... 20.
     Array.from(grid.querySelectorAll(':scope > a')).forEach((link, index) => {
       const number = link.querySelector('b');
       if (number) number.textContent = String(index + 1).padStart(2, '0');
     });
+    decorateMegaMenuImages(grid);
   }
 
   function showBrandPreview(row, brand) {
@@ -152,8 +221,8 @@
     });
 
     document.querySelectorAll('.page-hero p, .catalogue-hero p').forEach(node => {
-      node.textContent = node.textContent.replace('Sixteen distinctive ranges.', 'Sixteen distinctive ranges.');
-      node.textContent = node.textContent.replace('Sixteen delicious ranges.', 'Sixteen delicious ranges.');
+      node.textContent = node.textContent.replace('Twenty distinctive ranges.', 'Twenty distinctive ranges.');
+      node.textContent = node.textContent.replace('Twenty delicious ranges.', 'Twenty delicious ranges.');
     });
   }
 
@@ -161,13 +230,13 @@
     document.querySelectorAll('.story-video-meta span').forEach(node => {
       if (/Product ranges/i.test(node.textContent || '')) {
         const count = node.querySelector('b');
-        if (count) count.textContent = '16';
+        if (count) count.textContent = '20';
       }
     });
 
     document.querySelectorAll('p').forEach(node => {
-      if ((node.textContent || '').includes('Browse sixteen ranges')) {
-        node.textContent = node.textContent.replace('Browse sixteen ranges', 'Browse sixteen ranges');
+      if ((node.textContent || '').includes('Browse twenty ranges')) {
+        node.textContent = node.textContent.replace('Browse twenty ranges', 'Browse twenty ranges');
       }
     });
   }
