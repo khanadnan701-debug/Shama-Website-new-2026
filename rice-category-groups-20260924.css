@@ -1,4 +1,4 @@
-body[data-category="rice"] .simple-catalogue>.wrap{
+body[data-category="rice"] .simple-catalogue>.wrap,\nbody[data-category="frozen"] .simple-catalogue>.wrap{
   width:min(1320px,calc(100% - 40px));
   max-width:none;
 }
@@ -189,7 +189,7 @@ body[data-category="rice"] .simple-catalogue>.wrap{
 }
 
 @media(max-width:640px){
-  body[data-category="rice"] .simple-catalogue>.wrap{
+  body[data-category="rice"] .simple-catalogue>.wrap,\n  body[data-category="frozen"] .simple-catalogue>.wrap{
     width:min(100% - 22px,1320px);
   }
 
