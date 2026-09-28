@@ -60,12 +60,7 @@
     }
   }
 
-  const rerender = () => {
-    if (typeof window.shamaRerenderSimpleProducts === 'function') {
-      window.shamaRerenderSimpleProducts();
-    }
-  };
-
-  rerender();
-  window.addEventListener('load', rerender, { once:true });
+  // product-simple.js loads after this file, so it will render the final combined
+  // dataset once. Do not re-render again on window load, because that would
+  // replace the Atta/Daal grouped layout built later.
 })();
