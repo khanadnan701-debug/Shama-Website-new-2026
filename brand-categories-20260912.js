@@ -255,7 +255,7 @@
     if (document.getElementById('catalogue-brand-groups-script')) return;
     const script = document.createElement('script');
     script.id = 'catalogue-brand-groups-script';
-    script.src = 'catalogue-brand-groups-20260928.js?v=20260928-1';
+    script.src = 'catalogue-brand-groups-20260928.js?v=20260928-3';
     script.async = false;
     document.head.appendChild(script);
   }
