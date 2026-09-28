@@ -29,7 +29,6 @@
 
     // PARATHA
     ['Shama','Shama Crispy Paratha','Frozen · Contact us for case quantity','https://res.cloudinary.com/wy4nkkqq/image/upload/v1789463984/Shama_Crispy_Paratha.png'],
-    ['Shama','Shama Plain Paratha','Frozen · Contact us for case quantity','https://res.cloudinary.com/wy4nkkqq/image/upload/v1789463985/Shama_Plain_Paratha.png'],
     ['Shama','Shama Plain Paratha','30 pcs','https://res.cloudinary.com/wy4nkkqq/image/upload/v1790625165/Shama_Plain_partha_30_Pcs.png.png'],
     ['Shama','Shama Crispy Plain Paratha','20 pcs','https://res.cloudinary.com/wy4nkkqq/image/upload/v1790625166/Shama_crispy_plain_paratha_20_Pcs.png'],
     ['Mazedaar','Mazedaar Paratha','5 pcs','https://res.cloudinary.com/wy4nkkqq/image/upload/v1790625174/Mazedaar_Paratha_5_pcs.png'],
