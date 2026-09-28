@@ -2,107 +2,156 @@
   'use strict';
   if (document.body.dataset.category !== 'flour') return;
 
-  const isAttaFlour = title => /\b(atta|flour|besan|semoule|semolina|corn flour|wheat flour|rice flour)\b/i.test(title || '');
+  const GROUPS = [
+    {
+      key:'flour',
+      label:'Flour',
+      short:'Flour',
+      note:'Atta, wheat flour, rice flour, gram flour, semoule and corn flour.'
+    },
+    {
+      key:'lentiles',
+      label:'Lentiles',
+      short:'Lentiles',
+      note:'Lentiles, beans, chickpeas, peas and other pulses.'
+    }
+  ];
 
-  function groupProducts() {
-    const grid = document.querySelector('#simple-product-grid');
-    if (!grid || grid.dataset.grouped === '1') return false;
+  const isFlour = title => /\b(atta|flour|besan|semoule|semolina|corn flour|wheat flour|rice flour)\b/i.test(title || '');
+
+  function keyForTitle(title) {
+    return isFlour(title) ? 'flour' : 'lentiles';
+  }
+
+  function organise() {
+    const catalogue = document.querySelector('.simple-catalogue');
+    const wrap = catalogue?.querySelector('.wrap');
+    const grid = wrap?.querySelector('#simple-product-grid');
+    if (!wrap || !grid) return false;
+    if (wrap.dataset.flourGrouped === 'true') return true;
 
     const cards = Array.from(grid.querySelectorAll(':scope > .simple-product-card'));
     if (!cards.length) return false;
 
-    const attaCards = [];
-    const daalCards = [];
+    const grouped = Object.fromEntries(GROUPS.map(group => [group.key, []]));
 
     cards.forEach(card => {
-      const title = card.querySelector('.simple-product-content h3')?.textContent?.trim() || '';
-      (isAttaFlour(title) ? attaCards : daalCards).push(card);
+      const title = card.querySelector('.simple-product-content h3')?.textContent || '';
+      const key = keyForTitle(title);
+      card.dataset.flourGroup = key;
+      grouped[key].push(card);
     });
 
-    if (!attaCards.length || !daalCards.length) return false;
-
-    const shell = document.createElement('div');
-    shell.className = 'flour-lentile-groups';
-    shell.innerHTML = `
-      <nav class="flour-lentile-tabs" aria-label="Flour and lentil sections">
-        <a href="#atta-flour-section"><span>Atta & Flour</span><b>${String(attaCards.length).padStart(2,'0')}</b></a>
-        <a href="#daal-lentils-section"><span>Daal & Lentils</span><b>${String(daalCards.length).padStart(2,'0')}</b></a>
-      </nav>
-
-      <section class="flour-lentile-section atta-section" id="atta-flour-section">
-        <div class="flour-lentile-heading">
-          <div>
-            <span class="flour-lentile-kicker">01 · Flour range</span>
-            <h2>Atta & Flour</h2>
-            <p>Atta, besan, wheat flour, rice flour, semoule and corn flour.</p>
-          </div>
-          <span class="flour-lentile-count">${attaCards.length} products</span>
+    const controls = document.createElement('div');
+    controls.className = 'rice-category-controls';
+    controls.innerHTML = `
+      <div class="rice-category-intro">
+        <div>
+          <span class="rice-category-kicker">Browse by category</span>
+          <h2>Choose your range.</h2>
         </div>
-        <div class="simple-product-grid flour-lentile-grid" data-flour-grid="atta"></div>
-      </section>
-
-      <section class="flour-lentile-section daal-section" id="daal-lentils-section">
-        <div class="flour-lentile-heading">
-          <div>
-            <span class="flour-lentile-kicker">02 · Pulses range</span>
-            <h2>Daal & Lentils</h2>
-            <p>Dals, lentils, beans, chickpeas and peas in one dedicated section.</p>
-          </div>
-          <span class="flour-lentile-count">${daalCards.length} products</span>
-        </div>
-        <div class="simple-product-grid flour-lentile-grid" data-flour-grid="daal"></div>
-      </section>
+        <p>Flour and Lentiles are shown in two clear sections, using the same catalogue layout as the Rice page.</p>
+      </div>
+      <div class="rice-category-tabs" role="tablist" aria-label="Flour and Lentiles categories">
+        <button class="rice-category-tab active" type="button" data-flour-filter="all" aria-pressed="true">
+          <span>All Products</span><b>${cards.length}</b>
+        </button>
+        ${GROUPS.map(group => `
+          <button class="rice-category-tab" type="button" data-flour-filter="${group.key}" aria-pressed="false">
+            <span>${group.short}</span><b>${grouped[group.key].length}</b>
+          </button>
+        `).join('')}
+      </div>
     `;
 
-    const attaGrid = shell.querySelector('[data-flour-grid="atta"]');
-    const daalGrid = shell.querySelector('[data-flour-grid="daal"]');
+    const sections = document.createElement('div');
+    sections.className = 'rice-category-sections';
 
-    attaCards.forEach((card,index) => {
-      const badge = card.querySelector('.simple-product-index');
-      if (badge) badge.textContent = String(index + 1).padStart(2,'0');
-      attaGrid.appendChild(card);
+    GROUPS.forEach((group,index) => {
+      if (!grouped[group.key].length) return;
+
+      const section = document.createElement('section');
+      section.className = 'rice-category-section';
+      section.dataset.flourSection = group.key;
+      section.innerHTML = `
+        <div class="rice-category-head">
+          <div>
+            <span class="rice-category-number">${String(index + 1).padStart(2,'0')}</span>
+            <div>
+              <span class="rice-category-label">Product category</span>
+              <h2>${group.label}</h2>
+              <p>${group.note}</p>
+            </div>
+          </div>
+          <span class="rice-category-count">${grouped[group.key].length} products</span>
+        </div>
+        <div class="simple-product-grid rice-category-grid"></div>
+      `;
+
+      const sectionGrid = section.querySelector('.rice-category-grid');
+      grouped[group.key].forEach((card,cardIndex) => {
+        const number = card.querySelector('.simple-product-index');
+        if (number) number.textContent = String(cardIndex + 1).padStart(2,'0');
+        sectionGrid.appendChild(card);
+      });
+
+      sections.appendChild(section);
     });
 
-    daalCards.forEach((card,index) => {
-      const badge = card.querySelector('.simple-product-index');
-      if (badge) badge.textContent = String(index + 1).padStart(2,'0');
-      daalGrid.appendChild(card);
-    });
+    grid.replaceWith(sections);
+    wrap.prepend(controls);
+    wrap.dataset.flourGrouped = 'true';
 
-    grid.dataset.grouped = '1';
-    grid.replaceWith(shell);
+    const tabs = Array.from(controls.querySelectorAll('[data-flour-filter]'));
+    const allSections = Array.from(sections.querySelectorAll('[data-flour-section]'));
 
-    shell.querySelectorAll('.flour-lentile-tabs a').forEach(link => {
-      link.addEventListener('click', event => {
-        const target = document.querySelector(link.getAttribute('href'));
-        if (!target) return;
-        event.preventDefault();
-        target.scrollIntoView({behavior:'smooth',block:'start'});
+    tabs.forEach(tab => {
+      tab.addEventListener('click', () => {
+        const filter = tab.dataset.flourFilter;
+
+        tabs.forEach(item => {
+          const active = item === tab;
+          item.classList.toggle('active', active);
+          item.setAttribute('aria-pressed', String(active));
+        });
+
+        allSections.forEach(section => {
+          section.hidden = filter !== 'all' && section.dataset.flourSection !== filter;
+        });
+
+        const firstVisible = allSections.find(section => !section.hidden);
+        if (firstVisible && filter !== 'all') {
+          firstVisible.scrollIntoView({behavior:'smooth', block:'start'});
+        }
       });
     });
 
     const heroCopy = document.querySelector('.page-hero p');
     if (heroCopy) {
-      heroCopy.textContent = 'Browse Atta & Flour separately from Daal & Lentils for faster product selection.';
+      heroCopy.textContent = 'Browse Flour and Lentiles in two clear product ranges.';
     }
 
     return true;
   }
 
-  const regroup = () => {
-    setTimeout(() => {
-      groupProducts();
-    }, 0);
-  };
-
-  if (!groupProducts()) {
-    let tries = 0;
+  function boot() {
+    if (organise()) return;
+    let attempts = 0;
     const timer = setInterval(() => {
-      tries += 1;
-      if (groupProducts() || tries > 30) clearInterval(timer);
+      attempts += 1;
+      if (organise() || attempts > 30) clearInterval(timer);
     }, 100);
   }
 
-  document.addEventListener('shama:product-simple-rendered', regroup);
-  window.addEventListener('load', regroup, { once:true });
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', boot, {once:true});
+  } else {
+    boot();
+  }
+
+  document.addEventListener('shama:product-simple-rendered', () => {
+    const wrap = document.querySelector('.simple-catalogue .wrap');
+    if (wrap) delete wrap.dataset.flourGrouped;
+    setTimeout(organise, 0);
+  });
 })();
