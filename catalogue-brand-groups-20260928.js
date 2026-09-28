@@ -6,7 +6,6 @@
   const category = document.body.dataset.category || '';
   const AUTO_CATEGORIES = new Set([
     'agarbatti',
-    'beverages',
     'divers',
     'dry-fruits',
     'frozen',
