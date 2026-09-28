@@ -9,6 +9,26 @@
     return 'pastes';
   };
 
+  function sauceBrand(title) {
+    const value = String(title || '');
+    if (/^Shama\b/i.test(value)) return 'Shama';
+    if (/^Sunrise\b/i.test(value)) return 'Sunrise';
+    if (/^Patak/i.test(value)) return "Patak's";
+    if (/^Schani\b/i.test(value)) return 'Schani';
+    if (/^Mah/i.test(value)) return 'Mah';
+    return 'Other Brands';
+  }
+
+  function sauceBrandRank(title) {
+    const brand = sauceBrand(title);
+    if (brand === 'Shama') return 0;
+    if (brand === 'Sunrise') return 1;
+    if (brand === "Patak's") return 2;
+    if (brand === 'Schani') return 3;
+    if (brand === 'Mah') return 4;
+    return 9;
+  }
+
   const typeMeta = {
     pastes: {
       order: 1,
@@ -42,6 +62,17 @@
     cards.forEach(card => {
       const title = card.querySelector('h3')?.textContent || '';
       groups[typeFor(title)].push(card);
+      const meta = card.querySelector('.simple-product-meta');
+      if (meta) meta.textContent = sauceBrand(title);
+    });
+
+    Object.keys(groups).forEach(key => {
+      groups[key].sort((a,b) => {
+        const at = a.querySelector('h3')?.textContent || '';
+        const bt = b.querySelector('h3')?.textContent || '';
+        const rank = sauceBrandRank(at) - sauceBrandRank(bt);
+        return rank || at.localeCompare(bt);
+      });
     });
 
     const nav = document.createElement('div');
