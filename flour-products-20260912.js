@@ -81,6 +81,24 @@
       title: 'Shama Rice Flour',
       pack: '5kg',
       image: 'https://res.cloudinary.com/wy4nkkqq/image/upload/v1789232537/Shama_rice_flour_5kg.png'
+    },
+    {
+      category: 'flour',
+      title: 'TRS Besan Gram Flour',
+      pack: '1kg',
+      image: 'https://res.cloudinary.com/wy4nkkqq/image/upload/v1790601560/TRS_Baisan_Gram_Flour_1kg.png'
+    },
+    {
+      category: 'flour',
+      title: 'Le Renard Semoule Fine',
+      pack: '1kg',
+      image: 'https://res.cloudinary.com/wy4nkkqq/image/upload/v1790601558/Le_Renard_Semoule_fine_1kg.png'
+    },
+    {
+      category: 'flour',
+      title: 'Ahmed Corn Flour',
+      pack: '285g',
+      image: 'https://res.cloudinary.com/wy4nkkqq/image/upload/v1790601558/Ahmed_Cornflour_285g.png'
     }
   ];
 
