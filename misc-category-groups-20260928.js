@@ -213,11 +213,10 @@
     }, 100);
   }
 
-  if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', boot, {once:true});
-  } else {
-    boot();
-  }
+  // product-simple.js runs immediately before this file and has already built
+  // #simple-product-grid, so group now instead of waiting for DOMContentLoaded.
+  // This also prevents older cached brand-group scripts from winning the race.
+  boot();
 
   document.addEventListener('shama:product-simple-rendered', () => {
     const wrap = document.querySelector('.simple-catalogue .wrap');
