@@ -90,6 +90,14 @@
       href:'savoury-snacks.html',
       image:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1790601081/Shama_Roasted_Corn_Salted_400G.png',
       tone:'peach'
+    },
+    {
+      slug:'bakery',
+      name:'Bakery',
+      desc:'Rusks, biscuits, baking powder and bakery favourites.',
+      href:'bakery.html',
+      image:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1790855967/Almond_Cake_Rusk_750g.png',
+      tone:'sand'
     }
   ];
 
