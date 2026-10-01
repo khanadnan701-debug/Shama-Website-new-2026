@@ -89,6 +89,14 @@
       desc: 'Namkeen, chips, mixtures, chikki and savoury snack favourites.',
       image: 'https://res.cloudinary.com/wy4nkkqq/image/upload/v1790601081/Shama_Roasted_Corn_Salted_400G.png',
       href: 'savoury-snacks.html'
+    },
+    {
+      number: '21',
+      slug: 'bakery',
+      name: 'Bakery',
+      desc: 'Rusks, biscuits, baking powder and bakery favourites.',
+      image: 'https://res.cloudinary.com/wy4nkkqq/image/upload/v1790855967/Almond_Cake_Rusk_750g.png',
+      href: 'bakery.html'
     }
   ];
 
@@ -112,7 +120,8 @@
   "divers.html": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1790600769/Telephone_ISABGUL_200g.png",
   "preserves.html": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1789464152/Shama_Kesar_Mango_Plup_Kesar.png",
   "sea-food.html": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1790600837/Gambas_8-12.png",
-  "savoury-snacks.html": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1790601081/Shama_Roasted_Corn_Salted_400G.png"
+  "savoury-snacks.html": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1790601081/Shama_Roasted_Corn_Salted_400G.png",
+  "bakery.html": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1790855967/Almond_Cake_Rusk_750g.png"
 };
 
   function decorateMegaMenuImages(grid) {
@@ -163,7 +172,7 @@
       grid.appendChild(link);
     });
 
-    // Keep numbering clean and sequential: 01 ... 20.
+    // Keep numbering clean and sequential: 01 ... 21.
     Array.from(grid.querySelectorAll(':scope > a')).forEach((link, index) => {
       const number = link.querySelector('b');
       if (number) number.textContent = String(index + 1).padStart(2, '0');
@@ -221,8 +230,8 @@
     });
 
     document.querySelectorAll('.page-hero p, .catalogue-hero p').forEach(node => {
-      node.textContent = node.textContent.replace('Twenty distinctive ranges.', 'Twenty distinctive ranges.');
-      node.textContent = node.textContent.replace('Twenty delicious ranges.', 'Twenty delicious ranges.');
+      node.textContent = node.textContent.replace('Twenty-one distinctive ranges.', 'Twenty-one distinctive ranges.');
+      node.textContent = node.textContent.replace('Twenty-one delicious ranges.', 'Twenty-one delicious ranges.');
     });
   }
 
@@ -230,13 +239,13 @@
     document.querySelectorAll('.story-video-meta span').forEach(node => {
       if (/Product ranges/i.test(node.textContent || '')) {
         const count = node.querySelector('b');
-        if (count) count.textContent = '20';
+        if (count) count.textContent = '21';
       }
     });
 
     document.querySelectorAll('p').forEach(node => {
-      if ((node.textContent || '').includes('Browse twenty ranges')) {
-        node.textContent = node.textContent.replace('Browse twenty ranges', 'Browse twenty ranges');
+      if ((node.textContent || '').includes('Browse twenty-one ranges')) {
+        node.textContent = node.textContent.replace('Browse twenty-one ranges', 'Browse twenty-one ranges');
       }
     });
   }
