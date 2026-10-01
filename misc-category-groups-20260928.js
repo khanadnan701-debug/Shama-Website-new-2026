@@ -40,6 +40,12 @@
       note:'Baking powder and baking soda.'
     },
     {
+      key:'food-colours',
+      label:'Food Colours',
+      short:'Food Colours',
+      note:'Shama, TRS, Schani, Tropical Sun and SOP food colours in retail and foodservice sizes.'
+    },
+    {
       key:'mouth-sweets',
       label:'Mouth Fresheners & Sweets',
       short:'Fresheners',
@@ -61,6 +67,7 @@
     if (/lemon\s+dressing|lemon\s+juice|lime\s+juice|vinegar|mint\s+sauce/.test(value)) return 'juices-sauces';
     if (/rose\s+water|kewra\s+water/.test(value)) return 'floral-waters';
     if (/baking\s+powder|baking\s+soda/.test(value)) return 'baking';
+    if (/food\s+colou?r/.test(value)) return 'food-colours';
     if (/mouth\s+freshener|sweet\s+fennel|rewari/.test(value)) return 'mouth-sweets';
     if (/flavour\s+essence/.test(value)) return 'essences';
     return 'pantry';
@@ -71,6 +78,9 @@
     if (/^Shama\b/i.test(value)) return 'Shama';
     if (/^Kody\b/i.test(value)) return 'Kody';
     if (/^Schani\b/i.test(value)) return 'Schani';
+    if (/^TRS\b/i.test(value)) return 'TRS';
+    if (/^Tropical\s+Sun\b/i.test(value)) return 'Tropical Sun';
+    if (/^SOP\b/i.test(value)) return 'SOP';
     return 'Other';
   }
 
@@ -79,6 +89,9 @@
     if (brand === 'Shama') return 0;
     if (brand === 'Kody') return 1;
     if (brand === 'Schani') return 2;
+    if (brand === 'TRS') return 3;
+    if (brand === 'Tropical Sun') return 4;
+    if (brand === 'SOP') return 5;
     return 9;
   }
 
@@ -198,7 +211,7 @@
 
     const heroCopy = document.querySelector('.page-hero p');
     if (heroCopy) {
-      heroCopy.textContent = 'Browse pantry essentials, mango pulp, salts, juices, floral waters, baking products, fresheners and flavour essences by category.';
+      heroCopy.textContent = 'Browse pantry essentials, salts, food colours, juices, floral waters, baking products, fresheners and flavour essences by category.';
     }
 
     return true;
