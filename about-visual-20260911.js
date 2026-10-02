@@ -62,7 +62,7 @@
           <div class="aboutx-visual">
             <figure class="aboutx-hero-photo"><img src="${images.hero}" alt="Shama International team and brand presentation"></figure>
             <div class="aboutx-product-stack">
-              <figure><img src="${images.rice}" alt="Shama rice"></figure>
+              <figure><img src="${images.rice}" alt="Shama rice" onerror="this.onerror=null;this.src='https://res.cloudinary.com/wy4nkkqq/image/upload/v1790255523/Shama_White_Gold_Basmati_Rice_5kg.png'"></figure>
               <figure><img src="${images.paste}" alt="Shama curry paste"></figure>
               <figure><img src="${images.lentils}" alt="Shama lentils"></figure>
             </div>
@@ -138,7 +138,7 @@
             <a class="aboutx-text-link" href="products.html"><span class="lang-en">View all products</span><span class="lang-fr">Voir tous les produits</span>${icon('arrow','aboutx-inline-icon')}</a>
           </div>
           <div class="aboutx-gallery">
-            <a href="rice.html" class="aboutx-gallery-card big"><img src="${images.rice}" alt="Shama rice"><span>Rice</span></a>
+            <a href="rice.html" class="aboutx-gallery-card big"><img src="${images.rice}" alt="Shama rice" onerror="this.onerror=null;this.src='https://res.cloudinary.com/wy4nkkqq/image/upload/v1790255523/Shama_White_Gold_Basmati_Rice_5kg.png'"><span>Rice</span></a>
             <a href="flour-lentiles.html" class="aboutx-gallery-card"><img src="${images.lentils}" alt="Shama lentils"><span>Lentils</span></a>
             <a href="spices.html" class="aboutx-gallery-card"><img src="${images.spice}" alt="Shama spices"><span>Spices</span></a>
             <a href="sauces.html" class="aboutx-gallery-card"><img src="${images.paste}" alt="Shama curry paste"><span>Pickle & Pastes</span></a>
