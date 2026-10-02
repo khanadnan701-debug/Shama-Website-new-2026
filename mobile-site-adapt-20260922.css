@@ -1451,3 +1451,114 @@ button,input,select,textarea{
     bottom:calc(74px + env(safe-area-inset-bottom))!important;
   }
 }
+
+
+/* SHAMA FULL MOBILE RESPONSIVE PASS 20261002 */
+*,*::before,*::after{box-sizing:border-box}
+@media(max-width:920px){
+html,body{width:100%!important;max-width:100%!important;overflow-x:hidden!important}
+main,#page-content,#site-header,#site-footer,section,article,aside,nav,header,footer{max-width:100%!important}
+img,video,iframe,svg,canvas{max-width:100%!important}
+.wrap,.aboutx-wrap,body[data-page="catalogue"] .grocery-catalogue-wrap,body[data-page="product"] .simple-catalogue>.wrap{width:min(100% - 28px,1320px)!important;max-width:none!important;margin-left:auto!important;margin-right:auto!important}
+
+/* HOME HERO */
+body[data-page="home"] .hero-video-only{min-height:0!important;height:auto!important}
+body[data-page="home"] .hero-video-only .video-wall-shell{width:100%!important;height:clamp(250px,52vw,430px)!important;min-height:250px!important;border-radius:0!important}
+body[data-page="home"] .fmcg-video-wall,body[data-page="home"] .fmcg-video-wall .fmcg-panel{width:100%!important;height:100%!important}
+body[data-page="home"] .fmcg-video-wall .fmcg-panel img{width:100%!important;height:100%!important;object-fit:cover!important;object-position:center!important}
+body[data-page="home"] .hero-slider-arrow{width:40px!important;height:40px!important;font-size:28px!important}
+body[data-page="home"] .hero-slider-prev{left:10px!important}
+body[data-page="home"] .hero-slider-next{right:10px!important}
+body[data-page="home"] .hero-slider-dots{bottom:12px!important}
+
+/* HOME CATEGORY CARDS */
+body[data-page="home"] .category-reels{padding:56px 0 64px!important}
+body[data-page="home"] .category-reels .reels-shell{width:min(100% - 22px,1600px)!important;max-width:none!important}
+body[data-page="home"] .reels-head{align-items:flex-start!important;flex-direction:column!important;gap:12px!important;margin-bottom:24px!important}
+body[data-page="home"] .reels-head h2{font-size:clamp(38px,8vw,58px)!important;line-height:.92!important}
+body[data-page="home"] .category-images-only .reels-track{display:grid!important;grid-template-columns:repeat(3,minmax(0,1fr))!important;gap:14px!important;width:100%!important}
+body[data-page="home"] .category-images-only .reel-card{width:100%!important;max-width:none!important;min-width:0!important;height:auto!important;min-height:0!important;aspect-ratio:1/1!important}
+body[data-page="home"] .category-images-only .reel-card>img{width:100%!important;height:calc(100% - 64px)!important;padding:0!important;object-fit:cover!important;object-position:center!important}
+body[data-page="home"] .category-images-only .reel-copy{height:64px!important;padding:0 10px!important;gap:6px!important}
+body[data-page="home"] .category-images-only .reel-copy strong{max-width:62%!important;font-size:clamp(14px,2vw,20px)!important;line-height:1!important}
+body[data-page="home"] .category-images-only .reel-copy em{max-width:112px!important;padding:7px 8px!important;font-size:7.5px!important}
+body[data-page="home"] .category-images-only .reel-number{width:32px!important;height:32px!important;top:10px!important;left:10px!important;font-size:9px!important}
+
+/* HOME OTHER SECTIONS */
+body[data-page="home"] .story-video-shell,body[data-page="home"] .founder-video-shell,body[data-page="home"] .partners-marquee-shell{width:calc(100% - 20px)!important;max-width:none!important;grid-template-columns:1fr!important;gap:22px!important;padding:22px!important;border-radius:24px!important;min-height:0!important}
+body[data-page="home"] .story-video-grid{grid-template-columns:1fr 1fr!important;gap:12px!important}
+body[data-page="home"] .story-video-main{min-height:320px!important}
+body[data-page="home"] .story-video-small{min-height:200px!important}
+body[data-page="home"] .founder-media-card{min-height:420px!important}
+body[data-page="home"] .founder-stats{grid-template-columns:repeat(3,minmax(0,1fr))!important;gap:8px!important}
+body[data-page="home"] .wholesale-video-head{grid-template-columns:1fr!important}
+body[data-page="home"] .wholesale-video-player{min-height:360px!important}
+
+/* CATALOGUE */
+body[data-page="catalogue"] .catalogue-toolbar{grid-template-columns:1fr!important;gap:16px!important}
+body[data-page="catalogue"] .catalogue-search{width:100%!important}
+body[data-page="catalogue"] .grocery-promo-grid{grid-template-columns:1fr!important;min-height:0!important}
+body[data-page="catalogue"] .grocery-promo-main{grid-template-columns:1fr!important;min-height:0!important;padding:26px 20px!important}
+body[data-page="catalogue"] .grocery-promo-side{grid-template-columns:1fr 1fr!important;grid-template-rows:none!important;gap:12px!important}
+body[data-page="catalogue"] .grocery-mini-card{grid-template-columns:1fr!important;min-height:280px!important;padding:20px!important}
+body[data-page="catalogue"] .grocery-range-grid{grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:12px!important}
+body[data-page="catalogue"] .grocery-range-tile{display:block!important;width:100%!important;height:auto!important;min-height:0!important;aspect-ratio:1/1!important}
+body[data-page="catalogue"] .grocery-range-image{position:absolute!important;inset:0!important;width:100%!important;height:100%!important;min-height:0!important;padding:0!important}
+body[data-page="catalogue"] .grocery-range-image img{width:100%!important;height:100%!important;max-height:none!important;object-fit:cover!important}
+body[data-page="catalogue"] .grocery-help{align-items:flex-start!important;flex-direction:column!important}
+
+/* PRODUCT PAGES */
+body[data-page="product"] .page-hero{min-height:0!important;padding:48px 0 44px!important}
+body[data-page="product"] .page-hero>.wrap{width:min(100% - 28px,1180px)!important;padding:0!important}
+body[data-page="product"] .page-hero h1{font-size:clamp(38px,9vw,58px)!important;line-height:.98!important}
+body[data-page="product"] .simple-product-grid{grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:12px!important}
+body[data-page="product"] .simple-product-card{min-width:0!important}
+body[data-page="product"] .simple-product-media{width:calc(100% - 16px)!important;margin:8px!important}
+body[data-page="product"] .rice-category-tabs{display:flex!important;grid-template-columns:none!important;gap:8px!important;width:100%!important;overflow-x:auto!important;padding:9px!important}
+body[data-page="product"] .rice-category-tab{flex:0 0 auto!important;min-width:150px!important}
+body[data-page="product"] .rice-category-head,body[data-page="product"] .sauce-type-head{align-items:flex-start!important;flex-direction:column!important}
+body[data-page="product"] .sauce-type-nav{position:relative!important;top:auto!important;align-items:flex-start!important;flex-direction:column!important}
+body[data-page="product"] .sauce-type-chips{width:100%!important;flex-wrap:nowrap!important;overflow-x:auto!important}
+body[data-page="product"] .sauce-type-chips a{flex:0 0 auto!important}
+
+/* ABOUT */
+body[data-page="about"] .aboutx-hero-grid,body[data-page="about"] .aboutx-founder-grid,body[data-page="about"] .aboutx-video-grid{grid-template-columns:1fr!important;gap:26px!important}
+body[data-page="about"] .aboutx-stats{grid-template-columns:repeat(3,minmax(0,1fr))!important}
+body[data-page="about"] .aboutx-hero-photo{height:auto!important;aspect-ratio:16/10!important}
+body[data-page="about"] .aboutx-product-stack{grid-template-columns:repeat(3,minmax(0,1fr))!important}
+body[data-page="about"] .aboutx-product-stack figure{height:auto!important;aspect-ratio:1/1!important}
+body[data-page="about"] .aboutx-timeline,body[data-page="about"] .aboutx-values-grid{grid-template-columns:repeat(2,minmax(0,1fr))!important}
+body[data-page="about"] .aboutx-founder-photo{height:auto!important;aspect-ratio:4/5!important}
+body[data-page="about"] .aboutx-gallery{grid-template-columns:1fr 1fr!important;grid-template-rows:none!important}
+
+/* CONTACT + FOOTER */
+body[data-page="contact"] .trade-layout,body[data-page="contact"] .location-grid{grid-template-columns:1fr!important;gap:30px!important}
+body[data-page="contact"] .trade-aside{position:relative!important;top:auto!important}
+body[data-page="contact"] .trade-form,body[data-page="contact"] .trade-send,body[data-page="contact"] .trade-direct,body[data-page="contact"] .location-data{grid-template-columns:1fr!important}
+.footer-grid{grid-template-columns:1fr!important;gap:26px!important}
+.footer-bottom{align-items:flex-start!important;flex-direction:column!important}
+}
+
+@media(max-width:620px){
+.wrap,.aboutx-wrap,body[data-page="catalogue"] .grocery-catalogue-wrap,body[data-page="product"] .simple-catalogue>.wrap{width:min(100% - 18px,1320px)!important}
+body[data-page="home"] .hero-video-only .video-wall-shell{height:clamp(210px,58vw,300px)!important;min-height:210px!important}
+body[data-page="home"] .category-images-only .reels-track{grid-template-columns:1fr!important}
+body[data-page="home"] .category-images-only .reel-card{width:100%!important;max-width:500px!important;margin:0 auto!important}
+body[data-page="home"] .story-video-grid{grid-template-columns:1fr!important}
+body[data-page="home"] .founder-stats{grid-template-columns:1fr!important}
+body[data-page="catalogue"] .grocery-promo-side{grid-template-columns:1fr!important}
+body[data-page="catalogue"] .grocery-range-grid{grid-template-columns:1fr!important}
+body[data-page="product"] .simple-product-grid{grid-template-columns:1fr!important}
+body[data-page="product"] .page-hero h1{font-size:clamp(36px,11vw,48px)!important}
+body[data-page="about"] .aboutx-stats,body[data-page="about"] .aboutx-timeline,body[data-page="about"] .aboutx-values-grid,body[data-page="about"] .aboutx-video-list,body[data-page="about"] .aboutx-gallery{grid-template-columns:1fr!important}
+body[data-page="about"] .aboutx-actions{display:grid!important;grid-template-columns:1fr!important}
+body[data-page="about"] .aboutx-btn{width:100%!important}
+body[data-page="contact"] .trade-form{padding:16px!important}
+.footer{padding-bottom:calc(118px + env(safe-area-inset-bottom))!important}
+}
+
+@media(max-width:430px){
+.wrap,.aboutx-wrap,body[data-page="catalogue"] .grocery-catalogue-wrap,body[data-page="product"] .simple-catalogue>.wrap{width:calc(100% - 14px)!important}
+body[data-page="home"] .hero-video-only .video-wall-shell{height:220px!important;min-height:220px!important}
+body[data-page="catalogue"] .grocery-mini-card{grid-template-columns:1fr!important;min-height:0!important}
+}
