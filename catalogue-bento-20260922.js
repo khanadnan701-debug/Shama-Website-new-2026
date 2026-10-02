@@ -94,9 +94,9 @@
     {
       slug:'bakery',
       name:'Bakery',
-      desc:'Rusks, biscuits, baking powder and bakery favourites.',
+      desc:'Baking essentials, cake rusks, biscuits, flavours and essences.',
       href:'bakery.html',
-      image:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1790855967/Almond_Cake_Rusk_750g.png',
+      image:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1790869503/Cake_Rusk_Coconut_750g.png',
       tone:'sand'
     }
   ];
