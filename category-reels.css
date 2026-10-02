@@ -463,3 +463,26 @@ body[data-page="home"] .category-images-only .reel-number{
     grid-template-columns:1fr!important;
   }
 }
+
+
+/* 2026-10-02 DESKTOP ONLY no-crop category artwork */
+@media(min-width:701px){
+  body[data-page="home"] .category-images-only .reel-card{
+    background:#f4f5f7!important;
+  }
+  body[data-page="home"] .category-images-only .reel-card>img{
+    box-sizing:border-box!important;
+    width:100%!important;
+    height:calc(100% - 72px)!important;
+    padding:10px 12px!important;
+    object-fit:contain!important;
+    object-position:center!important;
+    background:#f4f5f7!important;
+    border-radius:22px 22px 0 0!important;
+    transform:none!important;
+  }
+  body[data-page="home"] .category-images-only .reel-card:hover>img,
+  body[data-page="home"] .category-images-only .reel-card:focus-visible>img{
+    transform:none!important;
+  }
+}
