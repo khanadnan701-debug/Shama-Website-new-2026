@@ -52,7 +52,7 @@ const GLOBAL_MEGA_MENU_HOVER = `<script id="shama-global-mega-menu-hover" src="/
 
 const HOME_STATIC_CATEGORY_FIX = `<style id="shama-home-static-categories">
 body[data-page="home"] .category-reels video{display:none!important}
-body[data-page="home"] .category-reels .reel-card>img{position:absolute!important;inset:0!important;width:100%!important;height:100%!important;object-fit:contain!important;object-position:center!important;padding:24px!important;background:linear-gradient(180deg,#f8f9fc,#eef2f7)!important;z-index:-3!important}
+body[data-page="home"] .category-reels .reel-card>img{position:absolute!important;inset:0!important;width:100%!important;height:100%!important;object-fit:cover!important;object-position:center!important;padding:0!important;background:#e9edf5!important;z-index:-3!important;border-radius:inherit!important}
 body[data-page="home"] .category-reels .reel-card:after{display:none!important;animation:none!important}
 </style>
 <script id="shama-home-static-categories-script">
@@ -161,7 +161,7 @@ async function withFreshHeaders(response) {
   }
 
   headers.delete('Clear-Site-Data');
-  headers.set('X-Shama-Release', '20261002-rosewater-static-categories-1');
+  headers.set('X-Shama-Release', '20261002-category-cover-1');
 
   let body = response.body;
 
