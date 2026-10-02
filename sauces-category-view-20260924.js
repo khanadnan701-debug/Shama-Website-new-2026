@@ -2,142 +2,140 @@
   'use strict';
   if (document.body.dataset.page !== 'product' || document.body.dataset.category !== 'sauces') return;
 
-  const typeFor = title => {
-    const value = String(title || '').toLowerCase();
-    if (value.includes('pickle') || value.includes('chutney')) return 'pickles';
-    if (value.includes('sauce')) return 'sauces';
-    return 'pastes';
-  };
+  const groupOrder = [
+    'Shama Curry & Cooking Pastes',
+    'Ginger & Garlic Pastes',
+    'Pickles & Chutneys',
+    'Sauces',
+    "Patak's Pastes"
+  ];
 
-  function sauceBrand(title) {
-    const value = String(title || '');
-    if (/^Shama\b/i.test(value)) return 'Shama';
-    if (/^Sunrise\b/i.test(value)) return 'Sunrise';
-    if (/^Patak/i.test(value)) return "Patak's";
-    if (/^Schani\b/i.test(value)) return 'Schani';
-    if (/^Mah/i.test(value)) return 'Mah';
-    return 'Other Brands';
-  }
-
-  function sauceBrandRank(title) {
-    const brand = sauceBrand(title);
-    if (brand === 'Shama') return 0;
-    if (brand === 'Sunrise') return 1;
-    if (brand === "Patak's") return 2;
-    if (brand === 'Schani') return 3;
-    if (brand === 'Mah') return 4;
-    return 9;
-  }
-
-  const typeMeta = {
-    pastes: {
-      order: 1,
-      label: 'Pastes',
-      title: 'Curry & Cooking Pastes',
-      desc: 'Ginger, garlic and classic curry pastes for consistent flavour and fast preparation.'
+  const groupMeta = {
+    'Shama Curry & Cooking Pastes': {
+      kicker:'01 · Shama pastes',
+      title:'Shama Curry & Cooking Pastes',
+      desc:'Biryani, butter chicken, balti, korma, kebab, tikka, vindaloo and other cooking pastes.'
     },
-    pickles: {
-      order: 2,
-      label: 'Pickles',
-      title: 'Pickles & Chutneys',
-      desc: 'Traditional pickles and chutneys with bold, tangy and authentic South Asian flavour.'
+    'Ginger & Garlic Pastes': {
+      kicker:'02 · Kitchen essentials',
+      title:'Ginger & Garlic Pastes',
+      desc:'Shama and Sunrise ginger, garlic and ginger-garlic pastes in retail and foodservice sizes.'
     },
-    sauces: {
-      order: 3,
-      label: 'Sauces',
-      title: 'Sauces',
-      desc: 'Chilli, soy, tamarind, mint and table sauces for retail, restaurants and foodservice.'
+    'Pickles & Chutneys': {
+      kicker:'03 · Pickles & chutneys',
+      title:'Pickles & Chutneys',
+      desc:'Mango, mixed, lime, chilli and garlic pickles plus traditional chutneys.'
+    },
+    'Sauces': {
+      kicker:'04 · Sauces',
+      title:'Sauces',
+      desc:'Mint, chilli, soy, tamarind and speciality table sauces for retail and foodservice.'
+    },
+    "Patak's Pastes": {
+      kicker:"05 · Patak's",
+      title:"Patak's Curry Pastes",
+      desc:"Patak's classic curry and marinade pastes grouped together for easier browsing."
     }
   };
 
-  function renderGroupedView() {
+  const esc = value => String(value ?? '').replace(/[&<>"']/g, ch => ({
+    '&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#039;'
+  })[ch]);
+
+  const idFor = value => 'sauce-group-' + String(value).toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'');
+
+  function render() {
+    if (typeof productData === 'undefined' || !Array.isArray(productData)) return;
+    const allItems = productData.filter(item => item.category === 'sauces');
     const wrap = document.querySelector('.simple-catalogue .wrap');
-    const grid = wrap?.querySelector('#simple-product-grid');
-    if (!wrap || !grid || wrap.dataset.sauceGrouped === '1') return;
+    if (!wrap || !allItems.length) return;
 
-    const cards = [...grid.querySelectorAll('.simple-product-card')];
-    if (!cards.length) return;
+    const groups = groupOrder.map(group => ({
+      group,
+      items:allItems.filter(item => item.group === group)
+    })).filter(x => x.items.length);
 
-    const groups = { pastes: [], pickles: [], sauces: [] };
-    cards.forEach(card => {
-      const title = card.querySelector('h3')?.textContent || '';
-      groups[typeFor(title)].push(card);
-      const meta = card.querySelector('.simple-product-meta');
-      if (meta) meta.textContent = sauceBrand(title);
-    });
+    const heroCopy = document.querySelector('.page-hero p');
+    if (heroCopy) heroCopy.textContent =
+      'Browse Sauces, Pickles & Pastes by product type — Shama cooking pastes, ginger & garlic pastes, pickles & chutneys, sauces and Patak\'s pastes.';
 
-    Object.keys(groups).forEach(key => {
-      groups[key].sort((a,b) => {
-        const at = a.querySelector('h3')?.textContent || '';
-        const bt = b.querySelector('h3')?.textContent || '';
-        const rank = sauceBrandRank(at) - sauceBrandRank(bt);
-        return rank || at.localeCompare(bt);
-      });
-    });
+    let runningIndex = 0;
 
-    const nav = document.createElement('div');
-    nav.className = 'sauce-type-nav';
-    nav.innerHTML = `
-      <div class="sauce-type-nav-copy">
-        <span>Browse by type</span>
-        <strong>${cards.length} products</strong>
+    wrap.innerHTML = `
+      <div class="sauce-type-nav">
+        <div class="sauce-type-nav-copy">
+          <span>Browse by category</span>
+          <strong>${allItems.length} products</strong>
+        </div>
+        <div class="sauce-type-chips">
+          ${groups.map((entry,index) => `
+            <a class="${index === 0 ? 'active' : ''}" href="#${idFor(entry.group)}" data-sauce-group>
+              <span>${esc(entry.group)}</span><b>${entry.items.length}</b>
+            </a>
+          `).join('')}
+        </div>
       </div>
-      <div class="sauce-type-chips">
-        ${Object.entries(typeMeta)
-          .sort((a,b)=>a[1].order-b[1].order)
-          .map(([key,meta]) => `<a href="#sauce-type-${key}" data-sauce-type="${key}"><span>${meta.label}</span><b>${groups[key].length}</b></a>`)
-          .join('')}
+
+      <div class="sauce-type-sections">
+        ${groups.map((entry,index) => {
+          const meta = groupMeta[entry.group] || {};
+          const start = runningIndex;
+          runningIndex += entry.items.length;
+          return `
+            <section class="sauce-type-section ${index === 0 ? 'sauce-type-pastes' : ''}" id="${idFor(entry.group)}">
+              <div class="sauce-type-head">
+                <div>
+                  <span class="sauce-type-kicker">${esc(meta.kicker || entry.group)}</span>
+                  <h2>${esc(meta.title || entry.group)}</h2>
+                  <p>${esc(meta.desc || '')}</p>
+                </div>
+                <span class="sauce-type-count">${entry.items.length} products</span>
+              </div>
+              <div class="simple-product-grid sauce-type-grid">
+                ${entry.items.map((item,itemIndex) => `
+                  <article class="simple-product-card" data-category="sauces">
+                    <button class="simple-product-media simple-product-zoom" type="button"
+                      data-index="${start + itemIndex}"
+                      data-zoom-image="${esc(item.image)}"
+                      data-zoom-title="${esc(item.title)}"
+                      data-zoom-pack="${esc(item.pack)}"
+                      aria-label="Open ${esc(item.title)} details">
+                      <span class="simple-product-index">${String(itemIndex + 1).padStart(2,'0')}</span>
+                      <span class="simple-zoom-hint" aria-hidden="true">⌕</span>
+                      <img loading="lazy" decoding="async" draggable="false" src="${esc(item.image)}" alt="${esc(item.title)}">
+                    </button>
+                    <div class="simple-product-content">
+                      <div class="simple-product-meta">${esc(entry.group)}</div>
+                      <h3>${esc(item.title)}</h3>
+                      <p>${esc(item.pack)}</p>
+                      <button class="bulk-buy simple-product-btn" type="button" data-product="${esc(item.title)}" data-pack="${esc(item.pack)}">
+                        <span>Add to bulk order</span><b>+</b>
+                      </button>
+                    </div>
+                  </article>
+                `).join('')}
+              </div>
+            </section>
+          `;
+        }).join('')}
       </div>
     `;
 
-    const sections = document.createElement('div');
-    sections.className = 'sauce-type-sections';
+    const links = [...wrap.querySelectorAll('[data-sauce-group]')];
+    links.forEach(link => link.addEventListener('click', event => {
+      const target = document.querySelector(link.getAttribute('href'));
+      if (!target) return;
+      event.preventDefault();
+      links.forEach(x => x.classList.toggle('active', x === link));
+      target.scrollIntoView({behavior:'smooth',block:'start'});
+    }));
 
-    Object.entries(typeMeta)
-      .sort((a,b)=>a[1].order-b[1].order)
-      .forEach(([key,meta],index) => {
-        if (!groups[key].length) return;
-        const section = document.createElement('section');
-        section.className = `sauce-type-section sauce-type-${key}`;
-        section.id = `sauce-type-${key}`;
-        section.innerHTML = `
-          <div class="sauce-type-head">
-            <div>
-              <span class="sauce-type-kicker">${String(index + 1).padStart(2,'0')} · ${meta.label}</span>
-              <h2>${meta.title}</h2>
-              <p>${meta.desc}</p>
-            </div>
-            <span class="sauce-type-count">${groups[key].length} products</span>
-          </div>
-          <div class="simple-product-grid sauce-type-grid"></div>
-        `;
-        const sectionGrid = section.querySelector('.sauce-type-grid');
-        groups[key].forEach(card => sectionGrid.appendChild(card));
-        sections.appendChild(section);
-      });
-
-    grid.replaceWith(nav, sections);
-    wrap.dataset.sauceGrouped = '1';
-
-    const heroCopy = document.querySelector('.page-hero p');
-    if (heroCopy) {
-      heroCopy.textContent = 'Browse the Shama collection by pastes, pickles & chutneys, and sauces.';
-    }
-
-    nav.querySelectorAll('a[data-sauce-type]').forEach(link => {
-      link.addEventListener('click', event => {
-        const target = document.querySelector(link.getAttribute('href'));
-        if (!target) return;
-        event.preventDefault();
-        target.scrollIntoView({behavior:'smooth',block:'start'});
-      });
-    });
+    document.dispatchEvent(new CustomEvent('shama:sauces-grouped-rendered'));
   }
 
-  document.addEventListener('shama:product-simple-rendered', renderGroupedView);
   if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', () => setTimeout(renderGroupedView, 0), {once:true});
-  } else {
-    setTimeout(renderGroupedView, 0);
-  }
+    document.addEventListener('DOMContentLoaded', () => setTimeout(render,0), {once:true});
+  } else setTimeout(render,0);
+
+  document.addEventListener('shama:product-simple-rendered', render);
 })();
