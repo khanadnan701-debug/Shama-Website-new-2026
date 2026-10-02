@@ -8,7 +8,7 @@
     ['Shama','Shama Rose Water','450ml / 250ml / 200ml / 190ml','https://res.cloudinary.com/wy4nkkqq/image/upload/v1789464147/Shama_Rose_Water_250ml.png'],
     ['Shama','Shama Sesame Oil','290ml','https://res.cloudinary.com/wy4nkkqq/image/upload/v1789465760/Shama_sesame_oil_290ml.png'],
     ['Shama','Shama Castor Oil','290ml','https://res.cloudinary.com/wy4nkkqq/image/upload/v1789465761/Shama_castor_oil_290ml.png'],
-    ['Shama','Shama Mustard Oil','290ml','https://res.cloudinary.com/wy4nkkqq/image/upload/v1789465761/Shama_mustard_oil_290ml.png'],
+    ['Shama','Shama Mustard Oil','290ml / 200ml','https://res.cloudinary.com/wy4nkkqq/image/upload/v1789465761/Shama_mustard_oil_290ml.png'],
     ['Shama','Shama Black Seed Oil','290ml','https://res.cloudinary.com/wy4nkkqq/image/upload/v1790076485/Shama_black_seed_oil_290ml.png'],
     ['Shama','Shama Black Seed Oil','100ml','https://res.cloudinary.com/wy4nkkqq/image/upload/v1790076488/Shama_black_seed_oil_100ml.png'],
     ['Shama','Shama Pure Coconut Oil','500ml','https://res.cloudinary.com/wy4nkkqq/image/upload/v1790076490/Shama_coconut_oil_pure_500ml.png'],
