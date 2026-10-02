@@ -780,55 +780,28 @@ body[data-page="catalogue"] .grocery-range-number{
 }
 
 
-/* 2026-10-02 DESKTOP catalogue tiles 30 percent smaller */
+/* 2026-10-02 FINAL desktop catalogue full-width 3-column grid */
 @media(min-width:1101px){
-  body[data-page="catalogue"] .grocery-range-grid{
-    grid-template-columns:repeat(3,minmax(0,300px))!important;
-    justify-content:center!important;
-    gap:18px!important;
-  }
-  body[data-page="catalogue"] .grocery-range-tile{
-    width:100%!important;
-    max-width:300px!important;
-    aspect-ratio:1/1!important;
-    justify-self:center!important;
-  }
-  body[data-page="catalogue"] .grocery-range-copy{
-    padding:36px 13px 12px!important;
-  }
-  body[data-page="catalogue"] .grocery-range-copy h3{
-    font-size:18px!important;
-    line-height:1.05!important;
-  }
-  body[data-page="catalogue"] .grocery-range-copy span{
-    margin-top:7px!important;
-    padding:7px 9px!important;
-    font-size:7px!important;
-  }
-  body[data-page="catalogue"] .grocery-range-number{
-    top:10px!important;
-    left:10px!important;
-    width:30px!important;
-    height:30px!important;
-    font-size:9px!important;
-  }
-}
-
-
-/* 2026-10-02 DESKTOP catalogue full-width balanced grid */
-@media(min-width:1101px){
-  body[data-page="catalogue"] .grocery-range-grid{
-    width:100%!important;
-    max-width:1240px!important;
+  body[data-page="catalogue"] .grocery-catalogue-wrap{
+    width:calc(100% - 40px)!important;
+    max-width:1600px!important;
     margin-left:auto!important;
     margin-right:auto!important;
+  }
+  body[data-page="catalogue"] .grocery-range-grid{
+    display:grid!important;
+    width:100%!important;
+    max-width:none!important;
+    margin:0!important;
     grid-template-columns:repeat(3,minmax(0,1fr))!important;
-    justify-content:stretch!important;
     gap:16px!important;
+    justify-content:stretch!important;
+    align-items:start!important;
   }
   body[data-page="catalogue"] .grocery-range-tile{
     width:100%!important;
     max-width:none!important;
+    min-width:0!important;
     justify-self:stretch!important;
     aspect-ratio:1/1!important;
   }
@@ -837,11 +810,5 @@ body[data-page="catalogue"] .grocery-range-number{
   }
   body[data-page="catalogue"] .grocery-range-copy h3{
     font-size:clamp(18px,1.45vw,22px)!important;
-  }
-  body[data-page="catalogue"] .grocery-range-number{
-    top:11px!important;
-    left:11px!important;
-    width:32px!important;
-    height:32px!important;
   }
 }
