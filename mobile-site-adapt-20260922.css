@@ -1906,3 +1906,117 @@ body[data-page="catalogue"] .grocery-mini-card{grid-template-columns:1fr!importa
     font-size:18px!important;
   }
 }
+
+
+/* 2026-10-02 MOBILE ONLY two tiles, full image no crop */
+@media(max-width:620px){
+  body[data-page="home"] .category-images-only .reels-track{
+    display:grid!important;
+    grid-template-columns:repeat(2,minmax(0,1fr))!important;
+    gap:9px!important;
+    width:100%!important;
+  }
+  body[data-page="home"] .category-images-only .reel-card{
+    display:flex!important;
+    flex-direction:column!important;
+    width:100%!important;
+    max-width:none!important;
+    min-width:0!important;
+    height:auto!important;
+    min-height:0!important;
+    aspect-ratio:auto!important;
+    margin:0!important;
+    overflow:hidden!important;
+    border-radius:16px!important;
+  }
+  body[data-page="home"] .category-images-only .reel-card>img{
+    position:relative!important;
+    inset:auto!important;
+    display:block!important;
+    width:100%!important;
+    height:auto!important;
+    max-width:100%!important;
+    max-height:none!important;
+    padding:0!important;
+    margin:0!important;
+    object-fit:contain!important;
+    object-position:center!important;
+    background:#f2f3f7!important;
+    border-radius:15px 15px 0 0!important;
+    transform:none!important;
+  }
+  body[data-page="home"] .category-images-only .reel-copy{
+    position:relative!important;
+    inset:auto!important;
+    width:100%!important;
+    height:50px!important;
+    min-height:50px!important;
+    flex:0 0 50px!important;
+    padding:0 8px!important;
+    gap:5px!important;
+    border-radius:0 0 15px 15px!important;
+  }
+  body[data-page="home"] .category-images-only .reel-copy strong{
+    min-width:0!important;
+    max-width:calc(100% - 34px)!important;
+    font-size:clamp(10px,3.1vw,13px)!important;
+    line-height:1.02!important;
+    overflow-wrap:anywhere!important;
+  }
+  body[data-page="home"] .category-images-only .reel-copy em{
+    flex:0 0 28px!important;
+    width:28px!important;
+    height:28px!important;
+    max-width:28px!important;
+    padding:0!important;
+  }
+  body[data-page="home"] .category-images-only .reel-number{
+    top:7px!important;
+    left:7px!important;
+    width:27px!important;
+    height:27px!important;
+    font-size:8px!important;
+  }
+
+  body[data-page="catalogue"] .grocery-range-grid{
+    grid-template-columns:repeat(2,minmax(0,1fr))!important;
+    gap:9px!important;
+  }
+  body[data-page="catalogue"] .grocery-range-tile{
+    display:flex!important;
+    flex-direction:column!important;
+    width:100%!important;
+    min-width:0!important;
+    height:auto!important;
+    min-height:0!important;
+    aspect-ratio:auto!important;
+  }
+  body[data-page="catalogue"] .grocery-range-image{
+    position:relative!important;
+    inset:auto!important;
+    width:100%!important;
+    height:auto!important;
+    min-height:0!important;
+    padding:0!important;
+  }
+  body[data-page="catalogue"] .grocery-range-image img{
+    display:block!important;
+    width:100%!important;
+    height:auto!important;
+    max-width:100%!important;
+    max-height:none!important;
+    object-fit:contain!important;
+    object-position:center!important;
+    transform:none!important;
+  }
+  body[data-page="catalogue"] .grocery-range-copy{
+    position:relative!important;
+    inset:auto!important;
+    width:100%!important;
+    padding:10px!important;
+  }
+  body[data-page="catalogue"] .grocery-range-copy h3{
+    font-size:clamp(11px,3.1vw,14px)!important;
+    line-height:1.05!important;
+  }
+}
