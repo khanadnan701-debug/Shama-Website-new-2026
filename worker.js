@@ -93,6 +93,14 @@ body[data-page="home"] .category-reels .reel-card>img{box-sizing:border-box!impo
 body[data-page="home"] .category-reels .reel-card>img{position:relative!important;inset:auto!important;width:100%!important;height:auto!important;max-height:none!important;object-fit:contain!important;border-radius:17px 17px 0 0!important}
 }
 body[data-page="home"] .category-reels .reel-card:after{display:none!important;animation:none!important}
+/* shama desktop compact category cards */
+@media(min-width:1101px){
+body[data-page="home"] .category-reels .reels-shell{width:min(1180px,calc(100% - 48px))!important}
+body[data-page="home"] .category-reels .reels-track{grid-template-columns:repeat(3,minmax(0,350px))!important;justify-content:center!important;gap:18px!important}
+body[data-page="home"] .category-reels .reel-card{width:100%!important;max-width:350px!important;aspect-ratio:1/1!important}
+body[data-page="home"] .category-reels .reel-card>img{height:calc(100% - 54px)!important}
+body[data-page="home"] .category-reels .reel-copy{height:54px!important;padding:0 10px!important}
+}
 </style>
 <script id="shama-home-static-categories-script">
 (()=>{const run=()=>{if(document.body?.dataset.page!=="home")return;
@@ -200,7 +208,7 @@ async function withFreshHeaders(response) {
   }
 
   headers.delete('Clear-Site-Data');
-  headers.set('X-Shama-Release', '20261002-desktop-category-fit-restore-1');
+  headers.set('X-Shama-Release', '20261002-desktop-tiles-30pct-smaller-1');
 
   let body = response.body;
 
