@@ -50,6 +50,25 @@ const GLOBAL_MOBILE_NAV = `<script id="shama-global-mobile-nav" src="/mobile-nav
 const GLOBAL_HEADER_CONTROLS = `<script id="shama-global-header-controls" src="/header-controls-fix-20260912.js?v=20260922-2" defer></script>`;
 const GLOBAL_MEGA_MENU_HOVER = `<script id="shama-global-mega-menu-hover" src="/mega-menu-hover-fix-20260917.js?v=20260917-1" defer></script>`;
 
+const HOME_RICE_HERO_IMAGE_FIX = `<style id="shama-home-rice-hero-image-fix">
+body[data-page="home"] .hero-video-only [data-hero-panel][data-theme="rice"] > video{display:none!important}
+body[data-page="home"] .hero-video-only [data-hero-panel][data-theme="rice"] > img[data-home-rice-banner],
+body[data-page="home"] .hero-video-only [data-hero-panel][data-theme="rice"] > img{display:block!important;position:absolute!important;inset:0!important;width:100%!important;height:100%!important;object-fit:cover!important;object-position:center!important}
+</style>
+<script id="shama-home-rice-hero-image-script">
+(()=>{const src="https://res.cloudinary.com/wy4nkkqq/image/upload/v1790943588/shama_category_rice_banner_20261002.png";
+const run=()=>{if(document.body?.dataset.page!=="home")return;
+document.querySelectorAll('.hero-video-only [data-hero-panel][data-theme="rice"]').forEach(panel=>{
+panel.querySelectorAll("video").forEach(v=>{try{v.pause()}catch(e){}v.remove()});
+let img=panel.querySelector("img[data-home-rice-banner]")||panel.querySelector("img");
+if(!img){img=document.createElement("img");panel.prepend(img)}
+img.dataset.homeRiceBanner="true";img.src=src;img.alt="Rice product range";img.decoding="async";img.fetchPriority="high";
+});
+};
+if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",run,{once:true});else run();
+setTimeout(run,0);setTimeout(run,120);setTimeout(run,600);setTimeout(run,1600);
+})();
+</script>`;
 const HOME_STATIC_CATEGORY_FIX = `<style id="shama-home-static-categories">
 body[data-page="home"] .category-reels video{display:none!important}
 body[data-page="home"] .category-reels .reel-card>img{position:absolute!important;inset:0!important;width:100%!important;height:100%!important;object-fit:cover!important;object-position:center!important;padding:0!important;background:#e9edf5!important;z-index:-3!important;border-radius:inherit!important}
@@ -190,6 +209,7 @@ async function withFreshHeaders(response) {
     if (!html.includes('id="shama-product-details-js"')) scripts.push(GLOBAL_PRODUCT_DETAILS_JS);
     if ((new URL(response.url || 'https://shamaonline.com/')).pathname === '/' || (new URL(response.url || 'https://shamaonline.com/')).pathname === '/index.html') {
       if (!html.includes('id="shama-home-static-categories-script"')) scripts.push(HOME_STATIC_CATEGORY_FIX);
+      if (!html.includes('id="shama-home-rice-hero-image-script"')) scripts.push(HOME_RICE_HERO_IMAGE_FIX);
     }
     if (scripts.length) {
       const bundle = scripts.join('');
