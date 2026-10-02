@@ -22,8 +22,8 @@
       number: '12',
       slug: 'agarbatti',
       name: 'Agarbatti',
-      desc: 'Incense & fragrances',
-      image: 'https://res.cloudinary.com/wy4nkkqq/image/upload/v1790069154/Metro_3_in_1.png',
+      desc: 'Metro, Metromilan & Pure incense',
+      image: 'https://res.cloudinary.com/wy4nkkqq/image/upload/v1790934647/Metro_Black_Sandal_Agarbatti.png',
       href: 'agarbatti.html'
     },
     {
@@ -112,7 +112,7 @@
   "dry-fruits.html": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1789232085/Shama_Raw_almonds_100gm.png",
   "laziza.html": "https://res.cloudinary.com/wy4nkkqq/image/upload/Laziza_biryani_masala_100g.png",
   "ahmed.html": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1789652169/Ahmed_tamarind_sauce_300g.png",
-  "agarbatti.html": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1790069154/Metro_3_in_1.png",
+  "agarbatti.html": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1790934647/Metro_Black_Sandal_Agarbatti.png",
   "dates.html": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1790069276/Shama_Ajwa-Dates-800g.png",
   "pataks.html": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1790069236/Patak_biryani_paste_2.3kg.png",
   "cosmetics.html": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1789464147/Shama_Rose_Water_250ml.png",
