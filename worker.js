@@ -124,7 +124,7 @@ section.querySelectorAll("video").forEach(v=>{try{v.pause()}catch(e){}v.remove()
 if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",run,{once:true});else run();
 setTimeout(run,150);setTimeout(run,800);})();
 </script>`;
-const GLOBAL_MOBILE_SITE_CSS = `<link id="shama-mobile-site-css" rel="stylesheet" href="/mobile-site-adapt-20260922.css?v=20261002-mobile2colnocrop2">`;
+const GLOBAL_MOBILE_SITE_CSS = `<link id="shama-mobile-site-css" rel="stylesheet" href="/mobile-site-adapt-20260922.css?v=20261002-cataloguefullmedia4">`;
 const GLOBAL_PRODUCT_DETAILS_CSS = `<link id="shama-product-details-css" rel="stylesheet" href="/product-details-20260922.css?v=20260922-1">`;
 const GLOBAL_PRODUCT_DETAILS_JS = `<script id="shama-product-details-js" src="/product-details-20260922.js?v=20260922-1" defer></script>`;
 
@@ -195,7 +195,7 @@ async function withFreshHeaders(response) {
   }
 
   headers.delete('Clear-Site-Data');
-  headers.set('X-Shama-Release', '20261002-mobile-two-column-no-crop-2');
+  headers.set('X-Shama-Release', '20261002-catalogue-mobile-full-media-4');
 
   let body = response.body;
 
