@@ -503,3 +503,46 @@ body[data-page="home"] .category-images-only .reel-number{
     background:#6b0c38!important;
   }
 }
+
+
+/* 2026-10-02 DESKTOP tiles 30 percent smaller */
+@media(min-width:1101px){
+  body[data-page="home"] .category-reels .reels-shell{
+    width:min(1180px,calc(100% - 48px))!important;
+  }
+  body[data-page="home"] .category-images-only .reels-track{
+    grid-template-columns:repeat(3,minmax(0,350px))!important;
+    justify-content:center!important;
+    gap:18px!important;
+  }
+  body[data-page="home"] .category-images-only .reel-card{
+    width:100%!important;
+    max-width:350px!important;
+    aspect-ratio:1/1!important;
+  }
+  body[data-page="home"] .category-images-only .reel-card>img{
+    height:calc(100% - 54px)!important;
+  }
+  body[data-page="home"] .category-images-only .reel-copy{
+    height:54px!important;
+    padding:0 10px!important;
+    gap:7px!important;
+  }
+  body[data-page="home"] .category-images-only .reel-copy strong{
+    max-width:62%!important;
+    font-size:17px!important;
+    line-height:1!important;
+  }
+  body[data-page="home"] .category-images-only .reel-copy em{
+    max-width:104px!important;
+    padding:7px 9px!important;
+    font-size:7px!important;
+  }
+  body[data-page="home"] .category-images-only .reel-number{
+    width:31px!important;
+    height:31px!important;
+    top:10px!important;
+    left:10px!important;
+    font-size:9px!important;
+  }
+}
