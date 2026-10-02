@@ -22,9 +22,9 @@
     {
       slug:'agarbatti',
       name:'Agarbatti',
-      desc:'Metro and Metromilan incense and traditional fragrance products.',
+      desc:'Metro, Metromilan and Pure incense collections.',
       href:'agarbatti.html',
-      image:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1790069154/Metro_3_in_1.png',
+      image:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1790934647/Metro_Black_Sandal_Agarbatti.png',
       tone:'lavender'
     },
     {
