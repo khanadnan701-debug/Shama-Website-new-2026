@@ -18,3 +18,37 @@
 .category-images-only .reel-card{
   background:#121a2d!important;
 }
+
+
+/* 2026-10-02: keep full category artwork visible */
+body[data-page="home"] .category-images-only .reel-card>img{
+  position:absolute!important;
+  inset:0!important;
+  width:100%!important;
+  height:100%!important;
+  padding:10px!important;
+  object-fit:contain!important;
+  object-position:center!important;
+  background:linear-gradient(180deg,#eef2f8 0%,#e5eaf3 100%)!important;
+  border-radius:inherit!important;
+}
+body[data-page="home"] .category-images-only .reel-card{
+  background:linear-gradient(180deg,#eef2f8 0%,#e5eaf3 100%)!important;
+}
+body[data-page="home"] .category-images-only .reel-copy{
+  left:18px!important;
+  right:18px!important;
+  bottom:18px!important;
+  z-index:5!important;
+}
+body[data-page="home"] .category-images-only .reel-copy strong{
+  max-width:100%!important;
+  font-size:clamp(28px,2.05vw,40px)!important;
+  line-height:.92!important;
+  letter-spacing:-.065em!important;
+  overflow-wrap:anywhere!important;
+}
+@media(max-width:560px){
+  body[data-page="home"] .category-images-only .reel-card>img{padding:8px!important;object-fit:contain!important}
+  body[data-page="home"] .category-images-only .reel-copy strong{font-size:28px!important}
+}
