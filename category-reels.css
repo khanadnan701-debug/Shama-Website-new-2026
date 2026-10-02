@@ -411,3 +411,55 @@ body[data-page="home"] .category-images-only .reel-number{
     grid-template-columns:1fr!important;
   }
 }
+
+
+/* 2026-10-02: force exactly 3 category tiles on laptop and desktop */
+@media (min-width:701px){
+  body[data-page="home"] .category-reels .reels-shell{
+    width:min(1600px,calc(100% - 32px))!important;
+    max-width:none!important;
+  }
+  body[data-page="home"] .category-images-only .reels-track{
+    display:grid!important;
+    grid-template-columns:repeat(3,minmax(0,1fr))!important;
+    grid-auto-flow:row!important;
+    gap:18px!important;
+    width:100%!important;
+    justify-content:stretch!important;
+    align-items:start!important;
+  }
+  body[data-page="home"] .category-images-only .reel-card{
+    width:100%!important;
+    max-width:500px!important;
+    min-width:0!important;
+    height:auto!important;
+    min-height:0!important;
+    aspect-ratio:1/1!important;
+    justify-self:center!important;
+  }
+  body[data-page="home"] .category-images-only .reel-card>img{
+    height:calc(100% - 72px)!important;
+  }
+  body[data-page="home"] .category-images-only .reel-copy{
+    height:72px!important;
+    padding:0 13px!important;
+    gap:8px!important;
+  }
+  body[data-page="home"] .category-images-only .reel-copy strong{
+    min-width:0!important;
+    max-width:60%!important;
+    font-size:clamp(16px,1.45vw,24px)!important;
+    line-height:1!important;
+  }
+  body[data-page="home"] .category-images-only .reel-copy em{
+    flex:0 0 auto!important;
+    max-width:122px!important;
+    padding:8px 10px!important;
+    font-size:8px!important;
+  }
+}
+@media (max-width:700px){
+  body[data-page="home"] .category-images-only .reels-track{
+    grid-template-columns:1fr!important;
+  }
+}
