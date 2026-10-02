@@ -49,6 +49,47 @@ const MOBILE_NAV_CRITICAL_HEAD = `<style id="shama-mobile-nav-critical">@media(m
 const GLOBAL_MOBILE_NAV = `<script id="shama-global-mobile-nav" src="/mobile-nav-20260912-v3.js?v=20260922-2" defer></script>`;
 const GLOBAL_HEADER_CONTROLS = `<script id="shama-global-header-controls" src="/header-controls-fix-20260912.js?v=20260922-2" defer></script>`;
 const GLOBAL_MEGA_MENU_HOVER = `<script id="shama-global-mega-menu-hover" src="/mega-menu-hover-fix-20260917.js?v=20260917-1" defer></script>`;
+
+const HOME_STATIC_CATEGORY_FIX = \`<style id="shama-home-static-categories">
+body[data-page="home"] .category-reels video{display:none!important}
+body[data-page="home"] .category-reels .reel-card>img{position:absolute!important;inset:0!important;width:100%!important;height:100%!important;object-fit:contain!important;object-position:center!important;padding:24px!important;background:linear-gradient(180deg,#f8f9fc,#eef2f7)!important;z-index:-3!important}
+body[data-page="home"] .category-reels .reel-card:after{display:none!important;animation:none!important}
+</style>
+<script id="shama-home-static-categories-script">
+(()=>{const run=()=>{if(document.body?.dataset.page!=="home")return;
+const section=document.querySelector(".category-reels");if(!section)return;
+const items=[
+["Rice","rice.html","https://res.cloudinary.com/wy4nkkqq/image/upload/v1790255518/Shama_Super_Kernal_Par_Boiled_Sella_Rice_5kg.png"],
+["Spices","spices.html","https://res.cloudinary.com/wy4nkkqq/image/upload/v1789051986/star_anise.png"],
+["Sauces & Pastes","sauces-pastes.html","https://res.cloudinary.com/wy4nkkqq/image/upload/v1789678774/Shama_Mango_pickle_1kg.png"],
+["Miscellaneous","miscellaneous.html","https://res.cloudinary.com/wy4nkkqq/image/upload/v1789678914/Shama_paneer_dodi_phool_100g.png"],
+["Beverages","beverages.html","https://res.cloudinary.com/wy4nkkqq/image/upload/v1789231973/Shama_Basil_Seed_Drink_Watermelon.png"],
+["Flour & Lentils","flour-lentiles.html","https://res.cloudinary.com/wy4nkkqq/image/upload/v1789232539/shama_wheat_floor_T55_1kg.png"],
+["Frozen","frozen.html","https://res.cloudinary.com/wy4nkkqq/image/upload/v1790625180/Shama_Chicken_tikka_Samosa_20Pcs.png"],
+["Oils","oils.html","https://res.cloudinary.com/wy4nkkqq/image/upload/v1789678755/Shama_sunflower_oil_5ltr.png"],
+["Dry Fruits","dry-fruits.html","https://res.cloudinary.com/wy4nkkqq/image/upload/v1789232085/Shama_Raw_almonds_100gm.png"],
+["Laziza","laziza.html","https://res.cloudinary.com/wy4nkkqq/image/upload/Laziza_biryani_masala_100g.png"],
+["Ahmed","ahmed.html","https://res.cloudinary.com/wy4nkkqq/image/upload/v1789652169/Ahmed_tamarind_sauce_300g.png"],
+["Agarbatti","agarbatti.html","https://res.cloudinary.com/wy4nkkqq/image/upload/v1790934647/Metro_Black_Sandal_Agarbatti.png"],
+["Dates","dates.html","https://res.cloudinary.com/wy4nkkqq/image/upload/v1790069276/Shama_Ajwa-Dates-800g.png"],
+["Pataks","pataks.html","https://res.cloudinary.com/wy4nkkqq/image/upload/v1790069236/Patak_biryani_paste_2.3kg.png"],
+["Cosmetics","cosmetics.html","https://res.cloudinary.com/wy4nkkqq/image/upload/v1789464147/Shama_Rose_Water_250ml.png"],
+["Non Foods","non-foods.html","https://res.cloudinary.com/wy4nkkqq/image/upload/v1790261684/Shahi_Charcoal_Tandoor_11C_Size_1.png"],
+["Divers","divers.html","https://res.cloudinary.com/wy4nkkqq/image/upload/v1790600769/Telephone_ISABGUL_200g.png"],
+["Preserves","preserves.html","https://res.cloudinary.com/wy4nkkqq/image/upload/v1789464152/Shama_Kesar_Mango_Plup_Kesar.png"],
+["Sea Food","sea-food.html","https://res.cloudinary.com/wy4nkkqq/image/upload/v1790600837/Gambas_8-12.png"],
+["Savoury Snacks","savoury-snacks.html","https://res.cloudinary.com/wy4nkkqq/image/upload/v1790601081/Shama_Roasted_Corn_Salted_400G.png"],
+["Bakery","bakery.html","https://res.cloudinary.com/wy4nkkqq/image/upload/v1790869503/Cake_Rusk_Coconut_750g.png"]
+];
+section.classList.add("category-images-only");
+const head=section.querySelector(".reels-head");if(head){head.innerHTML='<div><span class="eyebrow">Catalogue categories</span><h2>Explore every<br>Shama range.</h2></div><p>Product images only. Click any category to open its full collection.</p>'}
+const track=section.querySelector(".reels-track");if(!track)return;
+track.innerHTML=items.map((x,i)=>'<a class="reel-card reel-static" href="'+x[1]+'" aria-label="Open '+x[0]+' catalogue"><img src="'+x[2]+'" alt="'+x[0]+'" loading="'+(i<6?'eager':'lazy')+'" decoding="async"><span class="reel-number">'+String(i+1).padStart(2,'0')+'</span><span class="reel-copy"><small>Shama range</small><strong>'+x[0]+'</strong><em>Open catalogue ↗</em></span></a>').join("");
+section.querySelectorAll("video").forEach(v=>{try{v.pause()}catch(e){}v.remove()});
+};
+if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",run,{once:true});else run();
+setTimeout(run,150);setTimeout(run,800);})();
+</script>\`;
 const GLOBAL_MOBILE_SITE_CSS = `<link id="shama-mobile-site-css" rel="stylesheet" href="/mobile-site-adapt-20260922.css?v=20260922-2">`;
 const GLOBAL_PRODUCT_DETAILS_CSS = `<link id="shama-product-details-css" rel="stylesheet" href="/product-details-20260922.css?v=20260922-1">`;
 const GLOBAL_PRODUCT_DETAILS_JS = `<script id="shama-product-details-js" src="/product-details-20260922.js?v=20260922-1" defer></script>`;
@@ -147,6 +188,9 @@ async function withFreshHeaders(response) {
     if (!html.includes('id="shama-global-header-controls"')) scripts.push(GLOBAL_HEADER_CONTROLS);
     if (!html.includes('id="shama-global-mega-menu-hover"')) scripts.push(GLOBAL_MEGA_MENU_HOVER);
     if (!html.includes('id="shama-product-details-js"')) scripts.push(GLOBAL_PRODUCT_DETAILS_JS);
+    if ((new URL(response.url || 'https://shamaonline.com/')).pathname === '/' || (new URL(response.url || 'https://shamaonline.com/')).pathname === '/index.html') {
+      if (!html.includes('id="shama-home-static-categories-script"')) scripts.push(HOME_STATIC_CATEGORY_FIX);
+    }
     if (scripts.length) {
       const bundle = scripts.join('');
       if (/<\/body>/i.test(html)) html = html.replace(/<\/body>/i, `${bundle}</body>`);
