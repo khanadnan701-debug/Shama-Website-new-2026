@@ -767,7 +767,7 @@ productData.push(...supplementalData);
 const categories=[
  {slug:'rice',name:'Rice',desc:'Fragrant grains for every table',image:'https://res.cloudinary.com/wy4nkkqq/image/upload/f_webp,fl_awebp,q_auto:best,e_sharpen:70/v1790255518/Shama_Super_Kernal_Par_Boiled_Sella_Rice_5kg.png'},
  {slug:'spices',name:'Spices',desc:'Bold aroma, vivid colour',image:'https://images.unsplash.com/photo-1532336414038-cf19250c5757?auto=format&fit=crop&w=900&q=85'},
- {slug:'sauces',name:'Sauces & Pastes',desc:'Instant depth and flavour',image:(productData.find(x=>x.category==='sauces')||{}).image||'https://images.unsplash.com/photo-1601050690117-94f5f6fa8bd7?auto=format&fit=crop&w=900&q=85'},
+ {slug:'sauces',name:'Sauces, Pickles & Pastes',desc:'Curry pastes, pickles, chutneys and sauces',image:(productData.find(x=>x.category==='sauces')||{}).image||'https://images.unsplash.com/photo-1601050690117-94f5f6fa8bd7?auto=format&fit=crop&w=900&q=85'},
  {slug:'misc',name:'Miscellaneous',desc:'Everyday pantry essentials',image:'https://images.unsplash.com/photo-1601050690117-94f5f6fa8bd7?auto=format&fit=crop&w=900&q=85'},
  {slug:'beverages',name:'Beverages',desc:'Refreshingly familiar',image:'https://images.unsplash.com/photo-1544787219-7f47ccb76574?auto=format&fit=crop&w=900&q=85'},
  {slug:'flour',name:'Flour & Lentiles',desc:'Wholesome kitchen staples',image:'https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=900&q=85'},
