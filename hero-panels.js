@@ -233,10 +233,10 @@
   }
 
   function setupCategoryReels() {
-    Array.from(document.querySelectorAll('.reel-card')).forEach(reel => {
-      const className = Object.keys(reelClassMap).find(name => reel.classList.contains(name));
-      const key = className ? reelClassMap[className] : null;
-      playVideo(setVideo(reel.querySelector('video'), key ? videoSources[key] : null));
+    // Homepage catalogue cards are intentionally image-only.
+    document.querySelectorAll('.category-reels video, .reel-card video').forEach(video => {
+      try { video.pause(); } catch (_) {}
+      video.remove();
     });
   }
 
