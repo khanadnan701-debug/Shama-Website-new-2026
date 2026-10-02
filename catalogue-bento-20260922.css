@@ -754,3 +754,27 @@ body[data-page="catalogue"] .grocery-range-number{
     font-size:22px!important;
   }
 }
+
+
+/* 2026-10-02 DESKTOP ONLY no-crop catalogue tiles */
+@media(min-width:701px){
+  body[data-page="catalogue"] .grocery-range-tile{
+    background:#f4f5f0!important;
+  }
+  body[data-page="catalogue"] .grocery-range-image{
+    padding:10px!important;
+    background:#f4f5f0!important;
+  }
+  body[data-page="catalogue"] .grocery-range-image img{
+    width:100%!important;
+    height:100%!important;
+    max-width:100%!important;
+    max-height:100%!important;
+    object-fit:contain!important;
+    object-position:center!important;
+    transform:none!important;
+  }
+  body[data-page="catalogue"] .grocery-range-tile:hover .grocery-range-image img{
+    transform:none!important;
+  }
+}
