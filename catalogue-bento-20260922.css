@@ -813,3 +813,35 @@ body[data-page="catalogue"] .grocery-range-number{
     font-size:9px!important;
   }
 }
+
+
+/* 2026-10-02 DESKTOP catalogue full-width balanced grid */
+@media(min-width:1101px){
+  body[data-page="catalogue"] .grocery-range-grid{
+    width:100%!important;
+    max-width:1240px!important;
+    margin-left:auto!important;
+    margin-right:auto!important;
+    grid-template-columns:repeat(3,minmax(0,1fr))!important;
+    justify-content:stretch!important;
+    gap:16px!important;
+  }
+  body[data-page="catalogue"] .grocery-range-tile{
+    width:100%!important;
+    max-width:none!important;
+    justify-self:stretch!important;
+    aspect-ratio:1/1!important;
+  }
+  body[data-page="catalogue"] .grocery-range-copy{
+    padding:42px 15px 14px!important;
+  }
+  body[data-page="catalogue"] .grocery-range-copy h3{
+    font-size:clamp(18px,1.45vw,22px)!important;
+  }
+  body[data-page="catalogue"] .grocery-range-number{
+    top:11px!important;
+    left:11px!important;
+    width:32px!important;
+    height:32px!important;
+  }
+}
