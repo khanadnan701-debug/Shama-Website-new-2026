@@ -71,7 +71,7 @@ setTimeout(run,0);setTimeout(run,120);setTimeout(run,600);setTimeout(run,1600);
 </script>`;
 const HOME_STATIC_CATEGORY_FIX = `<style id="shama-home-static-categories">
 body[data-page="home"] .category-reels video{display:none!important}
-body[data-page="home"] .category-reels .reel-card>img{position:absolute!important;inset:0!important;width:100%!important;height:100%!important;object-fit:contain!important;object-position:center!important;padding:10px!important;background:linear-gradient(180deg,#eef2f8 0%,#e5eaf3 100%)!important;z-index:-3!important;border-radius:inherit!important}
+body[data-page="home"] .category-reels .reel-card>img{position:absolute!important;top:0!important;left:0!important;right:0!important;bottom:auto!important;width:100%!important;height:422px!important;object-fit:cover!important;object-position:center!important;padding:0!important;margin:0!important;background:transparent!important;z-index:1!important;border-radius:23px 23px 0 0!important}
 body[data-page="home"] .category-reels .reel-card:after{display:none!important;animation:none!important}
 </style>
 <script id="shama-home-static-categories-script">
