@@ -8,42 +8,37 @@
 
   const slides = [
     {
-      theme:'rice',
+      theme:'banner-1',
       number:'01',
-      title:'RICE',
+      title:'',
       href:'rice.html',
-      label:'Explore Rice',
-      image:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1790943588/shama_category_rice_banner_20261002.png'
+      label:'Shama Rice Banner 1',
+      image:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1790947075/shama_home_hero_banner_1_20261002.png'
     },
     {
-      theme:'spices',
+      theme:'banner-2',
       number:'02',
-      title:'SPICES',
-      href:'spices.html',
-      label:'Explore Spices',
-      video:'https://www.pexels.com/download/video/7540760/'
+      title:'',
+      href:'rice.html',
+      label:'Shama Rice Banner 2',
+      image:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1790947080/shama_home_hero_banner_2_20261002.png'
     },
     {
-      theme:'drinks',
+      theme:'banner-3',
       number:'03',
-      title:'DRINKS',
-      href:'beverages.html',
-      label:'Explore Drinks',
-      video:'https://www.pexels.com/download/video/8677740/'
-    },
-    {
-      theme:'frozen',
-      number:'04',
-      title:'FROZEN',
-      href:'frozen.html',
-      label:'Explore Frozen',
-      video:'https://www.pexels.com/download/video/29824279/'
+      title:'',
+      href:'rice.html',
+      label:'Shama Rice Banner 3',
+      image:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1790947089/shama_home_hero_banner_3_20261002.png'
     }
   ];
 
   const style = document.createElement('style');
   style.id = 'shama-force-hero-slider-style';
   style.textContent = `
+    .hero-video-only .fmcg-panel-label,
+    .hero-video-only .fmcg-panel-link{display:none!important}
+
     .hero-video-only .fmcg-video-wall{
       display:block!important;
       position:absolute!important;
