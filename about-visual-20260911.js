@@ -5,7 +5,7 @@
   const images = {
     hero: 'https://static.wixstatic.com/media/00ae33_2045f9d35e4a4da395ad4833d2b3bd91~mv2.jpg',
     founder: 'https://static.wixstatic.com/media/00ae33_6b312b11ad8f4578af43615631d040f8~mv2_d_1595_1600_s_2.jpg',
-    rice: 'https://res.cloudinary.com/wy4nkkqq/image/upload/v1789030729/jasmine-5kg.jpg',
+    rice: 'https://res.cloudinary.com/wy4nkkqq/image/upload/v1790255518/Shama_Super_Kernal_Par_Boiled_Sella_Rice_5kg.png',
     thaiRice: 'https://res.cloudinary.com/wy4nkkqq/image/upload/v1789064689/Shama_thai_jasmine_2_volta_20kg.png',
     paste: 'https://res.cloudinary.com/wy4nkkqq/image/upload/v1789120966/Shama_butter_chicken_curry_paste_300g.png',
     lentils: 'https://res.cloudinary.com/wy4nkkqq/image/upload/v1789131921/Shama_desi_chana_dal_1kg.png',
