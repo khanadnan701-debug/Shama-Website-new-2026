@@ -50,7 +50,7 @@ const GLOBAL_MOBILE_NAV = `<script id="shama-global-mobile-nav" src="/mobile-nav
 const GLOBAL_HEADER_CONTROLS = `<script id="shama-global-header-controls" src="/header-controls-fix-20260912.js?v=20260922-2" defer></script>`;
 const GLOBAL_MEGA_MENU_HOVER = `<script id="shama-global-mega-menu-hover" src="/mega-menu-hover-fix-20260917.js?v=20260917-1" defer></script>`;
 
-const HOME_STATIC_CATEGORY_FIX = \`<style id="shama-home-static-categories">
+const HOME_STATIC_CATEGORY_FIX = `<style id="shama-home-static-categories">
 body[data-page="home"] .category-reels video{display:none!important}
 body[data-page="home"] .category-reels .reel-card>img{position:absolute!important;inset:0!important;width:100%!important;height:100%!important;object-fit:contain!important;object-position:center!important;padding:24px!important;background:linear-gradient(180deg,#f8f9fc,#eef2f7)!important;z-index:-3!important}
 body[data-page="home"] .category-reels .reel-card:after{display:none!important;animation:none!important}
@@ -89,7 +89,7 @@ section.querySelectorAll("video").forEach(v=>{try{v.pause()}catch(e){}v.remove()
 };
 if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",run,{once:true});else run();
 setTimeout(run,150);setTimeout(run,800);})();
-</script>\`;
+</script>`;
 const GLOBAL_MOBILE_SITE_CSS = `<link id="shama-mobile-site-css" rel="stylesheet" href="/mobile-site-adapt-20260922.css?v=20260922-2">`;
 const GLOBAL_PRODUCT_DETAILS_CSS = `<link id="shama-product-details-css" rel="stylesheet" href="/product-details-20260922.css?v=20260922-1">`;
 const GLOBAL_PRODUCT_DETAILS_JS = `<script id="shama-product-details-js" src="/product-details-20260922.js?v=20260922-1" defer></script>`;
@@ -161,7 +161,7 @@ async function withFreshHeaders(response) {
   }
 
   headers.delete('Clear-Site-Data');
-  headers.set('X-Shama-Release', '20260922-product-detail-clickfix-2');
+  headers.set('X-Shama-Release', '20261002-rosewater-static-categories-1');
 
   let body = response.body;
 
