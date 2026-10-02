@@ -52,3 +52,42 @@ body[data-page="home"] .category-images-only .reel-copy strong{
   body[data-page="home"] .category-images-only .reel-card>img{padding:8px!important;object-fit:contain!important}
   body[data-page="home"] .category-images-only .reel-copy strong{font-size:28px!important}
 }
+
+
+/* 2026-10-02: poster-safe category card framing v2 */
+body[data-page="home"] .category-images-only .reel-card{
+  height:auto!important;
+  min-height:0!important;
+  aspect-ratio:.72!important;
+  overflow:hidden!important;
+}
+body[data-page="home"] .category-images-only .reel-card>img{
+  inset:0!important;
+  width:100%!important;
+  height:100%!important;
+  padding:6px!important;
+  object-fit:contain!important;
+  object-position:center center!important;
+  transform:none!important;
+}
+body[data-page="home"] .category-images-only .reel-card:hover>img,
+body[data-page="home"] .category-images-only .reel-card:focus-visible>img{
+  transform:none!important;
+}
+body[data-page="home"] .category-images-only .reel-copy{
+  left:16px!important;
+  right:16px!important;
+  bottom:16px!important;
+}
+body[data-page="home"] .category-images-only .reel-copy strong{
+  font-size:clamp(26px,2vw,38px)!important;
+  line-height:.95!important;
+  letter-spacing:-.055em!important;
+}
+@media(max-width:900px){
+  body[data-page="home"] .category-images-only .reel-card{aspect-ratio:.72!important}
+}
+@media(max-width:560px){
+  body[data-page="home"] .category-images-only .reel-card{height:auto!important;aspect-ratio:.72!important}
+  body[data-page="home"] .category-images-only .reel-card>img{padding:5px!important;object-fit:contain!important}
+}
