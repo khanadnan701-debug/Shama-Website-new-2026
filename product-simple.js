@@ -148,7 +148,7 @@
     }
 
     if (slug === 'pataks' || slug === 'sauces' || slug === 'sauces-pastes') return {
-      label: slug === 'pataks' ? "Patak's" : 'Sauces, Pickle & Pastes',
+      label: slug === 'pataks' ? "Patak's" : 'Sauces, Pickles & Pastes',
       summary:`${title} is designed to make flavourful cooking faster and more consistent. It works as a convenient base, accompaniment or recipe shortcut depending on the product, helping home cooks and professional kitchens reduce preparation time while keeping a familiar South Asian taste profile. The ready-to-use format is easy to portion and simple to keep on hand for busy service. For retailers, it adds variety to the cooking-sauce, paste, pickle or meal-solution section and pairs naturally with rice, breads, meats and vegetables. Follow the serving and storage directions printed on the pack after opening.`,
       benefits:['Faster meal preparation','Consistent flavour base','Easy portioning']
     };
