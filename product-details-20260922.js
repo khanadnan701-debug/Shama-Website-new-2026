@@ -22,9 +22,14 @@
     if (!title) return null;
     try {
       if (typeof productData !== 'undefined' && Array.isArray(productData)) {
+        const currentCategory = document.body?.dataset?.category || '';
+        const exactCurrent = productData.find(x => x && x.title === title && (!currentCategory || x.category === currentCategory));
+        if (exactCurrent) return exactCurrent;
         const exact = productData.find(x => x && x.title === title);
         if (exact) return exact;
         const lower = title.toLowerCase();
+        const currentLower = productData.find(x => x && String(x.title || '').toLowerCase() === lower && (!currentCategory || x.category === currentCategory));
+        if (currentLower) return currentLower;
         return productData.find(x => x && String(x.title || '').toLowerCase() === lower) || null;
       }
     } catch (_) {}
