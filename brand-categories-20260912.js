@@ -94,8 +94,8 @@
       number: '21',
       slug: 'bakery',
       name: 'Bakery',
-      desc: 'Rusks, biscuits, baking powder and bakery favourites.',
-      image: 'https://res.cloudinary.com/wy4nkkqq/image/upload/v1790855967/Almond_Cake_Rusk_750g.png',
+      desc: 'Baking essentials, rusks & flavours',
+      image: 'https://res.cloudinary.com/wy4nkkqq/image/upload/v1790869503/Cake_Rusk_Coconut_750g.png',
       href: 'bakery.html'
     }
   ];
@@ -121,7 +121,7 @@
   "preserves.html": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1789464152/Shama_Kesar_Mango_Plup_Kesar.png",
   "sea-food.html": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1790600837/Gambas_8-12.png",
   "savoury-snacks.html": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1790601081/Shama_Roasted_Corn_Salted_400G.png",
-  "bakery.html": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1790855967/Almond_Cake_Rusk_750g.png"
+  "bakery.html": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1790869503/Cake_Rusk_Coconut_750g.png"
 };
 
   function decorateMegaMenuImages(grid) {
