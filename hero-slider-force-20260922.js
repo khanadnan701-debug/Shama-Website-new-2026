@@ -13,7 +13,7 @@
       title:'RICE',
       href:'rice.html',
       label:'Explore Rice',
-      video:'https://www.pexels.com/download/video/4912725/'
+      image:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1790943588/shama_category_rice_banner_20261002.png'
     },
     {
       theme:'spices',
@@ -62,10 +62,13 @@
       will-change:transform!important;
       transition:transform .68s cubic-bezier(.22,.72,.18,1)!important;
     }
-    .hero-video-only .fmcg-video-wall .fmcg-panel video{
+    .hero-video-only .fmcg-video-wall .fmcg-panel video,
+    .hero-video-only .fmcg-video-wall .fmcg-panel img{
+      display:block!important;
       width:100%!important;
       height:100%!important;
       object-fit:cover!important;
+      object-position:center!important;
     }
     .hero-video-only .hero-slider-controls{
       position:absolute!important;
@@ -164,25 +167,29 @@
     panel.style.height = '100%';
     panel.style.transform = `translate3d(${index * 100}%,0,0)`;
     panel.innerHTML = `
-      <video muted playsinline preload="metadata" aria-hidden="true"></video>
+      ${slide.image
+        ? `<img src="${slide.image}" alt="${slide.title} product range" decoding="async" fetchpriority="${index === 0 ? 'high' : 'auto'}">`
+        : '<video muted playsinline preload="metadata" aria-hidden="true"></video>'}
       <span class="fmcg-panel-label"><small>${slide.number}</small><b>${slide.title}</b></span>
       <i class="fmcg-panel-link">↗</i>
     `;
 
     const video = panel.querySelector('video');
-    const source = document.createElement('source');
-    source.src = slide.video;
-    source.type = 'video/mp4';
-    video.appendChild(source);
-    video.dataset.src = slide.video;
-    video.muted = true;
-    video.defaultMuted = true;
-    video.autoplay = index === 0;
-    video.loop = false;
-    video.playsInline = true;
-    video.setAttribute('muted','');
-    video.setAttribute('playsinline','');
-    video.removeAttribute('loop');
+    if (video && slide.video) {
+      const source = document.createElement('source');
+      source.src = slide.video;
+      source.type = 'video/mp4';
+      video.appendChild(source);
+      video.dataset.src = slide.video;
+      video.muted = true;
+      video.defaultMuted = true;
+      video.autoplay = index === 0;
+      video.loop = false;
+      video.playsInline = true;
+      video.setAttribute('muted','');
+      video.setAttribute('playsinline','');
+      video.removeAttribute('loop');
+    }
     wall.appendChild(panel);
     return panel;
   });
