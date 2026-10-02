@@ -45,6 +45,13 @@
     {
       category:'bakery',
       group:'Baking Essentials',
+      title:'Shama Baking Soda 100g',
+      pack:'100g',
+      image:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1790933456/Shama_Baking_Soda_100g.png'
+    },
+    {
+      category:'bakery',
+      group:'Baking Essentials',
       title:"Borwick's Baking Powder 100g",
       pack:'100g',
       image:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1790860265/Borwick_s_Baking_Powder_100g.png'
