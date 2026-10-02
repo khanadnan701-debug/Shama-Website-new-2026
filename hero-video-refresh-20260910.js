@@ -61,8 +61,7 @@
     bindHeroPanel('[data-hero-panel][data-theme="spices"]', replacementVideos.spices);
     bindHeroPanel('[data-hero-panel][data-theme="drinks"]', replacementVideos.drinks);
 
-    document.querySelectorAll('.reel-card.reel-spices video').forEach(video => setVideo(video, replacementVideos.spices));
-    document.querySelectorAll('.reel-card.reel-drinks video').forEach(video => setVideo(video, replacementVideos.drinks));
+    // Category cards are image-only; do not attach or refresh reel videos.
   }
 
   function loadBrandRanges() {
