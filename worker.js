@@ -71,7 +71,13 @@ setTimeout(run,0);setTimeout(run,120);setTimeout(run,600);setTimeout(run,1600);
 </script>`;
 const HOME_STATIC_CATEGORY_FIX = `<style id="shama-home-static-categories">
 body[data-page="home"] .category-reels video{display:none!important}
-body[data-page="home"] .category-reels .reel-card>img{position:absolute!important;top:0!important;left:0!important;right:0!important;bottom:auto!important;width:100%!important;height:422px!important;object-fit:cover!important;object-position:center!important;padding:0!important;margin:0!important;background:transparent!important;z-index:1!important;border-radius:23px 23px 0 0!important}
+@media(min-width:701px){
+body[data-page="home"] .category-reels .reels-shell{width:min(1600px,calc(100% - 32px))!important;max-width:none!important}
+body[data-page="home"] .category-reels .reels-track{display:grid!important;grid-template-columns:repeat(3,minmax(0,1fr))!important;grid-auto-flow:row!important;gap:18px!important;width:100%!important;justify-content:stretch!important}
+body[data-page="home"] .category-reels .reel-card{width:100%!important;max-width:none!important;min-width:0!important;height:auto!important;min-height:0!important;aspect-ratio:1/1!important;justify-self:stretch!important}
+}
+@media(max-width:700px){body[data-page="home"] .category-reels .reels-track{grid-template-columns:1fr!important}}
+body[data-page="home"] .category-reels .reel-card>img{position:absolute!important;top:0!important;left:0!important;right:0!important;bottom:auto!important;width:100%!important;height:calc(100% - 72px)!important;object-fit:cover!important;object-position:center!important;padding:0!important;margin:0!important;background:transparent!important;z-index:1!important;border-radius:23px 23px 0 0!important}
 body[data-page="home"] .category-reels .reel-card:after{display:none!important;animation:none!important}
 </style>
 <script id="shama-home-static-categories-script">
