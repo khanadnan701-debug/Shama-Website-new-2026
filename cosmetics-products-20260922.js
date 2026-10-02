@@ -5,7 +5,7 @@
 
   const items = [
     // SHAMA — keep first
-    ['Shama','Shama Rose Water','250ml','https://res.cloudinary.com/wy4nkkqq/image/upload/v1789464147/Shama_Rose_Water_250ml.png'],
+    ['Shama','Shama Rose Water','450ml / 250ml / 200ml / 190ml','https://res.cloudinary.com/wy4nkkqq/image/upload/v1789464147/Shama_Rose_Water_250ml.png'],
     ['Shama','Shama Sesame Oil','290ml','https://res.cloudinary.com/wy4nkkqq/image/upload/v1789465760/Shama_sesame_oil_290ml.png'],
     ['Shama','Shama Castor Oil','290ml','https://res.cloudinary.com/wy4nkkqq/image/upload/v1789465761/Shama_castor_oil_290ml.png'],
     ['Shama','Shama Mustard Oil','290ml','https://res.cloudinary.com/wy4nkkqq/image/upload/v1789465761/Shama_mustard_oil_290ml.png'],
