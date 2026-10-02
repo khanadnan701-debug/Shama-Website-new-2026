@@ -5,8 +5,8 @@
   const MODAL_ID = 'shama-product-detail';
 
   const categoryNames = {
-    rice:'Rice', spices:'Spices', sauces:'Sauces, Pickle & Pastes',
-    'sauces-pastes':'Sauces, Pickle & Pastes', misc:'Miscellaneous',
+    rice:'Rice', spices:'Spices', sauces:'Sauces, Pickles & Pastes',
+    'sauces-pastes':'Sauces, Pickles & Pastes', misc:'Miscellaneous',
     beverages:'Beverages', flour:'Flour & Lentiles', 'flour-lentiles':'Flour & Lentiles',
     frozen:'Frozen', oils:'Oils', 'dry-fruits':'Dry Fruits',
     laziza:'Laziza', ahmed:'Ahmed', agarbatti:'Agarbatti', dates:'Dates',
@@ -91,7 +91,7 @@
     };
 
     if (category === 'sauces' || category === 'sauces-pastes' || category === 'pataks' || category === 'laziza' || category === 'ahmed') return {
-      category:categoryNames[category] || 'Sauces & Pastes', pack,
+      category:categoryNames[category] || 'Sauces, Pickles & Pastes', pack,
       summary:`${title} is designed to make flavourful cooking faster and more consistent. It works as a convenient base, accompaniment or recipe shortcut depending on the product, helping home cooks and professional kitchens reduce preparation time while keeping a familiar South Asian taste profile. The ready-to-use format is easy to portion and simple to keep on hand for busy service. For retailers, it adds variety to the cooking-sauce, paste or meal-solution section and pairs naturally with rice, breads, meats and vegetables. Follow the serving and storage directions printed on the pack after opening.`,
       benefits:['Faster meal preparation','Consistent flavour base','Easy portioning']
     };
