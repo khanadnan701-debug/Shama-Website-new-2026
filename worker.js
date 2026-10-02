@@ -49,6 +49,7 @@ const MOBILE_NAV_CRITICAL_HEAD = `<style id="shama-mobile-nav-critical">@media(m
 const GLOBAL_MOBILE_NAV = `<script id="shama-global-mobile-nav" src="/mobile-nav-20260912-v3.js?v=20260922-2" defer></script>`;
 const GLOBAL_HEADER_CONTROLS = `<script id="shama-global-header-controls" src="/header-controls-fix-20260912.js?v=20260922-2" defer></script>`;
 const GLOBAL_MEGA_MENU_HOVER = `<script id="shama-global-mega-menu-hover" src="/mega-menu-hover-fix-20260917.js?v=20260917-1" defer></script>`;
+const GLOBAL_PRODUCT_SEARCH_JS = `<script id="shama-global-product-search" src="/header-product-search-20261002.js?v=20261002-1" defer></script>`;
 
 const HOME_RICE_HERO_IMAGE_FIX = `<style id="shama-home-rice-hero-image-fix">
 body[data-page="home"] .hero-video-only [data-hero-panel][data-theme="rice"] > video{display:none!important}
@@ -199,7 +200,7 @@ async function withFreshHeaders(response) {
   }
 
   headers.delete('Clear-Site-Data');
-  headers.set('X-Shama-Release', '20261002-desktop-tile-no-crop-1');
+  headers.set('X-Shama-Release', '20261002-global-product-search-1');
 
   let body = response.body;
 
@@ -225,6 +226,7 @@ async function withFreshHeaders(response) {
     if (!html.includes('id="shama-global-mobile-nav"')) scripts.push(GLOBAL_MOBILE_NAV);
     if (!html.includes('id="shama-global-header-controls"')) scripts.push(GLOBAL_HEADER_CONTROLS);
     if (!html.includes('id="shama-global-mega-menu-hover"')) scripts.push(GLOBAL_MEGA_MENU_HOVER);
+    if (!html.includes('id="shama-global-product-search"')) scripts.push(GLOBAL_PRODUCT_SEARCH_JS);
     if (!html.includes('id="shama-product-details-js"')) scripts.push(GLOBAL_PRODUCT_DETAILS_JS);
     if ((new URL(response.url || 'https://shamaonline.com/')).pathname === '/' || (new URL(response.url || 'https://shamaonline.com/')).pathname === '/index.html') {
       if (!html.includes('id="shama-home-static-categories-script"')) scripts.push(HOME_STATIC_CATEGORY_FIX);
