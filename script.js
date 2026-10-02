@@ -680,7 +680,7 @@ const productData = [
     {
         "category":  "misc",
         "title":  "Shama Rose Water",
-        "pack":  "2349C - 250ml x 12",
+        "pack":  "450ml / 250ml / 200ml / 190ml",
         "image":  "https://static.wixstatic.com/media/00ae33_941140aa376f4d7f8b5ae18289dfbdd1~mv2.jpg"
     },
     {
