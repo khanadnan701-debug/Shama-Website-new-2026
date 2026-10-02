@@ -208,7 +208,7 @@ async function withFreshHeaders(response) {
   }
 
   headers.delete('Clear-Site-Data');
-  headers.set('X-Shama-Release', '20261002-desktop-tiles-30pct-smaller-1');
+  headers.set('X-Shama-Release', '20261002-catalogue-desktop-compact30-1');
 
   let body = response.body;
 
