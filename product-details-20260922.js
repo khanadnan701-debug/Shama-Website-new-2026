@@ -10,7 +10,7 @@
     beverages:'Beverages', flour:'Flour & Lentiles', 'flour-lentiles':'Flour & Lentiles',
     frozen:'Frozen', oils:'Oils', 'dry-fruits':'Dry Fruits',
     laziza:'Laziza', ahmed:'Ahmed', agarbatti:'Agarbatti', dates:'Dates',
-    pataks:'Pataks', cosmetics:'Cosmetics'
+    pataks:'Pataks', cosmetics:'Cosmetics', bakery:'Bakery'
   };
 
   const clean = value => String(value || '').replace(/\\n/g,' · ').replace(/\n/g,' · ').trim();
