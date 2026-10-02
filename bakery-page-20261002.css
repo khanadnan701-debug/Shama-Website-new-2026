@@ -1,0 +1,220 @@
+body[data-category="bakery"] .simple-catalogue{
+  background:linear-gradient(180deg,#f8f7f4 0%,#ffffff 100%);
+}
+
+body[data-category="bakery"] .simple-catalogue>.wrap{
+  width:min(1320px,calc(100% - 40px));
+  max-width:none;
+}
+
+.bakery-category-nav{
+  position:sticky;
+  top:86px;
+  z-index:28;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:18px;
+  margin:0 0 34px;
+  padding:14px 16px;
+  border:1px solid #e7e2da;
+  border-radius:20px;
+  background:rgba(255,255,255,.96);
+  box-shadow:0 14px 40px rgba(44,34,24,.08);
+  backdrop-filter:blur(14px);
+}
+
+.bakery-category-nav-copy{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  flex:0 0 auto;
+}
+
+.bakery-category-nav-copy span{
+  color:#8b7258;
+  font:900 10px/1 Manrope,sans-serif;
+  letter-spacing:.13em;
+  text-transform:uppercase;
+}
+
+.bakery-category-nav-copy strong{
+  padding:8px 10px;
+  border-radius:999px;
+  background:#f3eee7;
+  color:#604c38;
+  font:800 10px/1 Manrope,sans-serif;
+}
+
+.bakery-category-chips{
+  display:flex;
+  justify-content:flex-end;
+  gap:9px;
+  flex-wrap:wrap;
+}
+
+.bakery-category-chip{
+  display:inline-flex;
+  align-items:center;
+  gap:9px;
+  padding:11px 13px;
+  border-radius:999px;
+  background:#f3f1ed;
+  color:#5e5b56;
+  text-decoration:none;
+  font:800 11px/1 Manrope,sans-serif;
+  transition:.2s ease;
+}
+
+.bakery-category-chip:hover{
+  transform:translateY(-1px);
+  background:#ebe7df;
+}
+
+.bakery-category-chip b{
+  display:grid;
+  place-items:center;
+  min-width:25px;
+  height:25px;
+  padding:0 6px;
+  border-radius:999px;
+  background:#fff;
+  color:#8b7258;
+  font-size:9px;
+}
+
+.bakery-category-chip.active{
+  background:#6b4f34;
+  color:#fff;
+}
+
+.bakery-category-chip.active b{
+  color:#6b4f34;
+}
+
+.bakery-category-sections{
+  display:flex;
+  flex-direction:column;
+  gap:68px;
+}
+
+.bakery-category-section{
+  scroll-margin-top:170px;
+}
+
+.bakery-category-section.is-primary{
+  padding:28px;
+  border:1px solid #e6dfd4;
+  border-radius:30px;
+  background:linear-gradient(135deg,#fff 0%,#f7f2eb 100%);
+  box-shadow:0 18px 50px rgba(52,37,25,.07);
+}
+
+.bakery-category-head{
+  display:flex;
+  align-items:flex-end;
+  justify-content:space-between;
+  gap:22px;
+  margin-bottom:24px;
+}
+
+.bakery-category-kicker{
+  display:block;
+  margin-bottom:9px;
+  color:#a07951;
+  font:900 10px/1 Manrope,sans-serif;
+  letter-spacing:.14em;
+  text-transform:uppercase;
+}
+
+.bakery-category-head h2{
+  margin:0;
+  color:#1f2b40;
+  font:900 clamp(30px,4vw,48px)/1 Manrope,sans-serif;
+  letter-spacing:-.045em;
+}
+
+.bakery-category-head p{
+  max-width:660px;
+  margin:9px 0 0;
+  color:#748096;
+  font:600 14px/1.6 "DM Sans",sans-serif;
+}
+
+.bakery-category-count{
+  flex:0 0 auto;
+  padding:10px 13px;
+  border-radius:999px;
+  background:#f0ece6;
+  color:#75614c;
+  font:800 10px/1 Manrope,sans-serif;
+  letter-spacing:.08em;
+  text-transform:uppercase;
+}
+
+.bakery-category-section.is-primary .bakery-category-count{
+  background:#6b4f34;
+  color:#fff;
+}
+
+.bakery-product-grid{
+  margin-top:0!important;
+}
+
+@media(max-width:900px){
+  .bakery-category-nav{
+    position:relative;
+    top:auto;
+    align-items:flex-start;
+    flex-direction:column;
+  }
+
+  .bakery-category-chips{
+    justify-content:flex-start;
+  }
+
+  .bakery-category-section.is-primary{
+    padding:20px;
+  }
+}
+
+@media(max-width:640px){
+  body[data-category="bakery"] .simple-catalogue>.wrap{
+    width:min(100% - 22px,1320px);
+  }
+
+  .bakery-category-nav{
+    margin-bottom:26px;
+    border-radius:16px;
+  }
+
+  .bakery-category-nav-copy{
+    width:100%;
+    justify-content:space-between;
+  }
+
+  .bakery-category-chips{
+    display:grid;
+    grid-template-columns:1fr;
+    width:100%;
+  }
+
+  .bakery-category-chip{
+    justify-content:space-between;
+  }
+
+  .bakery-category-sections{
+    gap:48px;
+  }
+
+  .bakery-category-head{
+    align-items:flex-start;
+    flex-direction:column;
+    gap:12px;
+  }
+
+  .bakery-category-section.is-primary{
+    padding:16px;
+    border-radius:22px;
+  }
+}
