@@ -391,6 +391,24 @@
     });
 
     document.dispatchEvent(new CustomEvent('shama:product-simple-rendered'));
+
+    // 2026-10-02: open product from global search query
+    try {
+      const requested = new URLSearchParams(window.location.search).get('product');
+      if (requested) {
+        const wanted = requested.trim().toLowerCase();
+        const cards = [...grid.querySelectorAll('.simple-product-card')];
+        const match = cards.find(card => (card.querySelector('h3')?.textContent || '').trim().toLowerCase() === wanted)
+          || cards.find(card => (card.querySelector('h3')?.textContent || '').trim().toLowerCase().includes(wanted));
+        if (match) {
+          setTimeout(() => {
+            match.scrollIntoView({behavior:'smooth',block:'center'});
+            const trigger = match.querySelector('.simple-product-zoom');
+            if (trigger) trigger.click();
+          }, 350);
+        }
+      }
+    } catch (_) {}
   }
 
   window.shamaRerenderSimpleProducts = () => renderSimpleProducts(document.querySelector('#page-content'));
