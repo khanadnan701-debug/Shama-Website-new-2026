@@ -486,3 +486,24 @@ body[data-page="home"] .category-images-only .reel-number{
     transform:none!important;
   }
 }
+
+
+/* 2026-10-02 Miscellaneous premium Fried Onion cover */
+@media(min-width:701px){
+  body[data-page="home"] .category-images-only .reel-card[href="miscellaneous.html"]>img{
+    padding:0!important;
+    object-fit:cover!important;
+    object-position:center!important;
+    background:#6b0c38!important;
+  }
+}
+@media(max-width:700px){
+  body[data-page="home"] .category-images-only .reel-card[href="miscellaneous.html"]>img{
+    width:100%!important;
+    height:auto!important;
+    padding:0!important;
+    object-fit:contain!important;
+    object-position:center!important;
+    background:#6b0c38!important;
+  }
+}
