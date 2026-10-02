@@ -101,7 +101,7 @@ const items=[
 ["Rice","rice.html","https://res.cloudinary.com/wy4nkkqq/image/upload/v1790255518/Shama_Super_Kernal_Par_Boiled_Sella_Rice_5kg.png"],
 ["Spices","spices.html","https://res.cloudinary.com/wy4nkkqq/image/upload/v1789051986/star_anise.png"],
 ["Sauces & Pastes","sauces-pastes.html","https://res.cloudinary.com/wy4nkkqq/image/upload/v1789678774/Shama_Mango_pickle_1kg.png"],
-["Miscellaneous","miscellaneous.html","https://static.wixstatic.com/media/00ae33_e7de989a68ac411c94321cbcfbd19951~mv2.jpg"],
+["Miscellaneous","miscellaneous.html","/assets/shama-misc-fried-onion-cover.svg"],
 ["Beverages","beverages.html","https://res.cloudinary.com/wy4nkkqq/image/upload/v1789231973/Shama_Basil_Seed_Drink_Watermelon.png"],
 ["Flour & Lentils","flour-lentiles.html","https://res.cloudinary.com/wy4nkkqq/image/upload/v1789232539/shama_wheat_floor_T55_1kg.png"],
 ["Frozen","frozen.html","https://res.cloudinary.com/wy4nkkqq/image/upload/v1790625180/Shama_Chicken_tikka_Samosa_20Pcs.png"],
@@ -200,7 +200,7 @@ async function withFreshHeaders(response) {
   }
 
   headers.delete('Clear-Site-Data');
-  headers.set('X-Shama-Release', '20261002-misc-fried-onion-cover-1');
+  headers.set('X-Shama-Release', '20261002-misc-fried-onion-poster-1');
 
   let body = response.body;
 
