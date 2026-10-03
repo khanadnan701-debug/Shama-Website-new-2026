@@ -93,6 +93,13 @@ body[data-page="home"] .category-reels .reel-card>img{box-sizing:border-box!impo
 body[data-page="home"] .category-reels .reel-card>img{position:relative!important;inset:auto!important;width:100%!important;height:auto!important;max-height:none!important;object-fit:contain!important;border-radius:17px 17px 0 0!important}
 }
 body[data-page="home"] .category-reels .reel-card:after{display:none!important;animation:none!important}
+/* final no-crop square category artwork */
+@media(min-width:701px){
+body[data-page="home"] .category-reels .reel-card{display:flex!important;flex-direction:column!important;height:auto!important;min-height:0!important;aspect-ratio:auto!important;overflow:hidden!important;background:#172a55!important}
+body[data-page="home"] .category-reels .reel-card>img{position:relative!important;inset:auto!important;display:block!important;width:100%!important;height:auto!important;aspect-ratio:1/1!important;flex:0 0 auto!important;padding:0!important;margin:0!important;object-fit:cover!important;object-position:center!important;border-radius:22px 22px 0 0!important;transform:none!important;background:transparent!important}
+body[data-page="home"] .category-reels .reel-copy{position:relative!important;inset:auto!important;width:100%!important;height:54px!important;min-height:54px!important;flex:0 0 54px!important;padding:0 12px!important;display:flex!important;flex-direction:row!important;align-items:center!important;justify-content:space-between!important;gap:8px!important;background:#172a55!important}
+body[data-page="home"] .category-reels .reel-copy strong{font-size:17px!important;line-height:1!important;max-width:64%!important}
+}
 /* shama desktop compact category cards */
 @media(min-width:1101px){
 body[data-page="home"] .category-reels .reels-shell{width:min(1180px,calc(100% - 48px))!important}
@@ -208,7 +215,7 @@ async function withFreshHeaders(response) {
   }
 
   headers.delete('Clear-Site-Data');
-  headers.set('X-Shama-Release', '20261003-cosmetics-uniform-media-1');
+  headers.set('X-Shama-Release', '20261003-home-category-no-crop-2');
 
   let body = response.body;
 
