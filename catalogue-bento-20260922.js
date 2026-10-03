@@ -48,7 +48,7 @@
       name:'Cosmetics',
       desc:'Beauty, personal care and hygiene essentials.',
       href:'cosmetics.html',
-      image:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1789464147/Shama_Rose_Water_250ml.png',
+      image:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1790941077/Shama_amla_hair_oil_150ml.png',
       tone:'sky'
     },
     {
