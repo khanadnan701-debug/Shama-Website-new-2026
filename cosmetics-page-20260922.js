@@ -50,10 +50,10 @@
 
     wrap.innerHTML = `
       <div class="cosmetics-brand-nav" aria-label="Cosmetics brands">
-        <span class="cosmetics-brand-nav-label">Browse by brand</span>
+        <span class="cosmetics-brand-nav-label">Cosmetics categories</span>
         <div class="cosmetics-brand-chips">
           ${groups.map((group,index) => `
-            <a class="cosmetics-brand-chip ${index === 0 ? 'is-shama' : ''}" href="#cosmetics-${group.brand.toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'')}">
+            <a class="cosmetics-brand-chip ${index === 0 ? 'is-shama is-active' : ''}" href="#cosmetics-${group.brand.toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'')}">
               <span>${escapeHtml(group.brand)}</span>
               <b>${String(group.items.length).padStart(2,'0')}</b>
             </a>
@@ -112,14 +112,31 @@
       </div>
     `;
 
-    wrap.querySelectorAll('.cosmetics-brand-chip').forEach(chip => {
+    const chips = [...wrap.querySelectorAll('.cosmetics-brand-chip')];
+    const setActive = id => {
+      chips.forEach(chip => chip.classList.toggle('is-active', chip.getAttribute('href') === '#' + id));
+    };
+
+    chips.forEach(chip => {
       chip.addEventListener('click', event => {
         const target = document.querySelector(chip.getAttribute('href'));
         if (!target) return;
         event.preventDefault();
+        setActive(target.id);
         target.scrollIntoView({ behavior:'smooth', block:'start' });
       });
     });
+
+    if ('IntersectionObserver' in window) {
+      const observer = new IntersectionObserver(entries => {
+        const visible = entries
+          .filter(entry => entry.isIntersecting)
+          .sort((a,b) => b.intersectionRatio - a.intersectionRatio)[0];
+        if (visible && visible.target && visible.target.id) setActive(visible.target.id);
+      }, { rootMargin:'-28% 0px -58% 0px', threshold:[0,.15,.35] });
+
+      wrap.querySelectorAll('.cosmetics-brand-section').forEach(section => observer.observe(section));
+    }
   }
 
   if (document.readyState === 'loading') {
