@@ -109,10 +109,17 @@
     sauces:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1789678774/Shama_Mango_pickle_1kg.png',
     misc:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1789678914/Shama_paneer_dodi_phool_100g.png',
     beverages:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1789231973/Shama_Basil_Seed_Drink_Watermelon.png',
+    tea:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1791030636/PG_Tea_300_Bag.png',
+    sugar:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1791031373/Shama_Desi_Shakkar_500g.png',
     flour:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1789232539/shama_wheat_floor_T55_1kg.png',
     frozen:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1790625180/Shama_Chicken_tikka_Samosa_20Pcs.png',
     oils:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1789678755/Shama_sunflower_oil_5ltr.png',
     'dry-fruits':'https://res.cloudinary.com/wy4nkkqq/image/upload/v1789232085/Shama_Raw_almonds_100gm.png'
+  };
+
+  const thumbnailOverrides = {
+    tea:'https://res.cloudinary.com/wy4nkkqq/image/upload/f_auto,q_auto:good,c_fit,w_320,h_320/v1791030636/PG_Tea_300_Bag.png',
+    sugar:'https://res.cloudinary.com/wy4nkkqq/image/upload/f_auto,q_auto:good,c_fit,w_320,h_320/v1791031373/Shama_Desi_Shakkar_500g.png'
   };
 
   const tones = ['sky','peach','mint','sand','lavender','rose'];
@@ -204,7 +211,7 @@
               ${ranges.map((range,index) => `
                 <a class="grocery-category-card tone-${range.tone}" href="${range.href}" data-search="${(range.name + ' ' + range.desc).toLowerCase()}">
                   <span class="grocery-category-image">
-                    <img src="${range.image}" alt="${range.name}" loading="${index < 7 ? 'eager' : 'lazy'}" onerror="if(this.alt==='Rice'){this.onerror=null;this.src='https://static.wixstatic.com/media/00ae33_1a0186c70dbe44b0b74082a2e8264ca6~mv2.jpg'}">
+                    <img src="${thumbnailOverrides[range.slug] || range.image}" data-fallback="${range.image}" alt="${range.name}" loading="${index < 7 ? 'eager' : 'lazy'}" onerror="if(this.dataset.fallback && this.src!==this.dataset.fallback){this.src=this.dataset.fallback;return;}if(this.alt==='Rice'){this.onerror=null;this.src='https://static.wixstatic.com/media/00ae33_1a0186c70dbe44b0b74082a2e8264ca6~mv2.jpg'}">
                   </span>
                   <strong>${range.name}</strong>
                   <small>${range.desc}</small>
