@@ -438,8 +438,10 @@
   }
 
   window.shamaPasteFolderCatalogue = {
+    cloudinaryTotal: 46,
     total: folderProducts.length,
     groups: ["Shama Curry & Cooking Pastes","Ginger & Garlic Pastes","Pickles & Chutneys","Sauces","Patak's Pastes"],
-    source: 'shama/Paste'
+    source: 'shama/Paste',
+    syncedAt: '2026-10-03'
   };
 })();
