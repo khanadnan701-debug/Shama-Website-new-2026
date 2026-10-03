@@ -199,3 +199,40 @@ body[data-category="cosmetics"] .simple-catalogue>.wrap{
     border-radius:22px;
   }
 }
+
+/* 2026-10-03 uniform Cosmetics media spacing */
+body[data-category="cosmetics"] .cosmetics-product-grid .simple-product-media{
+  aspect-ratio:1/1!important;
+  display:flex!important;
+  align-items:center!important;
+  justify-content:center!important;
+  margin:12px!important;
+  padding:0!important;
+  overflow:hidden!important;
+  background:#eef0f6!important;
+}
+
+body[data-category="cosmetics"] .cosmetics-product-grid .simple-product-media img{
+  display:block!important;
+  width:100%!important;
+  height:100%!important;
+  max-width:100%!important;
+  max-height:100%!important;
+  object-position:center!important;
+  transform:none!important;
+  background:#eef0f6!important;
+}
+
+body[data-category="cosmetics"] .cosmetics-product-grid .simple-product-media.is-portrait-media img{
+  object-fit:contain!important;
+}
+
+body[data-category="cosmetics"] .cosmetics-product-grid .simple-product-media.is-landscape-media img{
+  object-fit:cover!important;
+}
+
+body[data-category="cosmetics"] .cosmetics-product-grid .simple-product-card:hover .simple-product-media img,
+body[data-category="cosmetics"] .cosmetics-product-grid .simple-product-media:hover img,
+body[data-category="cosmetics"] .cosmetics-product-grid .simple-product-media:focus-visible img{
+  transform:none!important;
+}
