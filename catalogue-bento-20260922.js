@@ -195,7 +195,7 @@
                 <span class="catalogue-mini-label">Browse the range</span>
                 <h2>Categories</h2>
               </div>
-              <button class="grocery-view-all" type="button" id="catalogue-view-all">View all categories <span>→</span></button>
+              <div class="grocery-category-actions"><a class="grocery-cosmetics-tab" href="cosmetics.html"><span>Cosmetics</span><b>43 products</b><i>↗</i></a><button class="grocery-view-all" type="button" id="catalogue-view-all">View all categories <span>→</span></button></div>
             </div>
 
             <div class="grocery-category-strip" id="catalogue-category-strip">
