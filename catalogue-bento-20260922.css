@@ -812,3 +812,12 @@ body[data-page="catalogue"] .grocery-range-number{
     font-size:clamp(18px,1.45vw,22px)!important;
   }
 }
+
+
+/* 2026-10-03 Sugar catalogue subcategories */
+.sugar-subtypes,.sugar-range-types{display:flex;flex-wrap:wrap;gap:5px;margin-top:8px}
+.sugar-subtypes i,.sugar-range-types i{display:inline-flex;align-items:center;padding:5px 7px;border-radius:999px;background:#f4ead8;color:#765523;font:800 7px/1 Manrope,sans-serif;font-style:normal;letter-spacing:.03em;text-transform:uppercase}
+.grocery-range-copy .sugar-range-types{margin:8px 0 2px}
+@media(max-width:700px){
+  .sugar-subtypes i,.sugar-range-types i{font-size:6px;padding:4px 6px}
+}
