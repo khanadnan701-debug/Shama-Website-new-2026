@@ -25,7 +25,10 @@
   const hiddenTitles = new Set([
     'Shama Coconut Water',
     'Shama Falooda Chocolate',
-    'Shama Almond Drink'
+    'Shama Almond Drink',
+    'Sunrise Guava Fruit Drink',
+    'Sunrise Mix Fruit Drink',
+    'Sunrise Almond Drink'
   ]);
 
   for (let index = productData.length - 1; index >= 0; index -= 1) {
