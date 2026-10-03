@@ -12,16 +12,17 @@
     ['03', 'Sauces, Pickle & Pastes', 'sauces-pastes.html'],
     ['04', 'Miscellaneous', 'miscellaneous.html'],
     ['05', 'Beverages', 'beverages.html'],
-    ['06', 'Flour & Lentiles', 'flour-lentiles.html'],
-    ['07', 'Frozen', 'frozen.html'],
-    ['08', 'Oils', 'oils.html'],
-    ['09', 'Dry Fruits', 'dry-fruits.html'],
-    ['10', 'Laziza', 'laziza.html'],
-    ['11', 'Ahmed', 'ahmed.html'],
-    ['12', 'Agarbatti', 'agarbatti.html'],
-    ['13', 'Dates', 'dates.html'],
-    ['14', 'Pataks', 'pataks.html'],
-    ['15', 'Cosmetics', 'cosmetics.html']
+    ['06', 'Tea', 'tea.html'],
+    ['07', 'Flour & Lentiles', 'flour-lentiles.html'],
+    ['08', 'Frozen', 'frozen.html'],
+    ['09', 'Oils', 'oils.html'],
+    ['10', 'Dry Fruits', 'dry-fruits.html'],
+    ['11', 'Laziza', 'laziza.html'],
+    ['12', 'Ahmed', 'ahmed.html'],
+    ['13', 'Agarbatti', 'agarbatti.html'],
+    ['14', 'Dates', 'dates.html'],
+    ['15', 'Pataks', 'pataks.html'],
+    ['16', 'Cosmetics', 'cosmetics.html']
   ];
 
   const isMobile = () => window.matchMedia(`(max-width:${BREAKPOINT}px)`).matches;
