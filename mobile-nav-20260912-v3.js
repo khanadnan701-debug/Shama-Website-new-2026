@@ -13,16 +13,17 @@
     ['04', 'Miscellaneous', 'miscellaneous.html'],
     ['05', 'Beverages', 'beverages.html'],
     ['06', 'Tea', 'tea.html'],
-    ['07', 'Flour & Lentiles', 'flour-lentiles.html'],
-    ['08', 'Frozen', 'frozen.html'],
-    ['09', 'Oils', 'oils.html'],
-    ['10', 'Dry Fruits', 'dry-fruits.html'],
-    ['11', 'Laziza', 'laziza.html'],
-    ['12', 'Ahmed', 'ahmed.html'],
-    ['13', 'Agarbatti', 'agarbatti.html'],
-    ['14', 'Dates', 'dates.html'],
-    ['15', 'Pataks', 'pataks.html'],
-    ['16', 'Cosmetics', 'cosmetics.html']
+    ['07', 'Sugar', 'sugar.html'],
+    ['08', 'Flour & Lentiles', 'flour-lentiles.html'],
+    ['09', 'Frozen', 'frozen.html'],
+    ['10', 'Oils', 'oils.html'],
+    ['11', 'Dry Fruits', 'dry-fruits.html'],
+    ['12', 'Laziza', 'laziza.html'],
+    ['13', 'Ahmed', 'ahmed.html'],
+    ['14', 'Agarbatti', 'agarbatti.html'],
+    ['15', 'Dates', 'dates.html'],
+    ['16', 'Pataks', 'pataks.html'],
+    ['17', 'Cosmetics', 'cosmetics.html']
   ];
 
   const isMobile = () => window.matchMedia(`(max-width:${BREAKPOINT}px)`).matches;
