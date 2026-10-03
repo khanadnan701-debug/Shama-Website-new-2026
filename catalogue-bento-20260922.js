@@ -101,6 +101,8 @@
     }
   ];
 
+  const PASTE_SYNC_20261003 = true;
+
   const imageOverrides = {
     rice:'https://res.cloudinary.com/wy4nkkqq/image/upload/f_webp,fl_awebp,q_auto:best,e_sharpen:70/v1790255518/Shama_Super_Kernal_Par_Boiled_Sella_Rice_5kg.png',
     spices:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1789051986/star_anise.png',
