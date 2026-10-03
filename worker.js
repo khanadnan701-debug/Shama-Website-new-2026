@@ -274,7 +274,7 @@ async function withFreshHeaders(response) {
   }
 
   headers.delete('Clear-Site-Data');
-  headers.set('X-Shama-Release', '20261003-dates-800g-400g');
+  headers.set('X-Shama-Release', '20261003-dry-fruits-cloudinary48-grouped');
 
   let body = response.body;
 
