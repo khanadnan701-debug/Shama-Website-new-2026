@@ -27,6 +27,8 @@
     'Shama Falooda Chocolate',
     'Shama Almond Drink',
     'Sunrise Guava Fruit Drink',
+    'Sunrise Lychee Fruit Drink',
+    'Sunrise Mango Fruit Drink',
     'Sunrise Mix Fruit Drink',
     'Sunrise Almond Drink'
   ]);
