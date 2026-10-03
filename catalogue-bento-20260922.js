@@ -38,9 +38,9 @@
     {
       slug:'pataks',
       name:'Pataks',
-      desc:'Classic curry pastes and cooking sauces.',
+      desc:'Patak\'s curry and marinade pastes.',
       href:'pataks.html',
-      image:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1790069236/Patak_biryani_paste_2.3kg.png',
+      image:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1791033974/Patak_biryani_paste_2.3kg.png',
       tone:'rose'
     },
     {
