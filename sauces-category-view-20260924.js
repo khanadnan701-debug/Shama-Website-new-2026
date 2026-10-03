@@ -6,8 +6,7 @@
     'Shama Curry & Cooking Pastes',
     'Ginger & Garlic Pastes',
     'Pickles & Chutneys',
-    'Sauces',
-    "Patak's Pastes"
+    'Sauces'
   ];
 
   const groupMeta = {
@@ -30,11 +29,6 @@
       kicker:'04 · Sauces',
       title:'Sauces',
       desc:'Mint, chilli, soy, tamarind and speciality table sauces for retail and foodservice.'
-    },
-    "Patak's Pastes": {
-      kicker:"05 · Patak's",
-      title:"Patak's Curry Pastes",
-      desc:"Patak's classic curry and marinade pastes grouped together for easier browsing."
     }
   };
 
@@ -57,7 +51,7 @@
 
     const heroCopy = document.querySelector('.page-hero p');
     if (heroCopy) heroCopy.textContent =
-      'Browse Sauces, Pickles & Pastes by product type — Shama cooking pastes, ginger & garlic pastes, pickles & chutneys, sauces and Patak\'s pastes.';
+      'Browse Sauces, Pickles & Pastes by product type — Shama cooking pastes, ginger & garlic pastes, pickles, chutneys and sauces.';
 
     let runningIndex = 0;
 
