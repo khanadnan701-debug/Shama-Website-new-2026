@@ -206,6 +206,7 @@
                   </span>
                   <strong>${range.name}</strong>
                   <small>${range.desc}</small>
+                  ${range.slug==='sugar' ? '<span class="sugar-subtypes"><i>Desi Gur</i><i>Desi Shakkar</i><i>Sugar & Cubes</i></span>' : ''}
                 </a>
               `).join('')}
             </div>
@@ -226,6 +227,7 @@
                   <div class="grocery-range-copy">
                     <h3>${range.name}</h3>
                     <p>${range.desc}</p>
+                    ${range.slug==='sugar' ? '<div class="sugar-range-types"><i>Desi Gur</i><i>Desi Shakkar</i><i>Sugar & Cubes</i></div>' : ''}
                     <span>Shop category ↗</span>
                   </div>
                 </a>
