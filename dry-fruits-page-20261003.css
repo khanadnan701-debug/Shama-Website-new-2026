@@ -1,0 +1,15 @@
+body[data-category="dry-fruits"] .simple-catalogue>.wrap{width:min(1380px,calc(100% - 40px));max-width:none}
+.dry-fruit-nav{display:flex;align-items:center;justify-content:space-between;gap:16px;margin:0 0 34px;padding:13px 15px;border:1px solid #e2e7ef;border-radius:20px;background:#fff;box-shadow:0 14px 38px rgba(18,35,72,.07)}
+.dry-fruit-nav>span{flex:0 0 auto;color:#6e798d;font:900 10px/1 Manrope,sans-serif;letter-spacing:.12em;text-transform:uppercase}
+.dry-fruit-chips{display:flex;align-items:center;justify-content:flex-end;gap:8px;flex-wrap:wrap}
+.dry-fruit-chips a{display:inline-flex;align-items:center;gap:8px;padding:9px 11px;border-radius:999px;background:#eef2f7;color:#4f5c72;text-decoration:none;font:800 10px/1 Manrope,sans-serif;transition:.2s}
+.dry-fruit-chips a.is-active,.dry-fruit-chips a:hover{background:#172a55;color:#fff}
+.dry-fruit-chips em{display:grid;place-items:center;min-width:22px;height:22px;padding:0 5px;border-radius:999px;background:#fff;color:#66728a;font:900 9px/1 Manrope,sans-serif;font-style:normal}
+.dry-fruit-groups{display:flex;flex-direction:column;gap:56px}
+.dry-fruit-group{scroll-margin-top:130px}
+.dry-fruit-group-head{display:flex;align-items:end;justify-content:space-between;gap:18px;margin:0 0 18px}
+.dry-fruit-group-head span{display:block;margin-bottom:7px;color:#ff4f7d;font:900 9px/1 Manrope,sans-serif;letter-spacing:.13em;text-transform:uppercase}
+.dry-fruit-group-head h2{margin:0;color:#10203d;font:900 clamp(28px,3vw,42px)/1 Manrope,sans-serif;letter-spacing:-.045em}
+.dry-fruit-group-head>b{padding:9px 12px;border-radius:999px;background:#eef2f7;color:#647086;font:800 9px/1 Manrope,sans-serif;text-transform:uppercase;letter-spacing:.06em}
+.dry-fruit-grid{margin-top:0!important}
+@media(max-width:760px){.dry-fruit-nav{align-items:flex-start;flex-direction:column}.dry-fruit-chips{width:100%;justify-content:flex-start;flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none}.dry-fruit-chips::-webkit-scrollbar{display:none}.dry-fruit-chips a{flex:0 0 auto}.dry-fruit-group-head{align-items:flex-start;flex-direction:column}.dry-fruit-groups{gap:42px}}
