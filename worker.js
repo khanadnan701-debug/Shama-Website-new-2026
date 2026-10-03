@@ -100,6 +100,65 @@ body[data-page="home"] .category-reels .reel-card>img{position:relative!importan
 body[data-page="home"] .category-reels .reel-copy{position:relative!important;inset:auto!important;width:100%!important;height:54px!important;min-height:54px!important;flex:0 0 54px!important;padding:0 12px!important;display:flex!important;flex-direction:row!important;align-items:center!important;justify-content:space-between!important;gap:8px!important;background:#172a55!important}
 body[data-page="home"] .category-reels .reel-copy strong{font-size:17px!important;line-height:1!important;max-width:64%!important}
 }
+/* 2026-10-03 TRUE no-crop media wrapper */
+body[data-page="home"] .category-reels .reel-card{
+  display:flex!important;
+  flex-direction:column!important;
+  height:auto!important;
+  min-height:0!important;
+  aspect-ratio:auto!important;
+  overflow:hidden!important;
+  background:#172a55!important;
+}
+body[data-page="home"] .category-reels .reel-media{
+  position:relative!important;
+  display:block!important;
+  width:100%!important;
+  aspect-ratio:1/1!important;
+  flex:0 0 auto!important;
+  overflow:hidden!important;
+  background:#e9edf4!important;
+  border-radius:22px 22px 0 0!important;
+  isolation:isolate!important;
+}
+body[data-page="home"] .category-reels .reel-media:before{
+  content:""!important;
+  position:absolute!important;
+  inset:-5%!important;
+  background-image:var(--tile-bg)!important;
+  background-size:cover!important;
+  background-position:center!important;
+  filter:blur(14px) saturate(.9)!important;
+  transform:scale(1.08)!important;
+  opacity:.38!important;
+  z-index:0!important;
+}
+body[data-page="home"] .category-reels .reel-media:after{
+  content:""!important;
+  position:absolute!important;
+  inset:0!important;
+  background:rgba(238,242,248,.18)!important;
+  z-index:1!important;
+  pointer-events:none!important;
+}
+body[data-page="home"] .category-reels .reel-media>img{
+  position:relative!important;
+  display:block!important;
+  width:100%!important;
+  height:100%!important;
+  object-fit:contain!important;
+  object-position:center!important;
+  padding:0!important;
+  margin:0!important;
+  transform:none!important;
+  z-index:2!important;
+  background:transparent!important;
+}
+body[data-page="home"] .category-reels .reel-card>img{display:none!important}
+@media(max-width:700px){
+  body[data-page="home"] .category-reels .reel-media{border-radius:16px 16px 0 0!important}
+}
+
 /* shama desktop compact category cards */
 @media(min-width:1101px){
 body[data-page="home"] .category-reels .reels-shell{width:min(1180px,calc(100% - 48px))!important}
@@ -138,7 +197,7 @@ const items=[
 section.classList.add("category-images-only");
 const head=section.querySelector(".reels-head");if(head){head.innerHTML='<div><span class="eyebrow">Catalogue categories</span><h2>Explore every<br>Shama range.</h2></div><p>Product images only. Click any category to open its full collection.</p>'}
 const track=section.querySelector(".reels-track");if(!track)return;
-track.innerHTML=items.map((x,i)=>'<a class="reel-card reel-static" href="'+x[1]+'" aria-label="Open '+x[0]+' catalogue"><img src="'+x[2]+'" alt="'+x[0]+'" loading="'+(i<6?'eager':'lazy')+'" decoding="async"><span class="reel-number">'+String(i+1).padStart(2,'0')+'</span><span class="reel-copy"><small>Shama range</small><strong>'+x[0]+'</strong><em>Open catalogue ↗</em></span></a>').join("");
+track.innerHTML=items.map((x,i)=>'<a class="reel-card reel-static" href="'+x[1]+'" aria-label="Open '+x[0]+' catalogue"><span class="reel-media" style="--tile-bg:url(&quot;'+x[2]+'&quot;)"><img src="'+x[2]+'" alt="'+x[0]+'" loading="'+(i<6?'eager':'lazy')+'" decoding="async"></span><span class="reel-number">'+String(i+1).padStart(2,'0')+'</span><span class="reel-copy"><small>Shama range</small><strong>'+x[0]+'</strong><em>Open catalogue ↗</em></span></a>').join("");
 section.querySelectorAll("video").forEach(v=>{try{v.pause()}catch(e){}v.remove()});
 };
 if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",run,{once:true});else run();
@@ -215,7 +274,7 @@ async function withFreshHeaders(response) {
   }
 
   headers.delete('Clear-Site-Data');
-  headers.set('X-Shama-Release', '20261003-home-category-no-crop-2');
+  headers.set('X-Shama-Release', '20261003-home-true-nocrop-media-3');
 
   let body = response.body;
 
