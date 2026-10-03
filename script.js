@@ -510,18 +510,6 @@ const productData = [
         "image":  "https://static.wixstatic.com/media/00ae33_2fddc06634e64845b22c35697acc30fa~mv2.jpg"
     },
     {
-        "category":  "beverages",
-        "title":  "Sunrise Mango Fruit Drink",
-        "pack":  "4312B - 2ltr x 6",
-        "image":  "https://static.wixstatic.com/media/00ae33_aa20f29541bc4c9bb8a8d170bddeb7ae~mv2.jpg"
-    },
-    {
-        "category":  "beverages",
-        "title":  "Sunrise Lychee Fruit Drink",
-        "pack":  "4329A - 2ltr x 1",
-        "image":  "https://static.wixstatic.com/media/00ae33_fb3e0883316c413fb7f0fae79c292718~mv2.jpg"
-    },
-    {
         "category":  "misc",
         "title":  "Shama Shakker",
         "pack":  "3865A - 500g x 6",
