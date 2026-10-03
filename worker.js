@@ -274,7 +274,7 @@ async function withFreshHeaders(response) {
   }
 
   headers.delete('Clear-Site-Data');
-  headers.set('X-Shama-Release', '20261003-paste-cloudinary46-sync-1');
+  headers.set('X-Shama-Release', '20261003-paste-exact46-no-broken-pataks');
 
   let body = response.body;
 
