@@ -274,7 +274,7 @@ async function withFreshHeaders(response) {
   }
 
   headers.delete('Clear-Site-Data');
-  headers.set('X-Shama-Release', '20261003-tea-category-1');
+  headers.set('X-Shama-Release', '20261003-tea-redirect-loop-fix-1');
 
   let body = response.body;
 
@@ -326,8 +326,8 @@ export default {
   async fetch(request, env) {
     const url = new URL(request.url);
 
-    if (url.pathname === '/teas' || url.pathname === '/teas/' || url.pathname === '/tea' || url.pathname === '/tea/') {
-      const target = new URL('https://shamaonline.com/tea.html');
+    if (url.pathname === '/teas' || url.pathname === '/teas/') {
+      const target = new URL('https://shamaonline.com/tea');
       return Response.redirect(target.toString(), 301);
     }
 
