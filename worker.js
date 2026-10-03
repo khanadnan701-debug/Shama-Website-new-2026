@@ -208,7 +208,7 @@ async function withFreshHeaders(response) {
   }
 
   headers.delete('Clear-Site-Data');
-  headers.set('X-Shama-Release', '20261002-catalogue-full-force-3');
+  headers.set('X-Shama-Release', '20261003-product-cards-no-crop-1');
 
   let body = response.body;
 
@@ -229,7 +229,7 @@ async function withFreshHeaders(response) {
     }
 
     // Force the latest product detail/lightbox build on every catalogue page.
-    html = html.replace(/product-simple\.js(?:\?v=[^"'<>\s]+)?/gi, 'product-simple.js?v=20260922-details2');
+    html = html.replace(/product-simple\.js(?:\?v=[^"'<>\s]+)?/gi, 'product-simple.js?v=20261003-nocrop1');
     const scripts = [];
     if (!html.includes('id="shama-global-mobile-nav"')) scripts.push(GLOBAL_MOBILE_NAV);
     if (!html.includes('id="shama-global-header-controls"')) scripts.push(GLOBAL_HEADER_CONTROLS);
