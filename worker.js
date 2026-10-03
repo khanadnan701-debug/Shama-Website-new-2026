@@ -208,7 +208,7 @@ async function withFreshHeaders(response) {
   }
 
   headers.delete('Clear-Site-Data');
-  headers.set('X-Shama-Release', '20261003-product-cards-no-crop-1');
+  headers.set('X-Shama-Release', '20261003-cosmetics-cloudinary-46');
 
   let body = response.body;
 
