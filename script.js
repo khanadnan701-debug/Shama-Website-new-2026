@@ -463,12 +463,6 @@ const productData = [
     },
     {
         "category":  "beverages",
-        "title":  "Sunrise Almond Drink",
-        "pack":  "5074A - 1000ml x 10",
-        "image":  "https://static.wixstatic.com/media/00ae33_a5a75a23363e4c5aa9b6896294aa79d3~mv2.png"
-    },
-    {
-        "category":  "beverages",
         "title":  "Shama Basil Seed Drink Cocktail",
         "pack":  "2790C - 290ml x 24",
         "image":  "https://static.wixstatic.com/media/00ae33_dc4d38e5bcb74da7b07c362729fae0cd~mv2.jpg"
@@ -514,18 +508,6 @@ const productData = [
         "title":  "Shama Basil Seed Drink Strawberry",
         "pack":  "2462C - 290ml x 24",
         "image":  "https://static.wixstatic.com/media/00ae33_2fddc06634e64845b22c35697acc30fa~mv2.jpg"
-    },
-    {
-        "category":  "beverages",
-        "title":  "Sunrise Mix Fruit Drink",
-        "pack":  "4305 - 2ltr x 6",
-        "image":  "https://static.wixstatic.com/media/00ae33_18d0c5888d534fb08094bcdb7ddbed1b~mv2.jpg"
-    },
-    {
-        "category":  "beverages",
-        "title":  "Sunrise Guava Fruit Drink",
-        "pack":  "4343A - 2ltr x 6",
-        "image":  "https://static.wixstatic.com/media/00ae33_2f96bc36d7434f409466e177e950546a~mv2.jpg"
     },
     {
         "category":  "beverages",
