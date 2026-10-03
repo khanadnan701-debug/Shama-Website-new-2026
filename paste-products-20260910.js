@@ -3,8 +3,15 @@
   if (typeof productData === 'undefined' || !Array.isArray(productData)) return;
   if (typeof categories === 'undefined' || !Array.isArray(categories)) return;
 
-  // Static, syntax-safe mirror of the current Cloudinary shama/Paste folder.
+  // Exact mirror of the current Cloudinary shama/Paste folder (46 assets).
   const folderProducts = [
+  {
+    "category": "sauces",
+    "group": "Sauces",
+    "title": "Shama Mint Sauce",
+    "pack": "2.7kg x 1",
+    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1789120965/shama_mint_sauce_2.7kg.png"
+  },
   {
     "category": "sauces",
     "group": "Shama Curry & Cooking Pastes",
@@ -49,6 +56,13 @@
   },
   {
     "category": "sauces",
+    "group": "Pickles & Chutneys",
+    "title": "Shama Garlic Masala Pickle",
+    "pack": "300g x 1",
+    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1789120967/shama_garlic_masala_pickle_300g.png"
+  },
+  {
+    "category": "sauces",
     "group": "Shama Curry & Cooking Pastes",
     "title": "Shama Madras Kebab Paste",
     "pack": "2.3kg x 1",
@@ -63,10 +77,38 @@
   },
   {
     "category": "sauces",
+    "group": "Pickles & Chutneys",
+    "title": "Shama Green Chilli Pickle",
+    "pack": "300g x 1",
+    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1789120968/shama_green_chilli_pickle_300g.png"
+  },
+  {
+    "category": "sauces",
+    "group": "Pickles & Chutneys",
+    "title": "Shama Lime Pickle Mild",
+    "pack": "300g x 1",
+    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1789120968/shama_lime_pickle_mild_300g.png"
+  },
+  {
+    "category": "sauces",
     "group": "Shama Curry & Cooking Pastes",
     "title": "Shama Kashmiri Paste",
     "pack": "2.3kg x 1",
     "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1789120968/Shama_kashmiri_paste_2.3kg.png"
+  },
+  {
+    "category": "sauces",
+    "group": "Pickles & Chutneys",
+    "title": "Shama Mixed Pickle Mild",
+    "pack": "4kg x 1",
+    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1789120969/shama_mixed_pickle_mild_4kg.png"
+  },
+  {
+    "category": "sauces",
+    "group": "Pickles & Chutneys",
+    "title": "Shama Mango Pickle Mild",
+    "pack": "300g x 1",
+    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1789120969/shama_mango_pickle_mild_300g.png"
   },
   {
     "category": "sauces",
@@ -98,6 +140,13 @@
   },
   {
     "category": "sauces",
+    "group": "Pickles & Chutneys",
+    "title": "Shama Mixed Pickle Mild",
+    "pack": "300g x 1",
+    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1789120972/shama_mixed_pickle_mild_300g.png"
+  },
+  {
+    "category": "sauces",
     "group": "Shama Curry & Cooking Pastes",
     "title": "Shama Vindaloo Curry Paste",
     "pack": "300g x 1",
@@ -116,6 +165,13 @@
     "title": "Shama Vindaloo Paste",
     "pack": "2.3kg x 1",
     "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1789120973/Shama_vindaloo_paste_2.3kg.png"
+  },
+  {
+    "category": "sauces",
+    "group": "Pickles & Chutneys",
+    "title": "Shama Sweet Mango Chutney",
+    "pack": "3kg x 1",
+    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1789120980/Shama_sweet_mango_chutney_3kg.png"
   },
   {
     "category": "sauces",
@@ -203,104 +259,6 @@
   },
   {
     "category": "sauces",
-    "group": "Pickles & Chutneys",
-    "title": "Shama Garlic Masala Pickle",
-    "pack": "300g x 1",
-    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1789120967/shama_garlic_masala_pickle_300g.png"
-  },
-  {
-    "category": "sauces",
-    "group": "Pickles & Chutneys",
-    "title": "Shama Green Chilli Pickle",
-    "pack": "300g x 1",
-    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1789120968/shama_green_chilli_pickle_300g.png"
-  },
-  {
-    "category": "sauces",
-    "group": "Pickles & Chutneys",
-    "title": "Shama Lime Pickle Mild",
-    "pack": "300g x 1",
-    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1789120968/shama_lime_pickle_mild_300g.png"
-  },
-  {
-    "category": "sauces",
-    "group": "Pickles & Chutneys",
-    "title": "Shama Mixed Pickle Mild",
-    "pack": "4kg x 1",
-    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1789120969/shama_mixed_pickle_mild_4kg.png"
-  },
-  {
-    "category": "sauces",
-    "group": "Pickles & Chutneys",
-    "title": "Shama Mango Pickle Mild",
-    "pack": "300g x 1",
-    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1789120969/shama_mango_pickle_mild_300g.png"
-  },
-  {
-    "category": "sauces",
-    "group": "Pickles & Chutneys",
-    "title": "Shama Mixed Pickle Mild",
-    "pack": "300g x 1",
-    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1789120972/shama_mixed_pickle_mild_300g.png"
-  },
-  {
-    "category": "sauces",
-    "group": "Pickles & Chutneys",
-    "title": "Shama Sweet Mango Chutney",
-    "pack": "3kg x 1",
-    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1789120980/Shama_sweet_mango_chutney_3kg.png"
-  },
-  {
-    "category": "sauces",
-    "group": "Pickles & Chutneys",
-    "title": "Shama Coriander Mint Chutney",
-    "pack": "200g x 1",
-    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1789155831/Shama_coriander_mint_chutney.png"
-  },
-  {
-    "category": "sauces",
-    "group": "Pickles & Chutneys",
-    "title": "Shama Mixed Pickle",
-    "pack": "4kg x 1",
-    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1789464149/Shama_mixed_pickle_4kg.png"
-  },
-  {
-    "category": "sauces",
-    "group": "Pickles & Chutneys",
-    "title": "Shama Mango Mixed Pickle",
-    "pack": "1kg x 1",
-    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1789678774/Shama_Mango_mixed_1kg.png"
-  },
-  {
-    "category": "sauces",
-    "group": "Pickles & Chutneys",
-    "title": "Shama Mango Pickle",
-    "pack": "1kg x 1",
-    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1789678774/Shama_Mango_pickle_1kg.png"
-  },
-  {
-    "category": "sauces",
-    "group": "Pickles & Chutneys",
-    "title": "Patak's Mango Pickle Hot",
-    "pack": "250g x 1",
-    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1790272188/Patak_s_Mango_Pickle_Hot_250g.png"
-  },
-  {
-    "category": "sauces",
-    "group": "Pickles & Chutneys",
-    "title": "Patak's Mix Pickle",
-    "pack": "3kg x 1",
-    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1790272190/Patak_s_Mix_Pickle_2_3kg.png"
-  },
-  {
-    "category": "sauces",
-    "group": "Sauces",
-    "title": "Shama Mint Sauce",
-    "pack": "2.7kg x 1",
-    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1789120965/shama_mint_sauce_2.7kg.png"
-  },
-  {
-    "category": "sauces",
     "group": "Sauces",
     "title": "Shama Tamarind Date Tomato Sauce",
     "pack": "Contact us for available pack size",
@@ -312,6 +270,13 @@
     "title": "Shama Green Chilli Sauce",
     "pack": "200g x 1",
     "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1789155831/Shama_green_chilli_sauce.png"
+  },
+  {
+    "category": "sauces",
+    "group": "Pickles & Chutneys",
+    "title": "Shama Coriander Mint Chutney",
+    "pack": "200g x 1",
+    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1789155831/Shama_coriander_mint_chutney.png"
   },
   {
     "category": "sauces",
@@ -343,87 +308,24 @@
   },
   {
     "category": "sauces",
-    "group": "Sauces",
-    "title": "Schani Mint Sauce",
-    "pack": "2.27L x 1",
-    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1790272195/Schani_Mint_Sauce_2.27_L.png"
+    "group": "Pickles & Chutneys",
+    "title": "Shama Mixed Pickle",
+    "pack": "4kg x 1",
+    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1789464149/Shama_mixed_pickle_4kg.png"
   },
   {
     "category": "sauces",
-    "group": "Sauces",
-    "title": "Mah A Hot Spicy Sauce",
-    "pack": "300g x 1",
-    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1790600821/Mah_a_Hot_Spicy_sauce_300gm.png"
+    "group": "Shama Curry & Cooking Pastes",
+    "title": "Shama Mango Mixed Pickle",
+    "pack": "1kg x 1",
+    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1789678774/Shama_Mango_mixed_1kg.png"
   },
   {
     "category": "sauces",
-    "group": "Patak's Pastes",
-    "title": "Patak's Biryani Paste",
-    "pack": "2.3kg x 1",
-    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1790069236/Patak_biryani_paste_2.3kg.png"
-  },
-  {
-    "category": "sauces",
-    "group": "Patak's Pastes",
-    "title": "Patak's Butter Chicken Paste",
-    "pack": "2.3kg x 1",
-    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1790069236/Patak_butter_chicken_paste_2.3_kg.png"
-  },
-  {
-    "category": "sauces",
-    "group": "Patak's Pastes",
-    "title": "Patak's Balti Curry Paste",
-    "pack": "2.3kg x 1",
-    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1790069255/Patak_balty_curry_paste_2.3kg.png"
-  },
-  {
-    "category": "sauces",
-    "group": "Patak's Pastes",
-    "title": "Patak's Tikka Masala Paste",
-    "pack": "283g x 1",
-    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1790069256/patak_s_tikka_masala_paste_283g.png"
-  },
-  {
-    "category": "sauces",
-    "group": "Patak's Pastes",
-    "title": "Patak's Madras Kebab Paste",
-    "pack": "2.4kg x 1",
-    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1790069257/Patak_madras_kebab_paste_2.4kg.png"
-  },
-  {
-    "category": "sauces",
-    "group": "Patak's Pastes",
-    "title": "Patak's Korma Paste",
-    "pack": "2.3kg x 1",
-    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1790069257/Patak_korma_paste_2.3kg.png"
-  },
-  {
-    "category": "sauces",
-    "group": "Patak's Pastes",
-    "title": "Patak's Kashmiri Masala Paste",
-    "pack": "2.2kg x 1",
-    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1790069257/Patak_kashmiri_masala_paste_2.2_kg.png"
-  },
-  {
-    "category": "sauces",
-    "group": "Patak's Pastes",
-    "title": "Patak's Mild Curry Paste",
-    "pack": "2.3kg x 1",
-    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1790069258/Patak_mild_curry_paste_2.3kg.png"
-  },
-  {
-    "category": "sauces",
-    "group": "Patak's Pastes",
-    "title": "Patak's Tikka Paste",
-    "pack": "2.4kg x 1",
-    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1790069259/Patak_tikka_paste_2.4kg.png"
-  },
-  {
-    "category": "sauces",
-    "group": "Patak's Pastes",
-    "title": "Patak's Tandoori Paste",
-    "pack": "2.5kg x 1",
-    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1790069260/patak_s_tandoori_paste_2.5kg.png"
+    "group": "Pickles & Chutneys",
+    "title": "Shama Mango Pickle",
+    "pack": "1kg x 1",
+    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1789678774/Shama_Mango_pickle_1kg.png"
   }
 ];
 
@@ -440,7 +342,7 @@
   window.shamaPasteFolderCatalogue = {
     cloudinaryTotal: 46,
     total: folderProducts.length,
-    groups: ["Shama Curry & Cooking Pastes","Ginger & Garlic Pastes","Pickles & Chutneys","Sauces","Patak's Pastes"],
+    groups: ["Shama Curry & Cooking Pastes","Ginger & Garlic Pastes","Pickles & Chutneys","Sauces"],
     source: 'shama/Paste',
     syncedAt: '2026-10-03'
   };
