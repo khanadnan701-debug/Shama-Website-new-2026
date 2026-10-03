@@ -274,7 +274,7 @@ async function withFreshHeaders(response) {
   }
 
   headers.delete('Clear-Site-Data');
-  headers.set('X-Shama-Release', '20261003-home-true-nocrop-media-3');
+  headers.set('X-Shama-Release', '20261003-dates-800g-400g');
 
   let body = response.body;
 
