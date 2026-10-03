@@ -274,7 +274,7 @@ async function withFreshHeaders(response) {
   }
 
   headers.delete('Clear-Site-Data');
-  headers.set('X-Shama-Release', '20261003-pataks-live10-sync-1');
+  headers.set('X-Shama-Release', '20261003-tea-sugar-thumbnails-2');
 
   let body = response.body;
 
