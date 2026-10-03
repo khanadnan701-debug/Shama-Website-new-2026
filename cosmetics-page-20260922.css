@@ -199,3 +199,49 @@ body[data-category="cosmetics"] .simple-catalogue>.wrap{
     border-radius:22px;
   }
 }
+
+/* 2026-10-03 Cosmetics category tabs */
+.cosmetics-brand-nav{
+  position:sticky;
+  top:92px;
+}
+.cosmetics-brand-chip{
+  border:1px solid transparent;
+}
+.cosmetics-brand-chip.is-active{
+  background:#17233d;
+  color:#fff;
+  border-color:#d5b95f;
+  box-shadow:0 7px 18px rgba(23,35,61,.14);
+}
+.cosmetics-brand-chip.is-active b{
+  background:#fff;
+  color:#17233d;
+}
+.cosmetics-brand-chip.is-shama{
+  background:linear-gradient(135deg,#17233d 0%,#4f3fbd 100%);
+  color:#fff;
+  border-color:#d5b95f;
+}
+@media(max-width:900px){
+  .cosmetics-brand-nav{
+    position:relative;
+    top:auto;
+  }
+}
+@media(max-width:640px){
+  .cosmetics-brand-chips{
+    display:flex;
+    flex-wrap:nowrap;
+    overflow-x:auto;
+    scrollbar-width:none;
+    -webkit-overflow-scrolling:touch;
+    padding-bottom:2px;
+  }
+  .cosmetics-brand-chips::-webkit-scrollbar{display:none}
+  .cosmetics-brand-chip{
+    flex:0 0 auto;
+    min-width:132px;
+    justify-content:space-between;
+  }
+}
