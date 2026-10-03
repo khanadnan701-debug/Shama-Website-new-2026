@@ -274,7 +274,7 @@ async function withFreshHeaders(response) {
   }
 
   headers.delete('Clear-Site-Data');
-  headers.set('X-Shama-Release', '20261003-sugar-category-1');
+  headers.set('X-Shama-Release', '20261003-sugar-grouped-1');
 
   let body = response.body;
 
