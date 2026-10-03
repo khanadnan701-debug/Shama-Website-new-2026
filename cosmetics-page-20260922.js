@@ -30,6 +30,21 @@
     '&':'&amp;', '<':'&lt;', '>':'&gt;', '"':'&quot;', "'":'&#039;'
   })[char]);
 
+  function normalizeCosmeticsMedia(root) {
+    const images = [...root.querySelectorAll('.cosmetics-product-grid .simple-product-media img')];
+    images.forEach(img => {
+      const apply = () => {
+        const media = img.closest('.simple-product-media');
+        if (!media || !img.naturalWidth || !img.naturalHeight) return;
+        const ratio = img.naturalWidth / img.naturalHeight;
+        media.classList.toggle('is-landscape-media', ratio > 1.12);
+        media.classList.toggle('is-portrait-media', ratio <= 1.12);
+      };
+      if (img.complete) apply();
+      else img.addEventListener('load', apply, { once:true });
+    });
+  }
+
   function render() {
     if (typeof productData === 'undefined' || !Array.isArray(productData)) return;
 
@@ -111,6 +126,8 @@
         }).join('')}
       </div>
     `;
+
+    normalizeCosmeticsMedia(wrap);
 
     wrap.querySelectorAll('.cosmetics-brand-chip').forEach(chip => {
       chip.addEventListener('click', event => {
