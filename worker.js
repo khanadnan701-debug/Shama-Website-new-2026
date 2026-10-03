@@ -185,7 +185,7 @@ const items=[
 ["Ahmed","ahmed.html","https://res.cloudinary.com/wy4nkkqq/image/upload/v1789652169/Ahmed_tamarind_sauce_300g.png"],
 ["Agarbatti","agarbatti.html","https://res.cloudinary.com/wy4nkkqq/image/upload/v1790934647/Metro_Black_Sandal_Agarbatti.png"],
 ["Dates","dates.html","https://res.cloudinary.com/wy4nkkqq/image/upload/v1790069276/Shama_Ajwa-Dates-800g.png"],
-["Pataks","pataks.html","https://res.cloudinary.com/wy4nkkqq/image/upload/v1790069236/Patak_biryani_paste_2.3kg.png"],
+["Pataks","pataks.html","https://res.cloudinary.com/wy4nkkqq/image/upload/v1791033974/Patak_biryani_paste_2.3kg.png"],
 ["Cosmetics","cosmetics.html","https://res.cloudinary.com/wy4nkkqq/image/upload/v1789464147/Shama_Rose_Water_250ml.png"],
 ["Non Foods","non-foods.html","https://res.cloudinary.com/wy4nkkqq/image/upload/v1790261684/Shahi_Charcoal_Tandoor_11C_Size_1.png"],
 ["Divers","divers.html","https://res.cloudinary.com/wy4nkkqq/image/upload/v1790600769/Telephone_ISABGUL_200g.png"],
@@ -274,7 +274,7 @@ async function withFreshHeaders(response) {
   }
 
   headers.delete('Clear-Site-Data');
-  headers.set('X-Shama-Release', '20261003-paste-exact46-no-broken-pataks');
+  headers.set('X-Shama-Release', '20261003-pataks-live10-sync-1');
 
   let body = response.body;
 
