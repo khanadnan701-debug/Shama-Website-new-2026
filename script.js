@@ -805,3 +805,318 @@ function renderTradePickerSelected(){const box=document.querySelector('#trade-se
 if(document.body.dataset.page==='contact'){const trade=document.querySelector('#trade-form'),categoryLabel=trade.querySelector('[name="category"]').closest('label'),quantityLabel=trade.querySelector('[name="quantity"]').closest('label'),productsLabel=trade.querySelector('[name="products"]').closest('label');categoryLabel.hidden=true;quantityLabel.hidden=true;productsLabel.hidden=true;trade.insertAdjacentHTML('afterbegin',`<section class="trade-picker trade-full"><div class="picker-head"><div><span class="eyebrow">Step 1 · Build your list</span><h3>Choose multiple products</h3><p>Select products across any category. You only send one final enquiry.</p></div><b id="picker-total">0 products · 0 cases</b></div><div id="trade-selected" class="trade-selected"></div><div class="picker-tools"><input id="picker-search" type="search" placeholder="Search rice, spices, sauces…"><select id="picker-category"><option value="">All categories</option>${categories.map(c=>`<option value="${c.slug}">${c.name}</option>`).join('')}</select></div><div id="picker-results" class="picker-results"></div></section>`);const results=document.querySelector('#picker-results'),search=document.querySelector('#picker-search'),filter=document.querySelector('#picker-category');function drawPicker(){const term=search.value.toLowerCase(),cat=filter.value,list=productData.filter(x=>(!cat||x.category===cat)&&(!term||x.title.toLowerCase().includes(term))).slice(0,12);results.innerHTML=list.map(x=>`<article><div><strong>${x.title}</strong><small>${x.pack||'Pack sizes available'}</small></div><button type="button" data-picker-product="${x.title.replace(/"/g,'&quot;')}" data-picker-pack="${(x.pack||'').replace(/"/g,'&quot;')}">＋ Add</button></article>`).join('')||'<p class="picker-no-result">No matching products found.</p>'}search.oninput=drawPicker;filter.onchange=drawPicker;results.onclick=e=>{const add=e.target.closest('[data-picker-product]');if(add)addCartProduct(add.dataset.pickerProduct,add.dataset.pickerPack||'')};drawPicker();renderBulkCart();function combinedTradeText(){if(!bulkCart.length){document.querySelector('.trade-picker').classList.add('picker-alert');document.querySelector('.trade-picker').scrollIntoView({behavior:'smooth',block:'center'});return null}if(!trade.reportValidity())return null;const d=new FormData(trade),lines=bulkCart.map((x,i)=>`${i+1}. ${x.product}\n   Pack: ${x.pack||'Please advise'}\n   Quantity: ${x.qty} cases`).join('\n\n');return `Hello Shama International,\n\nPlease provide one wholesale quotation for all products below:\n\n${lines}\n\nBusiness: ${d.get('business')}\nContact: ${d.get('name')}\nEmail: ${d.get('email')}\nPhone: ${d.get('phone')}\nDelivery: ${d.get('city')} ${d.get('postcode')}\nNotes: ${d.get('notes')||'None'}\n\nPlease confirm availability, MOQ, pricing and delivery options.`}document.querySelector('.trade-email').onclick=()=>{const t=combinedTradeText();if(t)location.href=`mailto:info@shamafr.com?subject=${encodeURIComponent('Multi-product wholesale enquiry')}&body=${encodeURIComponent(t)}`};document.querySelector('.trade-whatsapp').onclick=()=>{const t=combinedTradeText();if(t)window.open(`https://wa.me/33143420579?text=${encodeURIComponent(t)}`,'_blank','noopener')}}
 if(document.body.dataset.page==='product'){const zoomCss=document.createElement('link');zoomCss.rel='stylesheet';zoomCss.href='product-zoom.css?v=20260721-17';document.head.appendChild(zoomCss);document.body.insertAdjacentHTML('beforeend',`<div class="product-lightbox" id="product-lightbox" aria-hidden="true"><div class="zoom-backdrop" data-zoom-close></div><button class="zoom-close" type="button" data-zoom-close aria-label="Close image">×</button><div class="zoom-dialog"><div class="zoom-image-stage"><span>Click outside to close</span><img id="zoom-image" alt=""></div><div class="zoom-info"><span class="eyebrow">Shama product</span><h2 id="zoom-title"></h2><p id="zoom-pack"></p></div></div></div>`)}
 document.addEventListener('click',e=>{const image=e.target.closest('#runway-image');if(image){const box=document.querySelector('#product-lightbox');document.querySelector('#zoom-image').src=image.src;document.querySelector('#zoom-image').alt=image.alt;document.querySelector('#zoom-title').textContent=document.querySelector('#runway-title').textContent;document.querySelector('#zoom-pack').textContent=document.querySelector('#runway-pack').textContent;box.classList.add('open');box.setAttribute('aria-hidden','false');document.body.classList.add('modal-open')}if(e.target.closest('[data-zoom-close]')){const box=document.querySelector('#product-lightbox');if(box){box.classList.remove('open');box.setAttribute('aria-hidden','true');document.body.classList.remove('modal-open')}}});document.addEventListener('keydown',e=>{if(e.key==='Escape'){const box=document.querySelector('#product-lightbox');if(box?.classList.contains('open')){box.classList.remove('open');document.body.classList.remove('modal-open')}}});
+
+
+/* 2026-10-03 CLOUDINARY BEVERAGES SYNC START */
+(() => {
+  if (typeof productData === 'undefined' || !Array.isArray(productData)) return;
+  const beverages = [
+  {
+    "category": "beverages",
+    "title": "Shama Falooda Rabri",
+    "pack": "290ml x 24",
+    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1789231967/Shama_Falooda_Rabri.png"
+  },
+  {
+    "category": "beverages",
+    "title": "Shama Falooda Pista",
+    "pack": "290ml x 24",
+    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1789231967/Shama_Falooda_Pista.png"
+  },
+  {
+    "category": "beverages",
+    "title": "Shama Falooda Almond",
+    "pack": "290ml x 24",
+    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1789231967/Shama_Falooda_Almond.png"
+  },
+  {
+    "category": "beverages",
+    "title": "Shama Falooda Mango",
+    "pack": "290ml x 24",
+    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1789231968/Shama_mango_falooda_20ml.png"
+  },
+  {
+    "category": "beverages",
+    "title": "Shama Falooda Vanilla",
+    "pack": "290ml x 24",
+    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1789231968/Shama_Falooda_Vanilla.png"
+  },
+  {
+    "category": "beverages",
+    "title": "Shama Falooda Rose",
+    "pack": "290ml x 24",
+    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1789231968/Shama_falooda_rose_290ml.png"
+  },
+  {
+    "category": "beverages",
+    "title": "Shama Falooda Banana",
+    "pack": "290ml x 24",
+    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1789231969/Shama_banana_falooda_20ml.png"
+  },
+  {
+    "category": "beverages",
+    "title": "Shama Falooda Strawberry",
+    "pack": "290ml x 24",
+    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1789231969/Shama_falooda_strawberry_290ml.png"
+  },
+  {
+    "category": "beverages",
+    "title": "Shama Basil Seed Drink Cocktail",
+    "pack": "290ml x 24",
+    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1789231969/Shama_Basil_Seed_Drink_Cocktail.png"
+  },
+  {
+    "category": "beverages",
+    "title": "Shama Basil Seed Drink Lychee",
+    "pack": "290ml x 24",
+    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1789231971/Shama_Basil_Seed_Drink_Lychee.png"
+  },
+  {
+    "category": "beverages",
+    "title": "Shama Basil Seed Drink Lemon",
+    "pack": "290ml x 24",
+    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1789231971/Shama_Basil_Seed_Drink_Lemon.png"
+  },
+  {
+    "category": "beverages",
+    "title": "Shama Basil Seed Drink Pineapple",
+    "pack": "290ml x 24",
+    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1789231971/Shama_Basil_Seed_Drink_Pineapple.png"
+  },
+  {
+    "category": "beverages",
+    "title": "Shama Basil Seed Drink Mango",
+    "pack": "290ml x 24",
+    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1789231971/Shama_Basil_Seed_Drink_Mango.png"
+  },
+  {
+    "category": "beverages",
+    "title": "Shama Basil Seed Drink Passion",
+    "pack": "290ml x 24",
+    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1789231971/Shama_Basil_Seed_Drink_Passion.png"
+  },
+  {
+    "category": "beverages",
+    "title": "Shama Basil Seed Drink Melon",
+    "pack": "290ml x 24",
+    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1789231971/Shama_Basil_Seed_Drink_Melon.png"
+  },
+  {
+    "category": "beverages",
+    "title": "Shama Basil Seed Drink Pomegranate",
+    "pack": "290ml x 24",
+    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1789231972/Shama_Basil_Seed_Drink_Pomegranate.png"
+  },
+  {
+    "category": "beverages",
+    "title": "Shama Basil Seed Drink Strawberry",
+    "pack": "290ml x 24",
+    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1789231972/Shama_Basil_Seed_Drink_Strawberry.png"
+  },
+  {
+    "category": "beverages",
+    "title": "Shama Basil Seed Drink Watermelon",
+    "pack": "290ml x 24",
+    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1789231973/Shama_Basil_Seed_Drink_Watermelon.png"
+  },
+  {
+    "category": "beverages",
+    "title": "Shama Coconut Milk Drink with Mango",
+    "pack": "240ml",
+    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1791037170/Shama_Coconut_Milk_Drink_with_Mango_240ml.png"
+  },
+  {
+    "category": "beverages",
+    "title": "Shama Coconut Milk Drink Original",
+    "pack": "240ml",
+    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1791037171/Shama_Coconut_Milk_Drink_original_240ml.png"
+  },
+  {
+    "category": "beverages",
+    "title": "Best Nectar Cocktail Can",
+    "pack": "250ml",
+    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1791036281/Best_Nectar_Cocktail_Canette_250ml.png"
+  },
+  {
+    "category": "beverages",
+    "title": "Best Nectar Cocktail Glass Bottle",
+    "pack": "250ml",
+    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1791036282/Best_Nectar_Cocktail_Glass_Bottle_250ml.png"
+  },
+  {
+    "category": "beverages",
+    "title": "Best Nectar Guava Can",
+    "pack": "250ml",
+    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1791036282/Best_Nectar_Guava_Canette_250ml.png"
+  },
+  {
+    "category": "beverages",
+    "title": "Best Nectar Cocktail Tetra Pack",
+    "pack": "200ml",
+    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1791036286/Best_brand_Nectar_Cocktail_Tetra_Pack_200ml.png"
+  },
+  {
+    "category": "beverages",
+    "title": "Best Nectar Guava Tetra Pack",
+    "pack": "1L",
+    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1791036286/Best_Nectar_Guava_Tetra_Pack_1L.png"
+  },
+  {
+    "category": "beverages",
+    "title": "Best Nectar Guava Glass Bottle",
+    "pack": "1L",
+    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1791036288/Best_Nectar_Guava_Glass_Bottle_1L.png"
+  },
+  {
+    "category": "beverages",
+    "title": "Best Nectar Mango Tetra Pack",
+    "pack": "1L",
+    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1791036289/Best_Nectar_Mango_Tetra_Pack_1L.png"
+  },
+  {
+    "category": "beverages",
+    "title": "Best Nectar Mango Tetra Pack",
+    "pack": "200ml",
+    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1791036315/Best_Nectar_Mango_Tetra_Pack_200ml.png"
+  },
+  {
+    "category": "beverages",
+    "title": "Best Nectar Guava Tetra Pack",
+    "pack": "200ml",
+    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1791036326/Best_Nectar_Guava_Tetra_Pack_200ml.png"
+  },
+  {
+    "category": "beverages",
+    "title": "Best Nectar Cocktail Tetra Pack",
+    "pack": "1L",
+    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1791036329/Best_Nectar_Cocktail_Tetra_Pack_1L.png"
+  },
+  {
+    "category": "beverages",
+    "title": "Best Nectar Mango Can",
+    "pack": "250ml",
+    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1791037165/Best_Nectar_Mango_Canette_250ml.png"
+  },
+  {
+    "category": "beverages",
+    "title": "Best Nectar Mango Glass Bottle",
+    "pack": "250ml",
+    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1791037166/Best_Nectar_Mango_Glass_Bottle_250ml.png"
+  },
+  {
+    "category": "beverages",
+    "title": "Best Nectar Guava Glass Bottle",
+    "pack": "250ml",
+    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1791037167/Best_Nectar_Guava_Glass_Bottle_250ml.png"
+  },
+  {
+    "category": "beverages",
+    "title": "Best Nectar Mango Glass Bottle",
+    "pack": "1L",
+    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1791037168/Best_Nectar_Mango_Glass_Bottle_1L.png"
+  },
+  {
+    "category": "beverages",
+    "title": "Shezan Chausna Mango Juice Drink",
+    "pack": "225ml bottle",
+    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1791036281/Shezan_CHAUSNA_MANGO_Juice_Drink_225ML_Bottle.png"
+  },
+  {
+    "category": "beverages",
+    "title": "Shezan Happy Farms Mango Juice Drink",
+    "pack": "1L tetra",
+    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1791036283/Shezan_HAPPY_FARMS_MANGO_Juice_Drink_1L_Tetra.png"
+  },
+  {
+    "category": "beverages",
+    "title": "Shezan Mango Juice Drink",
+    "pack": "225ml bottle",
+    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1791036284/Shezan_MANGO_Juice_Drink_225ML_Bottle.png"
+  },
+  {
+    "category": "beverages",
+    "title": "Shezan Lychee Juice Drink",
+    "pack": "225ml bottle",
+    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1791036290/Shezan_LYCHEE_Juice_Drink_225ML_Bottle.png"
+  },
+  {
+    "category": "beverages",
+    "title": "Shezan Mango Juice Drink",
+    "pack": "1L tetra",
+    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1791036291/Shezan_MANGO_Juice_Drink_1L_Tetra.png"
+  },
+  {
+    "category": "beverages",
+    "title": "Shezan Mango Juice Drink",
+    "pack": "250ml tetra",
+    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1791036327/Shezan_MANGO_Juice_Drink_250ML_Tetra.png"
+  },
+  {
+    "category": "beverages",
+    "title": "Shezan Apple Juice Drink",
+    "pack": "1L tetra",
+    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1791036328/Shezan_APPLE_Juice_Drink_1L_Tetra.png"
+  },
+  {
+    "category": "beverages",
+    "title": "Shezan Fruit Punch Juice Drink",
+    "pack": "1L tetra",
+    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1791036343/Shezan_FRUIT_PUNCH_Juice_Drink_1L_Tetra.png"
+  },
+  {
+    "category": "beverages",
+    "title": "Shezan Fruit Punch Juice Drink",
+    "pack": "250ml tetra",
+    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1791037150/Shezan_FRUIT_PUNCH_Juice_Drink_250ML_Tetra.png"
+  },
+  {
+    "category": "beverages",
+    "title": "MANA Energy Drink Green",
+    "pack": "500ml",
+    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1791036329/MANA_Energy_Drink_Green_500ml.png"
+  },
+  {
+    "category": "beverages",
+    "title": "Ginseng Energy Drink",
+    "pack": "250ml",
+    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1791036379/GINSENG_Energy_Drink_250ml.png"
+  },
+  {
+    "category": "beverages",
+    "title": "Carabao Energy Drink",
+    "pack": "250ml",
+    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1791037150/Carabao_Energy_Drink_250ml.png"
+  },
+  {
+    "category": "beverages",
+    "title": "Rooh Afza Rose Syrup",
+    "pack": "800ml",
+    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1791036325/Rooh_Afza_Rose_syrup_800ml.png"
+  },
+  {
+    "category": "beverages",
+    "title": "TG Kiat Rose Syrup",
+    "pack": "750ml",
+    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1791037152/TG_Kiat_Rose_Syrup_750ml.png"
+  },
+  {
+    "category": "beverages",
+    "title": "Alokozai Drink",
+    "pack": "250ml x 24",
+    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1791036279/ALOKOZAI_250_ml_x24.png"
+  }
+];
+  for (let i = productData.length - 1; i >= 0; i--) {
+    if (productData[i]?.category === 'beverages') productData.splice(i, 1);
+  }
+  productData.push(...beverages);
+  if (typeof categories !== 'undefined' && Array.isArray(categories)) {
+    const category = categories.find(x => x.slug === 'beverages');
+    if (category) {
+      category.name = 'Beverages';
+      category.desc = 'Falooda, basil seed, coconut milk, juices, nectars, energy drinks and syrups';
+      category.image = 'https://res.cloudinary.com/wy4nkkqq/image/upload/v1791037170/Shama_Coconut_Milk_Drink_with_Mango_240ml.png';
+    }
+  }
+})();
+/* 2026-10-03 CLOUDINARY BEVERAGES SYNC END */
