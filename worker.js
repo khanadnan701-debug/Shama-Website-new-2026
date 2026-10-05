@@ -275,7 +275,7 @@ async function withFreshHeaders(response) {
   }
 
   headers.delete('Clear-Site-Data');
-  headers.set('X-Shama-Release', '20261005-wines-category-1');
+  headers.set('X-Shama-Release', '20261005-spices-cloudinary-sync-31');
 
   let body = response.body;
 
