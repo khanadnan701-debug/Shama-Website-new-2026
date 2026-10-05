@@ -1,0 +1,23 @@
+body[data-category="wines"] .simple-catalogue>.wrap{width:min(1380px,calc(100% - 40px));max-width:none}
+.wine-subnav{display:flex;align-items:center;justify-content:space-between;gap:16px;margin:0 0 34px;padding:13px 15px;border:1px solid #e7dfe1;border-radius:20px;background:#fff;box-shadow:0 14px 38px rgba(67,25,35,.07)}
+.wine-subnav>span{flex:0 0 auto;color:#80656b;font:900 10px/1 Manrope,sans-serif;letter-spacing:.12em;text-transform:uppercase}
+.wine-chips{display:flex;align-items:center;justify-content:flex-end;gap:8px;flex-wrap:wrap}
+.wine-chips a{display:inline-flex;align-items:center;gap:8px;padding:10px 12px;border-radius:999px;background:#f4edef;color:#6b3942;text-decoration:none;font:800 10px/1 Manrope,sans-serif;transition:.2s}
+.wine-chips a.is-active,.wine-chips a:hover{background:#632c38;color:#fff}
+.wine-chips em{display:grid;place-items:center;min-width:22px;height:22px;padding:0 5px;border-radius:999px;background:#fff;color:#76505a;font:900 9px/1 Manrope,sans-serif;font-style:normal}
+.wine-groups{display:flex;flex-direction:column;gap:56px}
+.wine-group{scroll-margin-top:130px}
+.wine-group-head{display:flex;align-items:end;justify-content:space-between;gap:18px;margin:0 0 18px}
+.wine-group-head span{display:block;margin-bottom:7px;color:#a45a66;font:900 9px/1 Manrope,sans-serif;letter-spacing:.13em;text-transform:uppercase}
+.wine-group-head h2{margin:0;color:#321c22;font:900 clamp(28px,3vw,42px)/1 Manrope,sans-serif;letter-spacing:-.045em}
+.wine-group-head>b{padding:9px 12px;border-radius:999px;background:#f3ecee;color:#775660;font:800 9px/1 Manrope,sans-serif;text-transform:uppercase;letter-spacing:.06em}
+.wine-grid{margin-top:0!important}
+@media(max-width:760px){
+  body[data-category="wines"] .simple-catalogue>.wrap{width:min(100% - 22px,1380px)}
+  .wine-subnav{align-items:flex-start;flex-direction:column}
+  .wine-chips{width:100%;justify-content:flex-start;flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none}
+  .wine-chips::-webkit-scrollbar{display:none}
+  .wine-chips a{flex:0 0 auto}
+  .wine-group-head{align-items:flex-start;flex-direction:column}
+  .wine-groups{gap:42px}
+}
