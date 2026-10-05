@@ -275,7 +275,7 @@ async function withFreshHeaders(response) {
   }
 
   headers.delete('Clear-Site-Data');
-  headers.set('X-Shama-Release', '20261005-spices-cloudinary-sync-31');
+  headers.set('X-Shama-Release', '20261005-frozen-cloudinary-sync-33');
 
   let body = response.body;
 
