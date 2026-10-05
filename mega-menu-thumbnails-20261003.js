@@ -3,7 +3,8 @@
 
   const IMAGES = {
     'tea.html':'https://res.cloudinary.com/wy4nkkqq/image/upload/v1791030636/PG_Tea_300_Bag.png',
-    'sugar.html':'https://res.cloudinary.com/wy4nkkqq/image/upload/v1791031373/Shama_Desi_Shakkar_500g.png'
+    'sugar.html':'https://res.cloudinary.com/wy4nkkqq/image/upload/v1791031373/Shama_Desi_Shakkar_500g.png',
+    'wines.html':'https://res.cloudinary.com/wy4nkkqq/image/upload/v1791192902/Grover_Wine_Red_Alc._13.5_vol_75cl.png'
   };
 
   function patch() {
@@ -29,7 +30,7 @@
       }
 
       img.src = src;
-      img.alt = href === 'tea.html' ? 'Tea' : 'Sugar';
+      img.alt = href === 'tea.html' ? 'Tea' : href === 'sugar.html' ? 'Sugar' : 'Wines';
       img.loading = 'eager';
       img.decoding = 'async';
     });
