@@ -821,3 +821,12 @@ body[data-page="catalogue"] .grocery-range-number{
 @media(max-width:700px){
   .sugar-subtypes i,.sugar-range-types i{font-size:6px;padding:4px 6px}
 }
+
+
+/* 2026-10-05 Wines catalogue subcategories */
+.wine-subtypes,.wine-range-types{display:flex;flex-wrap:wrap;gap:5px;margin-top:8px}
+.wine-subtypes i,.wine-range-types i{display:inline-flex;align-items:center;padding:5px 7px;border-radius:999px;background:#efe7e7;color:#6b2e38;font:800 7px/1 Manrope,sans-serif;font-style:normal;letter-spacing:.03em;text-transform:uppercase}
+.grocery-range-copy .wine-range-types{margin:8px 0 2px}
+@media(max-width:700px){
+  .wine-subtypes i,.wine-range-types i{font-size:6px;padding:4px 6px}
+}
