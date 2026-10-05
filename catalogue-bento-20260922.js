@@ -111,6 +111,7 @@
     beverages:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1791037170/Shama_Coconut_Milk_Drink_with_Mango_240ml.png',
     tea:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1791030636/PG_Tea_300_Bag.png',
     sugar:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1791031373/Shama_Desi_Shakkar_500g.png',
+    wines:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1791192902/Grover_Wine_Red_Alc._13.5_vol_75cl.png',
     flour:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1789232539/shama_wheat_floor_T55_1kg.png',
     frozen:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1790625180/Shama_Chicken_tikka_Samosa_20Pcs.png',
     oils:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1789678755/Shama_sunflower_oil_5ltr.png',
@@ -119,7 +120,8 @@
 
   const thumbnailOverrides = {
     tea:'https://res.cloudinary.com/wy4nkkqq/image/upload/f_auto,q_auto:good,c_fit,w_320,h_320/v1791030636/PG_Tea_300_Bag.png',
-    sugar:'https://res.cloudinary.com/wy4nkkqq/image/upload/f_auto,q_auto:good,c_fit,w_320,h_320/v1791031373/Shama_Desi_Shakkar_500g.png'
+    sugar:'https://res.cloudinary.com/wy4nkkqq/image/upload/f_auto,q_auto:good,c_fit,w_320,h_320/v1791031373/Shama_Desi_Shakkar_500g.png',
+    wines:'https://res.cloudinary.com/wy4nkkqq/image/upload/f_auto,q_auto:good,c_fit,w_320,h_320/v1791192902/Grover_Wine_Red_Alc._13.5_vol_75cl.png'
   };
 
   const tones = ['sky','peach','mint','sand','lavender','rose'];
@@ -215,7 +217,7 @@
                   </span>
                   <strong>${range.name}</strong>
                   <small>${range.desc}</small>
-                  ${range.slug==='sugar' ? '<span class="sugar-subtypes"><i>Desi Gur</i><i>Desi Shakkar</i><i>Sugar & Cubes</i></span>' : ''}
+                  ${range.slug==='sugar' ? '<span class="sugar-subtypes"><i>Desi Gur</i><i>Desi Shakkar</i><i>Sugar & Cubes</i></span>' : range.slug==='wines' ? '<span class="wine-subtypes"><i>Red</i><i>White</i><i>Rosé</i><i>Liqueurs</i><i>Beer</i></span>' : ''}
                 </a>
               `).join('')}
             </div>
@@ -236,7 +238,7 @@
                   <div class="grocery-range-copy">
                     <h3>${range.name}</h3>
                     <p>${range.desc}</p>
-                    ${range.slug==='sugar' ? '<div class="sugar-range-types"><i>Desi Gur</i><i>Desi Shakkar</i><i>Sugar & Cubes</i></div>' : ''}
+                    ${range.slug==='sugar' ? '<div class="sugar-range-types"><i>Desi Gur</i><i>Desi Shakkar</i><i>Sugar & Cubes</i></div>' : range.slug==='wines' ? '<div class="wine-range-types"><i>Red</i><i>White</i><i>Rosé</i><i>Liqueurs</i><i>Beer</i></div>' : ''}
                     <span>Shop category ↗</span>
                   </div>
                 </a>
