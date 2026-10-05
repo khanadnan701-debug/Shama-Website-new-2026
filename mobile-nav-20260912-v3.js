@@ -14,16 +14,17 @@
     ['05', 'Beverages', 'beverages.html'],
     ['06', 'Tea', 'tea.html'],
     ['07', 'Sugar', 'sugar.html'],
-    ['08', 'Flour & Lentiles', 'flour-lentiles.html'],
-    ['09', 'Frozen', 'frozen.html'],
-    ['10', 'Oils', 'oils.html'],
-    ['11', 'Dry Fruits', 'dry-fruits.html'],
-    ['12', 'Laziza', 'laziza.html'],
-    ['13', 'Ahmed', 'ahmed.html'],
-    ['14', 'Agarbatti', 'agarbatti.html'],
-    ['15', 'Dates', 'dates.html'],
-    ['16', 'Pataks', 'pataks.html'],
-    ['17', 'Cosmetics', 'cosmetics.html']
+    ['08', 'Wines', 'wines.html'],
+    ['09', 'Flour & Lentiles', 'flour-lentiles.html'],
+    ['10', 'Frozen', 'frozen.html'],
+    ['11', 'Oils', 'oils.html'],
+    ['12', 'Dry Fruits', 'dry-fruits.html'],
+    ['13', 'Laziza', 'laziza.html'],
+    ['14', 'Ahmed', 'ahmed.html'],
+    ['15', 'Agarbatti', 'agarbatti.html'],
+    ['16', 'Dates', 'dates.html'],
+    ['17', 'Pataks', 'pataks.html'],
+    ['18', 'Cosmetics', 'cosmetics.html']
   ];
 
   const isMobile = () => window.matchMedia(`(max-width:${BREAKPOINT}px)`).matches;
