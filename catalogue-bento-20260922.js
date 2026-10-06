@@ -107,7 +107,7 @@
     rice:'https://res.cloudinary.com/wy4nkkqq/image/upload/f_webp,fl_awebp,q_auto:best,e_sharpen:70/v1790255518/Shama_Super_Kernal_Par_Boiled_Sella_Rice_5kg.png',
     spices:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1791198164/National_Biryani_Masala_78gm.png',
     sauces:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1789678774/Shama_Mango_pickle_1kg.png',
-    misc:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1789678914/Shama_paneer_dodi_phool_100g.png',
+    misc:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1789466470/Shama_fried_onion_1kg.png',
     beverages:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1791037170/Shama_Coconut_Milk_Drink_with_Mango_240ml.png',
     tea:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1791030636/PG_Tea_300_Bag.png',
     sugar:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1791031373/Shama_Desi_Shakkar_500g.png',
