@@ -104,7 +104,7 @@
   "rice.html": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1790255518/Shama_Super_Kernal_Par_Boiled_Sella_Rice_5kg.png",
   "spices.html": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1789051986/star_anise.png",
   "sauces-pastes.html": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1789678774/Shama_Mango_pickle_1kg.png",
-  "miscellaneous.html": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1789678914/Shama_paneer_dodi_phool_100g.png",
+  "miscellaneous.html": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1789466470/Shama_fried_onion_1kg.png",
   "beverages.html": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1789231973/Shama_Basil_Seed_Drink_Watermelon.png",
   "flour-lentiles.html": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1789232539/shama_wheat_floor_T55_1kg.png",
   "frozen.html": "assets/frozen/shama-chicken-samosa-20.webp",
