@@ -1,5 +1,5 @@
 // Miscellaneous catalogue synced with Cloudinary folder: shama/Miscellaneous.
-// Source of truth refreshed on 2026-10-01. Shama products are kept first by the category-group UI.
+// Source of truth refreshed on 2026-10-06. Shama products are kept first by the category-group UI.
 (() => {
   'use strict';
   if (typeof productData === 'undefined' || !Array.isArray(productData)) return;
@@ -31,13 +31,8 @@
     {category:'misc',title:'Shama Seedless Tamarind (Imli)',pack:'400g',image:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1789466633/Shama_imli_400g.png'},
     {category:'misc',title:'Shama Himalayan Pink Salt — New Pack',pack:'Contact us for available pack sizes',image:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1789678912/Shama_himalayn_pink_salt.png'},
     {category:'misc',title:'Shama Masala Roasted Chana',pack:'400g',image:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1789678913/Shama_masala_roasted_chana_400g.png'},
-    {category:'misc',title:'Shama Paneer Dodi Phool',pack:'100g',image:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1789678914/Shama_paneer_dodi_phool_100g.png'},
+    {category:'misc',title:'Shama Paneer Dodi Phool',pack:'100g',image:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1789466470/Shama_fried_onion_1kg.png'},
     {category:'misc',title:'Kody Peeled Tomatoes',pack:'Contact us for available pack sizes',image:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1789678914/Shama_kodi_peeled_tomato.png'},
-    {category:'misc',title:'Banana Flavour Essence',pack:'20ml',image:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1789679001/Banana_20ml.png'},
-    {category:'misc',title:'Almond Flavour Essence',pack:'20ml',image:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1789679038/Almond_20ml.png'},
-    {category:'misc',title:'Vanilla Flavour Essence',pack:'20ml',image:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1789679072/vanilla_20ml.png'},
-    {category:'misc',title:'Rose Flavour Essence',pack:'20ml',image:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1789679073/Rose_20ml.png'},
-    {category:'misc',title:'Pineapple Flavour Essence',pack:'20ml',image:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1789679074/Pineapple_20ml.png'},
 
     // Food colours — newly added to Cloudinary on 2026-10-01.
     {category:'misc',title:'Shama Food Colour Orange',pack:'25g',image:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1790866950/Shama_Food_Colour_Orange_25g.png'},
@@ -72,11 +67,11 @@
   const category = {
     slug:'misc',
     name:'Miscellaneous',
-    desc:'Everyday pantry essentials, salts, food colours, waters, baking ingredients, flavour essences and more',
+    desc:'Papad, pantry essentials, salts, food colours, juices, floral waters, baking ingredients and more',
     image:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1789678914/Shama_paneer_dodi_phool_100g.png'
   };
   if (existing) Object.assign(existing, category);
   else categories.push(category);
 
-  window.shamaMiscCatalogue = { total: items.length, sourceFolder:'shama/Miscellaneous.' };
+  window.shamaMiscCatalogue = { total: items.length, cloudinaryTotal:50, sourceFolder:'shama/Miscellaneous.', syncedAt:'2026-10-06' };
 })();
