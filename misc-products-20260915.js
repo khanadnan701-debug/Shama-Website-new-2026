@@ -58,7 +58,11 @@
     {category:'misc',title:'TRS Food Colour Red',pack:'500g',image:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1790866962/TRS_Food_Colour_Red_500g.png'},
     {category:'misc',title:'SOP Orange Food Colour',pack:'400g',image:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1790866963/SOP_Orange_Food_Colour_400g.png'},
     {category:'misc',title:'TRS Food Colour Deep Orange',pack:'500g',image:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1790866964/TRS_Food_Colour_Deep_Orange_500g.png'},
-    {category:'misc',title:'TRS Food Colour Red',pack:'25g',image:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1790866967/TRS_Food_Colour_Red_25g.png'}
+    {category:'misc',title:'TRS Food Colour Red',pack:'25g',image:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1790866967/TRS_Food_Colour_Red_25g.png'},
+    {category:'misc',title:'Shama Madras Plain Papad',pack:'200g',image:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1791292377/Shama_Madras_plain_papad_200g.png'},
+    {category:'misc',title:'Shama Pepper Papad',pack:'200g',image:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1791292377/Shama_pepper_papad_200g.png'},
+    {category:'misc',title:'Shama Chilli Papad',pack:'200g',image:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1791292377/Shama_chilli_papad_200g.png'},
+    {category:'misc',title:'Shama Jeera Papad',pack:'200g',image:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1791292377/Shama_jeera_papad_200g.png'}
   ];
 
   const nonMisc = productData.filter(item => item.category !== 'misc');
