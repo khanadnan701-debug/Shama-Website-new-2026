@@ -275,7 +275,7 @@ async function withFreshHeaders(response) {
   }
 
   headers.delete('Clear-Site-Data');
-  headers.set('X-Shama-Release', '20261005-frozen-exact-sync-32b');
+  headers.set('X-Shama-Release', '20261006-misc-cloudinary-sync-50');
 
   let body = response.body;
 
