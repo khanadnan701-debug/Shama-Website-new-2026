@@ -3,6 +3,7 @@
   if (document.body.dataset.category !== 'misc') return;
 
   const GROUPS = [
+    {key:'papad',label:'Papad',short:'Papad',note:'Shama Madras plain, pepper, chilli and jeera papad.'},
     {
       key:'pantry',
       label:'Pantry Essentials',
@@ -62,14 +63,13 @@
   function keyForTitle(title) {
     const value = String(title || '').trim().toLowerCase();
 
-    if (/mango\s+pulp/.test(value)) return 'mango-pulp';
+    if (/papad/.test(value)) return 'papad';
     if (/salt|black\s+pepper/.test(value)) return 'salts-seasonings';
     if (/lemon\s+dressing|lemon\s+juice|lime\s+juice|vinegar|mint\s+sauce/.test(value)) return 'juices-sauces';
     if (/rose\s+water|kewra\s+water/.test(value)) return 'floral-waters';
     if (/baking\s+powder|baking\s+soda/.test(value)) return 'baking';
     if (/food\s+colou?r/.test(value)) return 'food-colours';
     if (/mouth\s+freshener|sweet\s+fennel|rewari/.test(value)) return 'mouth-sweets';
-    if (/flavour\s+essence/.test(value)) return 'essences';
     return 'pantry';
   }
 
@@ -211,7 +211,7 @@
 
     const heroCopy = document.querySelector('.page-hero p');
     if (heroCopy) {
-      heroCopy.textContent = 'Browse pantry essentials, salts, food colours, juices, floral waters, baking products, fresheners and flavour essences by category.';
+      heroCopy.textContent = 'Browse papad, pantry essentials, salts, food colours, juices, floral waters, baking products and fresheners by category.';
     }
 
     return true;
