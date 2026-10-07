@@ -62,6 +62,7 @@
     {category:'misc',title:'Shama Anardana Powder (Pomegranate Powder)',pack:'100g',image:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1791301166/SHAMA_Anardana_pomgranate_powder_100g.png'},
     {category:'misc',title:'Shama Anardana Seeds (Pomegranate Seeds)',pack:'100g',image:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1791301371/SHAMA_Anardana_seeds_pomgranate_100g.png'},
 
+    {category:'misc',title:'Shama Tukmaria (Basil Seeds)',pack:'100g',image:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1791297910/Shama_Tukmaria_100g.png'},
     {category:'misc',title:'Shama Madras Plain Papad',pack:'200g',image:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1791292377/Shama_Madras_plain_papad_200g.png'},
     {category:'misc',title:'Shama Pepper Papad',pack:'200g',image:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1791292377/Shama_pepper_papad_200g.png'},
     {category:'misc',title:'Shama Chilli Papad',pack:'200g',image:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1791292377/Shama_chilli_papad_200g.png'},
@@ -81,5 +82,5 @@
   if (existing) Object.assign(existing, category);
   else categories.push(category);
 
-  window.shamaMiscCatalogue = { total: items.length, cloudinaryTotal:56, sourceFolder:'shama/Miscellaneous.', syncedAt:'2026-10-07', shamaFirst:true };
+  window.shamaMiscCatalogue = { total: items.length, cloudinaryTotal:57, sourceFolder:'shama/Miscellaneous.', syncedAt:'2026-10-07', shamaFirst:true };
 })();
