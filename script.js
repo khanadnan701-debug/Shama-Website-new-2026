@@ -1211,6 +1211,8 @@ productData.push(...supplementalData);
     {"category":"spices","group":"Spice Powders","title":"Shama Anardana Powder (Pomegranate Powder)","pack":"100g","image":"https://res.cloudinary.com/wy4nkkqq/image/upload/v1791301166/SHAMA_Anardana_pomgranate_powder_100g.png"},
     {"category":"spices","group":"Whole Spices & Seeds","title":"Shama Anardana Seeds (Pomegranate Seeds)","pack":"100g","image":"https://res.cloudinary.com/wy4nkkqq/image/upload/v1791301371/SHAMA_Anardana_seeds_pomgranate_100g.png"}
   ];
+  const shamaFirst = item => /^Shama\b/i.test(String(item?.title || '')) ? 0 : 1;
+  spices.sort((a,b) => shamaFirst(a) - shamaFirst(b));
   for (let i = productData.length - 1; i >= 0; i--) {
     if (productData[i]?.category === 'spices') productData.splice(i, 1);
   }
