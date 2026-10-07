@@ -275,7 +275,7 @@ async function withFreshHeaders(response) {
   }
 
   headers.delete('Clear-Site-Data');
-  headers.set('X-Shama-Release', '20261007-chilli-crushed-add-750g');
+  headers.set('X-Shama-Release', '20261007-sitemap-direct-serve-fix');
 
   let body = response.body;
 
@@ -327,6 +327,39 @@ async function withFreshHeaders(response) {
 export default {
   async fetch(request, env) {
     const url = new URL(request.url);
+
+    // Serve crawler-critical SEO files directly from the Worker so Googlebot
+    // does not depend on the static asset router for sitemap discovery.
+    if (url.pathname === '/sitemap.xml') {
+      if (request.method !== 'GET' && request.method !== 'HEAD') {
+        return new Response('Method not allowed', { status: 405, headers: { 'Allow': 'GET, HEAD' } });
+      }
+      const body = request.method === 'HEAD' ? null : "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<urlset xmlns=\"http://www.sitemaps.org/schemas/sitemap/0.9\">\n  <url><loc>https://shamaonline.com/</loc><lastmod>2026-10-07</lastmod></url>\n  <url><loc>https://shamaonline.com/catalogue</loc><lastmod>2026-10-07</lastmod></url>\n  <url><loc>https://shamaonline.com/rice</loc><lastmod>2026-10-07</lastmod></url>\n  <url><loc>https://shamaonline.com/spices</loc><lastmod>2026-10-07</lastmod></url>\n  <url><loc>https://shamaonline.com/frozen</loc><lastmod>2026-10-07</lastmod></url>\n  <url><loc>https://shamaonline.com/flour-lentiles</loc><lastmod>2026-10-07</lastmod></url>\n  <url><loc>https://shamaonline.com/beverages</loc><lastmod>2026-10-07</lastmod></url>\n  <url><loc>https://shamaonline.com/tea</loc><lastmod>2026-10-07</lastmod></url>\n  <url><loc>https://shamaonline.com/oils</loc><lastmod>2026-10-07</lastmod></url>\n  <url><loc>https://shamaonline.com/dry-fruits</loc><lastmod>2026-10-07</lastmod></url>\n  <url><loc>https://shamaonline.com/sauces-pastes</loc><lastmod>2026-10-07</lastmod></url>\n  <url><loc>https://shamaonline.com/miscellaneous</loc><lastmod>2026-10-07</lastmod></url>\n  <url><loc>https://shamaonline.com/sugar</loc><lastmod>2026-10-07</lastmod></url>\n  <url><loc>https://shamaonline.com/dates</loc><lastmod>2026-10-07</lastmod></url>\n  <url><loc>https://shamaonline.com/bakery</loc><lastmod>2026-10-07</lastmod></url>\n  <url><loc>https://shamaonline.com/preserves</loc><lastmod>2026-10-07</lastmod></url>\n  <url><loc>https://shamaonline.com/savoury-snacks</loc><lastmod>2026-10-07</lastmod></url>\n  <url><loc>https://shamaonline.com/sea-food</loc><lastmod>2026-10-07</lastmod></url>\n  <url><loc>https://shamaonline.com/agarbatti</loc><lastmod>2026-10-07</lastmod></url>\n  <url><loc>https://shamaonline.com/cosmetics</loc><lastmod>2026-10-07</lastmod></url>\n  <url><loc>https://shamaonline.com/non-foods</loc><lastmod>2026-10-07</lastmod></url>\n  <url><loc>https://shamaonline.com/divers</loc><lastmod>2026-10-07</lastmod></url>\n  <url><loc>https://shamaonline.com/ahmed</loc><lastmod>2026-10-07</lastmod></url>\n  <url><loc>https://shamaonline.com/pataks</loc><lastmod>2026-10-07</lastmod></url>\n  <url><loc>https://shamaonline.com/wines</loc><lastmod>2026-10-07</lastmod></url>\n  <url><loc>https://shamaonline.com/about</loc><lastmod>2026-10-07</lastmod></url>\n  <url><loc>https://shamaonline.com/contact</loc><lastmod>2026-10-07</lastmod></url>\n</urlset>\n";
+      return new Response(body, {
+        status: 200,
+        headers: {
+          'Content-Type': 'application/xml; charset=utf-8',
+          'Cache-Control': 'public, max-age=300, must-revalidate',
+          'X-Robots-Tag': 'noindex, follow',
+          'Access-Control-Allow-Origin': '*'
+        }
+      });
+    }
+
+    if (url.pathname === '/robots.txt') {
+      if (request.method !== 'GET' && request.method !== 'HEAD') {
+        return new Response('Method not allowed', { status: 405, headers: { 'Allow': 'GET, HEAD' } });
+      }
+      const body = request.method === 'HEAD' ? null : "User-agent: *\nAllow: /\n\nSitemap: https://shamaonline.com/sitemap.xml\n";
+      return new Response(body, {
+        status: 200,
+        headers: {
+          'Content-Type': 'text/plain; charset=utf-8',
+          'Cache-Control': 'public, max-age=300, must-revalidate',
+          'Access-Control-Allow-Origin': '*'
+        }
+      });
+    }
 
     if (url.pathname === '/teas' || url.pathname === '/teas/') {
       const target = new URL('https://shamaonline.com/tea');
