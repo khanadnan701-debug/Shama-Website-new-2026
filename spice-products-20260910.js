@@ -211,6 +211,8 @@
       pack: '3223C - 100g x 20\n3445C - 400g x 10\n3636C - 1kg x 6',
       image: 'https://res.cloudinary.com/wy4nkkqq/image/upload/v1789051968/tandoori_masala.png'
     },
+    {"category":"spices","group":"Whole Spices & Seeds","title":"Shama Kasuri Methi","pack":"100g","image":"https://res.cloudinary.com/wy4nkkqq/image/upload/v1791377494/Shama_kasuri_methi_100gm.png"},
+    {"category":"spices","group":"Whole Spices & Seeds","title":"Shama Kasuri Methi","pack":"1kg","image":"https://res.cloudinary.com/wy4nkkqq/image/upload/v1791377495/Shama_kasuri_methi_1kg.png"},
     {"category":"spices","group":"Whole Spices & Seeds","title":"Shama Brown Mustard Seed","pack":"400g","image":"https://res.cloudinary.com/wy4nkkqq/image/upload/v1791376200/Shama_Brown_Mustard_Seed_400g.png"},
     {"category":"spices","group":"Whole Spices & Seeds","title":"Shama Chilli Whole Red","pack":"Contact us for available pack sizes","image":"https://res.cloudinary.com/wy4nkkqq/image/upload/v1791376512/Shama_chilli_whole_red.png"},
     {"category":"spices","group":"Whole Spices & Seeds","title":"Schani Bay Leaves","pack":"50g / 200g / 1kg","image":"https://res.cloudinary.com/wy4nkkqq/image/upload/v1791375339/Schani_Bay_Leaves_50g_200g_1kg.png"},
@@ -240,8 +242,8 @@
   }
 
   window.shamaSpicesCatalogue = {
-    cloudinaryTotal:44,
-    websiteTotal:44,
+    cloudinaryTotal:46,
+    websiteTotal:46,
     excludedFromWebsite:0,
     total:spiceProducts20260910.length,
     sourceFolder:'shama/Spices',
