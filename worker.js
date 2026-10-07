@@ -275,7 +275,7 @@ async function withFreshHeaders(response) {
   }
 
   headers.delete('Clear-Site-Data');
-  headers.set('X-Shama-Release', '20261007-schani-bay-leaves-add-30g');
+  headers.set('X-Shama-Release', '20261007-misc58-gond-katira');
 
   let body = response.body;
 
