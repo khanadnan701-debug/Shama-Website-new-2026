@@ -275,7 +275,7 @@ async function withFreshHeaders(response) {
   }
 
   headers.delete('Clear-Site-Data');
-  headers.set('X-Shama-Release', '20261007-spices46-kasuri-methi');
+  headers.set('X-Shama-Release', '20261007-paneer-dodi-image-fix');
 
   let body = response.body;
 
