@@ -1257,7 +1257,7 @@ productData.push(...supplementalData);
     {category:'misc',title:'Shama Seedless Tamarind (Imli)',pack:'400g',image:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1789466633/Shama_imli_400g.png'},
     {category:'misc',title:'Shama Himalayan Pink Salt — New Pack',pack:'Contact us for available pack sizes',image:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1789678912/Shama_himalayn_pink_salt.png'},
     {category:'misc',title:'Shama Masala Roasted Chana',pack:'400g',image:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1789678913/Shama_masala_roasted_chana_400g.png'},
-    {category:'misc',title:'Shama Paneer Dodi Phool',pack:'100g',image:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1789466470/Shama_fried_onion_1kg.png'},
+    {category:'misc',title:'Shama Paneer Dodi Phool',pack:'100g',image:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1789678914/Shama_paneer_dodi_phool_100g.png'},
     {category:'misc',title:'Kody Peeled Tomatoes',pack:'Contact us for available pack sizes',image:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1789678914/Shama_kodi_peeled_tomato.png'},
 
     // Food colours — newly added to Cloudinary on 2026-10-01.
