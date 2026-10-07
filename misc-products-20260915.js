@@ -1,5 +1,5 @@
 // Miscellaneous catalogue synced with Cloudinary folder: shama/Miscellaneous.
-// Source of truth refreshed on 2026-10-06. Shama products are kept first by the category-group UI.
+// Source of truth refreshed on 2026-10-07. Shama products are kept first by the category-group UI.
 (() => {
   'use strict';
   if (typeof productData === 'undefined' || !Array.isArray(productData)) return;
@@ -54,6 +54,14 @@
     {category:'misc',title:'SOP Orange Food Colour',pack:'400g',image:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1790866963/SOP_Orange_Food_Colour_400g.png'},
     {category:'misc',title:'TRS Food Colour Deep Orange',pack:'500g',image:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1790866964/TRS_Food_Colour_Deep_Orange_500g.png'},
     {category:'misc',title:'TRS Food Colour Red',pack:'25g',image:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1790866967/TRS_Food_Colour_Red_25g.png'},
+    // Latest Miscellaneous additions from Cloudinary (moved out of Spices).
+    {category:'misc',title:'Shama Soya Chunks',pack:'500g',image:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1791297922/Shama_Soya_Chunks_500g.png'},
+    {category:'misc',title:'Shama Sabudana (Tapioca / Sago Seeds)',pack:'500g',image:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1791300440/Shama_Sabudana_Tapioca_Medium_500g.png'},
+    {category:'misc',title:'Shama Soya Chunks',pack:'250g',image:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1791300689/Shama_Soya_Chunks_250g.png'},
+    {category:'misc',title:'Shama Dry Plum (Alubukhara)',pack:'100g',image:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1791300942/SHAMA_Dry_Plum_ALUBUKHARA_100gm.png'},
+    {category:'misc',title:'Shama Anardana Powder (Pomegranate Powder)',pack:'100g',image:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1791301166/SHAMA_Anardana_pomgranate_powder_100g.png'},
+    {category:'misc',title:'Shama Anardana Seeds (Pomegranate Seeds)',pack:'100g',image:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1791301371/SHAMA_Anardana_seeds_pomgranate_100g.png'},
+
     {category:'misc',title:'Shama Madras Plain Papad',pack:'200g',image:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1791292377/Shama_Madras_plain_papad_200g.png'},
     {category:'misc',title:'Shama Pepper Papad',pack:'200g',image:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1791292377/Shama_pepper_papad_200g.png'},
     {category:'misc',title:'Shama Chilli Papad',pack:'200g',image:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1791292377/Shama_chilli_papad_200g.png'},
@@ -67,11 +75,11 @@
   const category = {
     slug:'misc',
     name:'Miscellaneous',
-    desc:'Papad, pantry essentials, salts, food colours, juices, floral waters, baking ingredients and more',
+    desc:'Papad, pantry essentials, soya chunks, sabudana, dry plum, anardana, salts, food colours, juices, floral waters, baking ingredients and more',
     image:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1789678914/Shama_paneer_dodi_phool_100g.png'
   };
   if (existing) Object.assign(existing, category);
   else categories.push(category);
 
-  window.shamaMiscCatalogue = { total: items.length, cloudinaryTotal:50, sourceFolder:'shama/Miscellaneous.', syncedAt:'2026-10-06' };
+  window.shamaMiscCatalogue = { total: items.length, cloudinaryTotal:56, sourceFolder:'shama/Miscellaneous.', syncedAt:'2026-10-07', shamaFirst:true };
 })();
