@@ -103,7 +103,7 @@
       category: 'spices',
       group: 'Masalas & Curry Blends',
       title: 'Shama Garam Masala Whole',
-      pack: '100g x 20\n400g x 10\n1kg x 6',
+      pack: '100g x 20\n200g x 10\n400g x 10\n1kg x 6',
       image: 'https://res.cloudinary.com/wy4nkkqq/image/upload/v1789051970/garam_masala_whole.png'
     },
     {
