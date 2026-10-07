@@ -1133,7 +1133,7 @@ productData.push(...supplementalData);
       category: 'spices',
       group: 'Whole Spices & Seeds',
       title: 'Shama Kalonji (Nigella Seeds)',
-      pack: '2950C - 100g x 20\n2967C - 300g x 10',
+      pack: '2950C - 100g x 20\n2967C - 300g x 10\n800g',
       image: 'https://res.cloudinary.com/wy4nkkqq/image/upload/v1789051981/kalonji.png'
     },
     {
