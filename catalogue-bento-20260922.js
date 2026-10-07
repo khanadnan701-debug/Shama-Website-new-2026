@@ -105,7 +105,7 @@
 
   const imageOverrides = {
     rice:'https://res.cloudinary.com/wy4nkkqq/image/upload/f_webp,fl_awebp,q_auto:best,e_sharpen:70/v1790255518/Shama_Super_Kernal_Par_Boiled_Sella_Rice_5kg.png',
-    spices:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1791301371/SHAMA_Anardana_seeds_pomgranate_100g.png',
+    spices:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1791377333/Shama_garam_masala_powder_100g_x_20_400g_x_10_1kg_x_6.png',
     sauces:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1789678774/Shama_Mango_pickle_1kg.png',
     misc:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1789466470/Shama_fried_onion_1kg.png',
     beverages:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1791037170/Shama_Coconut_Milk_Drink_with_Mango_240ml.png',
