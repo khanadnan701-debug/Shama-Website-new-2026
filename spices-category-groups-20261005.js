@@ -10,6 +10,7 @@
     if(/powder|crushed/.test(t)) return 'Spice Powders';
     return 'Whole Spices & Seeds';
   };
+  const shamaRank=card=>/^Shama\b/i.test(card.querySelector('h3')?.textContent||'')?0:1;
   function run(){
     const wrap=document.querySelector('.simple-catalogue .wrap');
     const grid=wrap?.querySelector('#simple-product-grid');
@@ -23,6 +24,7 @@
       const meta=card.querySelector('.simple-product-meta');
       if(meta) meta.textContent='SPICES · '+g.toUpperCase();
     });
+    ORDER.forEach(g=>buckets.get(g).sort((a,b)=>shamaRank(a)-shamaRank(b)));
     const nav=document.createElement('nav');
     nav.className='spice-subnav';
     nav.innerHTML='<span>Browse by type</span><div class="spice-chips">'+ORDER.map((g,i)=>'<a href="#spice-'+slug(g)+'" class="'+(i===0?'is-active':'')+'"><b>'+g+'</b><em>'+buckets.get(g).length+'</em></a>').join('')+'</div>';
