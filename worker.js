@@ -275,7 +275,7 @@ async function withFreshHeaders(response) {
   }
 
   headers.delete('Clear-Site-Data');
-  headers.set('X-Shama-Release', '20261007-paneer-dodi-image-fix');
+  headers.set('X-Shama-Release', '20261007-schani-bay-leaves-add-30g');
 
   let body = response.body;
 
