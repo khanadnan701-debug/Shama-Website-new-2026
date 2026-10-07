@@ -238,6 +238,9 @@
     {"category":"spices","group":"Whole Spices & Seeds","title":"Shama Anardana Seeds (Pomegranate Seeds)","pack":"100g","image":"https://res.cloudinary.com/wy4nkkqq/image/upload/v1791301371/SHAMA_Anardana_seeds_pomgranate_100g.png"}
   ];
 
+  const shamaFirst = item => /^Shama\b/i.test(String(item?.title || '')) ? 0 : 1;
+  spiceProducts20260910.sort((a,b) => shamaFirst(a) - shamaFirst(b));
+
   if (typeof productData !== 'undefined' && Array.isArray(productData)) {
     const nonSpiceProducts = productData.filter((item) => item.category !== 'spices');
     productData.splice(0, productData.length, ...nonSpiceProducts, ...spiceProducts20260910);
