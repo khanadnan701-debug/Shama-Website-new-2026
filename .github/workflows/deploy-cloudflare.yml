@@ -39,8 +39,10 @@ jobs:
         run: |
           node --check .github/scripts/home-seo.cjs
           node --check .github/scripts/site-seo-france.cjs
+          node --check .github/scripts/google-tags.cjs
           node .github/scripts/home-seo.cjs dist
           node .github/scripts/site-seo-france.cjs dist
+          node .github/scripts/google-tags.cjs dist
           node --check dist/translation-seo-home-20261007.js
           git diff --exit-code
 
@@ -70,9 +72,10 @@ jobs:
           wranglerVersion: '4.130.0'
           command: deploy
 
-      - name: Verify live SEO
+      - name: Verify live SEO and tags
         run: |
           node .github/scripts/home-seo.cjs --verify-live
           node .github/scripts/site-seo-france.cjs --verify-live
+          node .github/scripts/google-tags.cjs --verify-live
 
 # SEO build updates metadata, crawlable copy and sitemap; catalogue/product data are unchanged.
