@@ -35,6 +35,14 @@ jobs:
             --exclude='package-lock.json' \
             ./ dist/
 
+      - name: Build and validate homepage SEO
+        run: |
+          node --check .github/scripts/home-seo.cjs
+          node .github/scripts/home-seo.cjs dist
+          node .github/scripts/home-seo.cjs dist
+          node --check dist/translation-seo-home-20261007.js
+          git diff --exit-code
+
       - name: Build Shama favicon
         run: |
           if command -v magick >/dev/null 2>&1; then
@@ -61,4 +69,7 @@ jobs:
           wranglerVersion: '4.130.0'
           command: deploy
 
-# Lean production deploy: static assets + Worker only. Legacy category video generation was removed because the current site no longer references those generated files.
+      - name: Verify live homepage SEO
+        run: node .github/scripts/home-seo.cjs --verify-live
+
+# Homepage SEO is built separately; existing catalogue and product data are unchanged.
