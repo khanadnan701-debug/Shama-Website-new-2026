@@ -5,16 +5,16 @@ const path = require('node:path');
 const assert = require('node:assert/strict');
 const vm = require('node:vm');
 const ORIGIN = 'https://shamaonline.com';
-const TITLE = 'Shama International | South Asian Food Wholesaler in France';
-const TITLE_FR = 'Shama International | Grossiste alimentaire asiatique en France';
-const DESCRIPTION = 'France-based wholesale supplier of South Asian groceries: rice, spices, frozen food, tea and pantry essentials. Request a quote from Shama International.';
-const DESCRIPTION_FR = 'Grossiste en produits alimentaires d\u2019Asie du Sud en France : riz, \u00e9pices, surgel\u00e9s, th\u00e9 et \u00e9picerie. Demandez un devis \u00e0 Shama International.';
-const HEADING = 'South Asian food wholesaler in France';
-const COPY = 'Shama International supplies retailers and foodservice businesses in France with South Asian groceries. Explore our rice, spices, frozen food, tea and pantry ranges, then request availability, case quantities and delivery options.';
+const TITLE = 'Shama International SAS France | South Asian Food Wholesaler';
+const TITLE_FR = 'Shama International SAS | Grossiste alimentaire en France';
+const DESCRIPTION = 'Shama International SAS is a France-based wholesale supplier of South Asian groceries: rice, spices, frozen food, tea and pantry essentials for professional buyers.';
+const DESCRIPTION_FR = 'Shama International SAS est un grossiste alimentaire en France pour les professionnels : riz, \u00e9pices, surgel\u00e9s, th\u00e9 et \u00e9picerie.';
+const HEADING = 'Shama International SAS – South Asian food wholesaler in France';
+const COPY = 'Shama International SAS supplies retailers, wholesalers and foodservice businesses in France with South Asian groceries. Explore our rice, spices, frozen food, tea and pantry ranges, then request availability, case quantities and delivery options.';
 const BROWSE = 'Browse rice, spices, frozen food, tea and grocery ranges for your shop or foodservice business.';
 const PAIRS = [
-  [HEADING, 'Grossiste en produits alimentaires d\u2019Asie du Sud en France'],
-  [COPY, 'Shama International fournit les \u00e9piceries et les professionnels de la restauration en France en produits alimentaires d\u2019Asie du Sud. D\u00e9couvrez nos gammes de riz, d\u2019\u00e9pices, de produits surgel\u00e9s, de th\u00e9s et d\u2019\u00e9picerie, puis demandez les disponibilit\u00e9s, les conditionnements et les options de livraison.'],
+  [HEADING, 'Shama International SAS – Grossiste alimentaire d\u2019Asie du Sud en France'],
+  [COPY, 'Shama International SAS fournit les \u00e9piceries, grossistes et professionnels de la restauration en France en produits alimentaires d\u2019Asie du Sud. D\u00e9couvrez nos gammes de riz, d\u2019\u00e9pices, de produits surgel\u00e9s, de th\u00e9s et d\u2019\u00e9picerie, puis demandez les disponibilit\u00e9s, les conditionnements et les options de livraison.'],
   ['Explore the catalogue', 'D\u00e9couvrir le catalogue'],
   ['Request a wholesale quote', 'Demander un devis professionnel'],
   [BROWSE, 'Parcourez nos gammes de riz, d\u2019\u00e9pices, de surgel\u00e9s, de th\u00e9s et d\u2019\u00e9picerie pour votre commerce ou votre restaurant.'],
@@ -37,8 +37,8 @@ function build(directory) {
   html = stripBlock(stripBlock(html, 'HOME SEO'), 'HOME INTRO');
   assert.equal((html.match(/<h1\b/gi) || []).length, 0, 'Homepage now has an H1; review intro placement');
   const schema = {'@context':'https://schema.org','@graph':[
-    {'@type':'Organization','@id':ORIGIN+'/#organization',name:'Shama International',legalName:'Shama International S.A.S.',url:ORIGIN+'/',logo:ORIGIN+'/assets/shama-logo.png',telephone:'+33143420579',email:'info@shamafr.com',address:{'@type':'PostalAddress',streetAddress:'3, all\u00e9e de l\u2019Esp\u00e9rance',postalCode:'93110',addressLocality:'Rosny-sous-Bois',addressCountry:'FR'},areaServed:{'@type':'Country',name:'France'}},
-    {'@type':'WebSite','@id':ORIGIN+'/#website',url:ORIGIN+'/',name:'Shama International',publisher:{'@id':ORIGIN+'/#organization'},inLanguage:['en','fr']},
+    {'@type':'Organization','@id':ORIGIN+'/#organization',name:'Shama International SAS',legalName:'Shama International S.A.S.',alternateName:['Shama International','Shama France'],url:ORIGIN+'/',logo:ORIGIN+'/assets/shama-logo.png',telephone:'+33143420579',email:'info@shamafr.com',address:{'@type':'PostalAddress',streetAddress:'3, all\u00e9e de l\u2019Esp\u00e9rance',postalCode:'93110',addressLocality:'Rosny-sous-Bois',addressCountry:'FR'},areaServed:{'@type':'Country',name:'France'}},
+    {'@type':'WebSite','@id':ORIGIN+'/#website',url:ORIGIN+'/',name:'Shama International SAS',publisher:{'@id':ORIGIN+'/#organization'},inLanguage:['en','fr']},
     {'@type':'WebPage','@id':ORIGIN+'/#webpage',url:ORIGIN+'/',name:TITLE,description:DESCRIPTION,inLanguage:'en',isPartOf:{'@id':ORIGIN+'/#website'},about:{'@id':ORIGIN+'/#organization'}}
   ]};
   const head = `<!-- SHAMA HOME SEO START -->
@@ -47,7 +47,7 @@ function build(directory) {
 <link rel="canonical" href="${ORIGIN}/">
 <link rel="preconnect" href="https://res.cloudinary.com">
 <meta property="og:type" content="website">
-<meta property="og:site_name" content="Shama International">
+<meta property="og:site_name" content="Shama International SAS">
 <meta property="og:title" content="${escape(TITLE)}">
 <meta property="og:description" content="${escape(DESCRIPTION)}">
 <meta property="og:url" content="${ORIGIN}/">
@@ -69,8 +69,8 @@ function build(directory) {
   });
   const intro = `<!-- SHAMA HOME INTRO START -->
 <section id="shama-seo-intro" aria-labelledby="shama-home-h1"><div class="wrap">
-<span class="eyebrow">Shama International</span><h1 id="shama-home-h1">${escape(HEADING)}</h1>
-<p>${escape(COPY)}</p><nav class="seo-links" aria-label="Wholesale catalogue and enquiries"><a href="catalogue.html">Explore the catalogue</a><a href="contact.html">Request a wholesale quote</a></nav>
+<span class="eyebrow">Shama International SAS</span><h1 id="shama-home-h1">${escape(HEADING)}</h1>
+<p>${escape(COPY)}</p><nav class="seo-links" aria-label="Wholesale catalogue and enquiries"><a href="about.html">Shama International SAS</a><a href="catalogue.html">Explore the catalogue</a><a href="contact.html">Request a wholesale quote</a></nav>
 </div></section>
 <!-- SHAMA HOME INTRO END -->\n`;
   const anchor = /<section\b[^>]*class=['"][^'"]*\bcategory-reels\b[^'"]*['"][^>]*>/i;
