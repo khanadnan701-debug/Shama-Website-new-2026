@@ -8,7 +8,7 @@
       key:'pantry',
       label:'Pantry Essentials',
       short:'Pantry',
-      note:'Shakkar, jaggery, tamarind, fried onions, roasted chana, vermicelli and everyday pantry products.'
+      note:'Shakkar, jaggery, tamarind, fried onions, roasted chana, vermicelli, soya chunks, sabudana, dry plum, anardana and everyday pantry products.'
     },
     {
       key:'mango-pulp',
@@ -211,7 +211,7 @@
 
     const heroCopy = document.querySelector('.page-hero p');
     if (heroCopy) {
-      heroCopy.textContent = 'Browse papad, pantry essentials, salts, food colours, juices, floral waters, baking products and fresheners by category.';
+      heroCopy.textContent = 'Browse papad, pantry essentials, speciality products, salts, food colours, juices, floral waters, baking products and fresheners by category.';
     }
 
     return true;
