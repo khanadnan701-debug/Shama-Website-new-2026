@@ -230,8 +230,6 @@
     {"category":"spices","group":"Spice Powders","title":"TRS Haldi (Turmeric Powder)","pack":"1kg","image":"https://res.cloudinary.com/wy4nkkqq/image/upload/v1791299935/TRS_Haldi_Tuemeric_Powder_1kg.png"},
     {"category":"spices","group":"Whole Spices & Seeds","title":"Heera Bay Leaves","pack":"1kg","image":"https://res.cloudinary.com/wy4nkkqq/image/upload/v1791299937/Heera_Bay_Leaves_1kg.png"},
     {"category":"spices","group":"Whole Spices & Seeds","title":"Shama Jaifal (Nutmeg)","pack":"100g","image":"https://res.cloudinary.com/wy4nkkqq/image/upload/v1791300168/Shama_Jaifal_Nutmegs_100g.png"},
-    {"category":"spices","group":"Spice Powders","title":"Shama Anardana Powder (Pomegranate Powder)","pack":"100g","image":"https://res.cloudinary.com/wy4nkkqq/image/upload/v1791301166/SHAMA_Anardana_pomgranate_powder_100g.png"},
-    {"category":"spices","group":"Whole Spices & Seeds","title":"Shama Anardana Seeds (Pomegranate Seeds)","pack":"100g","image":"https://res.cloudinary.com/wy4nkkqq/image/upload/v1791301371/SHAMA_Anardana_seeds_pomgranate_100g.png"}
   ];
 
   const shamaFirst = item => /^Shama\b/i.test(String(item?.title || '')) ? 0 : 1;
@@ -248,8 +246,8 @@
 
   window.shamaSpicesCatalogue = {
     cloudinaryTotal:49,
-    websiteTotal:45,
-    excludedFromWebsite:4,
+    websiteTotal:43,
+    excludedFromWebsite:6,
     total:spiceProducts20260910.length,
     sourceFolder:'shama/Spices',
     syncedAt:'2026-10-07'
