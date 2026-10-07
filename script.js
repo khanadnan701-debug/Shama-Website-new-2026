@@ -1192,7 +1192,7 @@ productData.push(...supplementalData);
       pack: '3223C - 100g x 20\n3445C - 400g x 10\n3636C - 1kg x 6',
       image: 'https://res.cloudinary.com/wy4nkkqq/image/upload/v1789051968/tandoori_masala.png'
     },
-    {"category":"spices","group":"Masalas & Curry Blends","title":"Shama Panch Puran","pack":"100g","image":"https://res.cloudinary.com/wy4nkkqq/image/upload/v1791297883/Shama_Panch_Puran_100gm.png"},
+    {"category":"spices","group":"Masalas & Curry Blends","title":"Shama Panch Puran","pack":"1kg / 100g","image":"https://res.cloudinary.com/wy4nkkqq/image/upload/v1791297883/Shama_Panch_Puran_100gm.png"},
     {"category":"spices","group":"Whole Spices & Seeds","title":"Schani Bay Leaves","pack":"1kg","image":"https://res.cloudinary.com/wy4nkkqq/image/upload/v1791297891/Schani_Bay_Leaves_1kg.png"},
     {"category":"spices","group":"Whole Spices & Seeds","title":"Shama Tukmaria (Basil Seeds)","pack":"100g","image":"https://res.cloudinary.com/wy4nkkqq/image/upload/v1791297910/Shama_Tukmaria_100g.png"},
     {"category":"spices","group":"Pantry & Specialty","title":"Shama Soya Chunks","pack":"500g","image":"https://res.cloudinary.com/wy4nkkqq/image/upload/v1791297922/Shama_Soya_Chunks_500g.png"},
