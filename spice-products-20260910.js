@@ -11,13 +11,6 @@
     {
       category: 'spices',
       group: 'Whole Spices & Seeds',
-      title: 'Shama Bay Leaves',
-      pack: '50g x 20\n200g x 10',
-      image: 'https://res.cloudinary.com/wy4nkkqq/image/upload/v1789051971/bay_leaves.png'
-    },
-    {
-      category: 'spices',
-      group: 'Whole Spices & Seeds',
       title: 'Shama Black Cardamom',
       pack: '50g x 20\n200g x 10\n750g x 6',
       image: 'https://res.cloudinary.com/wy4nkkqq/image/upload/v1789051969/black_cardemom.png'
@@ -27,7 +20,7 @@
       group: 'Whole Spices & Seeds',
       title: 'Shama Black Mustard Seed',
       pack: '100g x 20\n400g x 10\n1kg x 6',
-      image: 'https://res.cloudinary.com/wy4nkkqq/image/upload/v1789051970/black_mustard_seed.png'
+      image: 'https://res.cloudinary.com/wy4nkkqq/image/upload/v1791375964/Shama_black_mustard_seed_100g_x_20_400g_x_10_1kg_x_6.png'
     },
     {
       category: 'spices',
@@ -69,7 +62,7 @@
       group: 'Whole Spices & Seeds',
       title: 'Shama Dalchini Whole (Cinnamon Sticks)',
       pack: '3360C - 50g x 20\n3582C - 200g x 10\n3766C - 400g x 6\n2486A - 1.5kg x 1',
-      image: 'https://res.cloudinary.com/wy4nkkqq/image/upload/v1789051975/cinnemon_sticks.png'
+      image: 'https://res.cloudinary.com/wy4nkkqq/image/upload/v1791376730/Shama_dalchini_whole_Cinnamon_sticks_3360C_-_50g_x_20_3582C_-_200g_x_10_3766C_-_400g_x_6_2486A_-_1.5kg_x_1.png'
     },
     {
       category: 'spices',
@@ -94,17 +87,17 @@
     },
     {
       category: 'spices',
-      group: 'Whole Spices & Seeds',
-      title: 'Shama Fennel Seeds',
+      group: 'Spice Powders',
+      title: 'Shama Fennel Powder',
       pack: '100g x 20\n400g x 10\n1kg x 6',
-      image: 'https://res.cloudinary.com/wy4nkkqq/image/upload/v1789051977/fennel.png'
+      image: 'https://res.cloudinary.com/wy4nkkqq/image/upload/v1791377004/Shama_saunf_Fennel_powder_100g_x_20_400g_x_10_1kg_x_6.png'
     },
     {
       category: 'spices',
       group: 'Masalas & Curry Blends',
-      title: 'Shama Garam Masala',
+      title: 'Shama Garam Masala Powder',
       pack: '100g x 20\n400g x 10\n1kg x 6',
-      image: 'https://res.cloudinary.com/wy4nkkqq/image/upload/v1789051970/garam_masala.png'
+      image: 'https://res.cloudinary.com/wy4nkkqq/image/upload/v1791377333/Shama_garam_masala_powder_100g_x_20_400g_x_10_1kg_x_6.png'
     },
     {
       category: 'spices',
@@ -167,7 +160,7 @@
       group: 'Whole Spices & Seeds',
       title: 'Shama Ajwain (Lovage Seeds)',
       pack: '2806C - 100g x 20\n2882A - 300g x 10\n2875A - 1kg x 6',
-      image: 'https://res.cloudinary.com/wy4nkkqq/image/upload/v1789051982/lovage_seed.png'
+      image: 'https://res.cloudinary.com/wy4nkkqq/image/upload/v1791375665/Shama_ajwain_2806C_-_100g_x_20_2882A_-_300g_x_10_2875A_-_1kg_x_6.png'
     },
     {
       category: 'spices',
@@ -218,6 +211,9 @@
       pack: '3223C - 100g x 20\n3445C - 400g x 10\n3636C - 1kg x 6',
       image: 'https://res.cloudinary.com/wy4nkkqq/image/upload/v1789051968/tandoori_masala.png'
     },
+    {"category":"spices","group":"Whole Spices & Seeds","title":"Shama Brown Mustard Seed","pack":"400g","image":"https://res.cloudinary.com/wy4nkkqq/image/upload/v1791376200/Shama_Brown_Mustard_Seed_400g.png"},
+    {"category":"spices","group":"Whole Spices & Seeds","title":"Shama Chilli Whole Red","pack":"Contact us for available pack sizes","image":"https://res.cloudinary.com/wy4nkkqq/image/upload/v1791376512/Shama_chilli_whole_red.png"},
+    {"category":"spices","group":"Whole Spices & Seeds","title":"Schani Bay Leaves","pack":"50g / 200g / 1kg","image":"https://res.cloudinary.com/wy4nkkqq/image/upload/v1791375339/Schani_Bay_Leaves_50g_200g_1kg.png"},
     {"category":"spices","group":"Masalas & Curry Blends","title":"Shama Panch Puran","pack":"1kg / 100g","image":"https://res.cloudinary.com/wy4nkkqq/image/upload/v1791297883/Shama_Panch_Puran_100gm.png"},
     {"category":"spices","group":"Whole Spices & Seeds","title":"Schani Bay Leaves","pack":"1kg","image":"https://res.cloudinary.com/wy4nkkqq/image/upload/v1791297891/Schani_Bay_Leaves_1kg.png"},
     {"category":"spices","group":"Whole Spices & Seeds","title":"Heera Dhania Whole (Coriander Seeds)","pack":"700g","image":"https://res.cloudinary.com/wy4nkkqq/image/upload/v1791298759/Heera_Dhania_Whole_700g.png"},
@@ -240,13 +236,13 @@
   }
   if (typeof categories !== 'undefined' && Array.isArray(categories)) {
     const category = categories.find(item => item.slug === 'spices');
-    if (category) category.image = 'https://res.cloudinary.com/wy4nkkqq/image/upload/v1791301371/SHAMA_Anardana_seeds_pomgranate_100g.png';
+    if (category) category.image = 'https://res.cloudinary.com/wy4nkkqq/image/upload/v1791377333/Shama_garam_masala_powder_100g_x_20_400g_x_10_1kg_x_6.png';
   }
 
   window.shamaSpicesCatalogue = {
-    cloudinaryTotal:48,
-    websiteTotal:42,
-    excludedFromWebsite:6,
+    cloudinaryTotal:44,
+    websiteTotal:44,
+    excludedFromWebsite:0,
     total:spiceProducts20260910.length,
     sourceFolder:'shama/Spices',
     syncedAt:'2026-10-07'
