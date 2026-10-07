@@ -1007,7 +1007,7 @@ productData.push(...supplementalData);
       category: 'spices',
       group: 'Whole Spices & Seeds',
       title: 'Shama Black Pepper Whole',
-      pack: '50g x 20\n200g x 10\n750g x 6\n1kg',
+      pack: '50g x 20\n100g\n200g x 10\n750g x 6\n1kg',
       image: 'https://res.cloudinary.com/wy4nkkqq/image/upload/v1789051972/black_ppr_whole.png'
     },
     {
