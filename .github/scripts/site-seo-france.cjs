@@ -10,28 +10,28 @@ const LASTMOD = '2026-10-07';
 const pages = {
   'catalogue.html': {
     slug:'catalogue',
-    title:'Catalogue grossiste alimentaire en France | Shama International',
+    title:'Catalogue grossiste alimentaire en France | Shama International SAS',
     h1:'Catalogue grossiste alimentaire en France',
     desc:'Découvrez le catalogue Shama International pour professionnels en France : riz, épices, surgelés, thé, boissons, huiles et produits d\'épicerie.',
-    intro:'Shama International accompagne les épiceries, supermarchés, grossistes et professionnels de la restauration avec un catalogue de produits alimentaires d\'Asie du Sud. Parcourez nos gammes et contactez notre équipe pour les conditionnements, disponibilités et solutions de livraison.'
+    intro:'Shama International SAS accompagne les épiceries, supermarchés, grossistes et professionnels de la restauration avec un catalogue de produits alimentaires d\'Asie du Sud. Parcourez nos gammes et contactez notre équipe pour les conditionnements, disponibilités et solutions de livraison.'
   },
   'rice.html': {
     slug:'rice',
-    title:'Grossiste riz basmati en France | Shama International',
+    title:'Grossiste riz basmati en France | Shama International SAS',
     h1:'Grossiste riz basmati et riz asiatique en France',
     desc:'Riz basmati, sella, extra long, jasmin et autres références en gros pour épiceries, restaurants et revendeurs en France.',
-    intro:'Découvrez notre gamme de riz pour professionnels : basmati, sella, extra long, jasmin et autres références adaptées aux épiceries, restaurants et revendeurs. Shama International fournit les professionnels en France avec plusieurs formats et un accompagnement sur les disponibilités.'
+    intro:'Découvrez notre gamme de riz pour professionnels : basmati, sella, extra long, jasmin et autres références adaptées aux épiceries, restaurants et revendeurs. Shama International SAS fournit les professionnels en France avec plusieurs formats et un accompagnement sur les disponibilités.'
   },
   'spices.html': {
     slug:'spices',
-    title:'Grossiste épices en France | Shama International',
+    title:'Grossiste épices en France | Shama International SAS',
     h1:'Grossiste épices et masalas en France',
     desc:'Épices entières, poudres, graines et masalas en gros pour professionnels en France. Découvrez la gamme Shama International.',
-    intro:'Retrouvez nos épices entières, poudres, graines et mélanges masala destinés aux professionnels. Shama International accompagne les épiceries, restaurateurs et revendeurs en France avec une large sélection de références et de conditionnements.'
+    intro:'Retrouvez nos épices entières, poudres, graines et mélanges masala destinés aux professionnels. Shama International SAS accompagne les épiceries, restaurateurs et revendeurs en France avec une large sélection de références et de conditionnements.'
   },
   'frozen.html': {
     slug:'frozen',
-    title:'Grossiste produits surgelés asiatiques | Shama France',
+    title:'Grossiste produits surgelés asiatiques | Shama International SAS',
     h1:'Grossiste produits surgelés asiatiques en France',
     desc:'Samosas, rolls, parathas et spécialités surgelées en gros pour restaurants, commerces et distributeurs en France.',
     intro:'Notre gamme surgelée réunit des spécialités adaptées aux besoins des restaurants, commerces et distributeurs. Consultez les références Shama disponibles et contactez notre équipe pour les cartons, quantités minimales et possibilités de livraison en France.'
@@ -41,18 +41,18 @@ const pages = {
     title:'Grossiste farines & lentilles en France | Shama',
     h1:'Grossiste farines, lentilles et légumes secs en France',
     desc:'Farines, lentilles, dals, pois chiches et légumes secs en gros pour professionnels en France.',
-    intro:'Shama International propose une sélection de farines, lentilles, dals, pois chiches et légumes secs pour les professionnels. Nos références sont pensées pour les épiceries, restaurants, grossistes et revendeurs qui recherchent un approvisionnement fiable en France.'
+    intro:'Shama International SAS propose une sélection de farines, lentilles, dals, pois chiches et légumes secs pour les professionnels. Nos références sont pensées pour les épiceries, restaurants, grossistes et revendeurs qui recherchent un approvisionnement fiable en France.'
   },
   'beverages.html': {
     slug:'beverages',
     title:'Grossiste boissons asiatiques en France | Shama',
     h1:'Grossiste boissons asiatiques en France',
     desc:'Boissons asiatiques et spécialités rafraîchissantes en gros pour épiceries, restaurants et revendeurs en France.',
-    intro:'Découvrez les boissons et spécialités rafraîchissantes de notre catalogue professionnel. Shama International fournit les commerces et professionnels de la restauration en France avec des références adaptées à la revente et au foodservice.'
+    intro:'Découvrez les boissons et spécialités rafraîchissantes de notre catalogue professionnel. Shama International SAS fournit les commerces et professionnels de la restauration en France avec des références adaptées à la revente et au foodservice.'
   },
   'tea.html': {
     slug:'tea',
-    title:'Grossiste thé en France | Shama International',
+    title:'Grossiste thé en France | Shama International SAS',
     h1:'Grossiste thé noir, thé vert et thé rose en France',
     desc:'Thé noir, thé vert, thé rose et sachets de thé en gros pour commerces et professionnels en France.',
     intro:'Notre gamme de thés couvre plusieurs références destinées aux commerces, restaurants et revendeurs. Retrouvez notamment des thés noirs, verts et roses ainsi que différents conditionnements pour les besoins professionnels en France.'
@@ -62,49 +62,49 @@ const pages = {
     title:'Grossiste huiles alimentaires en France | Shama',
     h1:'Grossiste huiles alimentaires en France',
     desc:'Huiles alimentaires en gros pour épiceries, restaurants, revendeurs et professionnels en France.',
-    intro:'Shama International propose des huiles alimentaires destinées aux professionnels de l\'épicerie et de la restauration. Consultez les formats disponibles et contactez notre équipe pour les besoins de gros et la livraison en France.'
+    intro:'Shama International SAS propose des huiles alimentaires destinées aux professionnels de l\'épicerie et de la restauration. Consultez les formats disponibles et contactez notre équipe pour les besoins de gros et la livraison en France.'
   },
   'dry-fruits.html': {
     slug:'dry-fruits',
-    title:'Grossiste fruits secs en France | Shama International',
+    title:'Grossiste fruits secs en France | Shama International SAS',
     h1:'Grossiste fruits secs et noix en France',
     desc:'Amandes, noix et fruits secs en gros pour épiceries, restaurants et revendeurs en France.',
-    intro:'Découvrez notre sélection de fruits secs, noix et références associées pour la vente au détail et la restauration. Shama International accompagne les professionnels avec différents formats et un service de distribution en France.'
+    intro:'Découvrez notre sélection de fruits secs, noix et références associées pour la vente au détail et la restauration. Shama International SAS accompagne les professionnels avec différents formats et un service de distribution en France.'
   },
   'sauces-pastes.html': {
     slug:'sauces-pastes',
-    title:'Grossiste sauces & pâtes asiatiques | Shama France',
+    title:'Grossiste sauces & pâtes asiatiques | Shama International SAS',
     h1:'Grossiste sauces, pickles et pâtes asiatiques en France',
     desc:'Sauces, pickles, chutneys et pâtes culinaires en gros pour commerces et professionnels en France.',
     intro:'Notre gamme de sauces, pickles et pâtes culinaires aide les professionnels à compléter leur offre d\'épicerie asiatique. Consultez les références disponibles pour la revente, la restauration et l\'approvisionnement professionnel en France.'
   },
   'miscellaneous.html': {
     slug:'miscellaneous',
-    title:'Épicerie asiatique en gros en France | Shama International',
+    title:'Épicerie asiatique en gros en France | Shama International SAS',
     h1:'Produits d\'épicerie asiatique en gros en France',
     desc:'Produits d\'épicerie, spécialités, papads, graines et références diverses en gros pour professionnels en France.',
-    intro:'Cette gamme rassemble des produits d\'épicerie et spécialités complémentaires pour les commerces et professionnels. Shama International propose de nombreuses références destinées à la revente et au foodservice en France.'
+    intro:'Cette gamme rassemble des produits d\'épicerie et spécialités complémentaires pour les commerces et professionnels. Shama International SAS propose de nombreuses références destinées à la revente et au foodservice en France.'
   },
   'sugar.html': {
     slug:'sugar',
-    title:'Grossiste sucre en France | Shama International',
+    title:'Grossiste sucre en France | Shama International SAS',
     h1:'Grossiste sucre et produits sucrants en France',
     desc:'Sucre et références sucrantes en gros pour commerces, restauration et revendeurs professionnels en France.',
     intro:'Retrouvez nos références de sucre et produits sucrants pour les besoins professionnels. Nous accompagnons les épiceries, restaurants et revendeurs avec des conditionnements adaptés à la vente en gros en France.'
   },
   'dates.html': {
     slug:'dates',
-    title:'Grossiste dattes en France | Shama International',
+    title:'Grossiste dattes en France | Shama International SAS',
     h1:'Grossiste dattes en France',
     desc:'Dattes en gros pour épiceries, commerces alimentaires, restaurants et revendeurs professionnels en France.',
-    intro:'Shama International propose des dattes pour les professionnels de l\'épicerie et de la restauration. Consultez notre sélection et contactez notre équipe pour connaître les références, formats et disponibilités en France.'
+    intro:'Shama International SAS propose des dattes pour les professionnels de l\'épicerie et de la restauration. Consultez notre sélection et contactez notre équipe pour connaître les références, formats et disponibilités en France.'
   },
   'bakery.html': {
     slug:'bakery',
-    title:'Grossiste biscuits & boulangerie asiatique | Shama France',
+    title:'Grossiste biscuits & boulangerie asiatique | Shama International SAS',
     h1:'Grossiste biscuits et produits de boulangerie asiatique',
     desc:'Biscuits, rusks et produits de boulangerie en gros pour épiceries et professionnels en France.',
-    intro:'Notre gamme boulangerie et biscuits comprend des références adaptées aux épiceries et revendeurs. Shama International accompagne les professionnels en France sur les formats, disponibilités et approvisionnements.'
+    intro:'Notre gamme boulangerie et biscuits comprend des références adaptées aux épiceries et revendeurs. Shama International SAS accompagne les professionnels en France sur les formats, disponibilités et approvisionnements.'
   },
   'preserves.html': {
     slug:'preserves',
@@ -115,31 +115,31 @@ const pages = {
   },
   'savoury-snacks.html': {
     slug:'savoury-snacks',
-    title:'Grossiste snacks salés asiatiques | Shama France',
+    title:'Grossiste snacks salés asiatiques | Shama International SAS',
     h1:'Grossiste snacks salés asiatiques en France',
     desc:'Snacks salés et spécialités asiatiques en gros pour épiceries, commerces et revendeurs en France.',
-    intro:'Shama International propose des snacks salés et spécialités pour les commerces et revendeurs. Consultez notre sélection professionnelle et les conditionnements disponibles pour l\'approvisionnement en France.'
+    intro:'Shama International SAS propose des snacks salés et spécialités pour les commerces et revendeurs. Consultez notre sélection professionnelle et les conditionnements disponibles pour l\'approvisionnement en France.'
   },
   'sea-food.html': {
     slug:'sea-food',
     title:'Grossiste produits de la mer en France | Shama',
     h1:'Grossiste produits de la mer en France',
     desc:'Produits de la mer en gros pour restaurants, commerces alimentaires et professionnels en France.',
-    intro:'Notre sélection de produits de la mer s\'adresse aux restaurants, commerces et professionnels. Contactez Shama International pour connaître les références, conditionnements et disponibilités pour la France.'
+    intro:'Notre sélection de produits de la mer s\'adresse aux restaurants, commerces et professionnels. Contactez Shama International SAS pour connaître les références, conditionnements et disponibilités pour la France.'
   },
   'agarbatti.html': {
     slug:'agarbatti',
     title:'Grossiste encens Agarbatti en France | Shama',
     h1:'Grossiste encens Agarbatti en France',
     desc:'Encens Agarbatti et références non alimentaires en gros pour commerces et revendeurs en France.',
-    intro:'Shama International propose également une sélection d\'encens Agarbatti pour les commerces et revendeurs. Consultez les références disponibles et contactez notre équipe pour les conditions de vente en gros en France.'
+    intro:'Shama International SAS propose également une sélection d\'encens Agarbatti pour les commerces et revendeurs. Consultez les références disponibles et contactez notre équipe pour les conditions de vente en gros en France.'
   },
   'cosmetics.html': {
     slug:'cosmetics',
     title:'Grossiste cosmétiques asiatiques en France | Shama',
     h1:'Grossiste cosmétiques asiatiques en France',
     desc:'Cosmétiques et produits de soin en gros pour commerces spécialisés et revendeurs en France.',
-    intro:'Découvrez notre sélection de cosmétiques et produits de soin destinée aux commerces spécialisés et revendeurs. Shama International accompagne les professionnels sur les références et conditionnements disponibles en France.'
+    intro:'Découvrez notre sélection de cosmétiques et produits de soin destinée aux commerces spécialisés et revendeurs. Shama International SAS accompagne les professionnels sur les références et conditionnements disponibles en France.'
   },
   'non-foods.html': {
     slug:'non-foods',
@@ -150,7 +150,7 @@ const pages = {
   },
   'divers.html': {
     slug:'divers',
-    title:'Produits alimentaires divers en gros | Shama France',
+    title:'Produits alimentaires divers en gros | Shama International SAS',
     h1:'Produits alimentaires divers en gros en France',
     desc:'Sélection de produits alimentaires et spécialités diverses en gros pour professionnels en France.',
     intro:'Cette sélection regroupe des références alimentaires complémentaires pour les épiceries, restaurants et revendeurs. Shama International vous accompagne pour les disponibilités et besoins d\'approvisionnement en France.'
@@ -164,33 +164,33 @@ const pages = {
   },
   'pataks.html': {
     slug:'pataks',
-    title:'Grossiste Patak\'s en France | Shama International',
+    title:'Grossiste Patak\'s en France | Shama International SAS',
     h1:'Produits Patak\'s en gros en France',
     desc:'Sauces, pâtes et spécialités Patak\'s en gros pour épiceries, restaurants et revendeurs en France.',
-    intro:'Shama International distribue une sélection de produits Patak\'s destinée aux professionnels. Consultez les références disponibles pour les épiceries, restaurants et revendeurs en France.'
+    intro:'Shama International SAS distribue une sélection de produits Patak\'s destinée aux professionnels. Consultez les références disponibles pour les épiceries, restaurants et revendeurs en France.'
   },
   'wines.html': {
     slug:'wines',
-    title:'Grossiste vins en France | Shama International',
+    title:'Grossiste vins en France | Shama International SAS',
     h1:'Sélection de vins en gros en France',
-    desc:'Sélection de vins en gros pour commerces et professionnels. Contactez Shama International pour les références disponibles.',
-    intro:'Consultez notre sélection de vins destinée aux professionnels et contactez notre équipe pour les références, conditionnements et disponibilités. Shama International accompagne ses clients professionnels en France.'
+    desc:'Sélection de vins en gros pour commerces et professionnels. Contactez Shama International SAS pour les références disponibles.',
+    intro:'Consultez notre sélection de vins destinée aux professionnels et contactez notre équipe pour les références, conditionnements et disponibilités. Shama International SAS accompagne ses clients professionnels en France.'
   },
   'about.html': {
     slug:'about',
     type:'AboutPage',
-    title:'Shama International France | Importateur & grossiste alimentaire',
-    h1:'Shama International, grossiste alimentaire en France',
-    desc:'Découvrez Shama International, importateur et grossiste de produits alimentaires d\'Asie du Sud pour les professionnels en France.',
-    intro:'Depuis 2003, Shama International développe une offre destinée aux professionnels de l\'alimentation en France. Notre objectif est de proposer des produits authentiques, un catalogue varié et un service fiable aux épiceries, restaurants, revendeurs et partenaires.'
+    title:'Shama International SAS France | Importateur & grossiste alimentaire',
+    h1:'Shama International SAS, grossiste alimentaire en France',
+    desc:'Découvrez Shama International SAS, importateur et grossiste de produits alimentaires d\'Asie du Sud pour les professionnels en France.',
+    intro:'Depuis 2003, Shama International SAS développe une offre destinée aux professionnels de l\'alimentation en France. Notre objectif est de proposer des produits authentiques, un catalogue varié et un service fiable aux épiceries, restaurants, revendeurs et partenaires.'
   },
   'contact.html': {
     slug:'contact',
     type:'ContactPage',
-    title:'Contact grossiste alimentaire France | Shama International',
-    h1:'Contactez Shama International en France',
-    desc:'Contactez Shama International pour vos demandes de gros, disponibilité produits, conditionnements et livraison en France.',
-    intro:'Vous recherchez un fournisseur pour votre commerce, restaurant ou activité de distribution ? Contactez Shama International pour vos demandes de prix, quantités, formats, disponibilité et livraison en France.'
+    title:'Contact grossiste alimentaire France | Shama International SAS',
+    h1:'Contactez Shama International SAS en France',
+    desc:'Contactez Shama International SAS pour vos demandes de gros, disponibilité produits, conditionnements et livraison en France.',
+    intro:'Vous recherchez un fournisseur pour votre commerce, restaurant ou activité de distribution ? Contactez Shama International SAS pour vos demandes de prix, quantités, formats, disponibilité et livraison en France.'
   }
 };
 
@@ -229,7 +229,7 @@ function headBlock(cfg){
 <meta name="robots" content="index,follow,max-image-preview:large">
 <link rel="canonical" href="${url}">
 <meta property="og:type" content="website">
-<meta property="og:site_name" content="Shama International">
+<meta property="og:site_name" content="Shama International SAS">
 <meta property="og:title" content="${esc(cfg.title)}">
 <meta property="og:description" content="${esc(cfg.desc)}">
 <meta property="og:url" content="${url}">
@@ -243,7 +243,7 @@ function headBlock(cfg){
 }
 function introBlock(cfg){
   return `<!-- SHAMA FR INTRO START -->
-<section class="shama-seo-intro" lang="fr" aria-labelledby="shama-seo-h1-${cfg.slug}"><div class="wrap"><span class="seo-kicker">Shama International · France</span><h1 id="shama-seo-h1-${cfg.slug}">${esc(cfg.h1)}</h1><p>${esc(cfg.intro)}</p><nav aria-label="Liens utiles"><a href="/catalogue">Voir le catalogue</a><a href="/contact">Demander un devis professionnel</a><a href="/">Accueil</a></nav></div></section>
+<section class="shama-seo-intro" lang="fr" aria-labelledby="shama-seo-h1-${cfg.slug}"><div class="wrap"><span class="seo-kicker">Shama International SAS · France</span><h1 id="shama-seo-h1-${cfg.slug}">${esc(cfg.h1)}</h1><p>${esc(cfg.intro)}</p><nav aria-label="Liens utiles"><a href="/about">Shama International SAS</a><a href="/catalogue">Voir le catalogue</a><a href="/contact">Demander un devis professionnel</a><a href="/">Accueil</a></nav></div></section>
 <!-- SHAMA FR INTRO END -->`;
 }
 
