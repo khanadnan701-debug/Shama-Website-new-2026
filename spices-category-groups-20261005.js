@@ -1,11 +1,12 @@
 (() => {
   'use strict';
   if (document.body.dataset.category !== 'spices') return;
-  const ORDER=['Whole Spices & Seeds','Spice Powders','Masalas & Curry Blends'];
+  const ORDER=['Whole Spices & Seeds','Spice Powders','Masalas & Curry Blends','Pantry & Specialty'];
   const slug=s=>s.toLowerCase().replace(/&/g,'and').replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'');
   const classify=title=>{
     const t=String(title||'').toLowerCase();
-    if(/garam masala|madras curry|tandoori masala|national biryani/.test(t)) return 'Masalas & Curry Blends';
+    if(/soya chunks|sabudana|tapioca|sago seeds|dry plum|alubukhara/.test(t)) return 'Pantry & Specialty';
+    if(/garam masala|madras curry|tandoori masala|national biryani|panch puran/.test(t)) return 'Masalas & Curry Blends';
     if(/powder|crushed/.test(t)) return 'Spice Powders';
     return 'Whole Spices & Seeds';
   };
