@@ -275,7 +275,7 @@ async function withFreshHeaders(response) {
   }
 
   headers.delete('Clear-Site-Data');
-  headers.set('X-Shama-Release', '20261007-tukmaria-spices-to-misc');
+  headers.set('X-Shama-Release', '20261007-blackpepper-whole-add-1kg');
 
   let body = response.body;
 
