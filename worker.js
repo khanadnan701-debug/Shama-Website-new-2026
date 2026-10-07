@@ -275,7 +275,7 @@ async function withFreshHeaders(response) {
   }
 
   headers.delete('Clear-Site-Data');
-  headers.set('X-Shama-Release', '20261007-spices-remove-anardana-2');
+  headers.set('X-Shama-Release', '20261007-misc-cloudinary-sync-56');
 
   let body = response.body;
 
