@@ -5,6 +5,7 @@ const path = require('node:path');
 const assert = require('node:assert/strict');
 
 const GTM_ID = 'GTM-5T87JG9';
+const GA4_ID = 'G-0LHPF61EE7';
 const ORIGIN = 'https://shamaonline.com';
 
 function headBlock(){
@@ -26,6 +27,11 @@ function headBlock(){
     wait_for_update: 500
   });
 })();
+</script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=\${GA4_ID}"></script>
+<script>
+gtag('js', new Date());
+gtag('config', '\${GA4_ID}', {send_page_view:true,allow_google_signals:false,allow_ad_personalization_signals:false});
 (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
 j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
@@ -71,9 +77,21 @@ height="0" width="0" style="display:none;visibility:hidden" title="Google Tag Ma
   }
   document.addEventListener('click',function(e){
     var el=e.target.closest('[data-shama-consent]');
-    if(!el) return;
-    apply(el.getAttribute('data-shama-consent')==='accept'?'granted':'denied');
+    if(el){
+      apply(el.getAttribute('data-shama-consent')==='accept'?'granted':'denied');
+      return;
+    }
+    var link=e.target.closest('a[href]');
+    if(!link || !window.gtag) return;
+    var href=link.getAttribute('href') || '';
+    if(/^tel:/i.test(href)) gtag('event','phone_click',{link_url:href});
+    else if(/^mailto:/i.test(href)) gtag('event','email_click',{link_url:href});
+    else if(/wa\\.me|whatsapp/i.test(href)) gtag('event','whatsapp_click',{link_url:href});
+    else if(/contact/i.test(href)) gtag('event','contact_click',{link_url:href});
   });
+  document.addEventListener('submit',function(e){
+    if(window.gtag) gtag('event','generate_lead',{form_id:e.target && e.target.id ? e.target.id : 'contact_form'});
+  },true);
 })();
 </script>
 <!-- SHAMA GOOGLE TAGS BODY END -->\`;
@@ -107,11 +125,12 @@ function build(rootDir){
     html=html.replace(/<head\b[^>]*>/i,m=>m+'\n'+headBlock());
     html=html.replace(/<body\b[^>]*>/i,m=>m+'\n'+bodyBlock());
     assert(html.includes(GTM_ID),'GTM ID missing in '+file);
+    assert(html.includes(GA4_ID),'GA4 ID missing in '+file);
     assert(html.includes('shama-cookie-consent'),'Consent banner missing in '+file);
     fs.writeFileSync(file,html);
     changed++;
   }
-  console.log('GOOGLE_TAGS_BUILD '+JSON.stringify({gtmId:GTM_ID,htmlFiles:changed,consentMode:true}));
+  console.log('GOOGLE_TAGS_BUILD '+JSON.stringify({gtmId:GTM_ID,ga4Id:GA4_ID,htmlFiles:changed,consentMode:true}));
 }
 
 async function verifyLive(){
@@ -122,9 +141,10 @@ async function verifyLive(){
     const html=await r.text();
     assert(html.includes('googletagmanager.com/gtm.js?id='),url+' missing GTM loader');
     assert(html.includes(GTM_ID),url+' missing GTM ID');
+    assert(html.includes(GA4_ID),url+' missing GA4 measurement ID');
     assert(html.includes('shama-cookie-consent'),url+' missing consent UI');
   }
-  console.log('GOOGLE_TAGS_LIVE_VERIFIED '+JSON.stringify({gtmId:GTM_ID,checked:urls.length}));
+  console.log('GOOGLE_TAGS_LIVE_VERIFIED '+JSON.stringify({gtmId:GTM_ID,ga4Id:GA4_ID,checked:urls.length}));
 }
 
 if(require.main===module){
