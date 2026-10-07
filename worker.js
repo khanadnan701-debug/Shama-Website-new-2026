@@ -275,7 +275,7 @@ async function withFreshHeaders(response) {
   }
 
   headers.delete('Clear-Site-Data');
-  headers.set('X-Shama-Release', '20261007-panchpuran-1kg-100g');
+  headers.set('X-Shama-Release', '20261007-spices-remove-4');
 
   let body = response.body;
 
