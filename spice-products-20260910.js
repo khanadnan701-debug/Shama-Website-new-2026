@@ -220,7 +220,6 @@
     },
     {"category":"spices","group":"Masalas & Curry Blends","title":"Shama Panch Puran","pack":"1kg / 100g","image":"https://res.cloudinary.com/wy4nkkqq/image/upload/v1791297883/Shama_Panch_Puran_100gm.png"},
     {"category":"spices","group":"Whole Spices & Seeds","title":"Schani Bay Leaves","pack":"1kg","image":"https://res.cloudinary.com/wy4nkkqq/image/upload/v1791297891/Schani_Bay_Leaves_1kg.png"},
-    {"category":"spices","group":"Whole Spices & Seeds","title":"Shama Tukmaria (Basil Seeds)","pack":"100g","image":"https://res.cloudinary.com/wy4nkkqq/image/upload/v1791297910/Shama_Tukmaria_100g.png"},
     {"category":"spices","group":"Whole Spices & Seeds","title":"Heera Dhania Whole (Coriander Seeds)","pack":"700g","image":"https://res.cloudinary.com/wy4nkkqq/image/upload/v1791298759/Heera_Dhania_Whole_700g.png"},
     {"category":"spices","group":"Masalas & Curry Blends","title":"TRS Tandoori Masala","pack":"1kg","image":"https://res.cloudinary.com/wy4nkkqq/image/upload/v1791298915/TRS_Tandoori_masala_1_kg.png"},
     {"category":"spices","group":"Whole Spices & Seeds","title":"TRS Green Cardamom","pack":"750g","image":"https://res.cloudinary.com/wy4nkkqq/image/upload/v1791299120/TRS_Green_Cardamom_750g.png"},
@@ -245,8 +244,8 @@
   }
 
   window.shamaSpicesCatalogue = {
-    cloudinaryTotal:49,
-    websiteTotal:43,
+    cloudinaryTotal:48,
+    websiteTotal:42,
     excludedFromWebsite:6,
     total:spiceProducts20260910.length,
     sourceFolder:'shama/Spices',
