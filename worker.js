@@ -275,7 +275,7 @@ async function withFreshHeaders(response) {
   }
 
   headers.delete('Clear-Site-Data');
-  headers.set('X-Shama-Release', '20261007-tea-cloudinary-sync-9');
+  headers.set('X-Shama-Release', '20261007-panchpuran-1kg-100g');
 
   let body = response.body;
 
