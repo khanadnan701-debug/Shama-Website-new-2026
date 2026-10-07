@@ -275,7 +275,7 @@ async function withFreshHeaders(response) {
   }
 
   headers.delete('Clear-Site-Data');
-  headers.set('X-Shama-Release', '20261007-misc-cloudinary-sync-56');
+  headers.set('X-Shama-Release', '20261007-tukmaria-spices-to-misc');
 
   let body = response.body;
 
