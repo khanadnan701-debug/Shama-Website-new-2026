@@ -1194,7 +1194,6 @@ productData.push(...supplementalData);
     },
     {"category":"spices","group":"Masalas & Curry Blends","title":"Shama Panch Puran","pack":"1kg / 100g","image":"https://res.cloudinary.com/wy4nkkqq/image/upload/v1791297883/Shama_Panch_Puran_100gm.png"},
     {"category":"spices","group":"Whole Spices & Seeds","title":"Schani Bay Leaves","pack":"1kg","image":"https://res.cloudinary.com/wy4nkkqq/image/upload/v1791297891/Schani_Bay_Leaves_1kg.png"},
-    {"category":"spices","group":"Whole Spices & Seeds","title":"Shama Tukmaria (Basil Seeds)","pack":"100g","image":"https://res.cloudinary.com/wy4nkkqq/image/upload/v1791297910/Shama_Tukmaria_100g.png"},
     {"category":"spices","group":"Whole Spices & Seeds","title":"Heera Dhania Whole (Coriander Seeds)","pack":"700g","image":"https://res.cloudinary.com/wy4nkkqq/image/upload/v1791298759/Heera_Dhania_Whole_700g.png"},
     {"category":"spices","group":"Masalas & Curry Blends","title":"TRS Tandoori Masala","pack":"1kg","image":"https://res.cloudinary.com/wy4nkkqq/image/upload/v1791298915/TRS_Tandoori_masala_1_kg.png"},
     {"category":"spices","group":"Whole Spices & Seeds","title":"TRS Green Cardamom","pack":"750g","image":"https://res.cloudinary.com/wy4nkkqq/image/upload/v1791299120/TRS_Green_Cardamom_750g.png"},
@@ -1295,6 +1294,7 @@ productData.push(...supplementalData);
     {category:'misc',title:'Shama Anardana Powder (Pomegranate Powder)',pack:'100g',image:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1791301166/SHAMA_Anardana_pomgranate_powder_100g.png'},
     {category:'misc',title:'Shama Anardana Seeds (Pomegranate Seeds)',pack:'100g',image:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1791301371/SHAMA_Anardana_seeds_pomgranate_100g.png'},
 
+    {category:'misc',title:'Shama Tukmaria (Basil Seeds)',pack:'100g',image:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1791297910/Shama_Tukmaria_100g.png'},
     {category:'misc',title:'Shama Madras Plain Papad',pack:'200g',image:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1791292377/Shama_Madras_plain_papad_200g.png'},
     {category:'misc',title:'Shama Pepper Papad',pack:'200g',image:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1791292377/Shama_pepper_papad_200g.png'},
     {category:'misc',title:'Shama Chilli Papad',pack:'200g',image:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1791292377/Shama_chilli_papad_200g.png'},
