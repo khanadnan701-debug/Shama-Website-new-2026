@@ -139,7 +139,7 @@ async function verifyLive(){
     const r=await fetch(url+'?gtm_verify='+Date.now(),{headers:{'Cache-Control':'no-cache'},signal:AbortSignal.timeout(20000)});
     assert(r.ok,url+' HTTP '+r.status);
     const html=await r.text();
-    assert(html.includes('googletagmanager.com/gtm.js?id='),url+' missing GTM loader');
+    assert(html.includes('www.googletagmanager.com/gtm.js'),url+' missing GTM loader');
     assert(html.includes(GTM_ID),url+' missing GTM ID');
     assert(html.includes(GA4_ID),url+' missing GA4 measurement ID');
     assert(html.includes('shama-cookie-consent'),url+' missing consent UI');
