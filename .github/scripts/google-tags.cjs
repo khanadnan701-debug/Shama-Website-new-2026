@@ -9,7 +9,7 @@ const GA4_ID = 'G-0LHPF61EE7';
 const ORIGIN = 'https://shamaonline.com';
 
 function headBlock(){
-  return \`<!-- SHAMA GOOGLE TAGS START -->
+  return `<!-- SHAMA GOOGLE TAGS START -->
 <script>
 (function(){
   window.dataLayer = window.dataLayer || [];
@@ -28,22 +28,22 @@ function headBlock(){
   });
 })();
 </script>
-<script async src="https://www.googletagmanager.com/gtag/js?id=\${GA4_ID}"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=${GA4_ID}"></script>
 <script>
 gtag('js', new Date());
-gtag('config', '\${GA4_ID}', {send_page_view:true,allow_google_signals:false,allow_ad_personalization_signals:false});
+gtag('config', '${GA4_ID}', {send_page_view:true,allow_google_signals:false,allow_ad_personalization_signals:false});
 (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
 j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','\${GTM_ID}');
+})(window,document,'script','dataLayer','${GTM_ID}');
 </script>
-<!-- SHAMA GOOGLE TAGS END -->\`;
+<!-- SHAMA GOOGLE TAGS END -->`;
 }
 
 function bodyBlock(){
-  return \`<!-- SHAMA GOOGLE TAGS BODY START -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=\${GTM_ID}"
+  return `<!-- SHAMA GOOGLE TAGS BODY START -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=${GTM_ID}"
 height="0" width="0" style="display:none;visibility:hidden" title="Google Tag Manager"></iframe></noscript>
 <div id="shama-cookie-consent" hidden style="position:fixed;z-index:2147483000;left:16px;right:16px;bottom:16px;max-width:760px;margin:auto;background:#fff;border:1px solid rgba(20,35,65,.16);border-radius:18px;box-shadow:0 18px 60px rgba(20,35,65,.22);padding:18px 20px;font-family:Arial,sans-serif;color:#17233f">
   <div style="font-weight:800;margin-bottom:6px">Cookies & mesure d'audience</div>
@@ -94,7 +94,7 @@ height="0" width="0" style="display:none;visibility:hidden" title="Google Tag Ma
   },true);
 })();
 </script>
-<!-- SHAMA GOOGLE TAGS BODY END -->\`;
+<!-- SHAMA GOOGLE TAGS BODY END -->`;
 }
 
 function stripManaged(html){
