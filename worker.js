@@ -275,7 +275,7 @@ async function withFreshHeaders(response) {
   }
 
   headers.delete('Clear-Site-Data');
-  headers.set('X-Shama-Release', '20261007-kalonji-add-800g');
+  headers.set('X-Shama-Release', '20261007-staranise-add-500g');
 
   let body = response.body;
 
