@@ -4,26 +4,23 @@ const fs = require('node:fs');
 const path = require('node:path');
 const assert = require('node:assert/strict');
 const vm = require('node:vm');
-
 const ORIGIN = 'https://shamaonline.com';
 const TITLE = 'Shama International | South Asian Food Wholesaler in France';
 const TITLE_FR = 'Shama International | Grossiste alimentaire asiatique en France';
 const DESCRIPTION = 'France-based wholesale supplier of South Asian groceries: rice, spices, frozen food, tea and pantry essentials. Request a quote from Shama International.';
-const DESCRIPTION_FR = 'Grossiste en produits alimentaires d\u2019Asie du Sud en France : riz, epices, surgeles, the et epicerie. Demandez un devis a Shama International.';
+const DESCRIPTION_FR = 'Grossiste en produits alimentaires d\u2019Asie du Sud en France : riz, \u00e9pices, surgel\u00e9s, th\u00e9 et \u00e9picerie. Demandez un devis \u00e0 Shama International.';
 const HEADING = 'South Asian food wholesaler in France';
 const COPY = 'Shama International supplies retailers and foodservice businesses in France with South Asian groceries. Explore our rice, spices, frozen food, tea and pantry ranges, then request availability, case quantities and delivery options.';
 const BROWSE = 'Browse rice, spices, frozen food, tea and grocery ranges for your shop or foodservice business.';
 const PAIRS = [
   [HEADING, 'Grossiste en produits alimentaires d\u2019Asie du Sud en France'],
-  [COPY, 'Shama International fournit les epiceries et les professionnels de la restauration en France en produits alimentaires d\u2019Asie du Sud. Decouvrez nos gammes de riz, d\u2019epices, de produits surgeles, de thes et d\u2019epicerie, puis demandez les disponibilites, les conditionnements et les options de livraison.'],
-  ['Explore the catalogue', 'Decouvrir le catalogue'],
+  [COPY, 'Shama International fournit les \u00e9piceries et les professionnels de la restauration en France en produits alimentaires d\u2019Asie du Sud. D\u00e9couvrez nos gammes de riz, d\u2019\u00e9pices, de produits surgel\u00e9s, de th\u00e9s et d\u2019\u00e9picerie, puis demandez les disponibilit\u00e9s, les conditionnements et les options de livraison.'],
+  ['Explore the catalogue', 'D\u00e9couvrir le catalogue'],
   ['Request a wholesale quote', 'Demander un devis professionnel'],
-  [BROWSE, 'Parcourez nos gammes de riz, d\u2019epices, de surgeles, de thes et d\u2019epicerie pour votre commerce ou votre restaurant.'],
-  ['Browse our grocery ranges and find the right products for your customers.', 'Parcourez nos gammes alimentaires et trouvez les produits adaptes a vos clients.'],
-  ['Specialist', 'Specialiste']
+  [BROWSE, 'Parcourez nos gammes de riz, d\u2019\u00e9pices, de surgel\u00e9s, de th\u00e9s et d\u2019\u00e9picerie pour votre commerce ou votre restaurant.'],
+  ['Browse our grocery ranges and find the right products for your customers.', 'Parcourez nos gammes alimentaires et trouvez les produits adapt\u00e9s \u00e0 vos clients.'],
+  ['Specialist', 'Sp\u00e9cialiste']
 ];
-// Keep source ASCII while emitting correctly accented French copy.
-const accent = s => s.replace(/\bepices\b/g, '\u00e9pices').replace(/\bepiceries\b/g, '\u00e9piceries').replace(/\bepicerie\b/g, '\u00e9picerie').replace(/\bsurgeles\b/g, 'surgel\u00e9s').replace(/\bthe\b/g, 'th\u00e9').replace(/\bthes\b/g, 'th\u00e9s').replace(/\bDecouvrez\b/g, 'D\u00e9couvrez').replace(/\bDecouvrir\b/g, 'D\u00e9couvrir').replace(/\bdisponibilites\b/g, 'disponibilit\u00e9s').replace(/\badaptes\b/g, 'adapt\u00e9s').replace(/\bSpecialiste\b/g, 'Sp\u00e9cialiste').replace(/\b a /g, ' \u00e0 ');
 const escape = s => String(s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const json = o => JSON.stringify(o).replace(/</g, '\\u003c');
 const stripBlock = (s, name) => s.replace(new RegExp('<!-- SHAMA ' + name + ' START -->[\\s\\S]*?<!-- SHAMA ' + name + ' END -->\\s*', 'g'), '');
@@ -34,10 +31,11 @@ function build(directory) {
   let html = fs.readFileSync(filename, 'utf8');
   let translation = fs.readFileSync(path.join(root, 'translation.js'), 'utf8');
   assert(/data-page=['"]home['"]/.test(html), 'Refusing to edit a non-home page');
-  assert.equal((translation.match(/const FR = \{/g) || []).length, 1, 'Translation dictionary changed; review before release');
-  assert.equal((translation.match(/const base = \{/g) || []).length, 1, 'Title dictionary changed; review before release');
+  for (const marker of ['const FR = {','const base = {','function setTitle(target) {']) {
+    assert.equal(translation.split(marker).length, 2, 'Translation structure changed: '+marker);
+  }
   html = stripBlock(stripBlock(html, 'HOME SEO'), 'HOME INTRO');
-  assert.equal((html.match(/<h1\b/gi) || []).length, 0, 'Homepage now has an H1; review intro placement instead of duplicating it');
+  assert.equal((html.match(/<h1\b/gi) || []).length, 0, 'Homepage now has an H1; review intro placement');
   const schema = {'@context':'https://schema.org','@graph':[
     {'@type':'Organization','@id':ORIGIN+'/#organization',name:'Shama International',legalName:'Shama International S.A.S.',url:ORIGIN+'/',logo:ORIGIN+'/assets/shama-logo.png',telephone:'+33143420579',email:'info@shamafr.com',address:{'@type':'PostalAddress',streetAddress:'3, all\u00e9e de l\u2019Esp\u00e9rance',postalCode:'93110',addressLocality:'Rosny-sous-Bois',addressCountry:'FR'},areaServed:{'@type':'Country',name:'France'}},
     {'@type':'WebSite','@id':ORIGIN+'/#website',url:ORIGIN+'/',name:'Shama International',publisher:{'@id':ORIGIN+'/#organization'},inLanguage:['en','fr']},
@@ -82,10 +80,10 @@ function build(directory) {
     .replace('Browse nine ranges and find the right products for your customers.', 'Browse our grocery ranges and find the right products for your customers.')
     .replace(/alt='Shama Rice Banner 1'/, "alt='Shama rice range for wholesale customers in France'")
     .replace(/<b>9<\/b>\s*Product ranges/, '<b>Specialist</b> Product ranges');
-  const entries = PAIRS.map(([en,fr]) => '    '+JSON.stringify(en)+': '+JSON.stringify(accent(fr))+',').join('\n');
+  const entries = PAIRS.map(([en,fr]) => '    '+JSON.stringify(en)+': '+JSON.stringify(fr)+',').join('\n');
   translation = translation.replace('const FR = {', 'const FR = {\n' + entries);
   translation = translation.replace('const base = {', 'const base = {\n      '+JSON.stringify(TITLE)+': '+JSON.stringify(TITLE_FR)+',');
-  const descLogic = `\n    if (document.querySelector('#shama-seo-intro')) {\n      const description = target === 'fr' ? ${JSON.stringify(accent(DESCRIPTION_FR))} : ${JSON.stringify(DESCRIPTION)};\n      for (const selector of ['meta[name="description"]','meta[property="og:description"]','meta[name="twitter:description"]']) {\n        const meta = document.querySelector(selector); if (meta) meta.content = description;\n      }\n    }`;
+  const descLogic = `\n    if (document.querySelector('#shama-seo-intro')) {\n      const description = target === 'fr' ? ${JSON.stringify(DESCRIPTION_FR)} : ${JSON.stringify(DESCRIPTION)};\n      const pageTitle = target === 'fr' ? ${JSON.stringify(TITLE_FR)} : ${JSON.stringify(TITLE)};\n      for (const selector of ['meta[name="description"]','meta[property="og:description"]','meta[name="twitter:description"]']) {\n        const meta = document.querySelector(selector); if (meta) meta.content = description;\n      }\n      for (const selector of ['meta[property="og:title"]','meta[name="twitter:title"]']) {\n        const meta = document.querySelector(selector); if (meta) meta.content = pageTitle;\n      }\n    }`;
   translation = translation.replace('function setTitle(target) {', 'function setTitle(target) {'+descLogic);
   new vm.Script(translation, {filename:'translation-seo-home-20261007.js'});
   const translationRef = /src=['"]translation(?:-seo-home-20261007)?\.js(?:\?[^'"]*)?['"]/;
@@ -94,15 +92,14 @@ function build(directory) {
   assert.equal((html.match(/<title\b/gi)||[]).length,1);
   assert.equal((html.match(/<h1\b/gi)||[]).length,1);
   assert.equal((html.match(/rel=["']canonical["']/g)||[]).length,1);
-  assert(html.includes("data-page='home'"));
   fs.writeFileSync(filename, html);
   fs.writeFileSync(path.join(root, 'translation-seo-home-20261007.js'), translation);
-  // Preserve the earlier homepage-only sitemap scope until category indexing is approved.
+  // Keep the user's previously selected homepage-only sitemap scope.
   const robots = 'User-agent: *\nAllow: /\n\nSitemap: '+ORIGIN+'/sitemap.xml\n';
   const sitemap = '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"><url><loc>'+ORIGIN+'/</loc></url></urlset>\n';
   for (const [name, value] of [['robots.txt',robots],['sitemap.xml',sitemap]]) {
     const file=path.join(root,name);
-    if (fs.existsSync(file)) assert.equal(fs.readFileSync(file,'utf8'),value,'Existing '+name+' changed; merge its policies explicitly');
+    if (fs.existsSync(file)) assert.equal(fs.readFileSync(file,'utf8'),value,'Existing '+name+' changed; merge policies explicitly');
     fs.writeFileSync(file,value);
   }
   return {page:'/',title:TITLE,h1:HEADING,canonical:ORIGIN+'/',structuredData:schema['@graph'].map(x=>x['@type']),sitemapUrls:1,trackingChanged:false,categoryDataChanged:false};
@@ -110,10 +107,9 @@ function build(directory) {
 
 async function verifyLive() {
   let last;
-  for (let attempt=0;attempt<6;attempt++) {
+  for (let attempt=0;attempt<2;attempt++) {
     try {
-      const url=ORIGIN+'/?seo_check=home-seo-20261007-'+Date.now();
-      const response=await fetch(url,{signal:AbortSignal.timeout(20000),headers:{'Cache-Control':'no-cache'}});
+      const response=await fetch(ORIGIN+'/?seo_check=home-seo-20261007-'+Date.now(),{signal:AbortSignal.timeout(20000),headers:{'Cache-Control':'no-cache'}});
       assert(response.ok,'Homepage HTTP '+response.status);
       const text=await response.text();
       assert(text.includes('id="shama-home-structured-data"'),'Expected structured data not yet served');
@@ -127,7 +123,7 @@ async function verifyLive() {
       }
       console.log('LIVE_HOME_SEO_VERIFIED '+JSON.stringify({url:ORIGIN+'/',status:response.status,title:TITLE,h1:true,canonical:true,sitemap:true,robots:true}));
       return;
-    } catch(error) { last=error; if(attempt<5) await new Promise(r=>setTimeout(r,5000)); }
+    } catch(error) { last=error; if(attempt===0) await new Promise(r=>setTimeout(r,7000)); }
   }
   throw last;
 }
