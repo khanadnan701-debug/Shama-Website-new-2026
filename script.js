@@ -1056,7 +1056,7 @@ productData.push(...supplementalData);
       category: 'spices',
       group: 'Whole Spices & Seeds',
       title: 'Shama Dhania Whole (Coriander Seeds)',
-      pack: '100g x 20\n400g x 10\n1kg x 6',
+      pack: '100g x 20\n200g\n400g x 10\n1kg x 6',
       image: 'https://res.cloudinary.com/wy4nkkqq/image/upload/v1789051981/dhania_whole.png'
     },
     {
