@@ -35,11 +35,12 @@ jobs:
             --exclude='package-lock.json' \
             ./ dist/
 
-      - name: Build and validate homepage SEO
+      - name: Build and validate SEO
         run: |
           node --check .github/scripts/home-seo.cjs
+          node --check .github/scripts/site-seo-france.cjs
           node .github/scripts/home-seo.cjs dist
-          node .github/scripts/home-seo.cjs dist
+          node .github/scripts/site-seo-france.cjs dist
           node --check dist/translation-seo-home-20261007.js
           git diff --exit-code
 
@@ -69,7 +70,9 @@ jobs:
           wranglerVersion: '4.130.0'
           command: deploy
 
-      - name: Verify live homepage SEO
-        run: node .github/scripts/home-seo.cjs --verify-live
+      - name: Verify live SEO
+        run: |
+          node .github/scripts/home-seo.cjs --verify-live
+          node .github/scripts/site-seo-france.cjs --verify-live
 
-# Homepage SEO is built separately; existing catalogue and product data are unchanged.
+# SEO build updates metadata, crawlable copy and sitemap; catalogue/product data are unchanged.
