@@ -1014,7 +1014,7 @@ productData.push(...supplementalData);
       category: 'spices',
       group: 'Spice Powders',
       title: 'Shama Chilli Crushed',
-      pack: '100g x 20\n400g x 10\n1kg x 6',
+      pack: '100g x 20\n400g x 10\n750g\n1kg x 6',
       image: 'https://res.cloudinary.com/wy4nkkqq/image/upload/v1789051974/chilli_crushed.png'
     },
     {
