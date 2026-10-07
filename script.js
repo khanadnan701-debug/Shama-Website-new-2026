@@ -1195,7 +1195,6 @@ productData.push(...supplementalData);
     {"category":"spices","group":"Masalas & Curry Blends","title":"Shama Panch Puran","pack":"1kg / 100g","image":"https://res.cloudinary.com/wy4nkkqq/image/upload/v1791297883/Shama_Panch_Puran_100gm.png"},
     {"category":"spices","group":"Whole Spices & Seeds","title":"Schani Bay Leaves","pack":"1kg","image":"https://res.cloudinary.com/wy4nkkqq/image/upload/v1791297891/Schani_Bay_Leaves_1kg.png"},
     {"category":"spices","group":"Whole Spices & Seeds","title":"Shama Tukmaria (Basil Seeds)","pack":"100g","image":"https://res.cloudinary.com/wy4nkkqq/image/upload/v1791297910/Shama_Tukmaria_100g.png"},
-    {"category":"spices","group":"Pantry & Specialty","title":"Shama Soya Chunks","pack":"500g","image":"https://res.cloudinary.com/wy4nkkqq/image/upload/v1791297922/Shama_Soya_Chunks_500g.png"},
     {"category":"spices","group":"Whole Spices & Seeds","title":"Heera Dhania Whole (Coriander Seeds)","pack":"700g","image":"https://res.cloudinary.com/wy4nkkqq/image/upload/v1791298759/Heera_Dhania_Whole_700g.png"},
     {"category":"spices","group":"Masalas & Curry Blends","title":"TRS Tandoori Masala","pack":"1kg","image":"https://res.cloudinary.com/wy4nkkqq/image/upload/v1791298915/TRS_Tandoori_masala_1_kg.png"},
     {"category":"spices","group":"Whole Spices & Seeds","title":"TRS Green Cardamom","pack":"750g","image":"https://res.cloudinary.com/wy4nkkqq/image/upload/v1791299120/TRS_Green_Cardamom_750g.png"},
@@ -1205,9 +1204,6 @@ productData.push(...supplementalData);
     {"category":"spices","group":"Spice Powders","title":"TRS Haldi (Turmeric Powder)","pack":"1kg","image":"https://res.cloudinary.com/wy4nkkqq/image/upload/v1791299935/TRS_Haldi_Tuemeric_Powder_1kg.png"},
     {"category":"spices","group":"Whole Spices & Seeds","title":"Heera Bay Leaves","pack":"1kg","image":"https://res.cloudinary.com/wy4nkkqq/image/upload/v1791299937/Heera_Bay_Leaves_1kg.png"},
     {"category":"spices","group":"Whole Spices & Seeds","title":"Shama Jaifal (Nutmeg)","pack":"100g","image":"https://res.cloudinary.com/wy4nkkqq/image/upload/v1791300168/Shama_Jaifal_Nutmegs_100g.png"},
-    {"category":"spices","group":"Pantry & Specialty","title":"Shama Sabudana (Tapioca / Sago Seeds)","pack":"500g","image":"https://res.cloudinary.com/wy4nkkqq/image/upload/v1791300440/Shama_Sabudana_Tapioca_Medium_500g.png"},
-    {"category":"spices","group":"Pantry & Specialty","title":"Shama Soya Chunks","pack":"250g","image":"https://res.cloudinary.com/wy4nkkqq/image/upload/v1791300689/Shama_Soya_Chunks_250g.png"},
-    {"category":"spices","group":"Pantry & Specialty","title":"Shama Dry Plum (Alubukhara)","pack":"100g","image":"https://res.cloudinary.com/wy4nkkqq/image/upload/v1791300942/SHAMA_Dry_Plum_ALUBUKHARA_100gm.png"},
     {"category":"spices","group":"Spice Powders","title":"Shama Anardana Powder (Pomegranate Powder)","pack":"100g","image":"https://res.cloudinary.com/wy4nkkqq/image/upload/v1791301166/SHAMA_Anardana_pomgranate_powder_100g.png"},
     {"category":"spices","group":"Whole Spices & Seeds","title":"Shama Anardana Seeds (Pomegranate Seeds)","pack":"100g","image":"https://res.cloudinary.com/wy4nkkqq/image/upload/v1791301371/SHAMA_Anardana_seeds_pomgranate_100g.png"}
   ];
