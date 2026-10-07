@@ -1187,7 +1187,7 @@ productData.push(...supplementalData);
     },
     {"category":"spices","group":"Whole Spices & Seeds","title":"Shama Brown Mustard Seed","pack":"400g","image":"https://res.cloudinary.com/wy4nkkqq/image/upload/v1791376200/Shama_Brown_Mustard_Seed_400g.png"},
     {"category":"spices","group":"Whole Spices & Seeds","title":"Shama Chilli Whole Red","pack":"Contact us for available pack sizes","image":"https://res.cloudinary.com/wy4nkkqq/image/upload/v1791376512/Shama_chilli_whole_red.png"},
-    {"category":"spices","group":"Whole Spices & Seeds","title":"Schani Bay Leaves","pack":"50g / 200g / 1kg","image":"https://res.cloudinary.com/wy4nkkqq/image/upload/v1791375339/Schani_Bay_Leaves_50g_200g_1kg.png"},
+    {"category":"spices","group":"Whole Spices & Seeds","title":"Schani Bay Leaves","pack":"30g / 50g / 200g / 1kg","image":"https://res.cloudinary.com/wy4nkkqq/image/upload/v1791375339/Schani_Bay_Leaves_50g_200g_1kg.png"},
     {"category":"spices","group":"Masalas & Curry Blends","title":"Shama Panch Puran","pack":"1kg / 100g","image":"https://res.cloudinary.com/wy4nkkqq/image/upload/v1791297883/Shama_Panch_Puran_100gm.png"},
     {"category":"spices","group":"Whole Spices & Seeds","title":"Schani Bay Leaves","pack":"1kg","image":"https://res.cloudinary.com/wy4nkkqq/image/upload/v1791297891/Schani_Bay_Leaves_1kg.png"},
     {"category":"spices","group":"Whole Spices & Seeds","title":"Heera Dhania Whole (Coriander Seeds)","pack":"700g","image":"https://res.cloudinary.com/wy4nkkqq/image/upload/v1791298759/Heera_Dhania_Whole_700g.png"},
