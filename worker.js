@@ -275,7 +275,7 @@ async function withFreshHeaders(response) {
   }
 
   headers.delete('Clear-Site-Data');
-  headers.set('X-Shama-Release', '20261007-garam-masala-whole-add-200g');
+  headers.set('X-Shama-Release', '20261007-blackpepper-whole-add-100g');
 
   let body = response.body;
 
