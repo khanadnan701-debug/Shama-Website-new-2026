@@ -1281,6 +1281,7 @@ productData.push(...supplementalData);
     {category:'misc',title:'TRS Food Colour Deep Orange',pack:'500g',image:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1790866964/TRS_Food_Colour_Deep_Orange_500g.png'},
     {category:'misc',title:'TRS Food Colour Red',pack:'25g',image:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1790866967/TRS_Food_Colour_Red_25g.png'},
     // Latest Miscellaneous additions from Cloudinary (moved out of Spices).
+    {category:'misc',title:'Shama Gond Katira',pack:'100g',image:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1791380819/Shama_gond_katira_100g.png'},
     {category:'misc',title:'Shama Soya Chunks',pack:'500g',image:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1791297922/Shama_Soya_Chunks_500g.png'},
     {category:'misc',title:'Shama Sabudana (Tapioca / Sago Seeds)',pack:'500g',image:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1791300440/Shama_Sabudana_Tapioca_Medium_500g.png'},
     {category:'misc',title:'Shama Soya Chunks',pack:'250g',image:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1791300689/Shama_Soya_Chunks_250g.png'},
