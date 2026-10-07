@@ -1175,7 +1175,7 @@ productData.push(...supplementalData);
       category: 'spices',
       group: 'Whole Spices & Seeds',
       title: 'Shama Star Anise',
-      pack: '2868C - 50g x 20',
+      pack: '2868C - 50g x 20\n500g',
       image: 'https://res.cloudinary.com/wy4nkkqq/image/upload/v1789051986/star_anise.png'
     },
     {
