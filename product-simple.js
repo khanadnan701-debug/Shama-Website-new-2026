@@ -9,9 +9,27 @@
     style = document.createElement('link');
     style.id = 'product-simple-style';
     style.rel = 'stylesheet';
-    style.href = 'product-simple.css?v=20261008-responsive-contain1';
+    style.href = 'product-simple.css?v=20261008-uniform-landscape2';
     document.head.appendChild(style);
   }
+
+  // Landscape lifestyle images use one equal-height presentation; portrait and
+  // extra-wide product packaging remains fully visible with object-fit: contain.
+  function normalizeProductCardImage(image) {
+    if (!image || !image.naturalWidth || !image.naturalHeight) return;
+    const media = image.closest('.simple-product-media');
+    if (!media) return;
+    const ratio = image.naturalWidth / image.naturalHeight;
+    media.classList.toggle('is-uniform-landscape', ratio > 1.12 && ratio <= 1.55);
+  }
+
+  // Capture lazy image loads, including product grids rebuilt by category scripts.
+  document.addEventListener('load', event => {
+    const image = event.target;
+    if (image && image.matches?.('.simple-product-media img')) {
+      normalizeProductCardImage(image);
+    }
+  }, true);
 
   if (!document.querySelector('#product-zoom-force-style')) {
     const forceStyle = document.createElement('style');
@@ -378,6 +396,7 @@
       </article>`).join('');
 
     grid.querySelectorAll('.simple-product-media img').forEach(image => {
+      if (image.complete) normalizeProductCardImage(image);
       image.addEventListener('error', () => {
         image.src = FALLBACK_IMAGE;
       }, { once: true });
