@@ -46,10 +46,10 @@
 
     // LUX
     ['Lux','Lux Advanced Soap','100g','https://res.cloudinary.com/wy4nkkqq/image/upload/v1790076480/Lux_Soap_100g_ADVANCED.png'],
-    ['Lux','Lux Rose Soap','100g','https://res.cloudinary.com/wy4nkkqq/image/upload/v1790076481/Lux_Soap_100g_Rose.png'],
-    ['Lux','Lux White Soap','100g','https://res.cloudinary.com/wy4nkkqq/image/upload/v1790076483/Lux_Soap_100g_White.png'],
+    ['Lux','Lux Rose Soap','100g','https://res.cloudinary.com/wy4nkkqq/image/upload/v1791473691/lux_rose_loap_100g.png'],
+    ['Lux','Lux White Soap','100g','https://res.cloudinary.com/wy4nkkqq/image/upload/v1791473308/lux_white_loap_100g.png'],
     ['Lux','Lux Creamy Soap Mega Pack','125g','https://res.cloudinary.com/wy4nkkqq/image/upload/v1790076484/LUX_Soap_Creamy_125g_Mega_Pack.png'],
-    ['Lux','Lux Sandal Soap','100g','https://res.cloudinary.com/wy4nkkqq/image/upload/v1790076492/Lux_Soap_100g_Sandle.png'],
+    ['Lux','Lux Sandal Soap','100g','https://res.cloudinary.com/wy4nkkqq/image/upload/v1791473505/lux_sandal_loap_100g.png'],
 
     // VASELINE
     ['Vaseline','Vaseline Pure Petroleum Jelly','50ml','https://res.cloudinary.com/wy4nkkqq/image/upload/v1790076498/Vaseline_Pure_Petroleum_Jelly_50ml.png'],

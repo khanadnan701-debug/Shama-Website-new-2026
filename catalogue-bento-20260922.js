@@ -48,7 +48,7 @@
       name:'Cosmetics',
       desc:'Beauty, personal care and hygiene essentials.',
       href:'cosmetics.html',
-      image:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1790941077/Shama_amla_hair_oil_150ml.png',
+      image:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1791473691/lux_rose_loap_100g.png',
       tone:'sky'
     },
     {
@@ -115,7 +115,8 @@
     flour:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1789232539/shama_wheat_floor_T55_1kg.png',
     frozen:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1791202844/MAZEDAR_Potato_Samosa_20pcs.png',
     oils:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1789678755/Shama_sunflower_oil_5ltr.png',
-    'dry-fruits':'https://res.cloudinary.com/wy4nkkqq/image/upload/v1789232085/Shama_Raw_almonds_100gm.png'
+    'dry-fruits':'https://res.cloudinary.com/wy4nkkqq/image/upload/v1789232085/Shama_Raw_almonds_100gm.png',
+    cosmetics:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1791473691/lux_rose_loap_100g.png'
   };
 
   const thumbnailOverrides = {
