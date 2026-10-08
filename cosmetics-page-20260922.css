@@ -228,11 +228,50 @@ body[data-category="cosmetics"] .cosmetics-product-grid .simple-product-media.is
 }
 
 body[data-category="cosmetics"] .cosmetics-product-grid .simple-product-media.is-landscape-media img{
-  object-fit:cover!important;
+  object-fit:contain!important;
 }
 
 body[data-category="cosmetics"] .cosmetics-product-grid .simple-product-card:hover .simple-product-media img,
 body[data-category="cosmetics"] .cosmetics-product-grid .simple-product-media:hover img,
 body[data-category="cosmetics"] .cosmetics-product-grid .simple-product-media:focus-visible img{
   transform:none!important;
+}
+
+/* 2026-10-08 Cosmetics: full pack visibility and narrow-screen containment */
+body[data-category="cosmetics"] .cosmetics-brand-nav,
+body[data-category="cosmetics"] .cosmetics-brand-sections,
+body[data-category="cosmetics"] .cosmetics-brand-section,
+body[data-category="cosmetics"] .cosmetics-brand-head,
+body[data-category="cosmetics"] .cosmetics-product-grid {
+  min-width:0;
+  max-width:100%;
+}
+body[data-category="cosmetics"] .cosmetics-product-grid .simple-product-media {
+  width:calc(100% - 24px)!important;
+  max-width:calc(100% - 24px)!important;
+}
+body[data-category="cosmetics"] .cosmetics-product-grid .simple-product-media img {
+  object-fit:contain!important;
+}
+@media (max-width:640px) {
+  body[data-category="cosmetics"] .cosmetics-brand-chips {
+    grid-template-columns:repeat(2,minmax(0,1fr));
+  }
+  body[data-category="cosmetics"] .cosmetics-brand-chip {
+    min-width:0;
+  }
+  body[data-category="cosmetics"] .cosmetics-brand-chip span {
+    min-width:0;
+    overflow-wrap:anywhere;
+  }
+  body[data-category="cosmetics"] .cosmetics-product-grid .simple-product-media {
+    width:calc(100% - 20px)!important;
+    max-width:calc(100% - 20px)!important;
+    margin:10px!important;
+  }
+}
+@media (max-width:360px) {
+  body[data-category="cosmetics"] .cosmetics-brand-chips {
+    grid-template-columns:minmax(0,1fr);
+  }
 }
