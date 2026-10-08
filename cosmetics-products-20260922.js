@@ -76,7 +76,7 @@
       slug:'cosmetics',
       name:'Cosmetics',
       desc:'Beauty, personal care and hygiene essentials',
-      image:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1789464147/Shama_Rose_Water_250ml.png'
+      image:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1791473691/lux_rose_loap_100g.png'
     });
   }
 })();
