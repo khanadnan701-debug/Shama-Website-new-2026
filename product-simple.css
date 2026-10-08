@@ -67,3 +67,31 @@ body[data-page="product"] .simple-product-meta {
     padding-bottom:max(104px,calc(84px + env(safe-area-inset-bottom)));
   }
 }
+
+/* 2026-10-08 uniform landscape photo spacing (all product categories) */
+/* Centre lifestyle photography in the same 82%-high window. Portrait and
+   extra-wide packs keep the uncropped contain presentation. */
+body[data-page="product"] .simple-product-grid .simple-product-media.is-uniform-landscape img {
+  width:100%!important;
+  max-width:100%!important;
+  height:82%!important;
+  max-height:82%!important;
+  object-fit:cover!important;
+  object-position:center!important;
+}
+/* The row is uniform even when titles or pack sizes use different lines. */
+body[data-page="product"] .simple-product-grid .simple-product-card {
+  display:flex;
+  flex-direction:column;
+}
+body[data-page="product"] .simple-product-grid .simple-product-media {
+  flex-shrink:0;
+}
+body[data-page="product"] .simple-product-grid .simple-product-content {
+  display:flex;
+  flex:1 1 auto;
+  flex-direction:column;
+}
+body[data-page="product"] .simple-product-grid .simple-product-content > .simple-product-btn {
+  margin-top:auto;
+}
