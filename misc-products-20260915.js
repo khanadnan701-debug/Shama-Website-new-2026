@@ -1,5 +1,5 @@
 // Miscellaneous catalogue synced with Cloudinary folder: shama/Miscellaneous.
-// Source of truth refreshed on 2026-10-07. Shama products are kept first by the category-group UI.
+// Source of truth refreshed on 2026-10-08. Shama products are kept first by the category-group UI.
 (() => {
   'use strict';
   if (typeof productData === 'undefined' || !Array.isArray(productData)) return;
@@ -16,7 +16,9 @@
     {category:'misc',title:'Shama Pehalwan Rewari',pack:'Contact us for available pack sizes',image:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1789464149/Shama_Pehalwan_Rewari.png'},
     {category:'misc',title:'Shama Black Salt',pack:'400g',image:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1789464150/Shama_black_salt_400gm.png'},
     {category:'misc',title:'Shama Lime Juice',pack:'200ml',image:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1789464150/Shama_lime_juice_200ml.png'},
-    {category:'misc',title:'Shama Roasted Vermicelli',pack:'Contact us for available pack sizes',image:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1789464151/Shama_Vermicelli_Roasted.png'},
+    {category:'misc',title:'Shama Roasted Vermicelli',pack:'400g',image:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1791464301/Shama_roasted_vermicelli_400g.png'},
+    {"category":"misc","title":"Shama Plain Vermicelli","pack":"400g","image":"https://res.cloudinary.com/wy4nkkqq/image/upload/v1791464303/Shama_plain_vermicelli_400g.png"},
+    {"category":"misc","title":"Shama Colour Flavoured Vermicelli","pack":"400g","image":"https://res.cloudinary.com/wy4nkkqq/image/upload/v1791464304/Shama_colour_flavored_vermicelli_400g.png"},
     {category:'misc',title:'Shama Sweet Fennel Seed',pack:'Contact us for available pack sizes',image:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1789464151/Shama_Sweet_Fennel_Seed.png'},
     {category:'misc',title:'Shama Himalayan Pink Salt Fine',pack:'Contact us for available pack sizes',image:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1789464152/Shama_Himalayan_Pink_Salt_FINE.png'},
     {category:'misc',title:'Shama Black Pepper',pack:'100g',image:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1789464152/Shama_black_ppr_100gm.png'},
@@ -70,6 +72,10 @@
     {category:'misc',title:'Shama Jeera Papad',pack:'200g',image:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1791292377/Shama_jeera_papad_200g.png'}
   ];
 
+  // Shama items first, other brands remain after Shama.
+  const shamaOrder = item => /^Shama\b/i.test(String(item?.title || '')) ? 0 : 1;
+  items.sort((a,b) => shamaOrder(a) - shamaOrder(b));
+
   const nonMisc = productData.filter(item => item.category !== 'misc');
   productData.splice(0, productData.length, ...nonMisc, ...items);
 
@@ -83,5 +89,5 @@
   if (existing) Object.assign(existing, category);
   else categories.push(category);
 
-  window.shamaMiscCatalogue = { total: items.length, cloudinaryTotal:58, sourceFolder:'shama/Miscellaneous.', syncedAt:'2026-10-07', shamaFirst:true };
+  window.shamaMiscCatalogue = { total: items.length, cloudinaryTotal:61, websiteTotal:60, supersededOlderRoastedAsset:1, sourceFolder:'shama/Miscellaneous.', syncedAt:'2026-10-08', shamaFirst:true };
 })();
