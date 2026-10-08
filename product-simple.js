@@ -9,7 +9,7 @@
     style = document.createElement('link');
     style.id = 'product-simple-style';
     style.rel = 'stylesheet';
-    style.href = 'product-simple.css?v=20261003-nocrop1';
+    style.href = 'product-simple.css?v=20261008-responsive-contain1';
     document.head.appendChild(style);
   }
 
