@@ -275,3 +275,15 @@ body[data-category="cosmetics"] .cosmetics-product-grid .simple-product-media im
     grid-template-columns:minmax(0,1fr);
   }
 }
+
+/* 2026-10-08 cosmetics equal landscape frames */
+/* This overrides the older .is-landscape-media contain rule only for
+   moderate-width photos whose central product remains in the crop. */
+body[data-category="cosmetics"] .cosmetics-product-grid .simple-product-media.is-landscape-media.is-uniform-landscape img {
+  width:100%!important;
+  max-width:100%!important;
+  height:82%!important;
+  max-height:82%!important;
+  object-fit:cover!important;
+  object-position:center!important;
+}
