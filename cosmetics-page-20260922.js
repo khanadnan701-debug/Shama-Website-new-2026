@@ -30,6 +30,21 @@
     '&':'&amp;', '<':'&lt;', '>':'&gt;', '"':'&quot;', "'":'&#039;'
   })[char]);
 
+  // A consistent thumbnail aspect prevents uneven grey bands around lifestyle photos.
+  // The zoom image URL remains untouched so customers can see the full original.
+  function uniformPhotoUrl(source) {
+    if (!/^https:\/\/res\.cloudinary\.com\/[^/]+\/image\/upload\/v\d+\/.+\.(?:png|jpe?g|webp)(?:\?.*)?$/i.test(source || '')) return source;
+    return source.replace('/image/upload/', '/image/upload/c_fill,g_auto,h_980,w_1200/');
+  }
+
+  function cardPhotoUrl(item) {
+    const original = item.image || '';
+    // Normalize known Lux landscape images before they paint (no layout flash).
+    return item.brand === 'Lux' && /\/Lux_Soap_100g_(?:Rose|White|Sandle)\.png$/i.test(original)
+      ? uniformPhotoUrl(original)
+      : original;
+  }
+
   function normalizeCosmeticsMedia(root) {
     const images = [...root.querySelectorAll('.cosmetics-product-grid .simple-product-media img')];
     images.forEach(img => {
@@ -37,10 +52,22 @@
         const media = img.closest('.simple-product-media');
         if (!media || !img.naturalWidth || !img.naturalHeight) return;
         const ratio = img.naturalWidth / img.naturalHeight;
+        const landscape = ratio > 1.12 && ratio <= 1.55;
         media.classList.toggle('is-landscape-media', ratio > 1.12);
         media.classList.toggle('is-portrait-media', ratio <= 1.12);
+        media.classList.toggle('is-uniform-landscape', landscape);
+        if (!landscape || img.dataset.uniformPhotoApplied === '1') return;
+        const original = img.getAttribute('src') || '';
+        const normalized = uniformPhotoUrl(original);
+        if (normalized === original) return;
+        img.dataset.uniformPhotoApplied = '1';
+        img.addEventListener('error', () => {
+          // A failed derived image should not hide a product.
+          if (img.getAttribute('src') !== original) img.src = original;
+        }, { once:true });
+        img.src = normalized;
       };
-      if (img.complete) apply();
+      if (img.complete && img.naturalWidth) apply();
       else img.addEventListener('load', apply, { once:true });
     });
   }
@@ -105,7 +132,7 @@
                         aria-label="Open ${escapeHtml(item.title)} image">
                         <span class="simple-product-index">${String(index + 1).padStart(2,'0')}</span>
                         <span class="simple-zoom-hint" aria-hidden="true">⌕</span>
-                        <img loading="lazy" decoding="async" draggable="false" src="${escapeHtml(item.image)}" alt="${escapeHtml(item.title)}">
+                        <img loading="lazy" decoding="async" draggable="false" src="${escapeHtml(cardPhotoUrl(item))}" alt="${escapeHtml(item.title)}">
                       </button>
                       <div class="simple-product-content">
                         <div class="simple-product-meta">${escapeHtml(group.brand)}</div>

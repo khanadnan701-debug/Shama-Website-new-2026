@@ -287,3 +287,19 @@ body[data-category="cosmetics"] .cosmetics-product-grid .simple-product-media.is
   object-fit:cover!important;
   object-position:center!important;
 }
+
+/* 2026-10-08 cosmetics corrected thumbnail positioning:
+   the visible photo rectangle is identical in every square card,
+   independent of the source's native aspect ratio. */
+body[data-category="cosmetics"] .cosmetics-product-grid
+.simple-product-media.is-uniform-landscape img {
+  position:absolute!important;
+  top:9%!important;
+  left:0!important;
+  width:100%!important;
+  height:82%!important;
+  min-height:0!important;
+  max-height:82%!important;
+  object-fit:cover!important;
+  object-position:center!important;
+}
