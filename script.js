@@ -1249,7 +1249,9 @@ productData.push(...supplementalData);
     {category:'misc',title:'Shama Pehalwan Rewari',pack:'Contact us for available pack sizes',image:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1789464149/Shama_Pehalwan_Rewari.png'},
     {category:'misc',title:'Shama Black Salt',pack:'400g',image:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1789464150/Shama_black_salt_400gm.png'},
     {category:'misc',title:'Shama Lime Juice',pack:'200ml',image:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1789464150/Shama_lime_juice_200ml.png'},
-    {category:'misc',title:'Shama Roasted Vermicelli',pack:'Contact us for available pack sizes',image:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1789464151/Shama_Vermicelli_Roasted.png'},
+    {category:'misc',title:'Shama Roasted Vermicelli',pack:'400g',image:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1791464301/Shama_roasted_vermicelli_400g.png'},
+    {"category":"misc","title":"Shama Plain Vermicelli","pack":"400g","image":"https://res.cloudinary.com/wy4nkkqq/image/upload/v1791464303/Shama_plain_vermicelli_400g.png"},
+    {"category":"misc","title":"Shama Colour Flavoured Vermicelli","pack":"400g","image":"https://res.cloudinary.com/wy4nkkqq/image/upload/v1791464304/Shama_colour_flavored_vermicelli_400g.png"},
     {category:'misc',title:'Shama Sweet Fennel Seed',pack:'Contact us for available pack sizes',image:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1789464151/Shama_Sweet_Fennel_Seed.png'},
     {category:'misc',title:'Shama Himalayan Pink Salt Fine',pack:'Contact us for available pack sizes',image:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1789464152/Shama_Himalayan_Pink_Salt_FINE.png'},
     {category:'misc',title:'Shama Black Pepper',pack:'100g',image:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1789464152/Shama_black_ppr_100gm.png'},
@@ -1305,6 +1307,9 @@ productData.push(...supplementalData);
   for (let i = productData.length - 1; i >= 0; i--) {
     if (productData[i]?.category === 'misc') productData.splice(i, 1);
   }
+  // Shama items first, other brands remain after Shama.
+  const shamaOrder = item => /^Shama\b/i.test(String(item?.title || '')) ? 0 : 1;
+  miscItems.sort((a,b) => shamaOrder(a) - shamaOrder(b));
   productData.push(...miscItems);
 })();
 /* 2026-10-07 MISCELLANEOUS GLOBAL SYNC END */
