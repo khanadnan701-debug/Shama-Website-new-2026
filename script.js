@@ -1199,7 +1199,14 @@ productData.push(...supplementalData);
     {"category":"spices","group":"Spice Powders","title":"TRS Haldi (Turmeric Powder)","pack":"1kg","image":"https://res.cloudinary.com/wy4nkkqq/image/upload/v1791299935/TRS_Haldi_Tuemeric_Powder_1kg.png"},
     {"category":"spices","group":"Whole Spices & Seeds","title":"Heera Bay Leaves","pack":"1kg","image":"https://res.cloudinary.com/wy4nkkqq/image/upload/v1791299937/Heera_Bay_Leaves_1kg.png"},
     {"category":"spices","group":"Whole Spices & Seeds","title":"Shama Jaifal (Nutmeg)","pack":"100g","image":"https://res.cloudinary.com/wy4nkkqq/image/upload/v1791300168/Shama_Jaifal_Nutmegs_100g.png"},
+    {"category":"spices","group":"Whole Spices & Seeds","title":"Shama Kasuri Methi","pack":"100g","image":"https://res.cloudinary.com/wy4nkkqq/image/upload/v1791377494/Shama_kasuri_methi_100gm.png"},
+    {"category":"spices","group":"Whole Spices & Seeds","title":"Shama Kasuri Methi","pack":"1kg","image":"https://res.cloudinary.com/wy4nkkqq/image/upload/v1791377495/Shama_kasuri_methi_1kg.png"},
+    {"category":"spices","group":"Spice Powders","title":"TRS Paprika","pack":"100g","image":"https://res.cloudinary.com/wy4nkkqq/image/upload/v1791458410/trs_paprika_100g.png"},
+    {"category":"spices","group":"Spice Powders","title":"TRS Paprika","pack":"400g","image":"https://res.cloudinary.com/wy4nkkqq/image/upload/v1791458647/trs_paprika_400g.png"},
+    {"category":"spices","group":"Spice Powders","title":"TRS Paprika","pack":"1kg","image":"https://res.cloudinary.com/wy4nkkqq/image/upload/v1791453666/trs_paprika_1kg.png"},
   ];
+  const shamaFirst = item => /^Shama\b/i.test(String(item?.title || '')) ? 0 : 1;
+  spices.sort((a,b) => shamaFirst(a) - shamaFirst(b));
   for (let i = productData.length - 1; i >= 0; i--) {
     if (productData[i]?.category === 'spices') productData.splice(i, 1);
   }
