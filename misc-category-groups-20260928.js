@@ -8,7 +8,7 @@
       key:'pantry',
       label:'Pantry Essentials',
       short:'Pantry',
-      note:'Shakkar, jaggery, tamarind, fried onions, roasted chana, vermicelli, soya chunks, sabudana, dry plum, anardana and everyday pantry products.'
+      note:'Shakkar, jaggery, tamarind, fried onions, five roasted chana varieties, vermicelli, soya chunks, sabudana, dry plum, anardana and everyday pantry products.'
     },
     {
       key:'mango-pulp',

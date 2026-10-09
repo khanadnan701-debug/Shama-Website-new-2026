@@ -32,7 +32,11 @@
     {category:'misc',title:'Shama Shakkar',pack:'500g',image:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1789466633/Shama_shakkar_500g.png'},
     {category:'misc',title:'Shama Seedless Tamarind (Imli)',pack:'400g',image:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1789466633/Shama_imli_400g.png'},
     {category:'misc',title:'Shama Himalayan Pink Salt — New Pack',pack:'Contact us for available pack sizes',image:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1789678912/Shama_himalayn_pink_salt.png'},
-    {category:'misc',title:'Shama Masala Roasted Chana',pack:'400g',image:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1789678913/Shama_masala_roasted_chana_400g.png'},
+    {category:'misc',title:'Shama Masala Roasted Chana',pack:'400g',image:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1791544573/Shama_masala_roasted_chana_400g.png'},
+    {category:'misc',title:'Shama Hing Jeera Roasted Chana',pack:'400g',image:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1791546608/Shama_hing_jeera_roasted_chana_400g.png'},
+    {category:'misc',title:'Shama Chilli Garlic Roasted Chana',pack:'400g',image:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1791546605/Shama_chilli_garlic_roasted_chana_400g.png'},
+    {category:'misc',title:'Shama Lime Pudina Roasted Chana',pack:'400g',image:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1791544805/Shama_lime_pudina_roasted_chana_400g.png'},
+    {category:'misc',title:'Shama Roasted Chana Without Skin',pack:'400g',image:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1791544579/Shama_roasted_chana_without_skin_400g.png'},
     {category:'misc',title:'Shama Paneer Dodi Phool',pack:'100g',image:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1789678914/Shama_paneer_dodi_phool_100g.png'},
     {category:'misc',title:'Kody Peeled Tomatoes',pack:'Contact us for available pack sizes',image:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1789678914/Shama_kodi_peeled_tomato.png'},
 
@@ -83,11 +87,11 @@
   const category = {
     slug:'misc',
     name:'Miscellaneous',
-    desc:'Papad, pantry essentials, soya chunks, sabudana, dry plum, anardana, salts, food colours, juices, floral waters, baking ingredients and more',
+    desc:'Papad, roasted chana varieties, pantry essentials, soya chunks, sabudana, dry plum, anardana, salts, food colours, juices, floral waters, baking ingredients and more',
     image:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1789678914/Shama_paneer_dodi_phool_100g.png'
   };
   if (existing) Object.assign(existing, category);
   else categories.push(category);
 
-  window.shamaMiscCatalogue = { total: items.length, cloudinaryTotal:61, websiteTotal:60, supersededOlderRoastedAsset:1, sourceFolder:'shama/Miscellaneous.', syncedAt:'2026-10-08', shamaFirst:true };
+  window.shamaMiscCatalogue = { total: items.length, cloudinaryTotal:65, websiteTotal:64, excludedLegacyVermicelli:'Shama_Vermicelli_Roasted', sourceFolder:'shama/Miscellaneous.', syncedAt:'2026-10-09', shamaFirst:true };
 })();

@@ -107,7 +107,7 @@
     rice:'https://res.cloudinary.com/wy4nkkqq/image/upload/f_webp,fl_awebp,q_auto:best,e_sharpen:70/v1790255518/Shama_Super_Kernal_Par_Boiled_Sella_Rice_5kg.png',
     spices:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1791377333/Shama_garam_masala_powder_100g_x_20_400g_x_10_1kg_x_6.png',
     sauces:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1789678774/Shama_Mango_pickle_1kg.png',
-    misc:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1789466470/Shama_fried_onion_1kg.png',
+    misc:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1791546608/Shama_hing_jeera_roasted_chana_400g.png',
     beverages:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1791037170/Shama_Coconut_Milk_Drink_with_Mango_240ml.png',
     tea:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1791292824/Shama_Premium_gold_Tea_500g.png',
     sugar:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1791031373/Shama_Desi_Shakkar_500g.png',
@@ -120,6 +120,7 @@
   };
 
   const thumbnailOverrides = {
+    misc:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1791546608/Shama_hing_jeera_roasted_chana_400g.png',
     cosmetics:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1791542936/johnson_s_baby_oil_200ml.png',
     tea:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1791292824/Shama_Premium_gold_Tea_500g.png',
     sugar:'https://res.cloudinary.com/wy4nkkqq/image/upload/f_auto,q_auto:good,c_fit,w_320,h_320/v1791031373/Shama_Desi_Shakkar_500g.png',
