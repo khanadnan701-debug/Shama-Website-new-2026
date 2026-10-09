@@ -25,18 +25,18 @@
     ['Dettol','Dettol Antiseptic Liquid','1L','https://res.cloudinary.com/wy4nkkqq/image/upload/v1790076457/Dettol_Antiseptic_Liquid_1L.png'],
     ['Dettol','Dettol Antiseptic Liquid','750ml','https://res.cloudinary.com/wy4nkkqq/image/upload/v1790076460/Dettol_Antiseptic_Liquid_750ml.png'],
     ['Dettol','Dettol Antiseptic Liquid','125ml','https://res.cloudinary.com/wy4nkkqq/image/upload/v1790076465/Dettol_Liquid_125ml.png'],
-    ['Dettol','Dettol Sensitive Soap Mega Pack','6 x 100g','https://res.cloudinary.com/wy4nkkqq/image/upload/v1790076478/Dettol_Soap_Sensitive_6x100g.png'],
+    ['Dettol','Dettol Sensitive Soap Mega Pack','6 x 100g','https://res.cloudinary.com/wy4nkkqq/image/upload/v1791542240/Dettol_Sensitive_Soap_Mega_Pack_6x100g.png'],
 
     // JOHNSON'S BABY
     ["Johnson's Baby","Johnson's Baby Powder",'100g','https://res.cloudinary.com/wy4nkkqq/image/upload/v1790076458/Johnson_s_Baby_Powder_100g.png'],
     ["Johnson's Baby","Johnson's Baby Powder",'500g','https://res.cloudinary.com/wy4nkkqq/image/upload/v1790076461/Johnsons_Baby_Powder_500_gm.png'],
-    ["Johnson's Baby","Johnson's Baby Lotion",'300ml','https://res.cloudinary.com/wy4nkkqq/image/upload/v1790076464/Johnson_s_Baby_Lotion_300ml.png'],
+    ["Johnson's Baby","Johnson's Baby Lotion",'300ml','https://res.cloudinary.com/wy4nkkqq/image/upload/v1791542625/johnson_s_baby_lotion_300ml.png'],
     ["Johnson's Baby","Johnson's Baby Oil",'300ml','https://res.cloudinary.com/wy4nkkqq/image/upload/v1790076466/Johnson_s_Baby_Oil_300ml.png'],
     ["Johnson's Baby","Johnson's Baby Powder",'200g','https://res.cloudinary.com/wy4nkkqq/image/upload/v1790076468/Johnson_s_Baby_Powder_200g.png'],
     ["Johnson's Baby","Johnson's Baby Powder",'400g','https://res.cloudinary.com/wy4nkkqq/image/upload/v1790076469/Johnson_s_Baby_Powder_400g.png'],
     ["Johnson's Baby","Johnson's Baby Oil",'500ml','https://res.cloudinary.com/wy4nkkqq/image/upload/v1790076470/Johnson_s_Baby_Oil_500ml.png'],
     ["Johnson's Baby","Johnson's Baby Oil",'100ml','https://res.cloudinary.com/wy4nkkqq/image/upload/v1790076472/Johnson_Baby_oil_100ml.png'],
-    ["Johnson's Baby","Johnson's Baby Oil",'200ml','https://res.cloudinary.com/wy4nkkqq/image/upload/v1790076473/Johnson_s_Baby_Oil_200ml.png'],
+    ["Johnson's Baby","Johnson's Baby Oil",'200ml','https://res.cloudinary.com/wy4nkkqq/image/upload/v1791542936/johnson_s_baby_oil_200ml.png'],
     ["Johnson's Baby","Johnson's Baby Lotion",'500ml','https://res.cloudinary.com/wy4nkkqq/image/upload/v1790076476/Johnsons_Baby_Lotion_500ml.png'],
 
     // DOVE
@@ -76,7 +76,7 @@
       slug:'cosmetics',
       name:'Cosmetics',
       desc:'Beauty, personal care and hygiene essentials',
-      image:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1791473691/lux_rose_loap_100g.png'
+      image:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1791542936/johnson_s_baby_oil_200ml.png'
     });
   }
 })();
