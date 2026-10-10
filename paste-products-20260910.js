@@ -3,7 +3,8 @@
   if (typeof productData === 'undefined' || !Array.isArray(productData)) return;
   if (typeof categories === 'undefined' || !Array.isArray(categories)) return;
 
-  // Exact mirror of the current Cloudinary shama/Paste folder (46 assets).
+  // Curated Cloudinary shama/Paste catalogue: 46 source assets, 45 shown.
+  // Shama Mango Mixed Pickle 1kg is intentionally excluded from the website.
   const folderProducts = [
   {
     "category": "sauces",
@@ -315,13 +316,6 @@
   },
   {
     "category": "sauces",
-    "group": "Shama Curry & Cooking Pastes",
-    "title": "Shama Mango Mixed Pickle",
-    "pack": "1kg x 1",
-    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1789678774/Shama_Mango_mixed_1kg.png"
-  },
-  {
-    "category": "sauces",
     "group": "Pickles & Chutneys",
     "title": "Shama Mango Pickle",
     "pack": "1kg x 1",
@@ -342,8 +336,9 @@
   window.shamaPasteFolderCatalogue = {
     cloudinaryTotal: 46,
     total: folderProducts.length,
+    excludedFromWebsite: ['Shama_Mango_mixed_1kg'],
     groups: ["Shama Curry & Cooking Pastes","Ginger & Garlic Pastes","Pickles & Chutneys","Sauces"],
     source: 'shama/Paste',
-    syncedAt: '2026-10-03'
+    syncedAt: '2026-10-10'
   };
 })();
