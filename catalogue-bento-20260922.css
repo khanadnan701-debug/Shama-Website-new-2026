@@ -846,3 +846,37 @@ body[data-page="catalogue"] .grocery-category-image{
     padding-top:16px;
   }
 }
+
+/* 2026-10-17: matching small subtype chips for all other catalogue categories. */
+body[data-page="catalogue"] .catalogue-subtypes,
+body[data-page="catalogue"] .catalogue-range-types{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+  gap:5px;
+  margin-top:8px;
+}
+body[data-page="catalogue"] .catalogue-subtypes i,
+body[data-page="catalogue"] .catalogue-range-types i{
+  display:inline-flex;
+  align-items:center;
+  padding:5px 7px;
+  border-radius:999px;
+  background:#edf0f4;
+  color:#42536b;
+  font:800 7px/1 Manrope,sans-serif;
+  font-style:normal;
+  letter-spacing:.03em;
+  text-transform:uppercase;
+}
+body[data-page="catalogue"] .grocery-range-copy .catalogue-range-types{
+  justify-content:flex-start;
+  margin:8px 0 2px;
+}
+@media(max-width:700px){
+  body[data-page="catalogue"] .catalogue-subtypes i,
+  body[data-page="catalogue"] .catalogue-range-types i{
+    font-size:6px;
+    padding:4px 6px;
+  }
+}
