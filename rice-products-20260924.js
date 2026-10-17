@@ -25,7 +25,7 @@
 
     // SHAMA — Thai Jasmine AAA
     { category:'rice', title:'Shama Thai Long Grain Jasmin Rice AAA', pack:'4114B - 20kg x 1', image:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1790255523/Shama_Thai_Long_Grain_Jasmin_Rice_AAA_20kg.png' },
-    { category:'rice', title:'Shama Thai Long Grain Jasmin Rice AAA', pack:'18kg x 1', image:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1790257556/Shama_Thai_Long_Grain_Jasmin_Rice_AAA_18kg.png' },
+    { category:'rice', title:'Shama Thai Long Grain Jasmin Rice AAA', pack:'4114B - 18kg x 1', image:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1790257556/Shama_Thai_Long_Grain_Jasmin_Rice_AAA_18kg.png' },
     { category:'rice', title:'Shama Thai Long Grain Jasmin Rice AAA', pack:'0338A - 10kg x 1', image:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1790255523/Shama_Thai_Long_Grain_Jasmin_Rice_AAA_10kg.png' },
     { category:'rice', title:'Shama Thai Long Grain Jasmin Rice AAA', pack:'0239A - 5kg x 1', image:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1790255522/Shama_Thai_Long_Grain_Jasmin_Rice_AAA_5kg.png' },
     { category:'rice', title:'Shama Thai Long Grain Jasmin Rice AAA', pack:'0321B - 2kg x 10', image:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1790261599/Shama_Thai_Long_Grain_Jasmin_Rice_AAA_2kg.png' },
@@ -33,13 +33,13 @@
 
     // SHAMA — Thai Jasmine broken variants
     { category:'rice', title:'Shama Thai Jasmine Broken Rice (1 Time)', pack:'20kg x 1', image:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1790255513/Shama_thai_jasmine_1_volta_20kg.png' },
-    { category:'rice', title:'Shama Thai Jasmine Broken Rice (1 Time)', pack:'18kg x 1', image:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1790256471/Shama_thai_jasmine_1_volta_18kg.png' },
-    { category:'rice', title:'Shama Thai Jasmine Broken Rice (1 Time)', pack:'5kg x 1', image:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1790255513/Shama_thai_jasmine_1_volta_5kg.png' },
+    { category:'rice', title:'Shama Thai Jasmine Broken Rice (1 Time)', pack:'4251A - 18kg x 1', image:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1790256471/Shama_thai_jasmine_1_volta_18kg.png' },
+    { category:'rice', title:'Shama Thai Jasmine Broken Rice (1 Time)', pack:'0253A - 5kg x 1', image:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1790255513/Shama_thai_jasmine_1_volta_5kg.png' },
     { category:'rice', title:'Shama Thai Jasmine Broken Rice (1 Time)', pack:'1kg x 1', image:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1790255513/Shama_thai_jasmine_1_volta_1kg.png' },
     { category:'rice', title:'Shama Thai Jasmine Broken Rice (2 Times)', pack:'20kg x 1', image:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1790255513/Shama_thai_jasmine_2_volta_20kg.png' },
-    { category:'rice', title:'Shama Thai Jasmine Broken Rice (2 Times)', pack:'18kg x 1', image:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1790256469/Shama_thai_jasmine_2_volta_18kg.png' },
-    { category:'rice', title:'Shama Thai Jasmine Broken Rice (2 Times)', pack:'5kg x 1', image:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1790255513/Shama_thai_jasmine_2_volta_5kg.png' },
-    { category:'rice', title:'Shama Thai Jasmine Broken Rice (2 Times)', pack:'1kg x 1', image:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1790255513/Shama_thai_jasmine_2_volta_1kg.png' },
+    { category:'rice', title:'Shama Thai Jasmine Broken Rice (2 Times)', pack:'4251B - 18kg x 1', image:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1790256469/Shama_thai_jasmine_2_volta_18kg.png' },
+    { category:'rice', title:'Shama Thai Jasmine Broken Rice (2 Times)', pack:'0277A - 5kg x 1', image:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1790255513/Shama_thai_jasmine_2_volta_5kg.png' },
+    { category:'rice', title:'Shama Thai Jasmine Broken Rice (2 Times)', pack:'9911A - 1kg x 1', image:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1790255513/Shama_thai_jasmine_2_volta_1kg.png' },
 
     // SHAMA — Other rice
     { category:'rice', title:'Shama Sona Masoori Rice', pack:'5kg x 1', image:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1790255521/sona_masoori_5kg.png' },
