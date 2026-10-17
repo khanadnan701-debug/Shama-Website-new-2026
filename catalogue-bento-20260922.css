@@ -830,3 +830,19 @@ body[data-page="catalogue"] .grocery-range-number{
 @media(max-width:700px){
   .wine-subtypes i,.wine-range-types i{font-size:6px;padding:4px 6px}
 }
+
+/* 2026-10-17: align category thumbnails across cards with/without subtype chips.
+   Sugar and Wines have extra labels, which previously shifted their images upward
+   because the complete content stack was vertically centered. */
+body[data-page="catalogue"] .grocery-category-card{
+  justify-content:flex-start;
+  padding-top:42px;
+}
+body[data-page="catalogue"] .grocery-category-image{
+  flex-shrink:0;
+}
+@media(max-width:700px){
+  body[data-page="catalogue"] .grocery-category-card{
+    padding-top:16px;
+  }
+}
