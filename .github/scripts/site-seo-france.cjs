@@ -196,6 +196,8 @@ const pages = {
 
 function esc(s){return String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));}
 function json(o){return JSON.stringify(o).replace(/</g,'\\u003c');}
+// Keep the France SEO metadata on every page, but show the French intro only on About/Contact.
+function showVisibleIntro(cfg){return cfg.slug==='about'||cfg.slug==='contact';}
 function removeManaged(html){
   return html
     .replace(/<!-- SHAMA FR SEO START -->[\s\S]*?<!-- SHAMA FR SEO END -->\s*/g,'')
@@ -238,7 +240,7 @@ function headBlock(cfg){
 <meta name="twitter:description" content="${esc(cfg.desc)}">
 <script type="application/ld+json">${json(schema)}</script>
 <style id="shama-fr-seo-style">.shama-seo-intro{padding:28px 0 20px;background:#f7f9ff;border-bottom:1px solid rgba(20,35,65,.08)}.shama-seo-intro .wrap{max-width:1180px}.shama-seo-intro .seo-kicker{display:block;margin-bottom:8px;font:800 11px/1 Manrope,Arial,sans-serif;letter-spacing:.18em;text-transform:uppercase;color:#ff4c78}.shama-seo-intro h1{margin:0 0 10px;max-width:980px;font:800 clamp(28px,3.2vw,42px)/1.08 Manrope,Arial,sans-serif;letter-spacing:-.035em;color:#17233f}.shama-seo-intro p{max-width:980px;margin:0 0 12px;font:500 15px/1.65 'DM Sans',Arial,sans-serif;color:#526079}.shama-seo-intro nav{display:flex;gap:18px;flex-wrap:wrap}.shama-seo-intro a{font-weight:800;color:#17233f;text-underline-offset:4px}@media(max-width:700px){.shama-seo-intro{padding:22px 0 16px}.shama-seo-intro h1{font-size:28px}.shama-seo-intro p{font-size:14px}}</style>
-<script>window.addEventListener('DOMContentLoaded',function(){var t=${JSON.stringify(cfg.title)};document.title=t;requestAnimationFrame(function(){var h=document.querySelector('#page-content .page-hero h1');if(h){var h2=document.createElement('h2');for(var i=0;i<h.attributes.length;i++){var a=h.attributes[i];h2.setAttribute(a.name,a.value)}h2.innerHTML=h.innerHTML;h.replaceWith(h2)}})});</script>
+<script>window.addEventListener('DOMContentLoaded',function(){var t=${JSON.stringify(cfg.title)};document.title=t;if(!document.querySelector('.shama-seo-intro'))return;requestAnimationFrame(function(){var h=document.querySelector('#page-content .page-hero h1');if(h){var h2=document.createElement('h2');for(var i=0;i<h.attributes.length;i++){var a=h.attributes[i];h2.setAttribute(a.name,a.value)}h2.innerHTML=h.innerHTML;h.replaceWith(h2)}})});</script>
 <!-- SHAMA FR SEO END -->`;
 }
 function introBlock(cfg){
@@ -259,7 +261,7 @@ function build(rootDir){
     html=html.replace(/<\/head>/i,headBlock(cfg)+'\n</head>');
     const header=/<div\s+id=["']site-header["']><\/div>/i;
     assert(header.test(html),file+' has no site-header anchor');
-    html=html.replace(header,m=>m+'\n'+introBlock(cfg));
+    if(showVisibleIntro(cfg)) html=html.replace(header,m=>m+'\n'+introBlock(cfg));
     fs.writeFileSync(full,html);
     built.push('/'+cfg.slug);
   }
@@ -274,14 +276,14 @@ function build(rootDir){
 }
 
 async function verifyLive(){
-  const checks=['/','/catalogue','/rice','/spices','/frozen','/tea','/contact'];
+  const checks=['/','/catalogue','/rice','/spices','/frozen','/tea','/about','/contact'];
   for(const u of checks){
     const r=await fetch(ORIGIN+u+'?seo_verify='+Date.now(),{headers:{'Cache-Control':'no-cache'},signal:AbortSignal.timeout(20000)});
     assert(r.ok,u+' HTTP '+r.status);
     const html=await r.text();
     if(u!=='/'){
       assert(html.includes('name="shama-seo-managed"'),u+' missing managed SEO meta');
-      assert(html.includes('class="shama-seo-intro"'),u+' missing static SEO intro');
+      assert(html.includes('class="shama-seo-intro"')===(u==='/about'||u==='/contact'),u+' incorrect static SEO intro visibility');
       assert(html.includes('rel="canonical" href="'+ORIGIN+u+'"'),u+' missing canonical');
     }
   }
