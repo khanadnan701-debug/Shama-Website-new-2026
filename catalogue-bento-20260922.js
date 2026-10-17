@@ -127,6 +127,47 @@
     wines:'https://res.cloudinary.com/wy4nkkqq/image/upload/f_auto,q_auto:good,c_fit,w_320,h_320/v1791192902/Grover_Wine_Red_Alc._13.5_vol_75cl.png'
   };
 
+  // Small category labels shared by the carousel cards and full catalogue tiles.
+  const categorySubtypeLabels = {
+    rice: ['Basmati', 'Sella', 'Extra Long'],
+    spices: ['Whole Spices', 'Powder', 'Seasoning'],
+    sauces: ['Pickles', 'Sauces', 'Chutneys'],
+    misc: ['Roasted Chana', 'Hing Jeera', 'Snacks'],
+    beverages: ['Mango', 'Coconut', 'Fruit Drinks'],
+    tea: ['Black Tea', 'Premium Gold', 'Masala Tea'],
+    sugar: ['Desi Gur', 'Desi Shakkar', 'Sugar & Cubes'],
+    wines: ['Red', 'White', 'Rosé', 'Liqueurs', 'Beer'],
+    flour: ['Atta', 'Besan', 'Dal'],
+    frozen: ['Samosa', 'Paratha', 'Kebabs'],
+    oils: ['Sunflower', 'Mustard', 'Cooking Oil'],
+    'dry-fruits': ['Almonds', 'Raisins', 'Cashews'],
+    laziza: ['Recipe Masalas', 'Dessert Mixes', 'Traditional Mixes'],
+    ahmed: ['Sauces', 'Pickles', 'Desserts'],
+    agarbatti: ['Metro', 'Metromilan', 'Pure'],
+    dates: ['Ajwa', 'Khudri', 'Safawi', 'Sukkari'],
+    pataks: ['Curry Pastes', 'Marinades', 'Cooking Sauces'],
+    cosmetics: ['Baby Care', 'Personal Care', 'Skin Care'],
+    'non-foods': ['Tandoors', 'Parts', 'Accessories'],
+    divers: ['Pantry', 'Snacks', 'Specialities'],
+    preserves: ['Ghee', 'Vinegar', 'Preserved Foods'],
+    'sea-food': ['Prawns', 'Seafood', 'Frozen'],
+    'savoury-snacks': ['Namkeen', 'Chips', 'Mixtures'],
+    bakery: ['Rusk', 'Biscuits', 'Cakes']
+  };
+
+  // Retain the original Sugar/Wines classes, sizing and colours.
+  function renderSubtypePills(slug, fullRange = false) {
+    const labels = categorySubtypeLabels[slug] || [];
+    if (!labels.length) return '';
+    const className = slug === 'sugar'
+      ? (fullRange ? 'sugar-range-types' : 'sugar-subtypes')
+      : slug === 'wines'
+        ? (fullRange ? 'wine-range-types' : 'wine-subtypes')
+        : (fullRange ? 'catalogue-range-types' : 'catalogue-subtypes');
+    const tag = fullRange ? 'div' : 'span';
+    return `<${tag} class="${className}">${labels.map(label => `<i>${label}</i>`).join('')}</${tag}>`;
+  }
+
   const tones = ['sky','peach','mint','sand','lavender','rose'];
 
   const coreRanges = (typeof categories !== 'undefined' ? categories : []).map((c,index) => ({
@@ -220,7 +261,7 @@
                   </span>
                   <strong>${range.name}</strong>
                   <small>${range.desc}</small>
-                  ${range.slug==='sugar' ? '<span class="sugar-subtypes"><i>Desi Gur</i><i>Desi Shakkar</i><i>Sugar & Cubes</i></span>' : range.slug==='wines' ? '<span class="wine-subtypes"><i>Red</i><i>White</i><i>Rosé</i><i>Liqueurs</i><i>Beer</i></span>' : ''}
+                  ${renderSubtypePills(range.slug)}
                 </a>
               `).join('')}
             </div>
@@ -241,7 +282,7 @@
                   <div class="grocery-range-copy">
                     <h3>${range.name}</h3>
                     <p>${range.desc}</p>
-                    ${range.slug==='sugar' ? '<div class="sugar-range-types"><i>Desi Gur</i><i>Desi Shakkar</i><i>Sugar & Cubes</i></div>' : range.slug==='wines' ? '<div class="wine-range-types"><i>Red</i><i>White</i><i>Rosé</i><i>Liqueurs</i><i>Beer</i></div>' : ''}
+                    ${renderSubtypePills(range.slug, true)}
                     <span>Shop category ↗</span>
                   </div>
                 </a>
