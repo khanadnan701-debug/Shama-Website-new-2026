@@ -8,97 +8,109 @@
       category: 'flour',
       title: 'Shama Chakki Gold Atta',
       pack: '2kg',
-      image: 'https://res.cloudinary.com/wy4nkkqq/image/upload/v1789232532/Shama_chakki_gold_atta_2kg.png'
+      image: '/assets/flour/shama-chakki-gold-atta-2kg.webp'
     },
     {
       category: 'flour',
       title: 'Shama Chakki Gold Atta',
       pack: '5kg',
-      image: 'https://res.cloudinary.com/wy4nkkqq/image/upload/v1789232533/Shama_chakki_gold_atta_5kg.png'
+      image: '/assets/flour/shama-chakki-gold-atta-5kg.webp'
     },
     {
       category: 'flour',
       title: 'Shama Chakki Gold Atta',
       pack: '10kg',
-      image: 'https://res.cloudinary.com/wy4nkkqq/image/upload/v1789232534/Shama_chakki_gold_atta_10kg.png'
+      image: '/assets/flour/shama-chakki-gold-atta-10kg.webp'
     },
     {
       category: 'flour',
       title: 'Shama Besan',
       pack: '1kg',
-      image: 'https://res.cloudinary.com/wy4nkkqq/image/upload/v1789232533/shama_besan_1kg.png'
+      image: '/assets/flour/shama-besan-1kg.webp'
     },
     {
       category: 'flour',
       title: 'Shama Chapati Atta Medium',
       pack: '10kg',
-      image: 'https://res.cloudinary.com/wy4nkkqq/image/upload/v1789232535/Shama_chapati_atta_medium_10kg.png'
+      image: '/assets/flour/shama-chapati-atta-medium-10kg.webp'
     },
     {
       category: 'flour',
       title: 'Shama Chapati Atta Medium',
       pack: '20kg',
-      image: 'https://res.cloudinary.com/wy4nkkqq/image/upload/v1789232534/Shama_chapati_atta_medium_20kg.png'
+      image: '/assets/flour/shama-chapati-atta-medium-20kg.webp'
     },
     {
       category: 'flour',
       title: 'Shama Wheat Flour T55',
       pack: '1kg',
-      image: 'https://res.cloudinary.com/wy4nkkqq/image/upload/v1789232539/shama_wheat_floor_T55_1kg.png'
+      image: '/assets/flour/shama-wheat-flour-t55-1kg.webp'
     },
     {
       category: 'flour',
       title: 'Shama Wheat Flour T55',
       pack: '25kg',
-      image: 'https://res.cloudinary.com/wy4nkkqq/image/upload/v1789232534/Shama_wheat_floor_T55_25kg.png'
+      image: '/assets/flour/shama-wheat-flour-t55-25kg.webp'
     },
     {
       category: 'flour',
       title: 'Shama Jawar Atta',
       pack: '1kg',
-      image: 'https://res.cloudinary.com/wy4nkkqq/image/upload/v1789232535/shama_jawar_atta_1kg.png'
+      image: '/assets/flour/shama-jawar-atta-1kg.webp'
     },
     {
       category: 'flour',
       title: 'Shama Multigrain Atta',
       pack: '5kg',
-      image: 'https://res.cloudinary.com/wy4nkkqq/image/upload/v1789232536/Shama_multigrain_atta_5kg.png'
+      image: '/assets/flour/shama-multigrain-atta-5kg.webp'
     },
     {
       category: 'flour',
       title: 'Shama Multigrain Atta',
       pack: '10kg',
-      image: 'https://res.cloudinary.com/wy4nkkqq/image/upload/v1789232537/Shama_multigrain_atta_10kg.png'
+      image: '/assets/flour/shama-multigrain-atta-10kg.webp'
     },
     {
       category: 'flour',
       title: 'Shama Rice Flour',
       pack: '1kg',
-      image: 'https://res.cloudinary.com/wy4nkkqq/image/upload/v1789232538/Shama_rice_flour_1kg.png'
+      image: '/assets/flour/shama-rice-flour-1kg.webp'
     },
     {
       category: 'flour',
       title: 'Shama Rice Flour',
       pack: '5kg',
-      image: 'https://res.cloudinary.com/wy4nkkqq/image/upload/v1789232537/Shama_rice_flour_5kg.png'
+      image: '/assets/flour/shama-rice-flour-5kg.webp'
     },
     {
       category: 'flour',
       title: 'TRS Besan Gram Flour',
       pack: '1kg',
-      image: 'https://res.cloudinary.com/wy4nkkqq/image/upload/v1790601560/TRS_Baisan_Gram_Flour_1kg.png'
+      image: '/assets/flour/trs-besan-gram-flour-1kg.webp'
     },
     {
       category: 'flour',
       title: 'Le Renard Semoule Fine',
       pack: '1kg',
-      image: 'https://res.cloudinary.com/wy4nkkqq/image/upload/v1790601558/Le_Renard_Semoule_fine_1kg.png'
+      image: '/assets/flour/le-renard-semoule-fine-1kg.webp'
     },
     {
       category: 'flour',
       title: 'Ahmed Corn Flour',
       pack: '285g',
-      image: 'https://res.cloudinary.com/wy4nkkqq/image/upload/v1790601558/Ahmed_Cornflour_285g.png'
+      image: '/assets/flour/ahmed-corn-flour-285g.webp'
+    },
+    {
+      category: 'flour',
+      title: 'Braga Semoule',
+      pack: '1kg',
+      image: '/assets/flour/braga-semoule-1kg.webp'
+    },
+    {
+      category: 'flour',
+      title: 'Braga Maida Flour T55',
+      pack: '25kg',
+      image: '/assets/flour/braga-maida-flour-t55-25kg.webp'
     }
   ];
 

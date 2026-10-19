@@ -47,7 +47,11 @@ jobs:
             dist/assets/spices/shama-kasuri-methi-1kg.webp \
             dist/assets/spices/shama-garam-masala-powder.webp \
             dist/assets/miscellaneous/shama-tukmaria-100g.webp \
-            dist/assets/sauces-pastes/sunrise-ginger-paste-750g.webp; do
+            dist/assets/sauces-pastes/sunrise-ginger-paste-750g.webp \
+            dist/assets/flour/shama-chakki-gold-atta-5kg.webp \
+            dist/assets/flour/shama-wheat-flour-t55-1kg.webp \
+            dist/assets/flour/braga-semoule-1kg.webp \
+            dist/assets/flour/braga-maida-flour-t55-25kg.webp; do
             test -f "$file" || { echo "::error::Recovery image missing: $file"; exit 1; }
           done
 
