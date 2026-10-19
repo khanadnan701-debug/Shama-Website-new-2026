@@ -70,6 +70,12 @@ jobs:
             exit 1
           fi
 
+      - name: Validate beverage images before deploy
+        run: |
+          node --check dist/script.js
+          node --check dist/beverage-images-20260912.js
+          node .github/scripts/verify-beverages.cjs dist
+
       - name: Build and validate SEO
         run: |
           node --check .github/scripts/home-seo.cjs

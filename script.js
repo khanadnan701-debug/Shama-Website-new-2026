@@ -399,13 +399,13 @@ const productData = [
         "category":  "beverages",
         "title":  "Shama Coconut Milk Drink with Mango",
         "pack":  "2431C - 240ml x 24",
-        "image":  "/assets/beverages/shama-coco-milk-drink-mango-240ml.webp"
+        "image":  "/assets/beverages/shama-coco-milk-drink-mango-240ml.webp?v=20261020-drinks31"
     },
     {
         "category":  "beverages",
         "title":  "Shama Coconut Milk Drink Original",
         "pack":  "2448C - 240ml x 24",
-        "image":  "/assets/beverages/shama-coco-milk-drink-original-240ml.webp"
+        "image":  "/assets/beverages/shama-coco-milk-drink-original-240ml.webp?v=20261020-drinks31"
     },
     {
         "category":  "beverages",
@@ -1508,187 +1508,187 @@ document.addEventListener('click',e=>{const image=e.target.closest('#runway-imag
     "category": "beverages",
     "title": "Shama Coconut Milk Drink with Mango",
     "pack": "240ml",
-    "image": "/assets/beverages/shama-coco-milk-drink-mango-240ml.webp"
+    "image": "/assets/beverages/shama-coco-milk-drink-mango-240ml.webp?v=20261020-drinks31"
   },
   {
     "category": "beverages",
     "title": "Shama Coconut Milk Drink Original",
     "pack": "240ml",
-    "image": "/assets/beverages/shama-coco-milk-drink-original-240ml.webp"
+    "image": "/assets/beverages/shama-coco-milk-drink-original-240ml.webp?v=20261020-drinks31"
   },
   {
     "category": "beverages",
     "title": "Best Nectar Cocktail Can",
     "pack": "250ml",
-    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1791036281/Best_Nectar_Cocktail_Canette_250ml.png"
+    "image": "/assets/beverages/best-nectar-cocktail-canette-250ml.webp"
   },
   {
     "category": "beverages",
     "title": "Best Nectar Cocktail Glass Bottle",
     "pack": "250ml",
-    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1791036282/Best_Nectar_Cocktail_Glass_Bottle_250ml.png"
+    "image": "/assets/beverages/best-nectar-cocktail-glass-bottle-250ml.webp"
   },
   {
     "category": "beverages",
     "title": "Best Nectar Guava Can",
     "pack": "250ml",
-    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1791036282/Best_Nectar_Guava_Canette_250ml.png"
+    "image": "/assets/beverages/best-nectar-guava-canette-250ml.webp"
   },
   {
     "category": "beverages",
     "title": "Best Nectar Cocktail Tetra Pack",
     "pack": "200ml",
-    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1791036286/Best_brand_Nectar_Cocktail_Tetra_Pack_200ml.png"
+    "image": "/assets/beverages/best-brand-nectar-cocktail-tetra-pack-200ml.webp"
   },
   {
     "category": "beverages",
     "title": "Best Nectar Guava Tetra Pack",
     "pack": "1L",
-    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1791036286/Best_Nectar_Guava_Tetra_Pack_1L.png"
+    "image": "/assets/beverages/best-nectar-guava-tetra-pack-1l.webp"
   },
   {
     "category": "beverages",
     "title": "Best Nectar Guava Glass Bottle",
     "pack": "1L",
-    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1791036288/Best_Nectar_Guava_Glass_Bottle_1L.png"
+    "image": "/assets/beverages/best-nectar-guava-glass-bottle-1l.webp"
   },
   {
     "category": "beverages",
     "title": "Best Nectar Mango Tetra Pack",
     "pack": "1L",
-    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1791036289/Best_Nectar_Mango_Tetra_Pack_1L.png"
+    "image": "/assets/beverages/best-nectar-mango-tetra-pack-1l.webp"
   },
   {
     "category": "beverages",
     "title": "Best Nectar Mango Tetra Pack",
     "pack": "200ml",
-    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1791036315/Best_Nectar_Mango_Tetra_Pack_200ml.png"
+    "image": "/assets/beverages/best-nectar-mango-tetra-pack-200ml.webp"
   },
   {
     "category": "beverages",
     "title": "Best Nectar Guava Tetra Pack",
     "pack": "200ml",
-    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1791036326/Best_Nectar_Guava_Tetra_Pack_200ml.png"
+    "image": "/assets/beverages/best-nectar-guava-tetra-pack-200ml.webp"
   },
   {
     "category": "beverages",
     "title": "Best Nectar Cocktail Tetra Pack",
     "pack": "1L",
-    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1791036329/Best_Nectar_Cocktail_Tetra_Pack_1L.png"
+    "image": "/assets/beverages/best-nectar-cocktail-tetra-pack-1l.webp"
   },
   {
     "category": "beverages",
     "title": "Best Nectar Mango Can",
     "pack": "250ml",
-    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1791037165/Best_Nectar_Mango_Canette_250ml.png"
+    "image": "/assets/beverages/best-nectar-mango-canette-250ml.webp"
   },
   {
     "category": "beverages",
     "title": "Best Nectar Mango Glass Bottle",
     "pack": "250ml",
-    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1791037166/Best_Nectar_Mango_Glass_Bottle_250ml.png"
+    "image": "/assets/beverages/best-nectar-mango-glass-bottle-250ml.webp"
   },
   {
     "category": "beverages",
     "title": "Best Nectar Guava Glass Bottle",
     "pack": "250ml",
-    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1791037167/Best_Nectar_Guava_Glass_Bottle_250ml.png"
+    "image": "/assets/beverages/best-nectar-guava-glass-bottle-250ml.webp"
   },
   {
     "category": "beverages",
     "title": "Best Nectar Mango Glass Bottle",
     "pack": "1L",
-    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1791037168/Best_Nectar_Mango_Glass_Bottle_1L.png"
+    "image": "/assets/beverages/best-nectar-mango-glass-bottle-1l.webp"
   },
   {
     "category": "beverages",
     "title": "Shezan Chausna Mango Juice Drink",
     "pack": "225ml bottle",
-    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1791036281/Shezan_CHAUSNA_MANGO_Juice_Drink_225ML_Bottle.png"
+    "image": "/assets/beverages/shezan-chausna-mango-juice-drink-225ml-bottle.webp"
   },
   {
     "category": "beverages",
     "title": "Shezan Happy Farms Mango Juice Drink",
     "pack": "1L tetra",
-    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1791036283/Shezan_HAPPY_FARMS_MANGO_Juice_Drink_1L_Tetra.png"
+    "image": "/assets/beverages/shezan-happy-farms-mango-juice-drink-1l-tetra.webp"
   },
   {
     "category": "beverages",
     "title": "Shezan Mango Juice Drink",
     "pack": "225ml bottle",
-    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1791036284/Shezan_MANGO_Juice_Drink_225ML_Bottle.png"
+    "image": "/assets/beverages/shezan-mango-juice-drink-225ml-bottle.webp"
   },
   {
     "category": "beverages",
     "title": "Shezan Lychee Juice Drink",
     "pack": "225ml bottle",
-    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1791036290/Shezan_LYCHEE_Juice_Drink_225ML_Bottle.png"
+    "image": "/assets/beverages/shezan-lychee-juice-drink-225ml-bottle.webp"
   },
   {
     "category": "beverages",
     "title": "Shezan Mango Juice Drink",
     "pack": "1L tetra",
-    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1791036291/Shezan_MANGO_Juice_Drink_1L_Tetra.png"
+    "image": "/assets/beverages/shezan-mango-juice-drink-1l-tetra.webp"
   },
   {
     "category": "beverages",
     "title": "Shezan Mango Juice Drink",
     "pack": "250ml tetra",
-    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1791036327/Shezan_MANGO_Juice_Drink_250ML_Tetra.png"
+    "image": "/assets/beverages/shezan-mango-juice-drink-250ml-tetra.webp"
   },
   {
     "category": "beverages",
     "title": "Shezan Apple Juice Drink",
     "pack": "1L tetra",
-    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1791036328/Shezan_APPLE_Juice_Drink_1L_Tetra.png"
+    "image": "/assets/beverages/shezan-apple-juice-drink-1l-tetra.webp"
   },
   {
     "category": "beverages",
     "title": "Shezan Fruit Punch Juice Drink",
     "pack": "1L tetra",
-    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1791036343/Shezan_FRUIT_PUNCH_Juice_Drink_1L_Tetra.png"
+    "image": "/assets/beverages/shezan-fruit-punch-juice-drink-1l-tetra.webp"
   },
   {
     "category": "beverages",
     "title": "Shezan Fruit Punch Juice Drink",
     "pack": "250ml tetra",
-    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1791037150/Shezan_FRUIT_PUNCH_Juice_Drink_250ML_Tetra.png"
+    "image": "/assets/beverages/shezan-fruit-punch-juice-drink-250ml-tetra.webp"
   },
   {
     "category": "beverages",
     "title": "MANA Energy Drink Green",
     "pack": "500ml",
-    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1791036329/MANA_Energy_Drink_Green_500ml.png"
+    "image": "/assets/beverages/mana-energy-drink-green-500ml.webp"
   },
   {
     "category": "beverages",
     "title": "Ginseng Energy Drink",
     "pack": "250ml",
-    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1791036379/GINSENG_Energy_Drink_250ml.png"
+    "image": "/assets/beverages/ginseng-energy-drink-250ml.webp"
   },
   {
     "category": "beverages",
     "title": "Carabao Energy Drink",
     "pack": "250ml",
-    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1791037150/Carabao_Energy_Drink_250ml.png"
+    "image": "/assets/beverages/carabao-energy-drink-250ml.webp"
   },
   {
     "category": "beverages",
     "title": "Rooh Afza Rose Syrup",
     "pack": "800ml",
-    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1791036325/Rooh_Afza_Rose_syrup_800ml.png"
+    "image": "/assets/beverages/rooh-afza-rose-syrup-800ml.webp"
   },
   {
     "category": "beverages",
     "title": "TG Kiat Rose Syrup",
     "pack": "750ml",
-    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1791037152/TG_Kiat_Rose_Syrup_750ml.png"
+    "image": "/assets/beverages/tg-kiat-rose-syrup-750ml.webp"
   },
   {
     "category": "beverages",
     "title": "Alokozai Drink",
     "pack": "250ml x 24",
-    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1791036279/ALOKOZAI_250_ml_x24.png"
+    "image": "/assets/beverages/alokozai-250-ml-x24.webp"
   }
 ];
   for (let i = productData.length - 1; i >= 0; i--) {
@@ -1700,7 +1700,7 @@ document.addEventListener('click',e=>{const image=e.target.closest('#runway-imag
     if (category) {
       category.name = 'Beverages';
       category.desc = 'Falooda, basil seed, coconut milk, juices, nectars, energy drinks and syrups';
-      category.image = '/assets/beverages/shama-coco-milk-drink-mango-240ml.webp';
+      category.image = '/assets/beverages/shama-coco-milk-drink-mango-240ml.webp?v=20261020-drinks31';
     }
   }
 })();

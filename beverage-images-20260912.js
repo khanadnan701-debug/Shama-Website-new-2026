@@ -3,8 +3,8 @@
   if (typeof productData === 'undefined' || !Array.isArray(productData)) return;
   // Restored from 2026-10-19 Beverages photo pack. All images are served by Shama.
   const imageByTitle = {
-  "Shama Coconut Milk Drink with Mango": "/assets/beverages/shama-coco-milk-drink-mango-240ml.webp",
-  "Shama Coconut Milk Drink Original": "/assets/beverages/shama-coco-milk-drink-original-240ml.webp",
+  "Shama Coconut Milk Drink with Mango": "/assets/beverages/shama-coco-milk-drink-mango-240ml.webp?v=20261020-drinks31",
+  "Shama Coconut Milk Drink Original": "/assets/beverages/shama-coco-milk-drink-original-240ml.webp?v=20261020-drinks31",
   "Shama Coconut Water": "/assets/beverages/shama-coconut-water.webp",
   "Shama Falooda Mango": "/assets/beverages/shama-mango-falooda-20ml.webp",
   "Shama Falooda Rose": "/assets/beverages/shama-falooda-rose-290ml.webp",
