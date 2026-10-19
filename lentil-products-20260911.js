@@ -3,7 +3,6 @@
   if (document.body.dataset.category !== 'flour') return;
   if (typeof productData === 'undefined' || !Array.isArray(productData)) return;
 
-  const base = 'https://res.cloudinary.com/wy4nkkqq/image/upload/';
   const dualSizeTitles = new Set([
     'Shama Desi Moong Whole',
     'Shama Desi Moong Dal',
@@ -46,7 +45,7 @@
     category:'flour',
     title,
     pack: dualSizeTitles.has(title) ? '1kg & 2kg' : '1kg',
-    image:`${base}v1789155082/${id}.png`
+    image:`/assets/lentils/${id.replaceAll('_','-').toLowerCase()}.webp`
   }));
 
   const nonFlourProducts = productData.filter(item => item.category !== 'flour');
