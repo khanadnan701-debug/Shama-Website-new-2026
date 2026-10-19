@@ -15,7 +15,7 @@
         <span>Rice</span>
       </a>
       <a class="catalogue-hero-card two" href="spices.html" tabindex="-1">
-        <img src="https://res.cloudinary.com/wy4nkkqq/image/upload/v1789051986/star_anise.png" alt="">
+        <img src="/assets/spices/shama-garam-masala-powder.webp" alt="">
         <span>Spices</span>
       </a>
       <a class="catalogue-hero-card three" href="sauces-pastes.html" tabindex="-1">

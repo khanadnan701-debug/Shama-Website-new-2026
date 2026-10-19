@@ -35,6 +35,22 @@ jobs:
             --exclude='package-lock.json' \
             ./ dist/
 
+      - name: Stage recovered product photos
+        run: |
+          # Either upload individual images to assets/ or add one optimized archive at repository root.
+          if [ -f shama_spices_upload_ready.zip ]; then
+            unzip -tqq shama_spices_upload_ready.zip
+            unzip -qq -o shama_spices_upload_ready.zip -d dist/
+            rm -f dist/shama_spices_upload_ready.zip
+          fi
+          for file in \
+            dist/assets/spices/shama-kasuri-methi-1kg.webp \
+            dist/assets/spices/shama-garam-masala-powder.webp \
+            dist/assets/miscellaneous/shama-tukmaria-100g.webp \
+            dist/assets/sauces-pastes/sunrise-ginger-paste-750g.webp; do
+            test -f "$file" || { echo "::error::Recovery image missing: $file"; exit 1; }
+          done
+
       - name: Build and validate SEO
         run: |
           node --check .github/scripts/home-seo.cjs
