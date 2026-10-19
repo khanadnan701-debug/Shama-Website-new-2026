@@ -178,7 +178,7 @@ const items=[
 ["Sauces & Pastes","sauces-pastes.html","https://res.cloudinary.com/wy4nkkqq/image/upload/v1789678774/Shama_Mango_pickle_1kg.png"],
 ["Miscellaneous","miscellaneous.html","/assets/shama-misc-fried-onion-premium-20261002.svg?v=1"],
 ["Beverages","beverages.html","https://res.cloudinary.com/wy4nkkqq/image/upload/v1789231973/Shama_Basil_Seed_Drink_Watermelon.png"],
-["Flour & Lentils","flour-lentiles.html","/assets/flour/shama-wheat-flour-t55-1kg.webp"],
+["Flour & Lentils","flour-lentiles.html","/assets/flour/shama-wheat-flour-t55-1kg.webp?v=20261019-flour-newzip-v2"],
 ["Frozen","frozen.html","https://res.cloudinary.com/wy4nkkqq/image/upload/v1790625180/Shama_Chicken_tikka_Samosa_20Pcs.png"],
 ["Oils","oils.html","https://res.cloudinary.com/wy4nkkqq/image/upload/v1789678755/Shama_sunflower_oil_5ltr.png"],
 ["Dry Fruits","dry-fruits.html","https://res.cloudinary.com/wy4nkkqq/image/upload/v1789232085/Shama_Raw_almonds_100gm.png"],
