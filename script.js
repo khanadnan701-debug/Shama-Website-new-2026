@@ -1327,7 +1327,7 @@ const categories=[
  {slug:'tea',name:'Tea',desc:'Premium black tea, pink tea, green tea and classic tea bags',image:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1791292824/Shama_Premium_gold_Tea_500g.png'},
  {slug:'sugar',name:'Sugar',desc:'Sugar, gur and traditional shakkar products',image:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1791031373/Shama_Desi_Shakkar_500g.png'},
  {slug:'wines',name:'Wines',desc:'Red, white and rosé wines, liqueurs and beers',image:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1791192902/Grover_Wine_Red_Alc._13.5_vol_75cl.png'},
- {slug:'flour',name:'Flour & Lentiles',desc:'Wholesome kitchen staples',image:'https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=900&q=85'},
+ {slug:'flour',name:'Flour & Lentiles',desc:'Wholesome kitchen staples',image:'/assets/flour/shama-chakki-gold-atta-5kg.webp'},
  {slug:'frozen',name:'Frozen',desc:'Convenience, without compromise',image:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1790625180/Shama_Chicken_tikka_Samosa_20Pcs.png'},
  {slug:'oils',name:'Oils',desc:'The foundation of great food',image:'https://images.unsplash.com/photo-1474979266404-7eaacbcd87c5?auto=format&fit=crop&w=900&q=85'},
  {slug:'dry-fruits',name:'Dry Fruits',desc:'Naturally rich and satisfying',image:'https://images.unsplash.com/photo-1600189020840-e9918c25269d?auto=format&fit=crop&w=900&q=85'},
