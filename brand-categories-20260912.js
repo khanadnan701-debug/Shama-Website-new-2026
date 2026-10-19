@@ -105,7 +105,7 @@
   "spices.html": "/assets/spices/shama-garam-masala-powder.webp",
   "sauces-pastes.html": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1789678774/Shama_Mango_pickle_1kg.png",
   "miscellaneous.html": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1789466470/Shama_fried_onion_1kg.png",
-  "beverages.html": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1789231973/Shama_Basil_Seed_Drink_Watermelon.png",
+  "beverages.html": "/assets/beverages/shama-basil-seed-drink-watermelon.webp",
   "flour-lentiles.html": "/assets/flour/shama-wheat-flour-t55-1kg.webp?v=20261019-flour-newzip-v2",
   "frozen.html": "assets/frozen/shama-chicken-samosa-20.webp",
   "oils.html": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1789678755/Shama_sunflower_oil_5ltr.png",

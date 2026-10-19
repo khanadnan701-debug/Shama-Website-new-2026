@@ -399,115 +399,115 @@ const productData = [
         "category":  "beverages",
         "title":  "Shama Coconut Milk Drink with Mango",
         "pack":  "2431C - 240ml x 24",
-        "image":  "https://static.wixstatic.com/media/00ae33_130c31466ca943c6b2eb07bd4c744c80~mv2.jpg"
+        "image":  "/assets/beverages/shama-coco-milk-drink-mango-240ml.webp"
     },
     {
         "category":  "beverages",
         "title":  "Shama Coconut Milk Drink Original",
         "pack":  "2448C - 240ml x 24",
-        "image":  "https://static.wixstatic.com/media/00ae33_4da9130fd6254901a7de2f6b420df517~mv2.jpg"
+        "image":  "/assets/beverages/shama-coco-milk-drink-original-240ml.webp"
     },
     {
         "category":  "beverages",
         "title":  "Shama Coconut Water",
         "pack":  "1304A - 290ml x 24",
-        "image":  "https://static.wixstatic.com/media/00ae33_f326fbac3dba440cb19bfa73f4b35709~mv2.jpg"
+        "image":  "/assets/beverages/shama-coconut-water.webp"
     },
     {
         "category":  "beverages",
         "title":  "Shama Falooda Mango",
         "pack":  "1328A - 290ml x 24",
-        "image":  "https://static.wixstatic.com/media/00ae33_1e518d96fa2d4678befca9e44984f68f~mv2.jpg"
+        "image":  "/assets/beverages/shama-mango-falooda-20ml.webp"
     },
     {
         "category":  "beverages",
         "title":  "Shama Falooda Rose",
         "pack":  "1311A - 290ml x 24",
-        "image":  "https://static.wixstatic.com/media/00ae33_6cd1f048af49405b8a7c2a5ca06a91af~mv2.jpg"
+        "image":  "/assets/beverages/shama-falooda-rose-290ml.webp"
     },
     {
         "category":  "beverages",
         "title":  "Shama Falooda Strawberry",
         "pack":  "1335A - 290ml x 24",
-        "image":  "https://static.wixstatic.com/media/00ae33_a2b437fde727488f85dc28a273e51f58~mv2.jpg"
+        "image":  "/assets/beverages/shama-falooda-strawberry-290ml.webp"
     },
     {
         "category":  "beverages",
         "title":  "Shama Falooda Banana",
         "pack":  "3919A - 290ml x 24",
-        "image":  "https://static.wixstatic.com/media/00ae33_f451e81927734cd188cfdfd1058a17f8~mv2.jpg"
+        "image":  "/assets/beverages/shama-banana-falooda-20ml.webp"
     },
     {
         "category":  "beverages",
         "title":  "Shama Falooda Almond",
         "pack":  "3926B - 290ml x 24",
-        "image":  "https://static.wixstatic.com/media/00ae33_ccdbdadfebd14f1e8188a26933bd3372~mv2.jpg"
+        "image":  "/assets/beverages/shama-falooda-almond.webp"
     },
     {
         "category":  "beverages",
         "title":  "Shama Falooda Vanilla",
         "pack":  "4350A - 290ml x 24",
-        "image":  "https://static.wixstatic.com/media/00ae33_625e321c2e814f3d93145e2f710c9f6c~mv2.png"
+        "image":  "/assets/beverages/shama-falooda-vanilla.webp"
     },
     {
         "category":  "beverages",
         "title":  "Shama Falooda Chocolate",
         "pack":  "3467A - 290ml x 24",
-        "image":  "https://static.wixstatic.com/media/00ae33_2dc7e9a7ef85421eba287196f270284f~mv2.png"
+        "image":  "/assets/beverages/shama-falooda-chocolate.webp"
     },
     {
         "category":  "beverages",
         "title":  "Shama Almond Drink",
         "pack":  "4893A - 1000ml x 10",
-        "image":  "https://static.wixstatic.com/media/00ae33_522485d9e27841d89994a84efcdd2de1~mv2.png"
+        "image":  "/assets/beverages/shama-almond-drink.webp"
     },
     {
         "category":  "beverages",
         "title":  "Shama Basil Seed Drink Cocktail",
         "pack":  "2790C - 290ml x 24",
-        "image":  "https://static.wixstatic.com/media/00ae33_dc4d38e5bcb74da7b07c362729fae0cd~mv2.jpg"
+        "image":  "/assets/beverages/shama-basil-seed-drink-cocktail.webp"
     },
     {
         "category":  "beverages",
         "title":  "Shama Basil Seed Drink Pomegranate",
         "pack":  "2479C - 290ml x 24",
-        "image":  "https://static.wixstatic.com/media/00ae33_1c85ece52091443d99a2132b43b93192~mv2.jpg"
+        "image":  "/assets/beverages/shama-basil-seed-drink-pomegranate.webp"
     },
     {
         "category":  "beverages",
         "title":  "Shama Basil Seed Drink Pineapple",
         "pack":  "2745C - 290ml x 24",
-        "image":  "https://static.wixstatic.com/media/00ae33_221b5a0a15cb48d5b7c54ba09d7e9b27~mv2.jpg"
+        "image":  "/assets/beverages/shama-basil-seed-drink-pineapple.webp"
     },
     {
         "category":  "beverages",
         "title":  "Shama Basil Seed Drink Watermelon",
         "pack":  "2943C - 290ml x 24",
-        "image":  "https://static.wixstatic.com/media/00ae33_36e434a0bd024bda9f84ec60cfd20214~mv2.jpg"
+        "image":  "/assets/beverages/shama-basil-seed-drink-watermelon.webp"
     },
     {
         "category":  "beverages",
         "title":  "Shama Basil Seed Drink Mango",
         "pack":  "2776C - 290ml x 24",
-        "image":  "https://static.wixstatic.com/media/00ae33_5dfdd7913d4d4a33969fba602a68f478~mv2.jpg"
+        "image":  "/assets/beverages/shama-basil-seed-drink-mango.webp"
     },
     {
         "category":  "beverages",
         "title":  "Shama Basil Seed Drink Passion",
         "pack":  "2769C - 290ml x 24",
-        "image":  "https://static.wixstatic.com/media/00ae33_2b1f9b26b3ba4191b66805b537a9c94f~mv2.jpg"
+        "image":  "/assets/beverages/shama-basil-seed-drink-passion.webp"
     },
     {
         "category":  "beverages",
         "title":  "Shama Basil Seed Drink Lychee",
         "pack":  "2783C - 290ml x 24",
-        "image":  "https://static.wixstatic.com/media/00ae33_39b20e016a6e4357afb828ede02163c5~mv2.jpg"
+        "image":  "/assets/beverages/shama-basil-seed-drink-lychee.webp"
     },
     {
         "category":  "beverages",
         "title":  "Shama Basil Seed Drink Strawberry",
         "pack":  "2462C - 290ml x 24",
-        "image":  "https://static.wixstatic.com/media/00ae33_2fddc06634e64845b22c35697acc30fa~mv2.jpg"
+        "image":  "/assets/beverages/shama-basil-seed-drink-strawberry.webp"
     },
     {
         "category":  "misc",
@@ -1400,121 +1400,121 @@ document.addEventListener('click',e=>{const image=e.target.closest('#runway-imag
     "category": "beverages",
     "title": "Shama Falooda Rabri",
     "pack": "290ml x 24",
-    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1789231967/Shama_Falooda_Rabri.png"
+    "image": "/assets/beverages/shama-falooda-rabri.webp"
   },
   {
     "category": "beverages",
     "title": "Shama Falooda Pista",
     "pack": "290ml x 24",
-    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1789231967/Shama_Falooda_Pista.png"
+    "image": "/assets/beverages/shama-falooda-pista.webp"
   },
   {
     "category": "beverages",
     "title": "Shama Falooda Almond",
     "pack": "290ml x 24",
-    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1789231967/Shama_Falooda_Almond.png"
+    "image": "/assets/beverages/shama-falooda-almond.webp"
   },
   {
     "category": "beverages",
     "title": "Shama Falooda Mango",
     "pack": "290ml x 24",
-    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1789231968/Shama_mango_falooda_20ml.png"
+    "image": "/assets/beverages/shama-mango-falooda-20ml.webp"
   },
   {
     "category": "beverages",
     "title": "Shama Falooda Vanilla",
     "pack": "290ml x 24",
-    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1789231968/Shama_Falooda_Vanilla.png"
+    "image": "/assets/beverages/shama-falooda-vanilla.webp"
   },
   {
     "category": "beverages",
     "title": "Shama Falooda Rose",
     "pack": "290ml x 24",
-    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1789231968/Shama_falooda_rose_290ml.png"
+    "image": "/assets/beverages/shama-falooda-rose-290ml.webp"
   },
   {
     "category": "beverages",
     "title": "Shama Falooda Banana",
     "pack": "290ml x 24",
-    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1789231969/Shama_banana_falooda_20ml.png"
+    "image": "/assets/beverages/shama-banana-falooda-20ml.webp"
   },
   {
     "category": "beverages",
     "title": "Shama Falooda Strawberry",
     "pack": "290ml x 24",
-    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1789231969/Shama_falooda_strawberry_290ml.png"
+    "image": "/assets/beverages/shama-falooda-strawberry-290ml.webp"
   },
   {
     "category": "beverages",
     "title": "Shama Basil Seed Drink Cocktail",
     "pack": "290ml x 24",
-    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1789231969/Shama_Basil_Seed_Drink_Cocktail.png"
+    "image": "/assets/beverages/shama-basil-seed-drink-cocktail.webp"
   },
   {
     "category": "beverages",
     "title": "Shama Basil Seed Drink Lychee",
     "pack": "290ml x 24",
-    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1789231971/Shama_Basil_Seed_Drink_Lychee.png"
+    "image": "/assets/beverages/shama-basil-seed-drink-lychee.webp"
   },
   {
     "category": "beverages",
     "title": "Shama Basil Seed Drink Lemon",
     "pack": "290ml x 24",
-    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1789231971/Shama_Basil_Seed_Drink_Lemon.png"
+    "image": "/assets/beverages/shama-basil-seed-drink-lemon.webp"
   },
   {
     "category": "beverages",
     "title": "Shama Basil Seed Drink Pineapple",
     "pack": "290ml x 24",
-    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1789231971/Shama_Basil_Seed_Drink_Pineapple.png"
+    "image": "/assets/beverages/shama-basil-seed-drink-pineapple.webp"
   },
   {
     "category": "beverages",
     "title": "Shama Basil Seed Drink Mango",
     "pack": "290ml x 24",
-    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1789231971/Shama_Basil_Seed_Drink_Mango.png"
+    "image": "/assets/beverages/shama-basil-seed-drink-mango.webp"
   },
   {
     "category": "beverages",
     "title": "Shama Basil Seed Drink Passion",
     "pack": "290ml x 24",
-    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1789231971/Shama_Basil_Seed_Drink_Passion.png"
+    "image": "/assets/beverages/shama-basil-seed-drink-passion.webp"
   },
   {
     "category": "beverages",
     "title": "Shama Basil Seed Drink Melon",
     "pack": "290ml x 24",
-    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1789231971/Shama_Basil_Seed_Drink_Melon.png"
+    "image": "/assets/beverages/shama-basil-seed-drink-melon.webp"
   },
   {
     "category": "beverages",
     "title": "Shama Basil Seed Drink Pomegranate",
     "pack": "290ml x 24",
-    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1789231972/Shama_Basil_Seed_Drink_Pomegranate.png"
+    "image": "/assets/beverages/shama-basil-seed-drink-pomegranate.webp"
   },
   {
     "category": "beverages",
     "title": "Shama Basil Seed Drink Strawberry",
     "pack": "290ml x 24",
-    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1789231972/Shama_Basil_Seed_Drink_Strawberry.png"
+    "image": "/assets/beverages/shama-basil-seed-drink-strawberry.webp"
   },
   {
     "category": "beverages",
     "title": "Shama Basil Seed Drink Watermelon",
     "pack": "290ml x 24",
-    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1789231973/Shama_Basil_Seed_Drink_Watermelon.png"
+    "image": "/assets/beverages/shama-basil-seed-drink-watermelon.webp"
   },
   {
     "category": "beverages",
     "title": "Shama Coconut Milk Drink with Mango",
     "pack": "240ml",
-    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1791037170/Shama_Coconut_Milk_Drink_with_Mango_240ml.png"
+    "image": "/assets/beverages/shama-coco-milk-drink-mango-240ml.webp"
   },
   {
     "category": "beverages",
     "title": "Shama Coconut Milk Drink Original",
     "pack": "240ml",
-    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1791037171/Shama_Coconut_Milk_Drink_original_240ml.png"
+    "image": "/assets/beverages/shama-coco-milk-drink-original-240ml.webp"
   },
   {
     "category": "beverages",
@@ -1700,7 +1700,7 @@ document.addEventListener('click',e=>{const image=e.target.closest('#runway-imag
     if (category) {
       category.name = 'Beverages';
       category.desc = 'Falooda, basil seed, coconut milk, juices, nectars, energy drinks and syrups';
-      category.image = 'https://res.cloudinary.com/wy4nkkqq/image/upload/v1791037170/Shama_Coconut_Milk_Drink_with_Mango_240ml.png';
+      category.image = '/assets/beverages/shama-coco-milk-drink-mango-240ml.webp';
     }
   }
 })();

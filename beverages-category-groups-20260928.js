@@ -5,7 +5,7 @@
   const GROUPS = [
     {key:'falooda',label:'Falooda',short:'Falooda',note:'Shama Falooda drink flavours.'},
     {key:'basil-seed',label:'Basil Seed Drinks',short:'Basil Seed',note:'Shama Basil Seed drink range.'},
-    {key:'coconut-shama',label:'Coconut & Shama Drinks',short:'Coconut',note:'Shama Coconut Milk drink range.'},
+    {key:'coconut-shama',label:'Coconut & Almond Drinks',short:'Coconut & Almond',note:'Coconut water, coconut milk and almond drinks from Shama and Sunrise.'},
     {key:'best',label:'Best Nectar',short:'Best Nectar',note:'Best Nectar cans, bottles and tetra packs.'},
     {key:'shezan',label:'Shezan Juices',short:'Shezan',note:'Shezan mango, lychee, apple and fruit punch drinks.'},
     {key:'energy',label:'Energy Drinks',short:'Energy',note:'MANA, Ginseng and Carabao energy drinks.'},
@@ -17,7 +17,7 @@
     const value=String(title||'').trim();
     if (/^Shama\s+Falooda\b/i.test(value)) return 'falooda';
     if (/^Shama\s+Basil\s+Seed\s+Drink\b/i.test(value)) return 'basil-seed';
-    if (/^Shama\s+Coconut\s+Milk\s+Drink\b/i.test(value)) return 'coconut-shama';
+    if (/^(Shama\s+(Coconut|Almond)|Sunrise\s+Almond)\b/i.test(value)) return 'coconut-shama';
     if (/^Best\s+Nectar\b/i.test(value)) return 'best';
     if (/^Shezan\b/i.test(value)) return 'shezan';
     if (/^(MANA|Ginseng|Carabao)\b/i.test(value)) return 'energy';
@@ -28,6 +28,7 @@
   function brandFor(title) {
     const value=String(title||'').trim();
     if (/^Shama\b/i.test(value)) return 'Shama';
+    if (/^Sunrise\b/i.test(value)) return 'Sunrise';
     if (/^Best\b/i.test(value)) return 'Best';
     if (/^Shezan\b/i.test(value)) return 'Shezan';
     if (/^MANA\b/i.test(value)) return 'MANA';
