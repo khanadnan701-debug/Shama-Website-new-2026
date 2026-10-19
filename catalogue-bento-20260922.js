@@ -72,7 +72,7 @@
       name:'Preserves',
       desc:'Ghee, preserved foods, tomatoes, vinegar and pantry favourites.',
       href:'preserves.html',
-      image:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1789464152/Shama_Kesar_Mango_Plup_Kesar.png',
+      image:'/assets/preserves/shama-kesar-mango-plup-kesar.webp',
       tone:'mint'
     },
     {

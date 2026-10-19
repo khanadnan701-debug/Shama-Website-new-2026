@@ -71,7 +71,7 @@
       slug: 'preserves',
       name: 'Preserves',
       desc: 'Ghee, preserved foods, tomatoes, vinegar and pantry favourites.',
-      image: 'https://res.cloudinary.com/wy4nkkqq/image/upload/v1789464152/Shama_Kesar_Mango_Plup_Kesar.png',
+      image: '/assets/preserves/shama-kesar-mango-plup-kesar.webp',
       href: 'preserves.html'
     },
     {
@@ -118,7 +118,7 @@
   "cosmetics.html": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1791542936/johnson_s_baby_oil_200ml.png",
   "non-foods.html": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1790261684/Shahi_Charcoal_Tandoor_11C_Size_1.png",
   "divers.html": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1790600769/Telephone_ISABGUL_200g.png",
-  "preserves.html": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1789464152/Shama_Kesar_Mango_Plup_Kesar.png",
+  "preserves.html": "/assets/preserves/shama-kesar-mango-plup-kesar.webp",
   "sea-food.html": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1790600837/Gambas_8-12.png",
   "savoury-snacks.html": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1790601081/Shama_Roasted_Corn_Salted_400G.png",
   "bakery.html": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1790869503/Cake_Rusk_Coconut_750g.png"

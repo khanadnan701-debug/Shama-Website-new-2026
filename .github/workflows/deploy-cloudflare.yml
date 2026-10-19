@@ -76,6 +76,12 @@ jobs:
           node --check dist/beverage-images-20260912.js
           node .github/scripts/verify-beverages.cjs dist
 
+      - name: Validate Preserves product images before deploy
+        run: |
+          node --check dist/preserves-products-20260928.js
+          node --check .github/scripts/verify-preserves.cjs
+          node .github/scripts/verify-preserves.cjs dist
+
       - name: Build and validate SEO
         run: |
           node --check .github/scripts/home-seo.cjs

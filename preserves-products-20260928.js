@@ -8,92 +8,95 @@
     "category": "preserves",
     "title": "Shama Kesar Mango Plup Kesar",
     "pack": "Contact us for available pack sizes",
-    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1789464152/Shama_Kesar_Mango_Plup_Kesar.png"
+    "image": "/assets/preserves/shama-kesar-mango-plup-kesar.webp"
   },
   {
     "category": "preserves",
     "title": "Shama Kesar Mango Plup Alphonso",
     "pack": "Contact us for available pack sizes",
-    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1789464156/Shama_Kesar_Mango_Plup_Alphonso.png"
+    "image": "/assets/preserves/shama-kesar-mango-plup-alphonso.webp"
   },
   {
     "category": "preserves",
     "title": "Haldiram Sweet Gulab Jamun",
     "pack": "1kg",
-    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1790600799/Haldiram_Sweet_Gulab_Jamun_1kg.png"
+    "image": "/assets/preserves/haldiram-sweet-gulab-jamun-1kg.webp"
   },
   {
     "category": "preserves",
     "title": "Khanum Vegetable Ghee",
     "pack": "4kg",
-    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1790600800/Khanum_Vegetable_Ghee_4kg.png"
+    "image": "/assets/preserves/khanum-vegetable-ghee-4kg.webp"
   },
   {
     "category": "preserves",
     "title": "Khanum Vegetable Ghee",
     "pack": "12.5kg",
-    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1790600800/Khanum_Vegetable_Ghee_12.5kg.png"
+    "image": "/assets/preserves/khanum-vegetable-ghee-12-5kg.webp"
   },
   {
     "category": "preserves",
     "title": "Khanum Butter Ghee",
     "pack": "500g",
-    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1790600800/Khanum_Butter_Ghee_500g.png"
+    "image": "/assets/preserves/khanum-butter-ghee-500g.webp"
   },
   {
     "category": "preserves",
     "title": "Khanum Vegetable Ghee",
     "pack": "2kg",
-    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1790600800/Khanum_Vegetable_Ghee_2kg.png"
+    "image": "/assets/preserves/khanum-vegetable-ghee-2kg.webp"
   },
   {
     "category": "preserves",
     "title": "Khanum Vegetable Ghee",
     "pack": "1kg",
-    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1790600800/Khanum_Vegetable_Ghee_1kg.png"
+    "image": "/assets/preserves/khanum-vegetable-ghee-1kg.webp"
   },
   {
     "category": "preserves",
     "title": "Schani Peeled Tomatoes",
     "pack": "Contact us for available pack sizes",
-    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1790600801/Schani_Peeled_Tomatoes.png"
+    "image": "/assets/preserves/schani-peeled-tomatoes.webp"
   },
   {
     "category": "preserves",
     "title": "Shama Sarson Ka Saag",
     "pack": "400g",
-    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1790600802/Shama_Sarson_Ka_Saag_400g.png"
+    "image": "/assets/preserves/shama-sarson-ka-saag-400g.webp"
   },
   {
     "category": "preserves",
     "title": "Tomate Peeled",
     "pack": "2.5kg",
-    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1790600802/Tomate_peeled_2.5_kg.png"
+    "image": "/assets/preserves/tomate-peeled-2-5-kg.webp"
   },
   {
     "category": "preserves",
     "title": "Shama White Vinegar",
     "pack": "300ml",
-    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1790600802/SHAMA_White_Vinegar_300ml.png"
+    "image": "/assets/preserves/shama-white-vinegar-300ml.webp"
   },
   {
     "category": "preserves",
     "title": "Khanum Butter Ghee",
     "pack": "2kg",
-    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1790600803/Khanum_Butter_Ghee_2kg.png"
+    "image": "/assets/preserves/khanum-butter-ghee-2kg.webp"
   },
   {
     "category": "preserves",
     "title": "Khanum Butter Ghee",
     "pack": "1kg",
-    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1790600803/Khanum_Butter_Ghee_1kg.png"
+    "image": "/assets/preserves/khanum-butter-ghee-1kg.webp"
   },
   {
     "category": "preserves",
     "title": "Shama Sarson Ka Saag",
     "pack": "800g",
-    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1790600803/Shama_Sarson_Ka_Saag_800g.png"
-  }
+    "image": "/assets/preserves/shama-sarson-ka-saag-800g.webp"
+  },
+  {"category":"preserves","title":"Shama Sarson Ka Saag","pack":"850g","image":"/assets/preserves/shama-sarson-ka-saag-850g.webp"},
+  {"category":"preserves","title":"Prima Plum Tomatoes","pack":"6 x 2550g","image":"/assets/preserves/prima-plum-tomatoes-6-x-2550g.webp"},
+  {"category":"preserves","title":"Shama Coconut Milk","pack":"400ml","image":"/assets/preserves/shama-coconut-milk-400ml.webp"}
 ];
 
   const nonCategory = productData.filter(item => item.category !== 'preserves');
