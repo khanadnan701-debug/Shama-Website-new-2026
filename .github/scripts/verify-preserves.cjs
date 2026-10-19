@@ -22,7 +22,17 @@ for (const ref of refs) {
   }
 }
 if (/res\.cloudinary\.com/.test(src)) throw new Error('Old Cloudinary URL found in Preserves products');
-for (const name of ['"title":"Shama Sarson Ka Saag","pack":"850g"', '"title":"Prima Plum Tomatoes","pack":"6 x 2550g"', '"title":"Shama Coconut Milk","pack":"400ml"']) {
-  if (!src.replace(/\s+/g, '').includes(name)) throw new Error('Missing new product variant ' + name);
+const listMatch = src.match(/const items\s*=\s*(\[[\s\S]*?\])\s*;/);
+if (!listMatch) throw new Error('Preserves items array not found');
+const products = JSON.parse(listMatch[1]);
+if (products.length !== 18) throw new Error('Expected 18 Preserves products, found ' + products.length);
+for (const [title, pack] of [
+  ['Shama Sarson Ka Saag', '850g'],
+  ['Prima Plum Tomatoes', '6 x 2550g'],
+  ['Shama Coconut Milk', '400ml']
+]) {
+  if (!products.some(p => p.title === title && p.pack === pack)) {
+    throw new Error('Missing new product variant ' + title + ' (' + pack + ')');
+  }
 }
 console.log('Verified 18 locally hosted Preserves images and 18 product records.');

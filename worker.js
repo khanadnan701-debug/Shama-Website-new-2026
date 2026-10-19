@@ -190,7 +190,7 @@ const items=[
 ["Cosmetics","cosmetics.html","https://res.cloudinary.com/wy4nkkqq/image/upload/v1789464147/Shama_Rose_Water_250ml.png"],
 ["Non Foods","non-foods.html","https://res.cloudinary.com/wy4nkkqq/image/upload/v1790261684/Shahi_Charcoal_Tandoor_11C_Size_1.png"],
 ["Divers","divers.html","https://res.cloudinary.com/wy4nkkqq/image/upload/v1790600769/Telephone_ISABGUL_200g.png"],
-["Preserves","preserves.html","https://res.cloudinary.com/wy4nkkqq/image/upload/v1789464152/Shama_Kesar_Mango_Plup_Kesar.png"],
+["Preserves","preserves.html","/assets/preserves/shama-kesar-mango-plup-kesar.webp"],
 ["Sea Food","sea-food.html","https://res.cloudinary.com/wy4nkkqq/image/upload/v1790600837/Gambas_8-12.png"],
 ["Savoury Snacks","savoury-snacks.html","https://res.cloudinary.com/wy4nkkqq/image/upload/v1790601081/Shama_Roasted_Corn_Salted_400G.png"],
 ["Bakery","bakery.html","https://res.cloudinary.com/wy4nkkqq/image/upload/v1790869503/Cake_Rusk_Coconut_750g.png"]
