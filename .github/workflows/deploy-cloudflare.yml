@@ -55,16 +55,19 @@ jobs:
             test -f "$file" || { echo "::error::Recovery image missing: $file"; exit 1; }
           done
 
-      - name: Stage restored Rice product images
+      - name: Stage and verify restored Rice product images
         run: |
-          if [ ! -f shama_rice_upload_ready.zip ]; then
-            echo "Rice archive not uploaded yet; preserve existing product data."
-          else
+          if [ -f shama_rice_upload_ready.zip ]; then
             unzip -tqq shama_rice_upload_ready.zip
             unzip -qq -o shama_rice_upload_ready.zip -d dist/
             rm -f dist/shama_rice_upload_ready.zip
+          fi
+          if [ -f dist/assets/rice/rice-manifest.json ]; then
             node --check .github/scripts/apply-rice-recovery.cjs
             node .github/scripts/apply-rice-recovery.cjs dist
+          else
+            echo "::error::Rice image manifest missing"
+            exit 1
           fi
 
       - name: Build and validate SEO

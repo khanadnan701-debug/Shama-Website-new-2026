@@ -4,19 +4,19 @@
       category: 'rice',
       title: 'Shama Broken Basmati Rice',
       pack: '2226A - 20kg x 1',
-      image: 'https://res.cloudinary.com/wy4nkkqq/image/upload/v1789054080/shama_broken_basmati_rice_20kg.png'
+      image: '/assets/rice/shama-broken-basmati-rice-20kg.webp'
     },
     {
       category: 'rice',
       title: 'Shama Broken Basmati Rice',
       pack: '2219A - 5kg x 1',
-      image: 'https://res.cloudinary.com/wy4nkkqq/image/upload/v1789054079/shama_broken_basmati_rice_5kg.png'
+      image: '/assets/rice/shama-broken-basmati-rice-new-5kg.webp'
     },
     {
       category: 'rice',
       title: 'Shama Sona Masoori Rice',
       pack: '5kg x 1',
-      image: 'https://res.cloudinary.com/wy4nkkqq/image/upload/v1789054078/sona_masoori_5kg.png'
+      image: '/assets/rice/sona-masoori-5kg.webp'
     }
   ];
 

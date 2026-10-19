@@ -101,7 +101,7 @@
   ];
 
   const menuImageByHref = {
-  "rice.html": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1790255518/Shama_Super_Kernal_Par_Boiled_Sella_Rice_5kg.png",
+  "rice.html": "/assets/rice/shama-super-kernal-par-boiled-sella-rice-5kg.webp",
   "spices.html": "/assets/spices/shama-garam-masala-powder.webp",
   "sauces-pastes.html": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1789678774/Shama_Mango_pickle_1kg.png",
   "miscellaneous.html": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1789466470/Shama_fried_onion_1kg.png",

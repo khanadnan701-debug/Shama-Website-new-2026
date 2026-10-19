@@ -1319,7 +1319,7 @@ productData.push(...supplementalData);
 /* 2026-10-07 MISCELLANEOUS GLOBAL SYNC END */
 
 const categories=[
- {slug:'rice',name:'Rice',desc:'Fragrant grains for every table',image:'https://res.cloudinary.com/wy4nkkqq/image/upload/f_webp,fl_awebp,q_auto:best,e_sharpen:70/v1790255518/Shama_Super_Kernal_Par_Boiled_Sella_Rice_5kg.png'},
+ {slug:'rice',name:'Rice',desc:'Fragrant grains for every table',image:'/assets/rice/shama-super-kernal-par-boiled-sella-rice-5kg.webp'},
  {slug:'spices',name:'Spices',desc:'Bold aroma, vivid colour',image:'/assets/spices/shama-garam-masala-powder.webp'},
  {slug:'sauces',name:'Sauces, Pickles & Pastes',desc:'Curry pastes, pickles, chutneys and sauces',image:(productData.find(x=>x.category==='sauces')||{}).image||'https://images.unsplash.com/photo-1601050690117-94f5f6fa8bd7?auto=format&fit=crop&w=900&q=85'},
  {slug:'misc',name:'Miscellaneous',desc:'Roasted chana, vermicelli, papad, food colours and pantry essentials',image:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1789466470/Shama_fried_onion_1kg.png'},

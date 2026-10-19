@@ -1,0 +1,657 @@
+{
+  "version": "2026-10-19",
+  "source": "Rice(1).zip",
+  "count": 54,
+  "images": {
+    "sunrisegoldensellabasmatirice20kg": "assets/rice/sunrise-golden-sella-basmati-rice-20-kg.webp",
+    "shaheensellasuperbasmatiparboiledrice20kg": "assets/rice/shaheen-sella-super-basmati-parboiled-rice-20-kg.webp",
+    "shamabasmatiriceextralong1kg": "assets/rice/shama-basmati-rice-extra-long-1kg.webp",
+    "shamabasmatiriceextralong2kg": "assets/rice/shama-basmati-rice-extra-long-2kg.webp",
+    "shamabasmatiriceextralong5kg": "assets/rice/shama-basmati-rice-extra-long-5kg.webp",
+    "shamabasmatiriceextralong10kg": "assets/rice/shama-basmati-rice-extra-long-10kg.webp",
+    "shamabasmatiriceextralong20kg": "assets/rice/shama-basmati-rice-extra-long-20kg.webp",
+    "shamabrokenbasmatirice20kg": "assets/rice/shama-broken-basmati-rice-20kg.webp",
+    "shamabrokenbasmatiricenew5kg": "assets/rice/shama-broken-basmati-rice-new-5kg.webp",
+    "shamaextralongbasmatirice20kg": "assets/rice/shama-extra-long-basmati-rice-20kg.webp",
+    "shamagoldensella10kg": "assets/rice/shama-golden-sella-10kg.webp",
+    "shamagoldensella20kg": "assets/rice/shama-golden-sella-20kg.webp",
+    "shamasella5kg": "assets/rice/shama-sella-5kg.webp",
+    "shamasuperkernalparboiledsellarice1kg": "assets/rice/shama-super-kernal-par-boiled-sella-rice-1kg.webp",
+    "shamasuperkernalparboiledsellarice2kg": "assets/rice/shama-super-kernal-par-boiled-sella-rice-2kg.webp",
+    "shamasuperkernalparboiledsellarice5kg": "assets/rice/shama-super-kernal-par-boiled-sella-rice-5kg.webp",
+    "shamasuperkernalparboiledsellarice10kg": "assets/rice/shama-super-kernal-par-boiled-sella-rice-10kg.webp",
+    "shamasuperkernalparboiledsellarice20kg": "assets/rice/shama-super-kernal-par-boiled-sella-rice-20kg.webp",
+    "shamathaijasmine1volta1kg": "assets/rice/shama-thai-jasmine-1-volta-1kg.webp",
+    "shamathaijasmine1volta5kg": "assets/rice/shama-thai-jasmine-1-volta-5kg.webp",
+    "shamathaijasmine1volta18kg": "assets/rice/shama-thai-jasmine-1-volta-18kg.webp",
+    "shamathaijasmine1volta20kg": "assets/rice/shama-thai-jasmine-1-volta-20kg.webp",
+    "shamathaijasmine2volta1kg": "assets/rice/shama-thai-jasmine-2-volta-1kg.webp",
+    "shamathaijasmine2volta5kg": "assets/rice/shama-thai-jasmine-2-volta-5kg.webp",
+    "shamathaijasmine2volta18kg": "assets/rice/shama-thai-jasmine-2-volta-18kg.webp",
+    "shamathaijasmine2volta20kg": "assets/rice/shama-thai-jasmine-2-volta-20kg.webp",
+    "shamathailonggrainjasminriceaaa1kg": "assets/rice/shama-thai-long-grain-jasmin-rice-aaa-1kg.webp",
+    "shamathailonggrainjasminriceaaa2kg": "assets/rice/shama-thai-long-grain-jasmin-rice-aaa-2kg.webp",
+    "shamathailonggrainjasminriceaaa5kg": "assets/rice/shama-thai-long-grain-jasmin-rice-aaa-5kg.webp",
+    "shamathailonggrainjasminriceaaa10kg": "assets/rice/shama-thai-long-grain-jasmin-rice-aaa-10kg.webp",
+    "shamathailonggrainjasminriceaaa18kg1": "assets/rice/shama-thai-long-grain-jasmin-rice-aaa-18kg-1.webp",
+    "shamathailonggrainjasminriceaaa18kg": "assets/rice/shama-thai-long-grain-jasmin-rice-aaa-18kg.webp",
+    "shamathailonggrainjasminriceaaa20kg": "assets/rice/shama-thai-long-grain-jasmin-rice-aaa-20kg.webp",
+    "shamawhitegoldbasmatirice1kg": "assets/rice/shama-white-gold-basmati-rice-1kg.webp",
+    "shamawhitegoldbasmatirice2kg": "assets/rice/shama-white-gold-basmati-rice-2kg.webp",
+    "shamawhitegoldbasmatirice5kg": "assets/rice/shama-white-gold-basmati-rice-5kg.webp",
+    "shamawhitegoldbasmatirice10kg": "assets/rice/shama-white-gold-basmati-rice-10kg.webp",
+    "shamawhitegoldbasmatirice20kg": "assets/rice/shama-white-gold-basmati-rice-20kg.webp",
+    "sonamasoori5kg": "assets/rice/sona-masoori-5kg.webp",
+    "sunrisebasmatiriceextralong1kg": "assets/rice/sunrise-basmati-rice-extra-long-1kg.webp",
+    "sunrisebasmatiriceextralong2kg": "assets/rice/sunrise-basmati-rice-extra-long-2kg.webp",
+    "sunrisebasmatiriceextralong5kg": "assets/rice/sunrise-basmati-rice-extra-long-5kg.webp",
+    "sunrisebasmatiriceextralong10kg": "assets/rice/sunrise-basmati-rice-extra-long-10kg.webp",
+    "sunrisebasmatiriceextralong20kg": "assets/rice/sunrise-basmati-rice-extra-long-20kg.webp",
+    "sunrisedragonjasminerice18kg": "assets/rice/sunrise-dragon-jasmine-rice-18-kg.webp",
+    "sunriseelephantjasmineparfumerice5kg": "assets/rice/sunrise-elephant-jasmine-parfume-rice-5kg.webp",
+    "sunriseelephantjasmineparfumerice20kg": "assets/rice/sunrise-elephant-jasmine-parfume-rice-20kg.webp",
+    "sunriseelephantparfumejasminbrokenrice1x5kg": "assets/rice/sunrise-elephant-parfume-jasmin-broken-rice-1x-5kg.webp",
+    "sunriseelephantparfumejasminbrokenrice1x20kg": "assets/rice/sunrise-elephant-parfume-jasmin-broken-rice-1x-20kg.webp",
+    "sunriseelephantparfumejasminbrokenrice2x5kg": "assets/rice/sunrise-elephant-parfume-jasmin-broken-rice-2x-5kg.webp",
+    "sunriseelephantparfumejasminbrokenrice2x20kg": "assets/rice/sunrise-elephant-parfume-jasmin-broken-rice-2x-20kg.webp",
+    "sunrisegoldensellabasmatirice1kg": "assets/rice/sunrise-golden-sella-basmati-rice-1-kg.webp",
+    "sunrisegoldensellabasmatirice5kg": "assets/rice/sunrise-golden-sella-basmati-rice-5-kg.webp",
+    "sunrisegoldensellabasmatirice10kg": "assets/rice/sunrise-golden-sella-basmati-rice-10-kg.webp"
+  },
+  "entries": [
+    {
+      "source": "Sunrise Golden Sella Basmati Rice 20 KG.png",
+      "path": "assets/rice/sunrise-golden-sella-basmati-rice-20-kg.webp",
+      "key": "sunrisegoldensellabasmatirice20kg",
+      "dimensions": [
+        765,
+        820
+      ],
+      "size_bytes": 163356,
+      "sha256": "df4a518eebfaf6a4daff1093ca78a2815e2cc6de58fe12f608bcbd8c6c40431d"
+    },
+    {
+      "source": "Shaheen Sella Super Basmati Parboiled Rice 20 kg.png",
+      "path": "assets/rice/shaheen-sella-super-basmati-parboiled-rice-20-kg.webp",
+      "key": "shaheensellasuperbasmatiparboiledrice20kg",
+      "dimensions": [
+        1211,
+        1299
+      ],
+      "size_bytes": 292930,
+      "sha256": "bb586359958a64cda0e83cb8f76f31e38dc1945f85b0b65846d1f92a8c2fb7f9"
+    },
+    {
+      "source": "Shama Basmati Rice (EXTRA LONG) 1kg.png",
+      "path": "assets/rice/shama-basmati-rice-extra-long-1kg.webp",
+      "key": "shamabasmatiriceextralong1kg",
+      "dimensions": [
+        1215,
+        1295
+      ],
+      "size_bytes": 276970,
+      "sha256": "1cb93d2b0b0dff17f7490b9633019f93a02dea004f977cc81eaf7046d129e467"
+    },
+    {
+      "source": "Shama Basmati Rice (EXTRA LONG) 2kg.png",
+      "path": "assets/rice/shama-basmati-rice-extra-long-2kg.webp",
+      "key": "shamabasmatiriceextralong2kg",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "size_bytes": 245588,
+      "sha256": "6ece2e62386ad5e38f40f66a0d4dcc66bca1c1571cb7dc15e413f0776348765a"
+    },
+    {
+      "source": "Shama Basmati Rice (EXTRA LONG) 5kg.png",
+      "path": "assets/rice/shama-basmati-rice-extra-long-5kg.webp",
+      "key": "shamabasmatiriceextralong5kg",
+      "dimensions": [
+        1215,
+        1295
+      ],
+      "size_bytes": 291544,
+      "sha256": "1d38c0f61bef22e7a37465325e7d08da96be6dfdb5c736d45699449acce87a3a"
+    },
+    {
+      "source": "Shama Basmati Rice (EXTRA LONG) 10kg.png",
+      "path": "assets/rice/shama-basmati-rice-extra-long-10kg.webp",
+      "key": "shamabasmatiriceextralong10kg",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "size_bytes": 289084,
+      "sha256": "0f03a0b22a63de084fbd6ee2e2d43b55504c3c86934eb1bb883da9d109a80f4f"
+    },
+    {
+      "source": "Shama Basmati Rice (EXTRA LONG) 20kg.png",
+      "path": "assets/rice/shama-basmati-rice-extra-long-20kg.webp",
+      "key": "shamabasmatiriceextralong20kg",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "size_bytes": 254728,
+      "sha256": "8f4b58e785fbe80a38d11b6e38c09a238884014729b9148289412c1855fa8edd"
+    },
+    {
+      "source": "shama broken basmati rice 20kg.png",
+      "path": "assets/rice/shama-broken-basmati-rice-20kg.webp",
+      "key": "shamabrokenbasmatirice20kg",
+      "dimensions": [
+        1211,
+        1299
+      ],
+      "size_bytes": 287552,
+      "sha256": "342b5f69f458cbe0973fed914255558fcb12b0fa1471c1bc0f5582976c50ca5d"
+    },
+    {
+      "source": "Shama broken basmati rice new 5kg.png",
+      "path": "assets/rice/shama-broken-basmati-rice-new-5kg.webp",
+      "key": "shamabrokenbasmatiricenew5kg",
+      "dimensions": [
+        1211,
+        1299
+      ],
+      "size_bytes": 268410,
+      "sha256": "1ad20306626bd20d7dfcfaff48611e014e77678c8aa5d0d8334dbee8ab98891a"
+    },
+    {
+      "source": "Shama extra long basmati rice 20kg.png",
+      "path": "assets/rice/shama-extra-long-basmati-rice-20kg.webp",
+      "key": "shamaextralongbasmatirice20kg",
+      "dimensions": [
+        1211,
+        1299
+      ],
+      "size_bytes": 273438,
+      "sha256": "3310aeb601fa2e6ab45fcfcd0475763f6405b289cfffd1211d10bf6b5e028eda"
+    },
+    {
+      "source": "Shama golden sella 10kg.png",
+      "path": "assets/rice/shama-golden-sella-10kg.webp",
+      "key": "shamagoldensella10kg",
+      "dimensions": [
+        1211,
+        1299
+      ],
+      "size_bytes": 245670,
+      "sha256": "8111bbbe53075f7df526d5e593d75b7e14e927d1460a351b61d485bdb79b3dea"
+    },
+    {
+      "source": "Shama golden sella 20kg.png",
+      "path": "assets/rice/shama-golden-sella-20kg.webp",
+      "key": "shamagoldensella20kg",
+      "dimensions": [
+        1211,
+        1299
+      ],
+      "size_bytes": 249750,
+      "sha256": "1d43b6c6be55d10d623d1c00458ca6af90cd26b6b9e0379c72035cac6144ebe1"
+    },
+    {
+      "source": "Shama sella 5kg.png",
+      "path": "assets/rice/shama-sella-5kg.webp",
+      "key": "shamasella5kg",
+      "dimensions": [
+        1211,
+        1299
+      ],
+      "size_bytes": 206980,
+      "sha256": "0ff08dfd22ad7d9d0ecec2aedee720ceb7de29c3c9f3d1bf4c8b13eee1bea114"
+    },
+    {
+      "source": "Shama Super Kernal Par Boiled Sella Rice 1kg.png",
+      "path": "assets/rice/shama-super-kernal-par-boiled-sella-rice-1kg.webp",
+      "key": "shamasuperkernalparboiledsellarice1kg",
+      "dimensions": [
+        1211,
+        1299
+      ],
+      "size_bytes": 265400,
+      "sha256": "a57b8a034246ec8b0d43ad8f4e1fe1a57a4b54eca5973f254aba01cde6a3b8b3"
+    },
+    {
+      "source": "Shama Super Kernal Par Boiled Sella Rice 2kg.png",
+      "path": "assets/rice/shama-super-kernal-par-boiled-sella-rice-2kg.webp",
+      "key": "shamasuperkernalparboiledsellarice2kg",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "size_bytes": 262488,
+      "sha256": "bc0cfcf74681d5a225459c56f54c91b590aa89d59377037af34464104699f948"
+    },
+    {
+      "source": "Shama Super Kernal Par Boiled Sella Rice 5kg.png",
+      "path": "assets/rice/shama-super-kernal-par-boiled-sella-rice-5kg.webp",
+      "key": "shamasuperkernalparboiledsellarice5kg",
+      "dimensions": [
+        1211,
+        1299
+      ],
+      "size_bytes": 242622,
+      "sha256": "0b31505c53e0768268aa948bf896c5746e70d7b0247219b6a09fdee6b2d27ca4"
+    },
+    {
+      "source": "Shama Super Kernal Par Boiled Sella Rice 10kg.png",
+      "path": "assets/rice/shama-super-kernal-par-boiled-sella-rice-10kg.webp",
+      "key": "shamasuperkernalparboiledsellarice10kg",
+      "dimensions": [
+        1215,
+        1295
+      ],
+      "size_bytes": 244688,
+      "sha256": "134823c0e839d06da1b81bac96fe862ba353999dbcef729a71a27e1f68873c47"
+    },
+    {
+      "source": "Shama Super Kernal Par Boiled Sella Rice 20kg.png",
+      "path": "assets/rice/shama-super-kernal-par-boiled-sella-rice-20kg.webp",
+      "key": "shamasuperkernalparboiledsellarice20kg",
+      "dimensions": [
+        1211,
+        1299
+      ],
+      "size_bytes": 234102,
+      "sha256": "d8c711c0188e8ec17665d5b09a631de29d025dc6a18f65464fab3c316afa30ab"
+    },
+    {
+      "source": "Shama thai jasmine 1 volta 1kg.png",
+      "path": "assets/rice/shama-thai-jasmine-1-volta-1kg.webp",
+      "key": "shamathaijasmine1volta1kg",
+      "dimensions": [
+        1211,
+        1299
+      ],
+      "size_bytes": 242488,
+      "sha256": "0284534f0e8f1fadef498f8391a62f7914054c3e39ece6e5b845d1839b230c46"
+    },
+    {
+      "source": "Shama thai jasmine 1 volta 5kg.png",
+      "path": "assets/rice/shama-thai-jasmine-1-volta-5kg.webp",
+      "key": "shamathaijasmine1volta5kg",
+      "dimensions": [
+        1211,
+        1299
+      ],
+      "size_bytes": 228488,
+      "sha256": "bc5f1d89e4dedde9b2b2becc5572d096787ec5856fc2e0ff7aa0f083db3f1cb2"
+    },
+    {
+      "source": "Shama thai jasmine 1 volta 18kg.png",
+      "path": "assets/rice/shama-thai-jasmine-1-volta-18kg.webp",
+      "key": "shamathaijasmine1volta18kg",
+      "dimensions": [
+        1211,
+        1299
+      ],
+      "size_bytes": 265876,
+      "sha256": "e8402fcf869e20393376bcef55ea8e36302c54bd024265e34a13e1f3a07e5d69"
+    },
+    {
+      "source": "Shama thai jasmine 1 volta 20kg.png",
+      "path": "assets/rice/shama-thai-jasmine-1-volta-20kg.webp",
+      "key": "shamathaijasmine1volta20kg",
+      "dimensions": [
+        1211,
+        1299
+      ],
+      "size_bytes": 242958,
+      "sha256": "a4782f3a2a0cf74d68ebf9b9f0a5f4836c0bc2fc4c3e93a065ac8ef9494a20f0"
+    },
+    {
+      "source": "Shama thai jasmine 2 volta 1kg.png",
+      "path": "assets/rice/shama-thai-jasmine-2-volta-1kg.webp",
+      "key": "shamathaijasmine2volta1kg",
+      "dimensions": [
+        1211,
+        1299
+      ],
+      "size_bytes": 268464,
+      "sha256": "a378a134a04860b20a0ac5ebe7c14535adc89f1d5f41feb3a12e4f286486f8a5"
+    },
+    {
+      "source": "Shama thai jasmine 2 volta 5kg.png",
+      "path": "assets/rice/shama-thai-jasmine-2-volta-5kg.webp",
+      "key": "shamathaijasmine2volta5kg",
+      "dimensions": [
+        1211,
+        1299
+      ],
+      "size_bytes": 245134,
+      "sha256": "a4da65f99e0cacdd4565a9471e52c885fb62b548e43a6d9170c4bd46c96ce798"
+    },
+    {
+      "source": "Shama thai jasmine 2 volta 18kg.png",
+      "path": "assets/rice/shama-thai-jasmine-2-volta-18kg.webp",
+      "key": "shamathaijasmine2volta18kg",
+      "dimensions": [
+        1211,
+        1299
+      ],
+      "size_bytes": 264616,
+      "sha256": "bd1463ee6f22ae209c3e6d2f09fe4ddf0f948c5fda53b0cf694c2c3bbac5930a"
+    },
+    {
+      "source": "Shama thai jasmine 2 volta 20kg.png",
+      "path": "assets/rice/shama-thai-jasmine-2-volta-20kg.webp",
+      "key": "shamathaijasmine2volta20kg",
+      "dimensions": [
+        1212,
+        1298
+      ],
+      "size_bytes": 294298,
+      "sha256": "c545b2f73044029b057a4c9cf719b1bea65131e955799197c2fec9a8695c23ba"
+    },
+    {
+      "source": "Shama Thai Long Grain Jasmin Rice AAA 1kg.png",
+      "path": "assets/rice/shama-thai-long-grain-jasmin-rice-aaa-1kg.webp",
+      "key": "shamathailonggrainjasminriceaaa1kg",
+      "dimensions": [
+        1212,
+        1298
+      ],
+      "size_bytes": 266530,
+      "sha256": "b60e6b8bcb29f2de34568ec90ef5af87e715f162a38ca35829777dde493ae6a3"
+    },
+    {
+      "source": "Shama Thai Long Grain Jasmin Rice AAA 2kg.png",
+      "path": "assets/rice/shama-thai-long-grain-jasmin-rice-aaa-2kg.webp",
+      "key": "shamathailonggrainjasminriceaaa2kg",
+      "dimensions": [
+        1211,
+        1299
+      ],
+      "size_bytes": 252816,
+      "sha256": "20ba0204137db1583f44bf392179b269ce7efe46394ad2a1cc1add838a229359"
+    },
+    {
+      "source": "Shama Thai Long Grain Jasmin Rice AAA 5kg.png",
+      "path": "assets/rice/shama-thai-long-grain-jasmin-rice-aaa-5kg.webp",
+      "key": "shamathailonggrainjasminriceaaa5kg",
+      "dimensions": [
+        1211,
+        1299
+      ],
+      "size_bytes": 280452,
+      "sha256": "2cd770ef9d97c9f3800b2214b18b4157bd8838d41f46d88d4e70aebd2b7c0d2f"
+    },
+    {
+      "source": "Shama Thai Long Grain Jasmin Rice AAA 10kg.png",
+      "path": "assets/rice/shama-thai-long-grain-jasmin-rice-aaa-10kg.webp",
+      "key": "shamathailonggrainjasminriceaaa10kg",
+      "dimensions": [
+        1211,
+        1299
+      ],
+      "size_bytes": 299180,
+      "sha256": "fb18baaff1219c0a8669fd8f25ded31e4c71a693224e5f597f9d63122accab15"
+    },
+    {
+      "source": "Shama Thai Long Grain Jasmin Rice AAA 18kg (1).png",
+      "path": "assets/rice/shama-thai-long-grain-jasmin-rice-aaa-18kg-1.webp",
+      "key": "shamathailonggrainjasminriceaaa18kg1",
+      "dimensions": [
+        1211,
+        1299
+      ],
+      "size_bytes": 273778,
+      "sha256": "649d97b1913aacba1b9dd0cdf8fdda9230cbad1383612e109f9380b739281b50"
+    },
+    {
+      "source": "Shama Thai Long Grain Jasmin Rice AAA 18kg.png",
+      "path": "assets/rice/shama-thai-long-grain-jasmin-rice-aaa-18kg.webp",
+      "key": "shamathailonggrainjasminriceaaa18kg",
+      "dimensions": [
+        1211,
+        1299
+      ],
+      "size_bytes": 273778,
+      "sha256": "649d97b1913aacba1b9dd0cdf8fdda9230cbad1383612e109f9380b739281b50"
+    },
+    {
+      "source": "Shama Thai Long Grain Jasmin Rice AAA 20kg.png",
+      "path": "assets/rice/shama-thai-long-grain-jasmin-rice-aaa-20kg.webp",
+      "key": "shamathailonggrainjasminriceaaa20kg",
+      "dimensions": [
+        1212,
+        1297
+      ],
+      "size_bytes": 278210,
+      "sha256": "27de6c2e7d7e9dc98e84ad28f7d0160d9c1003729f43c0e66d33519a4b012b99"
+    },
+    {
+      "source": "Shama White Gold Basmati Rice 1kg.png",
+      "path": "assets/rice/shama-white-gold-basmati-rice-1kg.webp",
+      "key": "shamawhitegoldbasmatirice1kg",
+      "dimensions": [
+        1215,
+        1295
+      ],
+      "size_bytes": 277950,
+      "sha256": "3325149c8e9c317ada0f97e4a7636d08b96523d466f9404a82ef71e989391a16"
+    },
+    {
+      "source": "Shama White Gold Basmati Rice 2kg.png",
+      "path": "assets/rice/shama-white-gold-basmati-rice-2kg.webp",
+      "key": "shamawhitegoldbasmatirice2kg",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "size_bytes": 260610,
+      "sha256": "135469721a86728c342de2bafbec8212f7f3cbd8c689a902b4c49616b28d4344"
+    },
+    {
+      "source": "Shama White Gold Basmati Rice 5kg.png",
+      "path": "assets/rice/shama-white-gold-basmati-rice-5kg.webp",
+      "key": "shamawhitegoldbasmatirice5kg",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "size_bytes": 250632,
+      "sha256": "f163f14578381364a2618bdd4ef0db27b649ba646a4a97cd46eddc2e0ce7e316"
+    },
+    {
+      "source": "Shama White Gold Basmati Rice 10kg.png",
+      "path": "assets/rice/shama-white-gold-basmati-rice-10kg.webp",
+      "key": "shamawhitegoldbasmatirice10kg",
+      "dimensions": [
+        1215,
+        1295
+      ],
+      "size_bytes": 274312,
+      "sha256": "15f1757815533cb60fb33cceb6d4ef80cf49722c7cf084e7ecfd0b7a2f15e113"
+    },
+    {
+      "source": "Shama White Gold Basmati Rice 20kg.png",
+      "path": "assets/rice/shama-white-gold-basmati-rice-20kg.webp",
+      "key": "shamawhitegoldbasmatirice20kg",
+      "dimensions": [
+        1215,
+        1295
+      ],
+      "size_bytes": 288158,
+      "sha256": "87e3e8030b2f4629927217a6efb9b92d3cf68a650c6e7acc2c589f90faca158b"
+    },
+    {
+      "source": "sona masoori 5kg.png",
+      "path": "assets/rice/sona-masoori-5kg.webp",
+      "key": "sonamasoori5kg",
+      "dimensions": [
+        1211,
+        1299
+      ],
+      "size_bytes": 216576,
+      "sha256": "e3aaff17b40b98df1980c22f0e025851773133f2b39fcdbbc362701de887bb1a"
+    },
+    {
+      "source": "Sunrise Basmati Rice (Extra Long) 1kg.png",
+      "path": "assets/rice/sunrise-basmati-rice-extra-long-1kg.webp",
+      "key": "sunrisebasmatiriceextralong1kg",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "size_bytes": 273390,
+      "sha256": "0b026f09520b72bd1abdc2b0dd18e86d8fd54ed9bc73f44268d14965738e9cb8"
+    },
+    {
+      "source": "Sunrise Basmati Rice (Extra Long) 2kg.png",
+      "path": "assets/rice/sunrise-basmati-rice-extra-long-2kg.webp",
+      "key": "sunrisebasmatiriceextralong2kg",
+      "dimensions": [
+        1211,
+        1299
+      ],
+      "size_bytes": 251664,
+      "sha256": "49fde10c86c849069ea24d95d4a5240f631b9dd1089a802cd0e55766ff1c6eef"
+    },
+    {
+      "source": "Sunrise Basmati Rice (Extra Long) 5kg.png",
+      "path": "assets/rice/sunrise-basmati-rice-extra-long-5kg.webp",
+      "key": "sunrisebasmatiriceextralong5kg",
+      "dimensions": [
+        1215,
+        1295
+      ],
+      "size_bytes": 302204,
+      "sha256": "5bf765d2b4bafbc2ba311cbce1d498f2968430898fddb7ab271d3e5e465709e8"
+    },
+    {
+      "source": "Sunrise Basmati Rice (Extra Long) 10kg.png",
+      "path": "assets/rice/sunrise-basmati-rice-extra-long-10kg.webp",
+      "key": "sunrisebasmatiriceextralong10kg",
+      "dimensions": [
+        1215,
+        1295
+      ],
+      "size_bytes": 319988,
+      "sha256": "034c6e0464292bb5b86485908c6b55e27955ad543ca6dd5a141a240e53b76ca4"
+    },
+    {
+      "source": "Sunrise Basmati Rice (Extra Long) 20kg.png",
+      "path": "assets/rice/sunrise-basmati-rice-extra-long-20kg.webp",
+      "key": "sunrisebasmatiriceextralong20kg",
+      "dimensions": [
+        1215,
+        1295
+      ],
+      "size_bytes": 260820,
+      "sha256": "6c5ea94c196c61ac08e61c9472e0bd70501949d9c1ef837570316781d7d53e0c"
+    },
+    {
+      "source": "Sunrise Dragon Jasmine Rice 18 kg.png",
+      "path": "assets/rice/sunrise-dragon-jasmine-rice-18-kg.webp",
+      "key": "sunrisedragonjasminerice18kg",
+      "dimensions": [
+        1211,
+        1299
+      ],
+      "size_bytes": 250720,
+      "sha256": "894c902ffbd8dd78bdec2dafe4c3f0a8f62475c99488d15fe75c684def71bf1e"
+    },
+    {
+      "source": "Sunrise elephant jasmine parfume rice 5kg.png",
+      "path": "assets/rice/sunrise-elephant-jasmine-parfume-rice-5kg.webp",
+      "key": "sunriseelephantjasmineparfumerice5kg",
+      "dimensions": [
+        1211,
+        1299
+      ],
+      "size_bytes": 321114,
+      "sha256": "0c1713ddeea8aea6f21d12cacbcb16c1d2294c7abdddb90c37998438ad480ed7"
+    },
+    {
+      "source": "Sunrise elephant jasmine parfume rice 20kg.png",
+      "path": "assets/rice/sunrise-elephant-jasmine-parfume-rice-20kg.webp",
+      "key": "sunriseelephantjasmineparfumerice20kg",
+      "dimensions": [
+        1211,
+        1299
+      ],
+      "size_bytes": 295362,
+      "sha256": "44a84dbe9990691d19aee3f496026a48118eb22125abbd6b37abca8fd8a55d41"
+    },
+    {
+      "source": "Sunrise Elephant Parfume Jasmin Broken Rice 1X - 5kg.png",
+      "path": "assets/rice/sunrise-elephant-parfume-jasmin-broken-rice-1x-5kg.webp",
+      "key": "sunriseelephantparfumejasminbrokenrice1x5kg",
+      "dimensions": [
+        1211,
+        1299
+      ],
+      "size_bytes": 274198,
+      "sha256": "995073d13e17ac7e5e54aea03199bd02b833b327b8cb614ab830bd861321f0c9"
+    },
+    {
+      "source": "Sunrise Elephant Parfume Jasmin Broken Rice 1X - 20kg.png",
+      "path": "assets/rice/sunrise-elephant-parfume-jasmin-broken-rice-1x-20kg.webp",
+      "key": "sunriseelephantparfumejasminbrokenrice1x20kg",
+      "dimensions": [
+        1211,
+        1299
+      ],
+      "size_bytes": 253446,
+      "sha256": "b9e894cc572de82d515fba7ba8e686e26f45ccdbfbba65004312071e72f8bc37"
+    },
+    {
+      "source": "Sunrise Elephant Parfume Jasmin Broken Rice 2X - 5kg.png",
+      "path": "assets/rice/sunrise-elephant-parfume-jasmin-broken-rice-2x-5kg.webp",
+      "key": "sunriseelephantparfumejasminbrokenrice2x5kg",
+      "dimensions": [
+        1212,
+        1298
+      ],
+      "size_bytes": 284428,
+      "sha256": "3da30a0074ffdb2acb9b33fd156004b864b42a6f61ea3119cd3ebeaa4adb8afc"
+    },
+    {
+      "source": "Sunrise Elephant Parfume Jasmin Broken Rice 2X - 20kg.png",
+      "path": "assets/rice/sunrise-elephant-parfume-jasmin-broken-rice-2x-20kg.webp",
+      "key": "sunriseelephantparfumejasminbrokenrice2x20kg",
+      "dimensions": [
+        1211,
+        1299
+      ],
+      "size_bytes": 278964,
+      "sha256": "7862b58e5a9e433b9cdbde88085d8a82fdd8fb105ba1fb8da1a777ed72f81a7c"
+    },
+    {
+      "source": "Sunrise Golden Sella Basmati Rice 1 KG.png",
+      "path": "assets/rice/sunrise-golden-sella-basmati-rice-1-kg.webp",
+      "key": "sunrisegoldensellabasmatirice1kg",
+      "dimensions": [
+        765,
+        820
+      ],
+      "size_bytes": 137820,
+      "sha256": "3afde063de93321c1079e4ad392c732e00de965f480f3f06dec228583e59cdd0"
+    },
+    {
+      "source": "Sunrise Golden Sella Basmati Rice 5 KG.png",
+      "path": "assets/rice/sunrise-golden-sella-basmati-rice-5-kg.webp",
+      "key": "sunrisegoldensellabasmatirice5kg",
+      "dimensions": [
+        1211,
+        1299
+      ],
+      "size_bytes": 308000,
+      "sha256": "5cd1a0574d36d2c3c7ac7e03e802f094567a3c6be674998dbe347c9da8db1d2f"
+    },
+    {
+      "source": "Sunrise Golden Sella Basmati Rice 10 KG.png",
+      "path": "assets/rice/sunrise-golden-sella-basmati-rice-10-kg.webp",
+      "key": "sunrisegoldensellabasmatirice10kg",
+      "dimensions": [
+        1211,
+        1299
+      ],
+      "size_bytes": 305156,
+      "sha256": "9cd285a4eb8a9444f1c5b26c6c63fd2d27224c43abf6af91aa0050e51bfe366d"
+    }
+  ]
+}
