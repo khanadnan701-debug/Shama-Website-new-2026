@@ -20,7 +20,7 @@
       group: 'Whole Spices & Seeds',
       title: 'Shama Black Mustard Seed',
       pack: '100g x 20\n400g x 10\n1kg x 6',
-      image: 'https://res.cloudinary.com/wy4nkkqq/image/upload/v1791375964/Shama_black_mustard_seed_100g_x_20_400g_x_10_1kg_x_6.png'
+      image: '/assets/spices/shama-black-mustard-seed.webp'
     },
     {
       category: 'spices',
@@ -62,7 +62,7 @@
       group: 'Whole Spices & Seeds',
       title: 'Shama Dalchini Whole (Cinnamon Sticks)',
       pack: '3360C - 50g x 20\n3582C - 200g x 10\n3766C - 400g x 6\n2486A - 1.5kg x 1',
-      image: 'https://res.cloudinary.com/wy4nkkqq/image/upload/v1791376730/Shama_dalchini_whole_Cinnamon_sticks_3360C_-_50g_x_20_3582C_-_200g_x_10_3766C_-_400g_x_6_2486A_-_1.5kg_x_1.png'
+      image: '/assets/spices/shama-dalchini-whole.webp'
     },
     {
       category: 'spices',
@@ -90,14 +90,14 @@
       group: 'Spice Powders',
       title: 'Shama Fennel Powder',
       pack: '100g x 20\n400g x 10\n1kg x 6',
-      image: 'https://res.cloudinary.com/wy4nkkqq/image/upload/v1791377004/Shama_saunf_Fennel_powder_100g_x_20_400g_x_10_1kg_x_6.png'
+      image: '/assets/spices/shama-saunf-fennel-powder.webp'
     },
     {
       category: 'spices',
       group: 'Masalas & Curry Blends',
       title: 'Shama Garam Masala Powder',
       pack: '100g x 20\n400g x 10\n1kg x 6',
-      image: 'https://res.cloudinary.com/wy4nkkqq/image/upload/v1791377333/Shama_garam_masala_powder_100g_x_20_400g_x_10_1kg_x_6.png'
+      image: '/assets/spices/shama-garam-masala-powder.webp'
     },
     {
       category: 'spices',
@@ -160,7 +160,7 @@
       group: 'Whole Spices & Seeds',
       title: 'Shama Ajwain (Lovage Seeds)',
       pack: '2806C - 100g x 20\n2882A - 300g x 10\n2875A - 1kg x 6',
-      image: 'https://res.cloudinary.com/wy4nkkqq/image/upload/v1791375665/Shama_ajwain_2806C_-_100g_x_20_2882A_-_300g_x_10_2875A_-_1kg_x_6.png'
+      image: '/assets/spices/shama-ajwain.webp'
     },
     {
       category: 'spices',
@@ -202,7 +202,7 @@
       group: 'Masalas & Curry Blends',
       title: 'National Biryani Masala',
       pack: '78g',
-      image: 'https://res.cloudinary.com/wy4nkkqq/image/upload/v1791198164/National_Biryani_Masala_78gm.png'
+      image: '/assets/spices/national-biryani-masala-78g.webp'
     },
     {
       category: 'spices',
@@ -211,25 +211,25 @@
       pack: '3223C - 100g x 20\n3445C - 400g x 10\n3636C - 1kg x 6',
       image: 'https://res.cloudinary.com/wy4nkkqq/image/upload/v1789051968/tandoori_masala.png'
     },
-    {"category":"spices","group":"Whole Spices & Seeds","title":"Shama Kasuri Methi","pack":"100g","image":"https://res.cloudinary.com/wy4nkkqq/image/upload/v1791377494/Shama_kasuri_methi_100gm.png"},
-    {"category":"spices","group":"Whole Spices & Seeds","title":"Shama Kasuri Methi","pack":"1kg","image":"https://res.cloudinary.com/wy4nkkqq/image/upload/v1791377495/Shama_kasuri_methi_1kg.png"},
-    {"category":"spices","group":"Whole Spices & Seeds","title":"Shama Brown Mustard Seed","pack":"400g","image":"https://res.cloudinary.com/wy4nkkqq/image/upload/v1791376200/Shama_Brown_Mustard_Seed_400g.png"},
-    {"category":"spices","group":"Whole Spices & Seeds","title":"Shama Chilli Whole Red","pack":"Contact us for available pack sizes","image":"https://res.cloudinary.com/wy4nkkqq/image/upload/v1791376512/Shama_chilli_whole_red.png"},
-    {"category":"spices","group":"Whole Spices & Seeds","title":"Schani Bay Leaves","pack":"30g / 50g / 200g / 1kg","image":"https://res.cloudinary.com/wy4nkkqq/image/upload/v1791375339/Schani_Bay_Leaves_50g_200g_1kg.png"},
-    {"category":"spices","group":"Masalas & Curry Blends","title":"Shama Panch Puran","pack":"1kg / 100g","image":"https://res.cloudinary.com/wy4nkkqq/image/upload/v1791297883/Shama_Panch_Puran_100gm.png"},
-    {"category":"spices","group":"Whole Spices & Seeds","title":"Schani Bay Leaves","pack":"1kg","image":"https://res.cloudinary.com/wy4nkkqq/image/upload/v1791297891/Schani_Bay_Leaves_1kg.png"},
-    {"category":"spices","group":"Whole Spices & Seeds","title":"Heera Dhania Whole (Coriander Seeds)","pack":"700g","image":"https://res.cloudinary.com/wy4nkkqq/image/upload/v1791298759/Heera_Dhania_Whole_700g.png"},
-    {"category":"spices","group":"Masalas & Curry Blends","title":"TRS Tandoori Masala","pack":"1kg","image":"https://res.cloudinary.com/wy4nkkqq/image/upload/v1791298915/TRS_Tandoori_masala_1_kg.png"},
-    {"category":"spices","group":"Whole Spices & Seeds","title":"TRS Green Cardamom","pack":"750g","image":"https://res.cloudinary.com/wy4nkkqq/image/upload/v1791299120/TRS_Green_Cardamom_750g.png"},
-    {"category":"spices","group":"Whole Spices & Seeds","title":"TRS Green Cardamom","pack":"50g","image":"https://res.cloudinary.com/wy4nkkqq/image/upload/v1791299306/TRS_Green_Cardamom_50g.png"},
-    {"category":"spices","group":"Whole Spices & Seeds","title":"Heera Black Cardamom","pack":"50g","image":"https://res.cloudinary.com/wy4nkkqq/image/upload/v1791299438/Heera_Black_Cardamom_50g.png"},
-    {"category":"spices","group":"Whole Spices & Seeds","title":"Heera Black Cardamom","pack":"700g","image":"https://res.cloudinary.com/wy4nkkqq/image/upload/v1791299613/Heera_Black_Cardamom_700g.png"},
-    {"category":"spices","group":"Spice Powders","title":"TRS Haldi (Turmeric Powder)","pack":"1kg","image":"https://res.cloudinary.com/wy4nkkqq/image/upload/v1791299935/TRS_Haldi_Tuemeric_Powder_1kg.png"},
-    {"category":"spices","group":"Whole Spices & Seeds","title":"Heera Bay Leaves","pack":"1kg","image":"https://res.cloudinary.com/wy4nkkqq/image/upload/v1791299937/Heera_Bay_Leaves_1kg.png"},
-    {"category":"spices","group":"Whole Spices & Seeds","title":"Shama Jaifal (Nutmeg)","pack":"100g","image":"https://res.cloudinary.com/wy4nkkqq/image/upload/v1791300168/Shama_Jaifal_Nutmegs_100g.png"},
-    {"category":"spices","group":"Spice Powders","title":"TRS Paprika","pack":"100g","image":"https://res.cloudinary.com/wy4nkkqq/image/upload/v1791458410/trs_paprika_100g.png"},
-    {"category":"spices","group":"Spice Powders","title":"TRS Paprika","pack":"400g","image":"https://res.cloudinary.com/wy4nkkqq/image/upload/v1791458647/trs_paprika_400g.png"},
-    {"category":"spices","group":"Spice Powders","title":"TRS Paprika","pack":"1kg","image":"https://res.cloudinary.com/wy4nkkqq/image/upload/v1791453666/trs_paprika_1kg.png"},
+    {"category":"spices","group":"Whole Spices & Seeds","title":"Shama Kasuri Methi","pack":"100g","image":"/assets/spices/shama-kasuri-methi-100g.webp"},
+    {"category":"spices","group":"Whole Spices & Seeds","title":"Shama Kasuri Methi","pack":"1kg","image":"/assets/spices/shama-kasuri-methi-1kg.webp"},
+    {"category":"spices","group":"Whole Spices & Seeds","title":"Shama Brown Mustard Seed","pack":"400g","image":"/assets/spices/shama-brown-mustard-seed-400g.webp"},
+    {"category":"spices","group":"Whole Spices & Seeds","title":"Shama Chilli Whole Red","pack":"Contact us for available pack sizes","image":"/assets/spices/shama-chilli-whole-red.webp"},
+    {"category":"spices","group":"Whole Spices & Seeds","title":"Schani Bay Leaves","pack":"30g / 50g / 200g / 1kg","image":"/assets/spices/schani-bay-leaves-range.webp"},
+    {"category":"spices","group":"Masalas & Curry Blends","title":"Shama Panch Puran","pack":"1kg / 100g","image":"/assets/spices/shama-panch-puran-100g.webp"},
+    {"category":"spices","group":"Whole Spices & Seeds","title":"Schani Bay Leaves","pack":"1kg","image":"/assets/spices/schani-bay-leaves-1kg.webp"},
+    {"category":"spices","group":"Whole Spices & Seeds","title":"Heera Dhania Whole (Coriander Seeds)","pack":"700g","image":"/assets/spices/heera-dhania-whole-700g.webp"},
+    {"category":"spices","group":"Masalas & Curry Blends","title":"TRS Tandoori Masala","pack":"1kg","image":"/assets/spices/trs-tandoori-masala-1kg.webp"},
+    {"category":"spices","group":"Whole Spices & Seeds","title":"TRS Green Cardamom","pack":"750g","image":"/assets/spices/trs-green-cardamom-750g.webp"},
+    {"category":"spices","group":"Whole Spices & Seeds","title":"TRS Green Cardamom","pack":"50g","image":"/assets/spices/trs-green-cardamom-50g.webp"},
+    {"category":"spices","group":"Whole Spices & Seeds","title":"Heera Black Cardamom","pack":"50g","image":"/assets/spices/heera-black-cardamom-50g.webp"},
+    {"category":"spices","group":"Whole Spices & Seeds","title":"Heera Black Cardamom","pack":"700g","image":"/assets/spices/heera-black-cardamom-700g.webp"},
+    {"category":"spices","group":"Spice Powders","title":"TRS Haldi (Turmeric Powder)","pack":"1kg","image":"/assets/spices/trs-haldi-turmeric-powder-1kg.webp"},
+    {"category":"spices","group":"Whole Spices & Seeds","title":"Heera Bay Leaves","pack":"1kg","image":"/assets/spices/heera-bay-leaves-1kg.webp"},
+    {"category":"spices","group":"Whole Spices & Seeds","title":"Shama Jaifal (Nutmeg)","pack":"100g","image":"/assets/spices/shama-jaifal-nutmeg-100g.webp"},
+    {"category":"spices","group":"Spice Powders","title":"TRS Paprika","pack":"100g","image":"/assets/spices/trs-paprika-100g.webp"},
+    {"category":"spices","group":"Spice Powders","title":"TRS Paprika","pack":"400g","image":"/assets/spices/trs-paprika-400g.webp"},
+    {"category":"spices","group":"Spice Powders","title":"TRS Paprika","pack":"1kg","image":"/assets/spices/trs-paprika-1kg.webp"},
   ];
 
   const shamaFirst = item => /^Shama\b/i.test(String(item?.title || '')) ? 0 : 1;
@@ -241,7 +241,7 @@
   }
   if (typeof categories !== 'undefined' && Array.isArray(categories)) {
     const category = categories.find(item => item.slug === 'spices');
-    if (category) category.image = 'https://res.cloudinary.com/wy4nkkqq/image/upload/v1791377333/Shama_garam_masala_powder_100g_x_20_400g_x_10_1kg_x_6.png';
+    if (category) category.image = '/assets/spices/shama-garam-masala-powder.webp';
   }
 
   window.shamaSpicesCatalogue = {

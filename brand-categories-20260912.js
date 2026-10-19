@@ -102,7 +102,7 @@
 
   const menuImageByHref = {
   "rice.html": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1790255518/Shama_Super_Kernal_Par_Boiled_Sella_Rice_5kg.png",
-  "spices.html": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1789051986/star_anise.png",
+  "spices.html": "/assets/spices/shama-garam-masala-powder.webp",
   "sauces-pastes.html": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1789678774/Shama_Mango_pickle_1kg.png",
   "miscellaneous.html": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1789466470/Shama_fried_onion_1kg.png",
   "beverages.html": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1789231973/Shama_Basil_Seed_Drink_Watermelon.png",

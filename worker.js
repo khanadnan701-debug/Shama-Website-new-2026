@@ -174,7 +174,7 @@ body[data-page="home"] .category-reels .reel-copy{height:54px!important;padding:
 const section=document.querySelector(".category-reels");if(!section)return;
 const items=[
 ["Rice","rice.html","https://res.cloudinary.com/wy4nkkqq/image/upload/v1790255518/Shama_Super_Kernal_Par_Boiled_Sella_Rice_5kg.png"],
-["Spices","spices.html","https://res.cloudinary.com/wy4nkkqq/image/upload/v1789051986/star_anise.png"],
+["Spices","spices.html","/assets/spices/shama-garam-masala-powder.webp"],
 ["Sauces & Pastes","sauces-pastes.html","https://res.cloudinary.com/wy4nkkqq/image/upload/v1789678774/Shama_Mango_pickle_1kg.png"],
 ["Miscellaneous","miscellaneous.html","/assets/shama-misc-fried-onion-premium-20261002.svg?v=1"],
 ["Beverages","beverages.html","https://res.cloudinary.com/wy4nkkqq/image/upload/v1789231973/Shama_Basil_Seed_Drink_Watermelon.png"],

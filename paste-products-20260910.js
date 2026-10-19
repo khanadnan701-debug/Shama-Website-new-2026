@@ -242,7 +242,7 @@
     "group": "Ginger & Garlic Pastes",
     "title": "Sunrise Ginger Paste",
     "pack": "750g x 1",
-    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1789130495/Sunrise_ginger_paste_750g.png"
+    "image": "/assets/sauces-pastes/sunrise-ginger-paste-750g.webp"
   },
   {
     "category": "sauces",
