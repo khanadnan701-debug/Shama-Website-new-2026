@@ -4,14 +4,17 @@
   const hero = document.querySelector('.hero-video-only, .hero-panel-mode');
   const founderPhoto = 'https://static.wixstatic.com/media/00ae33_6b312b11ad8f4578af43615631d040f8~mv2_d_1595_1600_s_2.jpg/v1/fill/w_900,h_900,al_c,q_90,usm_0.66_1.00_0.01/Sardar%20Zahoor%20Iqbal%20Shama%20International_.jpg';
   const founderAward = 'https://static.wixstatic.com/media/00ae33_fd233dff28b9418ca949b36589204448~mv2_d_2914_3530_s_4_2.jpg/v1/crop/x_0,y_595,w_2914,h_2911/fill/w_600,h_600,al_c,q_90,usm_0.66_1.00_0.01/5EB82696-F3E7-4E27-BB7F-950CB2255BE4.jpg';
-  const biryaniVideo = 'https://www.pexels.com/download/video/4912725/';
-  const wholesaleVideo = biryaniVideo;
+  // Shama-supplied clips, optimized and hosted on this website.
+  const rawRiceVideo='/assets/videos/shama-raw-rice.mp4';
+  const riceServingVideo='/assets/videos/shama-rice-plate.mp4';
+  const frozenFoodVideo='/assets/videos/shama-frozen-spring-rolls.mp4';
+  const wholesaleVideo='/assets/videos/shama-kitchen.mp4';
 
   const videoSources = {
-    rice: biryaniVideo,
+    rice: rawRiceVideo,
     spices: 'https://www.pexels.com/download/video/28283517/',
     drinks: 'https://www.pexels.com/download/video/8676990/',
-    frozen: 'https://www.pexels.com/download/video/29824279/',
+    frozen: frozenFoodVideo,
     sauces: 'https://www.pexels.com/download/video/37189266/',
     flour: 'https://www.pexels.com/download/video/4968940/',
     oils: 'https://www.pexels.com/download/video/7189208/',
@@ -243,11 +246,25 @@
   function setupStoryVideoSection() {
     const mainCard = document.querySelector('.story-video-main');
     if (!mainCard) return;
-    playVideo(setVideo(mainCard.querySelector('video'), biryaniVideo));
+    playVideo(setVideo(mainCard.querySelector('video'), rawRiceVideo));
     const label = mainCard.querySelector('.story-video-label b');
     const note = mainCard.querySelector('.story-video-label small');
-    if (label) label.textContent = 'Biryani being served';
-    if (note) note.textContent = 'Fresh from the kitchen';
+    if (label) label.textContent = 'Raw rice, authentic quality';
+    if (note) note.textContent = 'From our rice collection';
+    const tiles=Array.from(document.querySelectorAll('.story-video-small'));
+    const clips=[
+      {src:riceServingVideo,label:'Rice served beautifully',category:'rice.html'},
+      {src:frozenFoodVideo,label:'Spring rolls & frozen favourites',category:'frozen.html'}
+    ];
+    clips.forEach((item,index)=>{
+      const tile=tiles[index]; if(!tile)return;
+      playVideo(setVideo(tile.querySelector('video'),item.src));
+      tile.href=item.category;
+      const heading=tile.querySelector('.story-video-label b');
+      if(heading)heading.textContent=item.label;
+      const caption=tile.querySelector('.story-video-label small');
+      if(caption)caption.textContent=index===0?'Rice collection':'Frozen collection';
+    });
   }
 
   function setupFounderStory() {
@@ -338,5 +355,5 @@
   setupStoryVideoSection();
   setupFounderStory();
   setupWholesaleVideoSection();
-  setupPartnersSection();
+  // The authentic self-hosted logo showcase now lives in index.html; preserve the original CTA.
 })();

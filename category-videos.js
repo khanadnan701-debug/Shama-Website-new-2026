@@ -12,7 +12,7 @@
   document.head.appendChild(css);
 
   const scenes=[
-    {name:'Rice',image:'https://images.pexels.com/photos/1624487/pexels-photo-1624487.jpeg?auto=compress&cs=tinysrgb&w=1600',video:'/videos/rice.mp4?v=20260909-5',tone:'gold',label:'Basmati • Biryani • Everyday rice'},
+    {name:'Rice',image:'https://images.pexels.com/photos/1624487/pexels-photo-1624487.jpeg?auto=compress&cs=tinysrgb&w=1600',video:'/assets/videos/shama-raw-rice.mp4?v=1',tone:'gold',label:'Basmati • Biryani • Everyday rice'},
     {name:'Spices',image:'https://images.pexels.com/photos/2802527/pexels-photo-2802527.jpeg?auto=compress&cs=tinysrgb&w=1600',video:'/videos/spices.mp4?v=20260909-5',tone:'spice',label:'Aromatic • Colourful • Authentic'},
     {name:'Sauces & Pastes',image:'https://images.pexels.com/photos/2474661/pexels-photo-2474661.jpeg?auto=compress&cs=tinysrgb&w=1600',video:'/videos/sauces-pastes.mp4?v=20260909-5',tone:'sauce',label:'Rich curry • Ready flavour • Kitchen ease'},
     {name:'Miscellaneous',image:'https://images.pexels.com/photos/2474658/pexels-photo-2474658.jpeg?auto=compress&cs=tinysrgb&w=1600',video:'/videos/miscellaneous.mp4?v=20260909-5',tone:'snack',label:'Snacks • Pantry • Everyday favourites'},
