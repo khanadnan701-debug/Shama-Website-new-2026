@@ -205,83 +205,78 @@
     });
   }
 
-  // Four flagship logos stay on the globe's front face while other brands orbit around them.
-  const FLAGSHIP_FACE = Object.freeze({
-    'shama': {x:-0.22,y:-0.22},
-    'sunrise': {x:0.35,y:-0.26},
-    'shaheen': {x:-0.34,y:0.26},
-    'sher-e-punjab': {x:0.34,y:0.28}
+  // Place the four Shama-family logos in front at the initial frame.
+  // Every logo, including these four, uses the SAME 3-D sphere rotation.
+  const FLAGSHIP_START_POSITIONS = Object.freeze({
+    'shama': {x:-.34,y:-.26},
+    'sunrise': {x:.35,y:-.26},
+    'shaheen': {x:-.34,y:.29},
+    'sher-e-punjab': {x:.35,y:.29}
   });
+  function initialSpherePoint(screenX,screenY) {
+    const screenZ = Math.sqrt(Math.max(0, 1-screenX*screenX-screenY*screenY));
+    // Inverse of the initial globe orientation; converts the desired
+    // front-screen placement to a genuine rotating 3-D sphere point.
+    const cx=Math.cos(rotX),sx=Math.sin(rotX),cy=Math.cos(rotY),sy=Math.sin(rotY);
+    const py=screenY*cx+screenZ*sx;
+    const rz=screenZ*cx-screenY*sx;
+    return {x:screenX*cy-rz*sy,y:py,z:rz*cy+screenX*sy};
+  }
   function makeSphere() {
     cardsHost.replaceChildren();
-    nodes.length = 0;
-    const orbitBrands = featured.filter(brand => !PRIORITY_BRANDS.includes(brand.slug));
-    const count = orbitBrands.length;
-    const goldenAngle = Math.PI * (3 - Math.sqrt(5));
-    orbitBrands.forEach((brand, index) => {
-      const y = 1 - (2 * (index + .5) / count);
-      const horizontal = Math.sqrt(Math.max(0, 1 - y*y));
-      const theta = index * goldenAngle + .25;
-      const point = {x: Math.cos(theta)*horizontal,y,z:Math.sin(theta)*horizontal};
-      const tile = choiceButton(brand, true);
+    nodes.length=0;
+    const orbitBrands=featured.filter(b=>!PRIORITY_BRANDS.includes(b.slug));
+    const n=orbitBrands.length;
+    const goldenAngle=Math.PI*(3-Math.sqrt(5));
+    orbitBrands.forEach((brand,i)=>{
+      const y=1-2*(i+.5)/n;
+      const horizontal=Math.sqrt(Math.max(0,1-y*y));
+      const theta=i*goldenAngle+.25;
+      const point={x:Math.cos(theta)*horizontal,y,z:Math.sin(theta)*horizontal};
+      const tile=choiceButton(brand,true);
       cardsHost.appendChild(tile);
-      nodes.push({tile, point, brand, pinned:false});
+      nodes.push({tile,point,brand});
     });
-    PRIORITY_BRANDS.forEach(key => {
-      const brand = bySlug.get(key);
-      if (!brand) return;
-      const tile = choiceButton(brand,true);
-      tile.classList.add('sbr-pinned-card');
-      tile.dataset.flagship = key;
+    PRIORITY_BRANDS.forEach(key=>{
+      const brand=bySlug.get(key);
+      const front=FLAGSHIP_START_POSITIONS[key];
+      if(!brand||!front)return;
+      const tile=choiceButton(brand,true);
+      tile.classList.add('sbr-flagship-orbit-card');
+      tile.dataset.flagship=key;
+      const point=initialSpherePoint(front.x,front.y);
       cardsHost.appendChild(tile);
-      nodes.push({tile,point:null,brand,pinned:true});
+      nodes.push({tile,point,brand});
     });
     renderSphere();
   }
   function renderSphere() {
-    const w = orbit.clientWidth, h = orbit.clientHeight;
-    if (!w || !h) return;
-    const mobile = w < 610;
-    // Full-width globe with a distinct spherical silhouette on desktop and mobile.
-    const radius = Math.min(w * (mobile ? .45 : .415), h * (mobile ? .455 : .435), mobile ? 235 : 520);
-    const cosY = Math.cos(rotY), sinY = Math.sin(rotY);
-    const cosX = Math.cos(rotX), sinX = Math.sin(rotX);
-    for (const node of nodes) {
-      const {tile,point,brand,pinned} = node;
-      let xp, yp, scale, opacity, depth;
-      if (pinned) {
-        const at = FLAGSHIP_FACE[brand.slug];
-        xp = at.x * radius * (mobile ? 1.12 : 1.24);
-        yp = at.y * radius * (mobile ? 1.12 : 1.28);
-        scale = mobile ? 1.02 : 1.12;
-        opacity = 1;
-        depth = 2000 + PRIORITY_BRANDS.indexOf(brand.slug);
-        tile.style.pointerEvents = 'auto';
-        tile.style.filter = 'none';
-        tile.setAttribute('aria-hidden','false');
-        tile.tabIndex = 0;
-      } else {
-        const rx = point.x*cosY + point.z*sinY;
-        const rz = point.z*cosY - point.x*sinY;
-        const ry = point.y*cosX - rz*sinX;
-        const dz = point.y*sinX + rz*cosX;
-        const front = (dz + 1) / 2;
-        xp = rx * radius * 1.04;
-        yp = ry * radius * (mobile ? 1.04 : 1.065);
-        scale = .61 + front * .51;
-        // Back hemisphere is almost hidden: no illegible pile of cards.
-        opacity = dz < -.18 ? .04 : dz < .05 ? .18 : .37 + Math.max(0,dz) * .58;
-        depth = Math.round(front * 1200);
-        const clickable = dz > .12;
-        tile.style.pointerEvents = clickable ? 'auto' : 'none';
-        tile.style.filter = front < .35 ? 'grayscale(.35)' : 'none';
-        tile.setAttribute('aria-hidden',clickable ? 'false' : 'true');
-        tile.tabIndex = clickable ? 0 : -1;
-      }
-      tile.style.transform = 'translate(-50%,-50%) translate3d(' + xp.toFixed(1) + 'px,' + yp.toFixed(1) + 'px,0) scale(' + scale.toFixed(3) + ')';
-      tile.style.opacity = String(opacity);
-      tile.style.zIndex = String(depth);
-      tile.classList.toggle('is-selected',selected === brand.slug);
+    const w=orbit.clientWidth,h=orbit.clientHeight;
+    if(!w||!h)return;
+    const mobile=w<610;
+    const radius=Math.min(w*(mobile?.45:.415),h*(mobile?.455:.435),mobile?235:520);
+    const cosY=Math.cos(rotY),sinY=Math.sin(rotY);
+    const cosX=Math.cos(rotX),sinX=Math.sin(rotX);
+    for(const {tile,point,brand} of nodes) {
+      const rx=point.x*cosY+point.z*sinY;
+      const rz=point.z*cosY-point.x*sinY;
+      const ry=point.y*cosX-rz*sinX;
+      const dz=point.y*sinX+rz*cosX;
+      const front=(dz+1)/2;
+      const xp=rx*radius*1.04;
+      const yp=ry*radius*(mobile?1.04:1.065);
+      const scale=.61+front*.51;
+      const opacity=dz<-.18?.04:dz<.05?.18:.37+Math.max(0,dz)*.58;
+      const depth=Math.round(front*1200);
+      const clickable=dz>.12;
+      tile.style.pointerEvents=clickable?'auto':'none';
+      tile.style.filter=front<.35?'grayscale(.35)':'none';
+      tile.setAttribute('aria-hidden',clickable?'false':'true');
+      tile.tabIndex=clickable?0:-1;
+      tile.style.transform='translate(-50%,-50%) translate3d('+xp.toFixed(1)+'px,'+yp.toFixed(1)+'px,0) scale('+scale.toFixed(3)+')';
+      tile.style.opacity=String(opacity);
+      tile.style.zIndex=String(depth);
+      tile.classList.toggle('is-selected',selected===brand.slug);
     }
   }
   function animate(ts) {

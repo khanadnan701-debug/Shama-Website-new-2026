@@ -17,9 +17,9 @@ body[data-page="brands"] .sbr-ring-two{transform:rotate(33deg) scaleX(.35)}
 body[data-page="brands"] .sbr-orbit-card{width:clamp(106px,11vw,162px);height:clamp(76px,7.4vw,112px);border:1px solid #e0e7f4;border-radius:20px;background:linear-gradient(160deg,#fff,#f7faff);box-shadow:0 7px 18px rgba(24,48,94,.12),0 20px 44px rgba(24,48,94,.08);will-change:transform,opacity}
 body[data-page="brands"] .sbr-orbit-card .sbr-actual-logo{max-height:79%;max-width:93%;object-fit:contain}
 body[data-page="brands"] .sbr-orbit-card .sbr-wordmark{font-size:clamp(13px,1.5vw,22px)}
-body[data-page="brands"] .sbr-orbit-card.sbr-pinned-card{width:clamp(126px,12.5vw,182px);height:clamp(93px,8.5vw,126px);border:2px solid rgba(242,116,158,.62);box-shadow:0 17px 32px rgba(26,49,97,.19),0 5px 8px rgba(240,94,147,.12);background:#fff}
-body[data-page="brands"] .sbr-orbit-card.sbr-pinned-card:before{height:4px;background:var(--sbr-pink)}
-body[data-page="brands"] .sbr-orbit-card.sbr-pinned-card[data-flagship="shama"]{border-color:var(--sbr-pink);box-shadow:0 21px 40px rgba(26,49,97,.2),0 0 0 4px rgba(245,103,153,.10)}
+body[data-page="brands"] .sbr-orbit-card.sbr-flagship-orbit-card{width:clamp(126px,12.5vw,182px);height:clamp(93px,8.5vw,126px);border:2px solid rgba(242,116,158,.62);box-shadow:0 17px 32px rgba(26,49,97,.19),0 5px 8px rgba(240,94,147,.12);background:#fff}
+body[data-page="brands"] .sbr-orbit-card.sbr-flagship-orbit-card:before{height:4px;background:var(--sbr-pink)}
+body[data-page="brands"] .sbr-orbit-card.sbr-flagship-orbit-card[data-flagship="shama"]{border-color:var(--sbr-pink);box-shadow:0 21px 40px rgba(26,49,97,.2),0 0 0 4px rgba(245,103,153,.10)}
 body[data-page="brands"] .sbr-controls{max-width:1250px;margin-top:-7px}
 body[data-page="brands"] .sbr-control:hover{background:#eff4fe}
 body[data-page="brands"] .sbr-reel{position:relative;overflow:hidden;padding:62px 0 70px;background:linear-gradient(180deg,#f2f6ff 0%,#fff 100%);border-top:1px solid #e4eaf6}
@@ -67,7 +67,7 @@ body[data-page="brands"] .sbr-brand-no-products a{color:#db467f;text-decoration:
  body[data-page="brands"] .sbr-orbit-shell{height:475px;width:100%;margin:10px auto 10px}
  body[data-page="brands"] .sbr-orbit-card{width:98px;height:71px;border-radius:13px;padding:5px}
  body[data-page="brands"] .sbr-orbit-card .sbr-mini{display:none}
- body[data-page="brands"] .sbr-orbit-card.sbr-pinned-card{width:108px;height:76px;border-radius:13px;padding:5px}
+ body[data-page="brands"] .sbr-orbit-card.sbr-flagship-orbit-card{width:108px;height:76px;border-radius:13px;padding:5px}
  body[data-page="brands"] .sbr-orbit-card .sbr-wordmark{font-size:12px}
  body[data-page="brands"] .sbr-reel{padding:44px 0}
  body[data-page="brands"] .sbr-reel-top{display:block}
