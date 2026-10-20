@@ -178,84 +178,84 @@
     "category": "sauces",
     "group": "Ginger & Garlic Pastes",
     "title": "Shama Ginger & Garlic Paste",
-    "pack": "750g x 1",
+    "pack": "0536 - 750g x 1",
     "image": "/assets/cloudinary-shama/paste/shama-ginger-garlic-750g-b336d8039f56.webp"
   },
   {
     "category": "sauces",
     "group": "Ginger & Garlic Pastes",
     "title": "Shama Ginger Paste",
-    "pack": "750g x 1",
+    "pack": "0512B - 750g x 1",
     "image": "/assets/cloudinary-shama/paste/shama-ginger-paste-750g-2542f616f7b9.webp"
   },
   {
     "category": "sauces",
     "group": "Ginger & Garlic Pastes",
     "title": "Shama Garlic Paste",
-    "pack": "320g x 1",
+    "pack": "0550A - 320g x 1",
     "image": "/assets/cloudinary-shama/paste/shama-garlic-paste-320g-da3f8099b7e3.webp"
   },
   {
     "category": "sauces",
     "group": "Ginger & Garlic Pastes",
     "title": "Shama Garlic Paste",
-    "pack": "750g x 1",
+    "pack": "0529 - 750g x 1",
     "image": "/assets/cloudinary-shama/paste/shama-garlic-paste-750g-e30e9833c896.webp"
   },
   {
     "category": "sauces",
     "group": "Ginger & Garlic Pastes",
     "title": "Shama Ginger & Garlic Paste",
-    "pack": "320g x 1",
+    "pack": "0567 - 320g x 1",
     "image": "/assets/cloudinary-shama/paste/shama-ginger-garlic-320g-b6916b286df7.webp"
   },
   {
     "category": "sauces",
     "group": "Ginger & Garlic Pastes",
     "title": "Sunrise Garlic Paste",
-    "pack": "320g x 1",
+    "pack": "18933 - 320g x 1",
     "image": "/assets/cloudinary-shama/paste/sunrise-garlic-paste-320g-89db1d4569b3.webp"
   },
   {
     "category": "sauces",
     "group": "Ginger & Garlic Pastes",
     "title": "Shama Ginger Paste",
-    "pack": "320g x 1",
+    "pack": "0543 - 320g x 1",
     "image": "/assets/cloudinary-shama/paste/shama-ginger-paste-320g-40d9c3d51360.webp"
   },
   {
     "category": "sauces",
     "group": "Ginger & Garlic Pastes",
     "title": "Sunrise Ginger Paste",
-    "pack": "320g x 1",
+    "pack": "18984 - 320g x 1",
     "image": "/assets/cloudinary-shama/paste/sunrise-ginger-paste-320g-4d8be4a23d2e.webp"
   },
   {
     "category": "sauces",
     "group": "Ginger & Garlic Pastes",
     "title": "Sunrise Ginger & Garlic Paste",
-    "pack": "320g x 1",
+    "pack": "0567B - 320g x 1",
     "image": "/assets/cloudinary-shama/paste/sunrise-ginger-garlic-paste-320g-e5393a4b7f09.webp"
   },
   {
     "category": "sauces",
     "group": "Ginger & Garlic Pastes",
     "title": "Sunrise Ginger Paste",
-    "pack": "750g x 1",
+    "pack": "0513A - 750g x 1",
     "image": "/assets/sauces-pastes/sunrise-ginger-paste-750g.webp"
   },
   {
     "category": "sauces",
     "group": "Ginger & Garlic Pastes",
     "title": "Sunrise Ginger & Garlic Paste",
-    "pack": "750g x 1",
+    "pack": "0536B - 750g x 1",
     "image": "/assets/cloudinary-shama/paste/sunrise-ginger-garlic-paste-750g-f23be163c2eb.webp"
   },
   {
     "category": "sauces",
     "group": "Ginger & Garlic Pastes",
     "title": "Sunrise Garlic Paste",
-    "pack": "750g x 1",
+    "pack": "0529B - 750g x 1",
     "image": "/assets/cloudinary-shama/paste/sunrise-garlic-paste-750g-2815e1cdeb94.webp"
   },
   {
