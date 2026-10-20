@@ -1,0 +1,83 @@
+name: Migrate Shama Cloudinary images to Cloudflare assets
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/migrate-shama-images.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  actions: write
+
+concurrency:
+  group: shama-image-migration
+  cancel-in-progress: false
+
+jobs:
+  migrate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    steps:
+      - name: Checkout website repository
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+          fetch-depth: 1
+
+      - name: Prepare Python image tools
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install image conversion dependencies
+        run: python -m pip install --disable-pip-version-check --quiet 'Pillow>=11,<13' 'requests>=2.32,<3'
+
+      - name: Audit Cloudinary reference matching (no changes)
+        run: python .github/scripts/mirror-shama-images.py --preflight
+
+      - name: Download and optimize all original Shama images, then rewrite website links
+        run: python .github/scripts/mirror-shama-images.py
+
+      - name: Confirm migrated image files and linked assets exist
+        run: python .github/scripts/mirror-shama-images.py --verify
+
+      - name: Commit verified images and website source changes
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -u
+          git add assets/cloudinary-shama
+          git add .github/data/shama-cloudinary-migration-report.json
+          if git diff --cached --quiet; then
+            echo 'Images and references are already up to date.'
+          else
+            git diff --cached --stat | tail -35
+            git commit -m 'Mirror Shama Cloudinary images as optimized Cloudflare static assets'
+            git push origin HEAD:main
+          fi
+
+      - name: Trigger production Cloudflare deployment after commit
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          curl --fail-with-body -fsS \
+            -X POST \
+            -H "Authorization: Bearer ${GH_TOKEN}" \
+            -H 'Accept: application/vnd.github+json' \
+            -H 'X-GitHub-Api-Version: 2022-11-28' \
+            "https://api.github.com/repos/${GITHUB_REPOSITORY}/actions/workflows/deploy-cloudflare.yml/dispatches" \
+            -d '{"ref":"main"}'
+          echo 'Requested deployment of the verified image migration.'
+
+      - name: Preserve converted images as a recovery workflow artifact
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: shama-image-migration-assets
+          path: |
+            assets/cloudinary-shama/
+            .github/data/shama-cloudinary-migration-report.json
+          if-no-files-found: ignore
+          retention-days: 7
