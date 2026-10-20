@@ -14,7 +14,7 @@
   <link rel="stylesheet" href="brands-globe-20261020.css?v=shama-theme-2">
   <link rel="canonical" href="https://shamaonline.com/brands">
   <link rel="stylesheet" href="brands-globe-premium-20261020.css?v=4">
-  <link rel="stylesheet" href="brands-globe-v3-20261020.css?v=shama-random-6">
+  <link rel="stylesheet" href="brands-globe-v3-20261020.css?v=icon-controls-20261020">
 </head>
 <body data-page="brands">
   <div id="site-header"></div>
@@ -31,10 +31,17 @@
       </div>
       <div class="sbr-controls">
         <span class="sbr-drag-hint"><span class="sbr-drag-icon">&harr;</span> DRAG TO EXPLORE</span>
-        <div class="sbr-control-buttons">
-          <button id="sbr-rotate-left" class="sbr-control" aria-label="Rotate globe left" type="button">&larr;</button>
-          <button id="sbr-play-toggle" class="sbr-control" aria-label="Pause rotating globe" type="button">||</button>
-          <button id="sbr-rotate-right" class="sbr-control" aria-label="Rotate globe right" type="button">&rarr;</button>
+        <div class="sbr-control-buttons" role="group" aria-label="Brand globe controls">
+          <button id="sbr-rotate-left" class="sbr-control sbr-control-arrow" aria-label="Rotate globe left" title="Rotate left" type="button">
+            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M19 12H5m0 0 6-6m-6 6 6 6"/></svg>
+          </button>
+          <button id="sbr-play-toggle" class="sbr-control sbr-control-play" aria-label="Pause rotating globe" title="Pause rotation" type="button">
+            <svg class="sbr-icon-pause" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="7" y="5" width="3.5" height="14" rx="1.25"/><rect x="13.5" y="5" width="3.5" height="14" rx="1.25"/></svg>
+            <svg class="sbr-icon-play" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m8 5 11 7-11 7z"/></svg>
+          </button>
+          <button id="sbr-rotate-right" class="sbr-control sbr-control-arrow" aria-label="Rotate globe right" title="Rotate right" type="button">
+            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12h14m0 0-6-6m6 6-6 6"/></svg>
+          </button>
         </div>
         <a class="sbr-skip" href="#sbr-collection">ALL BRANDS &darr;</a>
       </div>
@@ -113,7 +120,7 @@
   <script src="sea-food-products-20260928.js?v=20261020-brands"></script>
   <script src="oils-products-20260915.js?v=20261020-brands"></script>
   <script src="paste-products-20260910.js?v=20261020-brands"></script>
-  <script src="brands-globe-v3-20261020.js?v=shama-random-6"></script>
+  <script src="brands-globe-v3-20261020.js?v=icon-controls-20261020"></script>
   <script src="brands-experience-20261020.js?v=3"></script>
 </body>
 </html>

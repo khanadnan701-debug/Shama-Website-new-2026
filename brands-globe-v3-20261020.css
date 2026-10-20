@@ -74,3 +74,57 @@ body[data-page="brands"] .sbr3-tile.sbr3-shama img {
     width:132px;height:94px;padding:7px;border-radius:13px;border-width:2px;
   }
 }
+
+/* SHAMA brand globe: icon-only accessible controls */
+body[data-page="brands"] .sbr-control-buttons{
+  display:flex;align-items:center;justify-content:center;gap:11px;
+}
+body[data-page="brands"] .sbr-control-buttons .sbr-control{
+  display:inline-flex;align-items:center;justify-content:center;
+  position:relative;width:48px;height:48px;min-width:48px;min-height:48px;
+  padding:0;border-radius:50%;cursor:pointer;
+  color:#1b3265;background:#fff;border:1px solid #dce4f3;
+  box-shadow:0 6px 16px rgba(19,40,89,.12);
+  transition:transform .18s ease,background .18s ease,border-color .18s ease,box-shadow .18s ease;
+  -webkit-tap-highlight-color:transparent;touch-action:manipulation;
+}
+body[data-page="brands"] .sbr-control-buttons .sbr-control svg{
+  display:block;flex:none;width:21px;height:21px;fill:none;stroke:currentColor;
+  stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round;pointer-events:none;
+}
+body[data-page="brands"] .sbr-control-buttons .sbr-control-play{
+  width:55px;height:55px;min-width:55px;min-height:55px;
+  background:linear-gradient(135deg,#263f87,#6045c8);
+  color:#fff;border:1px solid rgba(77,79,181,.30);
+  box-shadow:0 9px 23px rgba(54,54,139,.23);
+}
+body[data-page="brands"] .sbr-control-buttons .sbr-control-play svg{
+  width:23px;height:23px;stroke:none;fill:currentColor;
+}
+body[data-page="brands"] .sbr-control-buttons .sbr-icon-play{display:none}
+body[data-page="brands"] .sbr-control-buttons .sbr-control-play.is-paused .sbr-icon-pause{display:none}
+body[data-page="brands"] .sbr-control-buttons .sbr-control-play.is-paused .sbr-icon-play{display:block}
+body[data-page="brands"] .sbr-control-buttons .sbr-control-arrow:hover{
+  background:#eef3ff;border-color:#93abe4;
+}
+body[data-page="brands"] .sbr-control-buttons .sbr-control-play:hover{
+  background:linear-gradient(135deg,#314e9d,#754edf);color:#fff;
+}
+body[data-page="brands"] .sbr-control-buttons .sbr-control:focus-visible{
+  outline:3px solid #ff72a4;outline-offset:3px;
+}
+body[data-page="brands"] .sbr-control-buttons .sbr-control:active{
+  transform:scale(.94);
+}
+@media(max-width:640px){
+  body[data-page="brands"] .sbr-control-buttons{gap:9px}
+  body[data-page="brands"] .sbr-control-buttons .sbr-control{
+    width:44px;height:44px;min-width:44px;min-height:44px;
+  }
+  body[data-page="brands"] .sbr-control-buttons .sbr-control-play{
+    width:49px;height:49px;min-width:49px;min-height:49px;
+  }
+}
+@media(prefers-reduced-motion:reduce){
+  body[data-page="brands"] .sbr-control-buttons .sbr-control{transition:none}
+}

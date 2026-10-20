@@ -321,8 +321,9 @@
   if(right)right.addEventListener('click',()=>{yaw+=.25;render()});
   function syncPause(){
     if(!pauseButton)return;
-    pauseButton.textContent=paused?'Play':'Pause';
+    pauseButton.classList.toggle('is-paused',paused);
     pauseButton.setAttribute('aria-label',paused?'Resume rotating globe':'Pause rotating globe');
+    pauseButton.setAttribute('title',paused?'Play rotation':'Pause rotation');
   }
   if(pauseButton)pauseButton.addEventListener('click',()=>{paused=!paused;syncPause()});
   syncPause();
