@@ -59,7 +59,7 @@
     "category": "sauces",
     "group": "Pickles & Chutneys",
     "title": "Shama Garlic Masala Pickle",
-    "pack": "300g x 1",
+    "pack": "19122 - 300g x 1",
     "image": "/assets/cloudinary-shama/paste/shama-garlic-masala-pickle-300g-45c5e3131092.webp"
   },
   {
@@ -80,14 +80,14 @@
     "category": "sauces",
     "group": "Pickles & Chutneys",
     "title": "Shama Green Chilli Pickle",
-    "pack": "300g x 1",
+    "pack": "19115 - 300g x 1",
     "image": "/assets/cloudinary-shama/paste/shama-green-chilli-pickle-300g-107eb1563585.webp"
   },
   {
     "category": "sauces",
     "group": "Pickles & Chutneys",
     "title": "Shama Lime Pickle Mild",
-    "pack": "300g x 1",
+    "pack": "19123 - 300g x 1",
     "image": "/assets/cloudinary-shama/paste/shama-lime-pickle-mild-300g-172a26177158.webp"
   },
   {
@@ -101,7 +101,7 @@
     "category": "sauces",
     "group": "Pickles & Chutneys",
     "title": "Shama Mixed Pickle Mild",
-    "pack": "4kg x 1",
+    "pack": "0115A - 4kg x 1",
     "image": "/assets/cloudinary-shama/paste/shama-mixed-pickle-mild-4kg-3ed36044247e.webp"
   },
   {
@@ -143,7 +143,7 @@
     "category": "sauces",
     "group": "Pickles & Chutneys",
     "title": "Shama Mixed Pickle Mild",
-    "pack": "300g x 1",
+    "pack": "19114 - 300g x 1",
     "image": "/assets/cloudinary-shama/paste/shama-mixed-pickle-mild-300g-5d8fb2efb28e.webp"
   },
   {
