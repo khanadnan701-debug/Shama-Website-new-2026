@@ -1,0 +1,103 @@
+/* Shama authentic brand showcase: real original logos, not typography stand-ins. */
+.sbs-section{position:relative;padding:42px 0 57px;background:#f6f8fe;font-family:Manrope,'DM Sans',Arial,sans-serif}
+.sbs-section .sbs-shell{
+  position:relative;isolation:isolate;overflow:hidden;
+  width:min(1680px,calc(100% - 48px));margin:0 auto;padding:clamp(44px,5vw,75px) 0 32px;
+  border-radius:42px;color:#fff;
+  background:linear-gradient(112deg,#16396f 0%,#234e99 48%,#6244d5 100%);
+  box-shadow:0 24px 60px rgba(20,42,105,.17)
+}
+.sbs-section .sbs-shell::before{
+  content:"";position:absolute;right:-105px;top:-235px;width:620px;height:620px;
+  border:1px solid rgba(255,255,255,.15);border-radius:50%;pointer-events:none;
+  box-shadow:0 0 0 72px rgba(255,255,255,.018),0 0 0 150px rgba(255,255,255,.012);z-index:0
+}
+.sbs-section .sbs-giant-word{
+  position:absolute;top:-38px;right:-19px;color:rgba(255,255,255,.055);pointer-events:none;
+  font:900 clamp(90px,11vw,200px)/1 Manrope,sans-serif;letter-spacing:-.065em;
+  white-space:nowrap;z-index:0
+}
+.sbs-section .sbs-heading,.sbs-section .sbs-bottom{position:relative;z-index:2}
+.sbs-section .sbs-heading{padding:0 clamp(26px,5.6vw,94px);max-width:1060px}
+.sbs-section .sbs-eyebrow{display:flex;align-items:center;gap:19px;margin-bottom:20px}
+.sbs-section .sbs-kicker{font:800 11px/1.4 Manrope,sans-serif;letter-spacing:.22em;color:#a8f6f3}
+.sbs-section .sbs-short-rule{width:57px;height:1px;background:#a8f6f3;opacity:.5}
+.sbs-section .sbs-heading h2{
+  margin:0 0 16px;color:#fff;
+  font:900 clamp(43px,5.6vw,78px)/1.045 Manrope,sans-serif;letter-spacing:-.069em
+}
+.sbs-section .sbs-heading h2 em{font-style:normal;color:#ffc0d8}
+.sbs-section .sbs-heading p{
+  margin:0;max-width:780px;color:#dfeaff;
+  font:600 clamp(15px,1.4vw,20px)/1.7 'DM Sans',sans-serif
+}
+.sbs-section .sbs-logo-rail{
+  position:relative;z-index:2;overflow:hidden;margin:45px 0 37px;
+  -webkit-mask-image:linear-gradient(90deg,transparent 0%,#000 4%,#000 96%,transparent 100%);
+  mask-image:linear-gradient(90deg,transparent 0%,#000 4%,#000 96%,transparent 100%)
+}
+.sbs-section .sbs-logo-track{display:flex;width:max-content;animation:sbs-marquee 82s linear infinite;will-change:transform}
+.sbs-section .sbs-logo-set{flex:0 0 auto;display:flex;align-items:center;gap:17px;padding-right:17px}
+.sbs-section .sbs-brand-card{
+  flex:0 0 220px;width:220px;height:120px;
+  display:flex;align-items:center;justify-content:center;
+  box-sizing:border-box;padding:17px 20px;background:#fff;border:1px solid rgba(210,222,242,.95);
+  border-radius:25px;box-shadow:0 12px 27px rgba(13,27,69,.17);
+  text-decoration:none;overflow:hidden;transition:transform .2s,box-shadow .2s
+}
+.sbs-section .sbs-brand-card:hover{transform:translateY(-5px);box-shadow:0 19px 35px rgba(13,27,69,.22)}
+.sbs-section .sbs-brand-card:focus-visible{outline:3px solid #ffaccc;outline-offset:3px}
+.sbs-section .sbs-brand-card img{
+  display:block;width:100%;height:100%;max-width:180px;max-height:86px;
+  object-fit:contain;object-position:center;filter:none
+}
+@keyframes sbs-marquee{to{transform:translateX(-50%)}}
+.sbs-section .sbs-logo-rail:hover .sbs-logo-track,
+.sbs-section .sbs-logo-rail:focus-within .sbs-logo-track{animation-play-state:paused}
+.sbs-section .sbs-bottom{
+  margin:0 clamp(26px,5.6vw,94px);padding:27px 0 0;
+  display:flex;justify-content:space-between;align-items:center;gap:20px;
+  border-top:1px solid rgba(255,255,255,.20)
+}
+.sbs-section .sbs-bottom>span{color:#d4e2ff;font:800 11px/1.5 Manrope,sans-serif;letter-spacing:.12em}
+.sbs-section .sbs-bottom a{
+  display:inline-flex;align-items:center;gap:13px;color:#fff;text-decoration:none;
+  font:800 11px/1.5 Manrope,sans-serif;letter-spacing:.075em
+}
+.sbs-section .sbs-bottom a:hover{color:#bbfff5}
+.sbs-section .sbs-round-arrow{
+  display:grid;place-items:center;width:39px;height:39px;border-radius:50%;
+  background:rgba(255,255,255,.14);font:600 19px/1 Arial,sans-serif
+}
+@media(max-width:850px){
+  .sbs-section{padding:30px 0}
+  .sbs-section .sbs-shell{width:calc(100% - 28px);border-radius:31px}
+  .sbs-section .sbs-heading h2{font-size:clamp(40px,7vw,62px)}
+  .sbs-section .sbs-brand-card{flex-basis:188px;width:188px;height:104px;padding:14px}
+  .sbs-section .sbs-brand-card img{max-width:158px;max-height:78px}
+  .sbs-section .sbs-logo-track{animation-duration:75s}
+}
+@media(max-width:570px){
+  .sbs-section{padding:20px 0 30px}
+  .sbs-section .sbs-shell{width:calc(100% - 16px);padding:34px 0 24px;border-radius:23px}
+  .sbs-section .sbs-giant-word{top:8px;right:-50px;font-size:75px}
+  .sbs-section .sbs-heading{padding:0 23px}
+  .sbs-section .sbs-eyebrow{gap:12px;margin-bottom:16px}
+  .sbs-section .sbs-kicker{font-size:9px;letter-spacing:.19em}
+  .sbs-section .sbs-short-rule{width:30px}
+  .sbs-section .sbs-heading h2{font-size:clamp(33px,9vw,48px);letter-spacing:-.059em}
+  .sbs-section .sbs-heading p{font-size:13px;line-height:1.6}
+  .sbs-section .sbs-logo-rail{margin:29px 0}
+  .sbs-section .sbs-logo-set{gap:10px;padding-right:10px}
+  .sbs-section .sbs-brand-card{flex-basis:156px;width:156px;height:88px;border-radius:16px;padding:13px}
+  .sbs-section .sbs-brand-card img{max-width:138px;max-height:64px}
+  .sbs-section .sbs-logo-track{animation-duration:70s}
+  .sbs-section .sbs-bottom{margin:0 23px;flex-direction:column;align-items:flex-start;gap:15px;padding-top:20px}
+  .sbs-section .sbs-bottom>span{font-size:9px;letter-spacing:.09em}
+}
+@media(prefers-reduced-motion:reduce){
+  .sbs-section .sbs-logo-track{animation:none;will-change:auto}
+  .sbs-section .sbs-logo-rail{-webkit-mask-image:none;mask-image:none;overflow-x:auto;overscroll-behavior-inline:contain}
+  .sbs-section .sbs-logo-set[aria-hidden="true"]{display:none}
+  .sbs-section .sbs-brand-card{transition:none}
+}
