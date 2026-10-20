@@ -758,7 +758,7 @@ productData.push(...supplementalData);
     "brand": "Shama",
     "title": "Shama Punjabi Potato Samosa",
     "pack": "12 pcs",
-    "image": "/assets/frozen/shama-punjabi-potato-samosa-lifestyle-20261020.webp"
+    "image": "/assets/cloudinary-shama/frozen/shama-punjabi-potato-samosa-12-pcs-b4a9525e32a6.webp"
   },
   {
     "category": "frozen",
@@ -863,14 +863,14 @@ productData.push(...supplementalData);
     "brand": "Shama",
     "title": "Shama Plain Paratha",
     "pack": "30 pcs",
-    "image": "/assets/frozen/shama-plain-paratha-lifestyle-20261020.webp"
+    "image": "/assets/cloudinary-shama/frozen/shama-plain-paratha-30pcs-9ea8b3cfd2ac.webp"
   },
   {
     "category": "frozen",
     "brand": "Shama",
     "title": "Shama Crispy Plain Paratha",
     "pack": "20 pcs",
-    "image": "/assets/frozen/shama-crispy-plain-paratha-lifestyle-20261020.webp"
+    "image": "/assets/cloudinary-shama/frozen/shama-crispy-plain-paratha-20-pcs-bd290fb445fc.webp"
   },
   {
     "category": "frozen",
@@ -1340,8 +1340,61 @@ const categories=[
  {slug:'non-foods',name:'Non Foods',desc:'Commercial tandoors, parts and accessories',image:'/assets/cloudinary-shama/non-foods/shahi-charcoal-tandoor-11c-size-1-b0fd2000467a.webp'}];
 const fileMap={rice:'rice.html',spices:'spices.html',sauces:'sauces-pastes.html',misc:'miscellaneous.html',beverages:'beverages.html',tea:'tea.html',sugar:'sugar.html',wines:'wines.html',flour:'flour-lentiles.html',frozen:'frozen.html',oils:'oils.html','dry-fruits':'dry-fruits.html',laziza:'laziza.html',ahmed:'ahmed.html',agarbatti:'agarbatti.html',dates:'dates.html',pataks:'pataks.html',cosmetics:'cosmetics.html','non-foods':'non-foods.html'};
 function header(){const page=document.body.dataset.page||'home';return `<div class="announce"><div class="wrap announce-inner"><span><i></i> Wholesale enquiries open</span><p>Authentic flavour across France since 2003</p><a href="mailto:info@shamafr.com">info@shamafr.com ↗</a></div></div><header class="header"><nav class="nav-shell wrap"><a class="brand brand-studio" href="index.html"><span class="brand-emblem"><b>S</b><i></i></span><span><strong>SHAMA</strong><small>INTERNATIONAL</small></span></a><button class="mobile-toggle" aria-label="Open menu"><i></i><i></i></button><div class="navlinks"><a class="${page==='home'?'active':''}" href="index.html"><span>Home</span></a><a class="${page==='about'?'active':''}" href="about.html"><span>About us</span></a><a class="${page==='catalogue'?'active':''}" href="catalogue.html"><span>Catalogue</span></a><a class="${page==='brands'?'active':''}" href="brands.html"><span>Brands</span></a><div class="drop"><span class="drop-label">Products <b>⌄</b></span><div class="mega-menu"><div class="mega-head"><span>Explore by range</span><a href="catalogue.html">Full catalogue ↗</a></div><div class="mega-grid">${categories.map((c,i)=>`<a href="${fileMap[c.slug]}"><b>${String(i+1).padStart(2,'0')}</b><span><strong>${c.name}</strong><small>${c.desc}</small></span><i>↗</i></a>`).join('')}</div><div class="mega-foot"><span>Need help choosing?</span><a href="contact.html">Talk to our team →</a></div></div></div><a class="${page==='contact'?'active':''}" href="contact.html"><span>Contact</span></a></div><a class="header-cta" href="contact.html"><span>Bulk order</span><b>↗</b></a></nav></header>`}
-function footer(){return `<footer class="footer"><div class="wrap"><div class="footer-grid"><div><a class="brand" href="index.html"><span class="brand-mark"><span>S</span></span>SHAMA</a><p>Authentic foods, trusted quality and traditional flavour—bringing people together since 2003.</p></div><div><h4>Quick links</h4><a href="about.html">About us</a><a href="catalogue.html">Catalogue</a><a href="contact.html">Contact us</a><a href="contact.html">Order now</a></div><div><h4>Headquarters</h4><p>Shama International S.A.S.<br>3, allée de l’Espérance<br>93110 Rosny Sous Bois – France</p><p>01 43 42 05 79 · info@shamafr.com</p></div></div><div class="footer-bottom"><span>© Shama International 2026. All rights reserved.</span><span>SIRET: 449 548 395 00036 · TVA FR71 449 548 395</span></div></div></footer>`}
-document.querySelector('#site-header').innerHTML=header();document.querySelector('#site-footer').innerHTML=footer();document.querySelector('.brand-studio').innerHTML='<span class="official-logo-frame"><img src="assets/shama-logo.png" alt="Shama Paris"></span>';document.querySelector('.footer .brand').innerHTML='<span class="official-logo-frame footer-logo"><img src="assets/shama-logo.png" alt="Shama Paris"></span>';const logoCss=document.createElement('link');logoCss.rel='stylesheet';logoCss.href='logo.css?v=20260721-20';document.head.appendChild(logoCss);document.querySelector('.mobile-toggle').onclick=()=>document.querySelector('.navlinks').classList.toggle('open');
+function footer(){
+  const year=new Date().getFullYear();
+  return `<footer class="footer shama-footer" role="contentinfo" aria-label="Shama International website footer">
+    <div class="wrap sf-container">
+      <section class="sf-cta" aria-labelledby="sf-cta-heading">
+        <div class="sf-cta-copy">
+          <span class="sf-kicker"><span class="sf-kicker-dot" aria-hidden="true"></span> SHAMA INTERNATIONAL &middot; WHOLESALE IN FRANCE</span>
+          <h2 id="sf-cta-heading">Let's bring authentic flavour<br><em>to your business.</em></h2>
+          <p>From everyday essentials to South Asian favourites, find the products your customers love.</p>
+        </div>
+        <div class="sf-cta-actions">
+          <a class="sf-btn sf-btn-main" href="contact.html">Request a wholesale quote <span aria-hidden="true">&nearr;</span></a>
+          <a class="sf-btn sf-btn-outline" href="catalogue.html">Explore our catalogue <span aria-hidden="true">&rarr;</span></a>
+        </div>
+      </section>
+      <div class="footer-grid sf-main-grid">
+        <div class="sf-brand-column">
+          <a class="brand sf-brand" href="index.html" aria-label="Shama International home">SHAMA INTERNATIONAL</a>
+          <p class="sf-brand-description">Authentic foods, trusted quality and traditional flavour, bringing people together since 2003.</p>
+          <div class="sf-brand-tags"><span>Since 2003</span><span>Based in France</span></div>
+        </div>
+        <nav class="sf-links-column" aria-label="Footer company navigation">
+          <h3>Discover Shama</h3>
+          <a href="index.html">Home</a>
+          <a href="about.html">About us</a>
+          <a href="brands.html">Our brands</a>
+          <a href="catalogue.html">Full catalogue</a>
+          <a href="contact.html">Contact us</a>
+        </nav>
+        <nav class="sf-links-column" aria-label="Footer product categories">
+          <h3>Popular ranges</h3>
+          <a href="rice.html">Rice &amp; basmati</a>
+          <a href="spices.html">Spices</a>
+          <a href="frozen.html">Frozen foods</a>
+          <a href="beverages.html">Beverages</a>
+          <a href="flour-lentiles.html">Flour &amp; lentils</a>
+          <a class="sf-view-all" href="catalogue.html">All product ranges <span aria-hidden="true">&nearr;</span></a>
+        </nav>
+        <div class="sf-contact-column">
+          <h3>Get in touch</h3>
+          <p class="sf-contact-company">Shama International S.A.S.</p>
+          <address>3, all&eacute;e de l'Esp&eacute;rance<br>93110 Rosny-sous-Bois<br>France</address>
+          <a class="sf-contact-line" href="tel:+33143420579"><span class="sf-icon" aria-hidden="true">&#9742;</span> 01 43 42 05 79</a>
+          <a class="sf-contact-line" href="mailto:info@shamafr.com"><span class="sf-icon" aria-hidden="true">@</span> info@shamafr.com</a>
+        </div>
+      </div>
+      <div class="footer-bottom sf-bottom">
+        <p>&copy; ${year} Shama International S.A.S. All rights reserved.</p>
+        <p>SIRET: 449 548 395 00036 <span aria-hidden="true">&middot;</span> TVA FR71 449 548 395</p>
+        <a href="#site-header" class="sf-to-top">Back to top <span aria-hidden="true">&uarr;</span></a>
+      </div>
+    </div>
+  </footer>`;
+}
+document.querySelector('#site-header').innerHTML=header();document.querySelector('#site-footer').innerHTML=footer();document.querySelector('.brand-studio').innerHTML='<span class="official-logo-frame"><img src="assets/shama-logo.png" alt="Shama Paris"></span>';document.querySelector('.footer .brand').innerHTML='<span class="official-logo-frame footer-logo"><img src="assets/shama-logo.png" alt="Shama Paris"></span>';const logoCss=document.createElement('link');logoCss.rel='stylesheet';logoCss.href='logo.css?v=20260721-20';document.head.appendChild(logoCss);const shamaFooterCss=document.createElement('link');shamaFooterCss.rel='stylesheet';shamaFooterCss.href='footer-premium-20261020.css?v=1';document.head.appendChild(shamaFooterCss);document.querySelector('.mobile-toggle').onclick=()=>document.querySelector('.navlinks').classList.toggle('open');
 function catCard(c,i=0){return `<a class="category-card" href="${fileMap[c.slug]}"><img src="${c.image}" alt="${c.name}"><span class="category-number">0${i+1}</span><div class="category-info"><div><span class="eyebrow light">Explore the range</span><h3>${c.name}</h3><p>${c.desc}</p></div><span class="circle-arrow">↗</span></div></a>`}
 const fc=document.querySelector('#featured-categories');if(fc){const homeCats=categories.slice(0,6);fc.className='flavour-explorer';fc.innerHTML=`<div class="flavour-orbit"><div class="orbit-glow"></div><div class="flavour-image-wrap"><span class="flavour-index" id="flavour-index">01</span><img id="flavour-image" src="${homeCats[0].image}" alt="${homeCats[0].name}"><div class="flavour-scan"></div></div>${homeCats.map((c,i)=>`<button type="button" class="flavour-node ${i===0?'active':''}" data-flavour="${i}"><b>0${i+1}</b><span>${c.name}</span></button>`).join('')}<span class="orbit-caption">Move through<br>our flavours</span></div><div class="flavour-story"><span class="eyebrow">Now exploring</span><div class="flavour-line"></div><h3 id="flavour-title">${homeCats[0].name}</h3><p id="flavour-desc">${homeCats[0].desc}. Discover authentic Shama products selected for homes, restaurants and retailers across France.</p><div class="flavour-meta"><span><b>01</b> Category</span><span><b>20+</b> Years of trust</span></div><a id="flavour-link" class="flavour-cta" href="${fileMap[homeCats[0].slug]}"><span>Explore ${homeCats[0].name}</span><b>↗</b></a><div class="flavour-dots">${homeCats.map((_,i)=>`<i class="${i===0?'active':''}"></i>`).join('')}</div></div>`;fc.addEventListener('click',e=>{const node=e.target.closest('.flavour-node');if(!node)return;const i=Number(node.dataset.flavour),c=homeCats[i],img=document.querySelector('#flavour-image');fc.querySelectorAll('.flavour-node').forEach(n=>n.classList.toggle('active',n===node));fc.querySelectorAll('.flavour-dots i').forEach((d,j)=>d.classList.toggle('active',j===i));img.classList.remove('change');void img.offsetWidth;img.src=c.image;img.alt=c.name;img.classList.add('change');document.querySelector('#flavour-index').textContent=`0${i+1}`;document.querySelector('#flavour-title').textContent=c.name;document.querySelector('#flavour-desc').textContent=`${c.desc}. Discover authentic Shama products selected for homes, restaurants and retailers across France.`;const link=document.querySelector('#flavour-link');link.href=fileMap[c.slug];link.querySelector('span').textContent=`Explore ${c.name}`})}
 const homeProducts=document.querySelector('#home-products');if(homeProducts){const picks=productData.filter(x=>x.category==='rice').slice(0,4);homeProducts.innerHTML=`<div class="product-showcase"><div class="showcase-tabs"><span class="showcase-label">Select a favourite</span>${picks.map((x,i)=>`<button type="button" class="showcase-tab ${i===0?'active':''}" data-showcase="${i}"><b>0${i+1}</b><span>${x.title}</span><i>→</i></button>`).join('')}<a href="rice.html" class="showcase-all">Explore all rice <span>↗</span></a></div><div class="showcase-stage"><div class="stage-ring one"></div><div class="stage-ring two"></div><span class="stage-badge">Shama<br><b>Choice</b></span><img id="showcase-image" src="${picks[0].image}" alt="${picks[0].title}"><span class="stage-shadow"></span></div><div class="showcase-copy"><span class="eyebrow">Bestseller · Wholesale</span><div class="showcase-count"><strong id="showcase-number">01</strong><span>/ 04</span></div><h3 id="showcase-title">${picks[0].title}</h3><p id="showcase-pack">${picks[0].pack||'Multiple pack sizes available'}</p><div class="showcase-benefits"><span>✓ Authentic quality</span><span>✓ Bulk availability</span><span>✓ Delivery support</span></div><button class="bulk-buy showcase-buy" type="button" data-product="${picks[0].title.replace(/"/g,'&quot;')}" data-pack="${(picks[0].pack||'').replace(/"/g,'&quot;')}"><span>Request bulk quote</span><b>↗</b></button></div></div>`;homeProducts.addEventListener('click',e=>{const tab=e.target.closest('.showcase-tab');if(!tab)return;const i=Number(tab.dataset.showcase),x=picks[i],img=document.querySelector('#showcase-image');homeProducts.querySelectorAll('.showcase-tab').forEach(b=>b.classList.toggle('active',b===tab));img.classList.remove('swap');void img.offsetWidth;img.src=x.image;img.alt=x.title;img.classList.add('swap');document.querySelector('#showcase-number').textContent=`0${i+1}`;document.querySelector('#showcase-title').textContent=x.title;document.querySelector('#showcase-pack').textContent=x.pack||'Multiple pack sizes available';const buy=homeProducts.querySelector('.showcase-buy');buy.dataset.product=x.title;buy.dataset.pack=x.pack||''})}
