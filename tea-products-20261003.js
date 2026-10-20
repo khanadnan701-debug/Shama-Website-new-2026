@@ -36,35 +36,35 @@
       category:'tea',
       brand:'PG Tips',
       title:'PG Tips Tea Bags',
-      pack:'300 tea bags',
+      pack:'19019 - 300 tea bags',
       image:'/assets/cloudinary-shama/tea/pg-tea-300-bag-951b1ef25c55.webp'
     },
     {
       category:'tea',
       brand:'Mokhtar',
       title:'Mokhtar Green Tea',
-      pack:'24 x 500g',
+      pack:'0101A - 24 x 500g',
       image:'/assets/cloudinary-shama/tea/mokhtar-green-tea-24x500g-2334ec5320ed.webp'
     },
     {
       category:'tea',
       brand:'Tapal',
       title:'Tapal Danedar Tea Bags',
-      pack:'300 tea bags',
+      pack:'18979 - 300 tea bags',
       image:'/assets/cloudinary-shama/tea/tapal-tea-danedar-300-s-9afe9bc0b38d.webp'
     },
     {
       category:'tea',
       brand:'Tapal',
       title:'Tapal Black Tea Jar',
-      pack:'450g',
+      pack:'0281B - 450g',
       image:'/assets/cloudinary-shama/tea/tapal-the-noir-en-vrac-bocal-black-tea-jar-450g-db2a14344e2d.webp'
     },
     {
       category:'tea',
       brand:'Tapal',
       title:'Tapal Danedar Loose Tea Jar',
-      pack:'1kg',
+      pack:'0199A - 1kg',
       image:'/assets/cloudinary-shama/tea/tapal-tea-danedar-jar-loose-1kg-b76389945386.webp'
     }
   ];
