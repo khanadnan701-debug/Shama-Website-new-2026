@@ -120,13 +120,39 @@
   const nodes = [];
   let orbRect = null;
 
+  const AUTHENTIC_LOGOS = Object.freeze({
+    'shama':'/assets/shama-logo.png',
+    'sunrise':'/assets/brand-logos/sunrise.webp',
+    'shaheen':'/assets/brand-logos/shaheen.webp',
+    'ahmed':'/assets/brand-logos/ahmed.webp',
+    'trs':'/assets/brand-logos/trs.webp',
+    'best':'/assets/brand-logos/best.webp',
+    'sher-e-punjab':'/assets/brand-logos/sher-e-punjab.webp',
+    'mdh':'/assets/brand-logos/mdh.webp',
+    'tata-tea':'/assets/brand-logos/tata-tea.webp'
+  });
   function createWordmark(brand, element) {
+    const logo = AUTHENTIC_LOGOS[brand.slug];
     const mark = document.createElement('span');
     mark.className = 'sbr-wordmark' + (brand.isSerif ? ' sbr-wordmark-serif' : '') + (brand.isNarrow ? ' sbr-wordmark-narrow' : '');
     mark.textContent = brand.name;
+    if (logo) {
+      const image = document.createElement('img');
+      image.className = 'sbr-actual-logo';
+      image.src = logo;
+      image.alt = brand.name + ' logo';
+      image.loading = 'lazy';
+      image.decoding = 'async';
+      image.addEventListener('error', () => {
+        image.remove();
+        mark.hidden = false;
+      }, {once:true});
+      mark.hidden = true;
+      element.append(image);
+    }
     const line = document.createElement('span');
     line.className = 'sbr-mini';
-    line.textContent = 'EST. IN OUR RANGE';
+    line.textContent = logo ? 'OUR BRAND COLLECTION' : 'EST. IN OUR RANGE';
     element.append(mark,line);
   }
   function choiceButton(brand, orb=false) {
