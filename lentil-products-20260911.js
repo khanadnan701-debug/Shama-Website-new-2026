@@ -16,6 +16,25 @@
     'Shama Desi Toor Dal'
   ]);
 
+  // Inventory screenshot codes for confidently identified lentil pack variants.
+  // Product-specific IDs avoid conflating similarly named washed / unwashed ranges.
+  const PRODUCT_PACK_CODES = Object.freeze({
+    'Shama_desi_black_eye_beans_1kg': '2004D - 1kg / 4299A - 2kg',
+    'Shama_desi_chana_dal_1kg': '19147 - 1kg',
+    'Shama_desi_toor_dal_1kg': '19148 - 1kg / 7708A - 2kg',
+    'Shama_desi_kidney_beans_1kg': '2073C - 1kg / 3940C - 2kg',
+    'Shama_desi_masoor_dal_whole_1kg': '1939A - 1kg / 4695A - 2kg',
+    'Shama_desi_kala_chana_1kg': '1946A - 1kg / 2028C - 2kg',
+    'Shama_desi_moong_whole_1kg': '2103C - 1kg / 0802A - 2kg',
+    'Shama_desi_moong_dal_1kg': '19146 - 1kg',
+    'Shama_desi_rajma_1kg': '19143 - 1kg',
+    'Shama_desi_white_chick_peas_1kg': '1953A - 1kg / 3872C - 2kg',
+    'Shama_desi_urad_dal_chilka_1kg': '2110C - 1kg',
+    'Shama_desi_urad_gota1kg': '19144 - 1kg',
+    'Shama_desi_urad_whole_1kg': '2011 - 1kg / 4701A - 2kg',
+    'Shama_masoor_dal_5kg': '1984A - 5kg'
+  });
+
   const lentilProducts = [
     ['Shama Desi Black Eye Beans','Shama_desi_black_eye_beans_1kg'],
     ['Shama Desi Urad Dal','Shama_desi_urad_dal_1kg_2'],
@@ -44,7 +63,7 @@
   ].map(([title, id]) => ({
     category:'flour',
     title,
-    pack: dualSizeTitles.has(title) ? '1kg & 2kg' : '1kg',
+    pack: PRODUCT_PACK_CODES[id] || (dualSizeTitles.has(title) ? '1kg & 2kg' : '1kg'),
     image:`/assets/lentils/${id.replaceAll('_','-').toLowerCase()}.webp`
   }));
 
