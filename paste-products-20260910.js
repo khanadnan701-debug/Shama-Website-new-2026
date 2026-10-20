@@ -10,7 +10,7 @@
     "category": "sauces",
     "group": "Sauces",
     "title": "Shama Mint Sauce",
-    "pack": "2.7kg x 1",
+    "pack": "4330A - 2.7kg x 1",
     "image": "/assets/cloudinary-shama/paste/shama-mint-sauce-2-7kg-ee9c603ba48c.webp"
   },
   {
@@ -171,7 +171,7 @@
     "category": "sauces",
     "group": "Pickles & Chutneys",
     "title": "Shama Sweet Mango Chutney",
-    "pack": "3kg x 1",
+    "pack": "4428B - 3kg x 1",
     "image": "/assets/cloudinary-shama/paste/shama-sweet-mango-chutney-3kg-4a571213cdbf.webp"
   },
   {
