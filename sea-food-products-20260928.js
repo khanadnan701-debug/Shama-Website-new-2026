@@ -13,7 +13,7 @@
   {
     "category": "sea-food",
     "title": "Shrimp Crevette 26 30",
-    "pack": "Size 26–30",
+    "pack": "18973 - Size 26–30",
     "image": "/assets/cloudinary-shama/sea-food/shrimp-crevette-26-30-3c1289f126d3.webp"
   },
   {
@@ -25,7 +25,7 @@
   {
     "category": "sea-food",
     "title": "Shrimps Crevette 31-40",
-    "pack": "Size 31–40",
+    "pack": "18974 - Size 31–40",
     "image": "/assets/cloudinary-shama/sea-food/shrimps-crevette-31-40-a887fe309d97.webp"
   }
 ];
