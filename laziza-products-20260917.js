@@ -10,7 +10,8 @@
         'Laziza_delhi_pulao_biryani_masala_100g',
         'Laziza_sindhi_biryani_masala_130g',
         'Laziza_yakhni_pulao_masala_100g',
-        'Laziza_zafrani_bombay_biryani_masala_130g'
+        'Laziza_zafrani_bombay_biryani_masala_130g',
+        'National_biryani_masala_78g'
       ]
     },
     'kebab-bbq': {
@@ -121,6 +122,45 @@
     }
   };
 
+  // Item codes from the supplied 2026-10-20 Laziza inventory screenshots.
+  const PRODUCT_CODES = Object.freeze({
+    'Laziza_biryani_masala_100g': '1103A',
+    'Laziza_delhi_pulao_biryani_masala_100g': '2278B',
+    'Laziza_sindhi_biryani_masala_130g': '2261A',
+    'Laziza_yakhni_pulao_masala_100g': '1554A',
+    'Laziza_zafrani_bombay_biryani_masala_130g': '1745A',
+    'National_biryani_masala_78g': '19045',
+    'Laziza_behari_kebab_masala_100g': '1769A',
+    'Laziza_broast_masala_125g': '1585A',
+    'Laziza_chapli_kebab_masala_100g': '19021',
+    'Laziza_chicken_tikka_masala_100g': '1592A',
+    'Laziza_lahori_chargha_masala_90g': '1578A',
+    'Laziza_shami_kebab_masala_100g': '1738A',
+    'Laziza_seekh_kebab_masala_100g': '1165A',
+    'Laziza_tikka_boti_masala_100g': '1172A',
+    'Laziza_tandoori_masala_100g': '1196A',
+    'Laziza_achar_ghosht_masala_100g': '1523A',
+    'Laziza_chana_masala_100g': '2285A',
+    'Laziza_chicken_masala_100g': '1530B',
+    'Laziza_chicken_ginger_80g': '1561A',
+    'Laziza_fish_masala_100g': '1547A',
+    'Laziza_kofta_masala_130g': '1189A',
+    'Laziza_karahi_fry_meat_masala_90g': '1202A',
+    'Laziza_pasanda_masala_100g': '0977A',
+    'Laziza_qorma_masala_100g': '1097A',
+    'Laziza_stew_dopiaza_masala_80g': '1721A',
+    'Laziza_qeema_masala_100g': '1134A',
+    'Laziza_sabzi_bhujia_masala_100g': '2292A',
+    'Laziza_haleem_masala_100g': '1714A',
+    'Laziza_haleem_mix_complete_375g': '19099',
+    'Laziza_nehari_masala_100g': '1219A',
+    'Laziza_paya_masala_100g': '0557A',
+    'Laziza_chutney_raita_masala_100g': '1158A',
+    'Laziza_chaat_masala_100g': '1110B',
+    'Laziza_pakora_masala_200g': '0984A',
+    'Laziza_plum_chutney_275g': '9981A'
+  });
+
   const corrections = {
     'black current': 'Black Currant',
     'rasberry': 'Raspberry',
@@ -150,15 +190,22 @@
 
   function makeItem(id, typeKey, group) {
     const { pack } = splitProductId(id);
+    const isNational = id.startsWith('National_');
+    const productCode = PRODUCT_CODES[id];
+    if (!productCode && group.family === 'spices') {
+      throw new Error('Missing Laziza masala product code for ' + id);
+    }
     return {
       category: 'laziza',
-      brand: 'Laziza',
+      brand: isNational ? 'National' : 'Laziza',
       subcategory: group.family,
       itemType: typeKey,
       itemTypeLabel: group.label,
-      title: `Laziza ${titleFromId(id)}`,
-      pack,
-      image: `https://res.cloudinary.com/wy4nkkqq/image/upload/${id}.png`
+      title: isNational ? titleFromId(id) : `Laziza ${titleFromId(id)}`,
+      pack: productCode ? `${productCode} - ${pack}` : pack,
+      image: isNational
+        ? '/assets/spices/national-biryani-masala-78g.webp'
+        : `https://res.cloudinary.com/wy4nkkqq/image/upload/${id}.png`
     };
   }
 
