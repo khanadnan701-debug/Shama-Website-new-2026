@@ -61,6 +61,16 @@
     'Mnago_chilli_sauce_800g': '4036A'
   });
 
+  const PICKLE_CODES = Object.freeze({
+    'Mango_pickle_1kg': '1055A',
+    'Ahmed_mixed_pickle_1kg': '1062A',
+    'Chilli_pickle_1kg': '1852B',
+    'Chilli_pickle_400g': '19059',
+    'Garlic_pickle_1kg': '2101A',
+    'Lime_pickle_1kg': '2118C',
+    'Mango_pickle_400g': '9353A'
+  });
+
   const VERSION_MAP = {
     Ahmed_soy_sauce_300ml:1789651121,
     Ahmed_kheer_mix_pistachio_160g:1789651122,
@@ -132,7 +142,7 @@
       subcategory:type,
       itemTypeLabel:group.label,
       title:`Ahmed ${titleFromId(id)}`,
-      pack:SWEETS_CODES[id] ? `${SWEETS_CODES[id]} - ${pack}` : SAUCE_CODES[id] ? `${SAUCE_CODES[id]} - ${pack}` : pack,
+      pack:SWEETS_CODES[id] ? `${SWEETS_CODES[id]} - ${pack}` : SAUCE_CODES[id] ? `${SAUCE_CODES[id]} - ${pack}` : PICKLE_CODES[id] ? `${PICKLE_CODES[id]} - ${pack}` : pack,
       image:imageUrl(id)
     };
   }));
