@@ -30,6 +30,24 @@
     }
   };
 
+  // Verified screenshot item codes for Ahmed sweets (jelly, custard, kheer).
+  const SWEETS_CODES = Object.freeze({
+    'Ahmed_apple_jelly_80g': '1015B',
+    'Ahmed_strawberry_jelly_80g': '2810A',
+    'Ahmed_rasberry_jelly_80g': '2811A',
+    'Ahmed_lychee_jelly_80g': '2811B',
+    'Ahmed_cherry_jelly_80g': '2812A',
+    'Ahmed_mixed_fruit_jelly_80g': '2812B',
+    'Ahmed_mango_jelly_80g': '2815A',
+    'Ahmed_orange_jelly_80g': '2836A',
+    'Ahmed_pineapple_jelly_80g': '2913B',
+    'Mango_custard_powder_250g': '4344A',
+    'Strawberry_custard_powder_250g': '4345A',
+    'Banana_custard_powder_250g': '4346A',
+    'Vanilla_custard_powder_250g': '4348A',
+    'Ahmed_kheer_mix_pistachio_160g': '4351A'
+  });
+
   const VERSION_MAP = {
     Ahmed_soy_sauce_300ml:1789651121,
     Ahmed_kheer_mix_pistachio_160g:1789651122,
@@ -101,7 +119,7 @@
       subcategory:type,
       itemTypeLabel:group.label,
       title:`Ahmed ${titleFromId(id)}`,
-      pack,
+      pack:SWEETS_CODES[id] ? `${SWEETS_CODES[id]} - ${pack}` : pack,
       image:imageUrl(id)
     };
   }));
