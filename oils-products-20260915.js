@@ -23,6 +23,13 @@
     ['Shama_amla_hair_oil_150ml','/assets/cloudinary-shama/cosmetics/shama-amla-hair-oil-150ml-d32506f6d934.webp']
   ];
 
+  // Reference codes from supplied Oil product inventory screenshot.
+  const ITEM_CODES = Object.freeze({
+    'Shama_sunflower_oil_5ltr': '5272',
+    'Shama_sunflower_oil_1ltr': '5289',
+    'Shama_sunflower_oil_20ltr': '5651'
+  });
+
   function titleCase(value) {
     return value.toLowerCase().replace(/\b\w/g, ch => ch.toUpperCase());
   }
@@ -42,7 +49,7 @@
   const folderProducts = assets.map(([id, image]) => ({
     category: 'oils',
     title: makeTitle(id),
-    pack: makePack(id),
+    pack: ITEM_CODES[id] ? `${ITEM_CODES[id]} - ${makePack(id)}` : makePack(id),
     image
   }));
 
