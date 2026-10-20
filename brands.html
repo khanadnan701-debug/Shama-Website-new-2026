@@ -4,37 +4,37 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="description" content="Explore food and everyday brands in the Shama International wholesale catalogue. Spin our interactive brand globe and discover the products we distribute across France.">
-  <meta name="theme-color" content="#f7f2e7">
+  <meta name="theme-color" content="#f3f6fc">
   <title>Our Brands | Shama International France</title>
   <link rel="icon" href="favicon.png" type="image/png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css?v=20261020-brands1">
-  <link rel="stylesheet" href="brands-globe-20261020.css?v=1">
+  <link rel="stylesheet" href="brands-globe-20261020.css?v=shama-theme-2">
   <link rel="canonical" href="https://shamaonline.com/brands">
 </head>
 <body data-page="brands">
   <div id="site-header"></div>
   <main id="page-content">
     <section class="sbr-hero" aria-labelledby="sbr-title">
-      <div class="sbr-eyebrow"><span></span> GLOBAL BRANDS Â· SHAMA INTERNATIONAL <span></span></div>
+      <div class="sbr-eyebrow"><span></span> GLOBAL BRANDS &middot; SHAMA INTERNATIONAL <span></span></div>
       <h1 id="sbr-title">Brands we <em>bring</em><br>to your world.</h1>
       <p class="sbr-intro">An inspiring selection of trusted food and everyday brands.<br class="sbr-desktop-break"> Drag the globe or select a name to explore the products.</p>
-      <div class="sbr-orbit-shell">
+      <section class="sbr-priority" aria-label="Our flagship brands"><p class="sbr-priority-title">OUR FLAGSHIP BRANDS</p><div class="sbr-priority-list" id="sbr-priority-list"></div></section><p class="sbr-orbit-caption">EXPLORE MORE PARTNER BRANDS</p><div class="sbr-orbit-shell">
         <div class="sbr-orbit-backdrop" aria-hidden="true"><span class="sbr-ring sbr-ring-one"></span><span class="sbr-ring sbr-ring-two"></span></div>
         <div class="sbr-orbit" id="sbr-orbit" role="group" aria-label="Interactive brand globe. Drag to rotate or choose a brand card." tabindex="0">
           <div class="sbr-orbit-cards" id="sbr-orbit-cards"></div>
         </div>
       </div>
       <div class="sbr-controls">
-        <span class="sbr-drag-hint"><span class="sbr-drag-icon">â</span> DRAG TO EXPLORE</span>
+        <span class="sbr-drag-hint"><span class="sbr-drag-icon">&harr;</span> DRAG TO EXPLORE</span>
         <div class="sbr-control-buttons">
-          <button id="sbr-rotate-left" class="sbr-control" aria-label="Rotate globe left" type="button">â</button>
-          <button id="sbr-play-toggle" class="sbr-control" aria-label="Pause rotating globe" type="button">â¡</button>
-          <button id="sbr-rotate-right" class="sbr-control" aria-label="Rotate globe right" type="button">â</button>
+          <button id="sbr-rotate-left" class="sbr-control" aria-label="Rotate globe left" type="button">&larr;</button>
+          <button id="sbr-play-toggle" class="sbr-control" aria-label="Pause rotating globe" type="button">||</button>
+          <button id="sbr-rotate-right" class="sbr-control" aria-label="Rotate globe right" type="button">&rarr;</button>
         </div>
-        <a class="sbr-skip" href="#sbr-collection">ALL BRANDS â</a>
+        <a class="sbr-skip" href="#sbr-collection">ALL BRANDS &darr;</a>
       </div>
     </section>
     <section class="sbr-collection" id="sbr-collection" aria-labelledby="sbr-collection-heading">
@@ -53,12 +53,12 @@
     </section>
     <section class="sbr-selection" id="sbr-selection" aria-live="polite" aria-labelledby="sbr-selection-name" hidden>
       <div class="sbr-layout">
-        <div class="sbr-result-top"><div><span class="sbr-kicker">SELECTED BRAND</span><h2 id="sbr-selection-name"></h2><p id="sbr-selection-meta"></p></div><button type="button" id="sbr-clear" class="sbr-clear">Back to all brands â</button></div>
+        <div class="sbr-result-top"><div><span class="sbr-kicker">SELECTED BRAND</span><h2 id="sbr-selection-name"></h2><p id="sbr-selection-meta"></p></div><button type="button" id="sbr-clear" class="sbr-clear">Back to all brands &nearr;</button></div>
         <div id="sbr-product-grid" class="sbr-product-grid"></div>
         <div id="sbr-product-footer" class="sbr-product-footer"></div>
       </div>
     </section>
-    <section class="sbr-cta"><div class="sbr-layout sbr-cta-inner"><div><span class="sbr-kicker">YOUR WHOLESALE PARTNER IN FRANCE</span><h2>Discover more than a brand.<br><em>Discover your next bestseller.</em></h2></div><a href="catalogue.html" class="sbr-cta-link">Explore our catalogue <span>â</span></a></div></section>
+    <section class="sbr-cta"><div class="sbr-layout sbr-cta-inner"><div><span class="sbr-kicker">YOUR WHOLESALE PARTNER IN FRANCE</span><h2>Discover more than a brand.<br><em>Discover your next bestseller.</em></h2></div><a href="catalogue.html" class="sbr-cta-link">Explore our catalogue <span>&nearr;</span></a></div></section>
   </main>
   <div id="site-footer"></div>
   <script src="script.js?v=20261020-brand-nav"></script>
@@ -83,6 +83,6 @@
   <script src="sea-food-products-20260928.js?v=20261020-brands"></script>
   <script src="oils-products-20260915.js?v=20261020-brands"></script>
   <script src="paste-products-20260910.js?v=20261020-brands"></script>
-  <script src="brands-globe-20261020.js?v=1"></script>
+  <script src="brands-globe-20261020.js?v=shama-theme-2"></script>
 </body>
 </html>

@@ -21,7 +21,7 @@
     ['Heera','#154c81','#b28b3d','Heera'],
     ['National','#d83231','#d83231','National'],
     ['BEST','#18519a','#e4a354','Best'],
-    ['Sher-e-Punjab','#2b6939','#ad9741','Sher-e-Punjab'],
+    ['Sher-e-Punjab','#2b6939','#ad9741','Sher-e-Punjab','catalogue.html'],
     ["Patak's",'#a21a28','#bd8e33',"Patak's",'pataks.html'],
     ['Mazedaar','#317255','#d4ad5b','Mazedar'],
     ["Haldiram's",'#bc2429','#e8ab48','Haldiram'],
@@ -54,7 +54,7 @@
     ['Shahi','#234d74','#c7a05f','Shahi'],
     ['Rooh Afza','#b12539','#dfa760','Rooh Afza'],
     ['Carabao','#21593e','#b2a263','Carabao'],
-    ['NescafÃ©','#473328','#b39d83','Nescafe'],
+    ['Nescafe','#473328','#b39d83','Nescafe'],
     ['Supreme Henna','#784927','#bf9365','Supreme'],
     ['Tata Tea','#bb3035','#c58c45','Tata'],
     ['Pride','#385a78','#b99b5f','Pride'],
@@ -71,9 +71,10 @@
     'sea-food':'sea-food.html','savoury-snacks':'savoury-snacks.html',bakery:'bakery.html',
     paste:'sauces-pastes.html'
   };
-  const lower = t => String(t||'').normalize('NFKD').replace(/[\u0300-\u036f]/g,'').toLowerCase().replace(/[â`]/g,"'").trim();
+  const lower = t => String(t||'').normalize('NFKD').replace(/[\u0300-\u036f]/g,'').toLowerCase().replace(/['`]/g,"'").trim();
   const slug = t => lower(t).replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'');
   const esc = t => String(t || '').replace(/[&<>"']/g, a => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[a]));
+  const PRIORITY_BRANDS = ["shama","sunrise","shaheen","sher-e-punjab"];
   const brandModels = defs.map(([name,ink,accent,prefix,fallback],index) => ({
     name,ink,accent,prefix,fallback,slug:slug(name),order:index,items:[],
     isSerif: ['Shama','Shaheen','Sher-e-Punjab','Khanum','Heera','Le Renard','Malka'].includes(name),
@@ -106,7 +107,7 @@
   }
   const brands = brandModels.filter(b => b.items.length || b.fallback);
   // Reserve favourite spots at the top while keeping the visual globe varied.
-  const featured = [...brands].sort((a,b) => a.order-b.order);
+  const featured = [...brands].filter(b => !PRIORITY_BRANDS.includes(b.slug)).sort((a,b) => a.order-b.order);
   const count = document.getElementById('sbr-count');
   const reducedMotion = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   let selected = null;
@@ -174,6 +175,35 @@
     return btn;
   }
 
+  function createPriorityRow() {
+    const target = document.getElementById('sbr-priority-list');
+    if (!target) return;
+    target.replaceChildren();
+    PRIORITY_BRANDS.forEach((key, idx) => {
+      const brand = bySlug.get(key);
+      if (!brand) return;
+      const btn = document.createElement('button');
+      btn.type = 'button';
+      btn.className = 'sbr-priority-card' + (idx === 0 ? ' sbr-priority-main' : '');
+      btn.dataset.brand = brand.slug;
+      btn.setAttribute('aria-label', 'Explore ' + brand.name);
+      const img = document.createElement('img');
+      img.src = AUTHENTIC_LOGOS[key];
+      img.alt = brand.name + ' logo';
+      img.loading = 'eager';
+      img.addEventListener('error', () => {
+        img.remove();
+        const fallback = document.createElement('strong');
+        fallback.textContent = brand.name;
+        btn.prepend(fallback);
+      }, {once:true});
+      const label = document.createElement('span');
+      label.textContent = brand.name;
+      btn.append(img, label);
+      btn.addEventListener('click', () => selectBrand(key, true));
+      target.append(btn);
+    });
+  }
   function makeSphere() {
     cardsHost.replaceChildren();nodes.length=0;
     const n=featured.length;
@@ -245,7 +275,7 @@
       const copy=document.createElement('div');copy.className='sbr-product-copy';
       const category=document.createElement('small');category.textContent=String(item.category||'products').replace(/[-_]/g,' ');
       const title=document.createElement('strong');title.textContent=item.title;
-      const pack=document.createElement('em');pack.textContent=(item.pack||'Ask about pack sizes')+' Â· View range â';
+      const pack=document.createElement('em');pack.textContent=(item.pack||'Ask about pack sizes')+'  |  View range  -> ';
       copy.append(category,title,pack);link.append(picture,copy);productGrid.append(link);
     });
     if (!unique.length) {
@@ -253,9 +283,9 @@
     }
     const categoriesSeen = new Set(unique.map(item=>item.category).filter(Boolean));
     for (const category of [...categoriesSeen].slice(0,7)) {
-      const a=document.createElement('a');a.href=CATEGORY_PAGES[category]||'catalogue.html';a.textContent='Explore '+String(category).replace(/[-_]/g,' ')+' â';productFooter.append(a);
+      const a=document.createElement('a');a.href=CATEGORY_PAGES[category]||'catalogue.html';a.textContent='Explore '+String(category).replace(/[-_]/g,' ')+'  -> ';productFooter.append(a);
     }
-    if(brand.fallback){const a=document.createElement('a');a.href=brand.fallback;a.textContent='View '+brand.name+' range â';productFooter.prepend(a);}
+    if(brand.fallback){const a=document.createElement('a');a.href=brand.fallback;a.textContent='View '+brand.name+' range  -> ';productFooter.prepend(a);}
     panel.hidden=false;
     document.querySelectorAll('[data-brand]').forEach(el=>{
       const active=el.dataset.brand===selected;
@@ -290,7 +320,7 @@
   document.getElementById('sbr-rotate-left').addEventListener('click',()=>rotateBy(0,-.32));
   document.getElementById('sbr-rotate-right').addEventListener('click',()=>rotateBy(0,.32));
   const play=document.getElementById('sbr-play-toggle');
-  const syncPlay=()=>{play.textContent=spinPaused?'â¶':'â¡';play.setAttribute('aria-label',spinPaused?'Resume rotating globe':'Pause rotating globe');};
+  const syncPlay=()=>{play.innerHTML=spinPaused?'<svg viewBox="0 0 24 24" width="17" height="17" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>':'<svg viewBox="0 0 24 24" width="17" height="17" fill="currentColor" aria-hidden="true"><rect x="6" y="5" width="4" height="14"/><rect x="14" y="5" width="4" height="14"/></svg>';play.setAttribute('aria-label',spinPaused?'Resume rotating globe':'Pause rotating globe');};
   play.addEventListener('click',()=>{spinPaused=!spinPaused;syncPlay();});syncPlay();
   document.getElementById('sbr-clear').addEventListener('click',()=>{
     panel.hidden=true;selected=null;
@@ -301,7 +331,7 @@
   search.addEventListener('input',()=>renderList(search.value));
   if('IntersectionObserver' in window){const observer=new IntersectionObserver(entries=>{onScreen=entries[0].isIntersecting;},{rootMargin:'100px'});observer.observe(orbit);}
   const onSize=()=>renderSphere();window.addEventListener('resize',onSize,{passive:true});
-  makeSphere();renderList();requestAnimationFrame(animate);
+  createPriorityRow();makeSphere();renderList();requestAnimationFrame(animate);
   const hash=decodeURIComponent(location.hash.replace(/^#brand-/,''));
   if (location.hash.startsWith('#brand-') && bySlug.has(hash)) selectBrand(hash,false);
 })();
