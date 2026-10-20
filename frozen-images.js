@@ -24,7 +24,7 @@
     "brand": "Shama",
     "title": "Shama Punjabi Potato Samosa",
     "pack": "12 pcs",
-    "image": "/assets/frozen/shama-punjabi-aloo-samosa-12.webp"
+    "image": "/assets/frozen/shama-punjabi-potato-samosa-lifestyle-20261020.webp"
   },
   {
     "category": "frozen",
@@ -129,14 +129,14 @@
     "brand": "Shama",
     "title": "Shama Plain Paratha",
     "pack": "30 pcs",
-    "image": "/assets/frozen/shama-plain-paratha-30.webp"
+    "image": "/assets/frozen/shama-plain-paratha-lifestyle-20261020.webp"
   },
   {
     "category": "frozen",
     "brand": "Shama",
     "title": "Shama Crispy Plain Paratha",
     "pack": "20 pcs",
-    "image": "/assets/frozen/shama-crispy-paratha-20.webp"
+    "image": "/assets/frozen/shama-crispy-plain-paratha-lifestyle-20261020.webp"
   },
   {
     "category": "frozen",

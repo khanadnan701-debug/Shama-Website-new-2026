@@ -9,7 +9,7 @@
     style = document.createElement('link');
     style.id = 'product-simple-style';
     style.rel = 'stylesheet';
-    style.href = 'product-simple.css?v=20261008-uniform-landscape2';
+    style.href = 'product-simple.css?v=20261020-frozen-lifestyle-nocrop1';
     document.head.appendChild(style);
   }
 

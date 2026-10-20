@@ -758,7 +758,7 @@ productData.push(...supplementalData);
     "brand": "Shama",
     "title": "Shama Punjabi Potato Samosa",
     "pack": "12 pcs",
-    "image": "/assets/cloudinary-shama/frozen/shama-punjabi-potato-samosa-12-pcs-b4a9525e32a6.webp"
+    "image": "/assets/frozen/shama-punjabi-potato-samosa-lifestyle-20261020.webp"
   },
   {
     "category": "frozen",
@@ -863,14 +863,14 @@ productData.push(...supplementalData);
     "brand": "Shama",
     "title": "Shama Plain Paratha",
     "pack": "30 pcs",
-    "image": "/assets/cloudinary-shama/frozen/shama-plain-paratha-30pcs-9ea8b3cfd2ac.webp"
+    "image": "/assets/frozen/shama-plain-paratha-lifestyle-20261020.webp"
   },
   {
     "category": "frozen",
     "brand": "Shama",
     "title": "Shama Crispy Plain Paratha",
     "pack": "20 pcs",
-    "image": "/assets/cloudinary-shama/frozen/shama-crispy-plain-paratha-20-pcs-bd290fb445fc.webp"
+    "image": "/assets/frozen/shama-crispy-plain-paratha-lifestyle-20261020.webp"
   },
   {
     "category": "frozen",
