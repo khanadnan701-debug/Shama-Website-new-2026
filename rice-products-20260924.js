@@ -35,7 +35,7 @@
     { category:'rice', title:'Shama Thai Jasmine Broken Rice (1 Time)', pack:'20kg x 1', image:'/assets/rice/shama-thai-jasmine-1-volta-20kg.webp' },
     { category:'rice', title:'Shama Thai Jasmine Broken Rice (1 Time)', pack:'4251A - 18kg x 1', image:'/assets/rice/shama-thai-jasmine-1-volta-18kg.webp' },
     { category:'rice', title:'Shama Thai Jasmine Broken Rice (1 Time)', pack:'0253A - 5kg x 1', image:'/assets/rice/shama-thai-jasmine-1-volta-5kg.webp' },
-    { category:'rice', title:'Shama Thai Jasmine Broken Rice (1 Time)', pack:'1kg x 1', image:'/assets/rice/shama-thai-jasmine-1-volta-1kg.webp' },
+    { category:'rice', title:'Shama Thai Jasmine Broken Rice (1 Time)', pack:'4633A - 1kg x 1', image:'/assets/rice/shama-thai-jasmine-1-volta-1kg.webp' },
     { category:'rice', title:'Shama Thai Jasmine Broken Rice (2 Times)', pack:'20kg x 1', image:'/assets/rice/shama-thai-jasmine-2-volta-20kg.webp' },
     { category:'rice', title:'Shama Thai Jasmine Broken Rice (2 Times)', pack:'4251B - 18kg x 1', image:'/assets/rice/shama-thai-jasmine-2-volta-18kg.webp' },
     { category:'rice', title:'Shama Thai Jasmine Broken Rice (2 Times)', pack:'0277A - 5kg x 1', image:'/assets/rice/shama-thai-jasmine-2-volta-5kg.webp' },
@@ -44,33 +44,33 @@
     // SHAMA — Other rice
     { category:'rice', title:'Shama Sona Masoori Rice', pack:'5kg x 1', image:'/assets/rice/sona-masoori-5kg.webp' },
     { category:'rice', title:'Shama Broken Basmati Rice', pack:'2226A - 20kg x 1', image:'/assets/rice/shama-broken-basmati-rice-20kg.webp' },
-    { category:'rice', title:'Shama Broken Basmati Rice', pack:'5kg x 1', image:'/assets/rice/shama-broken-basmati-rice-new-5kg.webp' },
+    { category:'rice', title:'Shama Broken Basmati Rice', pack:'2219A - 5kg x 1', image:'/assets/rice/shama-broken-basmati-rice-new-5kg.webp' },
 
     // SHAHEEN
-    { category:'rice', title:'Shaheen Sella Super Basmati Parboiled Rice', pack:'20kg x 1', image:'/assets/rice/shaheen-sella-super-basmati-parboiled-rice-20-kg.webp' },
+    { category:'rice', title:'Shaheen Sella Super Basmati Parboiled Rice', pack:'0079A - 20kg x 1', image:'/assets/rice/shaheen-sella-super-basmati-parboiled-rice-20-kg.webp' },
 
     // SUNRISE — keep after all Shama ranges
-    { category:'rice', title:'Sunrise Extra Long Basmati Rice', pack:'20kg x 1', image:'/assets/rice/sunrise-basmati-rice-extra-long-20kg.webp' },
-    { category:'rice', title:'Sunrise Extra Long Basmati Rice', pack:'10kg x 1', image:'/assets/rice/sunrise-basmati-rice-extra-long-10kg.webp' },
-    { category:'rice', title:'Sunrise Extra Long Basmati Rice', pack:'5kg x 1', image:'/assets/rice/sunrise-basmati-rice-extra-long-5kg.webp' },
-    { category:'rice', title:'Sunrise Extra Long Basmati Rice', pack:'2kg x 10', image:'/assets/rice/sunrise-basmati-rice-extra-long-2kg.webp' },
+    { category:'rice', title:'Sunrise Extra Long Basmati Rice', pack:'8235B - 20kg x 1', image:'/assets/rice/sunrise-basmati-rice-extra-long-20kg.webp' },
+    { category:'rice', title:'Sunrise Extra Long Basmati Rice', pack:'1861A - 10kg x 1', image:'/assets/rice/sunrise-basmati-rice-extra-long-10kg.webp' },
+    { category:'rice', title:'Sunrise Extra Long Basmati Rice', pack:'2646A - 5kg x 1', image:'/assets/rice/sunrise-basmati-rice-extra-long-5kg.webp' },
+    { category:'rice', title:'Sunrise Extra Long Basmati Rice', pack:'4220A - 2kg x 10', image:'/assets/rice/sunrise-basmati-rice-extra-long-2kg.webp' },
     { category:'rice', title:'Sunrise Extra Long Basmati Rice', pack:'1kg x 20', image:'/assets/rice/sunrise-basmati-rice-extra-long-1kg.webp' },
 
-    { category:'rice', title:'Sunrise Golden Sella Rice', pack:'20kg x 1', image:'/assets/rice/sunrise-golden-sella-basmati-rice-20-kg.webp' },
-    { category:'rice', title:'Sunrise Golden Sella Rice', pack:'10kg x 1', image:'/assets/rice/sunrise-golden-sella-basmati-rice-10-kg.webp' },
-    { category:'rice', title:'Sunrise Golden Sella Rice', pack:'5kg x 1', image:'/assets/rice/sunrise-golden-sella-basmati-rice-5-kg.webp' },
+    { category:'rice', title:'Sunrise Golden Sella Rice', pack:'1588A - 20kg x 1', image:'/assets/rice/sunrise-golden-sella-basmati-rice-20-kg.webp' },
+    { category:'rice', title:'Sunrise Golden Sella Rice', pack:'2394A - 10kg x 1', image:'/assets/rice/sunrise-golden-sella-basmati-rice-10-kg.webp' },
+    { category:'rice', title:'Sunrise Golden Sella Rice', pack:'2172B - 5kg x 1', image:'/assets/rice/sunrise-golden-sella-basmati-rice-5-kg.webp' },
     { category:'rice', title:'Sunrise Golden Sella Rice', pack:'1kg x 20', image:'/assets/rice/sunrise-golden-sella-basmati-rice-1-kg.webp' },
 
     { category:'rice', title:'Sunrise Fragrant Jasmine Rice AAAAA', pack:'20kg x 1', image:'/assets/rice/sunrise-elephant-jasmine-parfume-rice-20kg.webp' },
     { category:'rice', title:'Sunrise Fragrant Jasmine Rice AAAAA', pack:'5kg x 1', image:'/assets/rice/sunrise-elephant-jasmine-parfume-rice-5kg.webp' },
 
-    { category:'rice', title:'Sunrise Elephant Jasmine Broken Rice (1 Time)', pack:'20kg x 1', image:'/assets/rice/sunrise-elephant-parfume-jasmin-broken-rice-1x-20kg.webp' },
-    { category:'rice', title:'Sunrise Elephant Jasmine Broken Rice (1 Time)', pack:'5kg x 1', image:'/assets/rice/sunrise-elephant-parfume-jasmin-broken-rice-1x-5kg.webp' },
+    { category:'rice', title:'Sunrise Elephant Jasmine Broken Rice (1 Time)', pack:'7429A - 20kg x 1', image:'/assets/rice/sunrise-elephant-parfume-jasmin-broken-rice-1x-20kg.webp' },
+    { category:'rice', title:'Sunrise Elephant Jasmine Broken Rice (1 Time)', pack:'7658A - 5kg x 1', image:'/assets/rice/sunrise-elephant-parfume-jasmin-broken-rice-1x-5kg.webp' },
 
-    { category:'rice', title:'Sunrise Elephant Jasmine Broken Rice (2 Times)', pack:'20kg x 1', image:'/assets/rice/sunrise-elephant-parfume-jasmin-broken-rice-2x-20kg.webp' },
-    { category:'rice', title:'Sunrise Elephant Jasmine Broken Rice (2 Times)', pack:'5kg x 1', image:'/assets/rice/sunrise-elephant-parfume-jasmin-broken-rice-2x-5kg.webp' },
+    { category:'rice', title:'Sunrise Elephant Jasmine Broken Rice (2 Times)', pack:'7436A - 20kg x 1', image:'/assets/rice/sunrise-elephant-parfume-jasmin-broken-rice-2x-20kg.webp' },
+    { category:'rice', title:'Sunrise Elephant Jasmine Broken Rice (2 Times)', pack:'1892A - 5kg x 1', image:'/assets/rice/sunrise-elephant-parfume-jasmin-broken-rice-2x-5kg.webp' },
 
-    { category:'rice', title:'Sunrise Dragon Jasmine Rice AAA', pack:'18kg x 1', image:'/assets/rice/sunrise-dragon-jasmine-rice-18-kg.webp' }
+    { category:'rice', title:'Sunrise Dragon Jasmine Rice AAA', pack:'4169A - 18kg x 1', image:'/assets/rice/sunrise-dragon-jasmine-rice-18-kg.webp' }
   ];
 
   if (typeof productData !== 'undefined' && Array.isArray(productData)) {
