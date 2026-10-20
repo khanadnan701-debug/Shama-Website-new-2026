@@ -24,7 +24,7 @@
     {category:'misc',title:'Shama Black Pepper',pack:'100g',image:'/assets/cloudinary-shama/miscellaneous/shama-black-ppr-100gm-37feedbd6355.webp'},
     {category:'misc',title:'Shama Himalayan Pink Salt',pack:'1kg',image:'/assets/cloudinary-shama/miscellaneous/shama-himalayan-pink-salt-1kg-9c15d6127fd6.webp'},
     {category:'misc',title:'Shama Himalayan Pink Salt Coarse',pack:'Contact us for available pack sizes',image:'/assets/cloudinary-shama/miscellaneous/shama-himalayan-pink-salt-coarse-a5fc2926fbf2.webp'},
-    {category:'misc',title:'Shama Himalayan Pink Salt Pouch',pack:'1kg',image:'/assets/cloudinary-shama/miscellaneous/shama-himalayan-pink-salt-pouch-1kg-83e49e391d38.webp'},
+    {category:'misc',title:'Shama Himalayan Pink Salt Pouch',pack:'3797C - 1kg',image:'/assets/cloudinary-shama/miscellaneous/shama-himalayan-pink-salt-pouch-1kg-83e49e391d38.webp'},
     {category:'misc',title:'Shama Himalayan Pink Salt Jar',pack:'1kg',image:'/assets/cloudinary-shama/miscellaneous/shama-himalayan-pink-salt-jar-1kg-a29f124f979c.webp'},
     {category:'misc',title:'Shama Himalayan Pink Salt',pack:'Contact us for available pack sizes',image:'/assets/cloudinary-shama/miscellaneous/shama-himalayan-pink-salt-073d33a86102.webp'},
     {category:'misc',title:'Shama Golden Fried Onions',pack:'1kg',image:'/assets/cloudinary-shama/miscellaneous/shama-fried-onion-1kg-113e86531276.webp'},
