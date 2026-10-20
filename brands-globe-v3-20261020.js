@@ -105,28 +105,65 @@
       slots.push({lat,lon,row,col,count});
     }
   });
-  // Place the Shama family across the central front row at the start.
-  const centerRow=narrowAtLoad?4:6;
-  const prioritySlots=slots.filter(p=>p.row===centerRow).sort((a,b)=>Math.abs(a.lon)-Math.abs(b.lon)).slice(0,4).sort((a,b)=>a.lon-b.lon);
+  // Mix the supplied logos into new positions on every page visit.
+  // The flagship four launch near the front; Shama appears only once and
+  // stays part of the rotating sphere (not a fixed overlay).
+  function shuffleItems(source) {
+    const result = source.slice();
+    for(let i=result.length-1;i>0;i--) {
+      const j=Math.floor(Math.random()*(i+1));
+      [result[i],result[j]]=[result[j],result[i]];
+    }
+    return result;
+  }
   const namesAtSlot=new Map();
-  prioritySlots.forEach((slot,i)=>namesAtSlot.set(slot,byId.get(flagship[i])));
-  const pool=sphereBrands.filter(b=>!flagship.includes(b.id));
-  // Front-facing slots get one of every ZIP logo before any repeats.
-  const ordered=slots.filter(p=>!namesAtSlot.has(p)).sort((a,b)=> {
-    const da=Math.abs(a.lon)+Math.abs(a.lat)*.65;
-    const db=Math.abs(b.lon)+Math.abs(b.lat)*.65;
-    return da-db;
+  function closestFreeSlot(lat,lon) {
+    const candidates=slots.filter(slot=>!namesAtSlot.has(slot));
+    candidates.sort((a,b)=>
+      (a.lat-lat)**2 + Math.atan2(Math.sin(a.lon-lon),Math.cos(a.lon-lon))**2 -
+      ((b.lat-lat)**2 + Math.atan2(Math.sin(b.lon-lon),Math.cos(b.lon-lon))**2)
+    );
+    return candidates[0];
+  }
+  const shamaSlot=closestFreeSlot(.08,0);
+  if(shamaSlot)namesAtSlot.set(shamaSlot,byId.get('shama'));
+  const nearFront=[
+    ['sunrise',-.30,-.72],
+    ['shaheen',.32,-.74],
+    ['sher-e-punjab',.32,.74]
+  ];
+  nearFront.forEach(([id,lat,lon])=>{
+    const slot=closestFreeSlot(lat,lon);
+    if(slot)namesAtSlot.set(slot,byId.get(id));
   });
-  ordered.forEach((slot,i)=>namesAtSlot.set(slot,pool[(i*13+Math.floor(i/31))%pool.length]));
-  // The initial visible hemisphere should contain all unique brands, not repeated fillers.
-  const frontSlots=ordered.filter(p=>Math.cos(p.lon)>.12);
-  pool.forEach((brand,i)=>{if(frontSlots[i])namesAtSlot.set(frontSlots[i],brand)});
-
+  const brandPool=sphereBrands.filter(brand=>!flagship.includes(brand.id));
+  const remainingSlots=slots.filter(slot=>!namesAtSlot.has(slot));
+  // A shuffled bag uses every supplied logo before it starts repeating.
+  // A proximity check prevents identical logos appearing alongside each other.
+  let bag=[];
+  const placements=new Map();
+  function neighbourDistance(a,b){
+    const dy=a.lat-b.lat;
+    const dx=Math.atan2(Math.sin(a.lon-b.lon),Math.cos(a.lon-b.lon));
+    return dy*dy+dx*dx;
+  }
+  for(const slot of remainingSlots){
+    if(!bag.length)bag=shuffleItems(brandPool);
+    const eligible=bag.findIndex(brand=>!
+      (placements.get(brand.id)||[]).some(other=>neighbourDistance(slot,other)<.21)
+    );
+    const pick=eligible>=0?eligible:0;
+    const brand=bag.splice(pick,1)[0];
+    namesAtSlot.set(slot,brand);
+    if(!placements.has(brand.id))placements.set(brand.id,[]);
+    placements.get(brand.id).push(slot);
+  }
+  // Distinct flagship logos are always exactly one tile each, including Shama.
   function createTile(slot,index){
     const brand=namesAtSlot.get(slot);
     const button=document.createElement('button');
     button.type='button';
-    button.className='sbr3-tile' + (flagship.includes(brand.id)?' sbr3-family':'');
+    button.className='sbr3-tile' + (flagship.includes(brand.id)?' sbr3-family':'') + (brand.id==='shama'?' sbr3-shama':'');
     button.dataset.brand=brand.id;
     button.setAttribute('aria-label','Explore '+brand.name+' products');
     button.setAttribute('aria-pressed','false');
@@ -175,7 +212,7 @@
       const scale=(.78+depth*.25)*perspective*tileScale;
       button.style.transform='translate(-50%,-50%) translate3d('+x.toFixed(2)+'px,'+y.toFixed(2)+'px,0) rotateY('+(-yawAngle*.9).toFixed(3)+'rad) rotateX('+(tiltAngle*.27).toFixed(3)+'rad) scale('+scale.toFixed(3)+')';
       button.style.opacity=alpha.toFixed(3);
-      button.style.zIndex=String(500+Math.round(dz*500));
+      button.style.zIndex=String(500+Math.round(dz*500)+(brand.id==='shama'&&dz>.2?90:0));
       button.style.pointerEvents=dz>.1?'auto':'none';
       button.tabIndex=dz>.12?0:-1;
       button.setAttribute('aria-hidden',dz>.12?'false':'true');

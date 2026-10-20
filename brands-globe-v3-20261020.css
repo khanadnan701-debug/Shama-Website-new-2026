@@ -50,3 +50,27 @@ body[data-page="brands"] .sbr-reel{border-top:1px solid #e6e9f1}
  body[data-page="brands"] .sbr3-choice img{height:37px;flex-basis:37px}
 }
 @media(prefers-reduced-motion:reduce){body[data-page="brands"] .sbr3-tile{transition:none;will-change:auto}}
+
+/* The Shama identity is larger, while still moving with the rotating globe. */
+body[data-page="brands"] .sbr3-tile.sbr3-shama {
+  width:clamp(167px,17.5vw,252px);
+  height:clamp(112px,11.4vw,166px);
+  padding:13px 14px;
+  border:3px solid #e7b55b;
+  border-radius:22px;
+  background:linear-gradient(155deg,#fff 0%,#fffdf9 100%);
+  box-shadow:0 17px 31px rgba(37,51,83,.20),0 6px 13px rgba(181,133,52,.18),0 0 0 3px rgba(232,186,97,.13);
+}
+body[data-page="brands"] .sbr3-tile.sbr3-shama img {
+  width:100%;height:100%;max-width:96%;max-height:94%;object-fit:contain;
+}
+@media (max-width:950px) {
+  body[data-page="brands"] .sbr3-tile.sbr3-shama {
+    width:clamp(146px,21vw,185px);height:clamp(101px,14vw,126px);padding:10px;
+  }
+}
+@media (max-width:640px) {
+  body[data-page="brands"] .sbr3-tile.sbr3-shama {
+    width:132px;height:94px;padding:7px;border-radius:13px;border-width:2px;
+  }
+}
