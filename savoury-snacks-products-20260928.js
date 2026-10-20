@@ -109,7 +109,7 @@
   {
     "category": "savoury-snacks",
     "title": "Lay's Hot N Sweet",
-    "pack": "50g x 135",
+    "pack": "1820 - 50g x 135",
     "image": "/assets/cloudinary-shama/savoury-snacks/lays-hot-n-sweet-50gx135-0b85fa73bc43.webp"
   },
   {
@@ -187,19 +187,19 @@
   {
     "category": "savoury-snacks",
     "title": "Kurkure Naughty Tomato",
-    "pack": "68g",
+    "pack": "3442A - 68g",
     "image": "/assets/cloudinary-shama/savoury-snacks/kurkure-naughty-tomato-68g-534d0851fc28.webp"
   },
   {
     "category": "savoury-snacks",
     "title": "Kurkure Green Chutney Style",
-    "pack": "78.9g",
+    "pack": "19192 - 78.9g",
     "image": "/assets/cloudinary-shama/savoury-snacks/kurkure-green-chutney-style-78-9g-90080deb64f6.webp"
   },
   {
     "category": "savoury-snacks",
     "title": "Kurkure Green Chutney Style",
-    "pack": "70g",
+    "pack": "3084A - 70g",
     "image": "/assets/cloudinary-shama/savoury-snacks/kurkure-green-chutney-style-70g-2f77452bcf53.webp"
   },
   {
@@ -211,13 +211,13 @@
   {
     "category": "savoury-snacks",
     "title": "Kurkure Masala Munch",
-    "pack": "84.9g",
+    "pack": "19094 - 84.9g",
     "image": "/assets/cloudinary-shama/savoury-snacks/kurkure-masala-munch-84-9g-1f6f570d7453.webp"
   },
   {
     "category": "savoury-snacks",
     "title": "Kurkure Red Chilli Chatka",
-    "pack": "68g",
+    "pack": "0533A - 68g",
     "image": "/assets/cloudinary-shama/savoury-snacks/kurkure-red-chilli-chatka-68g-3f826d19fdc7.webp"
   },
   {
@@ -229,55 +229,55 @@
   {
     "category": "savoury-snacks",
     "title": "Kurkure Puff Corn Yummy Cheese",
-    "pack": "58g",
+    "pack": "19096 - 58g",
     "image": "/assets/cloudinary-shama/savoury-snacks/kurkure-puff-corn-yummy-cheese-58g-bbd0c939d322.webp"
   },
   {
     "category": "savoury-snacks",
     "title": "Kurkure Red Chilli Chatka",
-    "pack": "78.9g",
+    "pack": "19093 - 78.9g",
     "image": "/assets/cloudinary-shama/savoury-snacks/kurkure-red-chilli-chatka-78-9g-9cc2341bbb99.webp"
   },
   {
     "category": "savoury-snacks",
     "title": "Kurkure Sizzlin Hot",
-    "pack": "Contact us for available pack sizes",
+    "pack": "19097 - Pack size to confirm",
     "image": "/assets/cloudinary-shama/savoury-snacks/kurkure-sizzlin-hot-500d2fb7eed0.webp"
   },
   {
     "category": "savoury-snacks",
     "title": "Kurkure Solid Masti",
-    "pack": "66.6g",
+    "pack": "19191 - 66.6g",
     "image": "/assets/cloudinary-shama/savoury-snacks/kurkure-solid-masti-66-6g-cf33c5329a54.webp"
   },
   {
     "category": "savoury-snacks",
     "title": "Lay's American Style Cream Onion Flavour",
-    "pack": "52g x 135",
+    "pack": "18957 - 52g x 135",
     "image": "/assets/cloudinary-shama/savoury-snacks/lays-american-style-cream-onion-flavour-52gx135-469b6eac58df.webp"
   },
   {
     "category": "savoury-snacks",
     "title": "Lay's India'S Magic Masala",
-    "pack": "30g x 135",
+    "pack": "1844 - 30g x 135",
     "image": "/assets/cloudinary-shama/savoury-snacks/lays-india-s-magic-masala-30gx135-30e07135beec.webp"
   },
   {
     "category": "savoury-snacks",
     "title": "Lay's Classic Salted",
-    "pack": "48g",
+    "pack": "6222A - 48g",
     "image": "/assets/cloudinary-shama/savoury-snacks/lays-classic-salted-48g-f279706592b8.webp"
   },
   {
     "category": "savoury-snacks",
     "title": "Kurkure Masala Munch",
-    "pack": "77g",
+    "pack": "6052A - 77g",
     "image": "/assets/cloudinary-shama/savoury-snacks/kurkure-masala-munch-77g-e40a9086451c.webp"
   },
   {
     "category": "savoury-snacks",
     "title": "Lay's Spanish Tomato Tango",
-    "pack": "48g",
+    "pack": "19092 - 48g",
     "image": "/assets/cloudinary-shama/savoury-snacks/lays-spanish-toamato-tango-48g-4e3e2337f503.webp"
   },
   {
@@ -325,7 +325,7 @@
   {
     "category": "savoury-snacks",
     "title": "Lay's Chilli Lemon",
-    "pack": "50g x 135",
+    "pack": "1552A - 50g x 135",
     "image": "/assets/cloudinary-shama/savoury-snacks/lays-chilli-lemon-50gx135-9ad65bd5832a.webp"
   }
 ];
