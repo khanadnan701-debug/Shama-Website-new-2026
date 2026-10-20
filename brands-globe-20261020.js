@@ -107,7 +107,7 @@
   }
   const brands = brandModels.filter(b => b.items.length || b.fallback);
   // Reserve favourite spots at the top while keeping the visual globe varied.
-  const featured = [...brands].filter(b => !PRIORITY_BRANDS.includes(b.slug)).sort((a,b) => a.order-b.order);
+  const featured = [...brands].sort((a,b) => a.order-b.order);
   const count = document.getElementById('sbr-count');
   const reducedMotion = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   let selected = null;
@@ -204,43 +204,84 @@
       target.append(btn);
     });
   }
+
+  // Four flagship logos stay on the globe's front face while other brands orbit around them.
+  const FLAGSHIP_FACE = Object.freeze({
+    'shama': {x:-0.22,y:-0.22},
+    'sunrise': {x:0.35,y:-0.26},
+    'shaheen': {x:-0.34,y:0.26},
+    'sher-e-punjab': {x:0.34,y:0.28}
+  });
   function makeSphere() {
-    cardsHost.replaceChildren();nodes.length=0;
-    const n=featured.length;
-    featured.forEach((brand,i) => {
-      const y=1-2*(i+.5)/n;
-      const rad=Math.sqrt(Math.max(0,1-y*y));
-      const theta=i*Math.PI*(3-Math.sqrt(5));
-      const point={x:Math.cos(theta)*rad,y,z:Math.sin(theta)*rad};
-      const tile=choiceButton(brand,true);
+    cardsHost.replaceChildren();
+    nodes.length = 0;
+    const orbitBrands = featured.filter(brand => !PRIORITY_BRANDS.includes(brand.slug));
+    const count = orbitBrands.length;
+    const goldenAngle = Math.PI * (3 - Math.sqrt(5));
+    orbitBrands.forEach((brand, index) => {
+      const y = 1 - (2 * (index + .5) / count);
+      const horizontal = Math.sqrt(Math.max(0, 1 - y*y));
+      const theta = index * goldenAngle + .25;
+      const point = {x: Math.cos(theta)*horizontal,y,z:Math.sin(theta)*horizontal};
+      const tile = choiceButton(brand, true);
       cardsHost.appendChild(tile);
-      nodes.push({tile,point,brand});
+      nodes.push({tile, point, brand, pinned:false});
+    });
+    PRIORITY_BRANDS.forEach(key => {
+      const brand = bySlug.get(key);
+      if (!brand) return;
+      const tile = choiceButton(brand,true);
+      tile.classList.add('sbr-pinned-card');
+      tile.dataset.flagship = key;
+      cardsHost.appendChild(tile);
+      nodes.push({tile,point:null,brand,pinned:true});
     });
     renderSphere();
   }
   function renderSphere() {
-    const w=orbit.clientWidth, h=orbit.clientHeight;
+    const w = orbit.clientWidth, h = orbit.clientHeight;
     if (!w || !h) return;
-    const mobile = w < 600;
-    const radius=Math.min(w*(mobile?.398:.373),h*(mobile?.38:.433),mobile?188:392);
-    const cosY=Math.cos(rotY),sinY=Math.sin(rotY),cosX=Math.cos(rotX),sinX=Math.sin(rotX);
-    for (const {tile,point,brand} of nodes) {
-      const rx=point.x*cosY + point.z*sinY;
-      const rz=point.z*cosY - point.x*sinY;
-      const ry=point.y*cosX - rz*sinX;
-      const dz=point.y*sinX + rz*cosX;
-      const depth=(dz+1)/2;
-      const scale=.67+depth*.50;
-      const opacity=.24+depth*.76;
-      const xp=rx*radius*(.95+depth*.13);
-      const yp=ry*radius*(mobile?1.12:1.04);
-      tile.style.transform=`translate(-50%,-50%) translate3d(${xp.toFixed(1)}px,${yp.toFixed(1)}px,0) scale(${scale.toFixed(3)})`;
-      tile.style.opacity=opacity.toFixed(3);
-      tile.style.zIndex=String(Math.floor(depth*1000));
-      tile.style.filter=depth<.2?'saturate(.57)':'none';
-      tile.classList.toggle('is-selected',selected===brand.slug);
-      tile.setAttribute('aria-hidden',depth<.09?'true':'false');
-      tile.tabIndex=depth<.09?-1:0;
+    const mobile = w < 610;
+    // Full-width globe with a distinct spherical silhouette on desktop and mobile.
+    const radius = Math.min(w * (mobile ? .45 : .415), h * (mobile ? .455 : .435), mobile ? 235 : 520);
+    const cosY = Math.cos(rotY), sinY = Math.sin(rotY);
+    const cosX = Math.cos(rotX), sinX = Math.sin(rotX);
+    for (const node of nodes) {
+      const {tile,point,brand,pinned} = node;
+      let xp, yp, scale, opacity, depth;
+      if (pinned) {
+        const at = FLAGSHIP_FACE[brand.slug];
+        xp = at.x * radius * (mobile ? 1.12 : 1.24);
+        yp = at.y * radius * (mobile ? 1.12 : 1.28);
+        scale = mobile ? 1.02 : 1.12;
+        opacity = 1;
+        depth = 2000 + PRIORITY_BRANDS.indexOf(brand.slug);
+        tile.style.pointerEvents = 'auto';
+        tile.style.filter = 'none';
+        tile.setAttribute('aria-hidden','false');
+        tile.tabIndex = 0;
+      } else {
+        const rx = point.x*cosY + point.z*sinY;
+        const rz = point.z*cosY - point.x*sinY;
+        const ry = point.y*cosX - rz*sinX;
+        const dz = point.y*sinX + rz*cosX;
+        const front = (dz + 1) / 2;
+        xp = rx * radius * 1.04;
+        yp = ry * radius * (mobile ? 1.04 : 1.065);
+        scale = .61 + front * .51;
+        // Back hemisphere is almost hidden: no illegible pile of cards.
+        opacity = dz < -.18 ? .04 : dz < .05 ? .18 : .37 + Math.max(0,dz) * .58;
+        depth = Math.round(front * 1200);
+        const clickable = dz > .12;
+        tile.style.pointerEvents = clickable ? 'auto' : 'none';
+        tile.style.filter = front < .35 ? 'grayscale(.35)' : 'none';
+        tile.setAttribute('aria-hidden',clickable ? 'false' : 'true');
+        tile.tabIndex = clickable ? 0 : -1;
+      }
+      tile.style.transform = 'translate(-50%,-50%) translate3d(' + xp.toFixed(1) + 'px,' + yp.toFixed(1) + 'px,0) scale(' + scale.toFixed(3) + ')';
+      tile.style.opacity = String(opacity);
+      tile.style.zIndex = String(depth);
+      tile.classList.toggle('is-selected',selected === brand.slug);
     }
   }
   function animate(ts) {
@@ -256,7 +297,7 @@
     const name=document.getElementById('sbr-selection-name');
     const meta=document.getElementById('sbr-selection-meta');
     name.textContent=brand.name;
-    meta.textContent=brand.items.length ? brand.items.length+' products shown from our current catalogue' : 'Explore this brand range';
+    meta.textContent=brand.items.length ? brand.items.length+' products from our current online catalogue' : 'Contact us for the available wholesale range';
     productGrid.replaceChildren();
     productFooter.replaceChildren();
     const unique = [];
@@ -279,7 +320,17 @@
       copy.append(category,title,pack);link.append(picture,copy);productGrid.append(link);
     });
     if (!unique.length) {
-      const message=document.createElement('p');message.className='sbr-empty';message.textContent='Browse the full range for this brand.';productGrid.append(message);
+      const empty = document.createElement('div');
+      empty.className = 'sbr-brand-no-products';
+      const title = document.createElement('strong');
+      title.textContent = 'Ask about ' + brand.name + ' products';
+      const description = document.createElement('p');
+      description.textContent = 'This brand is featured in our collection, but individual products have not yet been added to the online catalogue. Contact our wholesale team for the current range and availability.';
+      const link = document.createElement('a');
+      link.href = 'mailto:info@shamafr.com?subject=' + encodeURIComponent(brand.name + ' product availability - Shama International');
+      link.textContent = 'Enquire about ' + brand.name + ' ->';
+      empty.append(title,description,link);
+      productGrid.append(empty);
     }
     const categoriesSeen = new Set(unique.map(item=>item.category).filter(Boolean));
     for (const category of [...categoriesSeen].slice(0,7)) {
