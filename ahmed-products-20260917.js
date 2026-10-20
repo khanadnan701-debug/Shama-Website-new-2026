@@ -48,6 +48,19 @@
     'Ahmed_kheer_mix_pistachio_160g': '4351A'
   });
 
+  const SAUCE_CODES = Object.freeze({
+    'Green_chilli_sauce_800g': '0366A',
+    'Mnago_chilli_sauce_300g': '18939',
+    'Ahmed_mind_sauce_300g': '18940',
+    'Ahmed_plum_sauce_300g': '19128',
+    'Green_chilli_sauce_300g': '19129',
+    'Ahmed_tamarind_sauce_300g': '19130',
+    'Coriandar_sauce_300g': '19132',
+    'Ahmed_sweet_tangy_sauce_300g': '19133',
+    'Ahmed_soy_sauce_300ml': '19134',
+    'Mnago_chilli_sauce_800g': '4036A'
+  });
+
   const VERSION_MAP = {
     Ahmed_soy_sauce_300ml:1789651121,
     Ahmed_kheer_mix_pistachio_160g:1789651122,
@@ -119,7 +132,7 @@
       subcategory:type,
       itemTypeLabel:group.label,
       title:`Ahmed ${titleFromId(id)}`,
-      pack:SWEETS_CODES[id] ? `${SWEETS_CODES[id]} - ${pack}` : pack,
+      pack:SWEETS_CODES[id] ? `${SWEETS_CODES[id]} - ${pack}` : SAUCE_CODES[id] ? `${SAUCE_CODES[id]} - ${pack}` : pack,
       image:imageUrl(id)
     };
   }));
