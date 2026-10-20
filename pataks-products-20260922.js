@@ -8,52 +8,52 @@
   [
     "Patak's Tikka Masala Paste",
     "283g x 1",
-    "https://res.cloudinary.com/wy4nkkqq/image/upload/v1791033981/patak_s_tikka_masala_paste_283g.png"
+    "/assets/cloudinary-shama/pataks/patak-s-tikka-masala-paste-283g-1ca623ea2888.webp"
   ],
   [
     "Patak's Madras Kebab Curry Paste",
     "2.4kg x 1",
-    "https://res.cloudinary.com/wy4nkkqq/image/upload/v1791033980/Patak_madras_kebab_paste_2.4kg.png"
+    "/assets/cloudinary-shama/pataks/patak-madras-kebab-paste-2-4kg-cc6d251b730a.webp"
   ],
   [
     "Patak's Tandoori Marinade Paste",
     "2.5kg x 1",
-    "https://res.cloudinary.com/wy4nkkqq/image/upload/v1791033979/patak_s_tandoori_paste_2.5kg.png"
+    "/assets/cloudinary-shama/pataks/patak-s-tandoori-paste-2-5kg-ac0ad19629f3.webp"
   ],
   [
     "Patak's Mild Curry Paste",
     "2.3kg x 1",
-    "https://res.cloudinary.com/wy4nkkqq/image/upload/v1791033978/Patak_mild_curry_paste_2.3kg.png"
+    "/assets/cloudinary-shama/pataks/patak-mild-curry-paste-2-3kg-edb4842071f3.webp"
   ],
   [
     "Patak's Tikka Paste",
     "2.4kg x 1",
-    "https://res.cloudinary.com/wy4nkkqq/image/upload/v1791033976/Patak_tikka_paste_2.4kg.png"
+    "/assets/cloudinary-shama/pataks/patak-tikka-paste-2-4kg-514adaaf5552.webp"
   ],
   [
     "Patak's Kashmiri Masala Paste",
     "2.2kg x 1",
-    "https://res.cloudinary.com/wy4nkkqq/image/upload/v1791033976/Patak_kashmiri_masala_paste_2.2_kg.png"
+    "/assets/cloudinary-shama/pataks/patak-kashmiri-masala-paste-2-2-kg-501091beca30.webp"
   ],
   [
     "Patak's Butter Chicken Paste",
     "2.3kg x 1",
-    "https://res.cloudinary.com/wy4nkkqq/image/upload/v1791033975/Patak_butter_chicken_paste_2.3_kg.png"
+    "/assets/cloudinary-shama/pataks/patak-butter-chicken-paste-2-3-kg-10643fdf7d0e.webp"
   ],
   [
     "Patak's Korma Paste",
     "2.3kg x 1",
-    "https://res.cloudinary.com/wy4nkkqq/image/upload/v1791033975/Patak_korma_paste_2.3kg.png"
+    "/assets/cloudinary-shama/pataks/patak-korma-paste-2-3kg-def1a322094c.webp"
   ],
   [
     "Patak's Biryani Paste",
     "2.3kg x 1",
-    "https://res.cloudinary.com/wy4nkkqq/image/upload/v1791033974/Patak_biryani_paste_2.3kg.png"
+    "/assets/cloudinary-shama/pataks/patak-biryani-paste-2-3kg-71b7763e2b43.webp"
   ],
   [
     "Patak's Balti Curry Paste",
     "2.3kg x 1",
-    "https://res.cloudinary.com/wy4nkkqq/image/upload/v1791033974/Patak_balty_curry_paste_2.3kg.png"
+    "/assets/cloudinary-shama/pataks/patak-balty-curry-paste-2-3kg-1f6ac0947f56.webp"
   ]
 ]
     .map(([title,pack,image])=>({category:'pataks',title,pack,image}));

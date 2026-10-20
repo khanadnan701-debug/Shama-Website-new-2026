@@ -1,0 +1,208 @@
+{
+  "date": "2026-10-20T10:06:28.187843+00:00",
+  "cloudinary_assets": 783,
+  "downloaded": 783,
+  "already_cached": 0,
+  "mirrored_webp_bytes": 253237676,
+  "references_replaced": 737,
+  "source_files_modified": 31,
+  "unmapped_references": [
+    {
+      "file": "script.js",
+      "public_id": "Shama_black_salt_400gm",
+      "url": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1789464150/Shama_black_salt_400gm.png"
+    },
+    {
+      "file": "rice-products-20260910.js",
+      "public_id": "shama-extra-long-20kg",
+      "url": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1789030724/shama-extra-long-20kg.jpg"
+    },
+    {
+      "file": "rice-products-20260910.js",
+      "public_id": "shama-extra-long-10kg",
+      "url": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1789030723/shama-extra-long-10kg.jpg"
+    },
+    {
+      "file": "rice-products-20260910.js",
+      "public_id": "shama-extra-long-5kg",
+      "url": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1789030723/shama-extra-long-5kg.jpg"
+    },
+    {
+      "file": "rice-products-20260910.js",
+      "public_id": "shama-extra-long-2kg",
+      "url": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1789030723/shama-extra-long-2kg.jpg"
+    },
+    {
+      "file": "rice-products-20260910.js",
+      "public_id": "shama-extra-long-1kg",
+      "url": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1789030723/shama-extra-long-1kg.jpg"
+    },
+    {
+      "file": "rice-products-20260910.js",
+      "public_id": "shama-white-gold-basmati-20kg",
+      "url": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1789030724/shama-white-gold-basmati-20kg.jpg"
+    },
+    {
+      "file": "rice-products-20260910.js",
+      "public_id": "shama-white-gold-basmati-10kg",
+      "url": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1789030724/shama-white-gold-basmati-10kg.jpg"
+    },
+    {
+      "file": "rice-products-20260910.js",
+      "public_id": "shama-white-gold-basmati-5kg",
+      "url": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1789030724/shama-white-gold-basmati-5kg.jpg"
+    },
+    {
+      "file": "rice-products-20260910.js",
+      "public_id": "shama-white-gold-basmati-2kg",
+      "url": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1789030724/shama-white-gold-basmati-2kg.jpg"
+    },
+    {
+      "file": "rice-products-20260910.js",
+      "public_id": "shama-white-gold-basmati-1kg",
+      "url": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1789030724/shama-white-gold-basmati-1kg.jpg"
+    },
+    {
+      "file": "rice-products-20260910.js",
+      "public_id": "sella-20kg",
+      "url": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1789030723/sella-20kg.jpg"
+    },
+    {
+      "file": "rice-products-20260910.js",
+      "public_id": "sella-10kg",
+      "url": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1789030723/sella-10kg.jpg"
+    },
+    {
+      "file": "rice-products-20260910.js",
+      "public_id": "sella-5kg",
+      "url": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1789030723/sella-5kg.jpg"
+    },
+    {
+      "file": "rice-products-20260910.js",
+      "public_id": "sella-2kg",
+      "url": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1789030730/sella-2kg.jpg"
+    },
+    {
+      "file": "rice-products-20260910.js",
+      "public_id": "sella-1kg",
+      "url": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1789030729/sella-1kg.jpg"
+    },
+    {
+      "file": "rice-products-20260910.js",
+      "public_id": "jasmine-20kg",
+      "url": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1789030729/jasmine-20kg.jpg"
+    },
+    {
+      "file": "rice-products-20260910.js",
+      "public_id": "jasmine-10kg",
+      "url": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1789030729/jasmine-10kg.jpg"
+    },
+    {
+      "file": "rice-products-20260910.js",
+      "public_id": "jasmine-5kg",
+      "url": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1789030729/jasmine-5kg.jpg"
+    },
+    {
+      "file": "rice-products-20260910.js",
+      "public_id": "jasmine-1kg",
+      "url": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1789030728/jasmine-1kg.jpg"
+    },
+    {
+      "file": "rice-products-20260910.js",
+      "public_id": "sunrise-xtra-long-20kg",
+      "url": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1789030726/sunrise-xtra-long-20kg.jpg"
+    },
+    {
+      "file": "rice-products-20260910.js",
+      "public_id": "sunrise-xtra-long-10kg",
+      "url": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1789030726/sunrise-xtra-long-10kg.jpg"
+    },
+    {
+      "file": "rice-products-20260910.js",
+      "public_id": "sunrise-xtra-long-5kg",
+      "url": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1789030726/sunrise-xtra-long-5kg.jpg"
+    },
+    {
+      "file": "rice-products-20260910.js",
+      "public_id": "sunrise-xtra-long-1kg",
+      "url": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1789030726/sunrise-xtra-long-1kg.jpg"
+    },
+    {
+      "file": "rice-products-20260910.js",
+      "public_id": "sunrise-golden-sella-20kg",
+      "url": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1789030725/sunrise-golden-sella-20kg.jpg"
+    },
+    {
+      "file": "rice-products-20260910.js",
+      "public_id": "sunrise-golden-sella-10kg",
+      "url": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1789030725/sunrise-golden-sella-10kg.jpg"
+    },
+    {
+      "file": "rice-products-20260910.js",
+      "public_id": "sunrise-golden-sella-5kg",
+      "url": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1789030725/sunrise-golden-sella-5kg.jpg"
+    },
+    {
+      "file": "rice-products-20260910.js",
+      "public_id": "sunrise-golden-sella-1kg",
+      "url": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1789030724/sunrise-golden-sella-1kg.jpg"
+    },
+    {
+      "file": "rice-products-20260910.js",
+      "public_id": "elephant-rice-20kg",
+      "url": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1789030728/elephant-rice-20kg.jpg"
+    },
+    {
+      "file": "rice-products-20260910.js",
+      "public_id": "elephant-rice-5kg",
+      "url": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1789030728/elephant-rice-5kg.jpg"
+    },
+    {
+      "file": "rice-products-20260910.js",
+      "public_id": "elephant-rice-1-time-20kg",
+      "url": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1789030727/elephant-rice-1-time-20kg.jpg"
+    },
+    {
+      "file": "rice-products-20260910.js",
+      "public_id": "elephant-rice-1-time-5kg",
+      "url": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1789030727/elephant-rice-1-time-5kg.jpg"
+    },
+    {
+      "file": "rice-products-20260910.js",
+      "public_id": "elephant-rice-2-time-20kg",
+      "url": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1789030728/elephant-rice-2-time-20kg.jpg"
+    },
+    {
+      "file": "rice-products-20260910.js",
+      "public_id": "elephant-rice-2-time-5kg",
+      "url": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1789030727/elephant-rice-2-time-5kg.jpg"
+    },
+    {
+      "file": "catalogue-hero-20260912.js",
+      "public_id": "jasmine-5kg",
+      "url": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1789030729/jasmine-5kg.jpg"
+    },
+    {
+      "file": "laziza-products-20260917.js",
+      "public_id": "${id}",
+      "url": "https://res.cloudinary.com/wy4nkkqq/image/upload/${id}.png"
+    },
+    {
+      "file": "about-story-page-20260911.js",
+      "public_id": "jasmine-5kg",
+      "url": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1789030729/jasmine-5kg.jpg"
+    },
+    {
+      "file": "misc-products-20260915.js",
+      "public_id": "Shama_black_salt_400gm",
+      "url": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1789464150/Shama_black_salt_400gm.png"
+    },
+    {
+      "file": "ahmed-products-20260917.js",
+      "public_id": "${version",
+      "url": "https://res.cloudinary.com/wy4nkkqq/image/upload/${version?"
+    }
+  ],
+  "broken_local_references": [],
+  "missing_mirror_files": []
+}

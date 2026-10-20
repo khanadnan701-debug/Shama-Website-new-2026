@@ -8,193 +8,193 @@
     "category": "divers",
     "title": "Telephone Isabgul",
     "pack": "200g",
-    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1790600769/Telephone_ISABGUL_200g.png"
+    "image": "/assets/cloudinary-shama/divers/telephone-isabgul-200g-4b4d290c8270.webp"
   },
   {
     "category": "divers",
     "title": "Maniarr'S Tikha Gathiya",
     "pack": "200g x 20",
-    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1790600769/Maniarr_s_Tikha_Gathiya_200gmX20.png"
+    "image": "/assets/cloudinary-shama/divers/maniarr-s-tikha-gathiya-200gmx20-1911844d2237.webp"
   },
   {
     "category": "divers",
     "title": "Maggi",
     "pack": "600g",
-    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1790600769/Maggi_600g.png"
+    "image": "/assets/cloudinary-shama/divers/maggi-600g-bfe7afc92cee.webp"
   },
   {
     "category": "divers",
     "title": "Hashmi Ispaghol JAR",
     "pack": "140g",
-    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1790600769/Hashmi_Ispaghol_JAR_140g.png"
+    "image": "/assets/cloudinary-shama/divers/hashmi-ispaghol-jar-140g-3aaed96349bd.webp"
   },
   {
     "category": "divers",
     "title": "Maggi",
     "pack": "70g",
-    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1790600769/Maggi_70g.png"
+    "image": "/assets/cloudinary-shama/divers/maggi-70g-7ea983fb38e0.webp"
   },
   {
     "category": "divers",
     "title": "Heera Red Pan Masala",
     "pack": "300g",
-    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1790600770/Heera_Red_Pan_Masala_300gm.png"
+    "image": "/assets/cloudinary-shama/divers/heera-red-pan-masala-300gm-984687d7e5b3.webp"
   },
   {
     "category": "divers",
     "title": "Shezan Mango Jam",
     "pack": "12 x 370g",
-    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1790600771/Shezan_Mango_Jam_12X370G_Glass_Jar.png"
+    "image": "/assets/cloudinary-shama/divers/shezan-mango-jam-12x370g-glass-jar-32c45f06295c.webp"
   },
   {
     "category": "divers",
     "title": "Heera Green Pan Masala",
     "pack": "300ml",
-    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1790600771/Heera_Green_Pan_Masala_300ml.png"
+    "image": "/assets/cloudinary-shama/divers/heera-green-pan-masala-300ml-7262f1d0484c.webp"
   },
   {
     "category": "divers",
     "title": "Telephone Isabgul",
     "pack": "100g",
-    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1790600771/Telephone_ISABGUL_100g.png"
+    "image": "/assets/cloudinary-shama/divers/telephone-isabgul-100g-e5470820a142.webp"
   },
   {
     "category": "divers",
     "title": "Knorr Chatt Patta Family Pack",
     "pack": "200g",
-    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1790600771/Knorr_Chatt_Patta_Family_Pack_200g.png"
+    "image": "/assets/cloudinary-shama/divers/knorr-chatt-patta-family-pack-200g-c7a7e574b7ff.webp"
   },
   {
     "category": "divers",
     "title": "Telephone Isabgul",
     "pack": "50g",
-    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1790600780/Telephone_ISABGUL_50gm.png"
+    "image": "/assets/cloudinary-shama/divers/telephone-isabgul-50gm-3a3d296e803b.webp"
   },
   {
     "category": "divers",
     "title": "Lijjat Jeera Papad",
     "pack": "200g",
-    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1790600780/Lijjat_Jeera_Papad_200g.png"
+    "image": "/assets/cloudinary-shama/divers/lijjat-jeera-papad-200g-c25511a00142.webp"
   },
   {
     "category": "divers",
     "title": "Maniarr'S Dry Bakhri Garlic",
     "pack": "200g x 30",
-    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1790600781/Maniarr_s_Dry_Bakhri_Garlic_200gmX30.png"
+    "image": "/assets/cloudinary-shama/divers/maniarr-s-dry-bakhri-garlic-200gmx30-72be3674dbe1.webp"
   },
   {
     "category": "divers",
     "title": "Malka Red Fried Onion",
     "pack": "1kg",
-    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1790600781/Malka_Red_Fried_Onion_1kg.png"
+    "image": "/assets/cloudinary-shama/divers/malka-red-fried-onion-1kg-ddd6448373f1.webp"
   },
   {
     "category": "divers",
     "title": "Maniarr'S Classic Plain Khakhra",
     "pack": "200g x 15",
-    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1790600781/Maniarr_s_Classic_Plain_Khakhra_200gmX15.png"
+    "image": "/assets/cloudinary-shama/divers/maniarr-s-classic-plain-khakhra-200gmx15-026d3cc5c348.webp"
   },
   {
     "category": "divers",
     "title": "Maniarr'S Dry Bhakhri Methi",
     "pack": "200g x 30",
-    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1790600782/Maniarr_s_Dry_Bhakhri_Methi_200gm_X30.png"
+    "image": "/assets/cloudinary-shama/divers/maniarr-s-dry-bhakhri-methi-200gm-x30-426bd96fbdd6.webp"
   },
   {
     "category": "divers",
     "title": "Maniarr'S Dry Bhakhri Jeera",
     "pack": "200g x 30",
-    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1790600782/Maniarr_s_Dry_Bhakhri_Jeera_200gm_X30.png"
+    "image": "/assets/cloudinary-shama/divers/maniarr-s-dry-bhakhri-jeera-200gm-x30-97d9c4904884.webp"
   },
   {
     "category": "divers",
     "title": "Maniarr'S Dry Bhakhri Plain",
     "pack": "200g x 30",
-    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1790600782/Maniarr_s_Dry_Bhakhri_Plain_200gm_X30.png"
+    "image": "/assets/cloudinary-shama/divers/maniarr-s-dry-bhakhri-plain-200gm-x30-ad74ad3fdd82.webp"
   },
   {
     "category": "divers",
     "title": "Maniarr'S Fafda With Chutney",
     "pack": "350g x 10",
-    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1790600782/Maniarr_s_Fafda_with_Chutney_350gmX10.png"
+    "image": "/assets/cloudinary-shama/divers/maniarr-s-fafda-with-chutney-350gmx10-90c6d94bba7a.webp"
   },
   {
     "category": "divers",
     "title": "Maniarr'S Papdi Gathiya",
     "pack": "200g x 15",
-    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1790600783/Maniarr_s_Papdi_Gathiya_200gmX15.png"
+    "image": "/assets/cloudinary-shama/divers/maniarr-s-papdi-gathiya-200gmx15-947504296c22.webp"
   },
   {
     "category": "divers",
     "title": "Maniarr'S Salty Puffs Khari Jeera",
     "pack": "400g x 18",
-    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1790600783/Maniarr_s_Salty_Puffs_Khari_Jeera_400gmX18.png"
+    "image": "/assets/cloudinary-shama/divers/maniarr-s-salty-puffs-khari-jeera-400gmx18-89fe231a1b52.webp"
   },
   {
     "category": "divers",
     "title": "Maniarr'S Fulwadi Gathiya",
     "pack": "200g x 20",
-    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1790600783/Maniarr_s_Fulwadi_Gathiya_200gmX20.png"
+    "image": "/assets/cloudinary-shama/divers/maniarr-s-fulwadi-gathiya-200gmx20-88867ed303b4.webp"
   },
   {
     "category": "divers",
     "title": "Maniarr'S Jeera Khakhra",
     "pack": "200g x 15",
-    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1790600783/Maniarr_s_Jeera_Khakhra_200gmX15.png"
+    "image": "/assets/cloudinary-shama/divers/maniarr-s-jeera-khakhra-200gmx15-4510ab6ba95a.webp"
   },
   {
     "category": "divers",
     "title": "Maniarr'S Salty Puffs Khari Methi",
     "pack": "400g x 18",
-    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1790600784/Maniarr_s_Salty_Puffs_Khari_Methi_400gmX18.png"
+    "image": "/assets/cloudinary-shama/divers/maniarr-s-salty-puffs-khari-methi-400gmx18-376aeefe7687.webp"
   },
   {
     "category": "divers",
     "title": "Maniarrs Methi Khakhra",
     "pack": "200g",
-    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1790600792/Maniarrs_Methi_Khakhra_200gm_15.png"
+    "image": "/assets/cloudinary-shama/divers/maniarrs-methi-khakhra-200gm-15-d1cd21461e68.webp"
   },
   {
     "category": "divers",
     "title": "MDH Kasuri Methi",
     "pack": "1kg",
-    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1790600793/MDH_Kasuri_Methi_1kg.png"
+    "image": "/assets/cloudinary-shama/divers/mdh-kasuri-methi-1kg-960e557d19e1.webp"
   },
   {
     "category": "divers",
     "title": "MDH Chunky Chat Masala",
     "pack": "100g",
-    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1790600793/MDH_Chunky_Chat_Masala_100g.png"
+    "image": "/assets/cloudinary-shama/divers/mdh-chunky-chat-masala-100g-49acf1978ad4.webp"
   },
   {
     "category": "divers",
     "title": "MDH Kasuri Methi",
     "pack": "100g",
-    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1790600793/MDH_Kasuri_Methi_100gm.png"
+    "image": "/assets/cloudinary-shama/divers/mdh-kasuri-methi-100gm-177b9c30c336.webp"
   },
   {
     "category": "divers",
     "title": "Shezan Sarsoon Ka Saag",
     "pack": "12 x 840g",
-    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1790600794/Shezan_Sarsoon_Ka_Saag_12X840G.png"
+    "image": "/assets/cloudinary-shama/divers/shezan-sarsoon-ka-saag-12x840g-8be40c3bc916.webp"
   },
   {
     "category": "divers",
     "title": "MDH Chunky Chat Masala",
     "pack": "500g",
-    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1790600794/MDH_Chunky_Chat_Masala_500g.png"
+    "image": "/assets/cloudinary-shama/divers/mdh-chunky-chat-masala-500g-15ec693d014f.webp"
   },
   {
     "category": "divers",
     "title": "Schani Tamarind Imli",
     "pack": "400g",
-    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1790600794/Schani_Tamarind_Imli_400G.png"
+    "image": "/assets/cloudinary-shama/divers/schani-tamarind-imli-400g-10b853dc4e0d.webp"
   },
   {
     "category": "divers",
     "title": "Shama Mamra",
     "pack": "250g",
-    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1790600794/Shama_Mamra_250g.png"
+    "image": "/assets/cloudinary-shama/divers/shama-mamra-250g-540b034fbad7.webp"
   }
 ];
 

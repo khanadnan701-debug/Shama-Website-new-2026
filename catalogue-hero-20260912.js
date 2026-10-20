@@ -19,7 +19,7 @@
         <span>Spices</span>
       </a>
       <a class="catalogue-hero-card three" href="sauces-pastes.html" tabindex="-1">
-        <img src="https://res.cloudinary.com/wy4nkkqq/image/upload/v1789120966/Shama_butter_chicken_curry_paste_300g.png" alt="">
+        <img src="/assets/cloudinary-shama/paste/shama-butter-chicken-curry-paste-300g-10137df467ae.webp" alt="">
         <span>Pickle & Pastes</span>
       </a>
       <div class="catalogue-hero-badge"><b>21</b><span>product<br>ranges</span></div>`;

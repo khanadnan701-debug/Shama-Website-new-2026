@@ -13,7 +13,7 @@
       title:'',
       href:'rice.html',
       label:'Shama Rice Banner 1',
-      image:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1790947075/shama_home_hero_banner_1_20261002.png'
+      image:'/assets/cloudinary-shama/home-hero-banners/shama-home-hero-banner-1-20261002-e8dbc186b876.webp'
     },
     {
       theme:'banner-2',
@@ -21,7 +21,7 @@
       title:'',
       href:'rice.html',
       label:'Shama Rice Banner 2',
-      image:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1790947080/shama_home_hero_banner_2_20261002.png'
+      image:'/assets/cloudinary-shama/home-hero-banners/shama-home-hero-banner-2-20261002-30f12a43dc94.webp'
     },
     {
       theme:'banner-3',
@@ -29,7 +29,7 @@
       title:'',
       href:'rice.html',
       label:'Shama Rice Banner 3',
-      image:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1790947089/shama_home_hero_banner_3_20261002.png'
+      image:'/assets/cloudinary-shama/home-hero-banners/shama-home-hero-banner-3-20261002-9d7745ef66d8.webp'
     }
   ];
 

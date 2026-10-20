@@ -2,9 +2,9 @@
   'use strict';
 
   const IMAGES = {
-    'tea.html':'https://res.cloudinary.com/wy4nkkqq/image/upload/v1791030636/PG_Tea_300_Bag.png',
-    'sugar.html':'https://res.cloudinary.com/wy4nkkqq/image/upload/v1791031373/Shama_Desi_Shakkar_500g.png',
-    'wines.html':'https://res.cloudinary.com/wy4nkkqq/image/upload/v1791192902/Grover_Wine_Red_Alc._13.5_vol_75cl.png'
+    'tea.html':'/assets/cloudinary-shama/tea/pg-tea-300-bag-951b1ef25c55.webp',
+    'sugar.html':'/assets/cloudinary-shama/sugar/shama-desi-shakkar-500g-53dad935a769.webp',
+    'wines.html':'/assets/cloudinary-shama/wines/grover-wine-red-alc-13-5-vol-75cl-cee439b127e9.webp'
   };
 
   function patch() {

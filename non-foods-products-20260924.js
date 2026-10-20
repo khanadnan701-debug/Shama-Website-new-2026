@@ -4,20 +4,20 @@
   if (typeof categories === 'undefined' || !Array.isArray(categories)) return;
 
   const items = [
-    ['Shahi Charcoal Tandoor 11C','Size 1','https://res.cloudinary.com/wy4nkkqq/image/upload/v1790261684/Shahi_Charcoal_Tandoor_11C_Size_1.png'],
-    ['Shahi Plate for Tandoor','Accessory · Contact us for dimensions','https://res.cloudinary.com/wy4nkkqq/image/upload/v1790261687/Shahi_Plate_For_Tandoor.png'],
-    ['Shahi Tandoor Burner','Accessory · Contact us for specification','https://res.cloudinary.com/wy4nkkqq/image/upload/v1790261687/Shahi_Tandoor_Burner.png'],
-    ['Shahi Tandoor Controller','Accessory · Contact us for specification','https://res.cloudinary.com/wy4nkkqq/image/upload/v1790261687/Shahi_tandoor_controler.png'],
-    ['Shahi Tandoor Fire Cement','4kg ready mix','https://res.cloudinary.com/wy4nkkqq/image/upload/v1790261688/Shahi_Tandoor_Fair_Cement.png'],
-    ['Shahi Natural Gas Tandoor 111 CE','Large · Size 3','https://res.cloudinary.com/wy4nkkqq/image/upload/v1790261688/Shahi_Tandoor_Natural_Gas_Size_111_Ce_LARG_Size_3.png'],
-    ['Shahi Tandoor Rods / Skewers','Accessory · Contact us for available sizes','https://res.cloudinary.com/wy4nkkqq/image/upload/v1790261690/Shahi_Tandoor_Rods_Skewers.png'],
-    ['Shahi Tandoor Lava Stones','5kg','https://res.cloudinary.com/wy4nkkqq/image/upload/v1790261696/Shahi_Tandoor_Lava_Stones_5kg.png'],
-    ['Shahi Tandoor Natural Gas Valve','Accessory · Contact us for specification','https://res.cloudinary.com/wy4nkkqq/image/upload/v1790261730/Shahi_Tandoor_Natural_Gas_Valve.png'],
-    ['Shahi Natural Gas Tandoor 11 CE','Medium · Size 2','https://res.cloudinary.com/wy4nkkqq/image/upload/v1790261730/Shahi_Tandoor_Natural_Gas_Size_11_Ce_M_Size_2.png'],
-    ['Shama Plastic Containers','650ml x 250 pcs','https://res.cloudinary.com/wy4nkkqq/image/upload/v1790272108/Shama_Plastic_containers_650ml_x_250ps.png'],
-    ['TCC 35 PP Sauce Cups','50 pcs x 20','https://res.cloudinary.com/wy4nkkqq/image/upload/v1790272108/TCC_35_pp_Sauce_cup_50p_x20.png'],
-    ['Shama Plastic Containers','500ml x 300 pcs','https://res.cloudinary.com/wy4nkkqq/image/upload/v1790272108/Shama_Plastic_Container_500ml_x_300_pcs.png'],
-    ['Shama Plastic Sauce Cups','1000 pcs','https://res.cloudinary.com/wy4nkkqq/image/upload/v1790272109/Shama_Plastic_Sauce_Cup_x_1000.png']
+    ['Shahi Charcoal Tandoor 11C','Size 1','/assets/cloudinary-shama/non-foods/shahi-charcoal-tandoor-11c-size-1-b0fd2000467a.webp'],
+    ['Shahi Plate for Tandoor','Accessory · Contact us for dimensions','/assets/cloudinary-shama/non-foods/shahi-plate-for-tandoor-c9b6c96f99bb.webp'],
+    ['Shahi Tandoor Burner','Accessory · Contact us for specification','/assets/cloudinary-shama/non-foods/shahi-tandoor-burner-945afdbbd335.webp'],
+    ['Shahi Tandoor Controller','Accessory · Contact us for specification','/assets/cloudinary-shama/non-foods/shahi-tandoor-controler-f24fd7ad0d21.webp'],
+    ['Shahi Tandoor Fire Cement','4kg ready mix','/assets/cloudinary-shama/non-foods/shahi-tandoor-fair-cement-512b9384fca9.webp'],
+    ['Shahi Natural Gas Tandoor 111 CE','Large · Size 3','/assets/cloudinary-shama/non-foods/shahi-tandoor-natural-gas-size-111-ce-larg-size-3-cb3fbac7d740.webp'],
+    ['Shahi Tandoor Rods / Skewers','Accessory · Contact us for available sizes','/assets/cloudinary-shama/non-foods/shahi-tandoor-rods-skewers-4e782124224d.webp'],
+    ['Shahi Tandoor Lava Stones','5kg','/assets/cloudinary-shama/non-foods/shahi-tandoor-lava-stones-5kg-fb1961c3278e.webp'],
+    ['Shahi Tandoor Natural Gas Valve','Accessory · Contact us for specification','/assets/cloudinary-shama/non-foods/shahi-tandoor-natural-gas-valve-70de27fe7a20.webp'],
+    ['Shahi Natural Gas Tandoor 11 CE','Medium · Size 2','/assets/cloudinary-shama/non-foods/shahi-tandoor-natural-gas-size-11-ce-m-size-2-2fc3a3fefc70.webp'],
+    ['Shama Plastic Containers','650ml x 250 pcs','/assets/cloudinary-shama/non-foods/shama-plastic-containers-650ml-x-250ps-e4e10d0d363b.webp'],
+    ['TCC 35 PP Sauce Cups','50 pcs x 20','/assets/cloudinary-shama/non-foods/tcc-35-pp-sauce-cup-50p-x20-429983755cc8.webp'],
+    ['Shama Plastic Containers','500ml x 300 pcs','/assets/cloudinary-shama/non-foods/shama-plastic-container-500ml-x-300-pcs-e0246de445c9.webp'],
+    ['Shama Plastic Sauce Cups','1000 pcs','/assets/cloudinary-shama/non-foods/shama-plastic-sauce-cup-x-1000-51b7697550d1.webp']
   ].map(([title,pack,image]) => ({category:'non-foods',title,pack,image}));
 
   productData.push(...items);

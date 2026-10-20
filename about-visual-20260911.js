@@ -5,11 +5,11 @@
   const images = {
     hero: 'https://static.wixstatic.com/media/00ae33_2045f9d35e4a4da395ad4833d2b3bd91~mv2.jpg',
     founder: 'https://static.wixstatic.com/media/00ae33_6b312b11ad8f4578af43615631d040f8~mv2_d_1595_1600_s_2.jpg',
-    rice: 'https://res.cloudinary.com/wy4nkkqq/image/upload/v1790255518/Shama_Super_Kernal_Par_Boiled_Sella_Rice_5kg.png',
-    thaiRice: 'https://res.cloudinary.com/wy4nkkqq/image/upload/v1789064689/Shama_thai_jasmine_2_volta_20kg.png',
-    paste: 'https://res.cloudinary.com/wy4nkkqq/image/upload/v1789120966/Shama_butter_chicken_curry_paste_300g.png',
-    lentils: 'https://res.cloudinary.com/wy4nkkqq/image/upload/v1789131921/Shama_desi_chana_dal_1kg.png',
-    spice: 'https://res.cloudinary.com/wy4nkkqq/image/upload/v1789051986/star_anise.png'
+    rice: '/assets/cloudinary-shama/rice-images-20260910/shama-super-kernal-par-boiled-sella-rice-5kg-8e8a2c1c7e79.webp',
+    thaiRice: '/assets/cloudinary-shama/rice-images-20260910/shama-thai-jasmine-2-volta-20kg-3d84eca979bb.webp',
+    paste: '/assets/cloudinary-shama/paste/shama-butter-chicken-curry-paste-300g-10137df467ae.webp',
+    lentils: '/assets/cloudinary-shama/flour-lentiles/shama-desi-chana-dal-1kg-7f9dc2002a11.webp',
+    spice: '/assets/cloudinary-shama/spices/star-anise-ca0bcdf71e18.webp'
   };
 
   const videos = [
@@ -62,7 +62,7 @@
           <div class="aboutx-visual">
             <figure class="aboutx-hero-photo"><img src="${images.hero}" alt="Shama International team and brand presentation"></figure>
             <div class="aboutx-product-stack">
-              <figure><img src="${images.rice}" alt="Shama rice" onerror="this.onerror=null;this.src='https://res.cloudinary.com/wy4nkkqq/image/upload/v1790255523/Shama_White_Gold_Basmati_Rice_5kg.png'"></figure>
+              <figure><img src="${images.rice}" alt="Shama rice" onerror="this.onerror=null;this.src='/assets/cloudinary-shama/rice-images-20260910/shama-white-gold-basmati-rice-5kg-0083108d5cde.webp'"></figure>
               <figure><img src="${images.paste}" alt="Shama curry paste"></figure>
               <figure><img src="${images.lentils}" alt="Shama lentils"></figure>
             </div>
@@ -138,7 +138,7 @@
             <a class="aboutx-text-link" href="products.html"><span class="lang-en">View all products</span><span class="lang-fr">Voir tous les produits</span>${icon('arrow','aboutx-inline-icon')}</a>
           </div>
           <div class="aboutx-gallery">
-            <a href="rice.html" class="aboutx-gallery-card big"><img src="${images.rice}" alt="Shama rice" onerror="this.onerror=null;this.src='https://res.cloudinary.com/wy4nkkqq/image/upload/v1790255523/Shama_White_Gold_Basmati_Rice_5kg.png'"><span>Rice</span></a>
+            <a href="rice.html" class="aboutx-gallery-card big"><img src="${images.rice}" alt="Shama rice" onerror="this.onerror=null;this.src='/assets/cloudinary-shama/rice-images-20260910/shama-white-gold-basmati-rice-5kg-0083108d5cde.webp'"><span>Rice</span></a>
             <a href="flour-lentiles.html" class="aboutx-gallery-card"><img src="${images.lentils}" alt="Shama lentils"><span>Lentils</span></a>
             <a href="spices.html" class="aboutx-gallery-card"><img src="${images.spice}" alt="Shama spices"><span>Spices</span></a>
             <a href="sauces.html" class="aboutx-gallery-card"><img src="${images.paste}" alt="Shama curry paste"><span>Pickle & Pastes</span></a>

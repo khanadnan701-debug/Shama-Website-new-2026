@@ -744,224 +744,224 @@ productData.push(...supplementalData);
     "brand": "Shama",
     "title": "Shama Vegetable Samosa",
     "pack": "20 pcs",
-    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1790625184/Shama_Vegetable_Samosa_20_pcs.png"
+    "image": "/assets/cloudinary-shama/frozen/shama-vegetable-samosa-20-pcs-0d77c0adce37.webp"
   },
   {
     "category": "frozen",
     "brand": "Shama",
     "title": "Shama Vegetable Samosa",
     "pack": "50 pcs",
-    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1790625151/Shama_vegetable_Samosa_50_Pcs.png"
+    "image": "/assets/cloudinary-shama/frozen/shama-vegetable-samosa-50-pcs-de0e45a84c7c.webp"
   },
   {
     "category": "frozen",
     "brand": "Shama",
     "title": "Shama Punjabi Potato Samosa",
     "pack": "12 pcs",
-    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1790625164/Shama_Punjabi_potato_samosa_12_Pcs.png"
+    "image": "/assets/cloudinary-shama/frozen/shama-punjabi-potato-samosa-12-pcs-b4a9525e32a6.webp"
   },
   {
     "category": "frozen",
     "brand": "Shama",
     "title": "Shama Lamb Meat Samosa",
     "pack": "20 pcs",
-    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1790625173/Shama_Lamb_Meat_Samosa_20pcs.png.png"
+    "image": "/assets/cloudinary-shama/frozen/shama-lamb-meat-samosa-20pcs-png-137aabbbe5f0.webp"
   },
   {
     "category": "frozen",
     "brand": "Shama",
     "title": "Shama Lamb Meat Samosa",
     "pack": "50 pcs",
-    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1790625184/Shama_Lamb_Meat_Samosa_50_Pcs.png"
+    "image": "/assets/cloudinary-shama/frozen/shama-lamb-meat-samosa-50-pcs-5b18db484029.webp"
   },
   {
     "category": "frozen",
     "brand": "Shama",
     "title": "Shama Chicken Samosa",
     "pack": "50 pcs",
-    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1790625178/Shama_Chicken_Samosa_50_pcs.png"
+    "image": "/assets/cloudinary-shama/frozen/shama-chicken-samosa-50-pcs-ff10be1965d9.webp"
   },
   {
     "category": "frozen",
     "brand": "Shama",
     "title": "Shama Chicken Tikka Samosa",
     "pack": "20 pcs",
-    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1790625180/Shama_Chicken_tikka_Samosa_20Pcs.png"
+    "image": "/assets/cloudinary-shama/frozen/shama-chicken-tikka-samosa-20pcs-fd4740726fb5.webp"
   },
   {
     "category": "frozen",
     "brand": "Shama",
     "title": "Shama Punjabi Style Cocktail Samosa",
     "pack": "3 pcs",
-    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1790625179/Shama_Cocktail_Samosa_3_Pcs.png"
+    "image": "/assets/cloudinary-shama/frozen/shama-cocktail-samosa-3-pcs-3b7adfc354b6.webp"
   },
   {
     "category": "frozen",
     "brand": "Mazedaar",
     "title": "Mazedaar Potato Samosa",
     "pack": "20 pcs",
-    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1791202844/MAZEDAR_Potato_Samosa_20pcs.png"
+    "image": "/assets/cloudinary-shama/frozen/mazedar-potato-samosa-20pcs-64cf364138f4.webp"
   },
   {
     "category": "frozen",
     "brand": "Shama",
     "title": "Shama Vegetable Spring Rolls",
     "pack": "20 pcs",
-    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1790625163/Shama_vegetable_spring_rolls_20_pcs.png"
+    "image": "/assets/cloudinary-shama/frozen/shama-vegetable-spring-rolls-20-pcs-1374fccbf03e.webp"
   },
   {
     "category": "frozen",
     "brand": "Shama",
     "title": "Shama Vegetable Spring Rolls",
     "pack": "50 pcs",
-    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1790625164/Shama_vegetable_spring_rolls_50_Pcs.png"
+    "image": "/assets/cloudinary-shama/frozen/shama-vegetable-spring-rolls-50-pcs-c603b63ab822.webp"
   },
   {
     "category": "frozen",
     "brand": "Shama",
     "title": "Shama Chicken Spring Rolls",
     "pack": "20 pcs",
-    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1790625181/Shama_chicken_Spring_Rolls_20_Pcs.png"
+    "image": "/assets/cloudinary-shama/frozen/shama-chicken-spring-rolls-20-pcs-29cf6205e14d.webp"
   },
   {
     "category": "frozen",
     "brand": "Shama",
     "title": "Shama Chicken Spring Rolls",
     "pack": "50 pcs",
-    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1790625182/Shama_Chicken_Spring_Rolls_50_Pcs.png"
+    "image": "/assets/cloudinary-shama/frozen/shama-chicken-spring-rolls-50-pcs-5d4935413fd1.webp"
   },
   {
     "category": "frozen",
     "brand": "Shama",
     "title": "Shama Lamb Meat Spring Rolls",
     "pack": "20 pcs",
-    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1790625172/Shama_Lamb_Meat_Spring_Rolls_20_Pcs.png"
+    "image": "/assets/cloudinary-shama/frozen/shama-lamb-meat-spring-rolls-20-pcs-56fcbe437029.webp"
   },
   {
     "category": "frozen",
     "brand": "Shama",
     "title": "Shama Lamb Meat Spring Rolls",
     "pack": "50 pcs",
-    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1790625151/Shama_lamb_Meat_Spring_Rolls_50_Pcs.png"
+    "image": "/assets/cloudinary-shama/frozen/shama-lamb-meat-spring-rolls-50-pcs-ed5aaaf4be3c.webp"
   },
   {
     "category": "frozen",
     "brand": "Shama",
     "title": "Shama Lahori Chicken Kebab",
     "pack": "15 pcs",
-    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1790625181/shama_lahori_chicken_kebab_15_Pcs.png"
+    "image": "/assets/cloudinary-shama/frozen/shama-lahori-chicken-kebab-15-pcs-7e982163e543.webp"
   },
   {
     "category": "frozen",
     "brand": "Shama",
     "title": "Shama Mutton Lahori Kebab",
     "pack": "15 pcs",
-    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1790625183/15_Mutton_Lahori_Kebab_15_Pcs.png"
+    "image": "/assets/cloudinary-shama/frozen/15-mutton-lahori-kebab-15-pcs-fb393bb1b243.webp"
   },
   {
     "category": "frozen",
     "brand": "Shama",
     "title": "Shama Plain Paratha",
     "pack": "30 pcs",
-    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1791205446/Shama_Plain_Paratha_30pcs.png"
+    "image": "/assets/cloudinary-shama/frozen/shama-plain-paratha-30pcs-9ea8b3cfd2ac.webp"
   },
   {
     "category": "frozen",
     "brand": "Shama",
     "title": "Shama Crispy Plain Paratha",
     "pack": "20 pcs",
-    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1790625166/Shama_crispy_plain_paratha_20_Pcs.png"
+    "image": "/assets/cloudinary-shama/frozen/shama-crispy-plain-paratha-20-pcs-bd290fb445fc.webp"
   },
   {
     "category": "frozen",
     "brand": "Mazedaar",
     "title": "Mazedaar Paratha",
     "pack": "5 pcs",
-    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1790625174/Mazedaar_Paratha_5_pcs.png"
+    "image": "/assets/cloudinary-shama/frozen/mazedaar-paratha-5-pcs-6346f91c34be.webp"
   },
   {
     "category": "frozen",
     "brand": "Mazedaar",
     "title": "Mazedaar Onion Paratha",
     "pack": "5 pcs",
-    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1790625175/Mazedaar_Onion_Paratha_5pcs.png"
+    "image": "/assets/cloudinary-shama/frozen/mazedaar-onion-paratha-5pcs-5d3805970e3f.webp"
   },
   {
     "category": "frozen",
     "brand": "Mazedaar",
     "title": "Mazedaar Plain Paratha",
     "pack": "20 pcs",
-    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1790625175/Mazedaar_Plain_Paratha_20_pcs.png.png"
+    "image": "/assets/cloudinary-shama/frozen/mazedaar-plain-paratha-20-pcs-png-1f98511f1350.webp"
   },
   {
     "category": "frozen",
     "brand": "Mazedaar",
     "title": "Mazedaar Plain Paratha",
     "pack": "5 pcs",
-    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1790625176/Mazedaar_Plain_Paratha_5_pcs.png"
+    "image": "/assets/cloudinary-shama/frozen/mazedaar-plain-paratha-5-pcs-a523f7138c57.webp"
   },
   {
     "category": "frozen",
     "brand": "Mazedaar",
     "title": "Mazedaar Onion Paratha",
     "pack": "3 pcs",
-    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1790625177/Mazedaar_onion_paratha_3_pcs.png"
+    "image": "/assets/cloudinary-shama/frozen/mazedaar-onion-paratha-3-pcs-890d7d19aef0.webp"
   },
   {
     "category": "frozen",
     "brand": "Mazedaar",
     "title": "Mazedaar Vegetable Paratha",
     "pack": "3 pcs",
-    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1790625178/Mazedaar_Vegetable_Paratha_3_pcs.png.png"
+    "image": "/assets/cloudinary-shama/frozen/mazedaar-vegetable-paratha-3-pcs-png-7200ea9a2937.webp"
   },
   {
     "category": "frozen",
     "brand": "Mazedaar",
     "title": "Mazedaar Whole Wheat Paratha",
     "pack": "20 pcs",
-    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1791201289/Mazedar_Whole_Wheat_Paratha_20_pcs.png"
+    "image": "/assets/cloudinary-shama/frozen/mazedar-whole-wheat-paratha-20-pcs-1bbcbc047d6a.webp"
   },
   {
     "category": "frozen",
     "brand": "Shama",
     "title": "Shama Cut Okra",
     "pack": "400g",
-    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1790625169/Shama_Cut_Okra_400gms.png.png"
+    "image": "/assets/cloudinary-shama/frozen/shama-cut-okra-400gms-png-879f3e8da4c6.webp"
   },
   {
     "category": "frozen",
     "brand": "Shama",
     "title": "Shama Green Chilli",
     "pack": "400g",
-    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1790625171/Shama_green_chilli_400_Gms.png.png"
+    "image": "/assets/cloudinary-shama/frozen/shama-green-chilli-400-gms-png-f88733067fbf.webp"
   },
   {
     "category": "frozen",
     "brand": "Shama",
     "title": "Shama Karela",
     "pack": "400g",
-    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1790625173/Shama_karela_400Gms.png.png"
+    "image": "/assets/cloudinary-shama/frozen/shama-karela-400gms-png-b461d94b991d.webp"
   },
   {
     "category": "frozen",
     "brand": "Shama",
     "title": "Shama Falsa",
     "pack": "454g",
-    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1790625170/Shama_falsa_454Gms.png.png"
+    "image": "/assets/cloudinary-shama/frozen/shama-falsa-454gms-png-86ef6c0eaa4e.webp"
   },
   {
     "category": "frozen",
     "brand": "Shama",
     "title": "Shama Frozen Methi",
     "pack": "400g",
-    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1791201865/SHAMA_Frozen_Methi_400g.png"
+    "image": "/assets/cloudinary-shama/frozen/shama-frozen-methi-400g-b723636384ac.webp"
   },
   {
     "category": "frozen",
     "brand": "Other",
     "title": "Tilapia Moyen 600/800",
     "pack": "4 kg",
-    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1791201289/Tilapia_Moyen_600_800_4_kg.png"
+    "image": "/assets/cloudinary-shama/frozen/tilapia-moyen-600-800-4-kg-64713677789f.webp"
   }
 ];
   for (let i = productData.length - 1; i >= 0; i--) {
@@ -980,14 +980,14 @@ productData.push(...supplementalData);
       group: 'Spice Powders',
       title: 'Shama Amchur Powder (Mango Powder)',
       pack: '3377C - 100g x 20',
-      image: 'https://res.cloudinary.com/wy4nkkqq/image/upload/v1789051969/aamchur_pwdr.png'
+      image: '/assets/cloudinary-shama/spices/aamchur-pwdr-07bd3b989d4e.webp'
     },
     {
       category: 'spices',
       group: 'Whole Spices & Seeds',
       title: 'Shama Black Cardamom',
       pack: '50g x 20\n200g x 10\n750g x 6',
-      image: 'https://res.cloudinary.com/wy4nkkqq/image/upload/v1789051969/black_cardemom.png'
+      image: '/assets/cloudinary-shama/spices/black-cardemom-0d4100f9ed82.webp'
     },
     {
       category: 'spices',
@@ -1001,35 +1001,35 @@ productData.push(...supplementalData);
       group: 'Spice Powders',
       title: 'Shama Black Pepper Powder',
       pack: '100g x 20\n400g x 10\n1kg x 6',
-      image: 'https://res.cloudinary.com/wy4nkkqq/image/upload/v1789051979/black_ppr_pwdr.png'
+      image: '/assets/cloudinary-shama/spices/black-ppr-pwdr-63f62100a49c.webp'
     },
     {
       category: 'spices',
       group: 'Whole Spices & Seeds',
       title: 'Shama Black Pepper Whole',
       pack: '50g x 20\n100g\n200g x 10\n750g x 6\n1kg',
-      image: 'https://res.cloudinary.com/wy4nkkqq/image/upload/v1789051972/black_ppr_whole.png'
+      image: '/assets/cloudinary-shama/spices/black-ppr-whole-0b982775781b.webp'
     },
     {
       category: 'spices',
       group: 'Spice Powders',
       title: 'Shama Chilli Crushed',
       pack: '100g x 20\n400g x 10\n750g\n1kg x 6',
-      image: 'https://res.cloudinary.com/wy4nkkqq/image/upload/v1789051974/chilli_crushed.png'
+      image: '/assets/cloudinary-shama/spices/chilli-crushed-fd1788da2e6a.webp'
     },
     {
       category: 'spices',
       group: 'Spice Powders',
       title: 'Shama Chilli Powder',
       pack: '100g x 20\n400g x 10\n1kg x 6',
-      image: 'https://res.cloudinary.com/wy4nkkqq/image/upload/v1789051973/chilli_powder.png'
+      image: '/assets/cloudinary-shama/spices/chilli-powder-7dafcbfa2713.webp'
     },
     {
       category: 'spices',
       group: 'Spice Powders',
       title: 'Shama Chilli Powder Extra Hot',
       pack: '100g x 20\n400g x 10\n1kg x 6',
-      image: 'https://res.cloudinary.com/wy4nkkqq/image/upload/v1789051972/chilli_powder_ex_hot.png'
+      image: '/assets/cloudinary-shama/spices/chilli-powder-ex-hot-83352bb36857.webp'
     },
     {
       category: 'spices',
@@ -1043,21 +1043,21 @@ productData.push(...supplementalData);
       group: 'Whole Spices & Seeds',
       title: 'Shama Cloves Whole',
       pack: '3308A - 50g x 20\n3520C - 200g x 10\n3704C - 750g x 6',
-      image: 'https://res.cloudinary.com/wy4nkkqq/image/upload/v1789051979/cloves_whole.png'
+      image: '/assets/cloudinary-shama/spices/cloves-whole-3813c155763a.webp'
     },
     {
       category: 'spices',
       group: 'Spice Powders',
       title: 'Shama Dhania Powder (Coriander Powder)',
       pack: '100g x 20\n400g x 10\n1kg x 6',
-      image: 'https://res.cloudinary.com/wy4nkkqq/image/upload/v1789051977/dhania_powdr.png'
+      image: '/assets/cloudinary-shama/spices/dhania-powdr-557cd7c15fdc.webp'
     },
     {
       category: 'spices',
       group: 'Whole Spices & Seeds',
       title: 'Shama Dhania Whole (Coriander Seeds)',
       pack: '100g x 20\n200g\n400g x 10\n750g\n1kg x 6',
-      image: 'https://res.cloudinary.com/wy4nkkqq/image/upload/v1789051981/dhania_whole.png'
+      image: '/assets/cloudinary-shama/spices/dhania-whole-56cb34161cf6.webp'
     },
     {
       category: 'spices',
@@ -1078,56 +1078,56 @@ productData.push(...supplementalData);
       group: 'Masalas & Curry Blends',
       title: 'Shama Garam Masala Whole',
       pack: '100g x 20\n200g x 10\n400g x 10\n1kg x 6',
-      image: 'https://res.cloudinary.com/wy4nkkqq/image/upload/v1789051970/garam_masala_whole.png'
+      image: '/assets/cloudinary-shama/spices/garam-masala-whole-3730b85e8056.webp'
     },
     {
       category: 'spices',
       group: 'Spice Powders',
       title: 'Shama Garlic Powder',
       pack: '100g x 20\n400g x 10\n1kg x 6',
-      image: 'https://res.cloudinary.com/wy4nkkqq/image/upload/v1789051971/garlc_powde.png'
+      image: '/assets/cloudinary-shama/spices/garlc-powde-440ad337c04c.webp'
     },
     {
       category: 'spices',
       group: 'Spice Powders',
       title: 'Shama Ginger Powder',
       pack: '100g x 20\n400g x 10\n1kg x 6',
-      image: 'https://res.cloudinary.com/wy4nkkqq/image/upload/v1789051974/ginger_powder.png'
+      image: '/assets/cloudinary-shama/spices/ginger-powder-1298704d8c20.webp'
     },
     {
       category: 'spices',
       group: 'Whole Spices & Seeds',
       title: 'Shama Green Cardamom',
       pack: '3346C - 50g x 20\n3568C - 200g x 10\n3742C - 750g x 6',
-      image: 'https://res.cloudinary.com/wy4nkkqq/image/upload/v1789051975/green_cardemom.png'
+      image: '/assets/cloudinary-shama/spices/green-cardemom-b42b0dc73633.webp'
     },
     {
       category: 'spices',
       group: 'Spice Powders',
       title: 'Shama Haldi Powder (Turmeric Powder)',
       pack: '3230C - 100g x 20\n3452C - 400g x 10\n3643C - 1kg x 6',
-      image: 'https://res.cloudinary.com/wy4nkkqq/image/upload/v1789051977/haldi_powder.png'
+      image: '/assets/cloudinary-shama/spices/haldi-powder-95d8ec2f7fa6.webp'
     },
     {
       category: 'spices',
       group: 'Spice Powders',
       title: 'Shama Jeera Powder (Cumin)',
       pack: '3184C - 100g x 20\n3384C - 400g x 10\n3599C - 1kg x 6',
-      image: 'https://res.cloudinary.com/wy4nkkqq/image/upload/v1789051978/jeera_pwdr.png'
+      image: '/assets/cloudinary-shama/spices/jeera-pwdr-3d7e9d0a3df6.webp'
     },
     {
       category: 'spices',
       group: 'Whole Spices & Seeds',
       title: 'Shama Jeera Whole (Cumin)',
       pack: '3292C - 100g x 20\n3513C - 400g x 10\n3698C - 1kg x 6',
-      image: 'https://res.cloudinary.com/wy4nkkqq/image/upload/v1789051980/jeera_whole.png'
+      image: '/assets/cloudinary-shama/spices/jeera-whole-7984dda84081.webp'
     },
     {
       category: 'spices',
       group: 'Whole Spices & Seeds',
       title: 'Shama Kalonji (Nigella Seeds)',
       pack: '2950C - 100g x 20\n2967C - 300g x 10\n800g',
-      image: 'https://res.cloudinary.com/wy4nkkqq/image/upload/v1789051981/kalonji.png'
+      image: '/assets/cloudinary-shama/spices/kalonji-c5d7df0557cd.webp'
     },
     {
       category: 'spices',
@@ -1141,35 +1141,35 @@ productData.push(...supplementalData);
       group: 'Masalas & Curry Blends',
       title: 'Shama Madras Curry Hot',
       pack: '100g x 20\n400g x 10\n1kg x 6',
-      image: 'https://res.cloudinary.com/wy4nkkqq/image/upload/v1789051984/madras_curry_hot.png'
+      image: '/assets/cloudinary-shama/spices/madras-curry-hot-d1a56ca66b1f.webp'
     },
     {
       category: 'spices',
       group: 'Masalas & Curry Blends',
       title: 'Shama Madras Curry Mild',
       pack: '100g x 20\n400g x 10\n1kg x 6',
-      image: 'https://res.cloudinary.com/wy4nkkqq/image/upload/v1789051983/madras_curry_mild.png'
+      image: '/assets/cloudinary-shama/spices/madras-curry-mild-54fa6fddf531.webp'
     },
     {
       category: 'spices',
       group: 'Whole Spices & Seeds',
       title: 'Shama Methi Seeds (Fenugreek)',
       pack: '3285C - 100g x 20\n3506C - 400g x 10\n3681C - 1kg x 6',
-      image: 'https://res.cloudinary.com/wy4nkkqq/image/upload/v1789051983/methi_seeds.png'
+      image: '/assets/cloudinary-shama/spices/methi-seeds-7aebf31a027a.webp'
     },
     {
       category: 'spices',
       group: 'Whole Spices & Seeds',
       title: 'Shama Saunf (Fennel Seeds)',
       pack: '3247C - 100g x 20\n3469C - 400g x 10\n3650C - 1kg x 6',
-      image: 'https://res.cloudinary.com/wy4nkkqq/image/upload/v1789051985/saunf.png'
+      image: '/assets/cloudinary-shama/spices/saunf-cbcc990a6a38.webp'
     },
     {
       category: 'spices',
       group: 'Whole Spices & Seeds',
       title: 'Shama Star Anise',
       pack: '2868C - 50g x 20\n500g',
-      image: 'https://res.cloudinary.com/wy4nkkqq/image/upload/v1789051986/star_anise.png'
+      image: '/assets/cloudinary-shama/spices/star-anise-ca0bcdf71e18.webp'
     },
     {
       category: 'spices',
@@ -1183,7 +1183,7 @@ productData.push(...supplementalData);
       group: 'Masalas & Curry Blends',
       title: 'Shama Tandoori Masala',
       pack: '3223C - 100g x 20\n3445C - 400g x 10\n3636C - 1kg x 6',
-      image: 'https://res.cloudinary.com/wy4nkkqq/image/upload/v1789051968/tandoori_masala.png'
+      image: '/assets/cloudinary-shama/spices/tandoori-masala-59576426ffc6.webp'
     },
     {"category":"spices","group":"Whole Spices & Seeds","title":"Shama Brown Mustard Seed","pack":"400g","image":"/assets/spices/shama-brown-mustard-seed-400g.webp"},
     {"category":"spices","group":"Whole Spices & Seeds","title":"Shama Chilli Whole Red","pack":"Contact us for available pack sizes","image":"/assets/spices/shama-chilli-whole-red.webp"},
@@ -1218,15 +1218,15 @@ productData.push(...supplementalData);
 (() => {
   if (typeof productData === 'undefined' || !Array.isArray(productData)) return;
   const tea = [
-    {category:'tea',brand:'Shama',title:'Shama Premium Gold Tea',pack:'1kg',image:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1791292823/Shama_Premium_gold_Tea_1kg.png'},
-    {category:'tea',brand:'Shama',title:'Shama Premium Gold Tea',pack:'500g',image:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1791292824/Shama_Premium_gold_Tea_500g.png'},
-    {category:'tea',brand:'Shama',title:'Shama Premium Gold Tea',pack:'300g',image:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1791292824/Shama_Premium_gold_Tea_300g.png'},
-    {category:'tea',brand:'Shama',title:'Shama Pink Tea',pack:'20 pcs',image:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1791292824/Shama_pink_tea_20pcs.png'},
-    {category:'tea',brand:'PG Tips',title:'PG Tips Tea Bags',pack:'300 tea bags',image:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1791030636/PG_Tea_300_Bag.png'},
-    {category:'tea',brand:'Mokhtar',title:'Mokhtar Green Tea',pack:'24 x 500g',image:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1791030636/Mokhtar_Green_Tea_24x500g.png'},
-    {category:'tea',brand:'Tapal',title:'Tapal Danedar Tea Bags',pack:'300 tea bags',image:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1791030635/Tapal_Tea_Danedar_300_s.png'},
-    {category:'tea',brand:'Tapal',title:'Tapal Black Tea Jar',pack:'450g',image:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1791030635/Tapal_Th%C3%A9_Noir_en_Vrac_Bocal_Black_Tea_Jar_450g.png'},
-    {category:'tea',brand:'Tapal',title:'Tapal Danedar Loose Tea Jar',pack:'1kg',image:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1791030634/Tapal_Tea_Danedar_Jar_Loose_1kg.png'}
+    {category:'tea',brand:'Shama',title:'Shama Premium Gold Tea',pack:'1kg',image:'/assets/cloudinary-shama/tea/shama-premium-gold-tea-1kg-45a0cf5267cb.webp'},
+    {category:'tea',brand:'Shama',title:'Shama Premium Gold Tea',pack:'500g',image:'/assets/cloudinary-shama/tea/shama-premium-gold-tea-500g-ebda47ccc9c3.webp'},
+    {category:'tea',brand:'Shama',title:'Shama Premium Gold Tea',pack:'300g',image:'/assets/cloudinary-shama/tea/shama-premium-gold-tea-300g-224d6a4dd025.webp'},
+    {category:'tea',brand:'Shama',title:'Shama Pink Tea',pack:'20 pcs',image:'/assets/cloudinary-shama/tea/shama-pink-tea-20pcs-70233d13daf9.webp'},
+    {category:'tea',brand:'PG Tips',title:'PG Tips Tea Bags',pack:'300 tea bags',image:'/assets/cloudinary-shama/tea/pg-tea-300-bag-951b1ef25c55.webp'},
+    {category:'tea',brand:'Mokhtar',title:'Mokhtar Green Tea',pack:'24 x 500g',image:'/assets/cloudinary-shama/tea/mokhtar-green-tea-24x500g-2334ec5320ed.webp'},
+    {category:'tea',brand:'Tapal',title:'Tapal Danedar Tea Bags',pack:'300 tea bags',image:'/assets/cloudinary-shama/tea/tapal-tea-danedar-300-s-9afe9bc0b38d.webp'},
+    {category:'tea',brand:'Tapal',title:'Tapal Black Tea Jar',pack:'450g',image:'/assets/cloudinary-shama/tea/tapal-the-noir-en-vrac-bocal-black-tea-jar-450g-db2a14344e2d.webp'},
+    {category:'tea',brand:'Tapal',title:'Tapal Danedar Loose Tea Jar',pack:'1kg',image:'/assets/cloudinary-shama/tea/tapal-tea-danedar-jar-loose-1kg-b76389945386.webp'}
   ];
   for (let i = productData.length - 1; i >= 0; i--) {
     if (productData[i]?.category === 'tea') productData.splice(i, 1);
@@ -1239,62 +1239,62 @@ productData.push(...supplementalData);
 (() => {
   if (typeof productData === 'undefined' || !Array.isArray(productData)) return;
   const miscItems = [
-    {category:'misc',title:'Shama Lemon Dressing',pack:'400ml',image:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1789464145/Shama_lemon_dressing_400ml.png'},
-    {category:'misc',title:'Shama Lemon Juice',pack:'200ml',image:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1789464146/Shama_lemon_juice_200ml.png'},
-    {category:'misc',title:'Shama Mouth Freshener',pack:'Contact us for available pack sizes',image:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1789464146/Shama_Mouth_Freshener.png'},
-    {category:'misc',title:'Shama Kewra Water',pack:'Contact us for available pack sizes',image:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1789464147/Shama_Kewra_Water.png'},
-    {category:'misc',title:'Shama Baking Powder',pack:'800g',image:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1789464148/Shama_baking_powder_800gm.png'},
-    {category:'misc',title:'Shama Vinegar',pack:'Contact us for available pack sizes',image:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1789464148/Shama_Vinegar.png'},
-    {category:'misc',title:'Shama Baking Soda',pack:'800g',image:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1789464149/Shama_baking_soda_800gm.png'},
-    {category:'misc',title:'Shama Pehalwan Rewari',pack:'Contact us for available pack sizes',image:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1789464149/Shama_Pehalwan_Rewari.png'},
+    {category:'misc',title:'Shama Lemon Dressing',pack:'400ml',image:'/assets/cloudinary-shama/miscellaneous/shama-lemon-dressing-400ml-ed2cb362b05f.webp'},
+    {category:'misc',title:'Shama Lemon Juice',pack:'200ml',image:'/assets/cloudinary-shama/miscellaneous/shama-lemon-juice-200ml-e39272a63227.webp'},
+    {category:'misc',title:'Shama Mouth Freshener',pack:'Contact us for available pack sizes',image:'/assets/cloudinary-shama/miscellaneous/shama-mouth-freshener-861173c4b448.webp'},
+    {category:'misc',title:'Shama Kewra Water',pack:'Contact us for available pack sizes',image:'/assets/cloudinary-shama/miscellaneous/shama-kewra-water-ec0aeb0d377b.webp'},
+    {category:'misc',title:'Shama Baking Powder',pack:'800g',image:'/assets/cloudinary-shama/miscellaneous/shama-baking-powder-800gm-325dac223f98.webp'},
+    {category:'misc',title:'Shama Vinegar',pack:'Contact us for available pack sizes',image:'/assets/cloudinary-shama/miscellaneous/shama-vinegar-eeeaade9c22b.webp'},
+    {category:'misc',title:'Shama Baking Soda',pack:'800g',image:'/assets/cloudinary-shama/miscellaneous/shama-baking-soda-800gm-d7e08a269093.webp'},
+    {category:'misc',title:'Shama Pehalwan Rewari',pack:'Contact us for available pack sizes',image:'/assets/cloudinary-shama/miscellaneous/shama-pehalwan-rewari-664c7f4bb557.webp'},
     {category:'misc',title:'Shama Black Salt',pack:'400g',image:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1789464150/Shama_black_salt_400gm.png'},
-    {category:'misc',title:'Shama Lime Juice',pack:'200ml',image:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1789464150/Shama_lime_juice_200ml.png'},
-    {category:'misc',title:'Shama Roasted Vermicelli',pack:'400g',image:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1791464301/Shama_roasted_vermicelli_400g.png'},
-    {"category":"misc","title":"Shama Plain Vermicelli","pack":"400g","image":"https://res.cloudinary.com/wy4nkkqq/image/upload/v1791464303/Shama_plain_vermicelli_400g.png"},
-    {"category":"misc","title":"Shama Colour Flavoured Vermicelli","pack":"400g","image":"https://res.cloudinary.com/wy4nkkqq/image/upload/v1791464304/Shama_colour_flavored_vermicelli_400g.png"},
-    {category:'misc',title:'Shama Sweet Fennel Seed',pack:'Contact us for available pack sizes',image:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1789464151/Shama_Sweet_Fennel_Seed.png'},
-    {category:'misc',title:'Shama Himalayan Pink Salt Fine',pack:'Contact us for available pack sizes',image:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1789464152/Shama_Himalayan_Pink_Salt_FINE.png'},
-    {category:'misc',title:'Shama Black Pepper',pack:'100g',image:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1789464152/Shama_black_ppr_100gm.png'},
-    {category:'misc',title:'Shama Himalayan Pink Salt',pack:'1kg',image:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1789464153/Shama_himalayan_pink_salt_1kg.png'},
-    {category:'misc',title:'Shama Himalayan Pink Salt Coarse',pack:'Contact us for available pack sizes',image:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1789464153/Shama_Himalayan_Pink_Salt_COARSE.png'},
-    {category:'misc',title:'Shama Himalayan Pink Salt Pouch',pack:'1kg',image:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1789464154/Shama_himalayan_pink_salt_pouch_1kg.png'},
-    {category:'misc',title:'Shama Himalayan Pink Salt Jar',pack:'1kg',image:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1789464154/Shama_himalayan_pink_salt_jar_1kg.png'},
-    {category:'misc',title:'Shama Himalayan Pink Salt',pack:'Contact us for available pack sizes',image:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1789464155/Shama_himalayan_pink_salt.png'},
-    {category:'misc',title:'Shama Golden Fried Onions',pack:'1kg',image:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1789466470/Shama_fried_onion_1kg.png'},
-    {category:'misc',title:'Shama Jaggery Gur',pack:'500g',image:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1789466631/Shama_jaggery_gur_500g.png'},
-    {category:'misc',title:'Shama Shakkar',pack:'500g',image:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1789466633/Shama_shakkar_500g.png'},
-    {category:'misc',title:'Shama Seedless Tamarind (Imli)',pack:'400g',image:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1789466633/Shama_imli_400g.png'},
-    {category:'misc',title:'Shama Himalayan Pink Salt — New Pack',pack:'Contact us for available pack sizes',image:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1789678912/Shama_himalayn_pink_salt.png'},
-    {category:'misc',title:'Shama Masala Roasted Chana',pack:'400g',image:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1791544573/Shama_masala_roasted_chana_400g.png'},
-    {category:'misc',title:'Shama Hing Jeera Roasted Chana',pack:'400g',image:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1791546608/Shama_hing_jeera_roasted_chana_400g.png'},
-    {category:'misc',title:'Shama Chilli Garlic Roasted Chana',pack:'400g',image:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1791546605/Shama_chilli_garlic_roasted_chana_400g.png'},
-    {category:'misc',title:'Shama Lime Pudina Roasted Chana',pack:'400g',image:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1791544805/Shama_lime_pudina_roasted_chana_400g.png'},
-    {category:'misc',title:'Shama Roasted Chana Without Skin',pack:'400g',image:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1791544579/Shama_roasted_chana_without_skin_400g.png'},
-    {category:'misc',title:'Shama Paneer Dodi Phool',pack:'100g',image:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1789678914/Shama_paneer_dodi_phool_100g.png'},
-    {category:'misc',title:'Kody Peeled Tomatoes',pack:'Contact us for available pack sizes',image:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1789678914/Shama_kodi_peeled_tomato.png'},
+    {category:'misc',title:'Shama Lime Juice',pack:'200ml',image:'/assets/cloudinary-shama/miscellaneous/shama-lime-juice-200ml-78037fe41f12.webp'},
+    {category:'misc',title:'Shama Roasted Vermicelli',pack:'400g',image:'/assets/cloudinary-shama/miscellaneous/shama-roasted-vermicelli-400g-aba53cd5d99c.webp'},
+    {"category":"misc","title":"Shama Plain Vermicelli","pack":"400g","image":"/assets/cloudinary-shama/miscellaneous/shama-plain-vermicelli-400g-480cb6455086.webp"},
+    {"category":"misc","title":"Shama Colour Flavoured Vermicelli","pack":"400g","image":"/assets/cloudinary-shama/miscellaneous/shama-colour-flavored-vermicelli-400g-785ae4146fe1.webp"},
+    {category:'misc',title:'Shama Sweet Fennel Seed',pack:'Contact us for available pack sizes',image:'/assets/cloudinary-shama/miscellaneous/shama-sweet-fennel-seed-af79fbf7a0c3.webp'},
+    {category:'misc',title:'Shama Himalayan Pink Salt Fine',pack:'Contact us for available pack sizes',image:'/assets/cloudinary-shama/miscellaneous/shama-himalayan-pink-salt-fine-8f2d0ca6dd51.webp'},
+    {category:'misc',title:'Shama Black Pepper',pack:'100g',image:'/assets/cloudinary-shama/miscellaneous/shama-black-ppr-100gm-37feedbd6355.webp'},
+    {category:'misc',title:'Shama Himalayan Pink Salt',pack:'1kg',image:'/assets/cloudinary-shama/miscellaneous/shama-himalayan-pink-salt-1kg-9c15d6127fd6.webp'},
+    {category:'misc',title:'Shama Himalayan Pink Salt Coarse',pack:'Contact us for available pack sizes',image:'/assets/cloudinary-shama/miscellaneous/shama-himalayan-pink-salt-coarse-a5fc2926fbf2.webp'},
+    {category:'misc',title:'Shama Himalayan Pink Salt Pouch',pack:'1kg',image:'/assets/cloudinary-shama/miscellaneous/shama-himalayan-pink-salt-pouch-1kg-83e49e391d38.webp'},
+    {category:'misc',title:'Shama Himalayan Pink Salt Jar',pack:'1kg',image:'/assets/cloudinary-shama/miscellaneous/shama-himalayan-pink-salt-jar-1kg-a29f124f979c.webp'},
+    {category:'misc',title:'Shama Himalayan Pink Salt',pack:'Contact us for available pack sizes',image:'/assets/cloudinary-shama/miscellaneous/shama-himalayan-pink-salt-073d33a86102.webp'},
+    {category:'misc',title:'Shama Golden Fried Onions',pack:'1kg',image:'/assets/cloudinary-shama/miscellaneous/shama-fried-onion-1kg-113e86531276.webp'},
+    {category:'misc',title:'Shama Jaggery Gur',pack:'500g',image:'/assets/cloudinary-shama/miscellaneous/shama-jaggery-gur-500g-58489dc43cfd.webp'},
+    {category:'misc',title:'Shama Shakkar',pack:'500g',image:'/assets/cloudinary-shama/miscellaneous/shama-shakkar-500g-94d914fe1ab4.webp'},
+    {category:'misc',title:'Shama Seedless Tamarind (Imli)',pack:'400g',image:'/assets/cloudinary-shama/miscellaneous/shama-imli-400g-edb438b80cb9.webp'},
+    {category:'misc',title:'Shama Himalayan Pink Salt — New Pack',pack:'Contact us for available pack sizes',image:'/assets/cloudinary-shama/miscellaneous/shama-himalayn-pink-salt-8d9c342097eb.webp'},
+    {category:'misc',title:'Shama Masala Roasted Chana',pack:'400g',image:'/assets/cloudinary-shama/miscellaneous/shama-masala-roasted-chana-400g-c50c67336478.webp'},
+    {category:'misc',title:'Shama Hing Jeera Roasted Chana',pack:'400g',image:'/assets/cloudinary-shama/miscellaneous/shama-hing-jeera-roasted-chana-400g-559221bf1fd9.webp'},
+    {category:'misc',title:'Shama Chilli Garlic Roasted Chana',pack:'400g',image:'/assets/cloudinary-shama/miscellaneous/shama-chilli-garlic-roasted-chana-400g-3fc36a5060c9.webp'},
+    {category:'misc',title:'Shama Lime Pudina Roasted Chana',pack:'400g',image:'/assets/cloudinary-shama/miscellaneous/shama-lime-pudina-roasted-chana-400g-973f94183fbd.webp'},
+    {category:'misc',title:'Shama Roasted Chana Without Skin',pack:'400g',image:'/assets/cloudinary-shama/miscellaneous/shama-roasted-chana-without-skin-400g-7bd86ba98534.webp'},
+    {category:'misc',title:'Shama Paneer Dodi Phool',pack:'100g',image:'/assets/cloudinary-shama/miscellaneous/shama-paneer-dodi-phool-100g-c63e65a0bb9a.webp'},
+    {category:'misc',title:'Kody Peeled Tomatoes',pack:'Contact us for available pack sizes',image:'/assets/cloudinary-shama/miscellaneous/shama-kodi-peeled-tomato-319aee83d7fb.webp'},
 
     // Food colours — newly added to Cloudinary on 2026-10-01.
-    {category:'misc',title:'Shama Food Colour Orange',pack:'25g',image:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1790866950/Shama_Food_Colour_Orange_25g.png'},
-    {category:'misc',title:'Shama Food Colour Deep Orange',pack:'500g',image:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1790866951/Shama_Food_Colour_Deep_Orange_500g.png'},
-    {category:'misc',title:'Shama Food Colour Yellow',pack:'25g',image:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1790866952/Shama_Food_Colour_Yellow_25g.png'},
-    {category:'misc',title:'Shama Food Colour Red',pack:'25g',image:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1790866953/Shama_Food_Colour_Red_25g.png'},
-    {category:'misc',title:'Schani Red Food Color',pack:'500g',image:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1790866954/Schani_Red_Food_Color_500g.png'},
-    {category:'misc',title:'Tropical Sun Orange Food Colour',pack:'500g',image:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1790866955/Tropical_SUN_Ornage_Food_Colour_500g.png'},
-    {category:'misc',title:'Tropical Sun Bright Red Food Colour',pack:'500g',image:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1790866955/Tropical_SUN_Bright_Red_Food_Colour_500g.png'},
-    {category:'misc',title:'Tropical Sun Egg Yellow Food Color',pack:'500g',image:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1790866955/Tropical_SUN_Egg_Yellow_Food_Color_500g.png'},
-    {category:'misc',title:'TRS Food Colour Deep Orange',pack:'25g',image:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1790866956/TRS_Food_Colour_Deep_Orange_25g.png'},
-    {category:'misc',title:'SOP Yellow Food Color',pack:'400g',image:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1790866957/SOP_Yellow_Food_Color_400g.png'},
-    {category:'misc',title:'TRS Food Colour Yellow',pack:'25g',image:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1790866958/TRS_Food_Colour_Yellow_25g.png'},
-    {category:'misc',title:'TRS Food Color Green',pack:'500g',image:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1790866959/TRS_Food_Color_Green_500g.png'},
-    {category:'misc',title:'Shama Food Colour Yellow',pack:'500g',image:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1790866960/Shama_Food_Colour_Yellow_500g.png'},
-    {category:'misc',title:'TRS Food Colour Green',pack:'25g',image:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1790866960/TRS_Food_Colour_Green_25g.png'},
-    {category:'misc',title:'TRS Food Colour Yellow',pack:'500g',image:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1790866961/TRS_Food_Colour_Yellow_500g.png'},
-    {category:'misc',title:'TRS Food Colour Red',pack:'500g',image:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1790866962/TRS_Food_Colour_Red_500g.png'},
-    {category:'misc',title:'SOP Orange Food Colour',pack:'400g',image:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1790866963/SOP_Orange_Food_Colour_400g.png'},
-    {category:'misc',title:'TRS Food Colour Deep Orange',pack:'500g',image:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1790866964/TRS_Food_Colour_Deep_Orange_500g.png'},
-    {category:'misc',title:'TRS Food Colour Red',pack:'25g',image:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1790866967/TRS_Food_Colour_Red_25g.png'},
+    {category:'misc',title:'Shama Food Colour Orange',pack:'25g',image:'/assets/cloudinary-shama/miscellaneous/shama-food-colour-orange-25g-727764b9d2d6.webp'},
+    {category:'misc',title:'Shama Food Colour Deep Orange',pack:'500g',image:'/assets/cloudinary-shama/miscellaneous/shama-food-colour-deep-orange-500g-34e35f0765d2.webp'},
+    {category:'misc',title:'Shama Food Colour Yellow',pack:'25g',image:'/assets/cloudinary-shama/miscellaneous/shama-food-colour-yellow-25g-39d8fc1e0395.webp'},
+    {category:'misc',title:'Shama Food Colour Red',pack:'25g',image:'/assets/cloudinary-shama/miscellaneous/shama-food-colour-red-25g-d41cc87a2c99.webp'},
+    {category:'misc',title:'Schani Red Food Color',pack:'500g',image:'/assets/cloudinary-shama/miscellaneous/schani-red-food-color-500g-00b86f06c7e2.webp'},
+    {category:'misc',title:'Tropical Sun Orange Food Colour',pack:'500g',image:'/assets/cloudinary-shama/miscellaneous/tropical-sun-ornage-food-colour-500g-df5d2cac8cd4.webp'},
+    {category:'misc',title:'Tropical Sun Bright Red Food Colour',pack:'500g',image:'/assets/cloudinary-shama/miscellaneous/tropical-sun-bright-red-food-colour-500g-39480d9ca220.webp'},
+    {category:'misc',title:'Tropical Sun Egg Yellow Food Color',pack:'500g',image:'/assets/cloudinary-shama/miscellaneous/tropical-sun-egg-yellow-food-color-500g-612734e131d7.webp'},
+    {category:'misc',title:'TRS Food Colour Deep Orange',pack:'25g',image:'/assets/cloudinary-shama/miscellaneous/trs-food-colour-deep-orange-25g-40be06d221dc.webp'},
+    {category:'misc',title:'SOP Yellow Food Color',pack:'400g',image:'/assets/cloudinary-shama/miscellaneous/sop-yellow-food-color-400g-701fb55c7821.webp'},
+    {category:'misc',title:'TRS Food Colour Yellow',pack:'25g',image:'/assets/cloudinary-shama/miscellaneous/trs-food-colour-yellow-25g-beada8b97bbc.webp'},
+    {category:'misc',title:'TRS Food Color Green',pack:'500g',image:'/assets/cloudinary-shama/miscellaneous/trs-food-color-green-500g-2548d2b69cb6.webp'},
+    {category:'misc',title:'Shama Food Colour Yellow',pack:'500g',image:'/assets/cloudinary-shama/miscellaneous/shama-food-colour-yellow-500g-52ed618988d9.webp'},
+    {category:'misc',title:'TRS Food Colour Green',pack:'25g',image:'/assets/cloudinary-shama/miscellaneous/trs-food-colour-green-25g-c14166f0fe02.webp'},
+    {category:'misc',title:'TRS Food Colour Yellow',pack:'500g',image:'/assets/cloudinary-shama/miscellaneous/trs-food-colour-yellow-500g-bed543a4cf9a.webp'},
+    {category:'misc',title:'TRS Food Colour Red',pack:'500g',image:'/assets/cloudinary-shama/miscellaneous/trs-food-colour-red-500g-b9caeaf3bf50.webp'},
+    {category:'misc',title:'SOP Orange Food Colour',pack:'400g',image:'/assets/cloudinary-shama/miscellaneous/sop-orange-food-colour-400g-55f45ddc8e57.webp'},
+    {category:'misc',title:'TRS Food Colour Deep Orange',pack:'500g',image:'/assets/cloudinary-shama/miscellaneous/trs-food-colour-deep-orange-500g-16d3fb2d27bf.webp'},
+    {category:'misc',title:'TRS Food Colour Red',pack:'25g',image:'/assets/cloudinary-shama/miscellaneous/trs-food-colour-red-25g-97ab4b6199f6.webp'},
     // Latest Miscellaneous additions from Cloudinary (moved out of Spices).
-    {category:'misc',title:'Shama Gond Katira',pack:'100g',image:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1791380819/Shama_gond_katira_100g.png'},
+    {category:'misc',title:'Shama Gond Katira',pack:'100g',image:'/assets/cloudinary-shama/miscellaneous/shama-gond-katira-100g-ad0078fbff66.webp'},
     {category:'misc',title:'Shama Soya Chunks',pack:'500g',image:'/assets/miscellaneous/shama-soya-chunks-500g.webp'},
     {category:'misc',title:'Shama Sabudana (Tapioca / Sago Seeds)',pack:'500g',image:'/assets/miscellaneous/shama-sabudana-500g.webp'},
     {category:'misc',title:'Shama Soya Chunks',pack:'250g',image:'/assets/miscellaneous/shama-soya-chunks-250g.webp'},
@@ -1303,10 +1303,10 @@ productData.push(...supplementalData);
     {category:'misc',title:'Shama Anardana Seeds (Pomegranate Seeds)',pack:'100g',image:'/assets/miscellaneous/shama-anardana-seeds-100g.webp'},
 
     {category:'misc',title:'Shama Tukmaria (Basil Seeds)',pack:'100g',image:'/assets/miscellaneous/shama-tukmaria-100g.webp'},
-    {category:'misc',title:'Shama Madras Plain Papad',pack:'200g',image:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1791292377/Shama_Madras_plain_papad_200g.png'},
-    {category:'misc',title:'Shama Pepper Papad',pack:'200g',image:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1791292377/Shama_pepper_papad_200g.png'},
-    {category:'misc',title:'Shama Chilli Papad',pack:'200g',image:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1791292377/Shama_chilli_papad_200g.png'},
-    {category:'misc',title:'Shama Jeera Papad',pack:'200g',image:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1791292377/Shama_jeera_papad_200g.png'}
+    {category:'misc',title:'Shama Madras Plain Papad',pack:'200g',image:'/assets/cloudinary-shama/miscellaneous/shama-madras-plain-papad-200g-54f425ed02fd.webp'},
+    {category:'misc',title:'Shama Pepper Papad',pack:'200g',image:'/assets/cloudinary-shama/miscellaneous/shama-pepper-papad-200g-365d7eddbe5f.webp'},
+    {category:'misc',title:'Shama Chilli Papad',pack:'200g',image:'/assets/cloudinary-shama/miscellaneous/shama-chilli-papad-200g-d77ff5751cb2.webp'},
+    {category:'misc',title:'Shama Jeera Papad',pack:'200g',image:'/assets/cloudinary-shama/miscellaneous/shama-jeera-papad-200g-af84092a68f1.webp'}
   ];
   for (let i = productData.length - 1; i >= 0; i--) {
     if (productData[i]?.category === 'misc') productData.splice(i, 1);
@@ -1322,22 +1322,22 @@ const categories=[
  {slug:'rice',name:'Rice',desc:'Fragrant grains for every table',image:'/assets/rice/shama-super-kernal-par-boiled-sella-rice-5kg.webp'},
  {slug:'spices',name:'Spices',desc:'Bold aroma, vivid colour',image:'/assets/spices/shama-garam-masala-powder.webp'},
  {slug:'sauces',name:'Sauces, Pickles & Pastes',desc:'Curry pastes, pickles, chutneys and sauces',image:(productData.find(x=>x.category==='sauces')||{}).image||'https://images.unsplash.com/photo-1601050690117-94f5f6fa8bd7?auto=format&fit=crop&w=900&q=85'},
- {slug:'misc',name:'Miscellaneous',desc:'Roasted chana, vermicelli, papad, food colours and pantry essentials',image:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1789466470/Shama_fried_onion_1kg.png'},
+ {slug:'misc',name:'Miscellaneous',desc:'Roasted chana, vermicelli, papad, food colours and pantry essentials',image:'/assets/cloudinary-shama/miscellaneous/shama-fried-onion-1kg-113e86531276.webp'},
  {slug:'beverages',name:'Beverages',desc:'Refreshingly familiar',image:'https://images.unsplash.com/photo-1544787219-7f47ccb76574?auto=format&fit=crop&w=900&q=85'},
- {slug:'tea',name:'Tea',desc:'Premium black tea, pink tea, green tea and classic tea bags',image:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1791292824/Shama_Premium_gold_Tea_500g.png'},
- {slug:'sugar',name:'Sugar',desc:'Sugar, gur and traditional shakkar products',image:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1791031373/Shama_Desi_Shakkar_500g.png'},
- {slug:'wines',name:'Wines',desc:'Red, white and rosé wines, liqueurs and beers',image:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1791192902/Grover_Wine_Red_Alc._13.5_vol_75cl.png'},
+ {slug:'tea',name:'Tea',desc:'Premium black tea, pink tea, green tea and classic tea bags',image:'/assets/cloudinary-shama/tea/shama-premium-gold-tea-500g-ebda47ccc9c3.webp'},
+ {slug:'sugar',name:'Sugar',desc:'Sugar, gur and traditional shakkar products',image:'/assets/cloudinary-shama/sugar/shama-desi-shakkar-500g-53dad935a769.webp'},
+ {slug:'wines',name:'Wines',desc:'Red, white and rosé wines, liqueurs and beers',image:'/assets/cloudinary-shama/wines/grover-wine-red-alc-13-5-vol-75cl-cee439b127e9.webp'},
  {slug:'flour',name:'Flour & Lentiles',desc:'Wholesome kitchen staples',image:'/assets/flour/shama-chakki-gold-atta-5kg.webp?v=20261019-flour-newzip-v2'},
- {slug:'frozen',name:'Frozen',desc:'Convenience, without compromise',image:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1790625180/Shama_Chicken_tikka_Samosa_20Pcs.png'},
+ {slug:'frozen',name:'Frozen',desc:'Convenience, without compromise',image:'/assets/cloudinary-shama/frozen/shama-chicken-tikka-samosa-20pcs-fd4740726fb5.webp'},
  {slug:'oils',name:'Oils',desc:'The foundation of great food',image:'https://images.unsplash.com/photo-1474979266404-7eaacbcd87c5?auto=format&fit=crop&w=900&q=85'},
  {slug:'dry-fruits',name:'Dry Fruits',desc:'Naturally rich and satisfying',image:'https://images.unsplash.com/photo-1600189020840-e9918c25269d?auto=format&fit=crop&w=900&q=85'},
- {slug:'laziza',name:'Laziza',desc:'Recipe masalas, dessert mixes and traditional favourites',image:'https://res.cloudinary.com/wy4nkkqq/image/upload/Laziza_biryani_masala_100g.png'},
- {slug:'ahmed',name:'Ahmed',desc:'Sauces, pickles, desserts and pantry favourites',image:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1789652169/Ahmed_tamarind_sauce_300g.png'},
- {slug:'agarbatti',name:'Agarbatti',desc:'Incense sticks and traditional fragrances',image:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1790069154/Metro_3_in_1.png'},
- {slug:'dates',name:'Dates',desc:'Premium date varieties for retail and gifting',image:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1790069276/Shama_Ajwa-Dates-800g.png'},
- {slug:'pataks',name:'Pataks',desc:'Curry pastes and classic cooking sauces',image:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1790069236/Patak_biryani_paste_2.3kg.png'},
- {slug:'cosmetics',name:'Cosmetics',desc:'Beauty, personal care and hygiene essentials',image:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1791542936/johnson_s_baby_oil_200ml.png'},
- {slug:'non-foods',name:'Non Foods',desc:'Commercial tandoors, parts and accessories',image:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1790261684/Shahi_Charcoal_Tandoor_11C_Size_1.png'}];
+ {slug:'laziza',name:'Laziza',desc:'Recipe masalas, dessert mixes and traditional favourites',image:'/assets/cloudinary-shama/laziza/spices/laziza-biryani-masala-100g-0f3666d7ad74.webp'},
+ {slug:'ahmed',name:'Ahmed',desc:'Sauces, pickles, desserts and pantry favourites',image:'/assets/cloudinary-shama/ahmed/ahmed-tamarind-sauce-300g-cc9749dc5eae.webp'},
+ {slug:'agarbatti',name:'Agarbatti',desc:'Incense sticks and traditional fragrances',image:'/assets/cloudinary-shama/agarbatti/metro-3-in-1-d280559e490a.webp'},
+ {slug:'dates',name:'Dates',desc:'Premium date varieties for retail and gifting',image:'/assets/cloudinary-shama/dates/shama-ajwa-dates-800g-734a417a7b85.webp'},
+ {slug:'pataks',name:'Pataks',desc:'Curry pastes and classic cooking sauces',image:'/assets/cloudinary-shama/pataks/patak-biryani-paste-2-3kg-71b7763e2b43.webp'},
+ {slug:'cosmetics',name:'Cosmetics',desc:'Beauty, personal care and hygiene essentials',image:'/assets/cloudinary-shama/cosmetics/johnson-s-baby-oil-200ml-96548335b7a7.webp'},
+ {slug:'non-foods',name:'Non Foods',desc:'Commercial tandoors, parts and accessories',image:'/assets/cloudinary-shama/non-foods/shahi-charcoal-tandoor-11c-size-1-b0fd2000467a.webp'}];
 const fileMap={rice:'rice.html',spices:'spices.html',sauces:'sauces-pastes.html',misc:'miscellaneous.html',beverages:'beverages.html',tea:'tea.html',sugar:'sugar.html',wines:'wines.html',flour:'flour-lentiles.html',frozen:'frozen.html',oils:'oils.html','dry-fruits':'dry-fruits.html',laziza:'laziza.html',ahmed:'ahmed.html',agarbatti:'agarbatti.html',dates:'dates.html',pataks:'pataks.html',cosmetics:'cosmetics.html','non-foods':'non-foods.html'};
 function header(){const page=document.body.dataset.page||'home';return `<div class="announce"><div class="wrap announce-inner"><span><i></i> Wholesale enquiries open</span><p>Authentic flavour across France since 2003</p><a href="mailto:info@shamafr.com">info@shamafr.com ↗</a></div></div><header class="header"><nav class="nav-shell wrap"><a class="brand brand-studio" href="index.html"><span class="brand-emblem"><b>S</b><i></i></span><span><strong>SHAMA</strong><small>INTERNATIONAL</small></span></a><button class="mobile-toggle" aria-label="Open menu"><i></i><i></i></button><div class="navlinks"><a class="${page==='home'?'active':''}" href="index.html"><span>Home</span></a><a class="${page==='about'?'active':''}" href="about.html"><span>About us</span></a><a class="${page==='catalogue'?'active':''}" href="catalogue.html"><span>Catalogue</span></a><div class="drop"><span class="drop-label">Products <b>⌄</b></span><div class="mega-menu"><div class="mega-head"><span>Explore by range</span><a href="catalogue.html">Full catalogue ↗</a></div><div class="mega-grid">${categories.map((c,i)=>`<a href="${fileMap[c.slug]}"><b>${String(i+1).padStart(2,'0')}</b><span><strong>${c.name}</strong><small>${c.desc}</small></span><i>↗</i></a>`).join('')}</div><div class="mega-foot"><span>Need help choosing?</span><a href="contact.html">Talk to our team →</a></div></div></div><a class="${page==='contact'?'active':''}" href="contact.html"><span>Contact</span></a></div><a class="header-cta" href="contact.html"><span>Bulk order</span><b>↗</b></a></nav></header>`}
 function footer(){return `<footer class="footer"><div class="wrap"><div class="footer-grid"><div><a class="brand" href="index.html"><span class="brand-mark"><span>S</span></span>SHAMA</a><p>Authentic foods, trusted quality and traditional flavour—bringing people together since 2003.</p></div><div><h4>Quick links</h4><a href="about.html">About us</a><a href="catalogue.html">Catalogue</a><a href="contact.html">Contact us</a><a href="contact.html">Order now</a></div><div><h4>Headquarters</h4><p>Shama International S.A.S.<br>3, allée de l’Espérance<br>93110 Rosny Sous Bois – France</p><p>01 43 42 05 79 · info@shamafr.com</p></div></div><div class="footer-bottom"><span>© Shama International 2026. All rights reserved.</span><span>SIRET: 449 548 395 00036 · TVA FR71 449 548 395</span></div></div></footer>`}

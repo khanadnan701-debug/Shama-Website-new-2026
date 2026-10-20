@@ -58,7 +58,7 @@ body[data-page="home"] .hero-video-only [data-hero-panel][data-theme="rice"] > i
 body[data-page="home"] .hero-video-only [data-hero-panel][data-theme="rice"] > img{display:block!important;position:absolute!important;inset:0!important;width:100%!important;height:100%!important;object-fit:cover!important;object-position:center!important}
 </style>
 <script id="shama-home-rice-hero-image-script">
-(()=>{const src="https://res.cloudinary.com/wy4nkkqq/image/upload/v1790943588/shama_category_rice_banner_20261002.png";
+(()=>{const src="/assets/cloudinary-shama/category-banners/shama-category-rice-banner-20261002-955336032056.webp";
 const run=()=>{if(document.body?.dataset.page!=="home")return;
 document.querySelectorAll('.hero-video-only [data-hero-panel][data-theme="rice"]').forEach(panel=>{
 panel.querySelectorAll("video").forEach(v=>{try{v.pause()}catch(e){}v.remove()});
@@ -173,27 +173,27 @@ body[data-page="home"] .category-reels .reel-copy{height:54px!important;padding:
 (()=>{const run=()=>{if(document.body?.dataset.page!=="home")return;
 const section=document.querySelector(".category-reels");if(!section)return;
 const items=[
-["Rice","rice.html","https://res.cloudinary.com/wy4nkkqq/image/upload/v1790255518/Shama_Super_Kernal_Par_Boiled_Sella_Rice_5kg.png"],
+["Rice","rice.html","/assets/cloudinary-shama/rice-images-20260910/shama-super-kernal-par-boiled-sella-rice-5kg-8e8a2c1c7e79.webp"],
 ["Spices","spices.html","/assets/spices/shama-garam-masala-powder.webp"],
-["Sauces & Pastes","sauces-pastes.html","https://res.cloudinary.com/wy4nkkqq/image/upload/v1789678774/Shama_Mango_pickle_1kg.png"],
+["Sauces & Pastes","sauces-pastes.html","/assets/cloudinary-shama/paste/shama-mango-pickle-1kg-9c5e9eab9cea.webp"],
 ["Miscellaneous","miscellaneous.html","/assets/shama-misc-fried-onion-premium-20261002.svg?v=1"],
-["Beverages","beverages.html","https://res.cloudinary.com/wy4nkkqq/image/upload/v1789231973/Shama_Basil_Seed_Drink_Watermelon.png"],
+["Beverages","beverages.html","/assets/cloudinary-shama/beverages/shama-basil-seed-drink-watermelon-e22b1546f7ba.webp"],
 ["Flour & Lentils","flour-lentiles.html","/assets/flour/shama-wheat-flour-t55-1kg.webp?v=20261019-flour-newzip-v2"],
-["Frozen","frozen.html","https://res.cloudinary.com/wy4nkkqq/image/upload/v1790625180/Shama_Chicken_tikka_Samosa_20Pcs.png"],
-["Oils","oils.html","https://res.cloudinary.com/wy4nkkqq/image/upload/v1789678755/Shama_sunflower_oil_5ltr.png"],
-["Dry Fruits","dry-fruits.html","https://res.cloudinary.com/wy4nkkqq/image/upload/v1789232085/Shama_Raw_almonds_100gm.png"],
-["Laziza","laziza.html","https://res.cloudinary.com/wy4nkkqq/image/upload/Laziza_biryani_masala_100g.png"],
-["Ahmed","ahmed.html","https://res.cloudinary.com/wy4nkkqq/image/upload/v1789652169/Ahmed_tamarind_sauce_300g.png"],
-["Agarbatti","agarbatti.html","https://res.cloudinary.com/wy4nkkqq/image/upload/v1790934647/Metro_Black_Sandal_Agarbatti.png"],
-["Dates","dates.html","https://res.cloudinary.com/wy4nkkqq/image/upload/v1790069276/Shama_Ajwa-Dates-800g.png"],
-["Pataks","pataks.html","https://res.cloudinary.com/wy4nkkqq/image/upload/v1791033974/Patak_biryani_paste_2.3kg.png"],
-["Cosmetics","cosmetics.html","https://res.cloudinary.com/wy4nkkqq/image/upload/v1789464147/Shama_Rose_Water_250ml.png"],
-["Non Foods","non-foods.html","https://res.cloudinary.com/wy4nkkqq/image/upload/v1790261684/Shahi_Charcoal_Tandoor_11C_Size_1.png"],
-["Divers","divers.html","https://res.cloudinary.com/wy4nkkqq/image/upload/v1790600769/Telephone_ISABGUL_200g.png"],
+["Frozen","frozen.html","/assets/cloudinary-shama/frozen/shama-chicken-tikka-samosa-20pcs-fd4740726fb5.webp"],
+["Oils","oils.html","/assets/cloudinary-shama/oils/shama-sunflower-oil-5ltr-8ba69b6f8d48.webp"],
+["Dry Fruits","dry-fruits.html","/assets/cloudinary-shama/dry-fruits/shama-raw-almonds-100gm-c0af9f54eee6.webp"],
+["Laziza","laziza.html","/assets/cloudinary-shama/laziza/spices/laziza-biryani-masala-100g-0f3666d7ad74.webp"],
+["Ahmed","ahmed.html","/assets/cloudinary-shama/ahmed/ahmed-tamarind-sauce-300g-cc9749dc5eae.webp"],
+["Agarbatti","agarbatti.html","/assets/cloudinary-shama/agarbatti/metro-black-sandal-agarbatti-bf708b22a9ea.webp"],
+["Dates","dates.html","/assets/cloudinary-shama/dates/shama-ajwa-dates-800g-734a417a7b85.webp"],
+["Pataks","pataks.html","/assets/cloudinary-shama/pataks/patak-biryani-paste-2-3kg-71b7763e2b43.webp"],
+["Cosmetics","cosmetics.html","/assets/cloudinary-shama/cosmetics/shama-rose-water-250ml-9fc6b2e6e236.webp"],
+["Non Foods","non-foods.html","/assets/cloudinary-shama/non-foods/shahi-charcoal-tandoor-11c-size-1-b0fd2000467a.webp"],
+["Divers","divers.html","/assets/cloudinary-shama/divers/telephone-isabgul-200g-4b4d290c8270.webp"],
 ["Preserves","preserves.html","/assets/preserves/shama-kesar-mango-plup-kesar.webp"],
-["Sea Food","sea-food.html","https://res.cloudinary.com/wy4nkkqq/image/upload/v1790600837/Gambas_8-12.png"],
-["Savoury Snacks","savoury-snacks.html","https://res.cloudinary.com/wy4nkkqq/image/upload/v1790601081/Shama_Roasted_Corn_Salted_400G.png"],
-["Bakery","bakery.html","https://res.cloudinary.com/wy4nkkqq/image/upload/v1790869503/Cake_Rusk_Coconut_750g.png"]
+["Sea Food","sea-food.html","/assets/cloudinary-shama/sea-food/gambas-8-12-fdb47ab466a9.webp"],
+["Savoury Snacks","savoury-snacks.html","/assets/cloudinary-shama/savoury-snacks/shama-roasted-corn-salted-400g-3ce5d27e8c46.webp"],
+["Bakery","bakery.html","/assets/cloudinary-shama/bakery/cake-rusk-coconut-750g-ac4d5d28489c.webp"]
 ];
 section.classList.add("category-images-only");
 const head=section.querySelector(".reels-head");if(head){head.innerHTML='<div><span class="eyebrow">Catalogue categories</span><h2>Explore every<br>Shama range.</h2></div><p>Product images only. Click any category to open its full collection.</p>'}

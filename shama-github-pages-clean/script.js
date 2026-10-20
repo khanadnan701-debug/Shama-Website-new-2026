@@ -774,224 +774,224 @@ productData.push(...supplementalData);
     "brand": "Shama",
     "title": "Shama Vegetable Samosa",
     "pack": "20 pcs",
-    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1790625184/Shama_Vegetable_Samosa_20_pcs.png"
+    "image": "/assets/cloudinary-shama/frozen/shama-vegetable-samosa-20-pcs-0d77c0adce37.webp"
   },
   {
     "category": "frozen",
     "brand": "Shama",
     "title": "Shama Vegetable Samosa",
     "pack": "50 pcs",
-    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1790625151/Shama_vegetable_Samosa_50_Pcs.png"
+    "image": "/assets/cloudinary-shama/frozen/shama-vegetable-samosa-50-pcs-de0e45a84c7c.webp"
   },
   {
     "category": "frozen",
     "brand": "Shama",
     "title": "Shama Punjabi Potato Samosa",
     "pack": "12 pcs",
-    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1790625164/Shama_Punjabi_potato_samosa_12_Pcs.png"
+    "image": "/assets/cloudinary-shama/frozen/shama-punjabi-potato-samosa-12-pcs-b4a9525e32a6.webp"
   },
   {
     "category": "frozen",
     "brand": "Shama",
     "title": "Shama Lamb Meat Samosa",
     "pack": "20 pcs",
-    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1790625173/Shama_Lamb_Meat_Samosa_20pcs.png.png"
+    "image": "/assets/cloudinary-shama/frozen/shama-lamb-meat-samosa-20pcs-png-137aabbbe5f0.webp"
   },
   {
     "category": "frozen",
     "brand": "Shama",
     "title": "Shama Lamb Meat Samosa",
     "pack": "50 pcs",
-    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1790625184/Shama_Lamb_Meat_Samosa_50_Pcs.png"
+    "image": "/assets/cloudinary-shama/frozen/shama-lamb-meat-samosa-50-pcs-5b18db484029.webp"
   },
   {
     "category": "frozen",
     "brand": "Shama",
     "title": "Shama Chicken Samosa",
     "pack": "50 pcs",
-    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1790625178/Shama_Chicken_Samosa_50_pcs.png"
+    "image": "/assets/cloudinary-shama/frozen/shama-chicken-samosa-50-pcs-ff10be1965d9.webp"
   },
   {
     "category": "frozen",
     "brand": "Shama",
     "title": "Shama Chicken Tikka Samosa",
     "pack": "20 pcs",
-    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1790625180/Shama_Chicken_tikka_Samosa_20Pcs.png"
+    "image": "/assets/cloudinary-shama/frozen/shama-chicken-tikka-samosa-20pcs-fd4740726fb5.webp"
   },
   {
     "category": "frozen",
     "brand": "Shama",
     "title": "Shama Punjabi Style Cocktail Samosa",
     "pack": "3 pcs",
-    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1790625179/Shama_Cocktail_Samosa_3_Pcs.png"
+    "image": "/assets/cloudinary-shama/frozen/shama-cocktail-samosa-3-pcs-3b7adfc354b6.webp"
   },
   {
     "category": "frozen",
     "brand": "Mazedaar",
     "title": "Mazedaar Potato Samosa",
     "pack": "20 pcs",
-    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1791202844/MAZEDAR_Potato_Samosa_20pcs.png"
+    "image": "/assets/cloudinary-shama/frozen/mazedar-potato-samosa-20pcs-64cf364138f4.webp"
   },
   {
     "category": "frozen",
     "brand": "Shama",
     "title": "Shama Vegetable Spring Rolls",
     "pack": "20 pcs",
-    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1790625163/Shama_vegetable_spring_rolls_20_pcs.png"
+    "image": "/assets/cloudinary-shama/frozen/shama-vegetable-spring-rolls-20-pcs-1374fccbf03e.webp"
   },
   {
     "category": "frozen",
     "brand": "Shama",
     "title": "Shama Vegetable Spring Rolls",
     "pack": "50 pcs",
-    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1790625164/Shama_vegetable_spring_rolls_50_Pcs.png"
+    "image": "/assets/cloudinary-shama/frozen/shama-vegetable-spring-rolls-50-pcs-c603b63ab822.webp"
   },
   {
     "category": "frozen",
     "brand": "Shama",
     "title": "Shama Chicken Spring Rolls",
     "pack": "20 pcs",
-    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1790625181/Shama_chicken_Spring_Rolls_20_Pcs.png"
+    "image": "/assets/cloudinary-shama/frozen/shama-chicken-spring-rolls-20-pcs-29cf6205e14d.webp"
   },
   {
     "category": "frozen",
     "brand": "Shama",
     "title": "Shama Chicken Spring Rolls",
     "pack": "50 pcs",
-    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1790625182/Shama_Chicken_Spring_Rolls_50_Pcs.png"
+    "image": "/assets/cloudinary-shama/frozen/shama-chicken-spring-rolls-50-pcs-5d4935413fd1.webp"
   },
   {
     "category": "frozen",
     "brand": "Shama",
     "title": "Shama Lamb Meat Spring Rolls",
     "pack": "20 pcs",
-    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1790625172/Shama_Lamb_Meat_Spring_Rolls_20_Pcs.png"
+    "image": "/assets/cloudinary-shama/frozen/shama-lamb-meat-spring-rolls-20-pcs-56fcbe437029.webp"
   },
   {
     "category": "frozen",
     "brand": "Shama",
     "title": "Shama Lamb Meat Spring Rolls",
     "pack": "50 pcs",
-    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1790625151/Shama_lamb_Meat_Spring_Rolls_50_Pcs.png"
+    "image": "/assets/cloudinary-shama/frozen/shama-lamb-meat-spring-rolls-50-pcs-ed5aaaf4be3c.webp"
   },
   {
     "category": "frozen",
     "brand": "Shama",
     "title": "Shama Lahori Chicken Kebab",
     "pack": "15 pcs",
-    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1790625181/shama_lahori_chicken_kebab_15_Pcs.png"
+    "image": "/assets/cloudinary-shama/frozen/shama-lahori-chicken-kebab-15-pcs-7e982163e543.webp"
   },
   {
     "category": "frozen",
     "brand": "Shama",
     "title": "Shama Mutton Lahori Kebab",
     "pack": "15 pcs",
-    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1790625183/15_Mutton_Lahori_Kebab_15_Pcs.png"
+    "image": "/assets/cloudinary-shama/frozen/15-mutton-lahori-kebab-15-pcs-fb393bb1b243.webp"
   },
   {
     "category": "frozen",
     "brand": "Shama",
     "title": "Shama Plain Paratha",
     "pack": "30 pcs",
-    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1791205446/Shama_Plain_Paratha_30pcs.png"
+    "image": "/assets/cloudinary-shama/frozen/shama-plain-paratha-30pcs-9ea8b3cfd2ac.webp"
   },
   {
     "category": "frozen",
     "brand": "Shama",
     "title": "Shama Crispy Plain Paratha",
     "pack": "20 pcs",
-    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1790625166/Shama_crispy_plain_paratha_20_Pcs.png"
+    "image": "/assets/cloudinary-shama/frozen/shama-crispy-plain-paratha-20-pcs-bd290fb445fc.webp"
   },
   {
     "category": "frozen",
     "brand": "Mazedaar",
     "title": "Mazedaar Paratha",
     "pack": "5 pcs",
-    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1790625174/Mazedaar_Paratha_5_pcs.png"
+    "image": "/assets/cloudinary-shama/frozen/mazedaar-paratha-5-pcs-6346f91c34be.webp"
   },
   {
     "category": "frozen",
     "brand": "Mazedaar",
     "title": "Mazedaar Onion Paratha",
     "pack": "5 pcs",
-    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1790625175/Mazedaar_Onion_Paratha_5pcs.png"
+    "image": "/assets/cloudinary-shama/frozen/mazedaar-onion-paratha-5pcs-5d3805970e3f.webp"
   },
   {
     "category": "frozen",
     "brand": "Mazedaar",
     "title": "Mazedaar Plain Paratha",
     "pack": "20 pcs",
-    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1790625175/Mazedaar_Plain_Paratha_20_pcs.png.png"
+    "image": "/assets/cloudinary-shama/frozen/mazedaar-plain-paratha-20-pcs-png-1f98511f1350.webp"
   },
   {
     "category": "frozen",
     "brand": "Mazedaar",
     "title": "Mazedaar Plain Paratha",
     "pack": "5 pcs",
-    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1790625176/Mazedaar_Plain_Paratha_5_pcs.png"
+    "image": "/assets/cloudinary-shama/frozen/mazedaar-plain-paratha-5-pcs-a523f7138c57.webp"
   },
   {
     "category": "frozen",
     "brand": "Mazedaar",
     "title": "Mazedaar Onion Paratha",
     "pack": "3 pcs",
-    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1790625177/Mazedaar_onion_paratha_3_pcs.png"
+    "image": "/assets/cloudinary-shama/frozen/mazedaar-onion-paratha-3-pcs-890d7d19aef0.webp"
   },
   {
     "category": "frozen",
     "brand": "Mazedaar",
     "title": "Mazedaar Vegetable Paratha",
     "pack": "3 pcs",
-    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1790625178/Mazedaar_Vegetable_Paratha_3_pcs.png.png"
+    "image": "/assets/cloudinary-shama/frozen/mazedaar-vegetable-paratha-3-pcs-png-7200ea9a2937.webp"
   },
   {
     "category": "frozen",
     "brand": "Mazedaar",
     "title": "Mazedaar Whole Wheat Paratha",
     "pack": "20 pcs",
-    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1791201289/Mazedar_Whole_Wheat_Paratha_20_pcs.png"
+    "image": "/assets/cloudinary-shama/frozen/mazedar-whole-wheat-paratha-20-pcs-1bbcbc047d6a.webp"
   },
   {
     "category": "frozen",
     "brand": "Shama",
     "title": "Shama Cut Okra",
     "pack": "400g",
-    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1790625169/Shama_Cut_Okra_400gms.png.png"
+    "image": "/assets/cloudinary-shama/frozen/shama-cut-okra-400gms-png-879f3e8da4c6.webp"
   },
   {
     "category": "frozen",
     "brand": "Shama",
     "title": "Shama Green Chilli",
     "pack": "400g",
-    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1790625171/Shama_green_chilli_400_Gms.png.png"
+    "image": "/assets/cloudinary-shama/frozen/shama-green-chilli-400-gms-png-f88733067fbf.webp"
   },
   {
     "category": "frozen",
     "brand": "Shama",
     "title": "Shama Karela",
     "pack": "400g",
-    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1790625173/Shama_karela_400Gms.png.png"
+    "image": "/assets/cloudinary-shama/frozen/shama-karela-400gms-png-b461d94b991d.webp"
   },
   {
     "category": "frozen",
     "brand": "Shama",
     "title": "Shama Falsa",
     "pack": "454g",
-    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1790625170/Shama_falsa_454Gms.png.png"
+    "image": "/assets/cloudinary-shama/frozen/shama-falsa-454gms-png-86ef6c0eaa4e.webp"
   },
   {
     "category": "frozen",
     "brand": "Shama",
     "title": "Shama Frozen Methi",
     "pack": "400g",
-    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1791201865/SHAMA_Frozen_Methi_400g.png"
+    "image": "/assets/cloudinary-shama/frozen/shama-frozen-methi-400g-b723636384ac.webp"
   },
   {
     "category": "frozen",
     "brand": "Other",
     "title": "Tilapia Moyen 600/800",
     "pack": "4 kg",
-    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1791201289/Tilapia_Moyen_600_800_4_kg.png"
+    "image": "/assets/cloudinary-shama/frozen/tilapia-moyen-600-800-4-kg-64713677789f.webp"
   }
 ];
   for (let i = productData.length - 1; i >= 0; i--) {

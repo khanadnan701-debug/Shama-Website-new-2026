@@ -8,325 +8,325 @@
     "category": "savoury-snacks",
     "title": "Shama Roasted Corn Salted",
     "pack": "400g",
-    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1790601081/Shama_Roasted_Corn_Salted_400G.png"
+    "image": "/assets/cloudinary-shama/savoury-snacks/shama-roasted-corn-salted-400g-3ce5d27e8c46.webp"
   },
   {
     "category": "savoury-snacks",
     "title": "Bikaneri Bites Thick Sev",
     "pack": "300g",
-    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1790601081/Bikaneri_Bites_Thick_Sev_300g.png"
+    "image": "/assets/cloudinary-shama/savoury-snacks/bikaneri-bites-thick-sev-300g-ca5c6ae1840f.webp"
   },
   {
     "category": "savoury-snacks",
     "title": "Bikaneri Bites Kaju Mixture",
     "pack": "150g",
-    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1790601082/Bikaneri_Bites_Kaju_Mixture_150g.png"
+    "image": "/assets/cloudinary-shama/savoury-snacks/bikaneri-bites-kaju-mixture-150g-d8dfdb10b706.webp"
   },
   {
     "category": "savoury-snacks",
     "title": "Bikaneri Bites Bombay Mixture",
     "pack": "150g",
-    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1790601082/Bikaneri_Bites_Bombay_Mixture_150g.png"
+    "image": "/assets/cloudinary-shama/savoury-snacks/bikaneri-bites-bombay-mixture-150g-25329883bdb4.webp"
   },
   {
     "category": "savoury-snacks",
     "title": "Bikaneri Bites Gujarati Mixture",
     "pack": "150g",
-    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1790601083/Bikaneri_Bites_Gujrati_Mixture_150g.png"
+    "image": "/assets/cloudinary-shama/savoury-snacks/bikaneri-bites-gujrati-mixture-150g-886aeb79e087.webp"
   },
   {
     "category": "savoury-snacks",
     "title": "Bikaneri Bites Punjabi Pakora",
     "pack": "150g",
-    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1790601086/Bikaneri_Bites_Punjabi_Pakora_150g.png"
+    "image": "/assets/cloudinary-shama/savoury-snacks/bikaneri-bites-punjabi-pakora-150g-ffd64df1a8ef.webp"
   },
   {
     "category": "savoury-snacks",
     "title": "Bikaneri Bites Chana Dal Mixture",
     "pack": "150g",
-    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1790601086/Bikaneri_Bites_Chana_Dal_Mixture_150g.png"
+    "image": "/assets/cloudinary-shama/savoury-snacks/bikaneri-bites-chana-dal-mixture-150g-93f40983d004.webp"
   },
   {
     "category": "savoury-snacks",
     "title": "Bikaneri Bites Khatta Meetha",
     "pack": "150g",
-    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1790601086/Bikaneri_Bites_Khatta_Meetha_150g.png"
+    "image": "/assets/cloudinary-shama/savoury-snacks/bikaneri-bites-khatta-meetha-150g-7291f84c7876.webp"
   },
   {
     "category": "savoury-snacks",
     "title": "Bikaneri Bites Moong Dal",
     "pack": "150g",
-    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1790601087/Bikaneri_Bites_Moong_Dal_150g.png"
+    "image": "/assets/cloudinary-shama/savoury-snacks/bikaneri-bites-moong-dal-150g-797b37c058e9.webp"
   },
   {
     "category": "savoury-snacks",
     "title": "Bikaneri Bites Aloo Bhujia",
     "pack": "150g",
-    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1790601087/Bikaneri_Bites_Aloo_Bhujia_150g.png"
+    "image": "/assets/cloudinary-shama/savoury-snacks/bikaneri-bites-aloo-bhujia-150g-eec474ef5348.webp"
   },
   {
     "category": "savoury-snacks",
     "title": "Bikaneri Bites All In One",
     "pack": "150g",
-    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1790601089/Bikaneri_Bites_All_In_One_150g.png"
+    "image": "/assets/cloudinary-shama/savoury-snacks/bikaneri-bites-all-in-one-150g-050c9a81f20f.webp"
   },
   {
     "category": "savoury-snacks",
     "title": "Bikaneri Bites Boondi",
     "pack": "150g",
-    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1790601089/Bikaneri_Bites_Boondi_150g.png"
+    "image": "/assets/cloudinary-shama/savoury-snacks/bikaneri-bites-boondi-150g-ed863e2da1b9.webp"
   },
   {
     "category": "savoury-snacks",
     "title": "Bikaneri Bites Navratan",
     "pack": "150g",
-    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1790601092/Bikaneri_Bites_Navratan_150g.png"
+    "image": "/assets/cloudinary-shama/savoury-snacks/bikaneri-bites-navratan-150g-113256c9dabf.webp"
   },
   {
     "category": "savoury-snacks",
     "title": "Bikaneri Bites Badam Lacha",
     "pack": "150g",
-    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1790601092/Bikaneri_Bites_Badam_Lacha_150g.png"
+    "image": "/assets/cloudinary-shama/savoury-snacks/bikaneri-bites-badam-lacha-150g-420743aa9e8a.webp"
   },
   {
     "category": "savoury-snacks",
     "title": "Bikaneri Bites Tasty Peanuts",
     "pack": "150g",
-    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1790601092/Bikaneri_Bites_Tasty_Peanuts_150g.png"
+    "image": "/assets/cloudinary-shama/savoury-snacks/bikaneri-bites-tasty-peanuts-150g-c401e9e3c124.webp"
   },
   {
     "category": "savoury-snacks",
     "title": "Bikaneri Bites Bikaneri Bhujia",
     "pack": "150g",
-    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1790601092/Bikaneri_Bites_Bikaneri_Bhujia_150g.png"
+    "image": "/assets/cloudinary-shama/savoury-snacks/bikaneri-bites-bikaneri-bhujia-150g-550e699888a7.webp"
   },
   {
     "category": "savoury-snacks",
     "title": "Shama Phool Makhana",
     "pack": "100g",
-    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1790601093/Shama_Phool_Makhana_100g.png"
+    "image": "/assets/cloudinary-shama/savoury-snacks/shama-phool-makhana-100g-a73d801609db.webp"
   },
   {
     "category": "savoury-snacks",
     "title": "Lay's Hot N Sweet",
     "pack": "50g x 135",
-    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1790601094/Lays_Hot_N_Sweet_50gX135.png"
+    "image": "/assets/cloudinary-shama/savoury-snacks/lays-hot-n-sweet-50gx135-0b85fa73bc43.webp"
   },
   {
     "category": "savoury-snacks",
     "title": "Savoury Snack Selection",
     "pack": "Contact us for available pack sizes",
-    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1790601095/Gemini_Generated_Image_xn8ep1xn8ep1xn8e.png"
+    "image": "/assets/cloudinary-shama/savoury-snacks/gemini-generated-image-xn8ep1xn8ep1xn8e-e400040396d9.webp"
   },
   {
     "category": "savoury-snacks",
     "title": "Bikaneri Bites Bombay Mixture",
     "pack": "300g",
-    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1790601096/Bikaneri_Bites_Bombay_Mixture_300g.png"
+    "image": "/assets/cloudinary-shama/savoury-snacks/bikaneri-bites-bombay-mixture-300g-0690712466fe.webp"
   },
   {
     "category": "savoury-snacks",
     "title": "Bikaneri Bites Traditional Mixture",
     "pack": "300g",
-    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1790601096/Bikaneri_Bites_Traditional_Mixture_300g.png"
+    "image": "/assets/cloudinary-shama/savoury-snacks/bikaneri-bites-traditional-mixture-300g-4c65c3206c24.webp"
   },
   {
     "category": "savoury-snacks",
     "title": "Bikaneri Bites All In One",
     "pack": "300g",
-    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1790601097/Bikaneri_Bites_All_In_One_300g.png"
+    "image": "/assets/cloudinary-shama/savoury-snacks/bikaneri-bites-all-in-one-300g-b305c38ffa4d.webp"
   },
   {
     "category": "savoury-snacks",
     "title": "Bikaneri Bites Khatta Meetha",
     "pack": "300g",
-    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1790601102/Bikaneri_Bites_Khatta_Meetha_300g.png"
+    "image": "/assets/cloudinary-shama/savoury-snacks/bikaneri-bites-khatta-meetha-300g-171c25952827.webp"
   },
   {
     "category": "savoury-snacks",
     "title": "Bikaneri Bites Moong Dal",
     "pack": "300g",
-    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1790601102/Bikaneri_Bites_Moong_Dal_300g.png"
+    "image": "/assets/cloudinary-shama/savoury-snacks/bikaneri-bites-moong-dal-300g-7e117814c2e8.webp"
   },
   {
     "category": "savoury-snacks",
     "title": "Shama Punjabi Wadi",
     "pack": "400g",
-    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1790601102/Shama_punjabi_wadi_400g.png"
+    "image": "/assets/cloudinary-shama/savoury-snacks/shama-punjabi-wadi-400g-1058597d4817.webp"
   },
   {
     "category": "savoury-snacks",
     "title": "Bikaneri Bites Gujarati Mixture",
     "pack": "300g",
-    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1790601104/Bikaneri_Bites_Gujrati_Mixture_300g.png"
+    "image": "/assets/cloudinary-shama/savoury-snacks/bikaneri-bites-gujrati-mixture-300g-f9d706a0d5b4.webp"
   },
   {
     "category": "savoury-snacks",
     "title": "Shama Chaat Papdi",
     "pack": "300g",
-    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1790601104/Shama_Chaat_Papdi_300g.png"
+    "image": "/assets/cloudinary-shama/savoury-snacks/shama-chaat-papdi-300g-bbf1c8e6754a.webp"
   },
   {
     "category": "savoury-snacks",
     "title": "Bikaneri Bites Chana Dal Mixture",
     "pack": "300g",
-    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1790601135/Bikaneri_Bites_Chana_Dal_Mixture_300g.png"
+    "image": "/assets/cloudinary-shama/savoury-snacks/bikaneri-bites-chana-dal-mixture-300g-89a337dfd600.webp"
   },
   {
     "category": "savoury-snacks",
     "title": "Bikaneri Bites London Mixture",
     "pack": "300g",
-    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1790601141/Bikaneri_Bites_London_Mixture_300g.png"
+    "image": "/assets/cloudinary-shama/savoury-snacks/bikaneri-bites-london-mixture-300g-055fda776ad7.webp"
   },
   {
     "category": "savoury-snacks",
     "title": "Bikaneri Bites Punjabi Mixture",
     "pack": "300g",
-    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1790601144/Bikaneri_Bites_Punjabi_Mixture_300g.png"
+    "image": "/assets/cloudinary-shama/savoury-snacks/bikaneri-bites-punjabi-mixture-300g-270f0604c156.webp"
   },
   {
     "category": "savoury-snacks",
     "title": "Kurkure Naughty Tomato",
     "pack": "68g",
-    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1790601150/KURKURE_Naughty_Tomato_68g.png"
+    "image": "/assets/cloudinary-shama/savoury-snacks/kurkure-naughty-tomato-68g-534d0851fc28.webp"
   },
   {
     "category": "savoury-snacks",
     "title": "Kurkure Green Chutney Style",
     "pack": "78.9g",
-    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1790601151/KURKURE_Green_Chutney_Style_78.9g.png"
+    "image": "/assets/cloudinary-shama/savoury-snacks/kurkure-green-chutney-style-78-9g-90080deb64f6.webp"
   },
   {
     "category": "savoury-snacks",
     "title": "Kurkure Green Chutney Style",
     "pack": "70g",
-    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1790601152/KURKURE_Green_Chutney_Style_70g.png"
+    "image": "/assets/cloudinary-shama/savoury-snacks/kurkure-green-chutney-style-70g-2f77452bcf53.webp"
   },
   {
     "category": "savoury-snacks",
     "title": "Bikaneri Bites Tasty Peanuts",
     "pack": "300g",
-    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1790601153/Bikaneri_Bites_Tasty_Peanuts_300g.png"
+    "image": "/assets/cloudinary-shama/savoury-snacks/bikaneri-bites-tasty-peanuts-300g-4172a7e508f5.webp"
   },
   {
     "category": "savoury-snacks",
     "title": "Kurkure Masala Munch",
     "pack": "84.9g",
-    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1790601154/KURKURE_Masala_Munch_84.9g.png"
+    "image": "/assets/cloudinary-shama/savoury-snacks/kurkure-masala-munch-84-9g-1f6f570d7453.webp"
   },
   {
     "category": "savoury-snacks",
     "title": "Kurkure Red Chilli Chatka",
     "pack": "68g",
-    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1790601156/KURKURE_Red_Chilli_Chatka_68g.png"
+    "image": "/assets/cloudinary-shama/savoury-snacks/kurkure-red-chilli-chatka-68g-3f826d19fdc7.webp"
   },
   {
     "category": "savoury-snacks",
     "title": "Bikaneri Bites Spicy Mixture",
     "pack": "300g",
-    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1790601156/Bikaneri_Bites_Spicy_Mixture_300g.png"
+    "image": "/assets/cloudinary-shama/savoury-snacks/bikaneri-bites-spicy-mixture-300g-fef2a2df3f00.webp"
   },
   {
     "category": "savoury-snacks",
     "title": "Kurkure Puff Corn Yummy Cheese",
     "pack": "58g",
-    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1790601157/KURKURE_Puff_Corn_Yummy_Cheese_58g.png"
+    "image": "/assets/cloudinary-shama/savoury-snacks/kurkure-puff-corn-yummy-cheese-58g-bbd0c939d322.webp"
   },
   {
     "category": "savoury-snacks",
     "title": "Kurkure Red Chilli Chatka",
     "pack": "78.9g",
-    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1790601158/KURKURE_Red_Chilli_Chatka_78.9g.png"
+    "image": "/assets/cloudinary-shama/savoury-snacks/kurkure-red-chilli-chatka-78-9g-9cc2341bbb99.webp"
   },
   {
     "category": "savoury-snacks",
     "title": "Kurkure Sizzlin Hot",
     "pack": "Contact us for available pack sizes",
-    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1790601160/KURKURE_Sizzlin_Hot.png"
+    "image": "/assets/cloudinary-shama/savoury-snacks/kurkure-sizzlin-hot-500d2fb7eed0.webp"
   },
   {
     "category": "savoury-snacks",
     "title": "Kurkure Solid Masti",
     "pack": "66.6g",
-    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1790601160/Kurkure_Solid_Masti_66.6g.png"
+    "image": "/assets/cloudinary-shama/savoury-snacks/kurkure-solid-masti-66-6g-cf33c5329a54.webp"
   },
   {
     "category": "savoury-snacks",
     "title": "Lay's American Style Cream Onion Flavour",
     "pack": "52g x 135",
-    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1790601162/Lays_American_Style_Cream_Onion_Flavour_52gX135.png"
+    "image": "/assets/cloudinary-shama/savoury-snacks/lays-american-style-cream-onion-flavour-52gx135-469b6eac58df.webp"
   },
   {
     "category": "savoury-snacks",
     "title": "Lay's India'S Magic Masala",
     "pack": "30g x 135",
-    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1790601163/Lays_India_s_Magic_Masala_30gX135.png"
+    "image": "/assets/cloudinary-shama/savoury-snacks/lays-india-s-magic-masala-30gx135-30e07135beec.webp"
   },
   {
     "category": "savoury-snacks",
     "title": "Lay's Classic Salted",
     "pack": "48g",
-    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1790601163/Lays_Classic_Salted_48g.png"
+    "image": "/assets/cloudinary-shama/savoury-snacks/lays-classic-salted-48g-f279706592b8.webp"
   },
   {
     "category": "savoury-snacks",
     "title": "Kurkure Masala Munch",
     "pack": "77g",
-    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1790601164/KURKURE_Masala_Munch_77g.png"
+    "image": "/assets/cloudinary-shama/savoury-snacks/kurkure-masala-munch-77g-e40a9086451c.webp"
   },
   {
     "category": "savoury-snacks",
     "title": "Lay's Spanish Tomato Tango",
     "pack": "48g",
-    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1790601164/Lays_Spanish_Toamato_Tango_48g.png"
+    "image": "/assets/cloudinary-shama/savoury-snacks/lays-spanish-toamato-tango-48g-4e3e2337f503.webp"
   },
   {
     "category": "savoury-snacks",
     "title": "Shama Kurmura Laddu",
     "pack": "100g",
-    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1790601165/Shama_Kurmura_Laddu_100g.png"
+    "image": "/assets/cloudinary-shama/savoury-snacks/shama-kurmura-laddu-100g-a9770e489cca.webp"
   },
   {
     "category": "savoury-snacks",
     "title": "Shama Phool Makhana",
     "pack": "50g",
-    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1790601166/Shama_Phool_Makhana_50g.png"
+    "image": "/assets/cloudinary-shama/savoury-snacks/shama-phool-makhana-50g-1f31ae4fe15d.webp"
   },
   {
     "category": "savoury-snacks",
     "title": "Shama Rajgira Laddu",
     "pack": "100g",
-    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1790601168/Shama_Rajgira_Laddu_100g.png"
+    "image": "/assets/cloudinary-shama/savoury-snacks/shama-rajgira-laddu-100g-ad04164c3df9.webp"
   },
   {
     "category": "savoury-snacks",
     "title": "Shama Rajgira Chikki",
     "pack": "100g",
-    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1790601170/Shama_Rajgira_Chikki_100g.png"
+    "image": "/assets/cloudinary-shama/savoury-snacks/shama-rajgira-chikki-100g-ead8422e3c9f.webp"
   },
   {
     "category": "savoury-snacks",
     "title": "Bikaneri Bites Kashmiri Mixture",
     "pack": "300g",
-    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1790601171/Bikaneri_Bites_Kashmiri_Mixture_300g.png"
+    "image": "/assets/cloudinary-shama/savoury-snacks/bikaneri-bites-kashmiri-mixture-300g-73f96477ec34.webp"
   },
   {
     "category": "savoury-snacks",
     "title": "Shama Murmura Chikki",
     "pack": "100g",
-    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1790601173/Shama_Murmura_Chikki_100g.png"
+    "image": "/assets/cloudinary-shama/savoury-snacks/shama-murmura-chikki-100g-5b9387487515.webp"
   },
   {
     "category": "savoury-snacks",
     "title": "Bikaneri Bites Spicy Chick Peas",
     "pack": "300g",
-    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1790601173/Bikaneri_Bites_Spicy_Chick_Peas_300g.png"
+    "image": "/assets/cloudinary-shama/savoury-snacks/bikaneri-bites-spicy-chick-peas-300g-8193c3ef1ab2.webp"
   },
   {
     "category": "savoury-snacks",
     "title": "Lay's Chilli Lemon",
     "pack": "50g x 135",
-    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1790601184/Lays_Chilli_Lemon_50gX135.png"
+    "image": "/assets/cloudinary-shama/savoury-snacks/lays-chilli-lemon-50gx135-9ad65bd5832a.webp"
   }
 ];
 

@@ -8,25 +8,25 @@
     "category": "sea-food",
     "title": "Gambas 8-12",
     "pack": "Size 8–12",
-    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1790600837/Gambas_8-12.png"
+    "image": "/assets/cloudinary-shama/sea-food/gambas-8-12-fdb47ab466a9.webp"
   },
   {
     "category": "sea-food",
     "title": "Shrimp Crevette 26 30",
     "pack": "Size 26–30",
-    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1790600838/Shrimp_Crevette_26_30.png"
+    "image": "/assets/cloudinary-shama/sea-food/shrimp-crevette-26-30-3c1289f126d3.webp"
   },
   {
     "category": "sea-food",
     "title": "Gambas 16-20",
     "pack": "Size 16–20",
-    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1790600838/Gambas_16-20.png"
+    "image": "/assets/cloudinary-shama/sea-food/gambas-16-20-d126c9f808d0.webp"
   },
   {
     "category": "sea-food",
     "title": "Shrimps Crevette 31-40",
     "pack": "Size 31–40",
-    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1790600838/Shrimps_Crevette_31-40.png"
+    "image": "/assets/cloudinary-shama/sea-food/shrimps-crevette-31-40-a887fe309d97.webp"
   }
 ];
 

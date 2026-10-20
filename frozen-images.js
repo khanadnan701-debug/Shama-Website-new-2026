@@ -31,7 +31,7 @@
     "brand": "Shama",
     "title": "Shama Lamb Meat Samosa",
     "pack": "20 pcs",
-    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1790625173/Shama_Lamb_Meat_Samosa_20pcs.png.png"
+    "image": "/assets/cloudinary-shama/frozen/shama-lamb-meat-samosa-20pcs-png-137aabbbe5f0.webp"
   },
   {
     "category": "frozen",
@@ -52,7 +52,7 @@
     "brand": "Shama",
     "title": "Shama Chicken Tikka Samosa",
     "pack": "20 pcs",
-    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1790625180/Shama_Chicken_tikka_Samosa_20Pcs.png"
+    "image": "/assets/cloudinary-shama/frozen/shama-chicken-tikka-samosa-20pcs-fd4740726fb5.webp"
   },
   {
     "category": "frozen",
@@ -66,7 +66,7 @@
     "brand": "Mazedaar",
     "title": "Mazedaar Potato Samosa",
     "pack": "20 pcs",
-    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1791202844/MAZEDAR_Potato_Samosa_20pcs.png"
+    "image": "/assets/cloudinary-shama/frozen/mazedar-potato-samosa-20pcs-64cf364138f4.webp"
   },
   {
     "category": "frozen",
@@ -80,7 +80,7 @@
     "brand": "Shama",
     "title": "Shama Vegetable Spring Rolls",
     "pack": "50 pcs",
-    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1790625164/Shama_vegetable_spring_rolls_50_Pcs.png"
+    "image": "/assets/cloudinary-shama/frozen/shama-vegetable-spring-rolls-50-pcs-c603b63ab822.webp"
   },
   {
     "category": "frozen",
@@ -171,7 +171,7 @@
     "brand": "Mazedaar",
     "title": "Mazedaar Onion Paratha",
     "pack": "3 pcs",
-    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1790625177/Mazedaar_onion_paratha_3_pcs.png"
+    "image": "/assets/cloudinary-shama/frozen/mazedaar-onion-paratha-3-pcs-890d7d19aef0.webp"
   },
   {
     "category": "frozen",
@@ -185,7 +185,7 @@
     "brand": "Mazedaar",
     "title": "Mazedaar Whole Wheat Paratha",
     "pack": "20 pcs",
-    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1791201289/Mazedar_Whole_Wheat_Paratha_20_pcs.png"
+    "image": "/assets/cloudinary-shama/frozen/mazedar-whole-wheat-paratha-20-pcs-1bbcbc047d6a.webp"
   },
   {
     "category": "frozen",
@@ -220,14 +220,14 @@
     "brand": "Shama",
     "title": "Shama Frozen Methi",
     "pack": "400g",
-    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1791201865/SHAMA_Frozen_Methi_400g.png"
+    "image": "/assets/cloudinary-shama/frozen/shama-frozen-methi-400g-b723636384ac.webp"
   },
   {
     "category": "frozen",
     "brand": "Other",
     "title": "Tilapia Moyen 600/800",
     "pack": "4 kg",
-    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1791201289/Tilapia_Moyen_600_800_4_kg.png"
+    "image": "/assets/cloudinary-shama/frozen/tilapia-moyen-600-800-4-kg-64713677789f.webp"
   }
 ];
 
@@ -241,7 +241,7 @@
     if (category) {
       category.name = 'Frozen';
       category.desc = 'Samosa, spring rolls, kebabs, paratha, frozen vegetables, fruit and seafood';
-      category.image = 'https://res.cloudinary.com/wy4nkkqq/image/upload/v1791202844/MAZEDAR_Potato_Samosa_20pcs.png';
+      category.image = '/assets/cloudinary-shama/frozen/mazedar-potato-samosa-20pcs-64cf364138f4.webp';
     }
   }
 

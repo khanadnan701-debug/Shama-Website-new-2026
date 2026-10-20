@@ -4,15 +4,15 @@
   if (typeof categories === 'undefined' || !Array.isArray(categories)) return;
 
   const items = [
-    ['Shama Ajwa Dates','800g / 400g','https://res.cloudinary.com/wy4nkkqq/image/upload/v1790069276/Shama_Ajwa-Dates-800g.png'],
-    ['Shama Sagai Dates','800g / 400g','https://res.cloudinary.com/wy4nkkqq/image/upload/v1790069300/Shama_Sagai_Dates-800g.png'],
-    ['Shama Khudri Dates','800g / 400g','https://res.cloudinary.com/wy4nkkqq/image/upload/v1790069307/Shama_khudri-Dates-800g.png'],
-    ['Shama Safawi Dates','800g / 400g','https://res.cloudinary.com/wy4nkkqq/image/upload/v1790069311/Shama_Safawi_Dates-800g.png'],
-    ['Shama Khudri Dates (New Pack)','800g / 400g','https://res.cloudinary.com/wy4nkkqq/image/upload/v1790069311/Shama_Khudri_new_Dates-800g.png'],
-    ['Shama Ajwa Dates (New Pack)','800g / 400g','https://res.cloudinary.com/wy4nkkqq/image/upload/v1790069312/Shama_Ajwa_new_Dates-800g.png'],
-    ['Shama Sukkari Dates','800g / 400g','https://res.cloudinary.com/wy4nkkqq/image/upload/v1790069313/Shama_sukkari-Dates-800g.png'],
-    ['Shama Sukkari Dates (Pack 2)','800g / 400g','https://res.cloudinary.com/wy4nkkqq/image/upload/v1790069313/Shama_Sukkari_Dates-800g.png'],
-    ['Shama Anber Dates','800g / 400g','https://res.cloudinary.com/wy4nkkqq/image/upload/v1790069315/Shama_Anber-Dates-800g.png']
+    ['Shama Ajwa Dates','800g / 400g','/assets/cloudinary-shama/dates/shama-ajwa-dates-800g-734a417a7b85.webp'],
+    ['Shama Sagai Dates','800g / 400g','/assets/cloudinary-shama/dates/shama-sagai-dates-800g-8ef529bc35d1.webp'],
+    ['Shama Khudri Dates','800g / 400g','/assets/cloudinary-shama/dates/shama-khudri-dates-800g-2d98445d8d49.webp'],
+    ['Shama Safawi Dates','800g / 400g','/assets/cloudinary-shama/dates/shama-safawi-dates-800g-41ca20a5d657.webp'],
+    ['Shama Khudri Dates (New Pack)','800g / 400g','/assets/cloudinary-shama/dates/shama-khudri-new-dates-800g-165017aba30a.webp'],
+    ['Shama Ajwa Dates (New Pack)','800g / 400g','/assets/cloudinary-shama/dates/shama-ajwa-new-dates-800g-4534f3e296aa.webp'],
+    ['Shama Sukkari Dates','800g / 400g','/assets/cloudinary-shama/dates/shama-sukkari-dates-800g-9b8641bad644.webp'],
+    ['Shama Sukkari Dates (Pack 2)','800g / 400g','/assets/cloudinary-shama/dates/shama-sukkari-dates-800g-e6bc639f53a3.webp'],
+    ['Shama Anber Dates','800g / 400g','/assets/cloudinary-shama/dates/shama-anber-dates-800g-583327241983.webp']
   ].map(([title,pack,image])=>({category:'dates',title,pack,image}));
 
   productData.push(...items);

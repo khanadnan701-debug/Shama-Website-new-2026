@@ -5,68 +5,68 @@
 
   const items = [
     // SHAMA — keep first
-    ['Shama','Shama Rose Water','450ml / 250ml / 200ml / 190ml','https://res.cloudinary.com/wy4nkkqq/image/upload/v1789464147/Shama_Rose_Water_250ml.png'],
-    ['Shama','Shama Sesame Oil','290ml','https://res.cloudinary.com/wy4nkkqq/image/upload/v1789465760/Shama_sesame_oil_290ml.png'],
-    ['Shama','Shama Castor Oil','290ml','https://res.cloudinary.com/wy4nkkqq/image/upload/v1789465761/Shama_castor_oil_290ml.png'],
-    ['Shama','Shama Mustard Oil','290ml / 200ml','https://res.cloudinary.com/wy4nkkqq/image/upload/v1789465761/Shama_mustard_oil_290ml.png'],
-    ['Shama','Shama Mustard Oil','500ml','https://res.cloudinary.com/wy4nkkqq/image/upload/v1790939927/Shama_mustard_oil_500ml.png'],
-    ['Shama','Shama Almond Oil','250ml','https://res.cloudinary.com/wy4nkkqq/image/upload/v1790938632/Shama_almond_oil_250ml.png'],
-    ['Shama','Shama Amla Hair Oil','150ml','https://res.cloudinary.com/wy4nkkqq/image/upload/v1790941077/Shama_amla_hair_oil_150ml.png'],
-    ['Shama','Shama Black Seed Oil','290ml','https://res.cloudinary.com/wy4nkkqq/image/upload/v1790076485/Shama_black_seed_oil_290ml.png'],
-    ['Shama','Shama Black Seed Oil','100ml','https://res.cloudinary.com/wy4nkkqq/image/upload/v1790076488/Shama_black_seed_oil_100ml.png'],
-    ['Shama','Shama Pure Coconut Oil','500ml','https://res.cloudinary.com/wy4nkkqq/image/upload/v1790076490/Shama_coconut_oil_pure_500ml.png'],
-    ['Shama','Shama Pure Coconut Oil','250ml','https://res.cloudinary.com/wy4nkkqq/image/upload/v1790076491/Shama_coconut_oil_pure_250ml.png'],
+    ['Shama','Shama Rose Water','450ml / 250ml / 200ml / 190ml','/assets/cloudinary-shama/cosmetics/shama-rose-water-250ml-9fc6b2e6e236.webp'],
+    ['Shama','Shama Sesame Oil','290ml','/assets/cloudinary-shama/cosmetics/shama-sesame-oil-290ml-a213a66001f2.webp'],
+    ['Shama','Shama Castor Oil','290ml','/assets/cloudinary-shama/cosmetics/shama-castor-oil-290ml-dea2c9cbf15d.webp'],
+    ['Shama','Shama Mustard Oil','290ml / 200ml','/assets/cloudinary-shama/cosmetics/shama-mustard-oil-290ml-2389afdd5597.webp'],
+    ['Shama','Shama Mustard Oil','500ml','/assets/cloudinary-shama/cosmetics/shama-mustard-oil-500ml-78d0a4ef381a.webp'],
+    ['Shama','Shama Almond Oil','250ml','/assets/cloudinary-shama/cosmetics/shama-almond-oil-250ml-714061551cae.webp'],
+    ['Shama','Shama Amla Hair Oil','150ml','/assets/cloudinary-shama/cosmetics/shama-amla-hair-oil-150ml-d32506f6d934.webp'],
+    ['Shama','Shama Black Seed Oil','290ml','/assets/cloudinary-shama/cosmetics/shama-black-seed-oil-290ml-8552a10dd9c4.webp'],
+    ['Shama','Shama Black Seed Oil','100ml','/assets/cloudinary-shama/cosmetics/shama-black-seed-oil-100ml-9ec71751a403.webp'],
+    ['Shama','Shama Pure Coconut Oil','500ml','/assets/cloudinary-shama/cosmetics/shama-coconut-oil-pure-500ml-4aae03608115.webp'],
+    ['Shama','Shama Pure Coconut Oil','250ml','/assets/cloudinary-shama/cosmetics/shama-coconut-oil-pure-250ml-23c423bed98d.webp'],
 
     // DETTOL
-    ['Dettol','Dettol Soap','150g','https://res.cloudinary.com/wy4nkkqq/image/upload/v1790076452/Dettol_Soap_150g.png'],
-    ['Dettol','Dettol Antiseptic Liquid','250ml','https://res.cloudinary.com/wy4nkkqq/image/upload/v1790076453/Dettol_Antiseptic_Liquid_250ml.png'],
-    ['Dettol','Dettol Antiseptic Liquid','500ml','https://res.cloudinary.com/wy4nkkqq/image/upload/v1790076455/Dettol_Antiseptic_Liquid_500ml.png'],
-    ['Dettol','Dettol Original Soap','100g','https://res.cloudinary.com/wy4nkkqq/image/upload/v1790076456/Dettol_Soap_Original_100g.png'],
-    ['Dettol','Dettol Antiseptic Liquid','1L','https://res.cloudinary.com/wy4nkkqq/image/upload/v1790076457/Dettol_Antiseptic_Liquid_1L.png'],
-    ['Dettol','Dettol Antiseptic Liquid','750ml','https://res.cloudinary.com/wy4nkkqq/image/upload/v1790076460/Dettol_Antiseptic_Liquid_750ml.png'],
-    ['Dettol','Dettol Antiseptic Liquid','125ml','https://res.cloudinary.com/wy4nkkqq/image/upload/v1790076465/Dettol_Liquid_125ml.png'],
-    ['Dettol','Dettol Sensitive Soap Mega Pack','6 x 100g','https://res.cloudinary.com/wy4nkkqq/image/upload/v1791542240/Dettol_Sensitive_Soap_Mega_Pack_6x100g.png'],
+    ['Dettol','Dettol Soap','150g','/assets/cloudinary-shama/cosmetics/dettol-soap-150g-4e12989be251.webp'],
+    ['Dettol','Dettol Antiseptic Liquid','250ml','/assets/cloudinary-shama/cosmetics/dettol-antiseptic-liquid-250ml-1add0614fd4a.webp'],
+    ['Dettol','Dettol Antiseptic Liquid','500ml','/assets/cloudinary-shama/cosmetics/dettol-antiseptic-liquid-500ml-0b6bda0b6cc3.webp'],
+    ['Dettol','Dettol Original Soap','100g','/assets/cloudinary-shama/cosmetics/dettol-soap-original-100g-6b931ee5723c.webp'],
+    ['Dettol','Dettol Antiseptic Liquid','1L','/assets/cloudinary-shama/cosmetics/dettol-antiseptic-liquid-1l-e3fe62eb930b.webp'],
+    ['Dettol','Dettol Antiseptic Liquid','750ml','/assets/cloudinary-shama/cosmetics/dettol-antiseptic-liquid-750ml-d755c56bd71f.webp'],
+    ['Dettol','Dettol Antiseptic Liquid','125ml','/assets/cloudinary-shama/cosmetics/dettol-liquid-125ml-d1f616387d30.webp'],
+    ['Dettol','Dettol Sensitive Soap Mega Pack','6 x 100g','/assets/cloudinary-shama/cosmetics/dettol-sensitive-soap-mega-pack-6x100g-db41a57741c9.webp'],
 
     // JOHNSON'S BABY
-    ["Johnson's Baby","Johnson's Baby Powder",'100g','https://res.cloudinary.com/wy4nkkqq/image/upload/v1790076458/Johnson_s_Baby_Powder_100g.png'],
-    ["Johnson's Baby","Johnson's Baby Powder",'500g','https://res.cloudinary.com/wy4nkkqq/image/upload/v1790076461/Johnsons_Baby_Powder_500_gm.png'],
-    ["Johnson's Baby","Johnson's Baby Lotion",'300ml','https://res.cloudinary.com/wy4nkkqq/image/upload/v1791542625/johnson_s_baby_lotion_300ml.png'],
-    ["Johnson's Baby","Johnson's Baby Oil",'300ml','https://res.cloudinary.com/wy4nkkqq/image/upload/v1790076466/Johnson_s_Baby_Oil_300ml.png'],
-    ["Johnson's Baby","Johnson's Baby Powder",'200g','https://res.cloudinary.com/wy4nkkqq/image/upload/v1790076468/Johnson_s_Baby_Powder_200g.png'],
-    ["Johnson's Baby","Johnson's Baby Powder",'400g','https://res.cloudinary.com/wy4nkkqq/image/upload/v1790076469/Johnson_s_Baby_Powder_400g.png'],
-    ["Johnson's Baby","Johnson's Baby Oil",'500ml','https://res.cloudinary.com/wy4nkkqq/image/upload/v1790076470/Johnson_s_Baby_Oil_500ml.png'],
-    ["Johnson's Baby","Johnson's Baby Oil",'100ml','https://res.cloudinary.com/wy4nkkqq/image/upload/v1790076472/Johnson_Baby_oil_100ml.png'],
-    ["Johnson's Baby","Johnson's Baby Oil",'200ml','https://res.cloudinary.com/wy4nkkqq/image/upload/v1791542936/johnson_s_baby_oil_200ml.png'],
-    ["Johnson's Baby","Johnson's Baby Lotion",'500ml','https://res.cloudinary.com/wy4nkkqq/image/upload/v1790076476/Johnsons_Baby_Lotion_500ml.png'],
+    ["Johnson's Baby","Johnson's Baby Powder",'100g','/assets/cloudinary-shama/cosmetics/johnson-s-baby-powder-100g-84e3bdcbd6b0.webp'],
+    ["Johnson's Baby","Johnson's Baby Powder",'500g','/assets/cloudinary-shama/cosmetics/johnsons-baby-powder-500-gm-13303cb9aba2.webp'],
+    ["Johnson's Baby","Johnson's Baby Lotion",'300ml','/assets/cloudinary-shama/cosmetics/johnson-s-baby-lotion-300ml-dedd3d969e6d.webp'],
+    ["Johnson's Baby","Johnson's Baby Oil",'300ml','/assets/cloudinary-shama/cosmetics/johnson-s-baby-oil-300ml-76180a6e6007.webp'],
+    ["Johnson's Baby","Johnson's Baby Powder",'200g','/assets/cloudinary-shama/cosmetics/johnson-s-baby-powder-200g-31a8dc642802.webp'],
+    ["Johnson's Baby","Johnson's Baby Powder",'400g','/assets/cloudinary-shama/cosmetics/johnson-s-baby-powder-400g-654c53ebc60b.webp'],
+    ["Johnson's Baby","Johnson's Baby Oil",'500ml','/assets/cloudinary-shama/cosmetics/johnson-s-baby-oil-500ml-0bc0356bc362.webp'],
+    ["Johnson's Baby","Johnson's Baby Oil",'100ml','/assets/cloudinary-shama/cosmetics/johnson-baby-oil-100ml-ec1d21c787fb.webp'],
+    ["Johnson's Baby","Johnson's Baby Oil",'200ml','/assets/cloudinary-shama/cosmetics/johnson-s-baby-oil-200ml-96548335b7a7.webp'],
+    ["Johnson's Baby","Johnson's Baby Lotion",'500ml','/assets/cloudinary-shama/cosmetics/johnsons-baby-lotion-500ml-fa479c30ec19.webp'],
 
     // DOVE
-    ['Dove','Dove Soap','100g','https://res.cloudinary.com/wy4nkkqq/image/upload/v1790076450/Dove_Soap_100g.png'],
-    ['Dove','Dove Soap','125g','https://res.cloudinary.com/wy4nkkqq/image/upload/v1790076451/Dove_Soap_125g.png'],
-    ['Dove','Dove Soap Multipack','3 x 75g','https://res.cloudinary.com/wy4nkkqq/image/upload/v1790076452/Dove_Soap_3x75g.png'],
+    ['Dove','Dove Soap','100g','/assets/cloudinary-shama/cosmetics/dove-soap-100g-f794b978b1b9.webp'],
+    ['Dove','Dove Soap','125g','/assets/cloudinary-shama/cosmetics/dove-soap-125g-33e15dd0fb90.webp'],
+    ['Dove','Dove Soap Multipack','3 x 75g','/assets/cloudinary-shama/cosmetics/dove-soap-3x75g-175551cc7801.webp'],
 
     // LUX
-    ['Lux','Lux Advanced Soap','100g','https://res.cloudinary.com/wy4nkkqq/image/upload/v1790076480/Lux_Soap_100g_ADVANCED.png'],
-    ['Lux','Lux Rose Soap','100g','https://res.cloudinary.com/wy4nkkqq/image/upload/v1791473691/lux_rose_loap_100g.png'],
-    ['Lux','Lux White Soap','100g','https://res.cloudinary.com/wy4nkkqq/image/upload/v1791473308/lux_white_loap_100g.png'],
-    ['Lux','Lux Creamy Soap Mega Pack','125g','https://res.cloudinary.com/wy4nkkqq/image/upload/v1790076484/LUX_Soap_Creamy_125g_Mega_Pack.png'],
-    ['Lux','Lux Sandal Soap','100g','https://res.cloudinary.com/wy4nkkqq/image/upload/v1791473505/lux_sandal_loap_100g.png'],
+    ['Lux','Lux Advanced Soap','100g','/assets/cloudinary-shama/cosmetics/lux-soap-100g-advanced-e458ea763ac9.webp'],
+    ['Lux','Lux Rose Soap','100g','/assets/cloudinary-shama/cosmetics/lux-rose-loap-100g-77a4a9af67c1.webp'],
+    ['Lux','Lux White Soap','100g','/assets/cloudinary-shama/cosmetics/lux-white-loap-100g-efd816949a48.webp'],
+    ['Lux','Lux Creamy Soap Mega Pack','125g','/assets/cloudinary-shama/cosmetics/lux-soap-creamy-125g-mega-pack-a49c587eb9bd.webp'],
+    ['Lux','Lux Sandal Soap','100g','/assets/cloudinary-shama/cosmetics/lux-sandal-loap-100g-ffa1eee98229.webp'],
 
     // VASELINE
-    ['Vaseline','Vaseline Pure Petroleum Jelly','50ml','https://res.cloudinary.com/wy4nkkqq/image/upload/v1790076498/Vaseline_Pure_Petroleum_Jelly_50ml.png'],
-    ['Vaseline','Vaseline Pure Petroleum Jelly','100ml','https://res.cloudinary.com/wy4nkkqq/image/upload/v1790076499/Vaseline_Pure_Petroleum_Jelly_100ml.png'],
-    ['Vaseline','Vaseline Pure Petroleum Jelly','250ml','https://res.cloudinary.com/wy4nkkqq/image/upload/v1790076501/Vaseline_Pure_Petroleum_Jelly_250ml.png'],
+    ['Vaseline','Vaseline Pure Petroleum Jelly','50ml','/assets/cloudinary-shama/cosmetics/vaseline-pure-petroleum-jelly-50ml-05d95ba4a210.webp'],
+    ['Vaseline','Vaseline Pure Petroleum Jelly','100ml','/assets/cloudinary-shama/cosmetics/vaseline-pure-petroleum-jelly-100ml-59dccb5328aa.webp'],
+    ['Vaseline','Vaseline Pure Petroleum Jelly','250ml','/assets/cloudinary-shama/cosmetics/vaseline-pure-petroleum-jelly-250ml-7a0796892e41.webp'],
 
     // DABUR
-    ['Dabur','Dabur Amla Oil','138ml','https://res.cloudinary.com/wy4nkkqq/image/upload/v1790076462/Dabur_Amla_Oil_138ml.png'],
-    ['Dabur','Dabur Amla Hair Oil','325ml','https://res.cloudinary.com/wy4nkkqq/image/upload/v1790076474/Dabur_Amla_Hair_Oil_325ml.png'],
+    ['Dabur','Dabur Amla Oil','138ml','/assets/cloudinary-shama/cosmetics/dabur-amla-oil-138ml-6f282af95caa.webp'],
+    ['Dabur','Dabur Amla Hair Oil','325ml','/assets/cloudinary-shama/cosmetics/dabur-amla-hair-oil-325ml-493573af6c0a.webp'],
 
     // SUPREME HENNA
-    ['Supreme Henna','Supreme Dulhan Henna Natural Green','200g','https://res.cloudinary.com/wy4nkkqq/image/upload/v1790076502/supreme_dulhan_henna_natural_green_200g.png'],
-    ['Supreme Henna','Supreme Henna Natural Brown','150g','https://res.cloudinary.com/wy4nkkqq/image/upload/v1790076503/Supreme_Henna_Natural_BROWN_150gm.png'],
-    ['Supreme Henna','Supreme Henna Natural Red','150g','https://res.cloudinary.com/wy4nkkqq/image/upload/v1790076504/supreme_henna_natural_red_150g.png'],
+    ['Supreme Henna','Supreme Dulhan Henna Natural Green','200g','/assets/cloudinary-shama/cosmetics/supreme-dulhan-henna-natural-green-200g-8318d1c88741.webp'],
+    ['Supreme Henna','Supreme Henna Natural Brown','150g','/assets/cloudinary-shama/cosmetics/supreme-henna-natural-brown-150gm-5d4803fe9919.webp'],
+    ['Supreme Henna','Supreme Henna Natural Red','150g','/assets/cloudinary-shama/cosmetics/supreme-henna-natural-red-150g-114c7436cfe6.webp'],
 
     // LIFEBUOY
-    ['Lifebuoy','Lifebuoy Soap','125g','https://res.cloudinary.com/wy4nkkqq/image/upload/v1790076477/Lifebuoy_soap_125g.png']
+    ['Lifebuoy','Lifebuoy Soap','125g','/assets/cloudinary-shama/cosmetics/lifebuoy-soap-125g-849798bfa68e.webp']
   ].map(([brand,title,pack,image]) => ({ category:'cosmetics', brand, title, pack, image }));
 
   productData.push(...items);
@@ -76,7 +76,7 @@
       slug:'cosmetics',
       name:'Cosmetics',
       desc:'Beauty, personal care and hygiene essentials',
-      image:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1791542936/johnson_s_baby_oil_200ml.png'
+      image:'/assets/cloudinary-shama/cosmetics/johnson-s-baby-oil-200ml-96548335b7a7.webp'
     });
   }
 })();

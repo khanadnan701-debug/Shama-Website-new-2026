@@ -8,56 +8,56 @@
       title:'Tatcan Powdered Sugar',
       pack:'1kg',
       group:'Sugar & Sugar Cubes',
-      image:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1791031371/Sucre_En_Poudre_Tatcan_1kg.png'
+      image:'/assets/cloudinary-shama/sugar/sucre-en-poudre-tatcan-1kg-a739c5ad588e.webp'
     },
     {
       category:'sugar',
       title:'Dousuc Sugar Cubes',
       pack:'1kg',
       group:'Sugar & Sugar Cubes',
-      image:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1791031371/Sucre_Morceau_DOUSUC_1kg.png'
+      image:'/assets/cloudinary-shama/sugar/sucre-morceau-dousuc-1kg-c2cb15efe8b3.webp'
     },
     {
       category:'sugar',
       title:'Granulated Sugar',
       pack:'25kg',
       group:'Sugar & Sugar Cubes',
-      image:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1791031372/Sucre_En_Poudre_25kg.png'
+      image:'/assets/cloudinary-shama/sugar/sucre-en-poudre-25kg-4a33bbc997f7.webp'
     },
     {
       category:'sugar',
       title:'Shama Desi Gur',
       pack:'500g',
       group:'Shama Desi Gur',
-      image:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1791031372/Shama_Desi_Gur_500g.png'
+      image:'/assets/cloudinary-shama/sugar/shama-desi-gur-500g-47e4706bc96f.webp'
     },
     {
       category:'sugar',
       title:'Shama Desi Shakkar',
       pack:'500g',
       group:'Shama Desi Shakkar',
-      image:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1791031373/Shama_Desi_Shakkar_500g.png'
+      image:'/assets/cloudinary-shama/sugar/shama-desi-shakkar-500g-53dad935a769.webp'
     },
     {
       category:'sugar',
       title:'Shakkar',
       pack:'1kg',
       group:'Shama Desi Shakkar',
-      image:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1791031373/Shakkar_1kg.png'
+      image:'/assets/cloudinary-shama/sugar/shakkar-1kg-50a8e4eda1c0.webp'
     },
     {
       category:'sugar',
       title:'Shama Desi Shakkar',
       pack:'1kg',
       group:'Shama Desi Shakkar',
-      image:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1791031374/Shama_Desi_Shakkar_1kg.png'
+      image:'/assets/cloudinary-shama/sugar/shama-desi-shakkar-1kg-868d4daea669.webp'
     },
     {
       category:'sugar',
       title:'Shama Desi Gur',
       pack:'1kg x 6',
       group:'Shama Desi Gur',
-      image:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1791031374/Shama_Desi_Gur_1kg_X6.png'
+      image:'/assets/cloudinary-shama/sugar/shama-desi-gur-1kg-x6-1ab085afc813.webp'
     }
   ];
 

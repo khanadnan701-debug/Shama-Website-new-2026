@@ -33,7 +33,7 @@
           <img src="https://static.wixstatic.com/media/00ae33_6b312b11ad8f4578af43615631d040f8~mv2_d_1595_1600_s_2.jpg" alt="Shama International founder">
           <div class="about-hero-photo-label"><small>The story behind Shama</small><strong>Family roots. European ambition.</strong></div>
         </div>
-        <img class="about-hero-product" src="https://res.cloudinary.com/wy4nkkqq/image/upload/v1789064691/Shama_thai_jasmine_1_volta_20kg.png" alt="Shama Thai Jasmine Rice">
+        <img class="about-hero-product" src="/assets/cloudinary-shama/rice-images-20260910/shama-thai-jasmine-1-volta-20kg-2f4d866bbcee.webp" alt="Shama Thai Jasmine Rice">
       </div>`;
 
     hero.dataset.premiumReady = '1';

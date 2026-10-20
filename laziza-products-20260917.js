@@ -180,7 +180,7 @@
       slug: 'laziza',
       name: 'Laziza',
       desc: 'Recipe masalas, dessert mixes, custards, jellies and traditional favourites',
-      image: 'https://res.cloudinary.com/wy4nkkqq/image/upload/Laziza_biryani_masala_100g.png'
+      image: '/assets/cloudinary-shama/laziza/spices/laziza-biryani-masala-100g-0f3666d7ad74.webp'
     });
   }
 

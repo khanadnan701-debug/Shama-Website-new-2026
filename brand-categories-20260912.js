@@ -7,7 +7,7 @@
       slug: 'laziza',
       name: 'Laziza',
       desc: 'Explore the range',
-      image: 'https://res.cloudinary.com/wy4nkkqq/image/upload/Laziza_biryani_masala_100g.png',
+      image: '/assets/cloudinary-shama/laziza/spices/laziza-biryani-masala-100g-0f3666d7ad74.webp',
       href: 'laziza.html'
     },
     {
@@ -15,7 +15,7 @@
       slug: 'ahmed',
       name: 'Ahmed',
       desc: 'Explore the range',
-      image: 'https://res.cloudinary.com/wy4nkkqq/image/upload/v1789652169/Ahmed_tamarind_sauce_300g.png',
+      image: '/assets/cloudinary-shama/ahmed/ahmed-tamarind-sauce-300g-cc9749dc5eae.webp',
       href: 'ahmed.html'
     },
     {
@@ -23,7 +23,7 @@
       slug: 'agarbatti',
       name: 'Agarbatti',
       desc: 'Metro, Metromilan & Pure incense',
-      image: 'https://res.cloudinary.com/wy4nkkqq/image/upload/v1790934647/Metro_Black_Sandal_Agarbatti.png',
+      image: '/assets/cloudinary-shama/agarbatti/metro-black-sandal-agarbatti-bf708b22a9ea.webp',
       href: 'agarbatti.html'
     },
     {
@@ -31,7 +31,7 @@
       slug: 'dates',
       name: 'Dates',
       desc: 'Premium date varieties',
-      image: 'https://res.cloudinary.com/wy4nkkqq/image/upload/v1790069276/Shama_Ajwa-Dates-800g.png',
+      image: '/assets/cloudinary-shama/dates/shama-ajwa-dates-800g-734a417a7b85.webp',
       href: 'dates.html'
     },
     {
@@ -39,7 +39,7 @@
       slug: 'pataks',
       name: 'Pataks',
       desc: 'Curry pastes & cooking sauces',
-      image: 'https://res.cloudinary.com/wy4nkkqq/image/upload/v1790069236/Patak_biryani_paste_2.3kg.png',
+      image: '/assets/cloudinary-shama/pataks/patak-biryani-paste-2-3kg-71b7763e2b43.webp',
       href: 'pataks.html'
     },
     {
@@ -47,7 +47,7 @@
       slug: 'cosmetics',
       name: 'Cosmetics',
       desc: 'Beauty & personal care',
-      image: 'https://res.cloudinary.com/wy4nkkqq/image/upload/v1791542936/johnson_s_baby_oil_200ml.png',
+      image: '/assets/cloudinary-shama/cosmetics/johnson-s-baby-oil-200ml-96548335b7a7.webp',
       href: 'cosmetics.html'
     },
     {
@@ -55,7 +55,7 @@
       slug: 'non-foods',
       name: 'Non Foods',
       desc: 'Tandoors, parts & accessories',
-      image: 'https://res.cloudinary.com/wy4nkkqq/image/upload/v1790261684/Shahi_Charcoal_Tandoor_11C_Size_1.png',
+      image: '/assets/cloudinary-shama/non-foods/shahi-charcoal-tandoor-11c-size-1-b0fd2000467a.webp',
       href: 'non-foods.html'
     },
     {
@@ -63,7 +63,7 @@
       slug: 'divers',
       name: 'Divers',
       desc: 'Everyday pantry, snacks and speciality grocery products.',
-      image: 'https://res.cloudinary.com/wy4nkkqq/image/upload/v1790600769/Telephone_ISABGUL_200g.png',
+      image: '/assets/cloudinary-shama/divers/telephone-isabgul-200g-4b4d290c8270.webp',
       href: 'divers.html'
     },
     {
@@ -79,7 +79,7 @@
       slug: 'sea-food',
       name: 'Sea Food',
       desc: 'Frozen seafood selections for retail and foodservice.',
-      image: 'https://res.cloudinary.com/wy4nkkqq/image/upload/v1790600837/Gambas_8-12.png',
+      image: '/assets/cloudinary-shama/sea-food/gambas-8-12-fdb47ab466a9.webp',
       href: 'sea-food.html'
     },
     {
@@ -87,7 +87,7 @@
       slug: 'savoury-snacks',
       name: 'Savoury Snacks',
       desc: 'Namkeen, chips, mixtures, chikki and savoury snack favourites.',
-      image: 'https://res.cloudinary.com/wy4nkkqq/image/upload/v1790601081/Shama_Roasted_Corn_Salted_400G.png',
+      image: '/assets/cloudinary-shama/savoury-snacks/shama-roasted-corn-salted-400g-3ce5d27e8c46.webp',
       href: 'savoury-snacks.html'
     },
     {
@@ -95,7 +95,7 @@
       slug: 'bakery',
       name: 'Bakery',
       desc: 'Baking essentials, rusks & flavours',
-      image: 'https://res.cloudinary.com/wy4nkkqq/image/upload/v1790869503/Cake_Rusk_Coconut_750g.png',
+      image: '/assets/cloudinary-shama/bakery/cake-rusk-coconut-750g-ac4d5d28489c.webp',
       href: 'bakery.html'
     }
   ];
@@ -103,25 +103,25 @@
   const menuImageByHref = {
   "rice.html": "/assets/rice/shama-super-kernal-par-boiled-sella-rice-5kg.webp",
   "spices.html": "/assets/spices/shama-garam-masala-powder.webp",
-  "sauces-pastes.html": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1789678774/Shama_Mango_pickle_1kg.png",
-  "miscellaneous.html": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1789466470/Shama_fried_onion_1kg.png",
+  "sauces-pastes.html": "/assets/cloudinary-shama/paste/shama-mango-pickle-1kg-9c5e9eab9cea.webp",
+  "miscellaneous.html": "/assets/cloudinary-shama/miscellaneous/shama-fried-onion-1kg-113e86531276.webp",
   "beverages.html": "/assets/beverages/shama-basil-seed-drink-watermelon.webp",
   "flour-lentiles.html": "/assets/flour/shama-wheat-flour-t55-1kg.webp?v=20261019-flour-newzip-v2",
   "frozen.html": "assets/frozen/shama-chicken-samosa-20.webp",
-  "oils.html": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1789678755/Shama_sunflower_oil_5ltr.png",
-  "dry-fruits.html": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1789232085/Shama_Raw_almonds_100gm.png",
-  "laziza.html": "https://res.cloudinary.com/wy4nkkqq/image/upload/Laziza_biryani_masala_100g.png",
-  "ahmed.html": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1789652169/Ahmed_tamarind_sauce_300g.png",
-  "agarbatti.html": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1790934647/Metro_Black_Sandal_Agarbatti.png",
-  "dates.html": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1790069276/Shama_Ajwa-Dates-800g.png",
-  "pataks.html": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1790069236/Patak_biryani_paste_2.3kg.png",
-  "cosmetics.html": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1791542936/johnson_s_baby_oil_200ml.png",
-  "non-foods.html": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1790261684/Shahi_Charcoal_Tandoor_11C_Size_1.png",
-  "divers.html": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1790600769/Telephone_ISABGUL_200g.png",
+  "oils.html": "/assets/cloudinary-shama/oils/shama-sunflower-oil-5ltr-8ba69b6f8d48.webp",
+  "dry-fruits.html": "/assets/cloudinary-shama/dry-fruits/shama-raw-almonds-100gm-c0af9f54eee6.webp",
+  "laziza.html": "/assets/cloudinary-shama/laziza/spices/laziza-biryani-masala-100g-0f3666d7ad74.webp",
+  "ahmed.html": "/assets/cloudinary-shama/ahmed/ahmed-tamarind-sauce-300g-cc9749dc5eae.webp",
+  "agarbatti.html": "/assets/cloudinary-shama/agarbatti/metro-black-sandal-agarbatti-bf708b22a9ea.webp",
+  "dates.html": "/assets/cloudinary-shama/dates/shama-ajwa-dates-800g-734a417a7b85.webp",
+  "pataks.html": "/assets/cloudinary-shama/pataks/patak-biryani-paste-2-3kg-71b7763e2b43.webp",
+  "cosmetics.html": "/assets/cloudinary-shama/cosmetics/johnson-s-baby-oil-200ml-96548335b7a7.webp",
+  "non-foods.html": "/assets/cloudinary-shama/non-foods/shahi-charcoal-tandoor-11c-size-1-b0fd2000467a.webp",
+  "divers.html": "/assets/cloudinary-shama/divers/telephone-isabgul-200g-4b4d290c8270.webp",
   "preserves.html": "/assets/preserves/shama-kesar-mango-plup-kesar.webp",
-  "sea-food.html": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1790600837/Gambas_8-12.png",
-  "savoury-snacks.html": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1790601081/Shama_Roasted_Corn_Salted_400G.png",
-  "bakery.html": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1790869503/Cake_Rusk_Coconut_750g.png"
+  "sea-food.html": "/assets/cloudinary-shama/sea-food/gambas-8-12-fdb47ab466a9.webp",
+  "savoury-snacks.html": "/assets/cloudinary-shama/savoury-snacks/shama-roasted-corn-salted-400g-3ce5d27e8c46.webp",
+  "bakery.html": "/assets/cloudinary-shama/bakery/cake-rusk-coconut-750g-ac4d5d28489c.webp"
 };
 
   function decorateMegaMenuImages(grid) {

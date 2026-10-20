@@ -8,7 +8,7 @@
       name:'Laziza',
       desc:'Recipe masalas, dessert mixes and traditional favourites.',
       href:'laziza.html',
-      image:'https://res.cloudinary.com/wy4nkkqq/image/upload/Laziza_biryani_masala_100g.png',
+      image:'/assets/cloudinary-shama/laziza/spices/laziza-biryani-masala-100g-0f3666d7ad74.webp',
       tone:'peach'
     },
     {
@@ -16,7 +16,7 @@
       name:'Ahmed',
       desc:'Sauces, pickles, desserts and pantry favourites.',
       href:'ahmed.html',
-      image:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1789652169/Ahmed_tamarind_sauce_300g.png',
+      image:'/assets/cloudinary-shama/ahmed/ahmed-tamarind-sauce-300g-cc9749dc5eae.webp',
       tone:'mint'
     },
     {
@@ -24,7 +24,7 @@
       name:'Agarbatti',
       desc:'Metro, Metromilan and Pure incense collections.',
       href:'agarbatti.html',
-      image:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1790934647/Metro_Black_Sandal_Agarbatti.png',
+      image:'/assets/cloudinary-shama/agarbatti/metro-black-sandal-agarbatti-bf708b22a9ea.webp',
       tone:'lavender'
     },
     {
@@ -32,7 +32,7 @@
       name:'Dates',
       desc:'Ajwa, Khudri, Safawi, Sukkari and premium dates collection.',
       href:'dates.html',
-      image:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1790069276/Shama_Ajwa-Dates-800g.png',
+      image:'/assets/cloudinary-shama/dates/shama-ajwa-dates-800g-734a417a7b85.webp',
       tone:'sand'
     },
     {
@@ -40,7 +40,7 @@
       name:'Pataks',
       desc:'Patak\'s curry and marinade pastes.',
       href:'pataks.html',
-      image:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1791033974/Patak_biryani_paste_2.3kg.png',
+      image:'/assets/cloudinary-shama/pataks/patak-biryani-paste-2-3kg-71b7763e2b43.webp',
       tone:'rose'
     },
     {
@@ -48,7 +48,7 @@
       name:'Cosmetics',
       desc:'Beauty, personal care and hygiene essentials.',
       href:'cosmetics.html',
-      image:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1791542936/johnson_s_baby_oil_200ml.png',
+      image:'/assets/cloudinary-shama/cosmetics/johnson-s-baby-oil-200ml-96548335b7a7.webp',
       tone:'sky'
     },
     {
@@ -56,7 +56,7 @@
       name:'Non Foods',
       desc:'Commercial tandoors, parts and accessories.',
       href:'non-foods.html',
-      image:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1790261684/Shahi_Charcoal_Tandoor_11C_Size_1.png',
+      image:'/assets/cloudinary-shama/non-foods/shahi-charcoal-tandoor-11c-size-1-b0fd2000467a.webp',
       tone:'sand'
     },
     {
@@ -64,7 +64,7 @@
       name:'Divers',
       desc:'Everyday pantry, snacks and speciality grocery products.',
       href:'divers.html',
-      image:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1790600769/Telephone_ISABGUL_200g.png',
+      image:'/assets/cloudinary-shama/divers/telephone-isabgul-200g-4b4d290c8270.webp',
       tone:'lavender'
     },
     {
@@ -80,7 +80,7 @@
       name:'Sea Food',
       desc:'Frozen seafood selections for retail and foodservice.',
       href:'sea-food.html',
-      image:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1790600837/Gambas_8-12.png',
+      image:'/assets/cloudinary-shama/sea-food/gambas-8-12-fdb47ab466a9.webp',
       tone:'sky'
     },
     {
@@ -88,7 +88,7 @@
       name:'Savoury Snacks',
       desc:'Namkeen, chips, mixtures, chikki and savoury snack favourites.',
       href:'savoury-snacks.html',
-      image:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1790601081/Shama_Roasted_Corn_Salted_400G.png',
+      image:'/assets/cloudinary-shama/savoury-snacks/shama-roasted-corn-salted-400g-3ce5d27e8c46.webp',
       tone:'peach'
     },
     {
@@ -96,7 +96,7 @@
       name:'Bakery',
       desc:'Baking essentials, cake rusks, biscuits, flavours and essences.',
       href:'bakery.html',
-      image:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1790869503/Cake_Rusk_Coconut_750g.png',
+      image:'/assets/cloudinary-shama/bakery/cake-rusk-coconut-750g-ac4d5d28489c.webp',
       tone:'sand'
     }
   ];
@@ -106,25 +106,25 @@
   const imageOverrides = {
     rice:'/assets/rice/shama-super-kernal-par-boiled-sella-rice-5kg.webp',
     spices:'/assets/spices/shama-garam-masala-powder.webp',
-    sauces:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1789678774/Shama_Mango_pickle_1kg.png',
-    misc:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1791546608/Shama_hing_jeera_roasted_chana_400g.png',
+    sauces:'/assets/cloudinary-shama/paste/shama-mango-pickle-1kg-9c5e9eab9cea.webp',
+    misc:'/assets/cloudinary-shama/miscellaneous/shama-hing-jeera-roasted-chana-400g-559221bf1fd9.webp',
     beverages:'/assets/beverages/shama-coco-milk-drink-mango-240ml.webp',
-    tea:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1791292824/Shama_Premium_gold_Tea_500g.png',
-    sugar:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1791031373/Shama_Desi_Shakkar_500g.png',
-    wines:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1791192902/Grover_Wine_Red_Alc._13.5_vol_75cl.png',
+    tea:'/assets/cloudinary-shama/tea/shama-premium-gold-tea-500g-ebda47ccc9c3.webp',
+    sugar:'/assets/cloudinary-shama/sugar/shama-desi-shakkar-500g-53dad935a769.webp',
+    wines:'/assets/cloudinary-shama/wines/grover-wine-red-alc-13-5-vol-75cl-cee439b127e9.webp',
     flour:'/assets/flour/shama-wheat-flour-t55-1kg.webp?v=20261019-flour-newzip-v2',
-    frozen:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1791202844/MAZEDAR_Potato_Samosa_20pcs.png',
-    oils:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1789678755/Shama_sunflower_oil_5ltr.png',
-    'dry-fruits':'https://res.cloudinary.com/wy4nkkqq/image/upload/v1789232085/Shama_Raw_almonds_100gm.png',
-    cosmetics:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1791542936/johnson_s_baby_oil_200ml.png'
+    frozen:'/assets/cloudinary-shama/frozen/mazedar-potato-samosa-20pcs-64cf364138f4.webp',
+    oils:'/assets/cloudinary-shama/oils/shama-sunflower-oil-5ltr-8ba69b6f8d48.webp',
+    'dry-fruits':'/assets/cloudinary-shama/dry-fruits/shama-raw-almonds-100gm-c0af9f54eee6.webp',
+    cosmetics:'/assets/cloudinary-shama/cosmetics/johnson-s-baby-oil-200ml-96548335b7a7.webp'
   };
 
   const thumbnailOverrides = {
-    misc:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1791546608/Shama_hing_jeera_roasted_chana_400g.png',
-    cosmetics:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1791542936/johnson_s_baby_oil_200ml.png',
-    tea:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1791292824/Shama_Premium_gold_Tea_500g.png',
-    sugar:'https://res.cloudinary.com/wy4nkkqq/image/upload/f_auto,q_auto:good,c_fit,w_320,h_320/v1791031373/Shama_Desi_Shakkar_500g.png',
-    wines:'https://res.cloudinary.com/wy4nkkqq/image/upload/f_auto,q_auto:good,c_fit,w_320,h_320/v1791192902/Grover_Wine_Red_Alc._13.5_vol_75cl.png'
+    misc:'/assets/cloudinary-shama/miscellaneous/shama-hing-jeera-roasted-chana-400g-559221bf1fd9.webp',
+    cosmetics:'/assets/cloudinary-shama/cosmetics/johnson-s-baby-oil-200ml-96548335b7a7.webp',
+    tea:'/assets/cloudinary-shama/tea/shama-premium-gold-tea-500g-ebda47ccc9c3.webp',
+    sugar:'/assets/cloudinary-shama/sugar/shama-desi-shakkar-500g-53dad935a769.webp',
+    wines:'/assets/cloudinary-shama/wines/grover-wine-red-alc-13-5-vol-75cl-cee439b127e9.webp'
   };
 
   // Small category labels shared by the carousel cards and full catalogue tiles.
@@ -190,7 +190,7 @@
     const heroMain = bySlug('rice');
     const heroSpices = bySlug('spices');
     const heroFrozen = bySlug('frozen');
-    const chickenSamosaImage = 'https://res.cloudinary.com/wy4nkkqq/image/upload/v1790625180/Shama_Chicken_tikka_Samosa_20Pcs.png';
+    const chickenSamosaImage = '/assets/cloudinary-shama/frozen/shama-chicken-tikka-samosa-20pcs-fd4740726fb5.webp';
 
     main.innerHTML = `
       <section class="grocery-catalogue">

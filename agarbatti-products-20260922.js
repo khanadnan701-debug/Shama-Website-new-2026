@@ -12,77 +12,77 @@
       group:'Metro Collection',
       title:'Metro 3 in 1 Agarbatti',
       pack:'Contact us for available pack sizes',
-      image:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1790069154/Metro_3_in_1.png'
+      image:'/assets/cloudinary-shama/agarbatti/metro-3-in-1-d280559e490a.webp'
     },
     {
       category:'agarbatti',
       group:'Metro Collection',
       title:'Metro 2 in 1 Agarbatti',
       pack:'Contact us for available pack sizes',
-      image:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1790069155/Metro_2_in_1.png'
+      image:'/assets/cloudinary-shama/agarbatti/metro-2-in-1-4dc8e76b9c71.webp'
     },
     {
       category:'agarbatti',
       group:'Metro Collection',
       title:'Metro Amber Orange Agarbatti',
       pack:'Contact us for available pack sizes',
-      image:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1790069155/Metro_amber_orang_agarbatti.png'
+      image:'/assets/cloudinary-shama/agarbatti/metro-amber-orang-agarbatti-0e0fbf4eae63.webp'
     },
     {
       category:'agarbatti',
       group:'Metro Collection',
       title:'Metro Hexa Agarbatti',
       pack:'Contact us for available pack sizes',
-      image:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1790069155/Metro_hexa_agarbatti.png'
+      image:'/assets/cloudinary-shama/agarbatti/metro-hexa-agarbatti-b5303d07da81.webp'
     },
     {
       category:'agarbatti',
       group:'Metro Collection',
       title:'Metro Amber XXL Agarbatti',
       pack:'XXL · Contact us for case quantity',
-      image:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1790069158/Metro_amber_xxl_agarbatti.png'
+      image:'/assets/cloudinary-shama/agarbatti/metro-amber-xxl-agarbatti-09dd98ba8157.webp'
     },
     {
       category:'agarbatti',
       group:'Metro Collection',
       title:"Metro Dragon's Blood Agarbatti",
       pack:'Contact us for available pack sizes',
-      image:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1790069193/Metro_dragon_s_blood_agarbatti.png'
+      image:'/assets/cloudinary-shama/agarbatti/metro-dragon-s-blood-agarbatti-0b216cf9032a.webp'
     },
     {
       category:'agarbatti',
       group:'Metro Collection',
       title:'Metro Cinnamon Agarbatti',
       pack:'Contact us for available pack sizes',
-      image:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1790069193/Metro_cinnamon_agarbatti.png'
+      image:'/assets/cloudinary-shama/agarbatti/metro-cinnamon-agarbatti-01c7fbd64e31.webp'
     },
     {
       category:'agarbatti',
       group:'Metro Collection',
       title:'Metro Bakhoor Agarbatti',
       pack:'Contact us for available pack sizes',
-      image:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1790069193/Metro_bakhoor_agarbatti.png'
+      image:'/assets/cloudinary-shama/agarbatti/metro-bakhoor-agarbatti-dfff3fd71125.webp'
     },
     {
       category:'agarbatti',
       group:'Metro Collection',
       title:'Metro Classic Agarbatti',
       pack:'Contact us for available pack sizes',
-      image:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1790069193/Metro_classic_agarbatti.png'
+      image:'/assets/cloudinary-shama/agarbatti/metro-classic-agarbatti-4fdd012d0366.webp'
     },
     {
       category:'agarbatti',
       group:'Metro Collection',
       title:'Metro Apple Cinnamon Clove Agarbatti',
       pack:'Contact us for available pack sizes',
-      image:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1790934647/Metro_Apple_Cinnamon_Clove_Agarbatti.png'
+      image:'/assets/cloudinary-shama/agarbatti/metro-apple-cinnamon-clove-agarbatti-d2b4bdc943a1.webp'
     },
     {
       category:'agarbatti',
       group:'Metro Collection',
       title:'Metro Black Sandal Agarbatti',
       pack:'Contact us for available pack sizes',
-      image:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1790934647/Metro_Black_Sandal_Agarbatti.png'
+      image:'/assets/cloudinary-shama/agarbatti/metro-black-sandal-agarbatti-bf708b22a9ea.webp'
     },
 
     // METROMILAN COLLECTION
@@ -91,63 +91,63 @@
       group:'Metromilan Collection',
       title:'Metromilan Kewra Agarbatti',
       pack:'Contact us for available pack sizes',
-      image:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1790069194/Metromilan_kewra_agarbatti.png'
+      image:'/assets/cloudinary-shama/agarbatti/metromilan-kewra-agarbatti-24fd7b58de0a.webp'
     },
     {
       category:'agarbatti',
       group:'Metromilan Collection',
       title:'Metromilan Jasmine Agarbatti',
       pack:'Contact us for available pack sizes',
-      image:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1790069194/Metromilan_jasmine_agarbatti.png'
+      image:'/assets/cloudinary-shama/agarbatti/metromilan-jasmine-agarbatti-cd8a4088963b.webp'
     },
     {
       category:'agarbatti',
       group:'Metromilan Collection',
       title:'Metromilan Champa Agarbatti',
       pack:'Contact us for available pack sizes',
-      image:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1790069194/Metromilan_champa_agarbatti.png'
+      image:'/assets/cloudinary-shama/agarbatti/metromilan-champa-agarbatti-9f716954c240.webp'
     },
     {
       category:'agarbatti',
       group:'Metromilan Collection',
       title:'Metromilan Amber Agarbatti',
       pack:'Contact us for available pack sizes',
-      image:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1790069194/Metromilan_amber_agarbatti.png'
+      image:'/assets/cloudinary-shama/agarbatti/metromilan-amber-agarbatti-70b719194e99.webp'
     },
     {
       category:'agarbatti',
       group:'Metromilan Collection',
       title:'Metromilan Lavender Agarbatti XXL',
       pack:'XXL · Contact us for case quantity',
-      image:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1790069210/Metromilan_lavender_agarbatti_XXL.png'
+      image:'/assets/cloudinary-shama/agarbatti/metromilan-lavender-agarbatti-xxl-a1934047edd7.webp'
     },
     {
       category:'agarbatti',
       group:'Metromilan Collection',
       title:'Metromilan Red Rose Agarbatti',
       pack:'Contact us for available pack sizes',
-      image:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1790069210/Metromilan_Redrose_agarbatti.png'
+      image:'/assets/cloudinary-shama/agarbatti/metromilan-redrose-agarbatti-7378e1af02a3.webp'
     },
     {
       category:'agarbatti',
       group:'Metromilan Collection',
       title:'Metromilan Sandalwood Agarbatti',
       pack:'Contact us for available pack sizes',
-      image:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1790069211/Metromilan_sandalwood_agarbatti.png'
+      image:'/assets/cloudinary-shama/agarbatti/metromilan-sandalwood-agarbatti-3b42f72c9977.webp'
     },
     {
       category:'agarbatti',
       group:'Metromilan Collection',
       title:'Metromilan Lavender Agarbatti',
       pack:'Contact us for available pack sizes',
-      image:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1790069211/Metromilan_lavender_agarbatti.png'
+      image:'/assets/cloudinary-shama/agarbatti/metromilan-lavender-agarbatti-a482e79cf020.webp'
     },
     {
       category:'agarbatti',
       group:'Metromilan Collection',
       title:'Metromilan Lily Agarbatti',
       pack:'Contact us for available pack sizes',
-      image:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1790069211/Metromilan_lily_agarbatti.png'
+      image:'/assets/cloudinary-shama/agarbatti/metromilan-lily-agarbatti-71ce685e230c.webp'
     },
 
     // PURE COLLECTION
@@ -156,7 +156,7 @@
       group:'Pure Collection',
       title:'Pure Lily Agarbatti',
       pack:'Contact us for available pack sizes',
-      image:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1790069155/Pure_lilly_agarbatti.png'
+      image:'/assets/cloudinary-shama/agarbatti/pure-lilly-agarbatti-ba6e0d2673cf.webp'
     }
   ];
 
@@ -168,7 +168,7 @@
     slug:'agarbatti',
     name:'Agarbatti',
     desc:'Metro, Metromilan and Pure incense collections',
-    image:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1790934647/Metro_Black_Sandal_Agarbatti.png'
+    image:'/assets/cloudinary-shama/agarbatti/metro-black-sandal-agarbatti-bf708b22a9ea.webp'
   };
 
   const existing = categories.find(item => item.slug === 'agarbatti');

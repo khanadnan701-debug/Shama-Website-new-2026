@@ -9,7 +9,7 @@
     "brand": "Grover",
     "title": "Grover Red Wine",
     "pack": "75cl · Alc. 13.5% vol.",
-    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1791192902/Grover_Wine_Red_Alc._13.5_vol_75cl.png"
+    "image": "/assets/cloudinary-shama/wines/grover-wine-red-alc-13-5-vol-75cl-cee439b127e9.webp"
   },
   {
     "category": "wines",
@@ -17,7 +17,7 @@
     "brand": "Grover",
     "title": "Grover Red Wine",
     "pack": "37.5cl · Alc. 13.5% vol.",
-    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1791192903/Grover_Wine_Red_Alc._13.5_vol_37.5cl.png"
+    "image": "/assets/cloudinary-shama/wines/grover-wine-red-alc-13-5-vol-37-5cl-4f7702468065.webp"
   },
   {
     "category": "wines",
@@ -25,7 +25,7 @@
     "brand": "Kamasutra",
     "title": "Kamasutra Red Wine",
     "pack": "75cl · Alc. 12.5% vol.",
-    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1791192904/Kamasutra_Red_Wine_Alc_12.5_Vol_75cl.png"
+    "image": "/assets/cloudinary-shama/wines/kamasutra-red-wine-alc-12-5-vol-75cl-e087a51247dc.webp"
   },
   {
     "category": "wines",
@@ -33,7 +33,7 @@
     "brand": "Kamasutra",
     "title": "Kamasutra Red Wine",
     "pack": "37.5cl · Alc. 12.5% vol.",
-    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1791192902/Kamasutra_Red_Wine_Alc_12.5_Vol_37.5cl.png"
+    "image": "/assets/cloudinary-shama/wines/kamasutra-red-wine-alc-12-5-vol-37-5cl-e97996c43847.webp"
   },
   {
     "category": "wines",
@@ -41,7 +41,7 @@
     "brand": "Sula",
     "title": "Sula Shiraz Red Wine",
     "pack": "750ml",
-    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1791192906/Shiraz_Red_Wine_Sula_750ml.png"
+    "image": "/assets/cloudinary-shama/wines/shiraz-red-wine-sula-750ml-0438f4c10698.webp"
   },
   {
     "category": "wines",
@@ -49,7 +49,7 @@
     "brand": "Grover",
     "title": "Grover White Wine",
     "pack": "75cl · Alc. 13.5% vol.",
-    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1791192903/Grover_Wine_White_Alc._13.5_vol_75cl.png"
+    "image": "/assets/cloudinary-shama/wines/grover-wine-white-alc-13-5-vol-75cl-d29f045995fe.webp"
   },
   {
     "category": "wines",
@@ -57,7 +57,7 @@
     "brand": "Grover",
     "title": "Grover White Wine",
     "pack": "37.5cl · Alc. 13.5% vol.",
-    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1791192904/grover_wine_white_alc._13.5_vol_37.5cl.png"
+    "image": "/assets/cloudinary-shama/wines/grover-wine-white-alc-13-5-vol-37-5cl-50970bbd8152.webp"
   },
   {
     "category": "wines",
@@ -65,7 +65,7 @@
     "brand": "Kamasutra",
     "title": "Kamasutra White Wine",
     "pack": "75cl · Alc. 12.5% vol.",
-    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1791192904/Kamasutra_White_Wine_Alc_12.5_Vol_75cl.png"
+    "image": "/assets/cloudinary-shama/wines/kamasutra-white-wine-alc-12-5-vol-75cl-84b436d88453.webp"
   },
   {
     "category": "wines",
@@ -73,7 +73,7 @@
     "brand": "Kamasutra",
     "title": "Kamasutra White Wine",
     "pack": "37.5cl · Alc. 12.5% vol.",
-    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1791192904/Kamasutra_White_Wine_Alc_12.5_Vol_37.5cl.png"
+    "image": "/assets/cloudinary-shama/wines/kamasutra-white-wine-alc-12-5-vol-37-5cl-c582e9025488.webp"
   },
   {
     "category": "wines",
@@ -81,7 +81,7 @@
     "brand": "Grover",
     "title": "Grover Rosé Wine",
     "pack": "75cl · Alc. 13.5% vol.",
-    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1791192902/Grover_Wine_Rose_Alc._13.5_vol_75cl.png"
+    "image": "/assets/cloudinary-shama/wines/grover-wine-rose-alc-13-5-vol-75cl-7da17083143d.webp"
   },
   {
     "category": "wines",
@@ -89,7 +89,7 @@
     "brand": "Grover",
     "title": "Grover Rosé Wine",
     "pack": "37.5cl · Alc. 13.5% vol.",
-    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1791192903/Grover_Wine_Rose_Alc._13.5_vol_37.5cl.png"
+    "image": "/assets/cloudinary-shama/wines/grover-wine-rose-alc-13-5-vol-37-5cl-d342eca3ae35.webp"
   },
   {
     "category": "wines",
@@ -97,7 +97,7 @@
     "brand": "Kamasutra",
     "title": "Kamasutra Rosé Wine",
     "pack": "75cl · Alc. 12.5% vol.",
-    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1791192904/Kamasutra_Rose_Wine_Alc_12.5_Vol_75cl.png"
+    "image": "/assets/cloudinary-shama/wines/kamasutra-rose-wine-alc-12-5-vol-75cl-fb0df90f6067.webp"
   },
   {
     "category": "wines",
@@ -105,7 +105,7 @@
     "brand": "Kamasutra",
     "title": "Kamasutra Rosé Wine",
     "pack": "37.5cl · Alc. 12.5% vol.",
-    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1791192904/Kamasutra_Rose_Wine_Alc_12.5_Vol_37.5cl.png"
+    "image": "/assets/cloudinary-shama/wines/kamasutra-rose-wine-alc-12-5-vol-37-5cl-814733f13e9c.webp"
   },
   {
     "category": "wines",
@@ -113,7 +113,7 @@
     "brand": "Meera",
     "title": "Meera Masala Liqueur",
     "pack": "70cl",
-    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1791192905/Liqueuer_Meera_Masala_70CL.png"
+    "image": "/assets/cloudinary-shama/wines/liqueuer-meera-masala-70cl-73a37215234e.webp"
   },
   {
     "category": "wines",
@@ -121,7 +121,7 @@
     "brand": "Meera",
     "title": "Meera Ginger Liqueur",
     "pack": "70cl",
-    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1791192905/Meera_Ginger_liquor_70_cl.png"
+    "image": "/assets/cloudinary-shama/wines/meera-ginger-liquor-70-cl-c390db1c352a.webp"
   },
   {
     "category": "wines",
@@ -129,7 +129,7 @@
     "brand": "Meera",
     "title": "Meera Mango Liqueur",
     "pack": "70cl",
-    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1791192905/Liqueur_Meera_Mango_70CL.png"
+    "image": "/assets/cloudinary-shama/wines/liqueur-meera-mango-70cl-011ecdc1d0c5.webp"
   },
   {
     "category": "wines",
@@ -137,7 +137,7 @@
     "brand": "Meera",
     "title": "Meera Rose Liqueur",
     "pack": "70cl",
-    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1791192905/Liqueur_Meera_Rose_70cl.png"
+    "image": "/assets/cloudinary-shama/wines/liqueur-meera-rose-70cl-cd5f843b6f1b.webp"
   },
   {
     "category": "wines",
@@ -145,7 +145,7 @@
     "brand": "Meera",
     "title": "Meera Cardamom Liqueur",
     "pack": "70cl",
-    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1791192905/Liqueuer_Meera_Cardamom_70CL.png"
+    "image": "/assets/cloudinary-shama/wines/liqueuer-meera-cardamom-70cl-bd1ff4a7617e.webp"
   },
   {
     "category": "wines",
@@ -153,7 +153,7 @@
     "brand": "Meera",
     "title": "Meera Paan Liqueur",
     "pack": "70cl",
-    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1791192906/Liqueur_Meera_Pan_70_Cl.png"
+    "image": "/assets/cloudinary-shama/wines/liqueur-meera-pan-70-cl-3f2e246f68bc.webp"
   },
   {
     "category": "wines",
@@ -161,7 +161,7 @@
     "brand": "Meera",
     "title": "Meera Lychee Liqueur",
     "pack": "70cl",
-    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1791192906/Meera_lychee_liquor_70_cl.png"
+    "image": "/assets/cloudinary-shama/wines/meera-lychee-liquor-70-cl-b515429fa7a0.webp"
   },
   {
     "category": "wines",
@@ -169,7 +169,7 @@
     "brand": "Cobra",
     "title": "Cobra Premium Beer",
     "pack": "330ml · Alc. 4.8% vol.",
-    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1791192903/Cobra_Premium_Beer_alc._4.8_vol_330ml.png"
+    "image": "/assets/cloudinary-shama/wines/cobra-premium-beer-alc-4-8-vol-330ml-281bfa9b2e11.webp"
   },
   {
     "category": "wines",
@@ -177,7 +177,7 @@
     "brand": "Kingfisher",
     "title": "Kingfisher Premium Lager Beer",
     "pack": "Alc. 4.5% vol.",
-    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1791192906/Kingfisher_Prem._Lager_Beer_4.5.png"
+    "image": "/assets/cloudinary-shama/wines/kingfisher-prem-lager-beer-4-5-9cef70415e64.webp"
   },
   {
     "category": "wines",
@@ -185,7 +185,7 @@
     "brand": "Kamasutra",
     "title": "Kamasutra Beer",
     "pack": "330ml · Alc. 5.0% vol.",
-    "image": "https://res.cloudinary.com/wy4nkkqq/image/upload/v1791192906/KAMASUTRA_Beer_alc._5.0_vol_330_ml.png"
+    "image": "/assets/cloudinary-shama/wines/kamasutra-beer-alc-5-0-vol-330-ml-8287666ab23c.webp"
   }
 ];
   const others = productData.filter(item => item.category !== 'wines');
@@ -196,7 +196,7 @@
     if (category) {
       category.name='Wines';
       category.desc='Red, white and rosé wines, liqueurs and beers';
-      category.image='https://res.cloudinary.com/wy4nkkqq/image/upload/v1791192902/Grover_Wine_Red_Alc._13.5_vol_75cl.png';
+      category.image='/assets/cloudinary-shama/wines/grover-wine-red-alc-13-5-vol-75cl-cee439b127e9.webp';
     }
   }
 
