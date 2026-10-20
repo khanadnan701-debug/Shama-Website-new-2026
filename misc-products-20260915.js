@@ -14,7 +14,7 @@
     {category:'misc',title:'Shama Vinegar',pack:'Contact us for available pack sizes',image:'/assets/cloudinary-shama/miscellaneous/shama-vinegar-eeeaade9c22b.webp'},
     {category:'misc',title:'Shama Baking Soda',pack:'800g',image:'/assets/cloudinary-shama/miscellaneous/shama-baking-soda-800gm-d7e08a269093.webp'},
     {category:'misc',title:'Shama Pehalwan Rewari',pack:'Contact us for available pack sizes',image:'/assets/cloudinary-shama/miscellaneous/shama-pehalwan-rewari-664c7f4bb557.webp'},
-    {category:'misc',title:'Shama Black Salt',pack:'400g',image:'https://res.cloudinary.com/wy4nkkqq/image/upload/v1789464150/Shama_black_salt_400gm.png'},
+    {category:'misc',title:'Shama Black Salt',pack:'400g',image:'/assets/cloudinary-shama/miscellaneous/shama-black-salt-400g-10a32b3a1e3a.webp'},
     {category:'misc',title:'Shama Lime Juice',pack:'200ml',image:'/assets/cloudinary-shama/miscellaneous/shama-lime-juice-200ml-78037fe41f12.webp'},
     {category:'misc',title:'Shama Roasted Vermicelli',pack:'5975 - 400g',image:'/assets/cloudinary-shama/miscellaneous/shama-roasted-vermicelli-400g-aba53cd5d99c.webp'},
     {"category":"misc","title":"Shama Plain Vermicelli","pack":"5968A - 400g","image":"/assets/cloudinary-shama/miscellaneous/shama-plain-vermicelli-400g-480cb6455086.webp"},

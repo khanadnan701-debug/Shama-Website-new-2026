@@ -4,199 +4,199 @@
       category: 'rice',
       title: 'Shama Basmati Rice (extra Long)',
       pack: '1878B - 20kg x 1',
-      image: 'https://res.cloudinary.com/wy4nkkqq/image/upload/v1789030724/shama-extra-long-20kg.jpg'
+      image: '/assets/rice/shama-basmati-rice-extra-long-20kg.webp'
     },
     {
       category: 'rice',
       title: 'Shama Basmati Rice (extra Long)',
       pack: '2189A - 10kg x 1',
-      image: 'https://res.cloudinary.com/wy4nkkqq/image/upload/v1789030723/shama-extra-long-10kg.jpg'
+      image: '/assets/rice/shama-basmati-rice-extra-long-10kg.webp'
     },
     {
       category: 'rice',
       title: 'Shama Basmati Rice (extra Long)',
       pack: '1892A - 5kg x 1',
-      image: 'https://res.cloudinary.com/wy4nkkqq/image/upload/v1789030723/shama-extra-long-5kg.jpg'
+      image: '/assets/rice/shama-basmati-rice-extra-long-5kg.webp'
     },
     {
       category: 'rice',
       title: 'Shama Basmati Rice (extra Long)',
       pack: '4206A - 2kg x 10',
-      image: 'https://res.cloudinary.com/wy4nkkqq/image/upload/v1789030723/shama-extra-long-2kg.jpg'
+      image: '/assets/rice/shama-basmati-rice-extra-long-2kg.webp'
     },
     {
       category: 'rice',
       title: 'Shama Basmati Rice (extra Long)',
       pack: '2318A - 1kg x 20',
-      image: 'https://res.cloudinary.com/wy4nkkqq/image/upload/v1789030723/shama-extra-long-1kg.jpg'
+      image: '/assets/rice/shama-basmati-rice-extra-long-1kg.webp'
     },
     {
       category: 'rice',
       title: 'Shama White Gold Basmati Rice',
       pack: '0116A - 20kg x 1',
-      image: 'https://res.cloudinary.com/wy4nkkqq/image/upload/v1789030724/shama-white-gold-basmati-20kg.jpg'
+      image: '/assets/rice/shama-white-gold-basmati-rice-20kg.webp'
     },
     {
       category: 'rice',
       title: 'Shama White Gold Basmati Rice',
       pack: '0109A - 10kg x 1',
-      image: 'https://res.cloudinary.com/wy4nkkqq/image/upload/v1789030724/shama-white-gold-basmati-10kg.jpg'
+      image: '/assets/rice/shama-white-gold-basmati-rice-10kg.webp'
     },
     {
       category: 'rice',
       title: 'Shama White Gold Basmati Rice',
       pack: '0017A - 5kg x 1',
-      image: 'https://res.cloudinary.com/wy4nkkqq/image/upload/v1789030724/shama-white-gold-basmati-5kg.jpg'
+      image: '/assets/rice/shama-white-gold-basmati-rice-5kg.webp'
     },
     {
       category: 'rice',
       title: 'Shama White Gold Basmati Rice',
       pack: '0093A - 2kg x 10',
-      image: 'https://res.cloudinary.com/wy4nkkqq/image/upload/v1789030724/shama-white-gold-basmati-2kg.jpg'
+      image: '/assets/rice/shama-white-gold-basmati-rice-2kg.webp'
     },
     {
       category: 'rice',
       title: 'Shama White Gold Basmati Rice',
       pack: '0086A - 1kg x 20',
-      image: 'https://res.cloudinary.com/wy4nkkqq/image/upload/v1789030724/shama-white-gold-basmati-1kg.jpg'
+      image: '/assets/rice/shama-white-gold-basmati-rice-1kg.webp'
     },
     {
       category: 'rice',
       title: 'Shama Super Kernal Parboiled Sella Rice',
       pack: '0147A - 20kg x 1',
-      image: 'https://res.cloudinary.com/wy4nkkqq/image/upload/v1789030723/sella-20kg.jpg'
+      image: '/assets/rice/shama-super-kernal-par-boiled-sella-rice-20kg.webp'
     },
     {
       category: 'rice',
       title: 'Shama Super Kernal Parboiled Sella Rice',
       pack: '0130 - 10kg x 1',
-      image: 'https://res.cloudinary.com/wy4nkkqq/image/upload/v1789030723/sella-10kg.jpg'
+      image: '/assets/rice/shama-super-kernal-par-boiled-sella-rice-10kg.webp'
     },
     {
       category: 'rice',
       title: 'Shama Super Kernal Parboiled Sella Rice',
       pack: '0123A - 5kg x 1',
-      image: 'https://res.cloudinary.com/wy4nkkqq/image/upload/v1789030723/sella-5kg.jpg'
+      image: '/assets/rice/shama-super-kernal-par-boiled-sella-rice-5kg.webp'
     },
     {
       category: 'rice',
       title: 'Shama Super Kernal Parboiled Sella Rice',
       pack: '2165A - 2kg x 10',
-      image: 'https://res.cloudinary.com/wy4nkkqq/image/upload/v1789030730/sella-2kg.jpg'
+      image: '/assets/rice/shama-super-kernal-par-boiled-sella-rice-2kg.webp'
     },
     {
       category: 'rice',
       title: 'Shama Super Kernal Parboiled Sella Rice',
       pack: '0178A - 1kg x 20',
-      image: 'https://res.cloudinary.com/wy4nkkqq/image/upload/v1789030729/sella-1kg.jpg'
+      image: '/assets/rice/shama-super-kernal-par-boiled-sella-rice-1kg.webp'
     },
     {
       category: 'rice',
       title: 'Shama Thai Long Grain Jasmin Rice AAA',
       pack: '4114B - 20kg x 1',
-      image: 'https://res.cloudinary.com/wy4nkkqq/image/upload/v1789030729/jasmine-20kg.jpg'
+      image: '/assets/rice/shama-thai-long-grain-jasmin-rice-aaa-20kg.webp'
     },
     {
       category: 'rice',
       title: 'Shama Thai Long Grain Jasmin Rice AAA',
       pack: '0338A - 10kg x 1',
-      image: 'https://res.cloudinary.com/wy4nkkqq/image/upload/v1789030729/jasmine-10kg.jpg'
+      image: '/assets/rice/shama-thai-long-grain-jasmin-rice-aaa-10kg.webp'
     },
     {
       category: 'rice',
       title: 'Shama Thai Long Grain Jasmin Rice AAA',
       pack: '0239A - 5kg x 1',
-      image: 'https://res.cloudinary.com/wy4nkkqq/image/upload/v1789030729/jasmine-5kg.jpg'
+      image: '/assets/rice/shama-thai-long-grain-jasmin-rice-aaa-5kg.webp'
     },
     {
       category: 'rice',
       title: 'Shama Thai Long Grain Jasmin Rice AAA',
       pack: '0314A - 1kg x 20',
-      image: 'https://res.cloudinary.com/wy4nkkqq/image/upload/v1789030728/jasmine-1kg.jpg'
+      image: '/assets/rice/shama-thai-long-grain-jasmin-rice-aaa-1kg.webp'
     },
     {
       category: 'rice',
       title: 'Sunrise Extra Long Basmati Rice',
       pack: '20kg x 1',
-      image: 'https://res.cloudinary.com/wy4nkkqq/image/upload/v1789030726/sunrise-xtra-long-20kg.jpg'
+      image: '/assets/rice/sunrise-basmati-rice-extra-long-20kg.webp'
     },
     {
       category: 'rice',
       title: 'Sunrise Extra Long Basmati Rice',
       pack: '10kg x 1',
-      image: 'https://res.cloudinary.com/wy4nkkqq/image/upload/v1789030726/sunrise-xtra-long-10kg.jpg'
+      image: '/assets/rice/sunrise-basmati-rice-extra-long-10kg.webp'
     },
     {
       category: 'rice',
       title: 'Sunrise Extra Long Basmati Rice',
       pack: '5kg x 1',
-      image: 'https://res.cloudinary.com/wy4nkkqq/image/upload/v1789030726/sunrise-xtra-long-5kg.jpg'
+      image: '/assets/rice/sunrise-basmati-rice-extra-long-5kg.webp'
     },
     {
       category: 'rice',
       title: 'Sunrise Extra Long Basmati Rice',
       pack: '1kg x 20',
-      image: 'https://res.cloudinary.com/wy4nkkqq/image/upload/v1789030726/sunrise-xtra-long-1kg.jpg'
+      image: '/assets/rice/sunrise-basmati-rice-extra-long-1kg.webp'
     },
     {
       category: 'rice',
       title: 'Sunrise Golden Sella Rice',
       pack: '20kg x 1',
-      image: 'https://res.cloudinary.com/wy4nkkqq/image/upload/v1789030725/sunrise-golden-sella-20kg.jpg'
+      image: '/assets/rice/sunrise-golden-sella-basmati-rice-20-kg.webp'
     },
     {
       category: 'rice',
       title: 'Sunrise Golden Sella Rice',
       pack: '10kg x 1',
-      image: 'https://res.cloudinary.com/wy4nkkqq/image/upload/v1789030725/sunrise-golden-sella-10kg.jpg'
+      image: '/assets/rice/sunrise-golden-sella-basmati-rice-10-kg.webp'
     },
     {
       category: 'rice',
       title: 'Sunrise Golden Sella Rice',
       pack: '5kg x 1',
-      image: 'https://res.cloudinary.com/wy4nkkqq/image/upload/v1789030725/sunrise-golden-sella-5kg.jpg'
+      image: '/assets/rice/sunrise-golden-sella-basmati-rice-5-kg.webp'
     },
     {
       category: 'rice',
       title: 'Sunrise Golden Sella Rice',
       pack: '1kg x 20',
-      image: 'https://res.cloudinary.com/wy4nkkqq/image/upload/v1789030724/sunrise-golden-sella-1kg.jpg'
+      image: '/assets/rice/sunrise-golden-sella-basmati-rice-1-kg.webp'
     },
     {
       category: 'rice',
       title: 'Sunrise Fragrant Jasmine Rice AAAAA',
       pack: '20kg x 1',
-      image: 'https://res.cloudinary.com/wy4nkkqq/image/upload/v1789030728/elephant-rice-20kg.jpg'
+      image: '/assets/rice/sunrise-elephant-jasmine-parfume-rice-20kg.webp'
     },
     {
       category: 'rice',
       title: 'Sunrise Fragrant Jasmine Rice AAAAA',
       pack: '5kg x 1',
-      image: 'https://res.cloudinary.com/wy4nkkqq/image/upload/v1789030728/elephant-rice-5kg.jpg'
+      image: '/assets/rice/sunrise-elephant-jasmine-parfume-rice-5kg.webp'
     },
     {
       category: 'rice',
       title: 'Sunrise Elephant Jasmine Broken Rice (1 Time)',
       pack: '20kg x 1',
-      image: 'https://res.cloudinary.com/wy4nkkqq/image/upload/v1789030727/elephant-rice-1-time-20kg.jpg'
+      image: '/assets/rice/sunrise-elephant-parfume-jasmin-broken-rice-1x-20kg.webp'
     },
     {
       category: 'rice',
       title: 'Sunrise Elephant Jasmine Broken Rice (1 Time)',
       pack: '5kg x 1',
-      image: 'https://res.cloudinary.com/wy4nkkqq/image/upload/v1789030727/elephant-rice-1-time-5kg.jpg'
+      image: '/assets/rice/sunrise-elephant-parfume-jasmin-broken-rice-1x-5kg.webp'
     },
     {
       category: 'rice',
       title: 'Sunrise Elephant Jasmine Broken Rice (2 Times)',
       pack: '20kg x 1',
-      image: 'https://res.cloudinary.com/wy4nkkqq/image/upload/v1789030728/elephant-rice-2-time-20kg.jpg'
+      image: '/assets/rice/sunrise-elephant-parfume-jasmin-broken-rice-2x-20kg.webp'
     },
     {
       category: 'rice',
       title: 'Sunrise Elephant Jasmine Broken Rice (2 Times)',
       pack: '5kg x 1',
-      image: 'https://res.cloudinary.com/wy4nkkqq/image/upload/v1789030727/elephant-rice-2-time-5kg.jpg'
+      image: '/assets/rice/sunrise-elephant-parfume-jasmin-broken-rice-2x-5kg.webp'
     }
   ];
 

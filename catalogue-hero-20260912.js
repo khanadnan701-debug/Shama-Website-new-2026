@@ -11,7 +11,7 @@
     visual.setAttribute('aria-hidden', 'true');
     visual.innerHTML = `
       <a class="catalogue-hero-card one" href="rice.html" tabindex="-1">
-        <img src="https://res.cloudinary.com/wy4nkkqq/image/upload/v1789030729/jasmine-5kg.jpg" alt="">
+        <img src="/assets/rice/shama-thai-long-grain-jasmin-rice-aaa-5kg.webp" alt="">
         <span>Rice</span>
       </a>
       <a class="catalogue-hero-card two" href="spices.html" tabindex="-1">

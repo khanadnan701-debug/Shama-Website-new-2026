@@ -129,9 +129,44 @@
     return raw.replace(/\b\w/g,ch=>ch.toUpperCase());
   }
 
+  const LOCAL_IMAGES = Object.freeze({
+  "Ahmed_apple_jelly_80g": "/assets/cloudinary-shama/ahmed/ahmed-apple-jelly-80g-2330984f4fa2.webp",
+  "Ahmed_cherry_jelly_80g": "/assets/cloudinary-shama/ahmed/ahmed-cherry-jelly-80g-4c8cc6995057.webp",
+  "Ahmed_kheer_mix_pistachio_160g": "/assets/cloudinary-shama/ahmed/ahmed-kheer-mix-pistachio-160g-6074fdbbc944.webp",
+  "Ahmed_lychee_jelly_80g": "/assets/cloudinary-shama/ahmed/ahmed-lychee-jelly-80g-d5463f15caad.webp",
+  "Ahmed_mango_jelly_80g": "/assets/cloudinary-shama/ahmed/ahmed-mango-jelly-80g-3514509472b7.webp",
+  "Ahmed_mind_sauce_300g": "/assets/cloudinary-shama/ahmed/ahmed-mind-sauce-300g-4a3d535d83ce.webp",
+  "Ahmed_mixed_fruit_jelly_80g": "/assets/cloudinary-shama/ahmed/ahmed-mixed-fruit-jelly-80g-0bdfed176ff8.webp",
+  "Ahmed_mixed_pickle_1kg": "/assets/cloudinary-shama/ahmed/ahmed-mixed-pickle-1kg-547ab8c22dfa.webp",
+  "Ahmed_orange_jelly_80g": "/assets/cloudinary-shama/ahmed/ahmed-orange-jelly-80g-6f7d5e9266b8.webp",
+  "Ahmed_pheni_150g": "/assets/cloudinary-shama/ahmed/ahmed-pheni-150g-dc91319c8d5e.webp",
+  "Ahmed_pineapple_jelly_80g": "/assets/cloudinary-shama/ahmed/ahmed-pineapple-jelly-80g-9d9de020f127.webp",
+  "Ahmed_plum_sauce_300g": "/assets/cloudinary-shama/ahmed/ahmed-plum-sauce-300g-98a2b1058f79.webp",
+  "Ahmed_rasberry_jelly_80g": "/assets/cloudinary-shama/ahmed/ahmed-rasberry-jelly-80g-c302276bf464.webp",
+  "Ahmed_soy_sauce_300ml": "/assets/cloudinary-shama/ahmed/ahmed-soy-sauce-300ml-5ea544d86356.webp",
+  "Ahmed_strawberry_jelly_80g": "/assets/cloudinary-shama/ahmed/ahmed-strawberry-jelly-80g-b7403ca49930.webp",
+  "Ahmed_sweet_tangy_sauce_300g": "/assets/cloudinary-shama/ahmed/ahmed-sweet-tangy-sauce-300g-8d79a40e9508.webp",
+  "Ahmed_tamarind_sauce_300g": "/assets/cloudinary-shama/ahmed/ahmed-tamarind-sauce-300g-cc9749dc5eae.webp",
+  "Banana_custard_powder_250g": "/assets/cloudinary-shama/ahmed/banana-custard-powder-250g-77bcad8cf831.webp",
+  "Chilli_pickle_1kg": "/assets/cloudinary-shama/ahmed/chilli-pickle-1kg-7417cc6e956b.webp",
+  "Chilli_pickle_400g": "/assets/cloudinary-shama/ahmed/chilli-pickle-400g-bbefcd5a3078.webp",
+  "Coriandar_sauce_300g": "/assets/cloudinary-shama/ahmed/coriandar-sauce-300g-a0c61dafc64b.webp",
+  "Corn_flour_285g": "/assets/cloudinary-shama/ahmed/corn-flour-285g-9490616aebf9.webp",
+  "Garlic_pickle_1kg": "/assets/cloudinary-shama/ahmed/garlic-pickle-1kg-b7fc005d8ab4.webp",
+  "Green_chilli_sauce_300g": "/assets/cloudinary-shama/ahmed/green-chilli-sauce-300g-3a4bcf42f302.webp",
+  "Green_chilli_sauce_800g": "/assets/cloudinary-shama/ahmed/green-chilli-sauce-800g-a54a4c7753f2.webp",
+  "Lime_pickle_1kg": "/assets/cloudinary-shama/ahmed/lime-pickle-1kg-22418c4525f5.webp",
+  "Mango_custard_powder_250g": "/assets/cloudinary-shama/ahmed/mango-custard-powder-250g-013586074290.webp",
+  "Mango_pickle_1kg": "/assets/cloudinary-shama/ahmed/mango-pickle-1kg-6fa47a8bb455.webp",
+  "Mango_pickle_400g": "/assets/cloudinary-shama/ahmed/mango-pickle-400g-589cd4a0b0e7.webp",
+  "Mnago_chilli_sauce_300g": "/assets/cloudinary-shama/ahmed/mnago-chilli-sauce-300g-f5c19ab817a5.webp",
+  "Mnago_chilli_sauce_800g": "/assets/cloudinary-shama/ahmed/mnago-chilli-sauce-800g-abeb290ac4e9.webp",
+  "Strawberry_custard_powder_250g": "/assets/cloudinary-shama/ahmed/strawberry-custard-powder-250g-54cf98e8695e.webp",
+  "Vanilla_custard_powder_250g": "/assets/cloudinary-shama/ahmed/vanilla-custard-powder-250g-145aea6857ba.webp"
+});
+
   function imageUrl(id){
-    const version=VERSION_MAP[id];
-    return `https://res.cloudinary.com/wy4nkkqq/image/upload/${version?`v${version}/`:''}${id}.png`;
+    return LOCAL_IMAGES[id] || '/assets/shama-logo.png';
   }
 
   const ahmedProducts=Object.entries(GROUPS).flatMap(([type,group])=>group.ids.map(id=>{

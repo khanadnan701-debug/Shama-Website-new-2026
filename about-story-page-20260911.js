@@ -14,7 +14,7 @@
   const riceVisual = 'https://images.unsplash.com/photo-1586201375761-83865001e31c?auto=format&fit=crop&w=1600&q=88';
   const spiceVisual = 'https://images.unsplash.com/photo-1532336414038-cf19250c5757?auto=format&fit=crop&w=1000&q=86';
   const teaVisual = 'https://images.unsplash.com/photo-1544787219-7f47ccb76574?auto=format&fit=crop&w=1000&q=86';
-  const shamaRice = 'https://res.cloudinary.com/wy4nkkqq/image/upload/v1789030729/jasmine-5kg.jpg';
+  const shamaRice = '/assets/rice/shama-thai-long-grain-jasmin-rice-aaa-5kg.webp';
 
   main.innerHTML = `
     <section class="about-front-hero">
