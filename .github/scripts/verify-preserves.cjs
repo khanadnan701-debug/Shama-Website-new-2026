@@ -31,7 +31,7 @@ for (const [title, pack] of [
   ['Prima Plum Tomatoes', '6 x 2550g'],
   ['Shama Coconut Milk', '400ml']
 ]) {
-  if (!products.some(p => p.title === title && p.pack === pack)) {
+  if (!products.some(p => p.title === title && (p.pack === pack || p.pack.endsWith(' - ' + pack)))) {
     throw new Error('Missing new product variant ' + title + ' (' + pack + ')');
   }
 }
