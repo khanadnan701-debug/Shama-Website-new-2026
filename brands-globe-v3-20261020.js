@@ -219,11 +219,18 @@
       button.classList.toggle('sbr3-selected',selected===brand.id);
     }
   }
+  let lastPaint=0;
   function animate(now){
-    const delta=Math.min(64,Math.max(0,now-(lastTime||now)));
-    lastTime=now;
-    if(!paused&&!down&&active&&!document.hidden)yaw+=delta*.00013;
-    if(active&&!document.hidden)render();
+    const minimumFrameMs=narrowAtLoad?33:16;
+    if(now-lastPaint >= minimumFrameMs){
+      const delta=Math.min(64,Math.max(0,now-(lastTime||now)));
+      lastTime=now;
+      lastPaint=now;
+      if(!paused&&!down&&active&&!document.hidden){
+        yaw+=delta*.00013;
+        render();
+      }
+    }
     window.requestAnimationFrame(animate);
   }
   function selectBrand(id,scroll){

@@ -46,7 +46,7 @@ const UPSTREAM_HEADERS = {
 
 const PREPAINT_HEAD = `<style id="shama-prepaint">html{background:#fffdf8}html:not(.shama-ready) body{opacity:0!important;visibility:hidden!important}html.shama-ready body{opacity:1!important;visibility:visible!important;transition:opacity .14s ease}@media(prefers-reduced-motion:reduce){html.shama-ready body{transition:none}}</style><script id="shama-prepaint-script">(()=>{let done=false;const reveal=()=>{if(done)return;done=true;requestAnimationFrame(()=>requestAnimationFrame(()=>document.documentElement.classList.add('shama-ready')))};window.addEventListener('load',()=>setTimeout(reveal,45),{once:true});setTimeout(reveal,2200)})();</script>`;
 const MOBILE_NAV_CRITICAL_HEAD = `<style id="shama-mobile-nav-critical">@media(max-width:920px){#site-header .nav-shell>.navlinks,#site-header .nav-shell>.navlinks.open,#site-header .nav-shell>.navlinks.mobile-nav-open{display:none!important;width:0!important;height:0!important;min-width:0!important;min-height:0!important;max-width:0!important;max-height:0!important;margin:0!important;padding:0!important;border:0!important;box-shadow:none!important;background:transparent!important;overflow:hidden!important;visibility:hidden!important;opacity:0!important;pointer-events:none!important}#site-header .mega-menu{display:none!important}#site-header,#site-header .header,#site-header .nav-shell{margin-bottom:0!important}.mobile-toggle{pointer-events:auto!important;touch-action:manipulation!important}}</style>`;
-const GLOBAL_MOBILE_NAV = `<script id="shama-global-mobile-nav" src="/mobile-nav-20260912-v3.js?v=20261005-wines1" defer></script>`;
+const GLOBAL_MOBILE_NAV = `<script id="shama-global-mobile-nav" src="/mobile-nav-20260912-v3.js?v=20261020-mobile-brands1" defer></script>`;
 const GLOBAL_HEADER_CONTROLS = `<script id="shama-global-header-controls" src="/header-controls-fix-20260912.js?v=20260922-2" defer></script>`;
 const GLOBAL_MEGA_MENU_HOVER = `<script id="shama-global-mega-menu-hover" src="/mega-menu-hover-fix-20260917.js?v=20260917-1" defer></script>`;
 const GLOBAL_MEGA_MENU_THUMBNAILS = `<script id="shama-global-mega-menu-thumbnails" src="/mega-menu-thumbnails-20261003.js?v=20261005-wines1" defer></script>`;
@@ -204,6 +204,7 @@ section.querySelectorAll("video").forEach(v=>{try{v.pause()}catch(e){}v.remove()
 if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",run,{once:true});else run();
 setTimeout(run,150);setTimeout(run,800);})();
 </script>`;
+const GLOBAL_MOBILE_POLISH_CSS = `<link id="shama-mobile-polish-css" rel="stylesheet" href="/mobile-polish-20261020.css?v=1">`;
 const GLOBAL_MOBILE_SITE_CSS = `<link id="shama-mobile-site-css" rel="stylesheet" href="/mobile-site-adapt-20260922.css?v=20261002-menucontrast5">`;
 const GLOBAL_PRODUCT_DETAILS_CSS = `<link id="shama-product-details-css" rel="stylesheet" href="/product-details-20260922.css?v=20260922-1">`;
 const GLOBAL_PRODUCT_DETAILS_JS = `<script id="shama-product-details-js" src="/product-details-20260922.js?v=20260922-1" defer></script>`;
@@ -290,6 +291,10 @@ async function withFreshHeaders(response) {
     if (!html.includes('id="shama-mobile-site-css"')) {
       if (/<\/head>/i.test(html)) html = html.replace(/<\/head>/i, `${GLOBAL_MOBILE_SITE_CSS}</head>`);
       else html = `${GLOBAL_MOBILE_SITE_CSS}${html}`;
+    }
+    if (!html.includes('id="shama-mobile-polish-css"')) {
+      if (/<\/head>/i.test(html)) html = html.replace(/<\/head>/i, `${GLOBAL_MOBILE_POLISH_CSS}</head>`);
+      else html = `${GLOBAL_MOBILE_POLISH_CSS}${html}`;
     }
     if (/<meta[^>]+name=["']viewport["'][^>]*>/i.test(html)) {
       html = html.replace(/<meta[^>]+name=["']viewport["'][^>]*>/i, '<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">');

@@ -1,0 +1,62 @@
+/* SHAMA mobile layout hardening. Shared across HTML routes. */
+@media(max-width:920px){
+  html,body{max-width:100%;overflow-x:clip;-webkit-text-size-adjust:100%}
+  #site-header .nav-shell{overflow:visible!important}
+  #site-header .brand-studio .official-logo-frame img{
+    width:100%!important;height:100%!important;max-width:100%!important;
+    object-fit:contain!important;object-position:center!important
+  }
+  body[data-page="product"] .simple-product-grid,
+  body[data-page="product"] .simple-product-card{
+    min-width:0!important;max-width:100%!important
+  }
+  body[data-page="product"] .simple-product-card{overflow:hidden!important}
+  body[data-page="product"] .simple-product-media{
+    width:calc(100% - 20px)!important;max-width:calc(100% - 20px)!important;
+    margin:10px!important;overflow:hidden!important;aspect-ratio:1/1!important
+  }
+  body[data-page="product"] .simple-product-media img{
+    display:block!important;width:100%!important;height:100%!important;
+    object-fit:contain!important;object-position:center!important;transform:none!important
+  }
+  body[data-page="catalogue"] .grocery-range-image img,
+  body[data-page="catalogue"] .grocery-category-image img,
+  body[data-page="catalogue"] .catalogue-hero-card img{
+    object-fit:contain!important;object-position:center!important
+  }
+  body[data-page="product"] .simple-catalogue-search,
+  body[data-page="product"] .simple-catalogue-toolbar,
+  body[data-page="contact"] .trade-form,
+  body[data-page="contact"] .trade-layout,
+  body[data-page="catalogue"] .grocery-range-grid{
+    min-width:0!important;max-width:100%!important
+  }
+  body[data-page="contact"] input,body[data-page="contact"] select,
+  body[data-page="contact"] textarea,body[data-page="product"] input,
+  body[data-page="catalogue"] input{
+    box-sizing:border-box;max-width:100%!important;min-width:0!important;font-size:16px!important
+  }
+  .footer.shama-footer>.wrap.sf-container{max-width:calc(100% - 28px)!important}
+  .footer.shama-footer .sf-contact-line{overflow-wrap:anywhere!important}
+}
+@media(max-width:620px){
+  #site-header .nav-shell{max-width:calc(100% - 12px)!important}
+  body[data-page="home"] .category-images-only .reel-card>img,
+  body[data-page="catalogue"] .grocery-range-image img{object-fit:contain!important;max-width:100%!important}
+  body[data-page="product"] .simple-product-grid{grid-template-columns:minmax(0,1fr)!important}
+  body[data-page="product"] .simple-product-content{min-width:0!important}
+  body[data-page="product"] .simple-product-content h3{overflow-wrap:anywhere!important}
+  body[data-page="brands"] .sbr-orbit-shell{max-width:100vw!important;overflow:hidden!important}
+  body[data-page="brands"] .sbr3-tile img{object-fit:contain!important}
+  .footer.shama-footer .sf-cta{max-width:100%!important;box-sizing:border-box!important}
+  .footer.shama-footer .sf-cta-actions,.footer.shama-footer .sf-cta-actions .sf-btn{max-width:100%!important}
+}
+@media(max-width:390px){
+  body[data-page="catalogue"] .grocery-category-strip{grid-auto-columns:minmax(120px,42vw)!important}
+  body[data-page="home"] .category-images-only .reels-track{gap:7px!important}
+  body[data-page="catalogue"] .grocery-range-grid{gap:7px!important}
+  .footer.shama-footer>.wrap.sf-container{max-width:calc(100% - 20px)!important}
+}
+@media(prefers-reduced-motion:reduce){
+  .footer.shama-footer .sf-btn,.footer.shama-footer .sf-links-column a{transition:none!important}
+}

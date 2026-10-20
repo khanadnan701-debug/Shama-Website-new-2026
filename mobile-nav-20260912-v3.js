@@ -24,7 +24,13 @@
     ['15', 'Agarbatti', 'agarbatti.html'],
     ['16', 'Dates', 'dates.html'],
     ['17', 'Pataks', 'pataks.html'],
-    ['18', 'Cosmetics', 'cosmetics.html']
+    ['18', 'Cosmetics', 'cosmetics.html'],
+    ['19', 'Bakery', 'bakery.html'],
+    ['20', 'Preserves', 'preserves.html'],
+    ['21', 'Savoury Snacks', 'savoury-snacks.html'],
+    ['22', 'Seafood', 'sea-food.html'],
+    ['23', 'Non Foods', 'non-foods.html'],
+    ['24', 'Divers', 'divers.html']
   ];
 
   const isMobile = () => window.matchMedia(`(max-width:${BREAKPOINT}px)`).matches;
@@ -158,6 +164,12 @@
         .smn-main{display:grid;gap:8px}
         .smn-link,.smn-products-toggle{width:100%;min-height:54px;border:1px solid rgba(28,42,86,.08);border-radius:16px;background:rgba(255,255,255,.92);color:#172342;display:flex;align-items:center;justify-content:space-between;gap:12px;padding:14px 16px;text-decoration:none!important;font:900 14px/1.2 Manrope,"DM Sans",sans-serif;box-shadow:0 8px 22px rgba(27,39,83,.06),inset 0 1px 0 rgba(255,255,255,.8);cursor:pointer;text-align:left}
         .smn-link span:last-child,.smn-products-toggle span:last-child{font-size:17px;color:#6757f6}
+        .smn-brands-link{min-height:64px;background:linear-gradient(120deg,#14295b,#4d42bd)!important;border:1px solid rgba(110,83,211,.3)!important;color:#fff!important;box-shadow:0 10px 23px rgba(32,42,123,.18)!important}
+        .smn-brands-link>span:first-child{display:flex;flex-direction:column;gap:5px;min-width:0}
+        .smn-brands-link b{font:900 14px/1.15 Manrope,"DM Sans",sans-serif;color:#fff}
+        .smn-brands-link small{font:600 11px/1.2 "DM Sans",sans-serif;color:#dce4ff;letter-spacing:0}
+        .smn-brands-link span:last-child{color:#ffbed7!important}
+        .smn-brands-link[aria-current="page"]{outline:2px solid #f48bbb;outline-offset:2px}
         .smn-products{display:none;margin:4px 0 6px;padding:8px;border:1px solid rgba(90,67,200,.10);border-radius:17px;background:linear-gradient(180deg,#f1f0ff 0%,#f7f6ff 100%)}
         .smn-products.open{display:grid;gap:6px}
         .smn-range{display:grid;grid-template-columns:34px minmax(0,1fr) 18px;align-items:center;gap:8px;padding:11px 10px;border:1px solid rgba(25,39,82,.06);border-radius:13px;background:#fff;color:#172342;text-decoration:none!important;box-shadow:0 4px 12px rgba(20,31,70,.04)}
@@ -206,9 +218,10 @@
         <nav class="smn-main" aria-label="Mobile menu">
           <a class="smn-link" href="index.html"><span>Home</span><span>→</span></a>
           <a class="smn-link" href="about.html"><span>About us</span><span>→</span></a>
-          <a class="smn-link" href="catalogue.html"><span>Catalogue</span><span>→</span></a>
-          <button class="smn-products-toggle" type="button" aria-expanded="true"><span>Products</span><span>−</span></button>
-          <div class="smn-products open">${rangeMarkup}</div>
+          <a class="smn-link" href="catalogue.html"><span>Catalogue</span><span aria-hidden="true">&rarr;</span></a>
+          <a class="smn-link smn-brands-link" href="brands.html"${document.body.dataset.page==='brands'?' aria-current="page"':''}><span><b>Our Brands</b><small>Explore our brand partners</small></span><span aria-hidden="true">&nearr;</span></a>
+          <button class="smn-products-toggle" type="button" aria-controls="smn-products-v3" aria-expanded="false"><span>Products &amp; Categories</span><span aria-hidden="true">+</span></button>
+          <div class="smn-products" id="smn-products-v3">${rangeMarkup}</div>
           <a class="smn-link" href="contact.html"><span>Contact</span><span>→</span></a>
         </nav>
         <div class="smn-foot">
@@ -249,6 +262,7 @@
     drawer.classList.add('open');
     overlay.classList.add('open');
     drawer.setAttribute('aria-hidden', 'false');
+    drawer.querySelector('.smn-close')?.focus({preventScroll:true});
     overlay.setAttribute('aria-hidden', 'false');
     document.body.classList.add('shama-mobile-menu-open');
     const toggle = findToggle();
@@ -292,9 +306,10 @@
       toggle.dataset.smnPremiumIcon = '1';
     }
 
-    toggle.setAttribute('aria-expanded', 'false');
+    const isDrawerOpen=!!document.getElementById(DRAWER_ID)?.classList.contains('open');
+    toggle.setAttribute('aria-expanded', isDrawerOpen?'true':'false');
     toggle.setAttribute('aria-controls', DRAWER_ID);
-    toggle.setAttribute('aria-label', 'Open menu');
+    toggle.setAttribute('aria-label', isDrawerOpen?'Close menu':'Open menu');
     toggle.style.setProperty('pointer-events', 'auto', 'important');
 
     /* Override the legacy onclick from script.js so it can never reopen the old blank nav container. */
