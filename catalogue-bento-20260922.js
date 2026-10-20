@@ -180,6 +180,16 @@
   }));
 
   const ranges = [...coreRanges, ...extraRanges.filter(extra => !coreRanges.some(core => core.slug === extra.slug))];
+  // Keep Shama's principal product ranges first, all other categories next,
+  // and Wines last in both the quick category strip and complete catalogue.
+  const rangePriority = ['rice','spices','flour','frozen','beverages','oils','dates'];
+  ranges.sort((a,b) => {
+    const rank = slug => {
+      const at=rangePriority.indexOf(slug);
+      return at===-1 ? (slug==='wines'?10000:100) : at;
+    };
+    return rank(a.slug)-rank(b.slug);
+  });
 
   const bySlug = slug => ranges.find(item => item.slug === slug) || ranges[0];
 

@@ -1321,24 +1321,30 @@ productData.push(...supplementalData);
 const categories=[
  {slug:'rice',name:'Rice',desc:'Fragrant grains for every table',image:'/assets/rice/shama-super-kernal-par-boiled-sella-rice-5kg.webp'},
  {slug:'spices',name:'Spices',desc:'Bold aroma, vivid colour',image:'/assets/spices/shama-garam-masala-powder.webp'},
- {slug:'sauces',name:'Sauces, Pickles & Pastes',desc:'Curry pastes, pickles, chutneys and sauces',image:(productData.find(x=>x.category==='sauces')||{}).image||'https://images.unsplash.com/photo-1601050690117-94f5f6fa8bd7?auto=format&fit=crop&w=900&q=85'},
- {slug:'misc',name:'Miscellaneous',desc:'Roasted chana, vermicelli, papad, food colours and pantry essentials',image:'/assets/cloudinary-shama/miscellaneous/shama-fried-onion-1kg-113e86531276.webp'},
- {slug:'beverages',name:'Beverages',desc:'Refreshingly familiar',image:'https://images.unsplash.com/photo-1544787219-7f47ccb76574?auto=format&fit=crop&w=900&q=85'},
- {slug:'tea',name:'Tea',desc:'Premium black tea, pink tea, green tea and classic tea bags',image:'/assets/cloudinary-shama/tea/shama-premium-gold-tea-500g-ebda47ccc9c3.webp'},
- {slug:'sugar',name:'Sugar',desc:'Sugar, gur and traditional shakkar products',image:'/assets/cloudinary-shama/sugar/shama-desi-shakkar-500g-53dad935a769.webp'},
- {slug:'wines',name:'Wines',desc:'Red, white and rosé wines, liqueurs and beers',image:'/assets/cloudinary-shama/wines/grover-wine-red-alc-13-5-vol-75cl-cee439b127e9.webp'},
  {slug:'flour',name:'Flour & Lentiles',desc:'Wholesome kitchen staples',image:'/assets/flour/shama-chakki-gold-atta-5kg.webp?v=20261019-flour-newzip-v2'},
  {slug:'frozen',name:'Frozen',desc:'Convenience, without compromise',image:'/assets/cloudinary-shama/frozen/shama-chicken-tikka-samosa-20pcs-fd4740726fb5.webp'},
+ {slug:'beverages',name:'Beverages',desc:'Refreshingly familiar',image:'https://images.unsplash.com/photo-1544787219-7f47ccb76574?auto=format&fit=crop&w=900&q=85'},
  {slug:'oils',name:'Oils',desc:'The foundation of great food',image:'https://images.unsplash.com/photo-1474979266404-7eaacbcd87c5?auto=format&fit=crop&w=900&q=85'},
+ {slug:'dates',name:'Dates',desc:'Premium date varieties for retail and gifting',image:'/assets/cloudinary-shama/dates/shama-ajwa-dates-800g-734a417a7b85.webp'},
+ {slug:'sauces',name:'Sauces, Pickles & Pastes',desc:'Curry pastes, pickles, chutneys and sauces',image:(productData.find(x=>x.category==='sauces')||{}).image||'https://images.unsplash.com/photo-1601050690117-94f5f6fa8bd7?auto=format&fit=crop&w=900&q=85'},
+ {slug:'misc',name:'Miscellaneous',desc:'Roasted chana, vermicelli, papad, food colours and pantry essentials',image:'/assets/cloudinary-shama/miscellaneous/shama-fried-onion-1kg-113e86531276.webp'},
+ {slug:'tea',name:'Tea',desc:'Premium black tea, pink tea, green tea and classic tea bags',image:'/assets/cloudinary-shama/tea/shama-premium-gold-tea-500g-ebda47ccc9c3.webp'},
+ {slug:'sugar',name:'Sugar',desc:'Sugar, gur and traditional shakkar products',image:'/assets/cloudinary-shama/sugar/shama-desi-shakkar-500g-53dad935a769.webp'},
  {slug:'dry-fruits',name:'Dry Fruits',desc:'Naturally rich and satisfying',image:'https://images.unsplash.com/photo-1600189020840-e9918c25269d?auto=format&fit=crop&w=900&q=85'},
  {slug:'laziza',name:'Laziza',desc:'Recipe masalas, dessert mixes and traditional favourites',image:'/assets/cloudinary-shama/laziza/spices/laziza-biryani-masala-100g-0f3666d7ad74.webp'},
  {slug:'ahmed',name:'Ahmed',desc:'Sauces, pickles, desserts and pantry favourites',image:'/assets/cloudinary-shama/ahmed/ahmed-tamarind-sauce-300g-cc9749dc5eae.webp'},
  {slug:'agarbatti',name:'Agarbatti',desc:'Incense sticks and traditional fragrances',image:'/assets/cloudinary-shama/agarbatti/metro-3-in-1-d280559e490a.webp'},
- {slug:'dates',name:'Dates',desc:'Premium date varieties for retail and gifting',image:'/assets/cloudinary-shama/dates/shama-ajwa-dates-800g-734a417a7b85.webp'},
  {slug:'pataks',name:'Pataks',desc:'Curry pastes and classic cooking sauces',image:'/assets/cloudinary-shama/pataks/patak-biryani-paste-2-3kg-71b7763e2b43.webp'},
  {slug:'cosmetics',name:'Cosmetics',desc:'Beauty, personal care and hygiene essentials',image:'/assets/cloudinary-shama/cosmetics/johnson-s-baby-oil-200ml-96548335b7a7.webp'},
- {slug:'non-foods',name:'Non Foods',desc:'Commercial tandoors, parts and accessories',image:'/assets/cloudinary-shama/non-foods/shahi-charcoal-tandoor-11c-size-1-b0fd2000467a.webp'}];
-const fileMap={rice:'rice.html',spices:'spices.html',sauces:'sauces-pastes.html',misc:'miscellaneous.html',beverages:'beverages.html',tea:'tea.html',sugar:'sugar.html',wines:'wines.html',flour:'flour-lentiles.html',frozen:'frozen.html',oils:'oils.html','dry-fruits':'dry-fruits.html',laziza:'laziza.html',ahmed:'ahmed.html',agarbatti:'agarbatti.html',dates:'dates.html',pataks:'pataks.html',cosmetics:'cosmetics.html','non-foods':'non-foods.html'};
+ {slug:'non-foods',name:'Non Foods',desc:'Commercial tandoors, parts and accessories',image:'/assets/cloudinary-shama/non-foods/shahi-charcoal-tandoor-11c-size-1-b0fd2000467a.webp'},
+ {slug:'divers',name:'Divers',desc:'Everyday pantry and speciality grocery products',image:'/assets/cloudinary-shama/divers/telephone-isabgul-200g-4b4d290c8270.webp'},
+ {slug:'preserves',name:'Preserves',desc:'Ghee, preserved foods, tomatoes, vinegar and pantry favourites',image:'/assets/preserves/shama-kesar-mango-plup-kesar.webp'},
+ {slug:'sea-food',name:'Sea Food',desc:'Frozen seafood selections for retail and foodservice',image:'/assets/cloudinary-shama/sea-food/gambas-8-12-fdb47ab466a9.webp'},
+ {slug:'savoury-snacks',name:'Savoury Snacks',desc:'Namkeen, chips, mixtures and speciality savoury snacks',image:'/assets/cloudinary-shama/savoury-snacks/shama-roasted-corn-salted-400g-3ce5d27e8c46.webp'},
+ {slug:'bakery',name:'Bakery',desc:'Baking essentials, cake rusks, biscuits and flavours',image:'/assets/cloudinary-shama/bakery/cake-rusk-coconut-750g-ac4d5d28489c.webp'},
+ {slug:'wines',name:'Wines',desc:'Red, white and rosé wines, liqueurs and beers',image:'/assets/cloudinary-shama/wines/grover-wine-red-alc-13-5-vol-75cl-cee439b127e9.webp'},
+];
+const fileMap={rice:'rice.html',spices:'spices.html',sauces:'sauces-pastes.html',misc:'miscellaneous.html',beverages:'beverages.html',tea:'tea.html',sugar:'sugar.html',wines:'wines.html',flour:'flour-lentiles.html',frozen:'frozen.html',oils:'oils.html','dry-fruits':'dry-fruits.html',laziza:'laziza.html',ahmed:'ahmed.html',agarbatti:'agarbatti.html',dates:'dates.html',pataks:'pataks.html',cosmetics:'cosmetics.html','non-foods':'non-foods.html',divers:'divers.html',preserves:'preserves.html','sea-food':'sea-food.html','savoury-snacks':'savoury-snacks.html',bakery:'bakery.html'};
 function header(){const page=document.body.dataset.page||'home';return `<div class="announce"><div class="wrap announce-inner"><span><i></i> Wholesale enquiries open</span><p>Authentic flavour across France since 2003</p><a href="mailto:info@shamafr.com">info@shamafr.com ↗</a></div></div><header class="header"><nav class="nav-shell wrap"><a class="brand brand-studio" href="index.html"><span class="brand-emblem"><b>S</b><i></i></span><span><strong>SHAMA</strong><small>INTERNATIONAL</small></span></a><button class="mobile-toggle" aria-label="Open menu"><i></i><i></i></button><div class="navlinks"><a class="${page==='home'?'active':''}" href="index.html"><span>Home</span></a><a class="${page==='about'?'active':''}" href="about.html"><span>About us</span></a><a class="${page==='catalogue'?'active':''}" href="catalogue.html"><span>Catalogue</span></a><a class="${page==='brands'?'active':''}" href="brands.html"><span>Brands</span></a><div class="drop"><span class="drop-label">Products <b>⌄</b></span><div class="mega-menu"><div class="mega-head"><span>Explore by range</span><a href="catalogue.html">Full catalogue ↗</a></div><div class="mega-grid">${categories.map((c,i)=>`<a href="${fileMap[c.slug]}"><b>${String(i+1).padStart(2,'0')}</b><span><strong>${c.name}</strong><small>${c.desc}</small></span><i>↗</i></a>`).join('')}</div><div class="mega-foot"><span>Need help choosing?</span><a href="contact.html">Talk to our team →</a></div></div></div><a class="${page==='contact'?'active':''}" href="contact.html"><span>Contact</span></a></div><a class="header-cta" href="contact.html"><span>Bulk order</span><b>↗</b></a></nav></header>`}
 function footer(){
   const year=new Date().getFullYear();
@@ -1373,10 +1379,13 @@ function footer(){
           <h3>Popular ranges</h3>
           <a href="rice.html">Rice &amp; basmati</a>
           <a href="spices.html">Spices</a>
+          <a href="flour-lentiles.html">Flour &amp; Lentils</a>
           <a href="frozen.html">Frozen foods</a>
-          <a href="beverages.html">Beverages</a>
-          <a href="flour-lentiles.html">Flour &amp; lentils</a>
+          <a href="beverages.html">Beverages / Drinks</a>
+          <a href="oils.html">Oils</a>
+          <a href="dates.html">Dates</a>
           <a class="sf-view-all" href="catalogue.html">All product ranges <span aria-hidden="true">&nearr;</span></a>
+          <a href="wines.html">Wines</a>
         </nav>
         <div class="sf-contact-column">
           <h3>Get in touch</h3>

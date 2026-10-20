@@ -172,8 +172,22 @@
       grid.appendChild(link);
     });
 
-    // Keep numbering clean and sequential: 01 ... 21.
-    Array.from(grid.querySelectorAll(':scope > a')).forEach((link, index) => {
+    // Keep the same Shama-first category hierarchy on every desktop page.
+    // Reuse existing links/images; never insert a duplicate.
+    const priority = [
+      'rice.html','spices.html','flour-lentiles.html','frozen.html',
+      'beverages.html','oils.html','dates.html'
+    ];
+    const ordered = Array.from(grid.querySelectorAll(':scope > a')).map((link, index) => ({
+      link,index,key:hrefKey(link.getAttribute('href'))
+    }));
+    const rank = entry => {
+      const primary = priority.indexOf(entry.key);
+      return primary !== -1 ? primary : entry.key === 'wines.html' ? 10000 : 100 + entry.index;
+    };
+    ordered.sort((a,b) => rank(a)-rank(b));
+    ordered.forEach(({link}, index) => {
+      grid.appendChild(link);
       const number = link.querySelector('b');
       if (number) number.textContent = String(index + 1).padStart(2, '0');
     });
@@ -239,7 +253,7 @@
     document.querySelectorAll('.story-video-meta span').forEach(node => {
       if (/Product ranges/i.test(node.textContent || '')) {
         const count = node.querySelector('b');
-        if (count) count.textContent = '21';
+        if (count) count.textContent = String(document.querySelectorAll('.mega-grid > a').length || 24);
       }
     });
 
