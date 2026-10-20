@@ -7,103 +7,103 @@
   {
     "category": "savoury-snacks",
     "title": "Shama Roasted Corn Salted",
-    "pack": "400g",
+    "pack": "1281B - 400g",
     "image": "/assets/cloudinary-shama/savoury-snacks/shama-roasted-corn-salted-400g-3ce5d27e8c46.webp"
   },
   {
     "category": "savoury-snacks",
     "title": "Bikaneri Bites Thick Sev",
-    "pack": "300g",
+    "pack": "0040A - 300g",
     "image": "/assets/cloudinary-shama/savoury-snacks/bikaneri-bites-thick-sev-300g-ca5c6ae1840f.webp"
   },
   {
     "category": "savoury-snacks",
     "title": "Bikaneri Bites Kaju Mixture",
-    "pack": "150g",
+    "pack": "1648A - 150g",
     "image": "/assets/cloudinary-shama/savoury-snacks/bikaneri-bites-kaju-mixture-150g-d8dfdb10b706.webp"
   },
   {
     "category": "savoury-snacks",
     "title": "Bikaneri Bites Bombay Mixture",
-    "pack": "150g",
+    "pack": "1693A - 150g",
     "image": "/assets/cloudinary-shama/savoury-snacks/bikaneri-bites-bombay-mixture-150g-25329883bdb4.webp"
   },
   {
     "category": "savoury-snacks",
     "title": "Bikaneri Bites Gujarati Mixture",
-    "pack": "150g",
+    "pack": "1709A - 150g",
     "image": "/assets/cloudinary-shama/savoury-snacks/bikaneri-bites-gujrati-mixture-150g-886aeb79e087.webp"
   },
   {
     "category": "savoury-snacks",
     "title": "Bikaneri Bites Punjabi Pakora",
-    "pack": "150g",
+    "pack": "1716A - 150g",
     "image": "/assets/cloudinary-shama/savoury-snacks/bikaneri-bites-punjabi-pakora-150g-ffd64df1a8ef.webp"
   },
   {
     "category": "savoury-snacks",
     "title": "Bikaneri Bites Chana Dal Mixture",
-    "pack": "150g",
+    "pack": "1754A - 150g",
     "image": "/assets/cloudinary-shama/savoury-snacks/bikaneri-bites-chana-dal-mixture-150g-93f40983d004.webp"
   },
   {
     "category": "savoury-snacks",
     "title": "Bikaneri Bites Khatta Meetha",
-    "pack": "150g",
+    "pack": "1761A - 150g",
     "image": "/assets/cloudinary-shama/savoury-snacks/bikaneri-bites-khatta-meetha-150g-7291f84c7876.webp"
   },
   {
     "category": "savoury-snacks",
     "title": "Bikaneri Bites Moong Dal",
-    "pack": "150g",
+    "pack": "1723A - 150g",
     "image": "/assets/cloudinary-shama/savoury-snacks/bikaneri-bites-moong-dal-150g-797b37c058e9.webp"
   },
   {
     "category": "savoury-snacks",
     "title": "Bikaneri Bites Aloo Bhujia",
-    "pack": "150g",
+    "pack": "1662A - 150g",
     "image": "/assets/cloudinary-shama/savoury-snacks/bikaneri-bites-aloo-bhujia-150g-eec474ef5348.webp"
   },
   {
     "category": "savoury-snacks",
     "title": "Bikaneri Bites All In One",
-    "pack": "150g",
+    "pack": "1785A - 150g",
     "image": "/assets/cloudinary-shama/savoury-snacks/bikaneri-bites-all-in-one-150g-050c9a81f20f.webp"
   },
   {
     "category": "savoury-snacks",
     "title": "Bikaneri Bites Boondi",
-    "pack": "150g",
+    "pack": "1778A - 150g",
     "image": "/assets/cloudinary-shama/savoury-snacks/bikaneri-bites-boondi-150g-ed863e2da1b9.webp"
   },
   {
     "category": "savoury-snacks",
     "title": "Bikaneri Bites Navratan",
-    "pack": "150g",
+    "pack": "1792B - 150g",
     "image": "/assets/cloudinary-shama/savoury-snacks/bikaneri-bites-navratan-150g-113256c9dabf.webp"
   },
   {
     "category": "savoury-snacks",
     "title": "Bikaneri Bites Badam Lacha",
-    "pack": "150g",
+    "pack": "2072A - 150g",
     "image": "/assets/cloudinary-shama/savoury-snacks/bikaneri-bites-badam-lacha-150g-420743aa9e8a.webp"
   },
   {
     "category": "savoury-snacks",
     "title": "Bikaneri Bites Tasty Peanuts",
-    "pack": "150g",
+    "pack": "1792A - 150g",
     "image": "/assets/cloudinary-shama/savoury-snacks/bikaneri-bites-tasty-peanuts-150g-c401e9e3c124.webp"
   },
   {
     "category": "savoury-snacks",
     "title": "Bikaneri Bites Bikaneri Bhujia",
-    "pack": "150g",
+    "pack": "1815A - 150g",
     "image": "/assets/cloudinary-shama/savoury-snacks/bikaneri-bites-bikaneri-bhujia-150g-550e699888a7.webp"
   },
   {
     "category": "savoury-snacks",
     "title": "Shama Phool Makhana",
-    "pack": "100g",
+    "pack": "2255B - 100g",
     "image": "/assets/cloudinary-shama/savoury-snacks/shama-phool-makhana-100g-a73d801609db.webp"
   },
   {
@@ -121,67 +121,67 @@
   {
     "category": "savoury-snacks",
     "title": "Bikaneri Bites Bombay Mixture",
-    "pack": "300g",
+    "pack": "2317A - 300g",
     "image": "/assets/cloudinary-shama/savoury-snacks/bikaneri-bites-bombay-mixture-300g-0690712466fe.webp"
   },
   {
     "category": "savoury-snacks",
     "title": "Bikaneri Bites Traditional Mixture",
-    "pack": "300g",
+    "pack": "2423A - 300g",
     "image": "/assets/cloudinary-shama/savoury-snacks/bikaneri-bites-traditional-mixture-300g-4c65c3206c24.webp"
   },
   {
     "category": "savoury-snacks",
     "title": "Bikaneri Bites All In One",
-    "pack": "300g",
+    "pack": "2300A - 300g",
     "image": "/assets/cloudinary-shama/savoury-snacks/bikaneri-bites-all-in-one-300g-b305c38ffa4d.webp"
   },
   {
     "category": "savoury-snacks",
     "title": "Bikaneri Bites Khatta Meetha",
-    "pack": "300g",
+    "pack": "2355A - 300g",
     "image": "/assets/cloudinary-shama/savoury-snacks/bikaneri-bites-khatta-meetha-300g-171c25952827.webp"
   },
   {
     "category": "savoury-snacks",
     "title": "Bikaneri Bites Moong Dal",
-    "pack": "300g",
+    "pack": "2379A - 300g",
     "image": "/assets/cloudinary-shama/savoury-snacks/bikaneri-bites-moong-dal-300g-7e117814c2e8.webp"
   },
   {
     "category": "savoury-snacks",
     "title": "Shama Punjabi Wadi",
-    "pack": "400g",
+    "pack": "6590A - 400g",
     "image": "/assets/cloudinary-shama/savoury-snacks/shama-punjabi-wadi-400g-1058597d4817.webp"
   },
   {
     "category": "savoury-snacks",
     "title": "Bikaneri Bites Gujarati Mixture",
-    "pack": "300g",
+    "pack": "2331A - 300g",
     "image": "/assets/cloudinary-shama/savoury-snacks/bikaneri-bites-gujrati-mixture-300g-f9d706a0d5b4.webp"
   },
   {
     "category": "savoury-snacks",
     "title": "Shama Chaat Papdi",
-    "pack": "300g",
+    "pack": "6552A - 300g",
     "image": "/assets/cloudinary-shama/savoury-snacks/shama-chaat-papdi-300g-bbf1c8e6754a.webp"
   },
   {
     "category": "savoury-snacks",
     "title": "Bikaneri Bites Chana Dal Mixture",
-    "pack": "300g",
+    "pack": "2324A - 300g",
     "image": "/assets/cloudinary-shama/savoury-snacks/bikaneri-bites-chana-dal-mixture-300g-89a337dfd600.webp"
   },
   {
     "category": "savoury-snacks",
     "title": "Bikaneri Bites London Mixture",
-    "pack": "300g",
+    "pack": "2362A - 300g",
     "image": "/assets/cloudinary-shama/savoury-snacks/bikaneri-bites-london-mixture-300g-055fda776ad7.webp"
   },
   {
     "category": "savoury-snacks",
     "title": "Bikaneri Bites Punjabi Mixture",
-    "pack": "300g",
+    "pack": "2386A - 300g",
     "image": "/assets/cloudinary-shama/savoury-snacks/bikaneri-bites-punjabi-mixture-300g-270f0604c156.webp"
   },
   {
@@ -205,7 +205,7 @@
   {
     "category": "savoury-snacks",
     "title": "Bikaneri Bites Tasty Peanuts",
-    "pack": "300g",
+    "pack": "2416A - 300g",
     "image": "/assets/cloudinary-shama/savoury-snacks/bikaneri-bites-tasty-peanuts-300g-4172a7e508f5.webp"
   },
   {
@@ -223,7 +223,7 @@
   {
     "category": "savoury-snacks",
     "title": "Bikaneri Bites Spicy Mixture",
-    "pack": "300g",
+    "pack": "2409A - 300g",
     "image": "/assets/cloudinary-shama/savoury-snacks/bikaneri-bites-spicy-mixture-300g-fef2a2df3f00.webp"
   },
   {
@@ -283,43 +283,43 @@
   {
     "category": "savoury-snacks",
     "title": "Shama Kurmura Laddu",
-    "pack": "100g",
+    "pack": "6729A - 100g",
     "image": "/assets/cloudinary-shama/savoury-snacks/shama-kurmura-laddu-100g-a9770e489cca.webp"
   },
   {
     "category": "savoury-snacks",
     "title": "Shama Phool Makhana",
-    "pack": "50g",
+    "pack": "6576A - 50g",
     "image": "/assets/cloudinary-shama/savoury-snacks/shama-phool-makhana-50g-1f31ae4fe15d.webp"
   },
   {
     "category": "savoury-snacks",
     "title": "Shama Rajgira Laddu",
-    "pack": "100g",
+    "pack": "6705A - 100g",
     "image": "/assets/cloudinary-shama/savoury-snacks/shama-rajgira-laddu-100g-ad04164c3df9.webp"
   },
   {
     "category": "savoury-snacks",
     "title": "Shama Rajgira Chikki",
-    "pack": "100g",
+    "pack": "6699A - 100g",
     "image": "/assets/cloudinary-shama/savoury-snacks/shama-rajgira-chikki-100g-ead8422e3c9f.webp"
   },
   {
     "category": "savoury-snacks",
     "title": "Bikaneri Bites Kashmiri Mixture",
-    "pack": "300g",
+    "pack": "2348A - 300g",
     "image": "/assets/cloudinary-shama/savoury-snacks/bikaneri-bites-kashmiri-mixture-300g-73f96477ec34.webp"
   },
   {
     "category": "savoury-snacks",
     "title": "Shama Murmura Chikki",
-    "pack": "100g",
+    "pack": "6712A - 100g",
     "image": "/assets/cloudinary-shama/savoury-snacks/shama-murmura-chikki-100g-5b9387487515.webp"
   },
   {
     "category": "savoury-snacks",
     "title": "Bikaneri Bites Spicy Chick Peas",
-    "pack": "300g",
+    "pack": "2393A - 300g",
     "image": "/assets/cloudinary-shama/savoury-snacks/bikaneri-bites-spicy-chick-peas-300g-8193c3ef1ab2.webp"
   },
   {
