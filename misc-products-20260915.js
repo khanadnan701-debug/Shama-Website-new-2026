@@ -9,7 +9,7 @@
     {category:'misc',title:'Shama Lemon Dressing',pack:'400ml',image:'/assets/cloudinary-shama/miscellaneous/shama-lemon-dressing-400ml-ed2cb362b05f.webp'},
     {category:'misc',title:'Shama Lemon Juice',pack:'200ml',image:'/assets/cloudinary-shama/miscellaneous/shama-lemon-juice-200ml-e39272a63227.webp'},
     {category:'misc',title:'Shama Mouth Freshener',pack:'Contact us for available pack sizes',image:'/assets/cloudinary-shama/miscellaneous/shama-mouth-freshener-861173c4b448.webp'},
-    {category:'misc',title:'Shama Kewra Water',pack:'Contact us for available pack sizes',image:'/assets/cloudinary-shama/miscellaneous/shama-kewra-water-ec0aeb0d377b.webp'},
+    {category:'misc',title:'Shama Kewra Water',pack:'2356C - 250ml',image:'/assets/cloudinary-shama/miscellaneous/shama-kewra-water-ec0aeb0d377b.webp'},
     {category:'misc',title:'Shama Baking Powder',pack:'800g',image:'/assets/cloudinary-shama/miscellaneous/shama-baking-powder-800gm-325dac223f98.webp'},
     {category:'misc',title:'Shama Vinegar',pack:'Contact us for available pack sizes',image:'/assets/cloudinary-shama/miscellaneous/shama-vinegar-eeeaade9c22b.webp'},
     {category:'misc',title:'Shama Baking Soda',pack:'800g',image:'/assets/cloudinary-shama/miscellaneous/shama-baking-soda-800gm-d7e08a269093.webp'},
