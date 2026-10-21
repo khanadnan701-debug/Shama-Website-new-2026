@@ -17,42 +17,42 @@
     "category": "sauces",
     "group": "Shama Curry & Cooking Pastes",
     "title": "Shama Butter Chicken Curry Paste",
-    "pack": "300g x 1",
+    "pack": "19119 - 300g x 1",
     "image": "/assets/cloudinary-shama/paste/shama-butter-chicken-curry-paste-300g-10137df467ae.webp"
   },
   {
     "category": "sauces",
     "group": "Shama Curry & Cooking Pastes",
     "title": "Shama Biryani Paste",
-    "pack": "2.3kg x 1",
+    "pack": "4556B - 2.3kg x 1",
     "image": "/assets/cloudinary-shama/paste/shama-biryani-paste-2-3kg-1cf09a93f85c.webp"
   },
   {
     "category": "sauces",
     "group": "Shama Curry & Cooking Pastes",
     "title": "Shama Butter Chicken Curry Paste",
-    "pack": "2.3kg x 1",
+    "pack": "4488A - 2.3kg x 1",
     "image": "/assets/cloudinary-shama/paste/shama-butter-chicken-curry-paste-2-3kg-422850abe284.webp"
   },
   {
     "category": "sauces",
     "group": "Shama Curry & Cooking Pastes",
     "title": "Shama Balti Curry Paste",
-    "pack": "2.3kg x 1",
+    "pack": "6440A - 2.3kg x 1",
     "image": "/assets/cloudinary-shama/paste/shama-balti-curry-paste-2-3kg-5867bb3b676c.webp"
   },
   {
     "category": "sauces",
     "group": "Shama Curry & Cooking Pastes",
     "title": "Shama Korma Curry Paste",
-    "pack": "2.3kg x 1",
+    "pack": "6442A - 2.3kg x 1",
     "image": "/assets/cloudinary-shama/paste/shama-korma-curry-paste-2-3kg-51f7ecbd26be.webp"
   },
   {
     "category": "sauces",
     "group": "Shama Curry & Cooking Pastes",
     "title": "Shama Biryani Curry Paste",
-    "pack": "300g x 1",
+    "pack": "19118 - 300g x 1",
     "image": "/assets/cloudinary-shama/paste/shama-biryani-curry-paste-300g-f68212d16e2a.webp"
   },
   {
@@ -66,14 +66,14 @@
     "category": "sauces",
     "group": "Shama Curry & Cooking Pastes",
     "title": "Shama Madras Kebab Paste",
-    "pack": "2.3kg x 1",
+    "pack": "4602A - 2.3kg x 1",
     "image": "/assets/cloudinary-shama/paste/shama-madras-kebab-paste-2-3kg-e2687687a0ef.webp"
   },
   {
     "category": "sauces",
     "group": "Shama Curry & Cooking Pastes",
     "title": "Shama Madras Kebab Paste",
-    "pack": "300g x 1",
+    "pack": "19136 - 300g x 1",
     "image": "/assets/cloudinary-shama/paste/shama-madras-kebab-paste-300g-7fceca415765.webp"
   },
   {
@@ -94,7 +94,7 @@
     "category": "sauces",
     "group": "Shama Curry & Cooking Pastes",
     "title": "Shama Kashmiri Paste",
-    "pack": "2.3kg x 1",
+    "pack": "4565A - 2.3kg x 1",
     "image": "/assets/cloudinary-shama/paste/shama-kashmiri-paste-2-3kg-f8f83f415be3.webp"
   },
   {
@@ -115,28 +115,28 @@
     "category": "sauces",
     "group": "Shama Curry & Cooking Pastes",
     "title": "Shama Mild Curry Paste",
-    "pack": "2.3kg x 1",
+    "pack": "4534B - 2.3kg x 1",
     "image": "/assets/cloudinary-shama/paste/shama-mild-curry-paste-2-3kg-1efbe037aa99.webp"
   },
   {
     "category": "sauces",
     "group": "Shama Curry & Cooking Pastes",
     "title": "Shama Rogan Josh Curry Paste",
-    "pack": "2.3kg x 1",
+    "pack": "6441A - 2.3kg x 1",
     "image": "/assets/cloudinary-shama/paste/shama-rogan-josh-curry-paste-2-3kg-f22652a2e02b.webp"
   },
   {
     "category": "sauces",
     "group": "Shama Curry & Cooking Pastes",
     "title": "Shama Tandoori Curry Paste",
-    "pack": "300g x 1",
+    "pack": "19121 - 300g x 1",
     "image": "/assets/cloudinary-shama/paste/shama-tandoori-curry-paste-300g-317a03a346d9.webp"
   },
   {
     "category": "sauces",
     "group": "Shama Curry & Cooking Pastes",
     "title": "Shama Tikka Masala Paste",
-    "pack": "2.3kg x 1",
+    "pack": "4596B - 2.3kg x 1",
     "image": "/assets/cloudinary-shama/paste/shama-tikka-masala-paste-2-3kg-fa98305b4727.webp"
   },
   {
@@ -150,21 +150,21 @@
     "category": "sauces",
     "group": "Shama Curry & Cooking Pastes",
     "title": "Shama Vindaloo Curry Paste",
-    "pack": "300g x 1",
+    "pack": "19135 - 300g x 1",
     "image": "/assets/cloudinary-shama/paste/shama-vindaloo-curry-paste-300g-388f74615c58.webp"
   },
   {
     "category": "sauces",
     "group": "Shama Curry & Cooking Pastes",
     "title": "Shama Tikka Masala Curry Paste",
-    "pack": "300g x 1",
+    "pack": "19120 - 300g x 1",
     "image": "/assets/cloudinary-shama/paste/shama-tikka-masala-curry-paste-300g-e4368b80e09a.webp"
   },
   {
     "category": "sauces",
     "group": "Shama Curry & Cooking Pastes",
     "title": "Shama Vindaloo Paste",
-    "pack": "2.3kg x 1",
+    "pack": "4541A - 2.3kg x 1",
     "image": "/assets/cloudinary-shama/paste/shama-vindaloo-paste-2-3kg-050b345a65c6.webp"
   },
   {
