@@ -7,19 +7,19 @@
 
   const items = [
     {category:'misc',title:'Shama Lemon Dressing',pack:'400ml',image:'/assets/cloudinary-shama/miscellaneous/shama-lemon-dressing-400ml-ed2cb362b05f.webp'},
-    {category:'misc',title:'Shama Lemon Juice',pack:'200ml',image:'/assets/cloudinary-shama/miscellaneous/shama-lemon-juice-200ml-e39272a63227.webp'},
-    {category:'misc',title:'Shama Mouth Freshener',pack:'Contact us for available pack sizes',image:'/assets/cloudinary-shama/miscellaneous/shama-mouth-freshener-861173c4b448.webp'},
+    {category:'misc',title:'Shama Lemon Juice',pack:'2023A - 200ml',image:'/assets/cloudinary-shama/miscellaneous/shama-lemon-juice-200ml-e39272a63227.webp'},
+    {category:'misc',title:'Shama Mouth Freshener',pack:'2917A - 330g',image:'/assets/cloudinary-shama/miscellaneous/shama-mouth-freshener-861173c4b448.webp'},
     {category:'misc',title:'Shama Kewra Water',pack:'2356C - 250ml',image:'/assets/cloudinary-shama/miscellaneous/shama-kewra-water-ec0aeb0d377b.webp'},
     {category:'misc',title:'Shama Baking Powder',pack:'800g',image:'/assets/cloudinary-shama/miscellaneous/shama-baking-powder-800gm-325dac223f98.webp'},
     {category:'misc',title:'Shama Vinegar',pack:'Contact us for available pack sizes',image:'/assets/cloudinary-shama/miscellaneous/shama-vinegar-eeeaade9c22b.webp'},
     {category:'misc',title:'Shama Baking Soda',pack:'800g',image:'/assets/cloudinary-shama/miscellaneous/shama-baking-soda-800gm-d7e08a269093.webp'},
     {category:'misc',title:'Shama Pehalwan Rewari',pack:'Contact us for available pack sizes',image:'/assets/cloudinary-shama/miscellaneous/shama-pehalwan-rewari-664c7f4bb557.webp'},
     {category:'misc',title:'Shama Black Salt',pack:'400g',image:'/assets/cloudinary-shama/miscellaneous/shama-black-salt-400g-10a32b3a1e3a.webp'},
-    {category:'misc',title:'Shama Lime Juice',pack:'200ml',image:'/assets/cloudinary-shama/miscellaneous/shama-lime-juice-200ml-78037fe41f12.webp'},
+    {category:'misc',title:'Shama Lime Juice',pack:'U17A - 200ml',image:'/assets/cloudinary-shama/miscellaneous/shama-lime-juice-200ml-78037fe41f12.webp'},
     {category:'misc',title:'Shama Roasted Vermicelli',pack:'5975 - 400g',image:'/assets/cloudinary-shama/miscellaneous/shama-roasted-vermicelli-400g-aba53cd5d99c.webp'},
     {"category":"misc","title":"Shama Plain Vermicelli","pack":"5968A - 400g","image":"/assets/cloudinary-shama/miscellaneous/shama-plain-vermicelli-400g-480cb6455086.webp"},
     {"category":"misc","title":"Shama Colour Flavoured Vermicelli","pack":"5951 - 400g","image":"/assets/cloudinary-shama/miscellaneous/shama-colour-flavored-vermicelli-400g-785ae4146fe1.webp"},
-    {category:'misc',title:'Shama Sweet Fennel Seed',pack:'Contact us for available pack sizes',image:'/assets/cloudinary-shama/miscellaneous/shama-sweet-fennel-seed-af79fbf7a0c3.webp'},
+    {category:'misc',title:'Shama Sweet Fennel Seed',pack:'2931A - 400g',image:'/assets/cloudinary-shama/miscellaneous/shama-sweet-fennel-seed-af79fbf7a0c3.webp'},
     {category:'misc',title:'Shama Himalayan Pink Salt Fine',pack:'Contact us for available pack sizes',image:'/assets/cloudinary-shama/miscellaneous/shama-himalayan-pink-salt-fine-8f2d0ca6dd51.webp'},
     {category:'misc',title:'Shama Black Pepper',pack:'100g',image:'/assets/cloudinary-shama/miscellaneous/shama-black-ppr-100gm-37feedbd6355.webp'},
     {category:'misc',title:'Shama Himalayan Pink Salt',pack:'1kg',image:'/assets/cloudinary-shama/miscellaneous/shama-himalayan-pink-salt-1kg-9c15d6127fd6.webp'},
@@ -27,7 +27,7 @@
     {category:'misc',title:'Shama Himalayan Pink Salt Pouch',pack:'3797C - 1kg',image:'/assets/cloudinary-shama/miscellaneous/shama-himalayan-pink-salt-pouch-1kg-83e49e391d38.webp'},
     {category:'misc',title:'Shama Himalayan Pink Salt Jar',pack:'1kg',image:'/assets/cloudinary-shama/miscellaneous/shama-himalayan-pink-salt-jar-1kg-a29f124f979c.webp'},
     {category:'misc',title:'Shama Himalayan Pink Salt',pack:'Contact us for available pack sizes',image:'/assets/cloudinary-shama/miscellaneous/shama-himalayan-pink-salt-073d33a86102.webp'},
-    {category:'misc',title:'Shama Golden Fried Onions',pack:'1kg',image:'/assets/cloudinary-shama/miscellaneous/shama-fried-onion-1kg-113e86531276.webp'},
+    {category:'misc',title:'Shama Golden Fried Onions',pack:'1496A - 1kg',image:'/assets/cloudinary-shama/miscellaneous/shama-fried-onion-1kg-113e86531276.webp'},
     {category:'misc',title:'Shama Jaggery Gur',pack:'500g',image:'/assets/cloudinary-shama/miscellaneous/shama-jaggery-gur-500g-58489dc43cfd.webp'},
     {category:'misc',title:'Shama Shakkar',pack:'500g',image:'/assets/cloudinary-shama/miscellaneous/shama-shakkar-500g-94d914fe1ab4.webp'},
     {category:'misc',title:'Shama Seedless Tamarind (Imli)',pack:'400g',image:'/assets/cloudinary-shama/miscellaneous/shama-imli-400g-edb438b80cb9.webp'},
@@ -36,8 +36,8 @@
     {category:'misc',title:'Shama Hing Jeera Roasted Chana',pack:'400g',image:'/assets/cloudinary-shama/miscellaneous/shama-hing-jeera-roasted-chana-400g-559221bf1fd9.webp'},
     {category:'misc',title:'Shama Chilli Garlic Roasted Chana',pack:'400g',image:'/assets/cloudinary-shama/miscellaneous/shama-chilli-garlic-roasted-chana-400g-3fc36a5060c9.webp'},
     {category:'misc',title:'Shama Lime Pudina Roasted Chana',pack:'400g',image:'/assets/cloudinary-shama/miscellaneous/shama-lime-pudina-roasted-chana-400g-973f94183fbd.webp'},
-    {category:'misc',title:'Shama Roasted Chana Without Skin',pack:'400g',image:'/assets/cloudinary-shama/miscellaneous/shama-roasted-chana-without-skin-400g-7bd86ba98534.webp'},
-    {category:'misc',title:'Shama Paneer Dodi Phool',pack:'100g',image:'/assets/cloudinary-shama/miscellaneous/shama-paneer-dodi-phool-100g-c63e65a0bb9a.webp'},
+    {category:'misc',title:'Shama Roasted Chana Without Skin',pack:'6774A - 400g',image:'/assets/cloudinary-shama/miscellaneous/shama-roasted-chana-without-skin-400g-7bd86ba98534.webp'},
+    {category:'misc',title:'Shama Paneer Dodi Phool',pack:'19109 - 100g',image:'/assets/cloudinary-shama/miscellaneous/shama-paneer-dodi-phool-100g-c63e65a0bb9a.webp'},
     {category:'misc',title:'Kody Peeled Tomatoes',pack:'Contact us for available pack sizes',image:'/assets/cloudinary-shama/miscellaneous/shama-kodi-peeled-tomato-319aee83d7fb.webp'},
 
     // Food colours — newly added to Cloudinary on 2026-10-01.
@@ -70,9 +70,9 @@
     {category:'misc',title:'Shama Anardana Seeds (Pomegranate Seeds)',pack:'6255 - 100g',image:'/assets/miscellaneous/shama-anardana-seeds-100g.webp'},
 
     {category:'misc',title:'Shama Tukmaria (Basil Seeds)',pack:'0369A - 100g',image:'/assets/miscellaneous/shama-tukmaria-100g.webp'},
-    {category:'misc',title:'Shama Madras Plain Papad',pack:'200g',image:'/assets/cloudinary-shama/miscellaneous/shama-madras-plain-papad-200g-54f425ed02fd.webp'},
-    {category:'misc',title:'Shama Pepper Papad',pack:'200g',image:'/assets/cloudinary-shama/miscellaneous/shama-pepper-papad-200g-365d7eddbe5f.webp'},
-    {category:'misc',title:'Shama Chilli Papad',pack:'200g',image:'/assets/cloudinary-shama/miscellaneous/shama-chilli-papad-200g-d77ff5751cb2.webp'},
+    {category:'misc',title:'Shama Madras Plain Papad',pack:'6446A - 200g',image:'/assets/cloudinary-shama/miscellaneous/shama-madras-plain-papad-200g-54f425ed02fd.webp'},
+    {category:'misc',title:'Shama Pepper Papad',pack:'6460A - 200g',image:'/assets/cloudinary-shama/miscellaneous/shama-pepper-papad-200g-365d7eddbe5f.webp'},
+    {category:'misc',title:'Shama Chilli Papad',pack:'6477A - 200g',image:'/assets/cloudinary-shama/miscellaneous/shama-chilli-papad-200g-d77ff5751cb2.webp'},
     {category:'misc',title:'Shama Jeera Papad',pack:'200g',image:'/assets/cloudinary-shama/miscellaneous/shama-jeera-papad-200g-af84092a68f1.webp'}
   ];
 

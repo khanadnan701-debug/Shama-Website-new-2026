@@ -45,7 +45,8 @@
     'Strawberry_custard_powder_250g': '4345A',
     'Banana_custard_powder_250g': '4346A',
     'Vanilla_custard_powder_250g': '4348A',
-    'Ahmed_kheer_mix_pistachio_160g': '4351A'
+    'Ahmed_kheer_mix_pistachio_160g': '4351A',
+    'Ahmed_pheni_150g': '1121B'
   });
 
   const SAUCE_CODES = Object.freeze({
