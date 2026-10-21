@@ -1326,7 +1326,7 @@ const categories=[
  {slug:'beverages',name:'Beverages',desc:'Refreshingly familiar',image:'https://images.unsplash.com/photo-1544787219-7f47ccb76574?auto=format&fit=crop&w=900&q=85'},
  {slug:'oils',name:'Oils',desc:'The foundation of great food',image:'https://images.unsplash.com/photo-1474979266404-7eaacbcd87c5?auto=format&fit=crop&w=900&q=85'},
  {slug:'dates',name:'Dates',desc:'Premium date varieties for retail and gifting',image:'/assets/cloudinary-shama/dates/shama-ajwa-dates-800g-734a417a7b85.webp'},
- {slug:'sauces',name:'Sauces, Pickles & Pastes',desc:'Curry pastes, pickles, chutneys and sauces',image:(productData.find(x=>x.category==='sauces')||{}).image||'https://images.unsplash.com/photo-1601050690117-94f5f6fa8bd7?auto=format&fit=crop&w=900&q=85'},
+ {slug:'sauces',name:'Sauces, Pickles & Pastes',desc:'Curry pastes, pickles, chutneys and sauces',image:'/assets/category-covers/sauces-pickles-pastes-ginger-garlic-original-20261021.webp'},
  {slug:'misc',name:'Miscellaneous',desc:'Roasted chana, vermicelli, papad, food colours and pantry essentials',image:'/assets/cloudinary-shama/miscellaneous/shama-fried-onion-1kg-113e86531276.webp'},
  {slug:'tea',name:'Tea',desc:'Premium black tea, pink tea, green tea and classic tea bags',image:'/assets/cloudinary-shama/tea/shama-premium-gold-tea-500g-ebda47ccc9c3.webp'},
  {slug:'sugar',name:'Sugar',desc:'Sugar, gur and traditional shakkar products',image:'/assets/cloudinary-shama/sugar/shama-desi-shakkar-500g-53dad935a769.webp'},

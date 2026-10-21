@@ -103,7 +103,7 @@
   const menuImageByHref = {
   "rice.html": "/assets/rice/shama-super-kernal-par-boiled-sella-rice-5kg.webp",
   "spices.html": "/assets/spices/shama-garam-masala-powder.webp",
-  "sauces-pastes.html": "/assets/cloudinary-shama/paste/shama-ginger-garlic-750g-b336d8039f56.webp",
+  "sauces-pastes.html": "/assets/category-covers/sauces-pickles-pastes-ginger-garlic-original-20261021.webp",
   "miscellaneous.html": "/assets/cloudinary-shama/miscellaneous/shama-fried-onion-1kg-113e86531276.webp",
   "beverages.html": "/assets/beverages/shama-basil-seed-drink-watermelon.webp",
   "flour-lentiles.html": "/assets/flour/shama-wheat-flour-t55-1kg.webp?v=20261019-flour-newzip-v2",

@@ -330,7 +330,7 @@
   if (category) {
     category.name = 'Sauces, Pickles & Pastes';
     category.desc = 'Curry pastes, ginger & garlic pastes, pickles, chutneys and sauces';
-    category.image = '/assets/cloudinary-shama/paste/shama-ginger-garlic-750g-b336d8039f56.webp';
+    category.image = '/assets/category-covers/sauces-pickles-pastes-ginger-garlic-original-20261021.webp';
   }
 
   window.shamaPasteFolderCatalogue = {

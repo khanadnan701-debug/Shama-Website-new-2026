@@ -106,7 +106,7 @@
   const imageOverrides = {
     rice:'/assets/rice/shama-super-kernal-par-boiled-sella-rice-5kg.webp',
     spices:'/assets/spices/shama-garam-masala-powder.webp',
-    sauces:'/assets/cloudinary-shama/paste/shama-ginger-garlic-750g-b336d8039f56.webp',
+    sauces:'/assets/category-covers/sauces-pickles-pastes-ginger-garlic-original-20261021.webp',
     misc:'/assets/cloudinary-shama/miscellaneous/shama-hing-jeera-roasted-chana-400g-559221bf1fd9.webp',
     beverages:'/assets/beverages/shama-coco-milk-drink-mango-240ml.webp',
     tea:'/assets/cloudinary-shama/tea/shama-premium-gold-tea-500g-ebda47ccc9c3.webp',
