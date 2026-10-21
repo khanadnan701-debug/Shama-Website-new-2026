@@ -262,56 +262,56 @@
     "category": "sauces",
     "group": "Sauces",
     "title": "Shama Tamarind Date Tomato Sauce",
-    "pack": "Contact us for available pack size",
+    "pack": "4497A - 220g x 1",
     "image": "/assets/cloudinary-shama/paste/shama-tamarind-date-tomato-sauce-edc47989253d.webp"
   },
   {
     "category": "sauces",
     "group": "Sauces",
     "title": "Shama Green Chilli Sauce",
-    "pack": "200g x 1",
+    "pack": "4442A - 200g x 1",
     "image": "/assets/cloudinary-shama/paste/shama-green-chilli-sauce-801f5bde50b4.webp"
   },
   {
     "category": "sauces",
     "group": "Pickles & Chutneys",
     "title": "Shama Coriander Mint Chutney",
-    "pack": "200g x 1",
+    "pack": "4480A - 200g x 1",
     "image": "/assets/cloudinary-shama/paste/shama-coriander-mint-chutney-7ab6dc01d79f.webp"
   },
   {
     "category": "sauces",
     "group": "Sauces",
     "title": "Shama Dark Soy Sauce",
-    "pack": "215g x 1",
+    "pack": "4466A - 215g x 1",
     "image": "/assets/cloudinary-shama/paste/shama-dark-soy-sauce-c2787d01a8bf.webp"
   },
   {
     "category": "sauces",
     "group": "Sauces",
     "title": "Shama Red Chilli Sauce",
-    "pack": "200g x 1",
+    "pack": "4435B - 200g x 1",
     "image": "/assets/cloudinary-shama/paste/shama-red-chilli-sauce-5d180fa8d271.webp"
   },
   {
     "category": "sauces",
     "group": "Sauces",
     "title": "Shama Sweet Chilli Sauce",
-    "pack": "215g x 1",
+    "pack": "4473A - 215g x 1",
     "image": "/assets/cloudinary-shama/paste/shama-sweet-chilli-sauce-82dbc45d57e3.webp"
   },
   {
     "category": "sauces",
     "group": "Sauces",
     "title": "Shama Tamarind Date Sauce",
-    "pack": "220g x 1",
+    "pack": "4459B - 220g x 1",
     "image": "/assets/cloudinary-shama/paste/shama-tamarind-date-sauce-6e2eb5f3b9ff.webp"
   },
   {
     "category": "sauces",
     "group": "Pickles & Chutneys",
     "title": "Shama Mixed Pickle",
-    "pack": "4kg x 1",
+    "pack": "0115A - 4kg x 1",
     "image": "/assets/cloudinary-shama/paste/shama-mixed-pickle-4kg-e8a71ca824f0.webp"
   },
   {
