@@ -175,7 +175,7 @@ const section=document.querySelector(".category-reels");if(!section)return;
 const items=[
 ["Rice","rice.html","/assets/cloudinary-shama/rice-images-20260910/shama-super-kernal-par-boiled-sella-rice-5kg-8e8a2c1c7e79.webp"],
 ["Spices","spices.html","/assets/spices/shama-garam-masala-powder.webp"],
-["Sauces & Pastes","sauces-pastes.html","/assets/cloudinary-shama/paste/shama-mango-pickle-1kg-9c5e9eab9cea.webp"],
+["Sauces & Pastes","sauces-pastes.html","/assets/category-covers/sauces-pickles-pastes-ginger-garlic-original-20261021.webp"],
 ["Miscellaneous","miscellaneous.html","/assets/shama-misc-fried-onion-premium-20261002.svg?v=1"],
 ["Beverages","beverages.html","/assets/cloudinary-shama/beverages/shama-basil-seed-drink-watermelon-e22b1546f7ba.webp"],
 ["Flour & Lentils","flour-lentiles.html","/assets/flour/shama-wheat-flour-t55-1kg.webp?v=20261019-flour-newzip-v2"],
