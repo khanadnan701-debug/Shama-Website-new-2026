@@ -11,49 +11,49 @@
       category:'bakery',
       group:'Baking Essentials',
       title:'Shama Baking Powder 100g',
-      pack:'100g',
+      pack:'19040 - 100g',
       image:'/assets/cloudinary-shama/bakery/shama-baking-powder-100gm-48d0df14901f.webp'
     },
     {
       category:'bakery',
       group:'Baking Essentials',
       title:'Shama Baking Powder 80g',
-      pack:'80g',
+      pack:'4640A - 80g',
       image:'/assets/cloudinary-shama/bakery/shama-baking-powder-80gm-066b12869325.webp'
     },
     {
       category:'bakery',
       group:'Baking Essentials',
       title:'Shama Baking Powder 550g',
-      pack:'550g',
+      pack:'19031 - 550g',
       image:'/assets/cloudinary-shama/bakery/shama-baking-powder-550gm-c97460373622.webp'
     },
     {
       category:'bakery',
       group:'Baking Essentials',
       title:'Shama Baking Powder Jar 800g',
-      pack:'800g',
+      pack:'6750A - 800g',
       image:'/assets/cloudinary-shama/bakery/shama-baking-powder-800g-jar-be81138fbdd5.webp'
     },
     {
       category:'bakery',
       group:'Baking Essentials',
       title:'Shama Baking Soda Jar 800g',
-      pack:'800g',
+      pack:'6743A - 800g',
       image:'/assets/cloudinary-shama/bakery/shama-baking-soda-800g-jar-05e08066c1a6.webp'
     },
     {
       category:'bakery',
       group:'Baking Essentials',
       title:'Shama Baking Soda 100g',
-      pack:'100g',
+      pack:'19039 - 100g',
       image:'/assets/cloudinary-shama/bakery/shama-baking-soda-100g-08fbb1c3fd8c.webp'
     },
     {
       category:'bakery',
       group:'Baking Essentials',
       title:"Borwick's Baking Powder 100g",
-      pack:'100g',
+      pack:'19159 - 100g',
       image:'/assets/cloudinary-shama/bakery/borwick-s-baking-powder-100g-cab362b215da.webp'
     },
 
@@ -62,49 +62,49 @@
       category:'bakery',
       group:'Cake Rusks & Biscuits',
       title:'Almond Cake Rusk',
-      pack:'750g',
+      pack:'0139A - 750g',
       image:'/assets/cloudinary-shama/bakery/almond-cake-rusk-750g-c96bd5a378be.webp'
     },
     {
       category:'bakery',
       group:'Cake Rusks & Biscuits',
       title:'Crispy Cake Rusk',
-      pack:'750g',
+      pack:'9713A - 750g',
       image:'/assets/cloudinary-shama/bakery/crispy-cake-rusk-750g-ee50f2944b69.webp'
     },
     {
       category:'bakery',
       group:'Cake Rusks & Biscuits',
       title:'Classic Cake Rusk',
-      pack:'750g',
+      pack:'0161A - 750g',
       image:'/assets/cloudinary-shama/bakery/classic-cake-rusk-750g-131f26479a58.webp'
     },
     {
       category:'bakery',
       group:'Cake Rusks & Biscuits',
       title:'Coconut Cake Rusk',
-      pack:'750g',
+      pack:'19186 - 750g',
       image:'/assets/cloudinary-shama/bakery/cake-rusk-coconut-750g-ac4d5d28489c.webp'
     },
     {
       category:'bakery',
       group:'Cake Rusks & Biscuits',
       title:'Tea Rusks',
-      pack:'300g',
+      pack:'0160A - 300g',
       image:'/assets/cloudinary-shama/bakery/tea-rusks-300g-6d9f24461199.webp'
     },
     {
       category:'bakery',
       group:'Cake Rusks & Biscuits',
       title:'Bakar Khani',
-      pack:'270g',
+      pack:'0153B - 270g',
       image:'/assets/cloudinary-shama/bakery/bakar-khani-270g-ce34b4dbf4ec.webp'
     },
     {
       category:'bakery',
       group:'Cake Rusks & Biscuits',
       title:'Karachi Osmania Biscuit',
-      pack:'400g',
+      pack:'19058 - 400g',
       image:'/assets/cloudinary-shama/bakery/karachi-osmania-biscuit-400g-582e89b45463.webp'
     },
 
