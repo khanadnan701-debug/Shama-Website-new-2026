@@ -213,7 +213,7 @@
     },
     {"category":"spices","group":"Whole Spices & Seeds","title":"Shama Kasuri Methi","pack":"3681B - 100g","image":"/assets/spices/shama-kasuri-methi-100g.webp"},
     {"category":"spices","group":"Whole Spices & Seeds","title":"Shama Kasuri Methi","pack":"5210 - 1kg","image":"/assets/spices/shama-kasuri-methi-1kg.webp"},
-    {"category":"spices","group":"Whole Spices & Seeds","title":"Shama Brown Mustard Seed","pack":"3414C - 400g","image":"/assets/spices/shama-brown-mustard-seed-400g.webp"},
+    {"category":"spices","group":"Whole Spices & Seeds","title":"Shama Brown Mustard Seed","pack":"2820C - 100g\n3414C - 400g","image":"/assets/spices/shama-brown-mustard-seed-400g.webp"},
     {"category":"spices","group":"Whole Spices & Seeds","title":"Shama Chilli Whole Red","pack":"1137A - 100g","image":"/assets/spices/shama-chilli-whole-red.webp"},
     {"category":"spices","group":"Whole Spices & Seeds","title":"Schani Bay Leaves","pack":"30g / 50g / 200g / 03679 - 1kg","image":"/assets/spices/schani-bay-leaves-range.webp"},
     {"category":"spices","group":"Masalas & Curry Blends","title":"Shama Panch Puran","pack":"4756B - 1kg / 0154A - 100g","image":"/assets/spices/shama-panch-puran-100g.webp"},

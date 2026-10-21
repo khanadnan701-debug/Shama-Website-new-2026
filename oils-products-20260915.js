@@ -13,6 +13,7 @@
 
   // Reference codes from supplied Oil product inventory screenshot.
   const ITEM_CODES = Object.freeze({
+    'Shama_mustard_oil_200ml': '6606A',
     'Shama_sunflower_oil_5ltr': '5272',
     'Shama_sunflower_oil_1ltr': '5289',
     'Shama_sunflower_oil_20ltr': '5651'
