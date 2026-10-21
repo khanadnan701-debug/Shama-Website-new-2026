@@ -1539,7 +1539,7 @@ document.addEventListener('click',e=>{const image=e.target.closest('#runway-imag
   {
     "category": "beverages",
     "title": "Shama Basil Seed Drink Passion",
-    "pack": "290ml x 24",
+    "pack": "2769C - 290ml x 24",
     "image": "/assets/beverages/shama-basil-seed-drink-passion.webp"
   },
   {
