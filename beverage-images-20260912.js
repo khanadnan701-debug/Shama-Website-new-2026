@@ -40,7 +40,7 @@
   }
   const restoredProducts = [
     {category:'beverages',title:'Shama Coconut Water',pack:'1304A - 290ml x 24'},
-    {category:'beverages',title:'Shama Falooda Chocolate',pack:'3467A - 290ml x 24'},
+    {category:'beverages',title:'Shama Falooda Chocolate',pack:'4367A - 290ml x 24'},
     {category:'beverages',title:'Shama Almond Drink',pack:'4893A - 1000ml x 10'},
     {category:'beverages',title:'Sunrise Almond Drink',pack:'Contact us for available pack sizes'}
   ];

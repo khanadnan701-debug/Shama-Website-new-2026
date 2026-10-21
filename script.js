@@ -1461,61 +1461,61 @@ document.addEventListener('click',e=>{const image=e.target.closest('#runway-imag
   {
     "category": "beverages",
     "title": "Shama Falooda Rabri",
-    "pack": "290ml x 24",
+    "pack": "19174 - 290ml x 24",
     "image": "/assets/beverages/shama-falooda-rabri.webp"
   },
   {
     "category": "beverages",
     "title": "Shama Falooda Pista",
-    "pack": "290ml x 24",
+    "pack": "18980 - 290ml x 24",
     "image": "/assets/beverages/shama-falooda-pista.webp"
   },
   {
     "category": "beverages",
     "title": "Shama Falooda Almond",
-    "pack": "290ml x 24",
+    "pack": "3926B - 290ml x 24",
     "image": "/assets/beverages/shama-falooda-almond.webp"
   },
   {
     "category": "beverages",
     "title": "Shama Falooda Mango",
-    "pack": "290ml x 24",
+    "pack": "1328 - 290ml x 24",
     "image": "/assets/beverages/shama-mango-falooda-20ml.webp"
   },
   {
     "category": "beverages",
     "title": "Shama Falooda Vanilla",
-    "pack": "290ml x 24",
+    "pack": "4350A - 290ml x 24",
     "image": "/assets/beverages/shama-falooda-vanilla.webp"
   },
   {
     "category": "beverages",
     "title": "Shama Falooda Rose",
-    "pack": "290ml x 24",
+    "pack": "1311 - 290ml x 24",
     "image": "/assets/beverages/shama-falooda-rose-290ml.webp"
   },
   {
     "category": "beverages",
     "title": "Shama Falooda Banana",
-    "pack": "290ml x 24",
+    "pack": "3919A - 290ml x 24",
     "image": "/assets/beverages/shama-banana-falooda-20ml.webp"
   },
   {
     "category": "beverages",
     "title": "Shama Falooda Strawberry",
-    "pack": "290ml x 24",
+    "pack": "1335 - 290ml x 24",
     "image": "/assets/beverages/shama-falooda-strawberry-290ml.webp"
   },
   {
     "category": "beverages",
     "title": "Shama Basil Seed Drink Cocktail",
-    "pack": "290ml x 24",
+    "pack": "2790C - 290ml x 24",
     "image": "/assets/beverages/shama-basil-seed-drink-cocktail.webp"
   },
   {
     "category": "beverages",
     "title": "Shama Basil Seed Drink Lychee",
-    "pack": "290ml x 24",
+    "pack": "2783C - 290ml x 24",
     "image": "/assets/beverages/shama-basil-seed-drink-lychee.webp"
   },
   {
@@ -1527,13 +1527,13 @@ document.addEventListener('click',e=>{const image=e.target.closest('#runway-imag
   {
     "category": "beverages",
     "title": "Shama Basil Seed Drink Pineapple",
-    "pack": "290ml x 24",
+    "pack": "2745C - 290ml x 24",
     "image": "/assets/beverages/shama-basil-seed-drink-pineapple.webp"
   },
   {
     "category": "beverages",
     "title": "Shama Basil Seed Drink Mango",
-    "pack": "290ml x 24",
+    "pack": "2776C - 290ml x 24",
     "image": "/assets/beverages/shama-basil-seed-drink-mango.webp"
   },
   {
@@ -1551,205 +1551,205 @@ document.addEventListener('click',e=>{const image=e.target.closest('#runway-imag
   {
     "category": "beverages",
     "title": "Shama Basil Seed Drink Pomegranate",
-    "pack": "290ml x 24",
+    "pack": "2479C - 290ml x 24",
     "image": "/assets/beverages/shama-basil-seed-drink-pomegranate.webp"
   },
   {
     "category": "beverages",
     "title": "Shama Basil Seed Drink Strawberry",
-    "pack": "290ml x 24",
+    "pack": "2462C - 290ml x 24",
     "image": "/assets/beverages/shama-basil-seed-drink-strawberry.webp"
   },
   {
     "category": "beverages",
     "title": "Shama Basil Seed Drink Watermelon",
-    "pack": "290ml x 24",
+    "pack": "0437A - 290ml x 24",
     "image": "/assets/beverages/shama-basil-seed-drink-watermelon.webp"
   },
   {
     "category": "beverages",
     "title": "Shama Coconut Milk Drink with Mango",
-    "pack": "240ml",
+    "pack": "2431C - 240ml",
     "image": "/assets/beverages/shama-coco-milk-drink-mango-240ml.webp?v=20261020-drinks31"
   },
   {
     "category": "beverages",
     "title": "Shama Coconut Milk Drink Original",
-    "pack": "240ml",
+    "pack": "2448C - 240ml",
     "image": "/assets/beverages/shama-coco-milk-drink-original-240ml.webp?v=20261020-drinks31"
   },
   {
     "category": "beverages",
     "title": "Best Nectar Cocktail Can",
-    "pack": "250ml",
+    "pack": "1852A - 250ml",
     "image": "/assets/beverages/best-nectar-cocktail-canette-250ml.webp"
   },
   {
     "category": "beverages",
     "title": "Best Nectar Cocktail Glass Bottle",
-    "pack": "250ml",
+    "pack": "5540A - 250ml",
     "image": "/assets/beverages/best-nectar-cocktail-glass-bottle-250ml.webp"
   },
   {
     "category": "beverages",
     "title": "Best Nectar Guava Can",
-    "pack": "250ml",
+    "pack": "1026A - 250ml",
     "image": "/assets/beverages/best-nectar-guava-canette-250ml.webp"
   },
   {
     "category": "beverages",
     "title": "Best Nectar Cocktail Tetra Pack",
-    "pack": "200ml",
+    "pack": "4543A - 200ml",
     "image": "/assets/beverages/best-brand-nectar-cocktail-tetra-pack-200ml.webp"
   },
   {
     "category": "beverages",
     "title": "Best Nectar Guava Tetra Pack",
-    "pack": "1L",
+    "pack": "1369A - 1L",
     "image": "/assets/beverages/best-nectar-guava-tetra-pack-1l.webp"
   },
   {
     "category": "beverages",
     "title": "Best Nectar Guava Glass Bottle",
-    "pack": "1L",
+    "pack": "5105A - 1L",
     "image": "/assets/beverages/best-nectar-guava-glass-bottle-1l.webp"
   },
   {
     "category": "beverages",
     "title": "Best Nectar Mango Tetra Pack",
-    "pack": "1L",
+    "pack": "1161A - 1L",
     "image": "/assets/beverages/best-nectar-mango-tetra-pack-1l.webp"
   },
   {
     "category": "beverages",
     "title": "Best Nectar Mango Tetra Pack",
-    "pack": "200ml",
+    "pack": "2144 - 200ml",
     "image": "/assets/beverages/best-nectar-mango-tetra-pack-200ml.webp"
   },
   {
     "category": "beverages",
     "title": "Best Nectar Guava Tetra Pack",
-    "pack": "200ml",
+    "pack": "1241A - 200ml",
     "image": "/assets/beverages/best-nectar-guava-tetra-pack-200ml.webp"
   },
   {
     "category": "beverages",
     "title": "Best Nectar Cocktail Tetra Pack",
-    "pack": "1L",
+    "pack": "1468A - 1L",
     "image": "/assets/beverages/best-nectar-cocktail-tetra-pack-1l.webp"
   },
   {
     "category": "beverages",
     "title": "Best Nectar Mango Can",
-    "pack": "250ml",
+    "pack": "8038A - 250ml",
     "image": "/assets/beverages/best-nectar-mango-canette-250ml.webp"
   },
   {
     "category": "beverages",
     "title": "Best Nectar Mango Glass Bottle",
-    "pack": "250ml",
+    "pack": "8223A - 250ml",
     "image": "/assets/beverages/best-nectar-mango-glass-bottle-250ml.webp"
   },
   {
     "category": "beverages",
     "title": "Best Nectar Guava Glass Bottle",
-    "pack": "250ml",
+    "pack": "5112A - 250ml",
     "image": "/assets/beverages/best-nectar-guava-glass-bottle-250ml.webp"
   },
   {
     "category": "beverages",
     "title": "Best Nectar Mango Glass Bottle",
-    "pack": "1L",
+    "pack": "8124A - 1L",
     "image": "/assets/beverages/best-nectar-mango-glass-bottle-1l.webp"
   },
   {
     "category": "beverages",
     "title": "Shezan Chausna Mango Juice Drink",
-    "pack": "225ml bottle",
+    "pack": "19181 - 225ml bottle",
     "image": "/assets/beverages/shezan-chausna-mango-juice-drink-225ml-bottle.webp"
   },
   {
     "category": "beverages",
     "title": "Shezan Happy Farms Mango Juice Drink",
-    "pack": "1L tetra",
+    "pack": "19178 - 1L tetra",
     "image": "/assets/beverages/shezan-happy-farms-mango-juice-drink-1l-tetra.webp"
   },
   {
     "category": "beverages",
     "title": "Shezan Mango Juice Drink",
-    "pack": "225ml bottle",
+    "pack": "19182 - 225ml bottle",
     "image": "/assets/beverages/shezan-mango-juice-drink-225ml-bottle.webp"
   },
   {
     "category": "beverages",
     "title": "Shezan Lychee Juice Drink",
-    "pack": "225ml bottle",
+    "pack": "19183 - 225ml bottle",
     "image": "/assets/beverages/shezan-lychee-juice-drink-225ml-bottle.webp"
   },
   {
     "category": "beverages",
     "title": "Shezan Mango Juice Drink",
-    "pack": "1L tetra",
+    "pack": "19175 - 1L tetra",
     "image": "/assets/beverages/shezan-mango-juice-drink-1l-tetra.webp"
   },
   {
     "category": "beverages",
     "title": "Shezan Mango Juice Drink",
-    "pack": "250ml tetra",
+    "pack": "19179 - 250ml tetra",
     "image": "/assets/beverages/shezan-mango-juice-drink-250ml-tetra.webp"
   },
   {
     "category": "beverages",
     "title": "Shezan Apple Juice Drink",
-    "pack": "1L tetra",
+    "pack": "19176 - 1L tetra",
     "image": "/assets/beverages/shezan-apple-juice-drink-1l-tetra.webp"
   },
   {
     "category": "beverages",
     "title": "Shezan Fruit Punch Juice Drink",
-    "pack": "1L tetra",
+    "pack": "19177 - 1L tetra",
     "image": "/assets/beverages/shezan-fruit-punch-juice-drink-1l-tetra.webp"
   },
   {
     "category": "beverages",
     "title": "Shezan Fruit Punch Juice Drink",
-    "pack": "250ml tetra",
+    "pack": "19180 - 250ml tetra",
     "image": "/assets/beverages/shezan-fruit-punch-juice-drink-250ml-tetra.webp"
   },
   {
     "category": "beverages",
     "title": "MANA Energy Drink Green",
-    "pack": "500ml",
+    "pack": "19173 - 500ml",
     "image": "/assets/beverages/mana-energy-drink-green-500ml.webp"
   },
   {
     "category": "beverages",
     "title": "Ginseng Energy Drink",
-    "pack": "250ml",
+    "pack": "2255A - 250ml",
     "image": "/assets/beverages/ginseng-energy-drink-250ml.webp"
   },
   {
     "category": "beverages",
     "title": "Carabao Energy Drink",
-    "pack": "250ml",
+    "pack": "19085 - 250ml",
     "image": "/assets/beverages/carabao-energy-drink-250ml.webp"
   },
   {
     "category": "beverages",
     "title": "Rooh Afza Rose Syrup",
-    "pack": "800ml",
+    "pack": "2075A - 800ml",
     "image": "/assets/beverages/rooh-afza-rose-syrup-800ml.webp"
   },
   {
     "category": "beverages",
     "title": "TG Kiat Rose Syrup",
-    "pack": "750ml",
+    "pack": "7506A - 750ml",
     "image": "/assets/beverages/tg-kiat-rose-syrup-750ml.webp"
   },
   {
     "category": "beverages",
     "title": "Alokozai Drink",
-    "pack": "250ml x 24",
+    "pack": "19151 - 250ml x 24",
     "image": "/assets/beverages/alokozai-250-ml-x24.webp"
   }
 ];
