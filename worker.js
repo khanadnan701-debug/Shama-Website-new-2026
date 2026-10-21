@@ -134,12 +134,16 @@ body[data-page="home"] .category-reels .reel-media:before{
   opacity:.38!important;
   z-index:0!important;
 }
+/* A consistent thin white inner frame on EVERY homepage category thumbnail. */
 body[data-page="home"] .category-reels .reel-media:after{
   content:""!important;
   position:absolute!important;
-  inset:0!important;
-  background:rgba(238,242,248,.18)!important;
-  z-index:1!important;
+  inset:3px!important;
+  box-sizing:border-box!important;
+  border:2px solid #fff!important;
+  border-radius:18px 18px 2px 2px!important;
+  background:transparent!important;
+  z-index:3!important;
   pointer-events:none!important;
 }
 body[data-page="home"] .category-reels .reel-media>img{
@@ -158,6 +162,7 @@ body[data-page="home"] .category-reels .reel-media>img{
 body[data-page="home"] .category-reels .reel-card>img{display:none!important}
 @media(max-width:700px){
   body[data-page="home"] .category-reels .reel-media{border-radius:16px 16px 0 0!important}
+  body[data-page="home"] .category-reels .reel-media:after{border-radius:12px 12px 2px 2px!important}
 }
 
 /* shama desktop compact category cards */
