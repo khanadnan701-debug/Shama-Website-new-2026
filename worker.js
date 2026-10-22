@@ -373,7 +373,7 @@ export default {
         headers: {
           'Content-Type': 'application/xml; charset=utf-8',
           'Cache-Control': 'public, max-age=300, must-revalidate',
-          'X-Robots-Tag': 'noindex, follow',
+          // Do not send a noindex directive on the XML sitemap.
           'Access-Control-Allow-Origin': '*'
         }
       });

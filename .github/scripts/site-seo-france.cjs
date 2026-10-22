@@ -300,6 +300,8 @@ async function verifyLive(){
   }
   const sm=await fetch(ORIGIN+'/sitemap.xml?seo_verify='+Date.now(),{headers:{'Cache-Control':'no-cache'},signal:AbortSignal.timeout(20000)});
   assert(sm.ok,'sitemap HTTP '+sm.status);
+  assert(/xml/i.test(sm.headers.get('content-type')||''),'sitemap must be served as XML');
+  assert(!/\bnoindex\b/i.test(sm.headers.get('x-robots-tag')||''),'sitemap must not carry an X-Robots-Tag noindex directive');
   const xml=await sm.text();
   assert(xml.includes(ORIGIN+'/rice'),'sitemap missing rice');
   assert(xml.includes(ORIGIN+'/spices'),'sitemap missing spices');
