@@ -146,6 +146,29 @@ body[data-page="home"] .category-reels .reel-media:after{
   z-index:3!important;
   pointer-events:none!important;
 }
+
+/* 2026-10-22: white side patches for #07 Frozen / Chicken Tikka Samosa */
+body[data-page="home"] .category-reels .reel-card[href="frozen.html"] .reel-media:after {
+  content:""!important;
+  position:absolute!important;
+  inset:3px!important;
+  display:block!important;
+  border:2px solid #fff!important;
+  border-radius:18px 18px 2px 2px!important;
+  box-sizing:border-box!important;
+  background:linear-gradient(90deg,
+    rgba(255,255,255,.98) 0px,
+    rgba(255,255,255,.98) 8px,
+    rgba(255,255,255,.62) 11px,
+    transparent 16px,
+    transparent calc(100% - 16px),
+    rgba(255,255,255,.62) calc(100% - 11px),
+    rgba(255,255,255,.98) calc(100% - 8px),
+    rgba(255,255,255,.98) 100%)!important;
+  box-shadow:inset 0 0 0 1px rgba(255,255,255,.38)!important;
+  z-index:5!important;
+  pointer-events:none!important;
+}
 body[data-page="home"] .category-reels .reel-media>img{
   position:relative!important;
   display:block!important;
