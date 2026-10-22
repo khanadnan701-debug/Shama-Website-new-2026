@@ -395,7 +395,7 @@ export default {
     }
 
     // Legacy links: preserve relevance with permanent redirects.
-    const legacy = {'/home-1':'/','/home':'/','/index.html':'/','/products':'/catalogue','/products.html':'/catalogue','/catalog':'/catalogue'};
+    const legacy = {'/home-1':'/','/home':'/','/index.html':'/','/products':'/catalogue','/products.html':'/catalogue','/catalog':'/catalogue','/shama-catalogue':'/catalogue'};
     const legacyPath = url.pathname.replace(/\\/$/,'') || '/';
     if (legacy[legacyPath]) return Response.redirect(new URL(legacy[legacyPath], 'https://shamaonline.com').toString(), 301);
 
