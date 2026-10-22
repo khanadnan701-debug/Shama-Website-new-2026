@@ -5,7 +5,7 @@ const path = require('node:path');
 const assert = require('node:assert/strict');
 
 const ORIGIN = 'https://shamaonline.com';
-const LASTMOD = '2026-10-07';
+const LASTMOD = '2026-10-22';
 
 const pages = {
   'catalogue.html': {
@@ -262,11 +262,22 @@ function build(rootDir){
     const header=/<div\s+id=["']site-header["']><\/div>/i;
     assert(header.test(html),file+' has no site-header anchor');
     if(showVisibleIntro(cfg)) html=html.replace(header,m=>m+'\n'+introBlock(cfg));
+    // Crawlable contextual links to independently useful purchasing guides.
+    if(['rice','catalogue','spices'].includes(cfg.slug)) {
+      const links=cfg.slug==='rice'
+        ? '<a href="/guide-riz-basmati-jasmin-gros">Guide : riz basmati, sella ou jasmin</a>'
+        : '<a href="/guide-grossiste-alimentaire-france">Guide : choisir un grossiste alimentaire</a>';
+      const section='<nav aria-label="Guides d’achat professionnels" style="padding:24px 20px;text-align:center;background:#f3f7fd"><p style="margin:0;font:700 15px/1.6 Arial,sans-serif">Conseils pour professionnels · '+links+'</p></nav>';
+      assert(/<div id=["']site-footer["']><\/div>/i.test(html),'Footer anchor missing on '+file);
+      html=html.replace(/<div id=["']site-footer["']><\/div>/i, section+'<div id="site-footer"></div>');
+    }
     fs.writeFileSync(full,html);
     built.push('/'+cfg.slug);
   }
 
-  const urls=['/'].concat(built);
+  const guides=['/guide-riz-basmati-jasmin-gros','/guide-grossiste-alimentaire-france'];
+  for(const url of guides) assert(fs.existsSync(path.join(root,url.slice(1)+'.html')),'Missing SEO guide '+url);
+  const urls=['/'].concat(built,guides);
   const sitemap=['<?xml version="1.0" encoding="UTF-8"?>','<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">']
     .concat(urls.map(u=>`  <url><loc>${ORIGIN}${u}</loc><lastmod>${LASTMOD}</lastmod></url>`))
     .concat(['</urlset>','']).join('\n');
